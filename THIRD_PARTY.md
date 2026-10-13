@@ -12,3 +12,7 @@ The adaptation changes imports for the older pinned Mathlib, places the results 
 Mathlib is a pinned external dependency rather than vendored source. Its [Apache 2.0 license](licenses/mathlib-Apache-2.0.txt) is preserved for reference; dependency authorship and licenses remain with their respective upstream projects.
 
 The included Apache license is preserved for the attributed upstream material. This packaging step does not assign a new project-wide license to the original local contributions.
+
+## Ordered real-closure backport
+
+The seven TauCeti source modules are adapted from the same pinned TauCeti revision, with original Kim Morrison / Lean FRO attribution retained. See [real-closure provenance](provenance/realclosure.json) for exact upstream paths, hashes and all compatibility changes. The [exact Apache 2.0 license](licenses/TauCeti-realclosure-Apache-2.0.txt) is included. These sources implement the classical Artin–Schreier real-closure construction.

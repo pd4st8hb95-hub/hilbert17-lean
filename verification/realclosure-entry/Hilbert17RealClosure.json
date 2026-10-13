@@ -1,0 +1,55 @@
+{
+  "label": "Hilbert17RealClosure",
+  "source": {
+    "path": "<build-workspace>/hilbert17-realclosure-delta-20261013/Hilbert17RealClosure.lean",
+    "bytes": 238,
+    "sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+  },
+  "start_utc": "2026-10-13T13:30:37.472936+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:30:37.472925+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8341764,
+    "used_percent": 18.270146851401087
+  },
+  "status": "PASS",
+  "command": [
+    "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "<build-workspace>/hilbert17-realclosure-delta-20261013",
+    "-o",
+    "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.olean",
+    "-i",
+    "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.ilean",
+    "<build-workspace>/hilbert17-realclosure-delta-20261013/Hilbert17RealClosure.lean"
+  ],
+  "stdout": "<build-workspace>/hilbert17-20261013/verification/transfer-sturm-entry01-run01/03-Hilbert17RealClosure.stdout.log",
+  "stderr": "<build-workspace>/hilbert17-20261013/verification/transfer-sturm-entry01-run01/03-Hilbert17RealClosure.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:30:38.975584+00:00",
+  "peak_physical_used_percent": 20.11316701069553,
+  "memory_after": {
+    "utc": "2026-10-13T13:30:38.975759+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8263228,
+    "used_percent": 19.039616683786463
+  },
+  "outputs": [
+    {
+      "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.olean",
+      "bytes": 2424,
+      "sha256": "dc64b88a7d8b70ede4763364f05f2e3f47fee38095a8d893d757e5547573724c"
+    },
+    {
+      "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.ilean",
+      "bytes": 182,
+      "sha256": "5ea3121bc24c86fb4271e2ed78cf40d8ed4aacc2ff18f9e3a3981f9ed8c12830"
+    }
+  ]
+}

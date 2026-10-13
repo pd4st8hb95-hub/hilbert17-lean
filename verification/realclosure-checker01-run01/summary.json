@@ -1,0 +1,349 @@
+{
+  "status": "ALL_SELECTED_LOCAL_REPLAYS_PASS",
+  "started_utc": "2026-10-13T13:14:27.990964+00:00",
+  "driver_sha256": "8c8af1bc913c28c1137479c1f74dada37e69ed9955067b02bca21246e89e4c9d",
+  "plan_sha256": "0fc0217a42132c5e22e34331d6a48ac01827ec3dc1c78b2b33b5c92f23db85ad",
+  "guard_core_sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean"
+  },
+  "jobs": [
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "start_utc": "2026-10-13T13:14:27.991349+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:27.991344+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8367104,
+        "used_percent": 18.021873886739716
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.Algebra.Order.Ring.Ordering.Extension"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+        "bytes": 1522,
+        "sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.olean",
+          "bytes": 32000,
+          "sha256": "95e49e26e70aa1c6f95db3d4fa44f82ddae95ca9b50089f46594dae0c1d0fe0d"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.ilean",
+          "bytes": 3242,
+          "sha256": "b2dd8e31314f0f9b949bc10c4822955a24f754c32bd1ab41d0001f5e914292f5"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/01-TauCeti.Algebra.Order.Ring.Ordering.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/01-TauCeti.Algebra.Order.Ring.Ordering.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:14:29.994151+00:00",
+      "peak_physical_used_percent": 19.392293622853185,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:29.994236+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366056,
+        "used_percent": 18.032141845183485
+      }
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+      "start_utc": "2026-10-13T13:14:29.996137+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:29.996129+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366056,
+        "used_percent": 18.032141845183485
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+        "bytes": 12320,
+        "sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.olean",
+          "bytes": 1144600,
+          "sha256": "db4ac28856657a777f5d8a814ce8b61b3ea5d3a08271921ae178ef99d93a8228"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.ilean",
+          "bytes": 47691,
+          "sha256": "e3dd446ef6348f5e0d90d2608ad58d74438f072710b31446e5f6977a90e84348"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/02-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/02-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "pid": 12,
+      "exit_code": 0,
+      "seconds": 2.504,
+      "end_utc": "2026-10-13T13:14:32.500680+00:00",
+      "peak_physical_used_percent": 19.751045117487784,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:32.500773+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8353444,
+        "used_percent": 18.155710062638466
+      }
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+      "start_utc": "2026-10-13T13:14:32.502062+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:32.502054+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8353444,
+        "used_percent": 18.155710062638466
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.FieldTheory.RealClosure.OrderExtension"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+        "bytes": 7894,
+        "sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OrderExtension.olean",
+          "bytes": 412120,
+          "sha256": "0111f2307472459b24a6553513152b0a29f6494b9da66ee886954872d7367207"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OrderExtension.ilean",
+          "bytes": 21557,
+          "sha256": "28355c749e655619ffa6ff8b55e60448c8a2a16d924094beb8b1dd523ae20145"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/03-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/03-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "pid": 19,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:14:34.505105+00:00",
+      "peak_physical_used_percent": 19.607215317912846,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:34.505193+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8370336,
+        "used_percent": 17.99020781642458
+      }
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+      "start_utc": "2026-10-13T13:14:34.506171+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:34.506165+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8370336,
+        "used_percent": 17.99020781642458
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.FieldTheory.RealClosure.PolynomialCone"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/PolynomialCone.lean",
+        "bytes": 4878,
+        "sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/PolynomialCone.olean",
+          "bytes": 288112,
+          "sha256": "cd961115b391f69ebf5b4cc6e86ed0c719cd84b39474a59883f8f3293a2a642a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/PolynomialCone.ilean",
+          "bytes": 19793,
+          "sha256": "6d3d8c8152ef2568833865a07de9577a6b7705efeb97ecce762bf074bfae7884"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/04-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/04-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "pid": 26,
+      "exit_code": 0,
+      "seconds": 2.503,
+      "end_utc": "2026-10-13T13:14:37.009479+00:00",
+      "peak_physical_used_percent": 19.818296326226363,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:37.009703+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8367232,
+        "used_percent": 18.02061978494506
+      }
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+      "start_utc": "2026-10-13T13:14:37.010676+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:37.010670+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8367232,
+        "used_percent": 18.02061978494506
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.Algebra.Polynomial.OddDegreeFactor"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/Algebra/Polynomial/OddDegreeFactor.lean",
+        "bytes": 1282,
+        "sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/OddDegreeFactor.olean",
+          "bytes": 116384,
+          "sha256": "c768e4cc5d04ca37ada294bb82eaa32eb9d16f9c9af9995880d70fece2a39ab0"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/OddDegreeFactor.ilean",
+          "bytes": 3374,
+          "sha256": "fd8a259df5ecd5c64db9b0ea8b775f22985845a47dca7212eff9204ed60a32be"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/05-TauCeti.Algebra.Polynomial.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/05-TauCeti.Algebra.Polynomial.stderr.log",
+      "pid": 33,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:14:39.013182+00:00",
+      "peak_physical_used_percent": 19.316342082914158,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:39.013268+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8369532,
+        "used_percent": 17.99808514332228
+      }
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+      "start_utc": "2026-10-13T13:14:39.014303+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:39.014298+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8369532,
+        "used_percent": 17.99808514332228
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.FieldTheory.RealClosure.OddExtension"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+        "bytes": 4808,
+        "sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OddExtension.olean",
+          "bytes": 342616,
+          "sha256": "71741f0fd63862af71ee783915f333c5fa444aa5bc31e446e31cb1f893ac28ff"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/OddExtension.ilean",
+          "bytes": 18896,
+          "sha256": "bd187bc983eccb359bd2c395551945d781cc90e59213e7e2033ef80c25059bd6"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/06-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/06-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "pid": 40,
+      "exit_code": 0,
+      "seconds": 2.006,
+      "end_utc": "2026-10-13T13:14:41.020741+00:00",
+      "peak_physical_used_percent": 19.54106144824459,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:41.020833+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8361540,
+        "used_percent": 18.076388124126293
+      }
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Basic",
+      "start_utc": "2026-10-13T13:14:41.021964+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:14:41.021958+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8361308,
+        "used_percent": 18.078661183629112
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TauCeti.FieldTheory.RealClosure.Basic"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/Basic.lean",
+        "bytes": 5781,
+        "sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Basic.olean",
+          "bytes": 344136,
+          "sha256": "b4d2ae77d94e980e232d3c53aa4d373effd4ea16c3beb9467a470f2f84bfb6ba"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Basic.ilean",
+          "bytes": 17584,
+          "sha256": "d3a22521ba050c2eb2f87c0b8973c1b51f3de9297954a467c58ddad2b354269b"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/07-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-checker01-run01/07-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "pid": 47,
+      "exit_code": 0,
+      "seconds": 2.503,
+      "end_utc": "2026-10-13T13:14:43.525289+00:00",
+      "peak_physical_used_percent": 19.90463339665241,
+      "memory_after": {
+        "utc": "2026-10-13T13:14:43.525379+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8357532,
+        "used_percent": 18.11565718657155
+      }
+    }
+  ],
+  "scope": "Same-kernel replay of selected local modules against imported dependencies; no full transitive replay, no independent external verifier, and no theorem-strength or axiom-list acceptance.",
+  "ended_utc": "2026-10-13T13:14:43.526028+00:00"
+}

@@ -1,0 +1,27 @@
+TauCeti.RealClosure.OrderedIntermediateField.isSquare_of_isMax.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsStrictOrderedRing K] [Field L] [Algebra K L] [IsAlgClosed L]
+  (P : TauCeti.RealClosure.OrderedIntermediateField K L) (hP : IsMax P) (a : ↥P.toIntermediateField) :
+  0 ≤ a → IsSquare a
+'TauCeti.RealClosure.OrderedIntermediateField.isSquare_of_isMax' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.exists_isRoot_of_isMax.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsStrictOrderedRing K] [Field L] [Algebra K L] [IsAlgClosed L]
+  (P : TauCeti.RealClosure.OrderedIntermediateField K L) (hP : IsMax P) (p : Polynomial ↥P.toIntermediateField)
+  (hp : Odd p.natDegree) : ∃ x, p.IsRoot x
+'TauCeti.RealClosure.OrderedIntermediateField.exists_isRoot_of_isMax' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.isRealClosed_of_isMax.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsStrictOrderedRing K] [Field L] [Algebra K L] [IsAlgClosed L]
+  (P : TauCeti.RealClosure.OrderedIntermediateField K L) (hP : IsMax P) : IsRealClosed ↥P.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.isRealClosed_of_isMax' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.exists_intermediateField_isRealClosed.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsStrictOrderedRing K] [Field L] [Algebra K L] [IsAlgClosed L] :
+  ∃ F o, IsStrictOrderedRing ↥F ∧ IsRealClosed ↥F ∧ StrictMono ⇑(algebraMap K ↥F)
+'TauCeti.RealClosure.exists_intermediateField_isRealClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.exists_realClosure.{u} (K : Type u) [Field K] [LinearOrder K] [IsStrictOrderedRing K] :
+  ∃ R field order, IsStrictOrderedRing R ∧ IsRealClosed R ∧ ∃ ι, StrictMono ⇑ι ∧ Algebra.IsAlgebraic K R
+'TauCeti.RealClosure.exists_realClosure' depends on axioms: [propext, Classical.choice, Quot.sound]

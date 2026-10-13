@@ -1,0 +1,17 @@
+TauCeti.RealClosure.extensionCone.even_natDegree.{u_1} {R : Type u_1} [CommSemiring R] [LinearOrder R]
+  [IsStrictOrderedRing R] [ExistsAddOfLE R] {p : Polynomial R}
+  (hp : p ∈ TauCeti.RealClosure.extensionCone Polynomial.C) : Even p.natDegree
+'TauCeti.RealClosure.extensionCone.even_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.leadingCoeff_nonneg.{u_1} {R : Type u_1} [CommSemiring R] [LinearOrder R]
+  [IsStrictOrderedRing R] [ExistsAddOfLE R] {p : Polynomial R}
+  (hp : p ∈ TauCeti.RealClosure.extensionCone Polynomial.C) : 0 ≤ p.leadingCoeff
+'TauCeti.RealClosure.extensionCone.leadingCoeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.eval_nonneg.{u_1} {R : Type u_1} [CommSemiring R] [LinearOrder R] [IsOrderedRing R]
+  [ExistsAddOfLE R] {p : Polynomial R} (hp : p ∈ TauCeti.RealClosure.extensionCone Polynomial.C) (x : R) :
+  0 ≤ Polynomial.eval x p
+'TauCeti.RealClosure.extensionCone.eval_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+PowerBasis.exists_aeval_eq_of_mem_extensionCone.{u_1, u_2} {R : Type u_1} {S : Type u_2} [CommRing R] [PartialOrder R]
+  [IsOrderedRing R] [CommRing S] [Algebra R S] [Nontrivial S] (pb : PowerBasis R S) {x : S}
+  (hx : x ∈ TauCeti.RealClosure.extensionCone (algebraMap R S)) :
+  ∃ q ∈ TauCeti.RealClosure.extensionCone Polynomial.C, q.natDegree < 2 * pb.dim ∧ (Polynomial.aeval pb.gen) q = x
+'PowerBasis.exists_aeval_eq_of_mem_extensionCone' depends on axioms: [propext, Classical.choice, Quot.sound]

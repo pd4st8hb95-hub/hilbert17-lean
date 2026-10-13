@@ -2,7 +2,7 @@
 
 **The complete Hilbert-seventeenth theorem is not proved in this repository.**
 
-This baseline contains ten compiled project modules, selected-module Lean kernel replays, and an axiom audit of 57 named declarations. The final Artin assembly still requires the explicit, unproved hypothesis `Hilbert17.NegativePointTransfer ℝ`. A clean axiom audit of that conditional theorem does not discharge its hypothesis.
+The original baseline contains ten compiled project modules and an axiom audit of 57 named declarations. A separate seven-module ordered-real-closure backport has now also passed compilation, selected-module replay, and 47 named-declaration axiom audits. The final Artin assembly still requires the explicit, unproved hypothesis `Hilbert17.NegativePointTransfer ℝ`. A clean axiom audit of that conditional theorem does not discharge its hypothesis.
 
 ## Full target
 
@@ -36,7 +36,13 @@ Hilbert17.hilbert17Real_of_negativePointTransfer
   Hilbert17Target.Hilbert17Real
 ```
 
-An ordered real-closure construction and uniform real-closed-field transfer are further work. They are not included as established results in this baseline.
+The ordered real-closure construction is now verified; uniform real-closed-field transfer is still unverified. No unconditional Hilbert-seventeenth result is established.
+
+## Verified real-closure extension
+
+`TauCeti.RealClosure.exists_realClosure` constructs, from any ordered field, an ordered algebraic real-closed extension in the same universe, with a strictly monotone ring embedding. It assumes neither real-closedness of the starting field nor a transfer principle. Import [Hilbert17RealClosure.lean](Hilbert17RealClosure.lean) to use this prerequisite alongside the baseline.
+
+The seven source snapshots and their checks are recorded in [realclosure-source-manifest.json](realclosure-source-manifest.json) and [real-closure verification status](verification/REALCLOSURE-STATUS.md).
 
 ## Pinned build
 
@@ -50,7 +56,7 @@ With the pinned toolchain available, run from the repository root:
 
 ```sh
 lake exe cache get
-lake build Hilbert17
+lake build Hilbert17 Hilbert17RealClosure
 lake env lean checks/ConditionalArtinAxioms.lean
 ```
 
@@ -58,8 +64,8 @@ The cache step uses Mathlib's cache tooling and network access; it is optional i
 
 ## Verification limits
 
-The ten included module files are byte-for-byte copies of the successfully compiled sources. Their hashes and receipts are in [source-manifest.json](source-manifest.json). Selected-module replay uses the same Lean kernel with imported dependencies, not an independent verifier or fresh replay of every transitive Mathlib declaration. The 57 selected declarations use only `propext`, `Classical.choice`, and `Quot.sound` in their printed recursive axiom lists; no `sorryAx` or new project axiom occurs in those audited lists.
+The ten baseline module files and seven real-closure modules are byte-for-byte copies of their successfully compiled sources. Their hashes and receipts are in [source-manifest.json](source-manifest.json). Selected-module replay uses the same Lean kernel with imported dependencies, not an independent verifier or fresh replay of every transitive Mathlib declaration. The 57 selected declarations use only `propext`, `Classical.choice`, and `Quot.sound` in their printed recursive axiom lists; no `sorryAx` or new project axiom occurs in those audited lists.
 
 Some source headers retain their original drafting-time “source-only” comments to preserve exact source hashes. The dated verification receipts document subsequent checks. They do not upgrade any conditional theorem to an unconditional one.
 
-See [failed attempts](verification/FAILED-ATTEMPTS.md) for preserved diagnostics and [third-party attribution](THIRD_PARTY.md) for licensing and provenance.
+See [baseline failed attempts](verification/FAILED-ATTEMPTS.md), [real-closure verification and first-attempt failure](verification/REALCLOSURE-STATUS.md), and [third-party attribution](THIRD_PARTY.md). The original PACKAGE-MANIFEST.json records the frozen initial baseline; REALCLOSURE-DELTA-MANIFEST.json records this later delivery delta.

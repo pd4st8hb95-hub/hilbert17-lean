@@ -1,0 +1,419 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:15:16.806368+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/realclosure-axioms-compile-plan01.json",
+  "plan_sha256": "c1623445c0db83f2bfe7a521d6c4e8a8ed87476aa4541f689940655e46afc99c",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Print exact types and axiom dependencies of all identified public real-closure backport declarations. No theorem strengthening and no full transitive library replay.",
+  "jobs": [
+    {
+      "label": "RealClosureOrderingAdaptersAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOrderingAdaptersAxioms.lean",
+        "bytes": 532,
+        "sha256": "d65eb189517f360ecbd1447651a4b7eb2a375b522d5d69ae77bf0401cf646dc8"
+      },
+      "start_utc": "2026-10-13T13:15:16.806744+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:16.806727+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8358372,
+        "used_percent": 18.1074271435441
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderingAdaptersAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderingAdaptersAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOrderingAdaptersAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:18.309424+00:00",
+      "peak_physical_used_percent": 19.8824122804783,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:18.309597+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8346660,
+        "used_percent": 18.222177457755386
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderingAdaptersAxioms.olean",
+          "bytes": 1768,
+          "sha256": "033dc15fec341b53e710f5f4cfdea7924c1a84bcebbe48d6225990252b3332be"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderingAdaptersAxioms.ilean",
+          "bytes": 868,
+          "sha256": "026e235f257ac6a103e0b0e2b413aebb21494cd87dfbc876a29dac7d8d15c49f"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureIntermediateFieldAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureIntermediateFieldAxioms.lean",
+        "bytes": 2425,
+        "sha256": "0914aa1353b779611cb3e3c522d70f8f27500c3fe28ef2d6c3e4e49f6f6f717b"
+      },
+      "start_utc": "2026-10-13T13:15:18.310303+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:18.310292+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8346660,
+        "used_percent": 18.222177457755386
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureIntermediateFieldAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureIntermediateFieldAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureIntermediateFieldAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:19.814175+00:00",
+      "peak_physical_used_percent": 20.090671559753837,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:19.814316+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349912,
+        "used_percent": 18.190315434034833
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureIntermediateFieldAxioms.olean",
+          "bytes": 1648,
+          "sha256": "edceb38c0ec4679d74534a7a84837e0ede6f66262c7888c21471c000c424d289"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureIntermediateFieldAxioms.ilean",
+          "bytes": 3460,
+          "sha256": "87bfb199108af2deed32f30e971974fc4dcafbf4a658141b0519b41962f9acb9"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureOrderExtensionAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOrderExtensionAxioms.lean",
+        "bytes": 2015,
+        "sha256": "6644fecad15c98b4015b43b8f0bda99e353cdc48320c709bc4922c27a297d4a1"
+      },
+      "start_utc": "2026-10-13T13:15:19.815441+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:19.815429+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349912,
+        "used_percent": 18.190315434034833
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderExtensionAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderExtensionAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOrderExtensionAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:21.317850+00:00",
+      "peak_physical_used_percent": 19.94586199315182,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:21.317997+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360092,
+        "used_percent": 18.090575150678372
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderExtensionAxioms.olean",
+          "bytes": 1632,
+          "sha256": "3ed3309ead058f177e4d3a80ed1a47a84446b10780ede95b53a0de3a69ab1851"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOrderExtensionAxioms.ilean",
+          "bytes": 3232,
+          "sha256": "c206bf43c9be103a805e875d13c19fb1ec639f43578eb563040034fc74c72237"
+        }
+      ]
+    },
+    {
+      "label": "RealClosurePolynomialConeAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosurePolynomialConeAxioms.lean",
+        "bytes": 675,
+        "sha256": "1897fcc35b09ddd9d555e9f1b3ae3474082845512cbf2c1921066f7bbdc77e0f"
+      },
+      "start_utc": "2026-10-13T13:15:21.319082+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:21.319069+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360092,
+        "used_percent": 18.090575150678372
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosurePolynomialConeAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosurePolynomialConeAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosurePolynomialConeAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:22.822231+00:00",
+      "peak_physical_used_percent": 20.051716022757244,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:22.822394+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8335180,
+        "used_percent": 18.334654712463852
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosurePolynomialConeAxioms.olean",
+          "bytes": 1632,
+          "sha256": "3d419547665d7dc3d8bd6228f2f5cef7af552ad764fda8a50015d6543cd5c12f"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosurePolynomialConeAxioms.ilean",
+          "bytes": 942,
+          "sha256": "3878c6e6fe9ac4879e35e2466e7d5b7d022ddc0d357cc65e5f403531995d3bb3"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureOddFactorAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOddFactorAxioms.lean",
+        "bytes": 319,
+        "sha256": "c8e3914ef8fceb0ed68c566246885d9c0c1395f05140b14d4950b7a7a6e2659f"
+      },
+      "start_utc": "2026-10-13T13:15:22.823359+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:22.823332+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8335180,
+        "used_percent": 18.334654712463852
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddFactorAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddFactorAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOddFactorAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/05-RealClosureOddFactorAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/05-RealClosureOddFactorAxioms.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:24.326433+00:00",
+      "peak_physical_used_percent": 19.864227804455744,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:24.326613+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344460,
+        "used_percent": 18.243732332351083
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddFactorAxioms.olean",
+          "bytes": 1624,
+          "sha256": "4522977d1b1c79d66c7fada81bf0e4a37e837f682150fbb6a5ace48ce03ef6a7"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddFactorAxioms.ilean",
+          "bytes": 352,
+          "sha256": "c39a5c84263af63be3beb6762ee7b8e2f0d57c9dbaf57d868df0ccfb6e7c3597"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureOddExtensionAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOddExtensionAxioms.lean",
+        "bytes": 415,
+        "sha256": "b691d65470b3e218e8de134025af48663d0c9dc8ce1d6c7355f839d889a38205"
+      },
+      "start_utc": "2026-10-13T13:15:24.328262+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:24.328246+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344232,
+        "used_percent": 18.24596620117282
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddExtensionAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddExtensionAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureOddExtensionAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stderr.log",
+      "pid": 20,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:25.831058+00:00",
+      "peak_physical_used_percent": 20.039919627751235,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:25.831466+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330776,
+        "used_percent": 18.377803652336333
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddExtensionAxioms.olean",
+          "bytes": 1632,
+          "sha256": "6312e42f2f9dcd6ed02a8c89c74387023124596847967c022c86576c3da02947"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureOddExtensionAxioms.ilean",
+          "bytes": 535,
+          "sha256": "db227b9642290a8597eda42ef423235cb1aa345a3a4ede5d7916e1ea77d9ac4f"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureBasicAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureBasicAxioms.lean",
+        "bytes": 884,
+        "sha256": "f54114949f6f71c7d06f169bedb132a9b299dd8f6d5c4d8dec86ab93b88d6347"
+      },
+      "start_utc": "2026-10-13T13:15:25.834061+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:15:25.834047+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330776,
+        "used_percent": 18.377803652336333
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureBasicAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureBasicAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealClosureBasicAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stderr.log",
+      "pid": 23,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:15:27.336550+00:00",
+      "peak_physical_used_percent": 20.277415155114756,
+      "memory_after": {
+        "utc": "2026-10-13T13:15:27.337098+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8334216,
+        "used_percent": 18.344099666604876
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureBasicAxioms.olean",
+          "bytes": 1624,
+          "sha256": "0c486bbfba8d46e8194730ccb0c48283c02acd5014e27cdc54a77e171d080200"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealClosureBasicAxioms.ilean",
+          "bytes": 1123,
+          "sha256": "0e17c5249f7328e7aec0f995c191f700fa877e0365653ffbead2a6877db1cd4b"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:15:27.338582+00:00"
+}

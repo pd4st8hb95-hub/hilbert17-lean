@@ -1,0 +1,472 @@
+{
+  "status": "PASS_STANDARD_AXIOMS_47_REALCLOSURE_DECLARATIONS",
+  "utc": "2026-10-13T13:18:00.380867+00:00",
+  "scope": "Ordered real-closure construction and helpers only; full Hilbert17 transfer proof still not compiled.",
+  "records": [
+    {
+      "declaration": "RingPreordering.linearOrder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "log_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9"
+    },
+    {
+      "declaration": "RingPreordering.isStrictOrderedRing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "log_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9"
+    },
+    {
+      "declaration": "RingPreordering.nonneg_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "log_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9"
+    },
+    {
+      "declaration": "RingPreordering.exists_linearOrder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "log_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.mem_nonneg_ofIntermediateField",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.toIntermediateField_ofIntermediateField",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.le_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.preordering",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.mem_preordering",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.linearOrder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.isStrictOrderedRing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.nonneg_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.algebraMap_strictMono",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField_toIntermediateField",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.exists_isMax",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.exists_le_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.mem_of_isMax",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "log_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.weightedSquares",
+      "axioms": [
+        "propext"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.mem_weightedSquares",
+      "axioms": [
+        "propext"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.weightedSquares_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.le_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.induction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.mul_self_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.map_mem_of_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.map_mem_comp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.map_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.map_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.exists_linearOrder_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.neg_one_notMem_quadraticAlgebra",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.quadratic_nonsquare_condition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "QuadraticAlgebra.exists_linearOrder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "log_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.even_natDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "log_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.leadingCoeff_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "log_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.eval_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "log_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff"
+    },
+    {
+      "declaration": "PowerBasis.exists_aeval_eq_of_mem_extensionCone",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "log_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff"
+    },
+    {
+      "declaration": "Polynomial.exists_irreducible_factor_of_odd_natDegree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/05-RealClosureOddFactorAxioms.stdout.log",
+      "log_sha256": "7dea2360d7f6f57939604782c5aaf2fefe3b35ea1962c44e00232e9f9b51ced8"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.extensionCone.neg_one_notMem_adjoinRoot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stdout.log",
+      "log_sha256": "e3482b2240ef2f17d5d63fab1a04a5aa83afbecea0725629e3640222b5a2e0ba"
+    },
+    {
+      "declaration": "AdjoinRoot.exists_linearOrder",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stdout.log",
+      "log_sha256": "e3482b2240ef2f17d5d63fab1a04a5aa83afbecea0725629e3640222b5a2e0ba"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.isSquare_of_isMax",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "log_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.exists_isRoot_of_isMax",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "log_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.OrderedIntermediateField.isRealClosed_of_isMax",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "log_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.exists_intermediateField_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "log_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2"
+    },
+    {
+      "declaration": "TauCeti.RealClosure.exists_realClosure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "log_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2"
+    }
+  ]
+}

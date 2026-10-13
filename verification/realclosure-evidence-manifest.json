@@ -1,0 +1,357 @@
+{
+  "scope": "Completed real-closure compile/replay/47-declaration axiom evidence; no transfer verification or fresh full transitive replay claimed.",
+  "files": [
+    {
+      "file": "verification/realclosure-compile01-run01/summary.json",
+      "original_sha256": "c12c053faace2e2ce1a48de5a9736f88ac3c70b8b4747ad2fae00691c674f270",
+      "export_sha256": "b463856b18ebc0858b863631dc2da7cab0a6ead49ca540791f6f99224460d2b7",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stdout.log",
+      "original_sha256": "73be48586c594ac6b5aa7f690042bef4f612c6fb472e310395626a629499c44d",
+      "export_sha256": "1ad5e54272e5c16974bd842d18306a81b8fd926b0a1e4434c4457a3c4150077d",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "delivery": "Already present byte-identically in the base commit; not duplicated in delta."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/summary.json",
+      "original_sha256": "81547bc4824ad6b491db4eaa1c4e1bbf2a994dc13c51f2b9006c2529fbb6d2e5",
+      "export_sha256": "78b7b28945775f5b47d74648ff9afee5fa4426c0d5001cc09f559714d6700f77",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/01-TauCeti_Algebra_Order_Ring_Ordering_Extension.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/02-TauCeti_FieldTheory_RealClosure_OrderedIntermediateField.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/03-TauCeti_FieldTheory_RealClosure_OrderExtension.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/04-TauCeti_FieldTheory_RealClosure_PolynomialCone.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/05-TauCeti_Algebra_Polynomial_OddDegreeFactor.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/06-TauCeti_FieldTheory_RealClosure_OddExtension.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/07-TauCeti_FieldTheory_RealClosure_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/01-TauCeti_Algebra_Order_Ring_Ordering_Extension.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/02-TauCeti_FieldTheory_RealClosure_OrderedIntermediateField.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/03-TauCeti_FieldTheory_RealClosure_OrderExtension.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/04-TauCeti_FieldTheory_RealClosure_PolynomialCone.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/05-TauCeti_Algebra_Polynomial_OddDegreeFactor.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/06-TauCeti_FieldTheory_RealClosure_OddExtension.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile02-run01/07-TauCeti_FieldTheory_RealClosure_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/summary.json",
+      "original_sha256": "06eb3c829d1de989a23e9c6f17b3c07b0c657c97938154466855b6eb8d4a51c5",
+      "export_sha256": "42dc9823ef2cfeacee04988fcb42ccbeb697dda8b692aa49eb8291bdab42fec0",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/01-TauCeti.Algebra.Order.Ring.Ordering.stdout.log",
+      "original_sha256": "8c73d51246d65682590326dc9e6ec99f528dc9d2f156ed1444137ba2a5754073",
+      "export_sha256": "8c73d51246d65682590326dc9e6ec99f528dc9d2f156ed1444137ba2a5754073",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/02-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "original_sha256": "cf92e5a6d6509324b5d6baca138d1736c14645f1ed6e14ed0ad414131028b2be",
+      "export_sha256": "cf92e5a6d6509324b5d6baca138d1736c14645f1ed6e14ed0ad414131028b2be",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/03-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "original_sha256": "a590121bfbd1c745bed0e1ee4be2106bf44365f304753c85538183de7c7a89e0",
+      "export_sha256": "a590121bfbd1c745bed0e1ee4be2106bf44365f304753c85538183de7c7a89e0",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/04-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "original_sha256": "4a405ae4f9ed11f4f65d9072e07655499bcb0d9f46f6a51501aa0c4ab147e4db",
+      "export_sha256": "4a405ae4f9ed11f4f65d9072e07655499bcb0d9f46f6a51501aa0c4ab147e4db",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/05-TauCeti.Algebra.Polynomial.stdout.log",
+      "original_sha256": "b732f6f7793c6a9aec177f2fcfdae4f649680f60ccf0f95e83a212dd143e17ec",
+      "export_sha256": "b732f6f7793c6a9aec177f2fcfdae4f649680f60ccf0f95e83a212dd143e17ec",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/06-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "original_sha256": "ec6e8c722a838c9475267f951219756493ac87205e70f42de44c560c067b67ee",
+      "export_sha256": "ec6e8c722a838c9475267f951219756493ac87205e70f42de44c560c067b67ee",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/07-TauCeti.FieldTheory.RealClosure.stdout.log",
+      "original_sha256": "f4501a9de27c3bd595621c1646ba7455c178f2fb9e9561e5e0828b3a0bbf365f",
+      "export_sha256": "f4501a9de27c3bd595621c1646ba7455c178f2fb9e9561e5e0828b3a0bbf365f",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/01-TauCeti.Algebra.Order.Ring.Ordering.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/02-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/03-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/04-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/05-TauCeti.Algebra.Polynomial.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/06-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-checker01-run01/07-TauCeti.FieldTheory.RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/summary.json",
+      "original_sha256": "06c53fc6175fac3f57ca7fb23077fc6dca94bf8386c94584d9d6b243cedaceac",
+      "export_sha256": "451557c9791a5a41ea644b9b104d09ac1a78983ea3008b82bb4694546fda22fa",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stdout.log",
+      "original_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9",
+      "export_sha256": "c94df5089b688a8f26449ee4b0104fe26e5257678d68312cb1388b2a307145c9",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stdout.log",
+      "original_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221",
+      "export_sha256": "8724ce3c67926df0b736d631e8324a9b6e3016cb5955a55943310493df60e221",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stdout.log",
+      "original_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4",
+      "export_sha256": "d294309f42b9dbac66b5d06ab8f0d84591abbb478bd40ed6c4aa1de8618d53d4",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stdout.log",
+      "original_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff",
+      "export_sha256": "1ee99a6bc213ded8b53168e7e8025b05f36c256c21bb194df49917ae760a6dff",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/05-RealClosureOddFactorAxioms.stdout.log",
+      "original_sha256": "7dea2360d7f6f57939604782c5aaf2fefe3b35ea1962c44e00232e9f9b51ced8",
+      "export_sha256": "7dea2360d7f6f57939604782c5aaf2fefe3b35ea1962c44e00232e9f9b51ced8",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stdout.log",
+      "original_sha256": "e3482b2240ef2f17d5d63fab1a04a5aa83afbecea0725629e3640222b5a2e0ba",
+      "export_sha256": "e3482b2240ef2f17d5d63fab1a04a5aa83afbecea0725629e3640222b5a2e0ba",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stdout.log",
+      "original_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2",
+      "export_sha256": "c5a0dbfb48f5b9b86d20cd9120f93495103619695e81f891c192cf7032d508e2",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/01-RealClosureOrderingAdaptersAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/02-RealClosureIntermediateFieldAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/03-RealClosureOrderExtensionAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/04-RealClosurePolynomialConeAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/05-RealClosureOddFactorAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/06-RealClosureOddExtensionAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/realclosure-axioms01-run01/07-RealClosureBasicAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged."
+    },
+    {
+      "file": "verification/ROOT-REALCLOSURE-AXIOM-AUDIT01.json",
+      "original_sha256": "48bd4029aac82b61dfe7f7565d20ab95f1ac264baf5cc74469fc6bd549cb0f49",
+      "export_sha256": "48bd4029aac82b61dfe7f7565d20ab95f1ac264baf5cc74469fc6bd549cb0f49",
+      "normalization": "None; exact receipt."
+    },
+    {
+      "file": "verification/REALCLOSURE-INDEPENDENT-VERIFICATION.json",
+      "original_sha256": "5feee30f5f016ea0afa81c02e52a23cb4b241d715e07095017f00822643339e8",
+      "export_sha256": "5feee30f5f016ea0afa81c02e52a23cb4b241d715e07095017f00822643339e8",
+      "normalization": "None; exact receipt."
+    },
+    {
+      "file": "verification/realclosure-entry/Hilbert17RealClosure.json",
+      "original_sha256": "6b0b0ceba6760f599192742a70306847506bf70a92ccf860158d44e35f69b3ea",
+      "export_sha256": "5e5381960a9f0011e695c3edbc2e25118e84b1016063b0fadf4ec249990e545d",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "scope": "Individual combined-entry job only, extracted from a mixed batch; unrelated jobs excluded."
+    },
+    {
+      "file": "verification/realclosure-entry/Hilbert17RealClosure.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "scope": "Individual combined-entry job only, extracted from a mixed batch; unrelated jobs excluded."
+    },
+    {
+      "file": "verification/realclosure-entry/Hilbert17RealClosure.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace prefix replaced by <build-workspace>; other text unchanged.",
+      "scope": "Individual combined-entry job only, extracted from a mixed batch; unrelated jobs excluded."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+TauCeti.RealClosure.weightedSquares.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommSemiring L] (f : K →+* L) : Submonoid L
+'TauCeti.RealClosure.weightedSquares' depends on axioms: [propext]
+TauCeti.RealClosure.mem_weightedSquares.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommSemiring L] (f : K →+* L) {x : L} :
+  x ∈ TauCeti.RealClosure.weightedSquares f ↔ ∃ a, 0 ≤ a ∧ ∃ y, x = f a * y ^ 2
+'TauCeti.RealClosure.mem_weightedSquares' depends on axioms: [propext]
+TauCeti.RealClosure.extensionCone.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommSemiring L] (f : K →+* L) : Subsemiring L
+'TauCeti.RealClosure.extensionCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.weightedSquares_subset.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] (f : K →+* L) :
+  ↑(TauCeti.RealClosure.weightedSquares f) ⊆ ↑(TauCeti.RealClosure.extensionCone f)
+'TauCeti.RealClosure.extensionCone.weightedSquares_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.le_iff.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommSemiring L] (f : K →+* L) {S : Subsemiring L} :
+  TauCeti.RealClosure.extensionCone f ≤ S ↔ ↑(TauCeti.RealClosure.weightedSquares f) ⊆ ↑S
+'TauCeti.RealClosure.extensionCone.le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.induction.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommSemiring L] (f : K →+* L) {motive : (x : L) → x ∈ TauCeti.RealClosure.extensionCone f → Prop}
+  (mem : ∀ (x : L) (hx : x ∈ TauCeti.RealClosure.weightedSquares f), motive x ⋯) (zero : motive 0 ⋯)
+  (add :
+    ∀ (x y : L) (hx : x ∈ TauCeti.RealClosure.extensionCone f) (hy : y ∈ TauCeti.RealClosure.extensionCone f),
+      motive x hx → motive y hy → motive (x + y) ⋯)
+  {x : L} (hx : x ∈ TauCeti.RealClosure.extensionCone f) : motive x hx
+'TauCeti.RealClosure.extensionCone.induction' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.mul_self_mem.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] (f : K →+* L) (x : L) :
+  x * x ∈ TauCeti.RealClosure.extensionCone f
+'TauCeti.RealClosure.extensionCone.mul_self_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.map_mem_of_nonneg.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] (f : K →+* L) {x : K} (hx : 0 ≤ x) :
+  f x ∈ TauCeti.RealClosure.extensionCone f
+'TauCeti.RealClosure.extensionCone.map_mem_of_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.map_mem_comp.{u_1, u_2, u_3} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] {M : Type u_3} [CommSemiring M] (f : K →+* L) (g : L →+* M)
+  {x : L} (hx : x ∈ TauCeti.RealClosure.extensionCone f) : g x ∈ TauCeti.RealClosure.extensionCone (g.comp f)
+'TauCeti.RealClosure.extensionCone.map_mem_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.map_mem.{u_1, u_2, u_3} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] {M : Type u_3} [CommSemiring M] [Algebra K L] [Algebra K M]
+  (f : L →ₐ[K] M) {x : L} (hx : x ∈ TauCeti.RealClosure.extensionCone (algebraMap K L)) :
+  f x ∈ TauCeti.RealClosure.extensionCone (algebraMap K M)
+'TauCeti.RealClosure.extensionCone.map_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.map_nonneg.{u_1, u_2, u_3} {K : Type u_1} {L : Type u_2} [CommSemiring K]
+  [PartialOrder K] [IsOrderedRing K] [CommSemiring L] {M : Type u_3} [AddCommMonoid M] [Preorder M]
+  [IsOrderedAddMonoid M] (f : K →+* L) (g : L →+ M) (hg : ∀ (a : K), 0 ≤ a → ∀ (y : L), 0 ≤ g (f a * y ^ 2)) {x : L}
+  (hx : x ∈ TauCeti.RealClosure.extensionCone f) : 0 ≤ g x
+'TauCeti.RealClosure.extensionCone.map_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.nonneg.{u_1, u_2} {K : Type u_1} {L : Type u_2} [CommSemiring K] [PartialOrder K]
+  [IsOrderedRing K] [CommRing L] [LinearOrder L] [IsOrderedRing L] (f : K →+* L) (hf : Monotone ⇑f) {x : L}
+  (hx : x ∈ TauCeti.RealClosure.extensionCone f) : 0 ≤ x
+'TauCeti.RealClosure.extensionCone.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.exists_linearOrder_iff.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [PartialOrder K] [IsOrderedRing K] [Field L] (f : K →+* L) :
+  (∃ o, IsStrictOrderedRing L ∧ StrictMono ⇑f) ↔ -1 ∉ TauCeti.RealClosure.extensionCone f
+'TauCeti.RealClosure.extensionCone.exists_linearOrder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.extensionCone.neg_one_notMem_quadraticAlgebra.{u_1} {K : Type u_1} [CommRing K] [LinearOrder K]
+  [IsOrderedRing K] [Nontrivial K] {a : K} (ha : 0 ≤ a) :
+  -1 ∉ TauCeti.RealClosure.extensionCone (algebraMap K (QuadraticAlgebra K a 0))
+'TauCeti.RealClosure.extensionCone.neg_one_notMem_quadraticAlgebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.quadratic_nonsquare_condition.{u_1} {K : Type u_1} [Field K] {a : K} [h : Fact ¬IsSquare a] :
+  Fact (∀ (r : K), r ^ 2 ≠ a + 0 * r)
+'TauCeti.RealClosure.quadratic_nonsquare_condition' depends on axioms: [propext, Quot.sound]
+QuadraticAlgebra.exists_linearOrder.{u_1} {K : Type u_1} [Field K] [LinearOrder K] [IsStrictOrderedRing K] {a : K}
+  (ha : 0 ≤ a) [Fact ¬IsSquare a] :
+  ∃ o, IsStrictOrderedRing (QuadraticAlgebra K a 0) ∧ StrictMono ⇑(algebraMap K (QuadraticAlgebra K a 0))
+'QuadraticAlgebra.exists_linearOrder' depends on axioms: [propext, Classical.choice, Quot.sound]

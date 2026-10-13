@@ -15,3 +15,7 @@ Date: 2026-10-13. **Full Hilbert 17 remains unproved.**
 [evidence-manifest.json](evidence-manifest.json) records original and exported SHA256 hashes. In ordinary exported logs and summaries, the original build-workspace prefix is replaced by `<build-workspace>`; outcomes and remaining text are unchanged. These historical command paths are not runnable package instructions. The root axiom receipt is copied byte-for-byte and retains historical log references; the corresponding logs are under `proof-axioms02-run01/` here.
 
 No compiled artifacts, cache, credentials, execution drivers, or private research notes are included. The artifact hashes in the source manifest identify the checked originals but do not distribute them.
+
+## Later verified real-closure prerequisite
+
+Seven additional modules have passed compilation, selected same-kernel replay, and a 47-declaration axiom audit. See [REALCLOSURE-STATUS.md](REALCLOSURE-STATUS.md). The initial ten-module facts above remain unchanged; full Hilbert 17 still requires unverified polynomial-sign transfer.

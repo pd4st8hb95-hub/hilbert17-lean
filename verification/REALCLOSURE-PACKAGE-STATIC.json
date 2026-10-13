@@ -1,0 +1,23 @@
+{
+  "status": "STATIC_OVERLAY_PASS",
+  "scope": "Local delta validation only; root entry compiler receipt recorded separately. Published baseline and frozen baseline package not edited.",
+  "base_commit": "74fc30318953d567691b4b89e153df890fdab28c",
+  "new_verified_lean_modules": 7,
+  "baseline_lean_files_in_delta": 0,
+  "entrypoint_compile": "PASS",
+  "prospective_replacements": [
+    "lakefile.toml",
+    "README.md",
+    "THIRD_PARTY.md",
+    "verification/STATUS.md"
+  ],
+  "notes": [
+    "All seven source hashes match verified copies",
+    "All imports resolve in baseline-plus-delta overlay or Mathlib",
+    "All local documentation links resolve in overlay",
+    "Pinned dependency requirement unchanged",
+    "No uncompiled transfer source included",
+    "Every configured Lake library root names an existing source module"
+  ],
+  "unchanged_historical_evidence_reused_from_base": 7
+}

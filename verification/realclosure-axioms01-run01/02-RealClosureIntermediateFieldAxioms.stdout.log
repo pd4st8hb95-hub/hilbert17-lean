@@ -1,0 +1,80 @@
+TauCeti.RealClosure.OrderedIntermediateField.{u_1, u_2} (K : Type u_1) (L : Type u_2) [Field K] [LinearOrder K]
+  [Field L] [Algebra K L] : Type u_2
+'TauCeti.RealClosure.OrderedIntermediateField' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (F : IntermediateField K L) [LinearOrder ↥F]
+  [IsOrderedRing ↥F] [IsOrderedModule K ↥F] : TauCeti.RealClosure.OrderedIntermediateField K L
+'TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.mem_nonneg_ofIntermediateField.{u_1, u_2} {K : Type u_1} {L : Type u_2}
+  [Field K] [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (F : IntermediateField K L) [LinearOrder ↥F]
+  [IsOrderedRing ↥F] [IsOrderedModule K ↥F] (x : ↥F) :
+  ↑x ∈ (TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField F).nonneg ↔ 0 ≤ x
+'TauCeti.RealClosure.OrderedIntermediateField.mem_nonneg_ofIntermediateField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.toIntermediateField_ofIntermediateField.{u_1, u_2} {K : Type u_1}
+  {L : Type u_2} [Field K] [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (F : IntermediateField K L)
+  [LinearOrder ↥F] [IsOrderedRing ↥F] [IsOrderedModule K ↥F] :
+  (TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField F).toIntermediateField = F
+'TauCeti.RealClosure.OrderedIntermediateField.toIntermediateField_ofIntermediateField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.le_iff.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K] [LinearOrder K]
+  [Field L] [Algebra K L] (P Q : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  P ≤ Q ↔ P.toIntermediateField ≤ Q.toIntermediateField ∧ P.nonneg ≤ Q.nonneg
+'TauCeti.RealClosure.OrderedIntermediateField.le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.preordering.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  RingPreordering ↥P.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.preordering' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.mem_preordering.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L)
+  (x : ↥P.toIntermediateField) : x ∈ P.preordering ↔ ↑x ∈ P.nonneg
+'TauCeti.RealClosure.OrderedIntermediateField.mem_preordering' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.linearOrder.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  LinearOrder ↥P.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.linearOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.isStrictOrderedRing.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  IsStrictOrderedRing ↥P.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.isStrictOrderedRing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.nonneg_iff.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L)
+  (x : ↥P.toIntermediateField) : 0 ≤ x ↔ ↑x ∈ P.nonneg
+'TauCeti.RealClosure.OrderedIntermediateField.nonneg_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.algebraMap_strictMono.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  StrictMono ⇑(algebraMap K ↥P.toIntermediateField)
+'TauCeti.RealClosure.OrderedIntermediateField.algebraMap_strictMono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField_toIntermediateField.{u_1, u_2} {K : Type u_1}
+  {L : Type u_2} [Field K] [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L]
+  (P : TauCeti.RealClosure.OrderedIntermediateField K L) :
+  TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField P.toIntermediateField = P
+'TauCeti.RealClosure.OrderedIntermediateField.ofIntermediateField_toIntermediateField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.exists_isMax.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] : ∃ P, IsMax P
+'TauCeti.RealClosure.OrderedIntermediateField.exists_isMax' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.exists_le_mem.{u_1, u_2, u_3} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L)
+  {E : Type u_3} [Field E] [LinearOrder E] [IsOrderedRing E] [Algebra K E] [Algebra (↥P.toIntermediateField) E]
+  [IsScalarTower K (↥P.toIntermediateField) E] [IsOrderedModule (↥P.toIntermediateField) E]
+  (f : E →ₐ[↥P.toIntermediateField] L) : ∃ Q, P ≤ Q ∧ ∀ (x : E), f x ∈ Q.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.exists_le_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+TauCeti.RealClosure.OrderedIntermediateField.mem_of_isMax.{u_1, u_2, u_3} {K : Type u_1} {L : Type u_2} [Field K]
+  [LinearOrder K] [IsOrderedRing K] [Field L] [Algebra K L] (P : TauCeti.RealClosure.OrderedIntermediateField K L)
+  (hP : IsMax P) {E : Type u_3} [Field E] [LinearOrder E] [IsOrderedRing E] [Algebra K E]
+  [Algebra (↥P.toIntermediateField) E] [IsScalarTower K (↥P.toIntermediateField) E]
+  [IsOrderedModule (↥P.toIntermediateField) E] (f : E →ₐ[↥P.toIntermediateField] L) (x : E) :
+  f x ∈ P.toIntermediateField
+'TauCeti.RealClosure.OrderedIntermediateField.mem_of_isMax' depends on axioms: [propext, Classical.choice, Quot.sound]

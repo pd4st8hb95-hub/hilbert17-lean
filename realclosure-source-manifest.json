@@ -1,0 +1,91 @@
+{
+  "scope": "Seven byte-identical verified real-closure backport sources. Separate from the frozen ten-module baseline.",
+  "target_lean": "v4.32.1",
+  "target_mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "modules": [
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "file": "TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+      "sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "3e27418bf1c401ed5540f08e0c6e5e202eaaf1a2",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+      "file": "TauCeti/Algebra/Polynomial/OddDegreeFactor.lean",
+      "sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "0f293eced6e88e9bd8800d8cc429891768927919",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/OddDegreeFactor.lean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Basic",
+      "file": "TauCeti/FieldTheory/RealClosure/Basic.lean",
+      "sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "de5cf9e820d57520e5b2834efa8e82a1ef221f31",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/Basic.lean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+      "file": "TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+      "sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "37f856bff8249997abe5b1ebc1a1ff66394f169a",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OddExtension.lean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+      "file": "TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+      "sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "7819047025785752e2d90f6f1003b2e30d476136",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OrderExtension.lean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+      "file": "TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+      "sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "13f17f30084c5ef2cac3733858245df4d791d606",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+      "file": "TauCeti/FieldTheory/RealClosure/PolynomialCone.lean",
+      "sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d",
+      "compile_status": "PASS",
+      "replay_status": "PASS",
+      "compile_receipt": "verification/realclosure-compile02-run01/summary.json",
+      "replay_receipt": "verification/realclosure-checker01-run01/summary.json",
+      "upstream_git_blob": "d43064cce224a22027432d7f9fe0ab92fa7de446",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/PolynomialCone.lean"
+    }
+  ],
+  "selected_axiom_declarations": 47,
+  "entrypoint": {
+    "file": "Hilbert17RealClosure.lean",
+    "sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f",
+    "status": "COMPILE_PASS",
+    "compile_receipt": "verification/realclosure-entry/Hilbert17RealClosure.json"
+  }
+}

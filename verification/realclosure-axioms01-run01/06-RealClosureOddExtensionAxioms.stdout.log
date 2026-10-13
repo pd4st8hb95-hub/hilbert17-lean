@@ -1,0 +1,8 @@
+TauCeti.RealClosure.extensionCone.neg_one_notMem_adjoinRoot.{u_1} {K : Type u_1} [Field K] [LinearOrder K]
+  [IsStrictOrderedRing K] (p : Polynomial K) (hodd : Odd p.natDegree) :
+  -1 ∉ TauCeti.RealClosure.extensionCone (algebraMap K (AdjoinRoot p))
+'TauCeti.RealClosure.extensionCone.neg_one_notMem_adjoinRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdjoinRoot.exists_linearOrder.{u_1} {K : Type u_1} [Field K] [LinearOrder K] [IsStrictOrderedRing K] (p : Polynomial K)
+  [Fact (Irreducible p)] (hodd : Odd p.natDegree) :
+  ∃ o, IsStrictOrderedRing (AdjoinRoot p) ∧ StrictMono ⇑(algebraMap K (AdjoinRoot p))
+'AdjoinRoot.exists_linearOrder' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,16 @@
+{
+  "version": "1.2.0",
+  "packagesDir": ".lake/packages",
+  "packages": [
+    {"name": "plausible", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../plausible"},
+    {"name": "LeanSearchClient", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../LeanSearchClient"},
+    {"name": "importGraph", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../importGraph"},
+    {"name": "proofwidgets", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../proofwidgets"},
+    {"name": "aesop", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../aesop"},
+    {"name": "Qq", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../Qq"},
+    {"name": "batteries", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../batteries"}
+  ],
+  "name": "mathlib",
+  "lakeDir": ".lake",
+  "fixedToolchain": true
+}

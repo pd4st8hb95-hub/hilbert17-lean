@@ -1,0 +1,30 @@
+{
+  "status": "STATIC_ENVIRONMENT_FIX_TESTS_PASS",
+  "actual_failure_reproduced": true,
+  "strict_path_functions_AST_unchanged": true,
+  "isolated_environment_omits_both_path_keys": true,
+  "predicted_unset_environment_validates": true,
+  "predicted_environment_not_yet_observed": true,
+  "lean_lake_checker_execution": "NONE",
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+    "bytes": 18571,
+    "sha256": "77635f04d0a0fba8506c0d655f1778b4a5882d1958821d32417a9e18fee1b786"
+  },
+  "observed_failed_probe": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stdout.log",
+    "sha256": "14ad4ba40c395aa9194fb4af21cb80f2cc693ead16731c852db434fc0ed45c7f"
+  },
+  "validated_expected_module_paths": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/mathlib/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean"
+  ]
+}

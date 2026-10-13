@@ -1,0 +1,36 @@
+{
+  "purpose": "Preserve exact replay driver used by failed environment-probe run vendor-fresh01 before narrow environment fix",
+  "original_path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+  "historical_copy": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/historical-drivers/vendor-fresh01/guarded_vendor_fresh_replay.py",
+    "bytes": 18297,
+    "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+  },
+  "failed_run_files": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.json",
+      "bytes": 1006,
+      "sha256": "0835b91a7983e546b0639c300318f9d8bfd9230e6a08e431439998c213ee6e9e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.memory.jsonl",
+      "bytes": 175,
+      "sha256": "87af54802326ca8acb3b108d558bce6a3b636cfee39c7ea0dc40f194d39d6c1b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stdout.log",
+      "bytes": 4918,
+      "sha256": "14ad4ba40c395aa9194fb4af21cb80f2cc693ead16731c852db434fc0ed45c7f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/summary.json",
+      "bytes": 4277,
+      "sha256": "c17ba95601763e46288ff67236b334b3c05f5e9a41f72be0282909a21af56a43"
+    }
+  ]
+}

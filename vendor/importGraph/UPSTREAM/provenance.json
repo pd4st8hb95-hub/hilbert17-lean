@@ -1,0 +1,13 @@
+{
+  "package": "importGraph",
+  "url": "https://github.com/leanprover-community/import-graph",
+  "commit": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+  "tree_url": "https://github.com/leanprover-community/import-graph/tree/7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+  "source_module_count": 10,
+  "physical_lines": 548,
+  "all_lean_sources_match_upstream_git_blobs": true,
+  "preserved_metadata": [
+    "LICENSE",
+    "lean-toolchain"
+  ]
+}

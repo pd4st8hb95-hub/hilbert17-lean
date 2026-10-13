@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "scope": "Final documentary claims checked against terminal source/replay receipts, acceptance audit, independent terminal reviews, and archive/compression receipts. Virtual-overlay relative links resolve before parent application. No Lean/Lake executed and no frozen workspace inputs edited.",
+  "files": [
+    {
+      "path": "hilbert17-vendor-doc-drafts-20261013/README.md",
+      "destination": "README.md",
+      "bytes": 12108,
+      "sha256": "80de609864d8dfc854a8010ec037530a59bea71ee231ca57fc340414fd0ac5af"
+    },
+    {
+      "path": "hilbert17-vendor-doc-drafts-20261013/README.zh-CN.md",
+      "destination": "README.zh-CN.md",
+      "bytes": 12670,
+      "sha256": "49c9d931ad1ecf68a0cf7e3ea04607d8f7945c99a904bb4dce0053e67b7329f8"
+    },
+    {
+      "path": "hilbert17-vendor-doc-drafts-20261013/THIRD_PARTY.md",
+      "destination": "THIRD_PARTY.md",
+      "bytes": 9636,
+      "sha256": "a63c81cbdd4ce4610990af99dd95b8cc15bf504a4bbed51f80f30696f2c2ab6f"
+    },
+    {
+      "path": "hilbert17-vendor-doc-drafts-20261013/VERIFICATION.md",
+      "destination": "verification/vendored-source-20261013/VERIFICATION.md",
+      "bytes": 16456,
+      "sha256": "fe0ee3b43e0b5e20306285f7c420e64fd6f42b00c14d83a592b3930571f94a2e"
+    }
+  ],
+  "local_links": [
+    {
+      "from": "README.md",
+      "target": "README.zh-CN.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "PROOF-MAP.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "TRANSFER-GLUE.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/FINAL-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "checks/FinalTargetContract.lean",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "THIRD_PARTY.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/VERIFICATION.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/source-build-plan01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/source-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/vendor-acceptance-audit01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/vendor-fresh-plan02.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/vendored-source-20261013/replay-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "scripts/build_serial.py",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "vendor-source-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "vendor/README.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "VENDORED-BUILD-CONFIG.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "THIRD_PARTY.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "vendor-asset-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/FAILED-ATTEMPTS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/REALCLOSURE-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/TRANSFER-FAILED-ATTEMPTS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/PORTABLE-LAKE-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "EXTERNAL-INGREDIENT-PROOFS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.md",
+      "target": "verification/FRESH-REPLAY-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/VERIFICATION.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/source-build-plan01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/source-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/vendor-acceptance-audit01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/vendor-fresh-plan02.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/vendored-source-20261013/replay-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/FINAL-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/FINAL-INDEPENDENT-AUDIT01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/FINAL-REPLAY-INDEPENDENT-AUDIT01.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "checks/FinalTargetContract.lean",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "checks/BoundaryAcceptance.lean",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "scripts/build_serial.py",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "vendor-source-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "vendor/README.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "VENDORED-BUILD-CONFIG.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "THIRD_PARTY.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "vendor-asset-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "THIRD_PARTY.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "PROOF-MAP.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/PORTABLE-LAKE-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "EXTERNAL-INGREDIENT-PROOFS.md",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "EXTERNAL-INGREDIENT-MAP.json",
+      "resolved": true
+    },
+    {
+      "from": "README.zh-CN.md",
+      "target": "verification/FRESH-REPLAY-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "upstream/TauCeti-Real.lean",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "PROVENANCE.json",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "licenses/mathlib-Apache-2.0.txt",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "provenance/realclosure.json",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "licenses/TauCeti-realclosure-Apache-2.0.txt",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "provenance/upstream-transfer-source-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "licenses/TauCeti-transfer-Apache-2.0.txt",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/mathlib/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/mathlib/CITATION.md",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/batteries/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/Qq/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/aesop/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/proofwidgets/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/importGraph/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/LeanSearchClient/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/plausible/LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor-source-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "VENDORED-BUILD-CONFIG.md",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor-asset-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "verification/vendored-source-20261013/VERIFICATION.md",
+      "resolved": true
+    },
+    {
+      "from": "THIRD_PARTY.md",
+      "target": "vendor/proofwidgets/UPSTREAM/react-fast-compare-v3.2.2.LICENSE",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "checks/FinalTargetContract.lean",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "checks/BoundaryAcceptance.lean",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/reviews/INDEPENDENT-SOURCE01-AND-REPLAY-PREFLIGHT.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source-build-plan01.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/vendor-acceptance-audit01.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/reviews/INDEPENDENT-VENDOR-FRESH02-TERMINAL-REVIEW.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/vendor-fresh-plan02.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/vendor-fresh-plan02-inventory.json.gz",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/compressed-replay-inventories-audit.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/replay-summary.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/tools/guarded_vendor_fresh_replay.py",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/failed-vendor-fresh01/summary.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/reviews/independent-replay-path-fix-review02.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/tools/historical/guarded_vendor_fresh_replay.py",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/tools/historical/vendor-fresh-plan01.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/tools/historical/vendor-fresh-plan01-inventory.json.gz",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "vendor-source-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "VENDORED-BUILD-CONFIG.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "THIRD_PARTY.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "vendor-asset-manifest.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source01-vendor-fresh02.tar.gz",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source01-vendor-fresh02.verification.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source01-vendor-fresh02.members.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source01-vendor-fresh02.members.sha256",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/source01-vendor-fresh02.verification.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/vendored-source-20261013/tools/historical/archive-label-correction.json",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/FINAL-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/PORTABLE-LAKE-STATUS.md",
+      "resolved": true
+    },
+    {
+      "from": "verification/vendored-source-20261013/VERIFICATION.md",
+      "target": "verification/FRESH-REPLAY-STATUS.md",
+      "resolved": true
+    }
+  ],
+  "resolved_link_count": 99,
+  "evidence_pins_rehashed": true
+}

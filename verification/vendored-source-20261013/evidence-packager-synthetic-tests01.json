@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "archive_sha256": "2cefcbc9affd5aaddde987af285ece90346a2c87262d5b0c0834269d110b3651",
+      "name": "deterministic_archive_full_extraction_failure_and_sample_preservation",
+      "payload_members": 12,
+      "status": "PASS"
+    },
+    {
+      "name": "running_source_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "running_replay_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "symlink_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unclassified_file_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "binary_disguised_as_log_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unsafe_archive_member_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent_evidence_drift_rejected_partial_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_cli_lock_and_receipt_binding",
+      "status": "PASS"
+    }
+  ],
+  "lean_lake_execution": "NONE",
+  "packager": {
+    "bytes": 14996,
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/package_terminal_run_evidence.py",
+    "sha256": "443ed8575f92c64c06f62ed2cfc452a8ba1a45e1a72b3b96afd88923e02bbffa"
+  },
+  "real_run_logs_packaged": false,
+  "schema": "hilbert17-evidence-packager-synthetic-tests-v1",
+  "status": "ALL_SYNTHETIC_TESTS_PASS",
+  "test_script": {
+    "bytes": 8732,
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/test_evidence_packager.py",
+    "sha256": "a0785398f00ed8c80c5a2a0f7c73ce837095114fdff74eb4f446b91b2731fc1f"
+  }
+}

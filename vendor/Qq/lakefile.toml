@@ -1,0 +1,11 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+name = "Qq"
+defaultTargets = ["Qq"]
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[lean_lib]]
+name = "Qq"
+roots = ["Qq"]
+globs = ["Qq.*"]

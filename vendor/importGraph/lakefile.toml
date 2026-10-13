@@ -1,0 +1,15 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+# Cli is required only by excluded command-line executables, not this source slice.
+name = "importGraph"
+description = "Vendored import-graph library source slice for hilbert17"
+license = "Apache-2.0"
+licenseFiles = ["LICENSE"]
+defaultTargets = ["ImportGraph"]
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[lean_lib]]
+name = "ImportGraph"
+roots = ["ImportGraph"]
+globs = ["ImportGraph.+"]

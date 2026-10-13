@@ -1,0 +1,232 @@
+{
+  "schema": "hilbert17-independent-vendor-fresh02-terminal-review-v1",
+  "reviewed_utc": "2026-10-13T19:55:56.696736+00:00",
+  "verdict": "PASS_TERMINAL_FRESH_REPLAY_EVIDENCE",
+  "errors": [],
+  "final_result": {
+    "source_build_modules": 3136,
+    "source_build_status": "ALL_FROM_SOURCE_OFFLINE_LAKE_BUILDS_PASS",
+    "replay_status": "ALL_IMPORTED_SAFE_CONSTANTS_FRESH_REPLAY_PASS",
+    "replay_module": "BoundaryAcceptance",
+    "replay_seconds": 515.567,
+    "replay_exit_code": 0,
+    "replay_started_utc": "2026-10-13T19:43:38.741545+00:00",
+    "replay_ended_utc": "2026-10-13T19:52:14.308849+00:00",
+    "terminal_summary_ended_utc": "2026-10-13T19:52:25.342991+00:00",
+    "peak_physical_used_percent": 25.603546286349847,
+    "all_pinned_inputs_and_artifacts_unchanged": true,
+    "scope": "Same-Lean-kernel fresh replay of all safe, non-partial constants in BoundaryAcceptance and its entire imported environment. Declared axioms are accepted by replay and audited separately. Unsafe/partial code and an independent external checker are not covered. The installed Lean/Std/Lake runtime remains trusted, not bootstrapped from source.",
+    "selected_project_vendor_modules_in_replay_closure": 3131,
+    "built_modules_outside_entry_replay_closure": [
+      "FinalTargetContract",
+      "Hilbert17",
+      "Hilbert17Full",
+      "Hilbert17RealClosure",
+      "TargetSanity"
+    ]
+  },
+  "independent_checks": {
+    "inventory_counts": {
+      "workspace_replay_artifacts": 12253,
+      "builtin_replay_artifacts": 9726,
+      "all_build_outputs": 43322,
+      "source_config_asset_inputs": 3374
+    },
+    "inventory_bytes": {
+      "workspace_replay_artifacts": 2376344408,
+      "builtin_replay_artifacts": 2077329080
+    },
+    "all_pins_rehashed": true,
+    "all_replay_artifact_membership_exact": true,
+    "all_source_build_output_membership_exact": true,
+    "plan02_inventory_same_as01_except_creation_time": true,
+    "plan02_diff_scope": [
+      "runner pin",
+      "inventory pin"
+    ],
+    "only_runner_semantic_fix": "Omit initially empty LEAN_PATH and LEAN_SRC_PATH from the isolated environment; strict validators and guards unchanged",
+    "probe_and_sampled_checker_search_paths_agree": true,
+    "search_path_roots": [
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/batteries/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/Qq/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/aesop/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/proofwidgets/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/importGraph/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/LeanSearchClient/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/plausible/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/mathlib/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/.lake/build/lib/lean",
+      "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean"
+    ],
+    "memory_process_samples": [
+      {
+        "label": "lake-environment",
+        "samples": 1,
+        "samples_with_checker": 0,
+        "observed_checker_pids": [],
+        "max_sample_interval_seconds": 0,
+        "peak_physical_used_percent": 18.121810123501593,
+        "last_elapsed_seconds": 0.004
+      },
+      {
+        "label": "BoundaryAcceptance-fresh",
+        "samples": 1027,
+        "samples_with_checker": 1026,
+        "observed_checker_pids": [
+          11
+        ],
+        "max_sample_interval_seconds": 0.5260000000000105,
+        "peak_physical_used_percent": 25.603546286349847,
+        "last_elapsed_seconds": 515.067
+      }
+    ],
+    "unique_files_rehashed": 56447,
+    "check_seconds": 8.3
+  },
+  "preserved_unsuccessful_attempt": {
+    "run": "vendor-fresh01",
+    "status": "ABORTED_OR_INPUT_DRIFT",
+    "error": "RuntimeError: Empty search-path entry refused",
+    "checker_started": false,
+    "all_original_five_run_file_pins_match": true,
+    "historical_runner_matches_original_plan": true,
+    "interpretation": "Stopped during strict environment validation before checker launch because empty initial path variables produced trailing path separators. This is not a mathematical proof failure. The later run uses a newly pinned plan and narrow environment-only correction."
+  },
+  "publication_evidence_pins": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan02.json",
+      "bytes": 5545,
+      "sha256": "6233bed408866c19a425870588c83329fe8464d4ba99c8c2bc97ba6c4ab439b2"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan02-inventory.json",
+      "bytes": 18470801,
+      "sha256": "d7098596b683564cb823f9371ae520c5869a5da11f1140bc7d9933554f2a5dbd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan01.json",
+      "bytes": 5545,
+      "sha256": "db331c954583a5886a4b108b48d30e8f244df2e9e1180afe980b60a3a6475bb3"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan01-inventory.json",
+      "bytes": 18470801,
+      "sha256": "828859744d1a5a9f8b8b1abbe0bea613fc61a3d6b50e9f6ef50f42c9c2500adb"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-acceptance-audit01.json",
+      "bytes": 66226,
+      "sha256": "dedd575f4975cd2533cb0250c436ddbbc0a3831fd1fc7b7aa0a7dd59d363ae16"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+      "bytes": 18571,
+      "sha256": "77635f04d0a0fba8506c0d655f1778b4a5882d1958821d32417a9e18fee1b786"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/historical-drivers/vendor-fresh01/guarded_vendor_fresh_replay.py",
+      "bytes": 18297,
+      "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/historical-drivers/vendor-fresh01/preservation.json",
+      "bytes": 1790,
+      "sha256": "5577f2770f0b50ea549aec7ca37c5e37266115c6b557de01c5b5f026eb170b05"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/summary.json",
+      "bytes": 2664,
+      "sha256": "437f5a86d3b5b46822f9a15672a7128109940bc17d1450309835a7e7e27b039d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/completed.jsonl",
+      "bytes": 11687255,
+      "sha256": "70fa1437db8b60f875adc618275625f6372018d0e14093fce147c4ce592fa52b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/source-build-plan01.json",
+      "bytes": 2853563,
+      "sha256": "c7d5a8da7b42d45d2ab1c59944268ad8416b168f9b71be63f906345617e05460"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.json",
+      "bytes": 3482,
+      "sha256": "d01fa8b7ad9bad18de08067e3e0eb3d6a673eccc87011365dae44990816c21bc"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.memory.jsonl",
+      "bytes": 183076,
+      "sha256": "3c21168adfd8d5e4932e0f787dbe0b81cee2bf73e7b54a9c3bee125f3d6f81b3"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stdout.log",
+      "bytes": 42,
+      "sha256": "1f18cd70358f4e1959a8f5e0923c39abe003d84b76283e33dac17c129bc7526a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/lake-environment.json",
+      "bytes": 1006,
+      "sha256": "c1bbba049969a43616ba3f7a4d4a70cba9b27dd156cc08241a217758e06c111a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/lake-environment.memory.jsonl",
+      "bytes": 175,
+      "sha256": "2326808ec0ae7c6de6e7563a7bc226e798c0c4c769e10cab20494c48c00f6f0a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/lake-environment.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/lake-environment.stdout.log",
+      "bytes": 4916,
+      "sha256": "f1efe573f6e7e43dd35bfcc70fe50069f3c42f63f0d52818ed2e659ce9d655ac"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/summary.json",
+      "bytes": 10260,
+      "sha256": "c1a42cc27a79908d17f0f1692c4ba0f6debee066fcc15aacee0f6d2fcb2efb75"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.json",
+      "bytes": 1006,
+      "sha256": "0835b91a7983e546b0639c300318f9d8bfd9230e6a08e431439998c213ee6e9e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.memory.jsonl",
+      "bytes": 175,
+      "sha256": "87af54802326ca8acb3b108d558bce6a3b636cfee39c7ea0dc40f194d39d6c1b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stdout.log",
+      "bytes": 4918,
+      "sha256": "14ad4ba40c395aa9194fb4af21cb80f2cc693ead16731c852db434fc0ed45c7f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/summary.json",
+      "bytes": 4277,
+      "sha256": "c17ba95601763e46288ff67236b334b3c05f5e9a41f72be0282909a21af56a43"
+    }
+  ],
+  "limitations": [
+    "This is an independent read-only evidence/identity review; no compiler or checker was rerun by this reviewer.",
+    "Fresh replay uses the same Lean kernel implementation. It is not an independently implemented verifier and does not rebuild the compiler/runtime.",
+    "Replay covers safe, non-partial constants in BoundaryAcceptance and its entire imported environment. It does not cover unsafe/partial code or the five built modules outside that entry closure.",
+    "The replay accepts declared axioms. The separately bound acceptance audit reports fourteen theorem types and fourteen recursive axiom footprints, all limited to propext, Classical.choice and Quot.sound.",
+    "Process identity and memory checks are sampled every approximately 0.5 seconds. Sampled checker PID/environment evidence and the unchanged guard do not prove absence of all unobserved short-lived processes.",
+    "Receipt/log hashes bind the exact preserved evidence. They do not provide an independent OS/kernel or cryptographic-attestation trust root.",
+    "The network-denial statement is grounded in the reviewed child-only libseccomp guard and its run receipt, not an independent network-traffic measurement.",
+    "Documentation or publication packaging may be added later; source/config/assets and compiled outputs verified here must remain bound to the frozen input/output inventories."
+  ]
+}

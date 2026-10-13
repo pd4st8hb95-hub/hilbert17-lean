@@ -1,0 +1,97 @@
+{
+  "status": "ABORTED_OR_INPUT_DRIFT",
+  "started_utc": "2026-10-13T19:37:31.539457+00:00",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan01.json",
+  "plan_sha256": "db331c954583a5886a4b108b48d30e8f244df2e9e1180afe980b60a3a6475bb3",
+  "source_build": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/summary.json",
+    "bytes": 2664,
+    "sha256": "437f5a86d3b5b46822f9a15672a7128109940bc17d1450309835a7e7e27b039d"
+  },
+  "inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan01-inventory.json",
+    "bytes": 18470801,
+    "sha256": "828859744d1a5a9f8b8b1abbe0bea613fc61a3d6b50e9f6ef50f42c9c2500adb"
+  },
+  "scope": "Same-Lean-kernel fresh replay of all safe, non-partial constants in BoundaryAcceptance and its entire imported environment. Declared axioms are accepted by replay and audited separately. Unsafe/partial code and an independent external checker are not covered. The installed Lean/Std/Lake runtime remains trusted, not bootstrapped from source.",
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/tmp",
+    "XDG_CACHE_HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/cache",
+    "XDG_CONFIG_HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/xdg",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "",
+    "LEAN_SRC_PATH": "",
+    "LEAN_SYSROOT": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux",
+    "LEAN_NUM_THREADS": "1",
+    "LAKE_NO_CACHE": "1",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/cache",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_CONFIG_NOSYSTEM": "1"
+  },
+  "jobs": [
+    {
+      "label": "lake-environment",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+        "--no-cache",
+        "--no-build",
+        "env"
+      ],
+      "started_utc": "2026-10-13T19:37:31.539923+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T19:37:31.539913+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8353588,
+        "used_percent": 18.154299198119475
+      },
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stderr.log",
+      "status": "PASS",
+      "pid": 5,
+      "exit_code": 0,
+      "ended_utc": "2026-10-13T19:37:32.044102+00:00",
+      "seconds": 0.504,
+      "peak_physical_used_percent": 18.158766935762948,
+      "observed_checker_pids": [],
+      "observed_checker_environment": null
+    }
+  ],
+  "network_syscalls_denied": {
+    "socket": 41,
+    "socketpair": 53,
+    "socketcall": -10060,
+    "connect": 42,
+    "bind": 49,
+    "listen": 50,
+    "accept": 43,
+    "accept4": 288,
+    "sendto": 44,
+    "sendmsg": 46,
+    "sendmmsg": 307,
+    "recvfrom": 45,
+    "recvmsg": 47,
+    "recvmmsg": 299,
+    "io_uring_setup": 425,
+    "io_uring_enter": 426,
+    "io_uring_register": 427
+  },
+  "memory_policy": {
+    "sample_seconds": 0.5,
+    "refuse_percent": 60,
+    "term_percent": 70,
+    "kill_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "wall_time_limit": null,
+  "checker_memory_cap": "No -M CLI support; physical-memory guard applies",
+  "guard_scope": "Process/memory observations sampled every0.5s, not exhaustive; network denial is enforced in child kernel filter",
+  "error": "RuntimeError: Empty search-path entry refused",
+  "all_pinned_inputs_and_artifacts_unchanged": true,
+  "ended_utc": "2026-10-13T19:37:40.565903+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "STATIC_PREFLIGHT_AND_SECCOMP_SELF_TEST_PASS",
+  "plan_sha256": "c7d5a8da7b42d45d2ab1c59944268ad8416b168f9b71be63f906345617e05460",
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_source_build.py",
+    "bytes": 25366,
+    "sha256": "21d5de3cafe8c9387f76fc47ce490dc1f1d0b2a99c034d3ef686610079462d74"
+  },
+  "source_config_pin_validation": "PASS",
+  "fresh_build_artifact_count": 0,
+  "network_filter_test": {
+    "checks": [
+      {
+        "call": "socket",
+        "errno": 1
+      },
+      {
+        "call": "socketpair",
+        "errno": 1
+      }
+    ],
+    "grandchild": "GRANDCHILD_EPERM"
+  },
+  "syscalls": {
+    "socket": 41,
+    "socketpair": 53,
+    "socketcall": -10060,
+    "connect": 42,
+    "bind": 49,
+    "listen": 50,
+    "accept": 43,
+    "accept4": 288,
+    "sendto": 44,
+    "sendmsg": 46,
+    "sendmmsg": 307,
+    "recvfrom": 45,
+    "recvmsg": 47,
+    "recvmmsg": 299,
+    "io_uring_setup": 425,
+    "io_uring_enter": 426,
+    "io_uring_register": 427
+  },
+  "lean_lake_execution": "NONE",
+  "utc": "2026-10-13T15:52:13.905418+00:00"
+}

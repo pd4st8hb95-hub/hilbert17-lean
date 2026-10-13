@@ -1,0 +1,12 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+name = "plausible"
+version = "0.1.0"
+defaultTargets = ["Plausible"]
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[lean_lib]]
+name = "Plausible"
+roots = ["Plausible"]
+globs = ["Plausible.*"]

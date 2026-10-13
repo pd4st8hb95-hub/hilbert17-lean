@@ -1,0 +1,37 @@
+{
+  "schema": "hilbert17-replay-inventory-compression-audit-v1",
+  "status": "BOTH_INVENTORIES_DETERMINISTIC_AND_ROUNDTRIP_VERIFIED",
+  "scope": "JSON hash inventories only; no compiled artifacts copied",
+  "inventories": [
+    {
+      "source_name": "vendor-fresh-plan01-inventory.json",
+      "original_bytes": 18470801,
+      "original_sha256": "828859744d1a5a9f8b8b1abbe0bea613fc61a3d6b50e9f6ef50f42c9c2500adb",
+      "compressed_path": "tools/historical/vendor-fresh-plan01-inventory.json.gz",
+      "compressed_bytes": 3328890,
+      "compressed_sha256": "0f0fa6d57889d6a098fda0ef705e7ec2f5fc9bf6b938056367817de9ef7266ad",
+      "decompressed_bytes": 18470801,
+      "decompressed_sha256": "828859744d1a5a9f8b8b1abbe0bea613fc61a3d6b50e9f6ef50f42c9c2500adb",
+      "roundtrip_verified": true,
+      "repeat_compression_byte_identical": true,
+      "gzip_filename": "",
+      "gzip_mtime": 0,
+      "compression_level": 9
+    },
+    {
+      "source_name": "vendor-fresh-plan02-inventory.json",
+      "original_bytes": 18470801,
+      "original_sha256": "d7098596b683564cb823f9371ae520c5869a5da11f1140bc7d9933554f2a5dbd",
+      "compressed_path": "vendor-fresh-plan02-inventory.json.gz",
+      "compressed_bytes": 3328886,
+      "compressed_sha256": "a09e6add1efafd1b43c2a76c1b44342bb6d97c51847e1bb99f9b31ffd84d32eb",
+      "decompressed_bytes": 18470801,
+      "decompressed_sha256": "d7098596b683564cb823f9371ae520c5869a5da11f1140bc7d9933554f2a5dbd",
+      "roundtrip_verified": true,
+      "repeat_compression_byte_identical": true,
+      "gzip_filename": "",
+      "gzip_mtime": 0,
+      "compression_level": 9
+    }
+  ]
+}

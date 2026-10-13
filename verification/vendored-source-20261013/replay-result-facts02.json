@@ -1,0 +1,117 @@
+{
+  "scope": "Review terminal receipts and hashes of plan dependencies; no Lean/Lake execution and no independent full 4.45 GB artifact-inventory rehash.",
+  "status": "PASS",
+  "source_summary": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/summary.json",
+    "bytes": 2664,
+    "sha256": "437f5a86d3b5b46822f9a15672a7128109940bc17d1450309835a7e7e27b039d"
+  },
+  "replay_plan": {
+    "path": "hilbert17-vendor-tools-20261013/vendor-fresh-plan02.json",
+    "bytes": 5545,
+    "sha256": "6233bed408866c19a425870588c83329fe8464d4ba99c8c2bc97ba6c4ab439b2"
+  },
+  "replay_summary": {
+    "path": "hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/summary.json",
+    "bytes": 10260,
+    "sha256": "c1a42cc27a79908d17f0f1692c4ba0f6debee066fcc15aacee0f6d2fcb2efb75"
+  },
+  "replay_inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan02-inventory.json",
+    "bytes": 18470801,
+    "sha256": "d7098596b683564cb823f9371ae520c5869a5da11f1140bc7d9933554f2a5dbd"
+  },
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+    "bytes": 18571,
+    "sha256": "77635f04d0a0fba8506c0d655f1778b4a5882d1958821d32417a9e18fee1b786"
+  },
+  "checker_job": {
+    "label": "BoundaryAcceptance-fresh",
+    "command": [
+      "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+      "--dir",
+      "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+      "--no-cache",
+      "--no-build",
+      "env",
+      "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+      "--fresh",
+      "-v",
+      "BoundaryAcceptance"
+    ],
+    "started_utc": "2026-10-13T19:43:38.741545+00:00",
+    "memory_before": {
+      "utc": "2026-10-13T19:43:38.741480+00:00",
+      "total_kib": 10206508,
+      "available_kib": 8355828,
+      "used_percent": 18.132352416712944
+    },
+    "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stdout.log",
+    "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stderr.log",
+    "status": "PASS",
+    "pid": 8,
+    "exit_code": 0,
+    "ended_utc": "2026-10-13T19:52:14.308849+00:00",
+    "seconds": 515.567,
+    "peak_physical_used_percent": 25.603546286349847,
+    "observed_checker_pids": [
+      11
+    ],
+    "observed_checker_environment": {
+      "LEAN_PATH": [
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/batteries/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/Qq/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/aesop/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/proofwidgets/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/importGraph/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/LeanSearchClient/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/plausible/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/mathlib/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/.lake/build/lib/lean",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean"
+      ],
+      "LEAN_SRC_PATH": [
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/batteries",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/Qq",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/aesop",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/proofwidgets",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/importGraph",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/LeanSearchClient",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/plausible",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/mathlib",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/checks",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/src/lean/lake"
+      ],
+      "LEAN_SYSROOT": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux",
+      "LEAN_NUM_THREADS": "1"
+    }
+  },
+  "all_pinned_inputs_and_artifacts_unchanged_reported": true,
+  "memory_samples": 1027,
+  "files": [
+    {
+      "path": "hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.json",
+      "bytes": 3482,
+      "sha256": "d01fa8b7ad9bad18de08067e3e0eb3d6a673eccc87011365dae44990816c21bc"
+    },
+    {
+      "path": "hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stdout.log",
+      "bytes": 42,
+      "sha256": "1f18cd70358f4e1959a8f5e0923c39abe003d84b76283e33dac17c129bc7526a"
+    },
+    {
+      "path": "hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh02/BoundaryAcceptance-fresh.memory.jsonl",
+      "bytes": 183076,
+      "sha256": "3c21168adfd8d5e4932e0f787dbe0b81cee2bf73e7b54a9c3bee125f3d6f81b3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "package": "LeanSearchClient",
+  "url": "https://github.com/leanprover-community/LeanSearchClient",
+  "commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+  "tree_url": "https://github.com/leanprover-community/LeanSearchClient/tree/c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+  "source_module_count": 4,
+  "physical_lines": 821,
+  "all_lean_sources_match_upstream_git_blobs": true,
+  "preserved_metadata": [
+    "LICENSE",
+    "lean-toolchain"
+  ]
+}

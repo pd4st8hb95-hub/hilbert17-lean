@@ -1,0 +1,267 @@
+{
+  "format_version": 1,
+  "scope": "Non-Lean compile-time include_str assets and preserved upstream widget metadata, with the single documented Penrose headless adaptation. No npm, Lean, Lake, or package build was invoked by this vendoring step.",
+  "assets": [
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/commutative.dsl",
+      "sha256": "b80d2dc18c1f00cf0bc11f52312c9eb43e1b2640b06b5e261281d4f1a5ca4a4d",
+      "bytes": 1838,
+      "included_by": [
+        "Mathlib.Tactic.Widget.CommDiag"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "da1dc364aece82daaadadb7a58a225850a4a87ad"
+    },
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/commutative.sty",
+      "sha256": "7586edc626e03f29eb6efca985d8039a2ae4776b51de2bf5ac0062e7be53414f",
+      "bytes": 10817,
+      "included_by": [
+        "Mathlib.Tactic.Widget.CommDiag"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "ba276afa7f29cc3738ad70464972064dc29ca979"
+    },
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/monoidal.dsl",
+      "sha256": "41da4fe6bf36ac29571f5317fa8b420a48661c2815779e00cfae64ab8fefa704",
+      "bytes": 308,
+      "included_by": [
+        "Mathlib.Tactic.Widget.StringDiagram"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "a1607d5cf25b778773f833c4c30b6065c2b6f1a9"
+    },
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/monoidal.sty",
+      "sha256": "6fd7cb6bd0988e30cd12de761a18880b301dc1ec2a302af88fe9bdf6869036ff",
+      "bytes": 2345,
+      "included_by": [
+        "Mathlib.Tactic.Widget.StringDiagram"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "2b4d0a819079048d525979eda3733ea9efbd5a77"
+    },
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/square.sub",
+      "sha256": "9684f4d73bcc79924b2954a70a01c906bf5086e3376ba67bd1acb239c249f4bd",
+      "bytes": 537,
+      "included_by": [
+        "Mathlib.Tactic.Widget.CommDiag"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "d49a10ce64a0ef56e330b1fff919692d7d3b670e"
+    },
+    {
+      "package": "mathlib",
+      "path": "widget/src/penrose/triangle.sub",
+      "sha256": "5bcc2e21c6369251450dd6fdad0b4c2673078dfda282633c4c46f16096ae05a7",
+      "bytes": 465,
+      "included_by": [
+        "Mathlib.Tactic.Widget.CommDiag"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "61a619fe9fec00c0a3d39b3f85944c1db98508f3"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/RefreshComponent.js",
+      "sha256": "9beb5c9fe92bdf55d622ecb9d74e8ad4d51e01dc305d33cb10ca1c6316789f36",
+      "bytes": 1552,
+      "included_by": [
+        "ProofWidgets.Component.RefreshComponent"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "3a639d64132ecd255c733331df8add4bd03b4757"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/exprPresentation.js",
+      "sha256": "c273723560834d73f1be4469c2210def90565489a147982e882a5b75928a8769",
+      "bytes": 2339,
+      "included_by": [
+        "ProofWidgets.Presentation.Expr"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "08bd5efe09d55a905680ed2456b84b0a25a19090"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/filterDetails.js",
+      "sha256": "d5a0f80c58c0be1db7d9d2b05d21623f869d20cc12297a42d1b1109d13e989c3",
+      "bytes": 1554,
+      "included_by": [
+        "ProofWidgets.Component.FilterDetails"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "c3528933a9d1712156c406337dccef3b1620c0a3"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/htmlDisplay.js",
+      "sha256": "3a14e3454e065fec370942833afd1932b5ab46f9d34a7c8a499f1636c239bee8",
+      "bytes": 1133,
+      "included_by": [
+        "ProofWidgets.Component.HtmlDisplay"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "ca7c3e32fe145edef50e15dd166e94391c6550d3"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/htmlDisplayPanel.js",
+      "sha256": "77405258d1bb34a22686da6261bc5f7380fd7b7727349920046de48f0c485160",
+      "bytes": 1256,
+      "included_by": [
+        "ProofWidgets.Component.HtmlDisplay"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "a4c2d584072fe0de0383c3f278f428da668bf987"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/interactiveExpr.js",
+      "sha256": "18c98c245d6a8d9f93125926426c5d87ec5f03a0fa597c76a7ac7a8cb253825b",
+      "bytes": 441,
+      "included_by": [
+        "ProofWidgets.Component.Basic"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "10e7911ce62c855985df0bc3c5ee7cbeb0476dbc"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/makeEditLink.js",
+      "sha256": "ad9b49e146566a1552956e89525ff3784660da014027d06e9e5eda6df88ceb4d",
+      "bytes": 427,
+      "included_by": [
+        "ProofWidgets.Component.MakeEditLink"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "e42dfcffd7323c954465c16e3d9d754dbce6b1b9"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/ofRpcMethod.js",
+      "sha256": "19e76563c4a0512c3fde763c5067bd66c1c513604531c4f9b0daf1ddfdebd827",
+      "bytes": 3837,
+      "included_by": [
+        "ProofWidgets.Component.OfRpcMethod"
+      ],
+      "provenance": "Exact tracked upstream git blob",
+      "upstream_git_blob_sha1": "997739028e8362afc13c3ce9c9a59d3ef1e697b6"
+    },
+    {
+      "package": "proofwidgets",
+      "path": "widget/js/penroseDisplay.js",
+      "sha256": "71c72528911486c0ae5119e16b34f56e51f9d3fdbd72f850b97cedda0fbf3af4",
+      "bytes": 481,
+      "included_by": [
+        "ProofWidgets.Component.PenroseDiagram"
+      ],
+      "provenance": "Original Apache-2.0 headless adapter written for this offline archive; not upstream ProofWidgets JavaScript",
+      "original_cached_sha256": "9364a664c95a5ab19e8f92920b0a43fe4e1904053e9f38a64085f4a0124d66f6",
+      "original_cached_bytes": 2663470,
+      "adaptation_reason": "Avoid redistribution of a generated Penrose/MathJax bundle whose complete third-party license-text coverage has not been independently verified. The default export returns an explanatory editor message; diagram rendering is disabled. No Lean source bytes were altered.",
+      "original_cached_copy_retained_outside_publication": true,
+      "upstream_export_contract": "Exactly one default React component export, confirmed from upstream widget/src/penroseDisplay.tsx and cached JS export list",
+      "fresh_build_required": true,
+      "original_upstream_git_blob_sha1": "59d753a6508b643aad8636e4afdc3df9d5d52596",
+      "original_is_tracked_upstream": true,
+      "original_upstream_commit": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "provenance_correction": "The replaced original JavaScript bundle is tracked upstream and was verified byte-identical to that commit; it is not an untracked cache artifact. Its tracked status does not resolve the separate bundled-third-party notice audit."
+    }
+  ],
+  "preserved_widget_metadata": [
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/package.json",
+      "sha256": "92389771927d5841d9ef85e021888e1aca6a077f8398e41d7f788ea41e6d82fc",
+      "bytes": 1620
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/package-lock.json",
+      "sha256": "3850e21b0823d6200db6da336ce1bd17a463db97ce314585ae47ed81a7327a7d",
+      "bytes": 172140
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/rollup.config.js",
+      "sha256": "9e064b23ff20e6b6b66291fdf72f8dfa6a8a4f153348ab9007ecd3702c6ea982",
+      "bytes": 2980
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/tsconfig.json",
+      "sha256": "e0cd1f543c5136a397660b565c5150624fda8f508c9e4d82d429418f8a581ff1",
+      "bytes": 631
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/RefreshComponent.tsx",
+      "sha256": "c523c220725537ef462812bec6f3045460d0ad3b0046bba24ce30a4d066aa932",
+      "bytes": 1554
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/exprPresentation.tsx",
+      "sha256": "c850185dd3a67f624575ea89ce8ddcd200c997818cf1603d129250e7bdcc0758",
+      "bytes": 2904
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/filterDetails.tsx",
+      "sha256": "0a396e0192ee004445b14711cc1157412fbbbf3fe4842b111f7eee1e3796b5dc",
+      "bytes": 957
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/htmlDisplay.tsx",
+      "sha256": "6dfd93adb3bb27e3208ee7c5c20514e370ff90a2644db4a14783643bb7cf6fed",
+      "bytes": 2871
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/htmlDisplayPanel.tsx",
+      "sha256": "14caa49810f6cf19d5b3ad4baac883576c772bfb55cbfd941e5dc53d5903f36c",
+      "bytes": 348
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/interactiveExpr.tsx",
+      "sha256": "1643efe9d32ad710ee734033ad0c5be1f48200db7689c3dd1d770828fadcb8bc",
+      "bytes": 576
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/makeEditLink.tsx",
+      "sha256": "997debd694c9acee861fa7a880d881896369e10380ffa7e36427df2cc7508b09",
+      "bytes": 796
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/ofRpcMethod.tsx",
+      "sha256": "c1ab68e303ce0b867cc315abe04e95728509ee3b3f2650b94ca00523ad739353",
+      "bytes": 2493
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/penroseDisplay.tsx",
+      "sha256": "c09b7b00bf1ce5675bd79f3fb22d8e6a76d67856ea11ca958d2a55398b694869",
+      "bytes": 2746
+    },
+    {
+      "path": "vendor/proofwidgets/UPSTREAM/widget/src/cancellable.ts",
+      "sha256": "ad7a4679696c0214e9f073ee149d8d8d61eff3fc981f73286f84bedcad2e964a",
+      "bytes": 1383
+    }
+  ],
+  "license_note": "Each package LICENSE and all upstream Lean source headers are preserved. Generated penroseDisplay.js was replaced with an original headless adapter; the excluded third-party bundle is not distributed. Small widget JS keeps React and Lean Infoview as external imports. ofRpcMethod.js also bundles react-fast-compare 3.2.2; its upstream MIT license is preserved separately. Upstream TS source headers are retained as attribution. This is a targeted provenance/notice audit, not a legal certification.",
+  "third_party_notices": [
+    {
+      "name": "react-fast-compare",
+      "version": "3.2.2",
+      "reason": "Bundled by ProofWidgets ofRpcMethod.js; upstream ofRpcMethod.tsx explicitly imports this package",
+      "license": "MIT",
+      "path": "vendor/proofwidgets/UPSTREAM/react-fast-compare-v3.2.2.LICENSE",
+      "repository": "https://github.com/FormidableLabs/react-fast-compare",
+      "commit": "c306521de14d24169077ae1859be373ff21a8818",
+      "license_url": "https://github.com/FormidableLabs/react-fast-compare/blob/c306521de14d24169077ae1859be373ff21a8818/LICENSE",
+      "license_git_blob_sha1": "948353952d26ae0cd55c997a7a1430dda25c402c",
+      "sha256": "1e187eec147d04bcbb3b7aef9f3b0ea82228961fa7d390d3efb9e57751dbe0cb"
+    }
+  ]
+}

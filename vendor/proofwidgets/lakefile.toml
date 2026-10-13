@@ -1,0 +1,13 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+# Required include_str JavaScript assets are checked-in, hashed input files.
+# No widgetJsAll target, npm process, release fetch, or update hook is defined.
+name = "proofwidgets"
+defaultTargets = ["ProofWidgets"]
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[lean_lib]]
+name = "ProofWidgets"
+roots = ["ProofWidgets"]
+globs = ["ProofWidgets.+"]

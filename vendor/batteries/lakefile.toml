@@ -1,0 +1,14 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+name = "batteries"
+defaultTargets = ["Batteries"]
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[leanOptions]
+linter.missingDocs = true
+
+[[lean_lib]]
+name = "Batteries"
+roots = ["Batteries"]
+globs = ["Batteries.+"]

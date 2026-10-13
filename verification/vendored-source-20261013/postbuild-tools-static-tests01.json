@@ -1,0 +1,47 @@
+{
+  "status": "STATIC_TESTS_PASS_NOT_EXECUTED",
+  "files": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+      "bytes": 18297,
+      "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/make_vendor_fresh_replay_plan.py",
+      "bytes": 6230,
+      "sha256": "ea4d50ef7fa65103c576e7d332d46d5eca5995fd3eaa219fbc484f6a52059a1d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/extract_vendor_acceptance_audit.py",
+      "bytes": 8515,
+      "sha256": "daa0d60f27d77c289ecef1f9d12d4162e6b4577f648fefeaffedfc48f6f31f23"
+    }
+  ],
+  "prior_log_extraction": [
+    {
+      "module": "FinalTargetContract",
+      "types": 7,
+      "axioms": 7,
+      "log": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+        "bytes": 64281,
+        "sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+      }
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "types": 7,
+      "axioms": 7,
+      "log": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+        "bytes": 7311,
+        "sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+      }
+    }
+  ],
+  "external_module_path_rejected": true,
+  "incomplete_source_build_rejected": true,
+  "lean_lake_checker_execution": "NONE",
+  "development_fix": "Accept optional @ in pretty-printed theorem names; all fourteen extraction tests pass",
+  "utc": "2026-10-13T16:35:38.397153+00:00"
+}

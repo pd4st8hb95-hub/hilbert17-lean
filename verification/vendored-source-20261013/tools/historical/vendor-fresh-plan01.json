@@ -1,0 +1,111 @@
+{
+  "schema": "hilbert17-vendored-fresh-replay-v1",
+  "status": "READY_FOR_ROOT_REVIEW",
+  "workspace": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+  "module": "BoundaryAcceptance",
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+    "bytes": 18297,
+    "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+  },
+  "generator": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/make_vendor_fresh_replay_plan.py",
+    "bytes": 6230,
+    "sha256": "ea4d50ef7fa65103c576e7d332d46d5eca5995fd3eaa219fbc484f6a52059a1d"
+  },
+  "guard": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_source_build.py",
+    "bytes": 25366,
+    "sha256": "21d5de3cafe8c9387f76fc47ce490dc1f1d0b2a99c034d3ef686610079462d74"
+  },
+  "source_plan": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/source-build-plan01.json",
+    "bytes": 2853563,
+    "sha256": "c7d5a8da7b42d45d2ab1c59944268ad8416b168f9b71be63f906345617e05460"
+  },
+  "source_receipt": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/summary.json",
+    "bytes": 2664,
+    "sha256": "437f5a86d3b5b46822f9a15672a7128109940bc17d1450309835a7e7e27b039d"
+  },
+  "source_journal": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/completed.jsonl",
+    "bytes": 11687255,
+    "sha256": "70fa1437db8b60f875adc618275625f6372018d0e14093fce147c4ce592fa52b"
+  },
+  "lake": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "bytes": 13840,
+    "sha256": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3"
+  },
+  "checker": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "bytes": 50592,
+    "sha256": "c7c51e296d28dd443ed60f9414feef41253ede89dea76dbb2adde29768c3ed5f"
+  },
+  "libseccomp": {
+    "path": "/usr/lib/x86_64-linux-gnu/libseccomp.so.2.6.0",
+    "bytes": 182560,
+    "sha256": "c851a2378b4ef3a42ada5f8ff1604ad38f6bbcafa2aeea3f6680160d628c2f27"
+  },
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/checks/BoundaryAcceptance.lean",
+    "bytes": 4314,
+    "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+  },
+  "entry_olean": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean",
+    "bytes": 62560,
+    "sha256": "e91838b89e8cb248350423f9562d65937378481f5038838bcbb08ecb7b0e5352"
+  },
+  "inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan01-inventory.json",
+    "bytes": 18470801,
+    "sha256": "828859744d1a5a9f8b8b1abbe0bea613fc61a3d6b50e9f6ef50f42c9c2500adb"
+  },
+  "workspace_artifact_roots": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/batteries/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/mathlib/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013/vendor/proofwidgets/.lake/build/lib/lean"
+  ],
+  "builtin_artifact_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean",
+  "shared_lock": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/runtime-compile.lock",
+  "environment_probe": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+    "--no-cache",
+    "--no-build",
+    "env"
+  ],
+  "replay_command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+    "--no-cache",
+    "--no-build",
+    "env",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "--fresh",
+    "-v",
+    "BoundaryAcceptance"
+  ],
+  "inventory_counts": {
+    "workspace_replay_artifacts": 12253,
+    "builtin_replay_artifacts": 9726,
+    "all_build_outputs": 43322,
+    "source_config_asset_inputs": 3374
+  },
+  "inventory_bytes": {
+    "workspace_replay_artifacts": 2376344408,
+    "builtin_replay_artifacts": 2077329080
+  },
+  "scope": "Same-Lean-kernel fresh replay of all safe, non-partial constants in BoundaryAcceptance and its entire imported environment. Declared axioms are accepted by replay and audited separately. Unsafe/partial code and an independent external checker are not covered. The installed Lean/Std/Lake runtime remains trusted, not bootstrapped from source.",
+  "relocation_policy": "Paths must match successful source-build evidence; relocating requires a separately frozen matching plan"
+}

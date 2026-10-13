@@ -1,0 +1,18 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+name = "aesop"
+defaultTargets = ["Aesop"]
+platformIndependent = true
+precompileModules = false
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[require]]
+name = "batteries"
+scope = "leanprover-community"
+path = "../batteries"
+
+[[lean_lib]]
+name = "Aesop"
+roots = ["Aesop"]
+globs = ["Aesop.*"]

@@ -1,0 +1,9 @@
+{
+  "status": "SUPERSEDED_ARCHIVE_LABEL_ONLY",
+  "reason": "First archive used the default replay prefix vendor-fresh01 for actual successful vendor-fresh02 bytes. Corrected archive uses vendor-fresh02; failed01 is preserved separately.",
+  "old_archive_sha256": "519bf465a666d51b51e96b23e505e138896ec8ec1346223d417505503463c7b0",
+  "corrected_archive_sha256": "e84222c0e5668edcc08732a0c8fbed44ba3c878fdf2a0355d8d818cfb43a902d",
+  "payload_files_equal_after_prefix_rename": true,
+  "payload_file_count": 25110,
+  "old_archive_retained_locally_not_duplicated_in_publication": true
+}

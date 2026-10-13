@@ -1,0 +1,10 @@
+{
+  "version": "1.2.0",
+  "packagesDir": ".lake/packages",
+  "packages": [
+    {"name": "batteries", "scope": "leanprover-community", "configFile": "lakefile.toml", "manifestFile": "lake-manifest.json", "inherited": false, "type": "path", "dir": "../batteries"}
+  ],
+  "name": "aesop",
+  "lakeDir": ".lake",
+  "fixedToolchain": false
+}

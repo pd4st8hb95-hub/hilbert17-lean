@@ -1,0 +1,66 @@
+{
+  "compiled_artifacts_included": false,
+  "excluded_file_count": 0,
+  "extraction_verification": {
+    "status": "ALL_MEMBERS_EXTRACTED_AND_SHA256_VERIFIED",
+    "verification_directory_removed": true,
+    "verified_members_including_manifest": 25111,
+    "verified_uncompressed_bytes_including_manifest": 33733034
+  },
+  "inputs_unchanged_after_packaging": true,
+  "max_archive_bytes": 90000000,
+  "outputs": {
+    "archive": {
+      "bytes": 5102009,
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/evidence-archives/source01-vendor-fresh02.tar.gz",
+      "sha256": "519bf465a666d51b51e96b23e505e138896ec8ec1346223d417505503463c7b0"
+    },
+    "inventory": {
+      "bytes": 5256048,
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/evidence-archives/source01-vendor-fresh02.members.json",
+      "sha256": "035cf149161e7b5bbe7b5eb41c353bf378bf80f971aab2b2b699840a4a4b8db2"
+    },
+    "sha256_inventory": {
+      "bytes": 3581180,
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/evidence-archives/source01-vendor-fresh02.members.sha256",
+      "sha256": "d6ce0d8403b7995fc6645828a6645912143f1b6a80471455bf48a9a99eebd515"
+    }
+  },
+  "packager": {
+    "bytes": 14996,
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/package_terminal_run_evidence.py",
+    "sha256": "443ed8575f92c64c06f62ed2cfc452a8ba1a45e1a72b3b96afd88923e02bbffa"
+  },
+  "payload_members": 25110,
+  "reproducibility_runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "zlib_compile": "1.3.2",
+    "zlib_runtime": "1.3.2"
+  },
+  "runs": [
+    {
+      "label": "source01",
+      "role": "source",
+      "status": "ALL_FROM_SOURCE_OFFLINE_LAKE_BUILDS_PASS",
+      "summary": {
+        "bytes": 2664,
+        "path": "source01/summary.json",
+        "sha256": "437f5a86d3b5b46822f9a15672a7128109940bc17d1450309835a7e7e27b039d"
+      }
+    },
+    {
+      "label": "vendor-fresh01",
+      "role": "replay",
+      "status": "ALL_IMPORTED_SAFE_CONSTANTS_FRESH_REPLAY_PASS",
+      "summary": {
+        "bytes": 10260,
+        "path": "vendor-fresh01/summary.json",
+        "sha256": "c1a42cc27a79908d17f0f1692c4ba0f6debee066fcc15aacee0f6d2fcb2efb75"
+      }
+    }
+  ],
+  "schema": "hilbert17-terminal-run-evidence-package-verification-v1",
+  "scope": "Complete preserved source/replay command logs, statuses, failure attempts, memory samples, journals, and input-verification receipts. No compiled artifacts or isolated home/temp/cache/config contents.",
+  "status": "PACKAGE_VERIFIED",
+  "verified_utc": "2026-10-13T19:54:31.190378+00:00"
+}

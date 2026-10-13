@@ -1,0 +1,61 @@
+{
+  "status": "ALL_FROM_SOURCE_OFFLINE_LAKE_BUILDS_PASS",
+  "started_utc": "2026-10-13T15:52:36.442970+00:00",
+  "plan_sha256": "c7d5a8da7b42d45d2ab1c59944268ad8416b168f9b71be63f906345617e05460",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/source-build-plan01.json",
+  "attempt": 1,
+  "completed_modules": 3136,
+  "total_modules": 3136,
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/tmp",
+    "XDG_CACHE_HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/cache",
+    "XDG_CONFIG_HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/xdg",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "",
+    "LEAN_SRC_PATH": "",
+    "LEAN_NUM_THREADS": "1",
+    "LAKE_NO_CACHE": "1",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/cache",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_CONFIG_NOSYSTEM": "1"
+  },
+  "network_filter": {
+    "scope": "Every Lake child and its descendants; host unchanged",
+    "action": "EPERM",
+    "syscalls": {
+      "socket": 41,
+      "socketpair": 53,
+      "socketcall": -10060,
+      "connect": 42,
+      "bind": 49,
+      "listen": 50,
+      "accept": 43,
+      "accept4": 288,
+      "sendto": 44,
+      "sendmsg": 46,
+      "sendmmsg": 307,
+      "recvfrom": 45,
+      "recvmsg": 47,
+      "recvmmsg": 299,
+      "io_uring_setup": 425,
+      "io_uring_enter": 426,
+      "io_uring_register": 427
+    }
+  },
+  "runtime_observation_scope": "0.5-second physical-memory/process samples; short-lived processes may not be observed",
+  "trusted_toolchain_scope": "Installed Lean/Std/Lake toolchain artifacts are reused; all 3136 project and external-package modules are rebuilt from source",
+  "current_module": "Hilbert17Full",
+  "current_index": 3135,
+  "last_command": {
+    "label": "final-up-to-date",
+    "status": "PASS",
+    "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/06274-final-up-to-date.stdout.log",
+    "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/runs/source01/attempt-001/06274-final-up-to-date.stderr.log"
+  },
+  "inputs_unchanged": true,
+  "ended_utc": "2026-10-13T19:33:12.689340+00:00"
+}

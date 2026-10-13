@@ -1,0 +1,48 @@
+{
+  "status": "STATIC_CHECKS_PASS",
+  "plan_sha256": "c7d5a8da7b42d45d2ab1c59944268ad8416b168f9b71be63f906345617e05460",
+  "checks": [
+    {
+      "name": "python_ast_parse",
+      "status": "PASS",
+      "detail": "Both frozen Python files parse; neither main nor any build/subprocess function called"
+    },
+    {
+      "name": "active_config_validation",
+      "status": "PASS",
+      "detail": "Eight local packages plus root meet actual frozen validator"
+    },
+    {
+      "name": "executable_and_generator_pins",
+      "status": "PASS",
+      "detail": "Current files match frozen SHA256 and size"
+    },
+    {
+      "name": "dag_counts_and_order",
+      "status": "PASS",
+      "detail": {
+        "aesop": 132,
+        "batteries": 78,
+        "importGraph": 10,
+        "LeanSearchClient": 4,
+        "mathlib": 2775,
+        "plausible": 13,
+        "proofwidgets": 13,
+        "Qq": 14,
+        "project": 97
+      }
+    },
+    {
+      "name": "resource_flag_parser",
+      "status": "PASS",
+      "detail": "Last split/combined flag wins, including forbidden override detection"
+    },
+    {
+      "name": "resume_unit_checks",
+      "status": "PASS",
+      "detail": "Exact-stem capture; valid prefix accepted; changed output and torn journal refused; only temporary synthetic files used"
+    }
+  ],
+  "lean_lake_execution": "NONE",
+  "frozen_inputs_modified": false
+}

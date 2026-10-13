@@ -1,0 +1,13 @@
+{
+  "package": "proofwidgets",
+  "url": "https://github.com/leanprover-community/ProofWidgets4",
+  "commit": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+  "tree_url": "https://github.com/leanprover-community/ProofWidgets4/tree/6e311e2a844da9b2cc3971187df2fe0066947b93",
+  "source_module_count": 13,
+  "physical_lines": 1455,
+  "all_lean_sources_match_upstream_git_blobs": true,
+  "preserved_metadata": [
+    "LICENSE",
+    "lean-toolchain"
+  ]
+}

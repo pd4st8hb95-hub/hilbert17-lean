@@ -1,0 +1,27 @@
+{
+  "status": "REPLAY_PLAN02_PIN_AND_SCOPE_VALIDATION_PASS",
+  "plan": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/vendor-fresh-plan02.json",
+    "bytes": 5545,
+    "sha256": "6233bed408866c19a425870588c83329fe8464d4ba99c8c2bc97ba6c4ab439b2"
+  },
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+    "bytes": 18571,
+    "sha256": "77635f04d0a0fba8506c0d655f1778b4a5882d1958821d32417a9e18fee1b786"
+  },
+  "changed_plan_fields": [
+    "runner",
+    "inventory"
+  ],
+  "changed_inventory_fields": [
+    "created_utc"
+  ],
+  "failed_run_files_preserved_unchanged": 5,
+  "old_driver_preserved": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/historical-drivers/vendor-fresh01/guarded_vendor_fresh_replay.py",
+    "bytes": 18297,
+    "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+  },
+  "lean_lake_checker_execution": "NONE"
+}

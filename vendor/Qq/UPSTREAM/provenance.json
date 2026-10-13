@@ -1,0 +1,13 @@
+{
+  "package": "Qq",
+  "url": "https://github.com/leanprover-community/quote4",
+  "commit": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+  "tree_url": "https://github.com/leanprover-community/quote4/tree/38d591e778f100aec9762bb582f9c7f55f50e9dc",
+  "source_module_count": 14,
+  "physical_lines": 2054,
+  "all_lean_sources_match_upstream_git_blobs": true,
+  "preserved_metadata": [
+    "LICENSE",
+    "lean-toolchain"
+  ]
+}

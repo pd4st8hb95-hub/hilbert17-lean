@@ -1,0 +1,28 @@
+{
+  "label": "lake-environment",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-vendored-20261013",
+    "--no-cache",
+    "--no-build",
+    "env"
+  ],
+  "started_utc": "2026-10-13T19:37:31.539923+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T19:37:31.539913+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8353588,
+    "used_percent": 18.154299198119475
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/replay-runs/vendor-fresh01/lake-environment.stderr.log",
+  "status": "PASS",
+  "pid": 5,
+  "exit_code": 0,
+  "ended_utc": "2026-10-13T19:37:32.044102+00:00",
+  "seconds": 0.504,
+  "peak_physical_used_percent": 18.158766935762948,
+  "observed_checker_pids": [],
+  "observed_checker_environment": null
+}

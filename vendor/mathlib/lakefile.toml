@@ -1,0 +1,60 @@
+# Offline source-slice adaptation. Original configuration is in UPSTREAM/.
+name = "mathlib"
+defaultTargets = ["Mathlib"]
+fixedToolchain = true
+platformIndependent = true
+restoreAllArtifacts = true
+enableArtifactCache = false
+preferReleaseBuild = false
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+
+[[require]]
+name = "batteries"
+scope = "leanprover-community"
+path = "../batteries"
+
+[[require]]
+name = "Qq"
+scope = "leanprover-community"
+path = "../Qq"
+
+[[require]]
+name = "aesop"
+scope = "leanprover-community"
+path = "../aesop"
+
+[[require]]
+name = "proofwidgets"
+scope = "leanprover-community"
+path = "../proofwidgets"
+
+[[require]]
+name = "importGraph"
+scope = "leanprover-community"
+path = "../importGraph"
+
+[[require]]
+name = "LeanSearchClient"
+scope = "leanprover-community"
+path = "../LeanSearchClient"
+
+[[require]]
+name = "plausible"
+scope = "leanprover-community"
+path = "../plausible"
+
+[[lean_lib]]
+name = "Mathlib"
+roots = ["Mathlib"]
+globs = ["Mathlib.+"]
+leanOptions = [
+  ["pp.unicode.fun", true],
+  ["autoImplicit", false],
+  ["maxSynthPendingDepth", 3],
+  ["weak.linter.mathlibStandardSet", true],
+  ["weak.linter.style.header", true],
+  ["weak.linter.checkInitImports", true],
+  ["weak.linter.allScriptsDocumented", true],
+  ["weak.linter.pythonStyle", true],
+  ["weak.linter.style.longFile", 1500]
+]

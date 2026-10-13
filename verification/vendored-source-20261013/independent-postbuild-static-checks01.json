@@ -1,0 +1,66 @@
+{
+  "status": "INDEPENDENT_STATIC_TESTS_PASS",
+  "files": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/guarded_vendor_fresh_replay.py",
+      "bytes": 18297,
+      "sha256": "d7bc29bf24bf5e9ad1d21a659e73ba414c4aa14397a1e7c39ba7100ab5f8ed43"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/make_vendor_fresh_replay_plan.py",
+      "bytes": 6230,
+      "sha256": "ea4d50ef7fa65103c576e7d332d46d5eca5995fd3eaa219fbc484f6a52059a1d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/extract_vendor_acceptance_audit.py",
+      "bytes": 8515,
+      "sha256": "daa0d60f27d77c289ecef1f9d12d4162e6b4577f648fefeaffedfc48f6f31f23"
+    }
+  ],
+  "checks": [
+    {
+      "name": "syntax_and_side_effect_scope",
+      "status": "PASS",
+      "detail": "All3 files AST-parse; no main, subprocess, generator, or toolchain invocation called"
+    },
+    {
+      "name": "search_path_validation",
+      "status": "PASS",
+      "detail": "Valid local+builtin environment accepted; external, duplicate, empty-entry, wrong-sysroot, external-source, and thread-count variants rejected"
+    },
+    {
+      "name": "incomplete_build_rejection",
+      "status": "PASS",
+      "detail": "Running source build refused before artifact reads"
+    },
+    {
+      "name": "artifact_inventory_membership",
+      "status": "PASS",
+      "detail": "Olean/public/private/server and IR retained; ilean intentionally outside replay-artifact subset; all symlinks rejected"
+    },
+    {
+      "name": "fourteen_type_axiom_extraction",
+      "status": "PASS",
+      "detail": [
+        {
+          "module": "FinalTargetContract",
+          "types": 7,
+          "axioms": 7
+        },
+        {
+          "module": "BoundaryAcceptance",
+          "types": 7,
+          "axioms": 7
+        }
+      ]
+    },
+    {
+      "name": "altered_log_rejection",
+      "status": "PASS",
+      "detail": "Injected sorryAx and mismatched displayed theorem names each rejected in both acceptance modules"
+    }
+  ],
+  "lean_lake_checker_execution": "NONE",
+  "replay_plan_generation": "NONE",
+  "frozen_workspace_modified": false
+}

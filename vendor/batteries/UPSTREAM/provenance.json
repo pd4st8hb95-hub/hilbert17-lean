@@ -1,0 +1,13 @@
+{
+  "package": "batteries",
+  "url": "https://github.com/leanprover-community/batteries",
+  "commit": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+  "tree_url": "https://github.com/leanprover-community/batteries/tree/023ce7d62a0531e22a5331e20b587817a80d49ff",
+  "source_module_count": 78,
+  "physical_lines": 14243,
+  "all_lean_sources_match_upstream_git_blobs": true,
+  "preserved_metadata": [
+    "LICENSE",
+    "lean-toolchain"
+  ]
+}

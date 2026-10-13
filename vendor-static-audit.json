@@ -1,0 +1,16 @@
+{
+  "scope": "Static source/asset audit only; no Lean/Lake compilation executed by dependency-source worker",
+  "configured_project_roots": 97,
+  "external_lean_modules": 3039,
+  "mathlib_lean_modules": 2775,
+  "other_dependency_lean_modules": 264,
+  "dependency_lean_physical_lines": 940477,
+  "all_dependency_lean_sha256_verified": true,
+  "all_dependency_lean_match_upstream_git_blobs": true,
+  "referenced_non_lean_assets": 15,
+  "exact_upstream_non_lean_assets": 14,
+  "original_headless_widget_adapters": 1,
+  "missing_non_toolchain_imports": [],
+  "copied_prebuilt_lean_artifacts": [],
+  "lean_validation_status": "Not run by this worker; fresh from-source compilation and final replay required after active config overlay."
+}

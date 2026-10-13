@@ -1,0 +1,10 @@
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+name = "LeanSearchClient"
+testDriver = "LeanSearchClientTest"
+defaultTargets = ["LeanSearchClient"]
+
+[[lean_lib]]
+name = "LeanSearchClient"
+
+[[lean_lib]]
+name = "LeanSearchClientTest"

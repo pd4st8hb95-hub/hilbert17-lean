@@ -1,0 +1,13 @@
+{
+  "status": "STATIC_PORTABLE_PLAN_MATCHES_FROZEN_BUILD",
+  "script": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-vendor-tools-20261013/portable-draft/scripts/build_serial.py",
+    "bytes": 11454,
+    "sha256": "5b508436fbbfc9d59f9a2fe195db40e37d164a328b7214673db5f3bd88fb7a4c"
+  },
+  "same_order_module_count": 3136,
+  "first_and_last_commands_checked": true,
+  "aggregate_targets_match": true,
+  "lean_lake_execution": "NONE",
+  "utc": "2026-10-13T16:38:50.304220+00:00"
+}

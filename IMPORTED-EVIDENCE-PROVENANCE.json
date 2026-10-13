@@ -1,0 +1,13 @@
+{
+  "base_commit": "45ccae6b6c1d4f1596b17db348b2084aefd3e7e2",
+  "base_tree": "22ae5e18b981b0aa31a9c2c57f57ee4f1c89e168",
+  "purpose": "Additional provenance and imported-environment replay evidence for the already published complete proof/Lake checkpoint. No mathematical source edit is planned.",
+  "status": "PASS_INGREDIENT_PROOF_MAPPING_AND_FRESH_IMPORTED_ENVIRONMENT_REPLAY",
+  "fresh_plan_sha256": "ce975bf5bb954b89403a64aba2c56d30071f9e69b744a59616b47f6f71b1e056",
+  "fresh_runner_sha256": "94fb6a03e4665c7e79edb22bfd0d06553e2b91b0d8ed9dc1b55e8a56a17ea6b5",
+  "pinned_toolchain": "leanprover/lean4:v4.32.1",
+  "pinned_mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "formal_assumption_scope": "The complete real target has no residual transfer, bibliographic, or real-closure-existence premise. Final recursive axioms are only propext/Classical.choice/Quot.sound. The additional same-kernel fresh replay checks the imported safe/non-partial environment but accepts declared axioms separately.",
+  "fresh_terminal_receipt_sha256": "a3bada02b3c9de6f1ba8c7874a6cceb6255f8d0333826cf9bd88110e337d1472",
+  "fresh_inventory_commitment": "verification/fresh-inputs/ARTIFACT-INVENTORY-COMMITMENT.json"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_FRESH_IMPORTED_ENVIRONMENT_REPLAY_AND_INDEPENDENT_INPUT_RECONCILIATION",
+  "base_proof_commit": "45ccae6b6c1d4f1596b17db348b2084aefd3e7e2",
+  "scope": "Lean same-kernel --fresh replay of BoundaryAcceptance and all safe, non-partial constants in its loaded imported environment, including the full final Hilbert17 proof chain and relevant imported Mathlib theorems. The checker accepts declared axioms; final theorem recursive-axiom audits remain separate. This is neither an external independent kernel nor a claim to replay all modules in the installed Mathlib repository or unsafe/partial code.",
+  "summary": {
+    "path": "hilbert17-20261013/verification/final-fresh-replay01-run01/summary.json",
+    "sha256": "a3bada02b3c9de6f1ba8c7874a6cceb6255f8d0333826cf9bd88110e337d1472"
+  },
+  "plan": {
+    "path": "hilbert17-20261013/fresh-replay-plan01.json",
+    "sha256": "ce975bf5bb954b89403a64aba2c56d30071f9e69b744a59616b47f6f71b1e056"
+  },
+  "checker": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "bytes": 50592,
+    "sha256": "c7c51e296d28dd443ed60f9414feef41253ede89dea76dbb2adde29768c3ed5f"
+  },
+  "exact_command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "--fresh",
+    "-v",
+    "BoundaryAcceptance"
+  ],
+  "exit_code": 0,
+  "stdout_exact": "replaying BoundaryAcceptance with --fresh",
+  "stderr_bytes": 0,
+  "seconds": 526.513,
+  "peak_sampled_physical_memory_percent": 26.123489052279194,
+  "independent_post_run_inventory_membership_and_hash_check": "PASS",
+  "available_search_path_artifact_files": 24091,
+  "available_search_path_artifact_bytes": 4863176336,
+  "inventory_note": "These are available search-path files, including unused files, not a count of replayed declarations or imported modules.",
+  "pinned_delivery_source_files": 97,
+  "pinned_configuration_files": 12,
+  "all_fixed_plan_pins_match": true,
+  "artifact_inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/portable-fresh-artifact-inventory01.json",
+    "bytes": 6553117,
+    "sha256": "d3874f0120dd7da2cad2141a3850dedc4556ec04bf8280131d59e502795f4539"
+  },
+  "portable_Lake_receipt": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/summary.json",
+    "bytes": 866415,
+    "sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+  },
+  "implementation_semantics_sources": [
+    {
+      "path": "recovery-20261013/runtime/lean-4.32.1-linux/src/lean/LeanChecker.lean",
+      "sha256": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f"
+    },
+    {
+      "path": "recovery-20261013/runtime/lean-4.32.1-linux/src/lean/Lean/Replay.lean",
+      "sha256": "3e1ea55d20db328f6d9d5321fa2946ca3011efc9ceb2c25ff19162842809a4a2"
+    }
+  ],
+  "implementation_semantics": "LeanChecker.replayFromFresh calls mkEmptyEnvironment.replay env.constants.map\u2081. Environment.replay filters unsafe/partial constants; constructors/recursors are compared to generated declarations; axiom declarations are accepted. Duplicate theorems with identical name/type/level parameters/all-list may reuse the already checked declaration.",
+  "final_axiom_basis": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

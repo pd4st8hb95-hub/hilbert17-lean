@@ -1,12 +1,14 @@
 # Hilbert seventeenth: proof map and provenance
 
-**Verification status: the exact full theorem is verified in the pinned
-runtime.** The end-to-end source assembly, expanded theorem types, recursive
-axiom lists, and all 97 selected local module replays passed the checks recorded
-below. Replay uses the same pinned Lean kernel against imported dependencies;
-it is not an external independent verifier or full transitive dependency
-replay. **Portable offline Lake integration also passes.** An additional fresh
-transitive imported-environment replay remains pending as a separate stronger check.
+**Verification status: the exact full theorem and its imported formal proof
+bodies have passed the recorded checks.** These include source compilation,
+expanded theorem types, recursive theorem-axiom audits, 97 selected local
+module replays, an isolated offline Lake build, and a fresh replay of all safe,
+non-partial constants in the final acceptance module's entire imported
+environment, including Mathlib. Replay uses the same pinned Lean kernel; no
+external independent verifier or replay of unsafe/partial implementation code
+is claimed. The isolated Lake build reused copied pinned package caches; a
+cache-free rebuild of every external source on a new machine is not claimed.
 
 ## Exact target
 
@@ -144,7 +146,7 @@ separate verification layers. Only their recorded scope should be reported;
 source inspection or successful checks of a proper subset do not establish
 the end-to-end result.
 
-### Recorded scope: 2026-10-13, 14:22 UTC
+### Recorded scope: 2026-10-13, 15:01 UTC
 
 * `verification/transfer-runs/transfer-candidates07-run01/summary.json`: both
   `FiniteVariableTransfer` and `RealClosureTransfer` compiled successfully,
@@ -161,9 +163,29 @@ the end-to-end result.
   local module replays passed. The terminal receipt has SHA256
   `2aa36ecc2517d0b8726cff58b39d0b5ccacb1d98f12a421b5ac52a25af8dfcd0`.
 
+* `verification/portable-runs/portable-lake02-run01/summary.json`: all 306 bounded offline
+  Lake commands passed in the separate portable tree, including aggregate and
+  up-to-date checks. Its SHA256 is
+  `6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213`.
+* `verification/fresh-replay01-run01/summary.json`: the single
+  `leanchecker --fresh -v BoundaryAcceptance` job passed with exit code zero,
+  empty stderr, and matching before/after input pins. It took 526.513 seconds;
+  peak sampled physical-memory usage was 26.1235%. The receipt's SHA256 is
+  `a3bada02b3c9de6f1ba8c7874a6cceb6255f8d0333826cf9bd88110e337d1472`.
+
+The fresh replay includes the stored bodies of imported safe, non-partial
+Mathlib theorems, rather than accepting only their interfaces in the starting
+environment. Its input inventory pins 24,091 available search-path artifacts (4,863,176,336
+bytes), including private proof data, unused files, and the Lean builtin root.
+This inventory count is not a count of replayed declarations or imported modules. It is broader
+than the final theorem's reachable proof dependencies. Declared axioms remain
+accepted by the checker; the separate recursive final-theorem axiom audits
+identify only `propext`, `Classical.choice`, and `Quot.sound`.
+
 The 27-name quadratic/characterization/IVT/Rolle audit is additionally
-reconciled in `verification/rcf-characterization-axiom-result01.json`. These records certify
-the stated mathematical result in the pinned runtime. They do not by
-themselves establish a clean, portable Lake build in another environment;
-the separate offline Lake check has since passed, with exact scope in
-`verification/PORTABLE-LAKE-STATUS.md`. Fresh online checkout reproduction is not claimed.
+reconciled in `verification/rcf-characterization-axiom-result01.json`. These documents
+supplement the previously frozen checkpoint without changing any Lean source
+or mathematical statement. `FRESH-REPLAY-SCOPE.md` records the exact extra
+replay scope and its limits.
+
+The large artifact inventory is preserved locally, with its exact hash/bytes/counts and source/config pins in `verification/fresh-inputs/ARTIFACT-INVENTORY-COMMITMENT.json`; its full 6,553,117-byte list and compiled caches are not bundled. The independent post-run reconciliation is `verification/FRESH-REPLAY-INDEPENDENT-AUDIT01.json`.

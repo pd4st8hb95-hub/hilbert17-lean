@@ -1,0 +1,69 @@
+{
+  "status": "ALL_IMPORTED_SAFE_CONSTANTS_FRESH_REPLAY_PASS",
+  "started_utc": "2026-10-13T14:49:47.452825+00:00",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/fresh-replay-plan01.json",
+  "plan_sha256": "ce975bf5bb954b89403a64aba2c56d30071f9e69b744a59616b47f6f71b1e056",
+  "driver_sha256": "94fb6a03e4665c7e79edb22bfd0d06553e2b91b0d8ed9dc1b55e8a56a17ea6b5",
+  "portable_receipt": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/summary.json",
+    "bytes": 866415,
+    "sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+  },
+  "artifact_inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/portable-fresh-artifact-inventory01.json",
+    "bytes": 6553117,
+    "sha256": "d3874f0120dd7da2cad2141a3850dedc4556ec04bf8280131d59e502795f4539"
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SYSROOT": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux"
+  },
+  "memory_policy": {
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "max_wall_seconds": 3600,
+  "scope": "Same-kernel fresh replay of all safe, non-partial constants in BoundaryAcceptance and its full imported environment; declared axioms are accepted and audited separately. No external independent verifier or replay of unsafe/partial code is claimed.",
+  "jobs": [
+    {
+      "module": "BoundaryAcceptance",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "--fresh",
+        "-v",
+        "BoundaryAcceptance"
+      ],
+      "start_utc": "2026-10-13T14:49:47.453132+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:49:47.453124+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8255428,
+        "used_percent": 19.116038511898488
+      },
+      "max_wall_seconds": 3600,
+      "status": "PASS",
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/BoundaryAcceptance.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/BoundaryAcceptance.stderr.log",
+      "pid": 7,
+      "exit_code": 0,
+      "end_utc": "2026-10-13T14:58:33.966423+00:00",
+      "seconds": 526.513,
+      "peak_physical_used_percent": 26.123489052279194,
+      "memory_after": {
+        "utc": "2026-10-13T14:58:33.966671+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8297080,
+        "used_percent": 18.707945949780278
+      }
+    }
+  ],
+  "ended_utc": "2026-10-13T14:58:38.877161+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "hilbert17-bounded-fresh-checker-plan-v1",
+  "status": "READY_FOR_ROOT_REVIEW",
+  "scope": "One same-kernel --fresh replay of the existing portable BoundaryAcceptance module and all its imported safe, non-partial constants, including Mathlib proof bodies. Axiom acceptance remains separately audited. No external verifier is claimed.",
+  "module": "BoundaryAcceptance",
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/run_bounded_fresh_checker01.py",
+    "bytes": 11883,
+    "sha256": "94fb6a03e4665c7e79edb22bfd0d06553e2b91b0d8ed9dc1b55e8a56a17ea6b5"
+  },
+  "runtime_config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/portable-runtime-final01.json",
+    "bytes": 4710,
+    "sha256": "b4bdea7ac1336752a688072f4bcd0370d530cf4eb0255b778f9d4810f25dde24"
+  },
+  "checker": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "bytes": 50592,
+    "sha256": "c7c51e296d28dd443ed60f9414feef41253ede89dea76dbb2adde29768c3ed5f"
+  },
+  "portable_receipt": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/summary.json",
+    "bytes": 866415,
+    "sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+  },
+  "artifact_inventory": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/portable-fresh-artifact-inventory01.json",
+    "bytes": 6553117,
+    "sha256": "d3874f0120dd7da2cad2141a3850dedc4556ec04bf8280131d59e502795f4539"
+  },
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/checks/BoundaryAcceptance.lean",
+    "bytes": 4314,
+    "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+  },
+  "main_olean": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build/lib/lean/BoundaryAcceptance.olean",
+    "bytes": 62560,
+    "sha256": "e91838b89e8cb248350423f9562d65937378481f5038838bcbb08ecb7b0e5352"
+  },
+  "lean_path_roots": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/batteries/.lake/build/lib/lean"
+  ],
+  "implicit_builtin_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean",
+  "max_wall_seconds": 3600,
+  "memory_policy": {
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "launch_order": "Only after terminal portable Lake PASS and root review. Runner takes the same nonblocking runtime-compile.lock before checking pins. No compiler, Lake, or additional checker may overlap.",
+  "execution_status": "NOT_EXECUTED"
+}

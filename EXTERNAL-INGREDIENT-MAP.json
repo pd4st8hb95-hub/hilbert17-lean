@@ -1,0 +1,1321 @@
+{
+  "title": "Formal proof map for external mathematical ingredients in Hilbert17",
+  "checked_utc": "2026-10-13T14:47:36.462223+00:00",
+  "scope": "Source-level mapping of substantial ingredients in the final proof chain, not a minimal declaration-level dependency graph. Read-only audit of Lean sources and existing receipts.",
+  "categories": {
+    "T": "Locally verified TauCeti adaptation",
+    "P": "Locally verified project proof or compatibility adapter",
+    "M": "Imported proved theorem from pinned Mathlib",
+    "B": "Locally verified backport of newer Mathlib support"
+  },
+  "verification": {
+    "local_replay_receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+    "local_replay_receipt_sha256": "2aa36ecc2517d0b8726cff58b39d0b5ccacb1d98f12a421b5ac52a25af8dfcd0",
+    "status": "ALL_SELECTED_LOCAL_REPLAYS_PASS",
+    "selected_local_modules": 97,
+    "all_current_source_hashes_match": true,
+    "axiom_audit": "hilbert17-20261013/verification/ROOT-FINAL-AXIOM-AUDIT01.json",
+    "axiom_audit_sha256": "69ec0992aa9c8a8c2b807268c171e07ac8a0b17c22b8a55020aaa12bfa0c9e89",
+    "printed_recursive_axiom_lists": 17,
+    "all_axiom_log_hashes_match": true,
+    "axiom_basis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "limitation": "Same-kernel selected local replay uses the pinned imported library; no fresh replay of all transitive Mathlib declarations or independent-kernel verification is claimed.",
+    "listed_pinned_mathlib_sources_exact_git_blob_matches": 13
+  },
+  "conclusion": "No bibliographic theorem survives merely as an unproved parameter or extra axiom of the final Hilbert17 conclusions. Intermediate real-closedness, Rolle, square-closedness, inverse-matrix and transfer hypotheses are discharged by formal proofs.",
+  "ingredients": [
+    {
+      "ingredient": "Artin-Schreier separation consumed by ConditionalArtin",
+      "category": "P",
+      "module": "OrderingSeparation",
+      "declarations": [
+        {
+          "name": "Hilbert17.RingPreordering.exists_ordering_extension",
+          "source_line": 116
+        },
+        {
+          "name": "Hilbert17.RingPreordering.exists_ordering_not_mem",
+          "source_line": 122
+        },
+        {
+          "name": "Hilbert17.RingPreordering.isSumSq_iff_nonneg_all_orders",
+          "source_line": 187
+        }
+      ],
+      "source_path": "hilbert17-algebra/OrderingSeparation.lean",
+      "source_sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "OrderingSeparation"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Maximality in OrderingSeparation",
+      "category": "M",
+      "module": "Mathlib.Order.Zorn",
+      "declarations": [
+        {
+          "name": "zorn_le_nonempty_Ici₀",
+          "source_line": 133
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Order/Zorn.lean",
+      "source_sha256": "7488fb223dfea62dda5732585f61b0f9c942732772d8883f1c00f87909edad25",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Order/Zorn.lean",
+        "git_blob": "80d374c33287249237bc7eaa00cb33d961e568c9",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Adapter to the proved project ordering construction",
+      "category": "P",
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "declarations": [
+        {
+          "name": "RingPreordering.exists_linearOrder",
+          "source_line": 35
+        }
+      ],
+      "source_path": "hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+      "source_sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.Order.Ring.Ordering.Extension"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Ordered real closure consumed by RealClosureTransfer",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.Basic",
+      "declarations": [
+        {
+          "name": "TauCeti.RealClosure.exists_realClosure",
+          "source_line": 117
+        },
+        {
+          "name": "TauCeti.RealClosure.OrderedIntermediateField.isSquare_of_isMax",
+          "source_line": 41
+        },
+        {
+          "name": "TauCeti.RealClosure.OrderedIntermediateField.exists_isRoot_of_isMax",
+          "source_line": 68
+        }
+      ],
+      "source_path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/Basic.lean",
+      "source_sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.Basic"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/Basic.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Maximal ordered intermediate fields",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+      "declarations": [
+        {
+          "name": "TauCeti.RealClosure.OrderedIntermediateField.exists_isMax",
+          "source_line": 217
+        }
+      ],
+      "source_path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+      "source_sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Order-preserving positive square-root extension",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+      "declarations": [
+        {
+          "name": "QuadraticAlgebra.exists_linearOrder",
+          "source_line": 160
+        }
+      ],
+      "source_path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+      "source_sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.OrderExtension"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Order-preserving odd-degree extension",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+      "declarations": [
+        {
+          "name": "AdjoinRoot.exists_linearOrder",
+          "source_line": 102
+        }
+      ],
+      "source_path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+      "source_sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.OddExtension"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Constructed ambient algebraic closure",
+      "category": "M",
+      "module": "Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure",
+      "declarations": [
+        {
+          "name": "AlgebraicClosure.isAlgClosed",
+          "source_line": 202
+        },
+        {
+          "name": "AlgebraicClosure.isAlgebraic",
+          "source_line": 179
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean",
+      "source_sha256": "3f3bb8df16012856c75d6602c5e6965dc3461725e112d30136eaac4a6c10bf12",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.lean",
+        "git_blob": "4edff2d094433eda3ad0e21c91f048210ab8747f",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Embedding algebraic extensions and adjoining roots",
+      "category": "M",
+      "module": "Mathlib.FieldTheory.IsAlgClosed.Basic",
+      "declarations": [
+        {
+          "name": "IsAlgClosed.lift",
+          "source_line": 359
+        },
+        {
+          "name": "IsAlgClosed.exists_aeval_eq_zero",
+          "source_line": 185
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/IsAlgClosed/Basic.lean",
+      "source_sha256": "98d1e1f5c6792eeb290eb81f2ba5c43789ca83b746fde078ddc7b89d054e8c05",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/FieldTheory/IsAlgClosed/Basic.lean",
+        "git_blob": "93456508dc1f3a9c7cbab92226f3a58170071ddc",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Semireality needed by Artin separation",
+      "category": "P",
+      "module": "FractionSemireal",
+      "declarations": [
+        {
+          "name": "Hilbert17.exists_eval_ne_zero",
+          "source_line": 22
+        },
+        {
+          "name": "Hilbert17.isSemireal_mvPolynomial_fraction",
+          "source_line": 34
+        }
+      ],
+      "source_path": "hilbert17-target-20261013/FractionSemireal.lean",
+      "source_sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "FractionSemireal"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Nonzero polynomial evaluation used in FractionSemireal",
+      "category": "M",
+      "module": "Mathlib.Algebra.MvPolynomial.Funext",
+      "declarations": [
+        {
+          "name": "MvPolynomial.funext",
+          "source_line": 83
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Funext.lean",
+      "source_sha256": "cb1821884a139917b692103a0b267115179cd4e7084da5487857ec49abb0cc7e",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Algebra/MvPolynomial/Funext.lean",
+        "git_blob": "edac9370c37edfce33e7b71efe70e2b541ef8ad8",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Algebraic closedness of complexification and degree-two bound for IVT",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "declarations": [
+        {
+          "name": "TauCeti.RealClosure.isAlgClosed_of_forall_isSquare",
+          "source_line": 73
+        },
+        {
+          "name": "TauCeti.RealClosure.isAlgClosed_quadraticAlgebra",
+          "source_line": 86
+        },
+        {
+          "name": "Polynomial.natDegree_le_two_of_irreducible",
+          "source_line": 91
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "source_sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Proved square-closedness of complexification, using upstream Square proof",
+      "category": "P",
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "declarations": [
+        {
+          "name": "QuadraticAlgebra.isSquare",
+          "source_line": 30
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "source_sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.Complexification"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Algebraic square existence used in Complexification",
+      "category": "T",
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "declarations": [
+        {
+          "name": "QuadraticAlgebra.isSquare_of_forall_nonneg_isSquare",
+          "source_line": 33
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "source_sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.QuadraticAlgebra.Square"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Odd finite extensions are trivial",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "declarations": [
+        {
+          "name": "TauCeti.RealClosure.finrank_eq_one_of_odd",
+          "source_line": 37
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "source_sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.FiniteExtension"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Galois/Sylow reduction supporting algebraic closedness",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "declarations": [
+        {
+          "name": "TauCeti.RealClosure.isPGroup_two_algEquiv",
+          "source_line": 75
+        },
+        {
+          "name": "TauCeti.RealClosure.finrank_eq_one_of_isPGroup",
+          "source_line": 92
+        },
+        {
+          "name": "TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare",
+          "source_line": 105
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "source_sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.Galois"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/Galois.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Primitive element theorem in finite-extension step",
+      "category": "M",
+      "module": "Mathlib.FieldTheory.PrimitiveElement",
+      "declarations": [
+        {
+          "name": "Field.exists_primitive_element",
+          "source_line": 213
+        },
+        {
+          "name": "Field.primitive_element_iff_minpoly_natDegree_eq",
+          "source_line": 376
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/PrimitiveElement.lean",
+      "source_sha256": "8b64c39ff8df16dff49444470375ab39816c19848b4f157a32d9fc2a465a5a62",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/FieldTheory/PrimitiveElement.lean",
+        "git_blob": "7808f3e877d09425a359eba7f4aa2074322ac0d3",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Galois degree identities",
+      "category": "M",
+      "module": "Mathlib.FieldTheory.Galois.Basic",
+      "declarations": [
+        {
+          "name": "IsGalois.card_aut_eq_finrank",
+          "source_line": 99
+        },
+        {
+          "name": "IntermediateField.finrank_fixedField_eq_card",
+          "source_line": 223
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/Galois/Basic.lean",
+      "source_sha256": "5a5f2905a0d767074eb127cb100f64aa91d32250d6cf29909d343c654f509d6e",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/FieldTheory/Galois/Basic.lean",
+        "git_blob": "1f888afb4d915f46c29e219c4a77092bb05e1248",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Sylow index and subgroup existence",
+      "category": "M",
+      "module": "Mathlib.GroupTheory.Sylow",
+      "declarations": [
+        {
+          "name": "Sylow.not_dvd_index",
+          "source_line": 462
+        },
+        {
+          "name": "Sylow.exists_subgroup_card_pow_prime",
+          "source_line": 671
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/GroupTheory/Sylow.lean",
+      "source_sha256": "784d21307e58a9fa414b627563ca10fdeef6e8fa9485a5bd138942f8d1e0e6f2",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/GroupTheory/Sylow.lean",
+        "git_blob": "89411ada9907f4f8b6d996368698fdb15186fa16",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Proved absence of quadratic extension over square-closed fields",
+      "category": "P",
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "declarations": [
+        {
+          "name": "TauCeti.Compat.finrank_ne_two_of_forall_isSquare",
+          "source_line": 23
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+      "source_sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Compat.QuadraticExtension"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Proved reducibility via the pinned quadratic formula",
+      "category": "P",
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "declarations": [
+        {
+          "name": "TauCeti.Compat.not_irreducible_monic_quadratic_of_forall_isSquare",
+          "source_line": 24
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean",
+      "source_sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Compat.QuadraticDiscriminant"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Quadratic formula used by compatibility proof",
+      "category": "M",
+      "module": "Mathlib.Algebra.QuadraticDiscriminant",
+      "declarations": [
+        {
+          "name": "exists_quadratic_eq_zero",
+          "source_line": 91
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Algebra/QuadraticDiscriminant.lean",
+      "source_sha256": "7a62a7b18ade09ec1e81d986b870dd17a35fc854c628450de689bee90312ae5e",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Algebra/QuadraticDiscriminant.lean",
+        "git_blob": "3b663b49b48ba3a1cb6f0d899b7ee13af867b5af",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Abstract real-closed polynomial IVT",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "declarations": [
+        {
+          "name": "Polynomial.eval_mul_pos_of_no_roots",
+          "source_line": 41
+        },
+        {
+          "name": "Polynomial.exists_root_Ioo_of_mul_neg",
+          "source_line": 98
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "source_sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.IVT"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/IVT.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Abstract polynomial Rolle, discharging the Rolle predicate",
+      "category": "T",
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "declarations": [
+        {
+          "name": "Polynomial.exists_derivative_root_of_isRoot",
+          "source_line": 98
+        },
+        {
+          "name": "TauCeti.RealClosure.polynomialRolle_of_isRealClosed",
+          "source_line": 118
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "source_sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.FieldTheory.RealClosure.AbstractRolle"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Root-free sign constancy",
+      "category": "T",
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "declarations": [
+        {
+          "name": "Polynomial.sign_eval_const",
+          "source_line": 31
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "source_sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.Polynomial.RealClosed.Sign"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Finite root/critical/exterior-point sampling",
+      "category": "T",
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "declarations": [
+        {
+          "name": "Polynomial.exists_mem_signSamples",
+          "source_line": 81
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "source_sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.Polynomial.RealClosed.Sampling"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Simultaneous finite sign sampling used by WholeLineAlternatives",
+      "category": "T",
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "declarations": [
+        {
+          "name": "TauCeti.SignDetermination.exists_mem_signSamples_sign_eq",
+          "source_line": 85
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "source_sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Sturm-Tarski query/Cauchy-index identity",
+      "category": "T",
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "declarations": [
+        {
+          "name": "Polynomial.cauchyIndex_derivative_mul_univ",
+          "source_line": 323
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "source_sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Sturm variation formula and Cauchy-index Euclidean recurrence",
+      "category": "T",
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "declarations": [
+        {
+          "name": "Polynomial.cauchyIndex_eq_sub_signVariations_univ",
+          "source_line": 138
+        },
+        {
+          "name": "Polynomial.cauchyIndex_univ_eq_add_cauchyIndex_neg_mod",
+          "source_line": 168
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "source_sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Signed remainder sequence support",
+      "category": "B",
+      "module": "TauCeti.Compat.SturmSequence",
+      "declarations": [
+        {
+          "name": "Polynomial.sturmSeq",
+          "source_line": 68
+        },
+        {
+          "name": "Polynomial.sturmSeq_cons",
+          "source_line": 86
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+      "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Compat.SturmSequence"
+      },
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "3b531c35df33d6bbe64b4e87dec056211d3a5676",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Algebra/Polynomial/Sturm/Sequence.lean",
+        "note": "Selected locally checked backport under TauCeti.Compat"
+      }
+    },
+    {
+      "ingredient": "List sign-variation support",
+      "category": "B",
+      "module": "TauCeti.Compat.ListSignVariations",
+      "declarations": [
+        {
+          "name": "List.signVariations",
+          "source_line": 54
+        },
+        {
+          "name": "List.signVariations_cons_cons_of_ne_zero",
+          "source_line": 86
+        },
+        {
+          "name": "List.signVariations_congr",
+          "source_line": 107
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean",
+      "source_sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Compat.ListSignVariations"
+      },
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "3b531c35df33d6bbe64b4e87dec056211d3a5676",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Data/List/SignVariations.lean",
+        "note": "Selected locally checked backport under TauCeti.Compat"
+      }
+    },
+    {
+      "ingredient": "Exact Tarski-query computation used by MonicQueryProjection",
+      "category": "T",
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "declarations": [
+        {
+          "name": "Polynomial.cauchyIndex_univ_eq_permanencesMinusVariations_signedPsc_mod",
+          "source_line": 230
+        },
+        {
+          "name": "Polynomial.tarskiQuery_eq_permanencesMinusVariations_signedPsc",
+          "source_line": 243
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "source_sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Determinant/subresultant Euclidean recurrence",
+      "category": "T",
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "declarations": [
+        {
+          "name": "Polynomial.subresultantCoeff_mod_left",
+          "source_line": 147
+        },
+        {
+          "name": "Polynomial.signedPsc_eq_mul_signedPsc_neg_mod",
+          "source_line": 237
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Principal subresultants commute with arbitrary coefficient maps",
+      "category": "T",
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "declarations": [
+        {
+          "name": "Polynomial.psc_map_map",
+          "source_line": 189
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.RingTheory.Polynomial.Subresultant.Basic"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Fixed-bound signed subresultant specialization",
+      "category": "T",
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "declarations": [
+        {
+          "name": "Polynomial.signedPsc_map_map",
+          "source_line": 102
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.RingTheory.Polynomial.Subresultant.Signed"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Degree-drop formulas used by subresultant computation",
+      "category": "T",
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "declarations": [
+        {
+          "name": "Polynomial.psc_eq_coeff_pow_mul_of_right_degree_drop",
+          "source_line": 156
+        },
+        {
+          "name": "Polynomial.psc_eq_sign_mul_coeff_pow_mul_of_left_degree_drop",
+          "source_line": 171
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "BKR reconstruction consumed by GeneralPatternProjection",
+      "category": "T",
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "declarations": [
+        {
+          "name": "Polynomial.fullInverse_mulVec_tarskiQuery",
+          "source_line": 54
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Explicit inverse for the ternary sign-moment matrix",
+      "category": "T",
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "declarations": [
+        {
+          "name": "TauCeti.SignDetermination.fullInverse_mul_fullMatrix",
+          "source_line": 76
+        },
+        {
+          "name": "TauCeti.SignDetermination.fullInverse_mulVec",
+          "source_line": 111
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Finite sign-indicator identity proving that inverse",
+      "category": "T",
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "declarations": [
+        {
+          "name": "SignType.sum_lagrangeCoeff_mul_pow",
+          "source_line": 57
+        }
+      ],
+      "source_path": "hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+      "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "TauCeti.Data.SignType.Lagrange"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/SignType/Lagrange.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Monic division commutes with specialization",
+      "category": "M",
+      "module": "Mathlib.Algebra.Polynomial.Div",
+      "declarations": [
+        {
+          "name": "Polynomial.map_modByMonic",
+          "source_line": 395
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/Div.lean",
+      "source_sha256": "38a1b6973f339cb214b9a6e7b945b31d5ddd31da78d781d93916955be7e2b60f",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Algebra/Polynomial/Div.lean",
+        "git_blob": "dd34b114930c06b5bb0bef5156295cadb823d4e6",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Denominator representation used in LocalizationSignDescent",
+      "category": "M",
+      "module": "Mathlib.RingTheory.Localization.Away.Basic",
+      "declarations": [
+        {
+          "name": "IsLocalization.Away.sec_spec",
+          "source_line": 73
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Localization/Away/Basic.lean",
+      "source_sha256": "dc1f956c15046a2f247c136417595b4c89201b5d90b6d432327fa0b399d0ff8a",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/RingTheory/Localization/Away/Basic.lean",
+        "git_blob": "8f68522c0189c57e38a5abfe6c199be89b75f362",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Compatibility of field maps with the real-closed base order",
+      "category": "P",
+      "module": "CoefficientOrder",
+      "declarations": [
+        {
+          "name": "Hilbert17Transfer.ringHom_monotone",
+          "source_line": 23
+        },
+        {
+          "name": "Hilbert17Transfer.ringHom_strictMono",
+          "source_line": 28
+        }
+      ],
+      "source_path": "hilbert17-transfer/CoefficientOrder.lean",
+      "source_sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "CoefficientOrder"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Square/order compatibility and construction of real-closed instances",
+      "category": "M",
+      "module": "Mathlib.FieldTheory.IsRealClosed.Basic",
+      "declarations": [
+        {
+          "name": "IsRealClosed.nonneg_iff_isSquare",
+          "source_line": 111
+        },
+        {
+          "name": "IsSquare.of_nonneg",
+          "source_line": 117
+        },
+        {
+          "name": "IsRealClosed.of_linearOrderedField",
+          "source_line": 60
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/IsRealClosed/Basic.lean",
+      "source_sha256": "e2806df73ecfc81f91bdaba3be881cdfeef7117f485c371a23cf9b886b2f1661",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/FieldTheory/IsRealClosed/Basic.lean",
+        "git_blob": "2b403d5c02ecded411c718de2d27c82a5698e195",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Real numbers are real closed",
+      "category": "T",
+      "module": "RealInstance",
+      "declarations": [
+        {
+          "name": "Hilbert17Transfer.real_exists_isRoot_of_odd_natDegree",
+          "source_line": 30
+        },
+        {
+          "name": "Hilbert17Transfer.real_isRealClosed",
+          "source_line": 52
+        }
+      ],
+      "source_path": "hilbert17-transfer/RealInstance.lean",
+      "source_sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "RealInstance"
+      },
+      "provenance": {
+        "repository": "TauCetiProject/TauCeti",
+        "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+        "source_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/IsRealClosed/Real.lean",
+        "note": "Local adaptation, with exact changes/attribution recorded in source headers and manifests"
+      }
+    },
+    {
+      "ingredient": "Nonnegative real elements are squares",
+      "category": "M",
+      "module": "Mathlib.Analysis.Real.Sqrt",
+      "declarations": [
+        {
+          "name": "Real.isSquare_iff",
+          "source_line": 303
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Analysis/Real/Sqrt.lean",
+      "source_sha256": "1935b1e2996b58fde92e5150455c1b5c22766baa22a5167566acf06bc3391a05",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Analysis/Real/Sqrt.lean",
+        "git_blob": "ebd06fcb895a4b50613cd4d219fc9ccba947a423",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Real polynomial sign results used in the odd-degree root proof",
+      "category": "M",
+      "module": "Mathlib.Analysis.Polynomial.Order",
+      "declarations": [
+        {
+          "name": "Polynomial.zero_lt_eval_of_roots_lt_of_leadingCoeff_nonneg",
+          "source_line": 47
+        },
+        {
+          "name": "Polynomial.zero_lt_negOnePow_mul_eval_of_lt_roots_of_leadingCoeff_nonneg",
+          "source_line": 84
+        },
+        {
+          "name": "Polynomial.eval_lt_zero_of_roots_lt_of_leadingCoeff_nonpos",
+          "source_line": 70
+        },
+        {
+          "name": "Polynomial.negOnePow_mul_eval_lt_zero_of_lt_roots_of_leadingCoeff_nonpos",
+          "source_line": 117
+        }
+      ],
+      "source_path": "recovery-20261013/runtime/mathlib/Mathlib/Analysis/Polynomial/Order.lean",
+      "source_sha256": "bf05560594215319b7288b07403bd818d378f6f8e2ea59da58d31cde31ae6d27",
+      "provenance": {
+        "repository": "leanprover-community/mathlib4",
+        "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+        "source_url": "https://github.com/leanprover-community/mathlib4/blob/520045ab14e26149ee970e2e617ca04b09bde5d6/Mathlib/Analysis/Polynomial/Order.lean",
+        "git_blob": "3a327a1e97b2fbc7fd0324c561634694b499c9f4",
+        "matches_pinned_git_blob": true
+      },
+      "verification": "Imported pinned Mathlib proof, not claimed freshly replayed among the 97 local modules"
+    },
+    {
+      "ingredient": "Uniform paired-field univariate sign transfer",
+      "category": "P",
+      "module": "UniformOneVariable",
+      "declarations": [
+        {
+          "name": "Hilbert17Transfer.exists_signs_map_iff_of_wholeLineProjection_sign_agree",
+          "source_line": 70
+        }
+      ],
+      "source_path": "hilbert17-transfer/UniformOneVariable.lean",
+      "source_sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "UniformOneVariable"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Finite-variable sign transfer",
+      "category": "P",
+      "module": "FiniteVariableTransfer",
+      "declarations": [
+        {
+          "name": "Hilbert17Transfer.exists_matching_signs_eval₂",
+          "source_line": 25
+        },
+        {
+          "name": "Hilbert17Transfer.exists_negative_eval_of_exists_negative_eval₂",
+          "source_line": 85
+        }
+      ],
+      "source_path": "hilbert17-transfer/FiniteVariableTransfer.lean",
+      "source_sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "FiniteVariableTransfer"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    },
+    {
+      "ingredient": "Discharged transfer input and unconditional final targets",
+      "category": "P",
+      "module": "RealClosureTransfer",
+      "declarations": [
+        {
+          "name": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+          "source_line": 18
+        },
+        {
+          "name": "Hilbert17Transfer.hilbert17Real_candidate",
+          "source_line": 38
+        },
+        {
+          "name": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+          "source_line": 43
+        }
+      ],
+      "source_path": "hilbert17-transfer/RealClosureTransfer.lean",
+      "source_sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae",
+      "verification": {
+        "selected_same_kernel_replay": "PASS",
+        "current_source_matches_receipt": true,
+        "receipt": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+        "module_in_receipt": "RealClosureTransfer"
+      },
+      "provenance": {
+        "origin": "Project proof or proved compatibility adapter",
+        "note": "Source headers preserve adapted API attribution where applicable; no mathematical novelty claim"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 希尔伯特第十七问题的 Lean 形式化
 
-**完整目标及验收声明已通过编译；递归公理依赖检查和 97 个选定本地模块的内核重放均通过。可移植离线 Lake 集成验证也已通过；额外的完整导入环境 fresh 重放仍在单独推进。**
+**完整目标及验收声明已通过编译；递归公理依赖检查和 97 个选定本地模块的内核重放均通过。可移植离线 Lake 集成验证也已通过；最终验收入口的安全、非 partial 导入环境 fresh 重放也已通过。**
 
 ## 证明的命题
 
@@ -44,6 +44,9 @@ lake exe cache get
 lake build Hilbert17 Hilbert17RealClosure Hilbert17Full Hilbert17Acceptance
 lake env lean checks/FinalTargetContract.lean
 lake env lean checks/BoundaryAcceptance.lean
+
+# 更强的导入环境重放：构建完成后执行，可能需要更多时间与内存
+lake env leanchecker --fresh -v BoundaryAcceptance
 ```
 
 这些是复现指令，不是“已从全新联网检出完成构建”的声明。也可不下载缓存而自行构建依赖。交付内容不包含编译缓存，构建配置不使用本机依赖绝对路径；历史核验回执保留原运行环境路径以便核对。
@@ -56,4 +59,10 @@ lake env lean checks/BoundaryAcceptance.lean
 
 TauCeti 来源固定为提交 `6b896c7c411221eb78639e4be8ead6e479a62893`。部分兼容模块取自较新的官方 Mathlib 提交 `3b531c35df33d6bbe64b4e87dec056211d3a5676`，再适配到上述固定工具链。原作者、逐文件版权头、Apache 2.0 许可、原始快照及改动来源均保留，详见[第三方说明](THIRD_PARTY.md)和[证明路线](PROOF-MAP.md)。上游许可的保留不等于为本地原创部分另行指定统一许可。
 
-详见 [Lake 集成回执](verification/PORTABLE-LAKE-STATUS.md)。首次尝试在证明构建前因依赖覆盖 JSON 格式不符而失败，修正后第二次通过；两次记录均保留。额外的 `--fresh` 完整安全导入环境重放（包括 Mathlib）仍待后续回执。当前递归公理依赖检查已排除最终定理中的未证明外部数学假设，但它与逐条从头重检所有导入常量是不同的验证层次。
+详见 [Lake 集成回执](verification/PORTABLE-LAKE-STATUS.md)。首次尝试在证明构建前因依赖覆盖 JSON 格式不符而失败，修正后第二次通过；两次记录均保留。额外的 `--fresh` 安全、非 partial 导入环境重放（包括所用 Mathlib 证明）已退出 0，通过核验。当前递归公理依赖检查已排除最终定理中的未证明外部数学假设，但它与逐条从头重检所有导入常量是不同的验证层次。
+
+## 外部数学结论的形式化证明
+
+[外部结论证明说明](EXTERNAL-INGREDIENT-PROOFS.md)及[来源映射](EXTERNAL-INGREDIENT-MAP.json)列出 49 项主要来源条目、83 个 Lean 声明。所用结论由 Lean 证明体提供；文献引用用于背景与署名，不是额外公理。中间定理的实闭性、Rolle 性质、矩阵可逆性及转移假设均在最终组装中得到证明。
+
+[Fresh 重放回执](verification/FRESH-REPLAY-STATUS.md)记录 `leanchecker --fresh -v BoundaryAcceptance` 在 526.513 秒后退出 0，标准错误为空。检查把最终入口及其导入环境中的安全、非 partial 声明重新送入同一版本 Lean 内核的空环境；不声称使用外部独立内核，也不声称检查了安装目录中所有无关 Mathlib 模块。重放机制仍接纳公理声明，因此最终定理仅依赖三项标准公理的递归审计仍单独保留。

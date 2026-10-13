@@ -1,6 +1,6 @@
 # Final theorem verification
 
-**PASS: complete theorem compilation, exact theorem-strength contracts, recursive axiom inspection, and all 97 selected local module replays. Portable offline Lake integration also passes; an additional fresh transitive imported-environment replay is pending separately.**
+**PASS: complete theorem compilation, exact theorem-strength contracts, recursive axiom inspection, and all 97 selected local module replays. Portable offline Lake integration also passes; the additional fresh imported-environment replay also passes.**
 
 The final real rational-SOS and denominator-cleared theorems have compiled. The exact acceptance contract verifies arbitrary finite variable count, arbitrary real coefficients, weak nonnegativity at every real point, the same rational-function field, a finite sum, and a nonzero-polynomial denominator. No transfer premise remains in these theorem types.
 
@@ -12,4 +12,6 @@ The 75 added proof sources match successful compiler records and current output 
 
 The [failed-attempt record](TRANSFER-FAILED-ATTEMPTS.md) preserves unsuccessful compilation attempts. `ROOT-SOURCE-TEXT-SCREEN01.json` is a broader 114-file lexical scan including auxiliary/unimported drafts, not the final proof dependency closure. Recursive final axiom inspection is the relevant proof-dependency check.
 
-See [portable Lake verification](PORTABLE-LAKE-STATUS.md) for its offline/cached scope, both attempts, and actual acceptance-output comparison. An additional fresh transitive imported-environment replay is pending as a separate stronger check; it is not included in the current 97-module replay claim.
+See [portable Lake verification](PORTABLE-LAKE-STATUS.md) for its offline/cached scope, both attempts, and actual acceptance-output comparison. The additional fresh imported-environment replay also passes; it is a separate check beyond the 97 local-module replay.
+
+See [fresh replay and formalized external inputs](FRESH-REPLAY-STATUS.md) for the additional successful checkpoint, input bindings, and same-kernel/axiom limitations. Earlier immutable receipts retain their historical scope.

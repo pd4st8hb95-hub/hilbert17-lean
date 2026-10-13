@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SOURCE_PROVENANCE_AND_EXISTING_PROOF_EVIDENCE_RECONCILIATION",
+  "scope": "Independent verification of the source-level external-ingredient map, not a new compiler run or a minimal declaration dependency graph. The separate fresh imported-environment replay also passes; see FRESH-REPLAY-INDEPENDENT-AUDIT01.json.",
+  "source_map": {
+    "file": "EXTERNAL-INGREDIENT-MAP.json",
+    "sha256": "789a9d8ee0e6645761b2633971f61710988c4e6bb5836f92c5df5aa7cd500946"
+  },
+  "explanation": {
+    "file": "EXTERNAL-INGREDIENT-PROOFS.md",
+    "sha256": "1b81cd1712c8dd3fc1e66f3b560748e2da5351746784a91ea8cfebccace5292a"
+  },
+  "entries": 49,
+  "declarations": 83,
+  "all_recorded_source_hashes_match": true,
+  "all_83_declaration_line_locations_match": true,
+  "local_entries_matching_97_module_successful_replay": 36,
+  "mathlib_source_files_matching_recorded_blob_and_actual_pinned_git_tree": 13,
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "final_recursive_axiom_scope": "17 prior diagnostic records across 14 declarations, and 14 distinct portable acceptance records; only propext/Classical.choice/Quot.sound.",
+  "mathematical_scope_review": "The maximality, algebraic-closure, real-closure, finite-extension, IVT/Rolle, sampling, Sturm-Tarski, subresultant, matrix-inverse, order-preservation, semireality, and transfer inputs are represented by Lean theorem/instance proof bodies. Generic intermediate hypotheses are discharged in the full real target; no bibliographic premise survives as an extra parameter or axiom."
+}

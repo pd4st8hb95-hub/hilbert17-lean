@@ -1,0 +1,31 @@
+{
+  "module": "BoundaryAcceptance",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "--fresh",
+    "-v",
+    "BoundaryAcceptance"
+  ],
+  "start_utc": "2026-10-13T14:49:47.453132+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:49:47.453124+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8255428,
+    "used_percent": 19.116038511898488
+  },
+  "max_wall_seconds": 3600,
+  "status": "PASS",
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/BoundaryAcceptance.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-fresh-replay01-run01/BoundaryAcceptance.stderr.log",
+  "pid": 7,
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:58:33.966423+00:00",
+  "seconds": 526.513,
+  "peak_physical_used_percent": 26.123489052279194,
+  "memory_after": {
+    "utc": "2026-10-13T14:58:33.966671+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8297080,
+    "used_percent": 18.707945949780278
+  }
+}

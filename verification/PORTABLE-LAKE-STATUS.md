@@ -10,4 +10,6 @@ The [first attempt](portable-runs/portable-lake01-run01/summary.json) failed bef
 
 [Input plans and configuration](portable-inputs/) and all actual run logs are included. The 12.3-MB initial copied-cache inventory is represented by its exact SHA-256, byte count and pin count in [its commitment record](portable-inputs/INITIAL-INPUT-INVENTORY-COMMITMENT.json); caches and that bulky inventory are not bundled. The full inventory remains in the original execution workspace.
 
-An additional `--fresh` replay of the safe imported environment, including Mathlib, is pending separately. The current complete recursive axiom audit already excludes an unproved external mathematical claim in the final theorem’s dependency chain, but that audit is distinct from rechecking every imported constant from scratch.
+The additional `--fresh` replay of the safe, non-partial imported environment of BoundaryAcceptance, including the relevant Mathlib proofs, also passes. The current complete recursive axiom audit already excludes an unproved external mathematical claim in the final theorem’s dependency chain, but that audit is distinct from rechecking every imported constant from scratch.
+
+See [fresh replay and formalized external inputs](FRESH-REPLAY-STATUS.md) for the additional successful checkpoint, input bindings, and same-kernel/axiom limitations. Earlier immutable receipts retain their historical scope.

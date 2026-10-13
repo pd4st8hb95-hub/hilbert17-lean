@@ -1,0 +1,30 @@
+{
+  "origin_manifest_sha256": "26b43f84628872bed171be95f91029a4752bb84954bdce742a829c7caa353283",
+  "origin_documents": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-fresh-replay-delta-20261013/PROOF-MAP.md",
+      "bytes": 10445,
+      "sha256": "16326ee6e551432db8c7ae1ca7a01a80283e2fd632de66ed3d526f013b3af610"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-fresh-replay-delta-20261013/FRESH-REPLAY-SCOPE.md",
+      "bytes": 7289,
+      "sha256": "fb58d2d03d270594ff53b33b2ccdbd1e92425258a488d7db4aaa77de4d603928"
+    }
+  ],
+  "adaptations": [
+    "Repoint historical workspace receipt references to delivered repository paths",
+    "Clarify that 24,091 inventoried files are available search-path artifacts rather than replayed declaration/module counts",
+    "Link explicit large-inventory commitment and independent post-run reconciliation"
+  ],
+  "delivered_documents": [
+    {
+      "path": "PROOF-MAP.md",
+      "sha256": "08cfaca1d82a1bc77538decabd79ad39ef3439da5d153a3ff97b62f81f1a8da0"
+    },
+    {
+      "path": "FRESH-REPLAY-SCOPE.md",
+      "sha256": "e80c4de8562ebac4f71a75040ab746a3ee04094717f6e54f11125e242f03993f"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "base_commit": "45ccae6b6c1d4f1596b17db348b2084aefd3e7e2",
+  "base_tree": "22ae5e18b981b0aa31a9c2c57f57ee4f1c89e168",
+  "scope": "Evidence-only extension: externally sourced mathematical ingredient mapping and successful same-kernel fresh imported-environment replay. No Lean source or build configuration is changed. Large available-artifact inventory explicitly represented by commitment with local preservation. Manifest excludes itself.",
+  "formal_input_map_entries": 49,
+  "mapped_declarations": 83,
+  "fresh_replay": "PASS",
+  "files": [
+    {
+      "path": "EXTERNAL-INGREDIENT-DELIVERY-INDEX.json",
+      "bytes": 31057,
+      "sha256": "fa21adc4ced56b22ac0266c2b2584a6aa324555ea0905522e55d32d23d35b3fe",
+      "operation": "add"
+    },
+    {
+      "path": "EXTERNAL-INGREDIENT-MAP.json",
+      "bytes": 60411,
+      "sha256": "789a9d8ee0e6645761b2633971f61710988c4e6bb5836f92c5df5aa7cd500946",
+      "operation": "add"
+    },
+    {
+      "path": "EXTERNAL-INGREDIENT-PROOFS.md",
+      "bytes": 12326,
+      "sha256": "1b81cd1712c8dd3fc1e66f3b560748e2da5351746784a91ea8cfebccace5292a",
+      "operation": "add"
+    },
+    {
+      "path": "FRESH-REPLAY-SCOPE.md",
+      "bytes": 7621,
+      "sha256": "e80c4de8562ebac4f71a75040ab746a3ee04094717f6e54f11125e242f03993f",
+      "operation": "add"
+    },
+    {
+      "path": "IMPORTED-EVIDENCE-PROVENANCE.json",
+      "bytes": 1211,
+      "sha256": "f9ed991d409bb5c658bd02f8dc7f8627b7a88e910dea1bd2e8675a4c5aea78d1",
+      "operation": "add"
+    },
+    {
+      "path": "PROOF-MAP.md",
+      "bytes": 10973,
+      "sha256": "08cfaca1d82a1bc77538decabd79ad39ef3439da5d153a3ff97b62f81f1a8da0",
+      "operation": "replace"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4907,
+      "sha256": "c72e687016457f89f51806b1c6cc596405a7bfcce024f96c7c6a925e18c690e0",
+      "operation": "replace"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 5912,
+      "sha256": "8a365ea6a994d0cc8b2a16090a9188f474f9e99006616c88dc0d47d29c831ea3",
+      "operation": "replace"
+    },
+    {
+      "path": "verification/EXTERNAL-INGREDIENT-INDEPENDENT-AUDIT01.json",
+      "bytes": 1562,
+      "sha256": "c2d355cf07cf4e65c56d10d8497f1d2ee182933cc65b2257e4530e5ff96cf9f7",
+      "operation": "add"
+    },
+    {
+      "path": "verification/FINAL-STATUS.md",
+      "bytes": 2769,
+      "sha256": "b6e49bf4bd7473ef54ceda254ce361c50d2be517cab114bb6262bd484e439bb8",
+      "operation": "replace"
+    },
+    {
+      "path": "verification/FRESH-DOCUMENTATION-PROVENANCE.json",
+      "bytes": 1187,
+      "sha256": "93c84aaa342a10b2e0826fba0ec6dd8e5a4edd9c02ee226f387c84deaea5edee",
+      "operation": "add"
+    },
+    {
+      "path": "verification/FRESH-REPLAY-INDEPENDENT-AUDIT01.json",
+      "bytes": 3349,
+      "sha256": "d6868ee53e6831a6e4809bdcdfc32cb8c8be46c0ef7c8d42c432f2f2605ea7e4",
+      "operation": "add"
+    },
+    {
+      "path": "verification/FRESH-REPLAY-STATUS.md",
+      "bytes": 4684,
+      "sha256": "ab380abb6a7ea55a3983c18996d137228e7e16b55869f8512aef4a54e0535882",
+      "operation": "add"
+    },
+    {
+      "path": "verification/PORTABLE-LAKE-STATUS.md",
+      "bytes": 2722,
+      "sha256": "df6d44a36a89599166f1d3d19295571fbae8f22eae072025319b7f169a032310",
+      "operation": "replace"
+    },
+    {
+      "path": "verification/STATUS.md",
+      "bytes": 1652,
+      "sha256": "f8d88670c5f65e152cbf26451a071978a1cfcbb8206ea2ca795076e9f303ed34",
+      "operation": "replace"
+    },
+    {
+      "path": "verification/fresh-inputs/ARTIFACT-INVENTORY-COMMITMENT.json",
+      "bytes": 26185,
+      "sha256": "1f4ee79395827a22a23d467fc5d5f628cd8afad8b7aa21e649a1c0a36c71ccd7",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-inputs/fresh-replay-plan01.json",
+      "bytes": 3605,
+      "sha256": "ce975bf5bb954b89403a64aba2c56d30071f9e69b744a59616b47f6f71b1e056",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-inputs/portable-runtime-final01.json",
+      "bytes": 4710,
+      "sha256": "b4bdea7ac1336752a688072f4bcd0370d530cf4eb0255b778f9d4810f25dde24",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-inputs/run_bounded_fresh_checker01.py",
+      "bytes": 11883,
+      "sha256": "94fb6a03e4665c7e79edb22bfd0d06553e2b91b0d8ed9dc1b55e8a56a17ea6b5",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-replay01-run01/BoundaryAcceptance.json",
+      "bytes": 1067,
+      "sha256": "2c6d9e65a17d629aee257ba9fc833a85f5c6e0c916326492cf89a84fc7a52aa2",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-replay01-run01/BoundaryAcceptance.memory.jsonl",
+      "bytes": 164408,
+      "sha256": "4c2dbe77cfbced253f44b81bdd147508c767c0a87e48aad1b34db8d7aae67904",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-replay01-run01/BoundaryAcceptance.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-replay01-run01/BoundaryAcceptance.stdout.log",
+      "bytes": 42,
+      "sha256": "1f18cd70358f4e1959a8f5e0923c39abe003d84b76283e33dac17c129bc7526a",
+      "operation": "add"
+    },
+    {
+      "path": "verification/fresh-replay01-run01/summary.json",
+      "bytes": 4035,
+      "sha256": "a3bada02b3c9de6f1ba8c7874a6cceb6255f8d0333826cf9bd88110e337d1472",
+      "operation": "add"
+    }
+  ]
+}

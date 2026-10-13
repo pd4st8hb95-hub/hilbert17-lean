@@ -1,0 +1,71 @@
+{
+  "status": "PORTABLE_LAKE_ALL_TARGETS_PASS",
+  "scope": "The completed separate portable build only. Selected local replay already passed in the original staging tree; optional full imported-environment replay will be a separate result.",
+  "compiler": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "bytes": 9024,
+    "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "checker": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "bytes": 50592,
+    "sha256": "c7c51e296d28dd443ed60f9414feef41253ede89dea76dbb2adde29768c3ed5f"
+  },
+  "mathlib_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "version_controls": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/lean-toolchain",
+      "bytes": 25,
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/lakefile.lean",
+      "bytes": 6815,
+      "sha256": "e3e8ac4d3ea441b062dbd29a2910165e55d8463c8bd9a3feb830cf6fb64a1b7a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/lake-manifest.json",
+      "bytes": 2811,
+      "sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd"
+    }
+  ],
+  "lean_path_roots": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/plausible/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/aesop/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Qq/.lake/build/lib/lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/batteries/.lake/build/lib/lean"
+  ],
+  "environment": {
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/batteries/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "implicit_builtin_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/lib/lean",
+  "project_output_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/build",
+  "omitted_absent_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Cli/.lake/build/lib/lean",
+  "immutable_reuse_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime",
+  "build_receipt": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/summary.json",
+    "bytes": 866415,
+    "sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+  },
+  "portable_plan": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/serial-lake-command-plan04.json",
+    "bytes": 194478,
+    "sha256": "bcccd4eff71e4b27acf0481662a4ad7a3129a2b99dc4a7533605349db5aff4c6"
+  },
+  "shared_lock": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/runtime-compile.lock",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  }
+}

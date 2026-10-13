@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+    "bytes": 4086,
+    "sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b"
+  },
+  "start_utc": "2026-10-13T13:49:42.639144+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:49:42.639131+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8326692,
+    "used_percent": 18.417817337722166
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/05-TauCeti_Algebra_Polynomial_Sturm_Sequence.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/05-TauCeti_Algebra_Polynomial_Sturm_Sequence.stderr.log",
+  "pid": 18,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:49:44.642441+00:00",
+  "peak_physical_used_percent": 20.180849316926025,
+  "memory_after": {
+    "utc": "2026-10-13T13:49:44.642621+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344656,
+    "used_percent": 18.241811988978014
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.olean",
+      "bytes": 163040,
+      "sha256": "94d532bbd90e2d20f87786657423d33de0e088403c68d5378b60438a214e4431"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.ilean",
+      "bytes": 7569,
+      "sha256": "61a8a55a9696ed7e7c0048aeb64f34014d489c8ce93b7c4b13bf44e800be8b4a"
+    }
+  ]
+}

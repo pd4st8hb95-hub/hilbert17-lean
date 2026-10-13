@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.Data.SignType.Lagrange:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.Data.SignType.Lagrange:olean"
+  ],
+  "start_utc": "2026-10-13T14:37:39.844697+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:37:39.844683+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8274908,
+    "used_percent": 18.92517989502384
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/224-TauCeti_Data_SignType_Lagrange_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/224-TauCeti_Data_SignType_Lagrange_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 3033,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:37:42.349795+00:00",
+  "seconds": 2.505,
+  "peak_physical_used_percent": 22.036528066210305,
+  "memory_after": {
+    "utc": "2026-10-13T14:37:42.349961+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8269656,
+    "used_percent": 18.976637259285937
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

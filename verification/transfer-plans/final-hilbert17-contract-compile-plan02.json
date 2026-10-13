@@ -1,0 +1,63 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "PREPARED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "FinalHilbert17Axioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/FinalHilbert17Axioms.lean",
+        "bytes": 874,
+        "sha256": "5d6382c8058cc83f3dcd5e840f15f50638524ba4495f25e5200f1621305587e7"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.olean"
+    },
+    {
+      "module": "FinalTargetContract",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/FinalTargetContract.lean",
+        "bytes": 3370,
+        "sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalTargetContract.olean"
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/BoundaryAcceptance.lean",
+        "bytes": 4314,
+        "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean"
+    }
+  ],
+  "requires_before_launch": [
+    "RealClosureTransfer compiled successfully with current source and complete local dependency closure"
+  ],
+  "scope": "Exact final target definitions and three proof dependency axiom lists. Allowed standard axioms: propext, Classical.choice, Quot.sound. This diagnostic is separate from selected-module Lean kernel replay."
+}

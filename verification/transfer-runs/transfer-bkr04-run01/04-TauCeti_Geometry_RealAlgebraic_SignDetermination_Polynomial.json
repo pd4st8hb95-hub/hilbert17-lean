@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+    "bytes": 7415,
+    "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+  },
+  "start_utc": "2026-10-13T13:44:38.592234+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:44:38.592222+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339368,
+    "used_percent": 18.293622069369857
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/04-TauCeti_Geometry_RealAlgebraic_SignDetermination_Polynomial.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/04-TauCeti_Geometry_RealAlgebraic_SignDetermination_Polynomial.stderr.log",
+  "pid": 14,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:44:40.598390+00:00",
+  "peak_physical_used_percent": 20.531370768533176,
+  "memory_after": {
+    "utc": "2026-10-13T13:44:40.598564+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8340328,
+    "used_percent": 18.284216305909915
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean",
+      "bytes": 217208,
+      "sha256": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.ilean",
+      "bytes": 15442,
+      "sha256": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+    }
+  ]
+}

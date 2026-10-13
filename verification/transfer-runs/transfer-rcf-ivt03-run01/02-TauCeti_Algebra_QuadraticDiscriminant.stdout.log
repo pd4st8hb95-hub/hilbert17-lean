@@ -1,0 +1,4 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean:325:54: error(lean.unknownIdentifier): Unknown constant `Int.sq_emod_four`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean:324:73: error: unsolved goals
+a b c : ℤ
+⊢ b ^ 2 % 4 = b % 2

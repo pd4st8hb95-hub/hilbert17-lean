@@ -1,0 +1,55 @@
+{
+  "label": "RealClosureGaloisAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean",
+    "bytes": 677,
+    "sha256": "47a512ef655d2736cdb96bde69781342e4fff02836ebf35261eeae1af559fab8"
+  },
+  "start_utc": "2026-10-13T14:01:00.524416+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:01:00.524404+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8348528,
+    "used_percent": 18.203875409689584
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/05-RealClosureGaloisAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/05-RealClosureGaloisAxioms.stderr.log",
+  "pid": 17,
+  "exit_code": 0,
+  "seconds": 1.503,
+  "end_utc": "2026-10-13T14:01:02.028346+00:00",
+  "peak_physical_used_percent": 20.121397053722976,
+  "memory_after": {
+    "utc": "2026-10-13T14:01:02.028539+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316960,
+    "used_percent": 18.513168264797322
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.olean",
+      "bytes": 1624,
+      "sha256": "ef47d2942e7bc4e1cfcf6f88dc64fd9c3f52a8972a8d34aaf08bca7ba2e4cb1f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.ilean",
+      "bytes": 850,
+      "sha256": "24dfe229dd99115d64431cae045751539d4292782dbef6884f8d21508ffbc641"
+    }
+  ]
+}

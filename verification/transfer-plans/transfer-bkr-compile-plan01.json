@@ -1,0 +1,104 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+        "bytes": 8130,
+        "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean"
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+        "bytes": 2653,
+        "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+        "bytes": 2170,
+        "sha256": "f1389bbe3557792c03ffa2ef7696fc8c3ff24ddcd65b05cde6acf7d242defc53"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+        "bytes": 4778,
+        "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.olean"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+        "bytes": 7875,
+        "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.olean"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+        "bytes": 7415,
+        "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+        "bytes": 2538,
+        "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.olean"
+    }
+  ],
+  "scope": "Seven mechanically adapted BKR modules; independent of real-closed-field/Sturm development. Source-only until compiler/axiom verification."
+}

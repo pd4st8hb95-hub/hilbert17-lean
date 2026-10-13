@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+    "bytes": 12193,
+    "sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3"
+  },
+  "start_utc": "2026-10-13T13:54:38.588029+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:38.588016+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8292408,
+    "used_percent": 18.753720665285325
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/04-TauCeti_Algebra_Polynomial_Sturm_SignedRemainders.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/04-TauCeti_Algebra_Polynomial_Sturm_SignedRemainders.stderr.log",
+  "pid": 16,
+  "exit_code": 0,
+  "seconds": 4.506,
+  "end_utc": "2026-10-13T13:54:43.094790+00:00",
+  "peak_physical_used_percent": 22.200227541094367,
+  "memory_after": {
+    "utc": "2026-10-13T13:54:43.094944+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8297360,
+    "used_percent": 18.70520260210446
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.olean",
+      "bytes": 645856,
+      "sha256": "25a982564c26fe2150ea4236a7488f6eeff9e3e4f0ce758ea69a5a0b7b17861a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.ilean",
+      "bytes": 30333,
+      "sha256": "81ad823f9fa1d393efe80e4188baf7eadfda27a951564e5e49dbf4457663a837"
+    }
+  ]
+}

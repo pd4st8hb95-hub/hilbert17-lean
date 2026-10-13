@@ -1,0 +1,9 @@
+⚠ [1278/1278] Built CoefficientSignPattern (1.6s)
+warning: CoefficientSignPattern.lean:64:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.leadingCoeff_sign_eq_of_coeff_sign_agree`:
+  [IsStrictOrderedRing K]
+  [IsStrictOrderedRing L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsStrictOrderedRing K] [IsStrictOrderedRing L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1278 jobs).

@@ -1,0 +1,1576 @@
+{
+  "scope": "Terminal transfer-phase and final verification receipts; all failed attempts retained. Selected final 97-module replay and exact contracts passed. Portable offline Lake check is separate.",
+  "runs": [
+    {
+      "run": "bkr-axioms01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "e380650491db8bc27c66d8f14f1d47c4b0bdf6a01490fdee7e06365490431b5f",
+      "summary_path": "verification/transfer-runs/bkr-axioms01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "BKRExports",
+          "status": "PASS",
+          "source_sha256": "5251966f1f7af1b6c6cbb2d27f722beb0ee2168458c41eb9854f0290edc84801"
+        }
+      ]
+    },
+    {
+      "run": "final-all-local-checker01-run01",
+      "status": "ALL_SELECTED_LOCAL_REPLAYS_PASS",
+      "summary_sha256": "2aa36ecc2517d0b8726cff58b39d0b5ccacb1d98f12a421b5ac52a25af8dfcd0",
+      "summary_path": "verification/transfer-runs/final-all-local-checker01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Compat.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+        },
+        {
+          "module": "TauCeti.Compat.QuadraticExtension",
+          "status": "PASS",
+          "source_sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+          "status": "PASS",
+          "source_sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.Galois",
+          "status": "PASS",
+          "source_sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+        },
+        {
+          "module": "TauCeti.Algebra.Order.Ring.Square",
+          "status": "PASS",
+          "source_sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+        },
+        {
+          "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+          "status": "PASS",
+          "source_sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+        },
+        {
+          "module": "TauCeti.Algebra.Ring.Semireal",
+          "status": "PASS",
+          "source_sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+        },
+        {
+          "module": "OrderingSeparation",
+          "status": "PASS",
+          "source_sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+        },
+        {
+          "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+          "status": "PASS",
+          "source_sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021"
+        },
+        {
+          "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+          "status": "PASS",
+          "source_sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+          "status": "PASS",
+          "source_sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+          "status": "PASS",
+          "source_sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+          "status": "PASS",
+          "source_sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+          "status": "PASS",
+          "source_sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f"
+        },
+        {
+          "module": "TauCeti.Algebra.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+          "status": "PASS",
+          "source_sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.IVT",
+          "status": "PASS",
+          "source_sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+          "status": "PASS",
+          "source_sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Rolle",
+          "status": "PASS",
+          "source_sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Thom",
+          "status": "PASS",
+          "source_sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+          "status": "PASS",
+          "source_sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109"
+        },
+        {
+          "module": "TauCeti.Data.Finset.Jumps",
+          "status": "PASS",
+          "source_sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+          "status": "PASS",
+          "source_sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+        },
+        {
+          "module": "TauCeti.Data.Fintype.Fiber",
+          "status": "PASS",
+          "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+          "status": "PASS",
+          "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+          "status": "PASS",
+          "source_sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b"
+        },
+        {
+          "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+          "status": "PASS",
+          "source_sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83"
+        },
+        {
+          "module": "TauCeti.Compat.ListSignVariations",
+          "status": "PASS",
+          "source_sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc"
+        },
+        {
+          "module": "TauCeti.Data.List.SignVariations",
+          "status": "PASS",
+          "source_sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+          "status": "PASS",
+          "source_sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+          "status": "PASS",
+          "source_sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e"
+        },
+        {
+          "module": "TauCeti.Compat.FieldDivisionExtra",
+          "status": "PASS",
+          "source_sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+        },
+        {
+          "module": "TauCeti.Compat.SturmSequence",
+          "status": "PASS",
+          "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+          "status": "PASS",
+          "source_sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+          "status": "PASS",
+          "source_sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+          "status": "PASS",
+          "source_sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+          "status": "PASS",
+          "source_sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+          "status": "PASS",
+          "source_sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+          "status": "PASS",
+          "source_sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+          "status": "PASS",
+          "source_sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+          "status": "PASS",
+          "source_sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Parity",
+          "status": "PASS",
+          "source_sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+          "status": "PASS",
+          "source_sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc"
+        },
+        {
+          "module": "TauCeti.Data.List.PermanencesMinusVariations",
+          "status": "PASS",
+          "source_sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+          "status": "PASS",
+          "source_sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+        },
+        {
+          "module": "TauCeti.GroupTheory.Perm.Inversion",
+          "status": "PASS",
+          "source_sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+          "status": "PASS",
+          "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+          "status": "PASS",
+          "source_sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Reductum",
+          "status": "PASS",
+          "source_sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+        },
+        {
+          "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+          "status": "PASS",
+          "source_sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+        },
+        {
+          "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+          "status": "PASS",
+          "source_sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+          "status": "PASS",
+          "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+        },
+        {
+          "module": "TauCeti.Data.Nat.Choose.Basic",
+          "status": "PASS",
+          "source_sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+          "status": "PASS",
+          "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.OfFn",
+          "status": "PASS",
+          "source_sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+          "status": "PASS",
+          "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+        },
+        {
+          "module": "TauCeti.Data.List.Range",
+          "status": "PASS",
+          "source_sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+          "status": "PASS",
+          "source_sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c"
+        },
+        {
+          "module": "CoefficientSignPattern",
+          "status": "PASS",
+          "source_sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+        },
+        {
+          "module": "UniformRootCount",
+          "status": "PASS",
+          "source_sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+        },
+        {
+          "module": "TauCeti.Data.Matrix.OccCount",
+          "status": "PASS",
+          "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "PASS",
+          "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+          "status": "PASS",
+          "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+          "status": "PASS",
+          "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+          "status": "PASS",
+          "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+        },
+        {
+          "module": "MonicQueryProjection",
+          "status": "PASS",
+          "source_sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+        },
+        {
+          "module": "LocalizationSignDescent",
+          "status": "PASS",
+          "source_sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+        },
+        {
+          "module": "DegreeNormalization",
+          "status": "PASS",
+          "source_sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+        },
+        {
+          "module": "GeneralQueryProjection",
+          "status": "PASS",
+          "source_sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+        },
+        {
+          "module": "GeneralPatternProjection",
+          "status": "PASS",
+          "source_sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+          "status": "PASS",
+          "source_sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+          "status": "PASS",
+          "source_sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+          "status": "PASS",
+          "source_sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4"
+        },
+        {
+          "module": "WholeLineAlternatives",
+          "status": "PASS",
+          "source_sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+        },
+        {
+          "module": "UniformOneVariable",
+          "status": "PASS",
+          "source_sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a"
+        },
+        {
+          "module": "FinSuccEvaluation",
+          "status": "PASS",
+          "source_sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+        },
+        {
+          "module": "FiniteVariableTransfer",
+          "status": "PASS",
+          "source_sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+          "status": "PASS",
+          "source_sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+          "status": "PASS",
+          "source_sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+          "status": "PASS",
+          "source_sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+          "status": "PASS",
+          "source_sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.Basic",
+          "status": "PASS",
+          "source_sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8"
+        },
+        {
+          "module": "ClearDenominators",
+          "status": "PASS",
+          "source_sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+        },
+        {
+          "module": "FractionSemireal",
+          "status": "PASS",
+          "source_sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+        },
+        {
+          "module": "CoefficientOrder",
+          "status": "PASS",
+          "source_sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+        },
+        {
+          "module": "RealInstance",
+          "status": "PASS",
+          "source_sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+        },
+        {
+          "module": "TargetSpec",
+          "status": "PASS",
+          "source_sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+        },
+        {
+          "module": "ConditionalArtin",
+          "status": "PASS",
+          "source_sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b"
+        },
+        {
+          "module": "RealClosureTransfer",
+          "status": "PASS",
+          "source_sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+        },
+        {
+          "module": "TargetSanity",
+          "status": "PASS",
+          "source_sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+        },
+        {
+          "module": "CertificateNonnegative",
+          "status": "PASS",
+          "source_sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+        },
+        {
+          "module": "FinalTargetContract",
+          "status": "PASS",
+          "source_sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+        },
+        {
+          "module": "BoundaryAcceptance",
+          "status": "PASS",
+          "source_sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+        },
+        {
+          "module": "Hilbert17",
+          "status": "PASS",
+          "source_sha256": "e9106e6e8c285b757837dee59235076db13ff35959bb74afee7d63205bcca497"
+        },
+        {
+          "module": "Hilbert17RealClosure",
+          "status": "PASS",
+          "source_sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+        },
+        {
+          "module": "Hilbert17Full",
+          "status": "PASS",
+          "source_sha256": "59369a56860fda3bb3fe5738b9bd10724864d21a1e58fcd167537fe7adec9181"
+        }
+      ]
+    },
+    {
+      "run": "final-entry01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "854d718b69c36dcb375f523b1e94240bcd91dfe5bacb372134064114330029b8",
+      "summary_path": "verification/transfer-runs/final-entry01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "Hilbert17Full",
+          "status": "PASS",
+          "source_sha256": "59369a56860fda3bb3fe5738b9bd10724864d21a1e58fcd167537fe7adec9181"
+        }
+      ]
+    },
+    {
+      "run": "final-hilbert17-contract01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "dca31d62fcb45369e635b151a7ca69150576de0eb6f2cdd5fafc02a92a7ce25d",
+      "summary_path": "verification/transfer-runs/final-hilbert17-contract01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "FinalHilbert17Axioms",
+          "status": "PASS",
+          "source_sha256": "5d6382c8058cc83f3dcd5e840f15f50638524ba4495f25e5200f1621305587e7"
+        },
+        {
+          "module": "FinalTargetContract",
+          "status": "PASS",
+          "source_sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+        },
+        {
+          "module": "BoundaryAcceptance",
+          "status": "PASS",
+          "source_sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+        }
+      ]
+    },
+    {
+      "run": "rcf-characterization-axioms01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "5ba64d3c28f5c4be088794af6659799561a8e071bd0b2344dcf4b81983ee2b37",
+      "summary_path": "verification/transfer-runs/rcf-characterization-axioms01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "QuadraticDiscriminantAxioms",
+          "status": "PASS",
+          "source_sha256": "bf0f9ea8d86e4f1247c700139f160dccc4d851846869ec89e546f18706b9184e"
+        },
+        {
+          "module": "QuadraticExtensionAxioms",
+          "status": "PASS",
+          "source_sha256": "f31428afa3e9dbf3cd413ce43aab3fcdfbdbeaff795b598050b90f812d39cc31"
+        },
+        {
+          "module": "RealClosureFiniteExtensionAxioms",
+          "status": "PASS",
+          "source_sha256": "2ad27d3350fd3a1a99ac4a92fbc179ed19b1d2fbbf164635ab86c241f5d798b8"
+        },
+        {
+          "module": "RealClosureComplexificationAxioms",
+          "status": "PASS",
+          "source_sha256": "468451ae8076424ebf4d21294a3b7d4a37dca43dbd5709e38fd5198ba7040df8"
+        },
+        {
+          "module": "RealClosureGaloisAxioms",
+          "status": "PASS",
+          "source_sha256": "47a512ef655d2736cdb96bde69781342e4fff02836ebf35261eeae1af559fab8"
+        },
+        {
+          "module": "RealClosureAlgebraicClosedAxioms",
+          "status": "PASS",
+          "source_sha256": "5f3ec5659ff051c28f85a90e12618f12e4d528c5bf1d84b85e16f1b1d0eea309"
+        },
+        {
+          "module": "RealClosureIVTAxioms",
+          "status": "PASS",
+          "source_sha256": "a90324852408a1c0b01810b4241e6b98531c74d4c78babc889ed45d0af9d744a"
+        },
+        {
+          "module": "RealClosureAbstractRolleAxioms",
+          "status": "PASS",
+          "source_sha256": "119783113394977565f12b00fcda620554429767d5aa79a0e98a3ed5de4af89a"
+        }
+      ]
+    },
+    {
+      "run": "transfer-bkr-subresultant-checker01-run01",
+      "status": "ALL_SELECTED_LOCAL_REPLAYS_PASS",
+      "summary_sha256": "68a6da2910f19d80b876667faaf9f70ff682bd78c72e5085825be7d2fa5a01da",
+      "summary_path": "verification/transfer-runs/transfer-bkr-subresultant-checker01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Data.Fintype.Fiber",
+          "status": "PASS",
+          "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+        },
+        {
+          "module": "TauCeti.Data.Matrix.OccCount",
+          "status": "PASS",
+          "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "PASS",
+          "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+          "status": "PASS",
+          "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+          "status": "PASS",
+          "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+          "status": "PASS",
+          "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+          "status": "PASS",
+          "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+          "status": "PASS",
+          "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+          "status": "PASS",
+          "source_sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+          "status": "PASS",
+          "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+          "status": "PASS",
+          "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+          "status": "PASS",
+          "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+        }
+      ]
+    },
+    {
+      "run": "transfer-bkr01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "f3ae2c175165a64e1ad2a73d5087ea3cd854f48e8361006a7f58bafc7770d3c6",
+      "summary_path": "verification/transfer-runs/transfer-bkr01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Data.Fintype.Fiber",
+          "status": "PASS",
+          "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+        },
+        {
+          "module": "TauCeti.Data.Matrix.OccCount",
+          "status": "PASS",
+          "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "f1389bbe3557792c03ffa2ef7696fc8c3ff24ddcd65b05cde6acf7d242defc53"
+        }
+      ]
+    },
+    {
+      "run": "transfer-bkr02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "6fc6fb877c44069bc306faa983ce0249b690cac0bdc82650c2f903ce5be0c7f4",
+      "summary_path": "verification/transfer-runs/transfer-bkr02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "DegreeNormalization",
+          "status": "PASS",
+          "source_sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "77df4ff95152d07b0d453cc91d4e0fbd305b3c99fc7401838b8b068988a7fde5"
+        }
+      ]
+    },
+    {
+      "run": "transfer-bkr03-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "55001de102f0cc6b25b6d18dac61839cc5bf077f59c73a5ca4da8d689e318089",
+      "summary_path": "verification/transfer-runs/transfer-bkr03-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "1788313702862fee6d54f34764927c1d38e71b9eb8f7b6437527310fe9d2abd2"
+        }
+      ]
+    },
+    {
+      "run": "transfer-bkr04-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "summary_path": "verification/transfer-runs/transfer-bkr04-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Data.SignType.Lagrange",
+          "status": "PASS",
+          "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+          "status": "PASS",
+          "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+          "status": "PASS",
+          "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+          "status": "PASS",
+          "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+          "status": "PASS",
+          "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "78b6eea27efac2537988a345dca5cc8b6aa8eb1075c2539ba51d0f346f70c19c",
+      "summary_path": "verification/transfer-runs/transfer-candidates01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "UniformRootCount",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "5232326f12598723455a57d02dba246a4ef537f9fac181d4d9970727e360f2e4"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "8f81e8165154679c911e1c823ba7b3541c9fbf21a8755fd1be037e1ee8d77621",
+      "summary_path": "verification/transfer-runs/transfer-candidates02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "UniformRootCount",
+          "status": "PASS",
+          "source_sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+        },
+        {
+          "module": "MonicQueryProjection",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "9abb6f0977b026861b562a913b41f92c0fb150e8e4f727de4140fa9630a24d8a"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates03-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "7f73bc0bb67ef6481954e9b749026347216595b1b5b09604fb377e5c9999361e",
+      "summary_path": "verification/transfer-runs/transfer-candidates03-run01/summary.json",
+      "jobs": [
+        {
+          "module": "MonicQueryProjection",
+          "status": "PASS",
+          "source_sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+        },
+        {
+          "module": "GeneralQueryProjection",
+          "status": "PASS",
+          "source_sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+        },
+        {
+          "module": "GeneralPatternProjection",
+          "status": "PASS",
+          "source_sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+        },
+        {
+          "module": "UniformOneVariable",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "80f47347b9682328262c5e5001f569a6772ce039422e14e39c8d50aa4d17f8b3"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates04-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "7f58ab903fd32294c46674469bd2d85999befe079c99c4b4f13c5a1ab752f49b",
+      "summary_path": "verification/transfer-runs/transfer-candidates04-run01/summary.json",
+      "jobs": [
+        {
+          "module": "UniformOneVariable",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "6ae8cc9e9e34b6efd816d042be8265d6bca9466c56b8ea8b12c6a944d6d4e77d"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates05-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "aafc16825d312f8d56f843795fe25e81b564dd96dd05c1b8f1ee2f136d2a4be1",
+      "summary_path": "verification/transfer-runs/transfer-candidates05-run01/summary.json",
+      "jobs": [
+        {
+          "module": "UniformOneVariable",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "0c845f02261dca53a50de717e65433117f01bd70cdd60e36a33fffc85065147b"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates06-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "ca212e5af23679a8a00830d9e8aba3ac34e436eadf7c30f15e8ac13215017935",
+      "summary_path": "verification/transfer-runs/transfer-candidates06-run01/summary.json",
+      "jobs": [
+        {
+          "module": "UniformOneVariable",
+          "status": "PASS",
+          "source_sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a"
+        },
+        {
+          "module": "FiniteVariableTransfer",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "8ac7b5db330a33776811d00c3ba13fb883b03232d881b73914f5877ae8281ff9"
+        }
+      ]
+    },
+    {
+      "run": "transfer-candidates07-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "4cb9d75e80262b0d978771ac7fcbfacf96c612bd4cdc23339d9ca96aa0691139",
+      "summary_path": "verification/transfer-runs/transfer-candidates07-run01/summary.json",
+      "jobs": [
+        {
+          "module": "FiniteVariableTransfer",
+          "status": "PASS",
+          "source_sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+        },
+        {
+          "module": "RealClosureTransfer",
+          "status": "PASS",
+          "source_sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+        }
+      ]
+    },
+    {
+      "run": "transfer-compat01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "1588345e5e26b254270ca3b6c644024e7e2cca35ef494288ec565e19d55cef37",
+      "summary_path": "verification/transfer-runs/transfer-compat01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "Mathlib.Data.List.Destutter",
+          "status": "PASS",
+          "source_sha256": "82d092d64661eb6389365120f300b647ddaad1e756d037e456c0a9159fb0ec4b"
+        },
+        {
+          "module": "TauCeti.Compat.ListSignVariations",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "66228ccb2ac957f0675c79ebf7d34b42ab528cef5b2ff14570326e23e7d948b3"
+        }
+      ]
+    },
+    {
+      "run": "transfer-compat02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "3ee8c70089a1b1b5a28205179c740111da84039bf9a1da0b60836d5c779e38f0",
+      "summary_path": "verification/transfer-runs/transfer-compat02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Compat.ListSignVariations",
+          "status": "PASS",
+          "source_sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc"
+        },
+        {
+          "module": "TauCeti.Compat.FieldDivisionExtra",
+          "status": "PASS",
+          "source_sha256": "861c7237e99e941c588d0100c13fe88f23c351287066648143ec18df9444d96e"
+        },
+        {
+          "module": "TauCeti.Compat.SturmSequence",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+        }
+      ]
+    },
+    {
+      "run": "transfer-helpers01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "5d2c7724b5307447d8cdc2f50521efd19d6f7db08c41c84d28d70467352e7a6f",
+      "summary_path": "verification/transfer-runs/transfer-helpers01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "FinSuccEvaluation",
+          "status": "PASS",
+          "source_sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+        },
+        {
+          "module": "CoefficientSignPattern",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "c3a291cc582af36238e400fe49c33d5c4789b5f071c24a1caae1280f3413cc8f"
+        }
+      ]
+    },
+    {
+      "run": "transfer-helpers02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "239ecde19b6a136a5951d3612554f03339188bd68dbc2fbf784b60676b5c4d48",
+      "summary_path": "verification/transfer-runs/transfer-helpers02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "CoefficientSignPattern",
+          "status": "PASS",
+          "source_sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+        },
+        {
+          "module": "DegreeNormalization",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "c3cdf21954adec27880c0a9fc8b4cef7d460ba1f99ff11b7ef15d0d1d4d52f82"
+        }
+      ]
+    },
+    {
+      "run": "transfer-infinity01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "ee691f9cbdd0fd0db63feac68296429e381c517639f59800196a2582f7ea0240",
+      "summary_path": "verification/transfer-runs/transfer-infinity01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+          "status": "PASS",
+          "source_sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb"
+        }
+      ]
+    },
+    {
+      "run": "transfer-quadratic01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "43d44ddbe64067ebee33de21d913651dfd0e852b1c9244df0f4f7258c48d1743",
+      "summary_path": "verification/transfer-runs/transfer-quadratic01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Compat.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+        },
+        {
+          "module": "TauCeti.Compat.QuadraticExtension",
+          "status": "PASS",
+          "source_sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+          "status": "PASS",
+          "source_sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+        }
+      ]
+    },
+    {
+      "run": "transfer-rcf-ivt01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "summary_path": "verification/transfer-runs/transfer-rcf-ivt01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Order.Ring.Square",
+          "status": "PASS",
+          "source_sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+        },
+        {
+          "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+          "status": "PASS",
+          "source_sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+        },
+        {
+          "module": "TauCeti.Algebra.Ring.Semireal",
+          "status": "PASS",
+          "source_sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+        },
+        {
+          "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+          "status": "PASS",
+          "source_sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+          "status": "PASS",
+          "source_sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.Galois",
+          "status": "PASS",
+          "source_sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "65057165b6fdd5f890b1d268d066a1934af0635158b9ae05aa1a4081da879ef4"
+        }
+      ]
+    },
+    {
+      "run": "transfer-rcf-ivt02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "281e3fa5f655e19f5437b0a017880163147a264295c504663da21c9766eb6a2a",
+      "summary_path": "verification/transfer-runs/transfer-rcf-ivt02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+          "status": "PASS",
+          "source_sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "4ecddaafa596151455a78fd95c6937825f3a71c5364c0094954f67cb253719ec"
+        }
+      ]
+    },
+    {
+      "run": "transfer-rcf-ivt03-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "9f006dcf667bdcdbc6db4789ce5f6a647351232ba3daca66507ef452ccd7b01b",
+      "summary_path": "verification/transfer-runs/transfer-rcf-ivt03-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+          "status": "PASS",
+          "source_sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f"
+        },
+        {
+          "module": "TauCeti.Algebra.QuadraticDiscriminant",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "998ab5c992bb74865afb2eef8da1aa8d68e5e3e7536ba469fa2828464e4a09d1"
+        }
+      ]
+    },
+    {
+      "run": "transfer-rcf-ivt04-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "6304fd5323eff56caa79c197f9c98d90bdaff295fd5719fb4d2d708334c3d838",
+      "summary_path": "verification/transfer-runs/transfer-rcf-ivt04-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+        },
+        {
+          "module": "Mathlib.Algebra.Polynomial.SpecificDegree",
+          "status": "PASS",
+          "source_sha256": "215b4f3ec51a8a4570482bd50301c83e7b4dc0b061eb937b761e84848c9b02bb"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+          "status": "PASS",
+          "source_sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9"
+        },
+        {
+          "module": "Mathlib.RingTheory.Polynomial.SmallDegreeVieta",
+          "status": "PASS",
+          "source_sha256": "8ed73f783c15e981fa7ce698aa000b4d53f72452c11191db1a3effa1c3ab0c31"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+          "status": "PASS",
+          "source_sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.IVT",
+          "status": "PASS",
+          "source_sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+        }
+      ]
+    },
+    {
+      "run": "transfer-rcf-rolle01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "a3dd6d1de9168dd79401775be72b7622f725b5c48b7d37f3720b17b1cb6482d3",
+      "summary_path": "verification/transfer-runs/transfer-rcf-rolle01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Rolle",
+          "status": "PASS",
+          "source_sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+        },
+        {
+          "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+          "status": "PASS",
+          "source_sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+        }
+      ]
+    },
+    {
+      "run": "transfer-reductum01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "783708f15bb1961314d15bf8c6188a4ecc21374df66c278dc30e751b8adbbe7c",
+      "summary_path": "verification/transfer-runs/transfer-reductum01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "Mathlib.Algebra.Polynomial.Derivation",
+          "status": "PASS",
+          "source_sha256": "92db59c0cca19f9c28529fd17474c1f344e67bd83f08b4344e7abe51502b9b08"
+        },
+        {
+          "module": "Mathlib.Order.GameAdd",
+          "status": "PASS",
+          "source_sha256": "4703c19c868c07c989b66fe6f90055df30d2b6ba73265d08d8f20dc88d06b1e8"
+        },
+        {
+          "module": "Mathlib.Data.DFinsupp.WellFounded",
+          "status": "PASS",
+          "source_sha256": "c78cafb79ebf43a96a64703ae454cdb16aa93bbca7dba1093c95935488b426cc"
+        },
+        {
+          "module": "Mathlib.Data.Finsupp.WellFounded",
+          "status": "PASS",
+          "source_sha256": "f126bde8897caf687895f1258db9d5c6b8f56a9b50e4ba69f8ea3f6c9bd962aa"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.LexOrder",
+          "status": "PASS",
+          "source_sha256": "5c4202e2ecec831644916255b0f9f4ab29ae29bf0e3cd7ba53ef937e80e0a980"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.Order",
+          "status": "PASS",
+          "source_sha256": "c836e42a2985173386aa17cc3be8a07596fce9b536ae56a9afdf4def811b3991"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors",
+          "status": "PASS",
+          "source_sha256": "2bd7d849b7d8e6828ddfd951f70ac83e7a1d4a62a866a7a38eaf60e57b1f9231"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.Inverse",
+          "status": "PASS",
+          "source_sha256": "88aa16350e36e9b306e70cfdbe146a758266dd7a6e3b84ae73e8da168faeed0d"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Basic",
+          "status": "PASS",
+          "source_sha256": "2a1789832908109b3b461bbbd869188751484fd65bc97527e085f664511ac9cc"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Order",
+          "status": "PASS",
+          "source_sha256": "613f031de3c0f6f42a91bdb884a4a8b9e362d4fc0423b29da7e09f352aec42b0"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.NoZeroDivisors",
+          "status": "PASS",
+          "source_sha256": "41cd6461630267b7ab62deed3d5ddeebbd510bc719a372908bde8984eda679f2"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Inverse",
+          "status": "PASS",
+          "source_sha256": "6e7b5c27c38ade2b222af3d6d5f81c33d0a97a7d94555c8b1e6978c6e8911200"
+        },
+        {
+          "module": "Mathlib.Data.List.GetD",
+          "status": "PASS",
+          "source_sha256": "a3c1ef02429c3696d65dc0a2c266287f4e670f1d511962ead1f6f798d587fff9"
+        },
+        {
+          "module": "Mathlib.Data.List.ToFinsupp",
+          "status": "PASS",
+          "source_sha256": "4db308932c91ebc9ece68ac8ad4364d4963debc92bed3cb2cc3d7e058acd7932"
+        },
+        {
+          "module": "Mathlib.Data.Nat.Factorial.DoubleFactorial",
+          "status": "PASS",
+          "source_sha256": "cb2d2378fc50ab17003d9297bbc1a06d103a7e0ecdc7624cdf73b3bbe57e5120"
+        },
+        {
+          "module": "Mathlib.Data.Nat.Choose.Multinomial",
+          "status": "PASS",
+          "source_sha256": "70a3aa4611a7792089021764848f4aaefcb92392387c33505d8beeea15d8fc12"
+        },
+        {
+          "module": "Mathlib.Algebra.MvPolynomial.Coeff",
+          "status": "PASS",
+          "source_sha256": "95ccb03aba37ba4c0bbb12dee38bb2450c829862e49cf64d5a888d7fa6218e0d"
+        },
+        {
+          "module": "Mathlib.Data.Finset.Finsupp",
+          "status": "PASS",
+          "source_sha256": "e0daced7e7b6f389dcc65f4b975c0619b9075d1b3be9227e35165f526306fc42"
+        },
+        {
+          "module": "Mathlib.Data.Finsupp.Interval",
+          "status": "PASS",
+          "source_sha256": "8499eee9cee87d32020ae19fbbbfa68a521bd2fbe13f5f92f4870aaf02e277ee"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.Trunc",
+          "status": "PASS",
+          "source_sha256": "38e1f35bd05f03026efbd52e3ad4d74d91ba2230562fea2cbae05c05c57ff9e2"
+        },
+        {
+          "module": "Mathlib.Topology.Instances.ENat",
+          "status": "PASS",
+          "source_sha256": "6be36f25c41d9fa9de9861c05d5b06a2743a1a456f31c43bd632568d09d43863"
+        },
+        {
+          "module": "Mathlib.Topology.Algebra.LinearTopology",
+          "status": "PASS",
+          "source_sha256": "2408db49e6e95fdfbb5a980592451adc981baf46e9e6bbff4983c9fcba24d524"
+        },
+        {
+          "module": "Mathlib.Topology.Algebra.TopologicallyNilpotent",
+          "status": "PASS",
+          "source_sha256": "3dae93da7dae4d79c7ce6c10b5369b16f0a2961c57f17c0234656f4c8f35807f"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.PiTopology",
+          "status": "PASS",
+          "source_sha256": "ab0aa63f03d67485c1475347094429ae8bc569185e4720ac2634e42ba5567911"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.Evaluation",
+          "status": "PASS",
+          "source_sha256": "533efe3b9d0308a5842f4927c514df7e5df45fcba0b366c28084f74741ccf43c"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.LinearTopology",
+          "status": "PASS",
+          "source_sha256": "9605f729f7f41fae9245d82a9e5c6c217db3db48da19cd2ec5b13ee177990e29"
+        },
+        {
+          "module": "Mathlib.RingTheory.MvPowerSeries.Substitution",
+          "status": "PASS",
+          "source_sha256": "556183c508cf310c7596e160dbeab1424f0893086852a87015f500331b40901a"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Trunc",
+          "status": "PASS",
+          "source_sha256": "6e918ead79bef7a8180f74c3a68924573ea142d28643541504d5d7a5c607106a"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.PiTopology",
+          "status": "PASS",
+          "source_sha256": "f05e6c99776d5f9779b5d155acc8c97f94f615cb07635231cc9db961dd17b1d2"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Evaluation",
+          "status": "PASS",
+          "source_sha256": "153b4c4204923f5cc6de9f9ad3e27e22454a7a5b3e92c8047edb9ce8475c86d2"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Substitution",
+          "status": "PASS",
+          "source_sha256": "0fb4bd321f9575c56e2f55bdebda83112ebaa865d01fe64be16546d25921831b"
+        },
+        {
+          "module": "Mathlib.RingTheory.PowerSeries.Derivative",
+          "status": "PASS",
+          "source_sha256": "444d92996281fecaa4562e6f441c57c4e71a303d2fbae4c413cf01a5f53d5f3a"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Reductum",
+          "status": "PASS",
+          "source_sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+        }
+      ]
+    },
+    {
+      "run": "transfer-sampling01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "2cad59ae3fed52929d10356ecec361c77065a2115f2ffaef84c54a1a12a3b6d7",
+      "summary_path": "verification/transfer-runs/transfer-sampling01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+          "status": "PASS",
+          "source_sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873"
+        },
+        {
+          "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+          "status": "PASS",
+          "source_sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4"
+        }
+      ]
+    },
+    {
+      "run": "transfer-sturm-cauchy02-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "4704e0ea10fb6463b85e3994b7c34857549f910bbe9ff663bc489bd8857706fa",
+      "summary_path": "verification/transfer-runs/transfer-sturm-cauchy02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Thom",
+          "status": "PASS",
+          "source_sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+          "status": "PASS",
+          "source_sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+          "status": "PASS",
+          "source_sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "a10b96b02e2df1d5c1e82b35c2f4d548140702e3e3d6720cbb5cdc772ed13aef"
+        }
+      ]
+    },
+    {
+      "run": "transfer-sturm-cauchy03-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "summary_path": "verification/transfer-runs/transfer-sturm-cauchy03-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+          "status": "PASS",
+          "source_sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+          "status": "PASS",
+          "source_sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+          "status": "PASS",
+          "source_sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+          "status": "PASS",
+          "source_sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+          "status": "PASS",
+          "source_sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+          "status": "PASS",
+          "source_sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+          "status": "PASS",
+          "source_sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+          "status": "PASS",
+          "source_sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+          "status": "PASS",
+          "source_sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+          "status": "PASS",
+          "source_sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+          "status": "PASS",
+          "source_sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c"
+        }
+      ]
+    },
+    {
+      "run": "transfer-sturm-entry01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "8b886fcac56b9a5347f90acce8dd529fe9514e1f4a9c0b58716bed3b6fdc4ff6",
+      "summary_path": "verification/transfer-runs/transfer-sturm-entry01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Compat.FieldDivisionExtra",
+          "status": "PASS",
+          "source_sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+        },
+        {
+          "module": "TauCeti.Compat.SturmSequence",
+          "status": "PASS",
+          "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+        },
+        {
+          "module": "Hilbert17RealClosure",
+          "status": "PASS",
+          "source_sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+        }
+      ]
+    },
+    {
+      "run": "transfer-sturm-independent01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "summary_path": "verification/transfer-runs/transfer-sturm-independent01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+          "status": "PASS",
+          "source_sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703"
+        },
+        {
+          "module": "TauCeti.Data.Finset.Jumps",
+          "status": "PASS",
+          "source_sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608"
+        },
+        {
+          "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+          "status": "PASS",
+          "source_sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83"
+        },
+        {
+          "module": "TauCeti.Data.List.SignVariations",
+          "status": "PASS",
+          "source_sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+          "status": "PASS",
+          "source_sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b"
+        },
+        {
+          "module": "TauCeti.Data.SignType.Parity",
+          "status": "PASS",
+          "source_sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c"
+        },
+        {
+          "module": "TauCeti.Data.List.PermanencesMinusVariations",
+          "status": "PASS",
+          "source_sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c"
+        },
+        {
+          "module": "TauCeti.Data.List.Range",
+          "status": "PASS",
+          "source_sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650"
+        }
+      ]
+    },
+    {
+      "run": "transfer-subresultant01-run01",
+      "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+      "summary_sha256": "420dc2183bb24fcefe0d0884ce8f3a719cbf3f4512cc5320b541eb9542f1009c",
+      "summary_path": "verification/transfer-runs/transfer-subresultant01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+          "status": "PASS",
+          "source_sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+        },
+        {
+          "module": "TauCeti.GroupTheory.Perm.Inversion",
+          "status": "PASS",
+          "source_sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+        },
+        {
+          "module": "Mathlib.Algebra.Polynomial.OfFn",
+          "status": "PASS",
+          "source_sha256": "4b471e49fdbaaa34df30df264e6debaf5139932103208f0bfac75cb41dcfaaff"
+        },
+        {
+          "module": "Mathlib.RingTheory.Polynomial.DegreeLT",
+          "status": "PASS",
+          "source_sha256": "63727fdce87ccc401a0cd6beb3e95689c75b434e77d20953d6903fbc5156aa76"
+        },
+        {
+          "module": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+          "status": "PASS",
+          "source_sha256": "ec4914f081126c7954f14ae263f072a176b874ded07cb2aa5093946fac0bb119"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+          "status": "COMPILE_FAILED",
+          "source_sha256": "7401af8c71689e8ef4f72d0eb0c3f13acd7383127b9d67bfcd79850351e30b9f"
+        }
+      ]
+    },
+    {
+      "run": "transfer-subresultant02-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "summary_path": "verification/transfer-runs/transfer-subresultant02-run01/summary.json",
+      "jobs": [
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+          "status": "PASS",
+          "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+          "status": "PASS",
+          "source_sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+        },
+        {
+          "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+          "status": "PASS",
+          "source_sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+        },
+        {
+          "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+          "status": "PASS",
+          "source_sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+          "status": "PASS",
+          "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+        },
+        {
+          "module": "TauCeti.Data.Nat.Choose.Basic",
+          "status": "PASS",
+          "source_sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+          "status": "PASS",
+          "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+        },
+        {
+          "module": "TauCeti.Algebra.Polynomial.OfFn",
+          "status": "PASS",
+          "source_sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5"
+        },
+        {
+          "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+          "status": "PASS",
+          "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+        }
+      ]
+    },
+    {
+      "run": "transfer-wholeline01-run01",
+      "status": "ALL_PLANNED_COMPILES_PASS",
+      "summary_sha256": "92127940d5eabf52f11d140af83ee2a071858705b93c0b45e5b96b001e78b3f7",
+      "summary_path": "verification/transfer-runs/transfer-wholeline01-run01/summary.json",
+      "jobs": [
+        {
+          "module": "WholeLineAlternatives",
+          "status": "PASS",
+          "source_sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+        }
+      ]
+    }
+  ]
+}

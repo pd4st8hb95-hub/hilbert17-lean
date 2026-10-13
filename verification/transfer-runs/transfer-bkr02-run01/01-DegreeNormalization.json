@@ -1,0 +1,55 @@
+{
+  "label": "DegreeNormalization",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean",
+    "bytes": 2861,
+    "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+  },
+  "start_utc": "2026-10-13T13:36:11.529265+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:36:11.529255+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8360796,
+    "used_percent": 18.083677590807746
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr02-run01/01-DegreeNormalization.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr02-run01/01-DegreeNormalization.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T13:36:14.032625+00:00",
+  "peak_physical_used_percent": 20.62758389059216,
+  "memory_after": {
+    "utc": "2026-10-13T13:36:14.032775+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8342700,
+    "used_percent": 18.260976232027645
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+      "bytes": 149256,
+      "sha256": "1e923a11979e6799509152c92e3992e6ec07e766e9b32e8cae65bfcc7fe689dd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+      "bytes": 10881,
+      "sha256": "8f6aea1ed7487314660058863bfc43297b59e12a2eef9f12581a71264659e221"
+    }
+  ]
+}

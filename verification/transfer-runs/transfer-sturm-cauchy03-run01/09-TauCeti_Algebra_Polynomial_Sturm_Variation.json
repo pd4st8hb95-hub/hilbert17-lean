@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+    "bytes": 6251,
+    "sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454"
+  },
+  "start_utc": "2026-10-13T13:55:01.630288+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:55:01.630274+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8335840,
+    "used_percent": 18.32818825008514
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Variation.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/09-TauCeti_Algebra_Polynomial_Sturm_Variation.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/09-TauCeti_Algebra_Polynomial_Sturm_Variation.stderr.log",
+  "pid": 32,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:55:04.634241+00:00",
+  "peak_physical_used_percent": 21.8740826931209,
+  "memory_after": {
+    "utc": "2026-10-13T13:55:04.634393+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8334272,
+    "used_percent": 18.343550997069713
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.olean",
+      "bytes": 197496,
+      "sha256": "72f150abac6fbd04f219ce16acfc9df6ecb91f418a626dec09a6e2dc9067118e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.ilean",
+      "bytes": 19002,
+      "sha256": "c77244d84aad7df553ab1e6058049d6507f6a2374912a2df9c3a89b91e84d417"
+    }
+  ]
+}

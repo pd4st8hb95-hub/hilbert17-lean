@@ -1,0 +1,46 @@
+{
+  "module": "TargetSpec",
+  "start_utc": "2026-10-13T14:21:51.115930+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:51.115924+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8320136,
+    "used_percent": 18.48205086401735
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TargetSpec"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/TargetSpec.lean",
+    "bytes": 2016,
+    "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.olean",
+      "bytes": 43520,
+      "sha256": "3f435fb3b831d0f6ca3e02d096a390fcbd5e45c928ec9343cd8929714c3c4579"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.ilean",
+      "bytes": 5962,
+      "sha256": "701f8f27f7b0a1e8f789f17eaa57871bd30d10a3dbb445defe14c38c00d94334"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/88-TargetSpec.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/88-TargetSpec.stderr.log",
+  "pid": 614,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:21:53.118599+00:00",
+  "peak_physical_used_percent": 19.823743830896912,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:53.118689+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8319824,
+    "used_percent": 18.48510773714183
+  }
+}

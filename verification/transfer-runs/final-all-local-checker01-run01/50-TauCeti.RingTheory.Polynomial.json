@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.RingTheory.Polynomial.Reductum",
+  "start_utc": "2026-10-13T14:20:25.846853+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:25.846843+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8306888,
+    "used_percent": 18.611850399764542
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.RingTheory.Polynomial.Reductum"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Reductum.lean",
+    "bytes": 14817,
+    "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Reductum.olean",
+      "bytes": 459488,
+      "sha256": "9185fde9660489579b85942555668c537db1221c4c507cb0b87fb059e49ddb11"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Reductum.ilean",
+      "bytes": 28067,
+      "sha256": "6789c8ebd2cb79fd269699638bdcef4bf9f5dbbc72ae87e0532567cf70c95bca"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/50-TauCeti.RingTheory.Polynomial.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/50-TauCeti.RingTheory.Polynomial.stderr.log",
+  "pid": 348,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:20:28.350346+00:00",
+  "peak_physical_used_percent": 20.16721095990911,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:28.350433+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310776,
+    "used_percent": 18.57375705775178
+  }
+}

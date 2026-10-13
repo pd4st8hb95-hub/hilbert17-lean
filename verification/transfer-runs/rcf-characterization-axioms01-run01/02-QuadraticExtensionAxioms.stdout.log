@@ -1,0 +1,4 @@
+TauCeti.Compat.finrank_ne_two_of_forall_isSquare.{u_1, u_2} {K : Type u_1} {L : Type u_2} [Field.{u_1} K]
+  [NeZero.{u_1} 2] [Field.{u_2} L] [Algebra.{u_1, u_2} K L] (hsq : ∀ (x : K), IsSquare.{u_1} x) :
+  Ne.{1} (Module.finrank.{u_1, u_2} K L) 2
+'TauCeti.Compat.finrank_ne_two_of_forall_isSquare' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

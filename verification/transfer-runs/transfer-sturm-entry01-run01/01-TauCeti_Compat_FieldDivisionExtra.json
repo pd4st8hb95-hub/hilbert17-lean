@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Compat.FieldDivisionExtra",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+    "bytes": 1281,
+    "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+  },
+  "start_utc": "2026-10-13T13:30:33.464590+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:30:33.464579+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8351788,
+    "used_percent": 18.171935004606866
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/01-TauCeti_Compat_FieldDivisionExtra.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/01-TauCeti_Compat_FieldDivisionExtra.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:30:35.467563+00:00",
+  "peak_physical_used_percent": 20.333065922252743,
+  "memory_after": {
+    "utc": "2026-10-13T13:30:35.467710+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339360,
+    "used_percent": 18.293700450732022
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+      "bytes": 94288,
+      "sha256": "95ddc0251628a8fdfc2b81d4bc3959d3c2ed984c117114c39eb435865162a849"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+      "bytes": 2848,
+      "sha256": "1e4391f18bcb71d6b75cbb6ecbd9d1d33ae68bd9dcf8a0d99b9abea635f98217"
+    }
+  ]
+}

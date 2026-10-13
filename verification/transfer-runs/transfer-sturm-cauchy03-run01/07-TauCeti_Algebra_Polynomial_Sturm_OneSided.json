@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+    "bytes": 18473,
+    "sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20"
+  },
+  "start_utc": "2026-10-13T13:54:52.616556+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:52.616542+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8334116,
+    "used_percent": 18.345079433631952
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/07-TauCeti_Algebra_Polynomial_Sturm_OneSided.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/07-TauCeti_Algebra_Polynomial_Sturm_OneSided.stderr.log",
+  "pid": 26,
+  "exit_code": 0,
+  "seconds": 5.005,
+  "end_utc": "2026-10-13T13:54:57.621964+00:00",
+  "peak_physical_used_percent": 21.948623368540936,
+  "memory_after": {
+    "utc": "2026-10-13T13:54:57.622217+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8338988,
+    "used_percent": 18.29734518407275
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.olean",
+      "bytes": 513800,
+      "sha256": "03b3b26bb1e52287c79f162b4dce1dd2b63e82b19769a09a2875746d23b04575"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.ilean",
+      "bytes": 38784,
+      "sha256": "1d6430353ee45bb451c522ba8e416d9086d582b85e85eddddea49557969ba97a"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+    "bytes": 5807,
+    "sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873"
+  },
+  "start_utc": "2026-10-13T13:56:20.748217+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:56:20.748208+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8334212,
+    "used_percent": 18.34413885728596
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sampling01-run01/01-TauCeti_Algebra_Polynomial_RealClosed_Sampling.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sampling01-run01/01-TauCeti_Algebra_Polynomial_RealClosed_Sampling.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 5.507,
+  "end_utc": "2026-10-13T13:56:26.255727+00:00",
+  "peak_physical_used_percent": 21.90657176773878,
+  "memory_after": {
+    "utc": "2026-10-13T13:56:26.255874+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8313776,
+    "used_percent": 18.544364046939464
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.olean",
+      "bytes": 342648,
+      "sha256": "1be0f2befdaa60c83b16b86b087500fc7be95525487d23476330fd23bd33ada9"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.ilean",
+      "bytes": 11769,
+      "sha256": "e2b9534398340ab15fb329c7bedc583f6923b216347b10f9aaa7047b285aa265"
+    }
+  ]
+}

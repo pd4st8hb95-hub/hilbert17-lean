@@ -1,0 +1,55 @@
+{
+  "label": "QuadraticDiscriminantAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean",
+    "bytes": 453,
+    "sha256": "bf0f9ea8d86e4f1247c700139f160dccc4d851846869ec89e546f18706b9184e"
+  },
+  "start_utc": "2026-10-13T14:00:54.509464+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:00:54.509455+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8359628,
+    "used_percent": 18.09512126968401
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/01-QuadraticDiscriminantAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/01-QuadraticDiscriminantAxioms.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T14:00:56.012173+00:00",
+  "peak_physical_used_percent": 20.1957417757376,
+  "memory_after": {
+    "utc": "2026-10-13T14:00:56.012327+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8345108,
+    "used_percent": 18.237383442015624
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.olean",
+      "bytes": 1552,
+      "sha256": "9b45766c5b4a4b8be33776bcf76b871790a8399c62716ef8399595a5feba8e73"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.ilean",
+      "bytes": 485,
+      "sha256": "ffe09b7d8b24fabc6f4e08834fab141ec09b893bc4dc3c925625cf42428d79fb"
+    }
+  ]
+}

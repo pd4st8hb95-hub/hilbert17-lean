@@ -1,0 +1,46 @@
+{
+  "module": "Hilbert17RealClosure",
+  "start_utc": "2026-10-13T14:22:08.673707+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:22:08.673700+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310612,
+    "used_percent": 18.575363875676185
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "Hilbert17RealClosure"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-realclosure-delta-20261013/Hilbert17RealClosure.lean",
+    "bytes": 238,
+    "sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.olean",
+      "bytes": 2424,
+      "sha256": "dc64b88a7d8b70ede4763364f05f2e3f47fee38095a8d893d757e5547573724c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.ilean",
+      "bytes": 182,
+      "sha256": "5ea3121bc24c86fb4271e2ed78cf40d8ed4aacc2ff18f9e3a3981f9ed8c12830"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/96-Hilbert17RealClosure.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/96-Hilbert17RealClosure.stderr.log",
+  "pid": 670,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:22:11.176841+00:00",
+  "peak_physical_used_percent": 20.07840487657483,
+  "memory_after": {
+    "utc": "2026-10-13T14:22:11.176930+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8309588,
+    "used_percent": 18.585396690033456
+  }
+}

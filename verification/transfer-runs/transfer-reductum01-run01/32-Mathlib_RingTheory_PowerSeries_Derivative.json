@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Derivative",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Derivative.lean",
+    "bytes": 8445,
+    "sha256": "444d92996281fecaa4562e6f441c57c4e71a303d2fbae4c413cf01a5f53d5f3a"
+  },
+  "start_utc": "2026-10-13T13:26:01.080811+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:26:01.080795+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8341036,
+    "used_percent": 18.27727955535821
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Derivative.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/32-Mathlib_RingTheory_PowerSeries_Derivative.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/32-Mathlib_RingTheory_PowerSeries_Derivative.stderr.log",
+  "pid": 121,
+  "exit_code": 0,
+  "seconds": 3.504,
+  "end_utc": "2026-10-13T13:26:04.585549+00:00",
+  "peak_physical_used_percent": 20.822949435791358,
+  "memory_after": {
+    "utc": "2026-10-13T13:26:04.585707+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352400,
+    "used_percent": 18.165938830401153
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.olean",
+      "bytes": 90824,
+      "sha256": "c9505dfd57f46381b161d99a84ba0e05008668a8211920c10be256666417c565"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.olean.private",
+      "bytes": 383560,
+      "sha256": "3b3bbf77ca1dfcc8816b446f879d713e1e41f1e0b7f60e358ff906f279d2d285"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.olean.server",
+      "bytes": 8920,
+      "sha256": "1902538e0d9e49d00306bf954871482d1c9e343fc613bace099320c02c0f79c4"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.ilean",
+      "bytes": 26456,
+      "sha256": "5ee51fb1334ccd001fa1a2cec2ce0c6a113b78ba7a686a4c9b69b99c5f844017"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.ir",
+      "bytes": 13928,
+      "sha256": "e77dd08f942092ace5441296629400217562efa3338ff5135b3d3c952ce31a4c"
+    }
+  ]
+}

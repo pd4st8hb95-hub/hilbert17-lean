@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+    "bytes": 1712,
+    "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+  },
+  "start_utc": "2026-10-13T13:38:19.028697+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:38:19.028684+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8332552,
+    "used_percent": 18.36040298993544
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/04-TauCeti_Algebra_Order_Ring_Ordering_Semireal.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/04-TauCeti_Algebra_Order_Ring_Ordering_Semireal.stderr.log",
+  "pid": 14,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:38:20.531336+00:00",
+  "peak_physical_used_percent": 19.897735836781788,
+  "memory_after": {
+    "utc": "2026-10-13T13:38:20.531597+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8333596,
+    "used_percent": 18.350174222172754
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean",
+      "bytes": 50848,
+      "sha256": "cf02b3c013d47edd54f07430933a8bd6c08ac3f4ef0bde78135f21519a00003e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.ilean",
+      "bytes": 3187,
+      "sha256": "009abdfb1b073e61d7791fb4b9657ef54a0b5dbb6a61b0165810718c415375cb"
+    }
+  ]
+}

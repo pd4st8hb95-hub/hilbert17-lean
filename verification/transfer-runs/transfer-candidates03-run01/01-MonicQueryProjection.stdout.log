@@ -1,0 +1,8 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean:49:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.monicQueryRemainder_map`:
+  [LinearOrder K]
+  [IsStrictOrderedRing K]
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder K] [IsStrictOrderedRing K] [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

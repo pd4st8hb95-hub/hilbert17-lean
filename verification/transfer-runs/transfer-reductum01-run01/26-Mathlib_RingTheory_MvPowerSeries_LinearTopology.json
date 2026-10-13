@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.MvPowerSeries.LinearTopology",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/LinearTopology.lean",
+    "bytes": 7748,
+    "sha256": "9605f729f7f41fae9245d82a9e5c6c217db3db48da19cd2ec5b13ee177990e29"
+  },
+  "start_utc": "2026-10-13T13:25:29.012979+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:29.012961+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8322536,
+    "used_percent": 18.458536455367497
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/LinearTopology.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/26-Mathlib_RingTheory_MvPowerSeries_LinearTopology.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/26-Mathlib_RingTheory_MvPowerSeries_LinearTopology.stderr.log",
+  "pid": 94,
+  "exit_code": 0,
+  "seconds": 2.504,
+  "end_utc": "2026-10-13T13:25:31.517676+00:00",
+  "peak_physical_used_percent": 20.558412338480508,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:31.517834+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328312,
+    "used_percent": 18.401945111883517
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.olean",
+      "bytes": 80624,
+      "sha256": "3436e0e47e23add492f75d02fb86a49c290818a16ad65ce3829f8ca92db3e327"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.olean.private",
+      "bytes": 322664,
+      "sha256": "d376b0f152780120a3210d1c44657bf3926f349e59e7b7af1fc54b7aac90837c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.olean.server",
+      "bytes": 5960,
+      "sha256": "11790df186e40fda2fb306c169e333f8c2be7e1b8086c61a19ea9533d985a00a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.ilean",
+      "bytes": 22284,
+      "sha256": "74d738f0f21f6469549eddd40687049c616d330780e44da7da6c75a51f779d02"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.ir",
+      "bytes": 2520,
+      "sha256": "fcf8831f5926ba66099b7274ad69cbecb719a9728e750b29b8b7738441daebed"
+    }
+  ]
+}

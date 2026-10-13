@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "scope": "17 printed recursive axiom lists across three final diagnostic modules; standard axioms only",
+  "records": [
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_finite_rational_squares",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_negativePointTransfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    }
+  ]
+}

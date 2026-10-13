@@ -1,0 +1,46 @@
+{
+  "module": "ConditionalArtin",
+  "start_utc": "2026-10-13T14:21:53.122794+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:53.122787+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8319584,
+    "used_percent": 18.487459178006816
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "ConditionalArtin"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/ConditionalArtin.lean",
+    "bytes": 4012,
+    "sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtin.olean",
+      "bytes": 103528,
+      "sha256": "8a1cae3705355c32696e191293f9980025ce1b2138959b67613e8c13071ba68b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtin.ilean",
+      "bytes": 9834,
+      "sha256": "4c148242d230bf393f031e5fb69a625316747a4aba5b91a21d17b82eb5cd6519"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/89-ConditionalArtin.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/89-ConditionalArtin.stderr.log",
+  "pid": 621,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:21:55.125298+00:00",
+  "peak_physical_used_percent": 20.046307708767777,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:55.125389+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310644,
+    "used_percent": 18.57505035022752
+  }
+}

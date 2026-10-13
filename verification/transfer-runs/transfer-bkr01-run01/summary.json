@@ -1,0 +1,188 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:32:49.191403+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-bkr-compile-plan01.json",
+  "plan_sha256": "8622e890cab3a9c8c187196c1924cc8582024060bd6e9d3c2c11262a47dd928f",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Seven mechanically adapted BKR modules; independent of real-closed-field/Sturm development. Source-only until compiler/axiom verification.",
+  "jobs": [
+    {
+      "label": "TauCeti.Data.Fintype.Fiber",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+        "bytes": 8130,
+        "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+      },
+      "start_utc": "2026-10-13T13:32:49.191734+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:32:49.191723+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349400,
+        "used_percent": 18.19533184121347
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/01-TauCeti_Data_Fintype_Fiber.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/01-TauCeti_Data_Fintype_Fiber.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:32:50.694525+00:00",
+      "peak_physical_used_percent": 20.05685000197913,
+      "memory_after": {
+        "utc": "2026-10-13T13:32:50.694671+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332888,
+        "used_percent": 18.357110972724463
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+          "bytes": 149904,
+          "sha256": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+          "bytes": 15215,
+          "sha256": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Data.Matrix.OccCount",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+        "bytes": 2653,
+        "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+      },
+      "start_utc": "2026-10-13T13:32:50.695656+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:32:50.695644+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332888,
+        "used_percent": 18.357110972724463
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/02-TauCeti_Data_Matrix_OccCount.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/02-TauCeti_Data_Matrix_OccCount.stderr.log",
+      "pid": 9,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:32:52.198061+00:00",
+      "peak_physical_used_percent": 20.253900746464904,
+      "memory_after": {
+        "utc": "2026-10-13T13:32:52.198201+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317780,
+        "used_percent": 18.50513417517529
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+          "bytes": 69296,
+          "sha256": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+          "bytes": 4214,
+          "sha256": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Data.SignType.Lagrange",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+        "bytes": 2170,
+        "sha256": "f1389bbe3557792c03ffa2ef7696fc8c3ff24ddcd65b05cde6acf7d242defc53"
+      },
+      "start_utc": "2026-10-13T13:32:52.199154+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:32:52.199143+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317780,
+        "used_percent": 18.50513417517529
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/03-TauCeti_Data_SignType_Lagrange.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/03-TauCeti_Data_SignType_Lagrange.stderr.log",
+      "pid": 12,
+      "exit_code": 1,
+      "seconds": 2.502,
+      "end_utc": "2026-10-13T13:32:54.702403+00:00",
+      "peak_physical_used_percent": 20.261425357232856,
+      "memory_after": {
+        "utc": "2026-10-13T13:32:54.702568+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317644,
+        "used_percent": 18.506466658332116
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:32:54.703268+00:00"
+}

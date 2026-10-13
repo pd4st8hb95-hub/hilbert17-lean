@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+  "start_utc": "2026-10-13T13:53:55.418009+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:53:55.418003+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8336092,
+    "used_percent": 18.32571923717691
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+    "bytes": 7415,
+    "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean",
+      "bytes": 217208,
+      "sha256": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.ilean",
+      "bytes": 15442,
+      "sha256": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/06-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/06-TauCeti.Geometry.RealAlgebraic.SignDetermination.stderr.log",
+  "pid": 40,
+  "exit_code": 0,
+  "seconds": 2.006,
+  "end_utc": "2026-10-13T13:53:57.424152+00:00",
+  "peak_physical_used_percent": 19.843456743481706,
+  "memory_after": {
+    "utc": "2026-10-13T13:53:57.424264+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8338748,
+    "used_percent": 18.299696624937734
+  }
+}

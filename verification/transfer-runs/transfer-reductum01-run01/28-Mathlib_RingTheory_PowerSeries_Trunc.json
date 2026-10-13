@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Trunc",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Trunc.lean",
+    "bytes": 8423,
+    "sha256": "6e918ead79bef7a8180f74c3a68924573ea142d28643541504d5d7a5c607106a"
+  },
+  "start_utc": "2026-10-13T13:25:42.037638+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:42.037623+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8340244,
+    "used_percent": 18.28503931021266
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Trunc.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/28-Mathlib_RingTheory_PowerSeries_Trunc.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/28-Mathlib_RingTheory_PowerSeries_Trunc.stderr.log",
+  "pid": 101,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:25:45.042196+00:00",
+  "peak_physical_used_percent": 20.593448807368787,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:45.042361+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8290868,
+    "used_percent": 18.768809077502315
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.olean",
+      "bytes": 131400,
+      "sha256": "3fb52a7ba84bebc76e21045b2f9851d91780c5b9acae80917566f667bfcc14c6"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.olean.private",
+      "bytes": 368712,
+      "sha256": "161c4aaf2d89125bedadd1db459466be56d88fac65320a6f8fc3ab7aa957675f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.olean.server",
+      "bytes": 9904,
+      "sha256": "96cf4ea96dc1e013641a0cbd8635b8ac98d411382033c62e21e5cc1c048bb710"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.ilean",
+      "bytes": 28491,
+      "sha256": "5d4d4b758eebabbacaf7a3732e5d2c6d768dd8ccb92c2438c6ef11ba7647259e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.ir",
+      "bytes": 10000,
+      "sha256": "b281031530af0ce4076cacd24ab4fb6ee0cd3e5745a09651da4f39ae3c1556eb"
+    }
+  ]
+}

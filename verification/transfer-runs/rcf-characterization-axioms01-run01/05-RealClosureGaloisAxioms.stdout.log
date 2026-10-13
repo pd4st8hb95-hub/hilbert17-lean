@@ -1,0 +1,15 @@
+TauCeti.RealClosure.isPGroup_two_algEquiv.{u_1, u_2} {R : Type u_1} {E : Type u_2} [Field.{u_1} R]
+  [IsRealClosed.{u_1} R] [Field.{u_2} E] [Algebra.{u_1, u_2} R E] [FiniteDimensional.{u_1, u_2} R E]
+  [IsGalois.{u_1, u_2} R E] : IsPGroup.{u_2} 2 Gal(E/R)
+'TauCeti.RealClosure.isPGroup_two_algEquiv' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.RealClosure.finrank_eq_one_of_isPGroup.{u_3, u_4} {K : Type u_3} {L : Type u_4} [Field.{u_3} K] [NeZero.{u_3} 2]
+  [Field.{u_4} L] [Algebra.{u_3, u_4} K L] [FiniteDimensional.{u_3, u_4} K L] [IsGalois.{u_3, u_4} K L]
+  (hsq : ∀ (x : K), IsSquare.{u_3} x) (hG : IsPGroup.{u_4} 2 Gal(L/K)) : Eq.{1} (Module.finrank.{u_3, u_4} K L) 1
+'TauCeti.RealClosure.finrank_eq_one_of_isPGroup' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare.{u_1, u_2, u_3} {R : Type u_1} {E : Type u_2}
+  [Field.{u_1} R] [IsRealClosed.{u_1} R] [Field.{u_2} E] [Algebra.{u_1, u_2} R E] [FiniteDimensional.{u_1, u_2} R E]
+  [IsGalois.{u_1, u_2} R E] {C : Type u_3} [Field.{u_3} C] [Algebra.{u_1, u_3} R C] [Algebra.{u_3, u_2} C E]
+  [IsScalarTower.{u_1, u_3, u_2} R C E] (hsq : ∀ (x : C), IsSquare.{u_3} x) : Eq.{1} (Module.finrank.{u_3, u_2} C E) 1
+'TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

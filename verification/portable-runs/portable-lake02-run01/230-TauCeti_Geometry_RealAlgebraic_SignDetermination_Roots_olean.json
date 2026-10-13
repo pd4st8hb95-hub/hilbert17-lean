@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots:olean"
+  ],
+  "start_utc": "2026-10-13T14:37:51.008886+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:37:51.008874+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8278972,
+    "used_percent": 18.88536216304342
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/230-TauCeti_Geometry_RealAlgebraic_SignDetermination_Roots_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/230-TauCeti_Geometry_RealAlgebraic_SignDetermination_Roots_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 3115,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:37:53.514253+00:00",
+  "seconds": 2.505,
+  "peak_physical_used_percent": 21.966376747071575,
+  "memory_after": {
+    "utc": "2026-10-13T14:37:53.514416+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8272284,
+    "used_percent": 18.950888981814348
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

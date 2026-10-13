@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+  "start_utc": "2026-10-13T14:21:20.014740+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:20.014734+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307200,
+    "used_percent": 18.60879352664006
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+    "bytes": 5243,
+    "sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.olean",
+      "bytes": 149280,
+      "sha256": "5d703b49d25b5ba9a75244500f81618faba05b7b7f1880c674e2cd59415756db"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.ilean",
+      "bytes": 11462,
+      "sha256": "fa877a484696b491d9deed6c4014f163594dceb652ba73bfe62ab420bee7d07d"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/74-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/74-TauCeti.Geometry.RealAlgebraic.SignDetermination.stderr.log",
+  "pid": 516,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:21:22.517874+00:00",
+  "peak_physical_used_percent": 20.78932383142207,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:22.517963+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8308768,
+    "used_percent": 18.593430779655492
+  }
+}

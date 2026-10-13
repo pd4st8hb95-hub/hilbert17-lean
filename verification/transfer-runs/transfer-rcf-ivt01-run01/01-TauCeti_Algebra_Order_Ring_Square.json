@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Order.Ring.Square",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean",
+    "bytes": 1030,
+    "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+  },
+  "start_utc": "2026-10-13T13:38:13.003659+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:38:13.003646+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8345084,
+    "used_percent": 18.237618586102123
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/01-TauCeti_Algebra_Order_Ring_Square.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/01-TauCeti_Algebra_Order_Ring_Square.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:38:14.506179+00:00",
+  "peak_physical_used_percent": 20.04505360697312,
+  "memory_after": {
+    "utc": "2026-10-13T13:38:14.506323+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317120,
+    "used_percent": 18.511600637554
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean",
+      "bytes": 25416,
+      "sha256": "db2eb624bd9fe12957bd23d10014fd3defa4712247d55c7faa9e1d3a925c72cf"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.ilean",
+      "bytes": 1355,
+      "sha256": "8996877e6a50eea59d0cbf0a3e63d4e588eae75602a8f0819a76fb4a14709fe0"
+    }
+  ]
+}

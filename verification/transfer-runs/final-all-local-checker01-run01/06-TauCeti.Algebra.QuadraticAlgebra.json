@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+  "start_utc": "2026-10-13T14:18:47.085758+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:18:47.085752+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8305888,
+    "used_percent": 18.621648070035313
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.QuadraticAlgebra.Square"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+    "bytes": 2934,
+    "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.olean",
+      "bytes": 479904,
+      "sha256": "f8823d5472ea8a7bd62300bd1cf996a97e6986f0c16d255395cfb0bf253ed33f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.ilean",
+      "bytes": 6534,
+      "sha256": "8e0a5c11705091dbb608aa817208a2bb297dc46376cd531d7f655d457b39cf20"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/06-TauCeti.Algebra.QuadraticAlgebra.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/06-TauCeti.Algebra.QuadraticAlgebra.stderr.log",
+  "pid": 40,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:18:49.088380+00:00",
+  "peak_physical_used_percent": 19.93888605191903,
+  "memory_after": {
+    "utc": "2026-10-13T14:18:49.088468+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8301992,
+    "used_percent": 18.659819793410243
+  }
+}

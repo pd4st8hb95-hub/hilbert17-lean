@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+    "bytes": 4664,
+    "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+  },
+  "start_utc": "2026-10-13T13:42:42.847349+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:42:42.847336+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8354312,
+    "used_percent": 18.147205684843435
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt02-run01/01-TauCeti_FieldTheory_RealClosure_AlgebraicClosed.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt02-run01/01-TauCeti_FieldTheory_RealClosure_AlgebraicClosed.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T13:42:45.350648+00:00",
+  "peak_physical_used_percent": 20.736220458554484,
+  "memory_after": {
+    "utc": "2026-10-13T13:42:45.350799+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8297564,
+    "used_percent": 18.703203877369223
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.olean",
+      "bytes": 160224,
+      "sha256": "a00082bef4e564954f1578718dc8d721378b28ca1c12b8bcf63412c0ae0221a3"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.ilean",
+      "bytes": 12216,
+      "sha256": "5b3ded9dee677283c464c23235c709c3ab15949d825cfaa9a53c53cc78808b2d"
+    }
+  ]
+}

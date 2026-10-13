@@ -1,0 +1,6 @@
+TauCeti.Compat.not_irreducible_monic_quadratic_of_forall_isSquare.{u_1} {K : Type u_1} [Field.{u_1} K] [NeZero.{u_1} 2]
+  (hsq : ∀ (x : K), IsSquare.{u_1} x) {p : Polynomial.{u_1} K} (hm : Polynomial.Monic.{u_1} p)
+  (hdeg : Eq.{1} (Polynomial.natDegree.{u_1} p) 2) : ¬Irreducible.{u_1} p
+'TauCeti.Compat.not_irreducible_monic_quadratic_of_forall_isSquare' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

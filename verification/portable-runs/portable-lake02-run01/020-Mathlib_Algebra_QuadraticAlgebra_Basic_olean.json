@@ -1,0 +1,39 @@
+{
+  "label": "Mathlib.Algebra.QuadraticAlgebra.Basic:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+Mathlib.Algebra.QuadraticAlgebra.Basic:olean"
+  ],
+  "start_utc": "2026-10-13T14:27:56.764138+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:27:56.764128+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8274780,
+    "used_percent": 18.9264339968185
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/020-Mathlib_Algebra_QuadraticAlgebra_Basic_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/020-Mathlib_Algebra_QuadraticAlgebra_Basic_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 267,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:28:02.775108+00:00",
+  "seconds": 6.011,
+  "peak_physical_used_percent": 22.535582199122363,
+  "memory_after": {
+    "utc": "2026-10-13T14:28:02.775298+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8286264,
+    "used_percent": 18.81391755142895
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

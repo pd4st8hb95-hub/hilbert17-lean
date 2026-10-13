@@ -1,0 +1,24 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean:22:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.root_lt_rootBound`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean:30:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.neg_rootBound_lt_root`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean:76:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.exists_all_leading_signs`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean:82:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.exists_all_parity_leading_signs`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

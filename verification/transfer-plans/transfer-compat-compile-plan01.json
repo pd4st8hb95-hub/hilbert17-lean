@@ -1,0 +1,71 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "Mathlib.Data.List.Destutter",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/List/Destutter.lean",
+        "bytes": 11623,
+        "sha256": "82d092d64661eb6389365120f300b647ddaad1e756d037e456c0a9159fb0ec4b"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/Destutter.olean"
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean",
+        "bytes": 6681,
+        "sha256": "66228ccb2ac957f0675c79ebf7d34b42ab528cef5b2ff14570326e23e7d948b3"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/ListSignVariations.olean"
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+        "bytes": 1171,
+        "sha256": "861c7237e99e941c588d0100c13fe88f23c351287066648143ec18df9444d96e"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean"
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+        "bytes": 5872,
+        "sha256": "61eb7e763fa6eab4bc23345d7ec4938d04d669bb390aedc4dec312a09185cefd"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean"
+    }
+  ],
+  "scope": "First five ready transfer backports plus only missing pinned official prerequisites. No full transfer result claimed."
+}

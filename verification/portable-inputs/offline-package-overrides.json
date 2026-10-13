@@ -1,0 +1,83 @@
+[
+  {
+    "name": "plausible",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/plausible"
+  },
+  {
+    "name": "LeanSearchClient",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/LeanSearchClient"
+  },
+  {
+    "name": "importGraph",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/importGraph"
+  },
+  {
+    "name": "proofwidgets",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.lean",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/proofwidgets"
+  },
+  {
+    "name": "aesop",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/aesop"
+  },
+  {
+    "name": "Qq",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/Qq"
+  },
+  {
+    "name": "batteries",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/batteries"
+  },
+  {
+    "name": "Cli",
+    "scope": "leanprover",
+    "configFile": "lakefile.toml",
+    "manifestFile": "lake-manifest.json",
+    "inherited": true,
+    "type": "path",
+    "dir": ".lake/packages/Cli"
+  },
+  {
+    "name": "mathlib",
+    "scope": "leanprover-community",
+    "configFile": "lakefile.lean",
+    "manifestFile": "lake-manifest.json",
+    "inherited": false,
+    "type": "path",
+    "dir": ".lake/packages/mathlib"
+  }
+]

@@ -1,0 +1,2 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean:101:8: error(lean.unknownIdentifier): Unknown identifier `ite_eq_right`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean:102:8: error(lean.unknownIdentifier): Unknown identifier `ite_eq_left`

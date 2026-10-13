@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Data.Finset.Jumps",
+  "start_utc": "2026-10-13T14:19:25.676468+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:19:25.676462+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8319432,
+    "used_percent": 18.488948423887976
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Data.Finset.Jumps"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Finset/Jumps.lean",
+    "bytes": 5809,
+    "sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Finset/Jumps.olean",
+      "bytes": 236976,
+      "sha256": "f061bbd0d2bf514799a9a104705476717f6b7a813d53d0ef307c1f561f5c473e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Finset/Jumps.ilean",
+      "bytes": 8041,
+      "sha256": "f512931b7fa4a42ed167e358f948ad6bc313b9f4ff7de0498628399faa5216e4"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/23-TauCeti.Data.Finset.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/23-TauCeti.Data.Finset.stderr.log",
+  "pid": 159,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:19:27.679725+00:00",
+  "peak_physical_used_percent": 19.638920578909065,
+  "memory_after": {
+    "utc": "2026-10-13T14:19:27.679845+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8321872,
+    "used_percent": 18.46504210842729
+  }
+}

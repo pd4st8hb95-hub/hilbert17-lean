@@ -1,0 +1,115 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "PREPARED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "QuadraticDiscriminantAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean",
+        "bytes": 453,
+        "sha256": "bf0f9ea8d86e4f1247c700139f160dccc4d851846869ec89e546f18706b9184e"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.olean"
+    },
+    {
+      "module": "QuadraticExtensionAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticExtensionAxioms.lean",
+        "bytes": 416,
+        "sha256": "f31428afa3e9dbf3cd413ce43aab3fcdfbdbeaff795b598050b90f812d39cc31"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticExtensionAxioms.olean"
+    },
+    {
+      "module": "RealClosureFiniteExtensionAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean",
+        "bytes": 546,
+        "sha256": "2ad27d3350fd3a1a99ac4a92fbc179ed19b1d2fbbf164635ab86c241f5d798b8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.olean"
+    },
+    {
+      "module": "RealClosureComplexificationAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureComplexificationAxioms.lean",
+        "bytes": 385,
+        "sha256": "468451ae8076424ebf4d21294a3b7d4a37dca43dbd5709e38fd5198ba7040df8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureComplexificationAxioms.olean"
+    },
+    {
+      "module": "RealClosureGaloisAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean",
+        "bytes": 677,
+        "sha256": "47a512ef655d2736cdb96bde69781342e4fff02836ebf35261eeae1af559fab8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.olean"
+    },
+    {
+      "module": "RealClosureAlgebraicClosedAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean",
+        "bytes": 792,
+        "sha256": "5f3ec5659ff051c28f85a90e12618f12e4d528c5bf1d84b85e16f1b1d0eea309"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.olean"
+    },
+    {
+      "module": "RealClosureIVTAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean",
+        "bytes": 928,
+        "sha256": "a90324852408a1c0b01810b4241e6b98531c74d4c78babc889ed45d0af9d744a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.olean"
+    },
+    {
+      "module": "RealClosureAbstractRolleAxioms",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean",
+        "bytes": 1184,
+        "sha256": "119783113394977565f12b00fcda620554429767d5aa79a0e98a3ed5de4af89a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.olean"
+    }
+  ],
+  "scope": "Eight author-prepared exact type/axiom harnesses, 27 public declarations. Each imported source matched a successful current compiler receipt. No compiler or replay executed by staging worker."
+}

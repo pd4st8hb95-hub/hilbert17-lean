@@ -1,0 +1,181 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean",
+        "bytes": 1030,
+        "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+        "bytes": 2934,
+        "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean",
+        "bytes": 1052,
+        "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+        "bytes": 1712,
+        "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+        "bytes": 1492,
+        "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+        "bytes": 5096,
+        "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.olean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+        "bytes": 4590,
+        "sha256": "65057165b6fdd5f890b1d268d066a1934af0635158b9ae05aa1a4081da879ef4"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+        "bytes": 6905,
+        "sha256": "4ecddaafa596151455a78fd95c6937825f3a71c5364c0094954f67cb253719ec"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+        "bytes": 18372,
+        "sha256": "998ab5c992bb74865afb2eef8da1aa8d68e5e3e7536ba469fa2828464e4a09d1"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean"
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.SpecificDegree",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/SpecificDegree.lean",
+        "bytes": 2621,
+        "sha256": "215b4f3ec51a8a4570482bd50301c83e7b4dc0b061eb937b761e84848c9b02bb"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+        "bytes": 16023,
+        "sha256": "de9b4492afe5a77a7642a28b25a810f323b09010afaeeaf5634ce9d027b6d1a9"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.SmallDegreeVieta",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.lean",
+        "bytes": 5720,
+        "sha256": "8ed73f783c15e981fa7ce698aa000b4d53f72452c11191db1a3effa1c3ab0c31"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+        "bytes": 5545,
+        "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.olean"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+        "bytes": 5281,
+        "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.olean"
+    }
+  ],
+  "scope": "Generic real-closed-field characterization and polynomial order properties, with no concrete-real/complex or square-root chain. Ordinary source compilation only."
+}

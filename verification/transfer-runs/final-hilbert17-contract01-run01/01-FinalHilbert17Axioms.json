@@ -1,0 +1,55 @@
+{
+  "label": "FinalHilbert17Axioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/FinalHilbert17Axioms.lean",
+    "bytes": 874,
+    "sha256": "5d6382c8058cc83f3dcd5e840f15f50638524ba4495f25e5200f1621305587e7"
+  },
+  "start_utc": "2026-10-13T14:15:26.461429+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:15:26.461420+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8327972,
+    "used_percent": 18.405276319775577
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/FinalHilbert17Axioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:15:28.464047+00:00",
+  "peak_physical_used_percent": 21.934436341988857,
+  "memory_after": {
+    "utc": "2026-10-13T14:15:28.464201+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8318664,
+    "used_percent": 18.496473034655928
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.olean",
+      "bytes": 1408,
+      "sha256": "0f2bb901b5aebf60f68109259e02e0ed004b54b4d235c3ce7bf0fe1a5a31bbc4"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.ilean",
+      "bytes": 1779,
+      "sha256": "522eed05ad773d192e28e1050ccde99535ad92c02053a076a1ef3c961089d2c6"
+    }
+  ]
+}

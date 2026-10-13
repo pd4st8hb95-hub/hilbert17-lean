@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Rolle",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean",
+    "bytes": 5222,
+    "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+  },
+  "start_utc": "2026-10-13T13:51:46.925583+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:51:46.925572+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344132,
+    "used_percent": 18.2469459681999
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/01-TauCeti_Algebra_Polynomial_Rolle.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/01-TauCeti_Algebra_Polynomial_Rolle.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:51:48.928972+00:00",
+  "peak_physical_used_percent": 20.387501778277155,
+  "memory_after": {
+    "utc": "2026-10-13T13:51:48.929166+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343716,
+    "used_percent": 18.25102179903254
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.olean",
+      "bytes": 218072,
+      "sha256": "647b1b77952c88d1dbe24ded7c9c751c22a489d94cf037800b65422cfad72665"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.ilean",
+      "bytes": 13357,
+      "sha256": "9fdc2e3efd4659c9d9f47cfe1ec04d1254a559b9de1296a5dccc8ab5d186dee7"
+    }
+  ]
+}

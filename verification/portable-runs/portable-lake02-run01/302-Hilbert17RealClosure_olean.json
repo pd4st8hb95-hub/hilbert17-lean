@@ -1,0 +1,39 @@
+{
+  "label": "Hilbert17RealClosure:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+Hilbert17RealClosure:olean"
+  ],
+  "start_utc": "2026-10-13T14:40:53.811647+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:40:53.811634+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8258984,
+    "used_percent": 19.08119799641562
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/302-Hilbert17RealClosure_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/302-Hilbert17RealClosure_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 4085,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:40:56.816815+00:00",
+  "seconds": 3.005,
+  "peak_physical_used_percent": 23.343027801477252,
+  "memory_after": {
+    "utc": "2026-10-13T14:40:56.816985+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8266192,
+    "used_percent": 19.010576389103893
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

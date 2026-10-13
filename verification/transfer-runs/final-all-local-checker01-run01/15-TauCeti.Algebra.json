@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.QuadraticDiscriminant",
+  "start_utc": "2026-10-13T14:19:05.626770+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:19:05.626762+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8315668,
+    "used_percent": 18.525826854787162
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.QuadraticDiscriminant"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+    "bytes": 18891,
+    "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean",
+      "bytes": 1985848,
+      "sha256": "b7863108d7fd8e8c7734303b173fb5e15d4f0584fa5ea5728d3b36034949e91c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.ilean",
+      "bytes": 26925,
+      "sha256": "75f14571f4fbc41eb971e9faa33ece3f65cd18fa277bf889ec1c8fcf03c54d8f"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/15-TauCeti.Algebra.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/15-TauCeti.Algebra.stderr.log",
+  "pid": 103,
+  "exit_code": 0,
+  "seconds": 2.504,
+  "end_utc": "2026-10-13T14:19:08.131260+00:00",
+  "peak_physical_used_percent": 19.834403696151515,
+  "memory_after": {
+    "utc": "2026-10-13T14:19:08.131366+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8308800,
+    "used_percent": 18.593117254206824
+  }
+}

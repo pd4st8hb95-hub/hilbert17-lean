@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+    "bytes": 12959,
+    "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+  },
+  "start_utc": "2026-10-13T13:40:14.599691+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:40:14.599678+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8350024,
+    "used_percent": 18.189218094964506
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/09-TauCeti_RingTheory_Polynomial_Subresultant_Euclidean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/09-TauCeti_RingTheory_Polynomial_Subresultant_Euclidean.stderr.log",
+  "pid": 29,
+  "exit_code": 0,
+  "seconds": 7.01,
+  "end_utc": "2026-10-13T13:40:21.610253+00:00",
+  "peak_physical_used_percent": 20.98610024114026,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:21.610422+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352284,
+    "used_percent": 18.167075360152563
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.olean",
+      "bytes": 842456,
+      "sha256": "f2ecc6257319b0ea658ce7c7627e8baff9663c6db475fb7f0ec265a6d97681ea"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.ilean",
+      "bytes": 38366,
+      "sha256": "4a08cd064e5ca1f2259019344a18c3380818389ff807cde5b741ec88088e2902"
+    }
+  ]
+}

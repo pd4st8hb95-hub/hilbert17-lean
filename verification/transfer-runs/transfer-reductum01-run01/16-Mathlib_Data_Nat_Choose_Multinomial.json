@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Data.Nat.Choose.Multinomial",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Choose/Multinomial.lean",
+    "bytes": 20518,
+    "sha256": "70a3aa4611a7792089021764848f4aaefcb92392387c33505d8beeea15d8fc12"
+  },
+  "start_utc": "2026-10-13T13:24:54.431472+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:54.431455+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8331160,
+    "used_percent": 18.374041346952357
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Choose/Multinomial.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/16-Mathlib_Data_Nat_Choose_Multinomial.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/16-Mathlib_Data_Nat_Choose_Multinomial.stderr.log",
+  "pid": 59,
+  "exit_code": 0,
+  "seconds": 4.505,
+  "end_utc": "2026-10-13T13:24:58.936971+00:00",
+  "peak_physical_used_percent": 20.551162062480135,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:58.937122+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8329916,
+    "used_percent": 18.3862296487692
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.olean",
+      "bytes": 132456,
+      "sha256": "273665707fb69f9de7de99186072d0b431cdbb3b2905d0884766ccc526891768"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.olean.private",
+      "bytes": 956952,
+      "sha256": "c5d1db91e3dffd364a8d8177602d262bf00bdc00dba201e859fc3cf5264c02b4"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.olean.server",
+      "bytes": 14840,
+      "sha256": "072937e427c1989a01448699edd866cd40b53157a2fae8babac9032cd9551fd0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.ilean",
+      "bytes": 66861,
+      "sha256": "a8fc624281b883de6c15cbfe170924bbb9ed7d42121834e472076a15e5d4063c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.ir",
+      "bytes": 16992,
+      "sha256": "b1208da63e93c31850333b42a906049af35f23c35ef4f2271526470a859bf9e9"
+    }
+  ]
+}

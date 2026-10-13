@@ -1,0 +1,474 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T14:00:54.509221+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/rcf-characterization-axioms-compile-plan01.json",
+  "plan_sha256": "cece5d9425505e283a4b3301f689c504905eb6b2d70858438d46470a422bbdd3",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Eight author-prepared exact type/axiom harnesses, 27 public declarations. Each imported source matched a successful current compiler receipt. No compiler or replay executed by staging worker.",
+  "jobs": [
+    {
+      "label": "QuadraticDiscriminantAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean",
+        "bytes": 453,
+        "sha256": "bf0f9ea8d86e4f1247c700139f160dccc4d851846869ec89e546f18706b9184e"
+      },
+      "start_utc": "2026-10-13T14:00:54.509464+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:00:54.509455+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359628,
+        "used_percent": 18.09512126968401
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/01-QuadraticDiscriminantAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/01-QuadraticDiscriminantAxioms.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T14:00:56.012173+00:00",
+      "peak_physical_used_percent": 20.1957417757376,
+      "memory_after": {
+        "utc": "2026-10-13T14:00:56.012327+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345108,
+        "used_percent": 18.237383442015624
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.olean",
+          "bytes": 1552,
+          "sha256": "9b45766c5b4a4b8be33776bcf76b871790a8399c62716ef8399595a5feba8e73"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticDiscriminantAxioms.ilean",
+          "bytes": 485,
+          "sha256": "ffe09b7d8b24fabc6f4e08834fab141ec09b893bc4dc3c925625cf42428d79fb"
+        }
+      ]
+    },
+    {
+      "label": "QuadraticExtensionAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticExtensionAxioms.lean",
+        "bytes": 416,
+        "sha256": "f31428afa3e9dbf3cd413ce43aab3fcdfbdbeaff795b598050b90f812d39cc31"
+      },
+      "start_utc": "2026-10-13T14:00:56.013526+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:00:56.013475+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345108,
+        "used_percent": 18.237383442015624
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticExtensionAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticExtensionAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticExtensionAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/02-QuadraticExtensionAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/02-QuadraticExtensionAxioms.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T14:00:57.516307+00:00",
+      "peak_physical_used_percent": 20.32859818460927,
+      "memory_after": {
+        "utc": "2026-10-13T14:00:57.516459+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8341488,
+        "used_percent": 18.27285100839582
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticExtensionAxioms.olean",
+          "bytes": 1552,
+          "sha256": "3cc21cdd27057a94a1a3aa18c4c20968e2323fdd3d44164548920a0171638dc1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/QuadraticExtensionAxioms.ilean",
+          "bytes": 459,
+          "sha256": "e7adf6cea5cca19bbc3978194c11dc42a6ea1138f69ee16d6ca63e4a237b45f8"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureFiniteExtensionAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean",
+        "bytes": 546,
+        "sha256": "2ad27d3350fd3a1a99ac4a92fbc179ed19b1d2fbbf164635ab86c241f5d798b8"
+      },
+      "start_utc": "2026-10-13T14:00:57.517362+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:00:57.517329+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8341488,
+        "used_percent": 18.27285100839582
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/03-RealClosureFiniteExtensionAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/03-RealClosureFiniteExtensionAxioms.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T14:00:59.019610+00:00",
+      "peak_physical_used_percent": 20.237950139264086,
+      "memory_after": {
+        "utc": "2026-10-13T14:00:59.019757+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8312476,
+        "used_percent": 18.557101018291466
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.olean",
+          "bytes": 1632,
+          "sha256": "01843edfdf0e209060421b5c5d7b55927eabee80c93979acd641b5bc74995c79"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.ilean",
+          "bytes": 689,
+          "sha256": "a447c116992d3daf663e82c584a0af2acad045fe490584ee7f184f61359890d9"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureComplexificationAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureComplexificationAxioms.lean",
+        "bytes": 385,
+        "sha256": "468451ae8076424ebf4d21294a3b7d4a37dca43dbd5709e38fd5198ba7040df8"
+      },
+      "start_utc": "2026-10-13T14:00:59.020837+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:00:59.020825+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8312244,
+        "used_percent": 18.559374077794285
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureComplexificationAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureComplexificationAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureComplexificationAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/04-RealClosureComplexificationAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/04-RealClosureComplexificationAxioms.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T14:01:00.523098+00:00",
+      "peak_physical_used_percent": 20.199543271802657,
+      "memory_after": {
+        "utc": "2026-10-13T14:01:00.523291+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348528,
+        "used_percent": 18.203875409689584
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureComplexificationAxioms.olean",
+          "bytes": 1640,
+          "sha256": "0dc9ae51d3d65323ab93e9300562300da5451a6d015c5765747fd0f1621e1f1d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureComplexificationAxioms.ilean",
+          "bytes": 475,
+          "sha256": "cc075b76ba240d3668e5b246357e7bbe1e7a9a1454e14ce6fc4712bddcd28739"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureGaloisAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean",
+        "bytes": 677,
+        "sha256": "47a512ef655d2736cdb96bde69781342e4fff02836ebf35261eeae1af559fab8"
+      },
+      "start_utc": "2026-10-13T14:01:00.524416+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:01:00.524404+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348528,
+        "used_percent": 18.203875409689584
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/05-RealClosureGaloisAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/05-RealClosureGaloisAxioms.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 1.503,
+      "end_utc": "2026-10-13T14:01:02.028346+00:00",
+      "peak_physical_used_percent": 20.121397053722976,
+      "memory_after": {
+        "utc": "2026-10-13T14:01:02.028539+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8316960,
+        "used_percent": 18.513168264797322
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.olean",
+          "bytes": 1624,
+          "sha256": "ef47d2942e7bc4e1cfcf6f88dc64fd9c3f52a8972a8d34aaf08bca7ba2e4cb1f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureGaloisAxioms.ilean",
+          "bytes": 850,
+          "sha256": "24dfe229dd99115d64431cae045751539d4292782dbef6884f8d21508ffbc641"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureAlgebraicClosedAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean",
+        "bytes": 792,
+        "sha256": "5f3ec5659ff051c28f85a90e12618f12e4d528c5bf1d84b85e16f1b1d0eea309"
+      },
+      "start_utc": "2026-10-13T14:01:02.029462+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:01:02.029451+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8316960,
+        "used_percent": 18.513168264797322
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/06-RealClosureAlgebraicClosedAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/06-RealClosureAlgebraicClosedAxioms.stderr.log",
+      "pid": 20,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T14:01:03.531739+00:00",
+      "peak_physical_used_percent": 20.28838854581802,
+      "memory_after": {
+        "utc": "2026-10-13T14:01:03.531882+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8310432,
+        "used_percent": 18.577127456324924
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.olean",
+          "bytes": 1632,
+          "sha256": "b4c4349365945fadb12e64409e754bb97bfb24eb28e9cfc4502c928261ad54f4"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.ilean",
+          "bytes": 1084,
+          "sha256": "6d32bb9f43b396162e33a7b35919ae5eb9c13d5d7af9b9a4b407029e43d32055"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureIVTAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean",
+        "bytes": 928,
+        "sha256": "a90324852408a1c0b01810b4241e6b98531c74d4c78babc889ed45d0af9d744a"
+      },
+      "start_utc": "2026-10-13T14:01:03.532791+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:01:03.532779+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8310192,
+        "used_percent": 18.57947889718991
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/07-RealClosureIVTAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/07-RealClosureIVTAxioms.stderr.log",
+      "pid": 23,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T14:01:05.535266+00:00",
+      "peak_physical_used_percent": 21.885996660170157,
+      "memory_after": {
+        "utc": "2026-10-13T14:01:05.535416+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8307760,
+        "used_percent": 18.603306831288428
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.olean",
+          "bytes": 1624,
+          "sha256": "920588038006dd899828d6747a63dfb20ea6b26176321104044186e8f2a9a847"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.ilean",
+          "bytes": 1458,
+          "sha256": "e82c949b9283dbaefa04eac9a9defe960db892082e659a3323629d933a85087e"
+        }
+      ]
+    },
+    {
+      "label": "RealClosureAbstractRolleAxioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean",
+        "bytes": 1184,
+        "sha256": "119783113394977565f12b00fcda620554429767d5aa79a0e98a3ed5de4af89a"
+      },
+      "start_utc": "2026-10-13T14:01:05.536569+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:01:05.536533+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8307520,
+        "used_percent": 18.605658272153413
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/08-RealClosureAbstractRolleAxioms.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/08-RealClosureAbstractRolleAxioms.stderr.log",
+      "pid": 26,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T14:01:07.539233+00:00",
+      "peak_physical_used_percent": 22.223937903149636,
+      "memory_after": {
+        "utc": "2026-10-13T14:01:07.539384+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8294392,
+        "used_percent": 18.734282087468113
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.olean",
+          "bytes": 1632,
+          "sha256": "dda10081c2400f21dc821e85d0a9d9787e873a19d7d1e332f6b58d0e8e2106a7"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.ilean",
+          "bytes": 1805,
+          "sha256": "abd9d8ca97c6afc8adfcf30485fc599c865a60e75103fc4287a1aaeface179f3"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T14:01:07.540666+00:00"
+}

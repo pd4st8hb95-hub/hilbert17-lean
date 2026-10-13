@@ -1,0 +1,40 @@
+{
+  "label": "Mathlib.RingTheory.MvPowerSeries.Substitution:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+Mathlib.RingTheory.MvPowerSeries.Substitution:deps"
+  ],
+  "start_utc": "2026-10-13T14:35:40.628521+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:35:40.628470+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8265568,
+    "used_percent": 19.016690135352857
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/185-Mathlib_RingTheory_MvPowerSeries_Substitution_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/185-Mathlib_RingTheory_MvPowerSeries_Substitution_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2518,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:35:42.131429+00:00",
+  "seconds": 1.503,
+  "peak_physical_used_percent": 20.10822898487906,
+  "memory_after": {
+    "utc": "2026-10-13T14:35:42.131618+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8277208,
+    "used_percent": 18.902645253401065
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

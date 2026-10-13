@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Eval.Sign",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+    "bytes": 1223,
+    "sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703"
+  },
+  "start_utc": "2026-10-13T13:49:37.119712+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:49:37.119700+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339924,
+    "used_percent": 18.288174564699307
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Sign.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/01-TauCeti_Algebra_Polynomial_Eval_Sign.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/01-TauCeti_Algebra_Polynomial_Eval_Sign.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 1.503,
+  "end_utc": "2026-10-13T13:49:38.624186+00:00",
+  "peak_physical_used_percent": 19.941707780957014,
+  "memory_after": {
+    "utc": "2026-10-13T13:49:38.624337+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8337696,
+    "used_percent": 18.31000377406259
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.olean",
+      "bytes": 24896,
+      "sha256": "caf8798a61171c990bf5a4a27a5f67ead429298cb3c92a664a4afba384d97931"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.ilean",
+      "bytes": 1985,
+      "sha256": "87fd157de721b49f3f77006d9c7b4004f0a10f59bf47dee8367cf717b43462dc"
+    }
+  ]
+}

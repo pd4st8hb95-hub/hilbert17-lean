@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Data.DFinsupp.WellFounded",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/DFinsupp/WellFounded.lean",
+    "bytes": 12658,
+    "sha256": "c78cafb79ebf43a96a64703ae454cdb16aa93bbca7dba1093c95935488b426cc"
+  },
+  "start_utc": "2026-10-13T13:24:15.841966+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:15.841953+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8323620,
+    "used_percent": 18.44791578079398
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/DFinsupp/WellFounded.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/03-Mathlib_Data_DFinsupp_WellFounded.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/03-Mathlib_Data_DFinsupp_WellFounded.stderr.log",
+  "pid": 13,
+  "exit_code": 0,
+  "seconds": 2.004,
+  "end_utc": "2026-10-13T13:24:17.847429+00:00",
+  "peak_physical_used_percent": 20.33071448138776,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:17.847602+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8313200,
+    "used_percent": 18.550007505015426
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.olean",
+      "bytes": 80224,
+      "sha256": "f6fb347461d4de767a13f7c02707b8b411f11078c3e6878ca6c2c6adc4d0c4a0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.olean.private",
+      "bytes": 257464,
+      "sha256": "bef036c89b541766767f1b176ea2d23788d6524a69d49ab0210159965d5b404c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.olean.server",
+      "bytes": 9168,
+      "sha256": "ffe0c95be7269c73ed6fb983e0eb756f3463e3e7b230dc130d8f71413588f27b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.ilean",
+      "bytes": 25304,
+      "sha256": "6e14d483199a1410576f24f1e502bf5e005db4ad21834c7b2549a6ad502d4f3c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.ir",
+      "bytes": 2240,
+      "sha256": "026829559449430402889c929b3192daa031639f991cc4292afb2c17ee7264ab"
+    }
+  ]
+}

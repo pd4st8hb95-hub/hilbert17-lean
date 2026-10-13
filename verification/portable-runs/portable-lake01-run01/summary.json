@@ -1,0 +1,64 @@
+{
+  "status": "STOPPED_ON_UNEXPECTED_STALE_DEPENDENCY_OR_FAILURE",
+  "started_utc": "2026-10-13T14:25:03.253430+00:00",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/serial-lake-command-plan03.json",
+  "plan_sha256": "375ed903f745cf486ed7c5ca8845ff789657b5428cd544146ce406f91e61ccf0",
+  "driver_sha256": "97f1fccc5e623e32fcce4888b7fa0b8b4ed3ce695d6381ee2f30ea24b6f256a2",
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "",
+    "LEAN_SRC_PATH": "",
+    "LAKE_NO_CACHE": "1",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/cache",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "GIT_TERMINAL_PROMPT": "0"
+  },
+  "jobs": [
+    {
+      "label": "Mathlib.Algebra.Group.Subgroup.Even:deps",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Group.Subgroup.Even:deps"
+      ],
+      "start_utc": "2026-10-13T14:25:03.257790+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:25:03.257781+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8180432,
+        "used_percent": 19.850824591525328
+      },
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake01-run01/001-Mathlib_Algebra_Group_Subgroup_Even_deps.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake01-run01/001-Mathlib_Algebra_Group_Subgroup_Even_deps.stderr.log",
+      "allowed_configuration_sources": [
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+      ],
+      "pid": 5,
+      "status": "COMMAND_FAILED",
+      "exit_code": 1,
+      "end_utc": "2026-10-13T14:25:03.759937+00:00",
+      "seconds": 0.502,
+      "peak_physical_used_percent": 19.850824591525328,
+      "memory_after": {
+        "utc": "2026-10-13T14:25:03.760090+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8178264,
+        "used_percent": 19.872065940672364
+      },
+      "observed_configuration_compiles": [],
+      "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+    }
+  ],
+  "scope": "One guarded Lake process at a time. Before each single-module build, --no-build +Module:deps must prove its prerequisite facets current under identical frozen inputs/options. The following +Module:olean should therefore compile only that module. Any failed dependency check stops before the build. A 0.5-second process scan kills multiple or unexpected compiler processes as a backstop; it does not claim to prevent every sub-0.5-second process. All existing physical-memory limits and first-failure stop rules apply.",
+  "ended_utc": "2026-10-13T14:25:03.764390+00:00"
+}

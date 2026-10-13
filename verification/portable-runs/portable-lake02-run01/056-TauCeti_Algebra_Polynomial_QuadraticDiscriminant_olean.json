@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.Algebra.Polynomial.QuadraticDiscriminant:olean"
+  ],
+  "start_utc": "2026-10-13T14:29:18.936388+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:29:18.936377+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8259632,
+    "used_percent": 19.07484910608016
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/056-TauCeti_Algebra_Polynomial_QuadraticDiscriminant_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/056-TauCeti_Algebra_Polynomial_QuadraticDiscriminant_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 762,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:29:24.947363+00:00",
+  "seconds": 6.011,
+  "peak_physical_used_percent": 24.68084089092959,
+  "memory_after": {
+    "utc": "2026-10-13T14:29:24.947555+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8239412,
+    "used_percent": 19.272957998955178
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

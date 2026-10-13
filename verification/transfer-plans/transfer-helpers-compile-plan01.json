@@ -1,0 +1,60 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "FinSuccEvaluation",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FinSuccEvaluation.lean",
+        "bytes": 1431,
+        "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.olean"
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean",
+        "bytes": 3135,
+        "sha256": "c3a291cc582af36238e400fe49c33d5c4789b5f071c24a1caae1280f3413cc8f"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean"
+    },
+    {
+      "module": "DegreeNormalization",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean",
+        "bytes": 2756,
+        "sha256": "c3cdf21954adec27880c0a9fc8b4cef7d460ba1f99ff11b7ef15d0d1d4d52f82"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean"
+    }
+  ],
+  "scope": "Fixed compatibility sources then isolated transfer helpers. All required official supplements and Reductum already passed. No unconditional transfer claim."
+}

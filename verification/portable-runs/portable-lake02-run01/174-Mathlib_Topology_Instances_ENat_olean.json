@@ -1,0 +1,39 @@
+{
+  "label": "Mathlib.Topology.Instances.ENat:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+Mathlib.Topology.Instances.ENat:olean"
+  ],
+  "start_utc": "2026-10-13T14:35:13.815307+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:35:13.815292+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8265480,
+    "used_percent": 19.017552330336684
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/174-Mathlib_Topology_Instances_ENat_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/174-Mathlib_Topology_Instances_ENat_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2362,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:35:16.821369+00:00",
+  "seconds": 3.006,
+  "peak_physical_used_percent": 22.330144648884808,
+  "memory_after": {
+    "utc": "2026-10-13T14:35:16.821889+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8250572,
+    "used_percent": 19.163615998733356
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

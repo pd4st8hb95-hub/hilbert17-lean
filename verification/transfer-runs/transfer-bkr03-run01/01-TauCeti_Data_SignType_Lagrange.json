@@ -1,0 +1,44 @@
+{
+  "label": "TauCeti.Data.SignType.Lagrange",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+    "bytes": 2441,
+    "sha256": "1788313702862fee6d54f34764927c1d38e71b9eb8f7b6437527310fe9d2abd2"
+  },
+  "start_utc": "2026-10-13T13:40:46.154964+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:40:46.154954+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343152,
+    "used_percent": 18.256547685065254
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr03-run01/01-TauCeti_Data_SignType_Lagrange.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr03-run01/01-TauCeti_Data_SignType_Lagrange.stderr.log",
+  "pid": 5,
+  "exit_code": 1,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:40:48.157920+00:00",
+  "peak_physical_used_percent": 20.061866409157766,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:48.158069+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8327524,
+    "used_percent": 18.409665676056886
+  },
+  "outputs": []
+}

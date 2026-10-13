@@ -1,0 +1,40 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+TauCeti.FieldTheory.RealClosure.OrderedIntermediateField:deps"
+  ],
+  "start_utc": "2026-10-13T14:39:04.312944+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:39:04.312929+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8269832,
+    "used_percent": 18.97491286931828
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/255-TauCeti_FieldTheory_RealClosure_OrderedIntermediateField_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/255-TauCeti_FieldTheory_RealClosure_OrderedIntermediateField_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 3453,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:39:05.316214+00:00",
+  "seconds": 1.003,
+  "peak_physical_used_percent": 20.215611451046723,
+  "memory_after": {
+    "utc": "2026-10-13T14:39:05.316377+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8252356,
+    "used_percent": 19.1461369549703
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

@@ -1,0 +1,46 @@
+{
+  "module": "BoundaryAcceptance",
+  "start_utc": "2026-10-13T14:22:04.161131+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:22:04.161116+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310444,
+    "used_percent": 18.577009884281676
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "BoundaryAcceptance"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/BoundaryAcceptance.lean",
+    "bytes": 4314,
+    "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean",
+      "bytes": 62464,
+      "sha256": "9109765af72b144e999ca97f51c965eb55249822cedbd2b011688bf9e9cba888"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.ilean",
+      "bytes": 11007,
+      "sha256": "f7062a03be0d556c9842d7cd0894d538364a2d22fa671b5e5fc401807d707b97"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/94-BoundaryAcceptance.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/94-BoundaryAcceptance.stderr.log",
+  "pid": 656,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:22:06.664014+00:00",
+  "peak_physical_used_percent": 20.57099254710818,
+  "memory_after": {
+    "utc": "2026-10-13T14:22:06.664099+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8322516,
+    "used_percent": 18.458732408772914
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Compat.FieldDivisionExtra",
+  "start_utc": "2026-10-13T14:19:47.732792+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:19:47.732783+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8315952,
+    "used_percent": 18.523044316430262
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Compat.FieldDivisionExtra"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+    "bytes": 1281,
+    "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+      "bytes": 94288,
+      "sha256": "95ddc0251628a8fdfc2b81d4bc3959d3c2ed984c117114c39eb435865162a849"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+      "bytes": 2848,
+      "sha256": "1e4391f18bcb71d6b75cbb6ecbd9d1d33ae68bd9dcf8a0d99b9abea635f98217"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/33-TauCeti.Compat.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/33-TauCeti.Compat.stderr.log",
+  "pid": 229,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:19:49.735440+00:00",
+  "peak_physical_used_percent": 19.869087448910047,
+  "memory_after": {
+    "utc": "2026-10-13T14:19:49.735554+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317748,
+    "used_percent": 18.505447700623954
+  }
+}

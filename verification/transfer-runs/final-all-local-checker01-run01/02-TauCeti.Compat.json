@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Compat.QuadraticExtension",
+  "start_utc": "2026-10-13T14:18:37.567090+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:18:37.567083+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317344,
+    "used_percent": 18.509405959413346
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Compat.QuadraticExtension"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+    "bytes": 1918,
+    "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.olean",
+      "bytes": 86928,
+      "sha256": "f4cc39a08c4e881c0d3f0bbdaba316b2236b8cc3998e0c73e9baf3f598da3d2e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.ilean",
+      "bytes": 5050,
+      "sha256": "f7d59dc5c1bbc5d3667934297e4c58b54e5b8cc9b88da14c20f09ff17ba3cd10"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/02-TauCeti.Compat.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/02-TauCeti.Compat.stderr.log",
+  "pid": 12,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:18:40.070215+00:00",
+  "peak_physical_used_percent": 20.022401393307092,
+  "memory_after": {
+    "utc": "2026-10-13T14:18:40.070304+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8309100,
+    "used_percent": 18.590177953125593
+  }
+}

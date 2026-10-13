@@ -1,0 +1,6 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean:49:8: error: Type mismatch: After simplification, term
+  Eq.symm hs
+ has type
+  @Eq SignType (sign (MvPolynomial.eval₂ f xs a)) (sign (MvPolynomial.eval₂ g ys a))
+but is expected to have type
+  @Eq SignType (sign (F a)) (sign (G a))

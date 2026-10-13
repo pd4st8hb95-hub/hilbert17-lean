@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Algebra.MvPolynomial.Coeff",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Coeff.lean",
+    "bytes": 4740,
+    "sha256": "95ccb03aba37ba4c0bbb12dee38bb2450c829862e49cf64d5a888d7fa6218e0d"
+  },
+  "start_utc": "2026-10-13T13:24:58.940237+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:58.940219+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8329916,
+    "used_percent": 18.3862296487692
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Coeff.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/17-Mathlib_Algebra_MvPolynomial_Coeff.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/17-Mathlib_Algebra_MvPolynomial_Coeff.stderr.log",
+  "pid": 62,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:25:01.944584+00:00",
+  "peak_physical_used_percent": 20.540776531993117,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:01.944751+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312904,
+    "used_percent": 18.552907615415577
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.olean",
+      "bytes": 40016,
+      "sha256": "9c314e3352a952d1abf8e8edc8e4064072d7c6134d442e7fd106d1ec09ff3965"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.olean.private",
+      "bytes": 307184,
+      "sha256": "53ab0ad8f4715e7433a081a094a7c277a2a4cd51f07b4b3e7ad60991977a7663"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.olean.server",
+      "bytes": 3096,
+      "sha256": "0ba65acb17c71838b41a148074c790c8dbf9accc547ddc042aaea1329dd475e1"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.ilean",
+      "bytes": 21277,
+      "sha256": "82b5928fa68333e80500a22f740622cbb0e1df6e67143345d41224b093bd26df"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.ir",
+      "bytes": 1864,
+      "sha256": "52a6096383c601c4fad09577d98d6157de3f5c4ed2836c67095490f42075b87f"
+    }
+  ]
+}

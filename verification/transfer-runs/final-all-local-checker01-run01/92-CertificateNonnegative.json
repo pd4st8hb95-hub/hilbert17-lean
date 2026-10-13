@@ -1,0 +1,46 @@
+{
+  "module": "CertificateNonnegative",
+  "start_utc": "2026-10-13T14:21:59.644052+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:59.644045+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312640,
+    "used_percent": 18.55549420036706
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "CertificateNonnegative"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/CertificateNonnegative.lean",
+    "bytes": 2304,
+    "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.olean",
+      "bytes": 91792,
+      "sha256": "0c7a3dcd36931cb7ba8c3ebb36f6aa19ed4ad53379e857ad9d1367d0cb02e0f1"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.ilean",
+      "bytes": 7811,
+      "sha256": "5b4f4c693ab97bd374a21d18e9038f3765731734180c41cd0ffe77374609991f"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/92-CertificateNonnegative.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/92-CertificateNonnegative.stderr.log",
+  "pid": 642,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:22:01.647058+00:00",
+  "peak_physical_used_percent": 20.018207990431204,
+  "memory_after": {
+    "utc": "2026-10-13T14:22:01.647148+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317288,
+    "used_percent": 18.50995462894851
+  }
+}

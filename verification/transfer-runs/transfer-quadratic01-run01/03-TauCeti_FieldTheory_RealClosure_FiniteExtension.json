@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+    "bytes": 2005,
+    "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+  },
+  "start_utc": "2026-10-13T13:29:30.945263+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:29:30.945251+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349900,
+    "used_percent": 18.190433006078084
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/03-TauCeti_FieldTheory_RealClosure_FiniteExtension.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/03-TauCeti_FieldTheory_RealClosure_FiniteExtension.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:29:32.948020+00:00",
+  "peak_physical_used_percent": 20.247708618853775,
+  "memory_after": {
+    "utc": "2026-10-13T13:29:32.948167+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8351380,
+    "used_percent": 18.17593245407734
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.olean",
+      "bytes": 46760,
+      "sha256": "cbdc566cc41f8db71d1de2b0cf928e79ba314483426830b0bf7d19c137468709"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.ilean",
+      "bytes": 4049,
+      "sha256": "744f87c94f9f94d6da7f628e88e646781e66db71987f375ffbe5ac49fa73c097"
+    }
+  ]
+}

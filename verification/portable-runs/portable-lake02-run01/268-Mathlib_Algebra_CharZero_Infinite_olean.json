@@ -1,0 +1,39 @@
+{
+  "label": "Mathlib.Algebra.CharZero.Infinite:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+Mathlib.Algebra.CharZero.Infinite:olean"
+  ],
+  "start_utc": "2026-10-13T14:39:39.228511+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:39:39.228477+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8271860,
+    "used_percent": 18.955043194009157
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/268-Mathlib_Algebra_CharZero_Infinite_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/268-Mathlib_Algebra_CharZero_Infinite_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 3629,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:39:40.731741+00:00",
+  "seconds": 1.503,
+  "peak_physical_used_percent": 21.30856116509192,
+  "memory_after": {
+    "utc": "2026-10-13T14:39:40.731911+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8265064,
+    "used_percent": 19.021628161169325
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

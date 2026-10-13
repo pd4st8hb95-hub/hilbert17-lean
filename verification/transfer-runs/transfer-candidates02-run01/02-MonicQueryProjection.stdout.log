@@ -1,0 +1,16 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean:53:59: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (?x * ?y)
+in the target expression
+  map f (derivative p * q) % map f p = derivative (map f p) * map f q % map f p
+
+A : Type u_1
+inst✝⁴ : CommRing A
+K : Type u_2
+inst✝³ : Field K
+inst✝² : LinearOrder K
+inst✝¹ : IsStrictOrderedRing K
+inst✝ : IsRealClosed K
+p q : A[X]
+hp : p.Monic
+f : A →+* K
+⊢ map f (derivative p * q) % map f p = derivative (map f p) * map f q % map f p

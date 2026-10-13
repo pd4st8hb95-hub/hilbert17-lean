@@ -1,0 +1,55 @@
+{
+  "label": "RealClosureAlgebraicClosedAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean",
+    "bytes": 792,
+    "sha256": "5f3ec5659ff051c28f85a90e12618f12e4d528c5bf1d84b85e16f1b1d0eea309"
+  },
+  "start_utc": "2026-10-13T14:01:02.029462+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:01:02.029451+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316960,
+    "used_percent": 18.513168264797322
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/06-RealClosureAlgebraicClosedAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/06-RealClosureAlgebraicClosedAxioms.stderr.log",
+  "pid": 20,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T14:01:03.531739+00:00",
+  "peak_physical_used_percent": 20.28838854581802,
+  "memory_after": {
+    "utc": "2026-10-13T14:01:03.531882+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310432,
+    "used_percent": 18.577127456324924
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.olean",
+      "bytes": 1632,
+      "sha256": "b4c4349365945fadb12e64409e754bb97bfb24eb28e9cfc4502c928261ad54f4"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAlgebraicClosedAxioms.ilean",
+      "bytes": 1084,
+      "sha256": "6d32bb9f43b396162e33a7b35919ae5eb9c13d5d7af9b9a4b407029e43d32055"
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "status": "VERIFIED_COMPILE_CONTRACT_AXIOMS_AND_ALL_SELECTED_LOCAL_REPLAY",
+  "tau_ceti_commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+  "pinned_mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "newer_mathlib_source_commit": "3b531c35df33d6bbe64b4e87dec056211d3a5676",
+  "entries": [
+    {
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "path": "TauCeti/Compat/QuadraticDiscriminant.lean",
+      "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be",
+      "origin": "Mathlib API-compatible local replacement",
+      "upstream_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Algebra/QuadraticAlgebra/Discriminant.lean",
+      "upstream_sha256": "85a2d1156397c763f746216a91b8ebf75374ba2702ff0c3868f3cc8cbc13c003"
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "path": "TauCeti/Compat/QuadraticExtension.lean",
+      "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957",
+      "origin": "Mathlib API-compatible local replacement",
+      "upstream_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Algebra/QuadraticAlgebra/IsQuadraticExtension.lean",
+      "upstream_sha256": "2b8c1cfceb26b1ec1b64db288691efcbf7136111947c0a00bd82998ddce57c61"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "path": "TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "upstream_sha256": "91328e13bc8c827d40a882995df1745f1dada2e5c481b46322814b44241727fc",
+      "upstream_git_blob": "1177e4ece6a8aea427e9569d9e6217fe69b0f889"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "path": "TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "upstream_sha256": "9155290db2275f26ea037c906aa6aa79689e98c5f3cc80e4dd9bbfcf7a983252",
+      "upstream_git_blob": "ca1ed0f3f3fd0fc72e148c772b3728286c7a6ed1"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "path": "TauCeti/Algebra/Order/Ring/Square.lean",
+      "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Order/Ring/Square.lean",
+      "upstream_sha256": "2af259b2b1a7b15a9511655666fcbb21ad2112285ffdbc5c98b9c05b1d8567aa",
+      "upstream_git_blob": "1426d56a03fc6df2de2ed8cc433c0c779a9793cd"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "path": "TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "upstream_sha256": "0ce6ab5c5021ac3cb6f3c5922870ea5c451cfc1e5106835056b61ced63defe95",
+      "upstream_git_blob": "53cea798e14e642eed52a450a627f4b13f95c903"
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "path": "TauCeti/Algebra/Ring/Semireal.lean",
+      "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Ring/Semireal.lean",
+      "upstream_sha256": "fffd480d8c26c7c555fcf4576ad7ec8a8a8ddafc44d169b8217d0b19fe2eec32",
+      "upstream_git_blob": "c045a9880407d361ec08c69bc8d004c12a08d3ed"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "path": "TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "upstream_sha256": "246e2429b642d13398f7221fee4746e80c769d658c1f413f4da94737a3b175b6",
+      "upstream_git_blob": "fe424da772e2c00276d5d1ca408e4e70db11596d"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "path": "TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "upstream_sha256": "135beac806a9a2f6cf0a80e0ff90edb0d650a399f0ba8ebd2ab0c35c3898b78a",
+      "upstream_git_blob": "9a10985acb4bc15147a81e4feed67b5fade2bddc"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "path": "TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "upstream_sha256": "acdf370beaeea2963f28d08dc2dbe9bc57360dd902716f4b91a1d0d44543eecb",
+      "upstream_git_blob": "0921957fb3ae251ef60594c609d96674cc75de22"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "path": "TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "upstream_sha256": "d97ba98c0815e1e12a7b42a3d97e04dd3ede70d0bcdfbe8243256187c6181813",
+      "upstream_git_blob": "14502c527935828521809a70f7ef19990c598fd2"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "path": "TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "upstream_sha256": "b6744954ebe3cd8178b4a96e1c971c873049187a3f7f4196bd35d9c982274e70",
+      "upstream_git_blob": "ecebc12959ad106728c30a73e5ddec56be67c0d5"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "path": "TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "upstream_sha256": "61946fbeac334abdf3c056aca6131771beb39ae32ba69f66c386987de213c4cb",
+      "upstream_git_blob": "6469544929ed249f2112f91474ab5f656a9572d7"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "upstream_sha256": "3ac02f04eb69d36ca4d8918e66f8cc3231d184641f5f80daa37937b2ab985406",
+      "upstream_git_blob": "3596b4e801ec62c8f55f47d946c25322e02d4d93"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "path": "TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "upstream_sha256": "3af6467e4ec7f0992c061d1c8b4e2c48a678998abc40742e649dfbb04d233ffe",
+      "upstream_git_blob": "f3eb9f072aa11ceaba317e8b7cc64753dce8ed62"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+      "path": "TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "upstream_sha256": "d47509341d6273e3b729269bf8ced19900c545224b824c5a617bb147431c3ac9",
+      "upstream_git_blob": "57ac3e9dbde03227b1e500cfc1a1e1beefeb3313"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Rolle",
+      "path": "TauCeti/Algebra/Polynomial/Rolle.lean",
+      "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Rolle.lean",
+      "upstream_sha256": "f5429276e8c8f1915e776e98bb7f7286ac6a76075bc215062ac7d5acdafc0c2c",
+      "upstream_git_blob": "44513afe44522be5dc45fa76b76ec302155f7420"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Thom",
+      "path": "TauCeti/Algebra/Polynomial/Thom.lean",
+      "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Thom.lean",
+      "upstream_sha256": "0d7b651be6538bb82c681bc7f2258540ea6699f6d0444f4677200a41790a4c6d",
+      "upstream_git_blob": "cbe5863943b9fdf6cab6177d95d94c3b77518761"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "path": "TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "upstream_sha256": "f0ac03735e51eae71cc7dc6bf076d6bbbad9a822970d5696e654aa22da313d0a",
+      "upstream_git_blob": "74ad40d7756bd92d1175487429ce0b3496b40295"
+    },
+    {
+      "module": "TauCeti.Data.Finset.Jumps",
+      "path": "TauCeti/Data/Finset/Jumps.lean",
+      "sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/Finset/Jumps.lean",
+      "upstream_sha256": "8c94db89341af74ceb6e03372860ac99d55127635ffd28aa5222505f114d680a",
+      "upstream_git_blob": "3c9f310a44a65cdffb4036a079f7cea6c587d35d"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "upstream_sha256": "38e0f8069561cddbb6a6a40a53a8da4ab1f656965713ff82d41ab71e7645fc70",
+      "upstream_git_blob": "07a6d5310751526bf82931a3976068714c7c2b44"
+    },
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "path": "TauCeti/Data/Fintype/Fiber.lean",
+      "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/Fintype/Fiber.lean",
+      "upstream_sha256": "382fb8a641e8fefbcec424100383e80666850676dcc463fa08661f73b21f30d4",
+      "upstream_git_blob": "46314150d63935d15db2ed7f3b9e17cc31821fda"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "upstream_sha256": "248b4916e68979ce1dd533b44a80c9e8d3cd80e236dd003cb1b535dc0b6fe5a8",
+      "upstream_git_blob": "d45ca1ec1785bfd0f43b6d39a7912510e9151dd8"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "upstream_sha256": "ea3ba1879b6d3af559af920a5a7191edfdc078cd850bc45868890925f07f0f09",
+      "upstream_git_blob": "9e1c1a46df2f7a09ba8247af5c501271e6443f0d"
+    },
+    {
+      "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+      "path": "TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "upstream_sha256": "d19f43c1c97362863915309334e138d5c8ff642d02fbda57fcc01828a5e4f589",
+      "upstream_git_blob": "fd2d8a11f687ce6462b12e44c3783847e44e4e50"
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "path": "TauCeti/Compat/ListSignVariations.lean",
+      "sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc",
+      "origin": "Mathlib source adaptation",
+      "upstream_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Data/List/SignVariations.lean",
+      "upstream_sha256": "04650a8619fb1d2b1dd801b55095fc1d277739387c982723ce305c8167091ba9"
+    },
+    {
+      "module": "TauCeti.Data.List.SignVariations",
+      "path": "TauCeti/Data/List/SignVariations.lean",
+      "sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/List/SignVariations.lean",
+      "upstream_sha256": "78e6af7bb45a508b7e802023102594f4af2696de1e9afede7876a0d551209a28",
+      "upstream_git_blob": "3bc2f0c020e8f3b0d5d6843abb5b2980e0b7d04c"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "upstream_sha256": "f74e91071e1b85ca71a7d8d9c10b4f6b99bde1fcd82cef1d486519b081e505ca",
+      "upstream_git_blob": "f64eb8cd91fb1f808b0fd3ccbe20d480eb3ee5ce"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "upstream_sha256": "b1a107a1c23cb4374664517b25007e004e11b465a1e611a919c232bc9d8229f6",
+      "upstream_git_blob": "8669c9a3359db8abb1cebab8d0dea2255d8d3259"
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "path": "TauCeti/Compat/FieldDivisionExtra.lean",
+      "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469",
+      "origin": "Mathlib source adaptation",
+      "upstream_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Algebra/Polynomial/FieldDivision.lean",
+      "upstream_sha256": "438b1fa85b7f5e42eecd4e3509fb0b73467bcce645bfcb6c973cc4c0fd561b00"
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "path": "TauCeti/Compat/SturmSequence.lean",
+      "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012",
+      "origin": "Mathlib source adaptation",
+      "upstream_url": "https://github.com/leanprover-community/mathlib4/blob/3b531c35df33d6bbe64b4e87dec056211d3a5676/Mathlib/Algebra/Polynomial/Sturm/Sequence.lean",
+      "upstream_sha256": "9b0f52b215e46ddd7fb75a0188c24f967a052a95a7e5b5e516f13d54b3e3cdc5"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "upstream_sha256": "96c25c7e0f6c84487fb618dc7757d5d763b0c047f3753631f3819102cb60439d",
+      "upstream_git_blob": "19cb7dfcbbc4e3cd17ef0cc6e2ffbaaf4568c3c7"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "upstream_sha256": "2883d0105f34168c1979556ac752af7d2ae7b4a2f5b16095a7a49038be9236e7",
+      "upstream_git_blob": "ccb77e9d92eb6afd97e4de27fd5a0c5b61a371ec"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "upstream_sha256": "98c6192af473109f89fa119ef7d42e63d43f3896d99067e5eb1bcabc3fb3622e",
+      "upstream_git_blob": "bc66fb2315bd5231a796c4c4016ab7a603abc541"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "upstream_sha256": "3c0b70febac77ad1462a93e63ce022451f478f4ec2774ad7f744e8bdb5bdc9df",
+      "upstream_git_blob": "b41c5a11efb48fc82d1ded37028a7d798f055bc4"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "upstream_sha256": "356a1b71d897623aa6fd05efd67b047b144c4ce8d8b9519c740d6bb091cc80c9",
+      "upstream_git_blob": "9a8ddc249870d7b60cbf45a8fd50f0921f087421"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+      "path": "TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "upstream_sha256": "58556d3330c64f2d40ee95db4afbe693a262077e228035a4c090b79de617af4a",
+      "upstream_git_blob": "981162cec9661c79ef2361f35b173d66fdfec3d4"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "upstream_sha256": "fb8f5e889227c2c08a7f2e83bec819098b43fe8fcef694bb471d24e4aacd5484",
+      "upstream_git_blob": "cf7eaeb27d164fc32feb394396aac3e330b17873"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+      "sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+      "upstream_sha256": "26a432925f035017804c25f0a4472db95ff7b0e9964cd3fab16cc118351a0957",
+      "upstream_git_blob": "b30eb7742db17a4353b11573dc0685dcff0445e1"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Parity",
+      "path": "TauCeti/Data/SignType/Parity.lean",
+      "sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/SignType/Parity.lean",
+      "upstream_sha256": "b6f4b9f0569b774f1650fcd1757d5b49f5eb42576d57e67dbed079f7fa581e21",
+      "upstream_git_blob": "746c43c19718c44361f816deb7f17ae438a21dc6"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "upstream_sha256": "a24a8573b3744533f53aefcdababeef4aac7ac963dc18675d71a85f4fa2c5af7",
+      "upstream_git_blob": "5eec68bcf63776390e0378920b8510cef53a5d0b"
+    },
+    {
+      "module": "TauCeti.Data.List.PermanencesMinusVariations",
+      "path": "TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "upstream_sha256": "68b04032a492294c777b7705cb146425195319cf52cea0fea29f099a9fb30c2c",
+      "upstream_git_blob": "1d7e2356992690b8589f6d38e7c157897f351bab"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "path": "TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+      "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+      "upstream_sha256": "068d8e9cd977a708d9f9e2d64e2cc1a6460d812f2d72b956e965f3e2c26fe2aa",
+      "upstream_git_blob": "9961180e43c5ab54d849080c9b5dcfe393f3edbc"
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "path": "TauCeti/GroupTheory/Perm/Inversion.lean",
+      "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/GroupTheory/Perm/Inversion.lean",
+      "upstream_sha256": "5e698eef5499bd2ad33e44415eb6e47dca98fbe439fc0253912a0eedeedd7e67",
+      "upstream_git_blob": "1382471e421513c3fe2c7d6ceb8afaed0c5e421b"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "upstream_sha256": "6c06324b8cbd113c6f0651a06111eb6b62a57b4974e47b799551456a20c6e894",
+      "upstream_git_blob": "3aca693b80c924c318e3574b7c9f12308245eb8d"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+      "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+      "upstream_sha256": "dc9fc49a0f8d9ac1bae3d3aae474e6c9915fcb1820f20471e198eaedb873c55c",
+      "upstream_git_blob": "a03484b75a88e370c6fa2cc3410a232e4bc95abe"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "path": "TauCeti/RingTheory/Polynomial/Reductum.lean",
+      "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Reductum.lean",
+      "upstream_sha256": "5d3ede70ccda49416743da91ec658a3f633260dad186208a453ce8519cd86603",
+      "upstream_git_blob": "c1105b3b0835a7113fa8acbc80e6d8ee5b17a2d7"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "path": "TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+      "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+      "upstream_sha256": "84ebf3628e2fad8cd02ce3b8d937d36da6e596daf06c313ea52bea8e49d8ee91",
+      "upstream_git_blob": "8e0c1cd79a61fb421a4cd997d8255e23cb79fb36"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "path": "TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+      "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+      "upstream_sha256": "33e8312d1d4666f7dfdf23d21cf285a1d7574d2ea4d027a09640f17f80276dd8",
+      "upstream_git_blob": "295be802ef5ab48ad592d0c1e5e8a2eca14db756"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "upstream_sha256": "bebac66b74e376305a10a3d3d149ea1c5ea714b77de0d6e320ff2e51e69c44f4",
+      "upstream_git_blob": "a979b30445f9f50f26afeb3a21426dde671d3007"
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "path": "TauCeti/Data/Nat/Choose/Basic.lean",
+      "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/Nat/Choose/Basic.lean",
+      "upstream_sha256": "59abbddc681688261f9cb1d4d33672284434615a46ae01e4a65f975f0b4d0bdc",
+      "upstream_git_blob": "62632ac0a50bc341fe0b08e7f7c3ce2942a26cd3"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "upstream_sha256": "3bb3195270f6ea09ab8c00a26d14e70474daf6bb7d3a66570fc39ae461106e70",
+      "upstream_git_blob": "ef51df57586268c8b10e83530d0d9246a8162acd"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "path": "TauCeti/Algebra/Polynomial/OfFn.lean",
+      "sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/OfFn.lean",
+      "upstream_sha256": "385cb906f36913507d7a18f03dc47d2666b4a289fd5694fa74f612acd569aeb5",
+      "upstream_git_blob": "c33617506630050e5d346ead6bfead377d8c1f3d"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "upstream_sha256": "7869cb184d23a7919ab4ca75f29e1c372856887fef037220477020d59a515584",
+      "upstream_git_blob": "0787f99c3cda14c37b68dca4ea56f8fa6fc4554e"
+    },
+    {
+      "module": "TauCeti.Data.List.Range",
+      "path": "TauCeti/Data/List/Range.lean",
+      "sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/List/Range.lean",
+      "upstream_sha256": "19eb519a8734296350efb260b49b7787274d6dac9583abc4c4590fd73f4ab236",
+      "upstream_git_blob": "d792fc582a90456139d586420b87e5dea15af604"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "upstream_sha256": "8ebe4f35d3f442a33541e6f0826f71758fb864870dad5f1b1c79d600acc068b8",
+      "upstream_git_blob": "d4e2aefe3f2c959729958a49719c505b033dfeba"
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "path": "CoefficientSignPattern.lean",
+      "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "UniformRootCount",
+      "path": "UniformRootCount.lean",
+      "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "path": "TauCeti/Data/Matrix/OccCount.lean",
+      "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/Matrix/OccCount.lean",
+      "upstream_sha256": "8322374a8382e89f677e4cf7e9dfb8a44879c336e446b4480e0d3ece69f9e0d0",
+      "upstream_git_blob": "5e6d872971b71ae8a112173cc9f777765572a3e2"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "path": "TauCeti/Data/SignType/Lagrange.lean",
+      "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Data/SignType/Lagrange.lean",
+      "upstream_sha256": "8c690e2d22194a8d3cd924e921c0180499c8ffeedddd2d2124ad6fc5412a65e4",
+      "upstream_git_blob": "2e6dbf863c6186b4b9bc0e682c1def06c4e94d26"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "upstream_sha256": "543a9c445007712a848a85df629d17279e65d89e867ec062cf39c085abd4e187",
+      "upstream_git_blob": "92d99630df2530062a9a166eb736d9a7df3ca02e"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "upstream_sha256": "754b73ba6b2fb6103f654016a056f2377df94b9b9ae0f0b7d0a15bcefdb556ab",
+      "upstream_git_blob": "69ea7f0f42143ca77dd092acc694253fa27b70da"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "upstream_sha256": "b6438f41f922deaf6bd12f49b931d7abf2c86cd5e0ae6afad99d1523f32d1988",
+      "upstream_git_blob": "ba3719e33846916153785e3dcf6bd18e763e9feb"
+    },
+    {
+      "module": "MonicQueryProjection",
+      "path": "MonicQueryProjection.lean",
+      "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "DegreeNormalization",
+      "path": "DegreeNormalization.lean",
+      "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "path": "GeneralQueryProjection.lean",
+      "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "path": "GeneralPatternProjection.lean",
+      "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "path": "TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "upstream_sha256": "dacf5d17883a4ead951b98d98518397189fe6bc2c64b75327454132f91ad6667",
+      "upstream_git_blob": "1bc831eeab6cd9bb3f0523431861432f367ddfc4"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "upstream_sha256": "a1b40d52f6445b8a9918edb06e362e99243da654be008afa87fbdcea4a042b62",
+      "upstream_git_blob": "fc973a500265b16455e07b0d07b59a7a9740bc6c"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4",
+      "origin": "TauCeti adaptation",
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "upstream_sha256": "00255a530c5bf26f5e920d949774f7b40d1429ac623c7fe39f705bee9d98d607",
+      "upstream_git_blob": "3fa98fa9fc99f4e1e0a84af991396f59121e3379"
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "path": "WholeLineAlternatives.lean",
+      "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "UniformOneVariable",
+      "path": "UniformOneVariable.lean",
+      "sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "FinSuccEvaluation",
+      "path": "FinSuccEvaluation.lean",
+      "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "path": "FiniteVariableTransfer.lean",
+      "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741",
+      "origin": "Project-specific classical proof assembly"
+    },
+    {
+      "module": "RealClosureTransfer",
+      "path": "RealClosureTransfer.lean",
+      "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae",
+      "origin": "Project-specific classical proof assembly"
+    }
+  ]
+}

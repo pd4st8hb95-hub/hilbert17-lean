@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.GroupTheory.Perm.Inversion:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.GroupTheory.Perm.Inversion:olean"
+  ],
+  "start_utc": "2026-10-13T14:32:20.898293+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:32:20.898279+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8257920,
+    "used_percent": 19.09162271758372
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/122-TauCeti_GroupTheory_Perm_Inversion_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/122-TauCeti_GroupTheory_Perm_Inversion_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 1647,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:32:24.908077+00:00",
+  "seconds": 4.01,
+  "peak_physical_used_percent": 22.492354877887717,
+  "memory_after": {
+    "utc": "2026-10-13T14:32:24.908239+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8262644,
+    "used_percent": 19.045338523224594
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

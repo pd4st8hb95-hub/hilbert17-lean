@@ -1,0 +1,811 @@
+{
+  "status": "PASS_7_MODULE_COMPILES_REPLAYS_AND_64_AXIOM_TYPE_AUDITS",
+  "utc": "2026-10-13T13:50:46.045402+00:00",
+  "scope": "Independent receipt/hash review and complete multiline axiom/type parsing. Reviewer executed no compiler/checker. Exact seven BKR modules passed selected same-kernel replay; other jobs in the mixed twelve-module replay batch are outside this record. No full transitive replay, full transfer or Hilbert17 proof claimed.",
+  "diagnostic_receipt": "hilbert17-20261013/verification/bkr-axioms01-run01/summary.json",
+  "diagnostic_receipt_sha256": "e380650491db8bc27c66d8f14f1d47c4b0bdf6a01490fdee7e06365490431b5f",
+  "diagnostic_source_sha256": "5251966f1f7af1b6c6cbb2d27f722beb0ee2168458c41eb9854f0290edc84801",
+  "diagnostic_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/bkr-axioms01-run01/01-BKRExports.stdout.log",
+  "diagnostic_log_sha256": "9477f838ec83683ce958e5bacbddd91a0135ccadfd7cc52383911c974e76e7c6",
+  "selected_module_replay": "PASS_7_BKR_MODULES",
+  "key_type_review": {
+    "root_tarski_matrix_identity": "Arbitrary compatibly ordered commutative coefficient ring, finite/decidable index type, and polynomials p,Q. No real-closedness, field, nonzero-p, transfer or analytic premise.",
+    "matrix_inversion": "Both fullInverse*fullMatrix=1 and fullMatrix*fullInverse=1 for finite/decidable index types.",
+    "zero_polynomial_scope": "Counts the finite polynomial root multiset; roots(0) is empty, not the entire field. Later zero-polynomial specializations must be handled separately."
+  },
+  "modules": [
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr01-run01/summary.json",
+      "compile_receipt_sha256": "f3ae2c175165a64e1ad2a73d5087ea3cd854f48e8361006a7f58bafc7770d3c6",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/01-TauCeti.Data.Fintype.stdout.log",
+      "replay_log_sha256": "f446679ba4a4cf297b6913a9c52f629447fd30c23776fd20c551027d387d6b8d",
+      "replay_artifact_hashes": [
+        {
+          "file": "Fiber.olean",
+          "sha256": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e"
+        },
+        {
+          "file": "Fiber.ilean",
+          "sha256": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr01-run01/summary.json",
+      "compile_receipt_sha256": "f3ae2c175165a64e1ad2a73d5087ea3cd854f48e8361006a7f58bafc7770d3c6",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/02-TauCeti.Data.Matrix.stdout.log",
+      "replay_log_sha256": "f3dc8989c02e7fec6148135caf12b95355c00346729250c60bbcc41ed604d1ca",
+      "replay_artifact_hashes": [
+        {
+          "file": "OccCount.olean",
+          "sha256": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc"
+        },
+        {
+          "file": "OccCount.ilean",
+          "sha256": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "compile_receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/03-TauCeti.Data.SignType.stdout.log",
+      "replay_log_sha256": "1335cbf64aca2908d1659e2109e5e9353faed76a51a8f56bf9643faffcc3d085",
+      "replay_artifact_hashes": [
+        {
+          "file": "Lagrange.olean",
+          "sha256": "285be1e6ac67b0528d0afb41f37878a2005a0d92fad38c121ae8d1d559d8ac99"
+        },
+        {
+          "file": "Lagrange.ilean",
+          "sha256": "2873bbd173b04b923064fe24d730b2606ee2efbb284c8a69360f84a806f13cbd"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "compile_receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/04-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+      "replay_log_sha256": "22250f1bcf0f85178b6a67ea3f1e300148d394998e171dea1bc4605cfa772439",
+      "replay_artifact_hashes": [
+        {
+          "file": "Moments.olean",
+          "sha256": "9ea2280ad9ea57698c460faa181143ce9064d003867029520a889c9d284f7a39"
+        },
+        {
+          "file": "Moments.ilean",
+          "sha256": "aac776c6da3629f7396fbb811345a6e1cd466fcb88d890d372cb9c43c60a3b89"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "compile_receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/05-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+      "replay_log_sha256": "5710d5c54da535d31cc068ad2fec5e5b7fb1b8cb79315f1d7bcebc53fda203f0",
+      "replay_artifact_hashes": [
+        {
+          "file": "Defs.olean",
+          "sha256": "803b0a63d22a0154e439b2f5b4d76ab7c719f518fcc8fe7d024030fd9c266ced"
+        },
+        {
+          "file": "Defs.ilean",
+          "sha256": "16e64393075e02e836d3803e1d7921580de95678cc0e03682ddf8e5935ffca28"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "compile_receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/06-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+      "replay_log_sha256": "38e1e1a3b60d499fb43ae64df516b0fd220c2d8afab701c2b16750961f19c6e4",
+      "replay_artifact_hashes": [
+        {
+          "file": "Polynomial.olean",
+          "sha256": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9"
+        },
+        {
+          "file": "Polynomial.ilean",
+          "sha256": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "compile_receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "compile_receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "compile_status": "PASS",
+      "current_artifacts_match": true,
+      "selected_module_replay": "PASS",
+      "replay_log": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/07-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+      "replay_log_sha256": "62b14071f34c7c71d806b9984345ce4334cd1c5b595bd41f60988ce9f7aa5017",
+      "replay_artifact_hashes": [
+        {
+          "file": "Roots.olean",
+          "sha256": "98ceaee8803eec98cc686a88fdf196b22494a3c373c6eede2d8068de97195c4f"
+        },
+        {
+          "file": "Roots.ilean",
+          "sha256": "40f2fcd9e7cd7615d0c707bbec6587a700983736a0c291aa7cf93923fe7d3f70"
+        }
+      ]
+    }
+  ],
+  "declarations": [
+    {
+      "declaration": "Function.occCount",
+      "printed_type": "@Function.occCount.{u_1, u_2} : {X : Type u_1} \u2192 {S : Type u_2} \u2192 (X \u2192 S) \u2192 S \u2192 \u2115",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_def",
+      "printed_type": "@Function.occCount_def.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S) (y : S),\n  Eq.{1} (Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} (Subtype.{u_1 + 1} fun x => Eq.{u_2 + 1} (f x) y))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_eq_card_filter",
+      "printed_type": "@Function.occCount_eq_card_filter.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] [inst_1 : DecidableEq.{u_2 + 1} S] (f : X \u2192 S)\n  (y : S), Eq.{1} (Function.occCount.{u_1, u_2} f y) (Finset.card.{u_1} {x | Eq.{u_2 + 1} (f x) y})",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_eq_sum",
+      "printed_type": "@Function.occCount_eq_sum.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] [inst_1 : DecidableEq.{u_2 + 1} S] (w : X \u2192 S)\n  (a : S), Eq.{1} (Function.occCount.{u_1, u_2} w a) (\u2211 i, ite.{1} (Eq.{u_2 + 1} (w i) a) 1 0)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_le_of_comp",
+      "printed_type": "@Function.occCount_le_of_comp.{u_1, u_2,\n    u_3} : \u2200 {X : Type u_1} {S : Type u_2} {Y : Type u_3} {u : X \u2192 S} {v : Y \u2192 S}\n  (e : Function.Embedding.{u_1 + 1, u_3 + 1} X Y),\n  (\u2200 (i : X), Eq.{u_2 + 1} (v (e i)) (u i)) \u2192\n    \u2200 (a : S) [Finite.{u_3 + 1} (Subtype.{u_3 + 1} fun y => Eq.{u_2 + 1} (v y) a)],\n      LE.le.{0} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_3, u_2} v a)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_lt_of_comp",
+      "printed_type": "@Function.occCount_lt_of_comp.{u_1, u_2,\n    u_3} : \u2200 {X : Type u_1} {S : Type u_2} {Y : Type u_3} {u : X \u2192 S} {v : Y \u2192 S} {a : S}\n  [Finite.{u_3 + 1} (Subtype.{u_3 + 1} fun y => Eq.{u_2 + 1} (v y) a)] {j : Y}\n  (e : Function.Embedding.{u_1 + 1, u_3 + 1} X Y),\n  (\u2200 (i : X), Eq.{u_2 + 1} (v (e i)) (u i)) \u2192\n    Eq.{u_2 + 1} (v j) a \u2192\n      (\u2200 (i : X), Ne.{u_3 + 1} (e i) j) \u2192\n        LT.lt.{0} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_3, u_2} v a)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_pos",
+      "printed_type": "@Function.occCount_pos.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S) (y : S)\n  [Finite.{u_1 + 1} (Subtype.{u_1 + 1} fun x => Eq.{u_2 + 1} (f x) y)],\n  LT.lt.{0} 0 (Function.occCount.{u_1, u_2} f y) \u2194 \u2203 x, Eq.{u_2 + 1} (f x) y",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_eq_card_preimage",
+      "printed_type": "@Function.occCount_eq_card_preimage.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S) (y : S),\n  Eq.{1} (Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} \u2191(Set.preimage.{u_1, u_2} f (singleton.{u_2, u_2} y)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_of_notMem_range",
+      "printed_type": "@Function.occCount_of_notMem_range.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S),\n  \u2200 y \u2209 Set.range.{u_2, u_1 + 1} f, Eq.{1} (Function.occCount.{u_1, u_2} f y) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_of_injective",
+      "printed_type": "@Function.occCount_of_injective.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S),\n  Function.Injective.{u_1 + 1, u_2 + 1} f \u2192\n    \u2200 (y : S) [inst : Decidable (\u2203 x, Eq.{u_2 + 1} (f x) y)],\n      Eq.{1} (Function.occCount.{u_1, u_2} f y) (ite.{1} (\u2203 x, Eq.{u_2 + 1} (f x) y) 1 0)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_apply_of_injective",
+      "printed_type": "@Function.occCount_apply_of_injective.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} (f : X \u2192 S),\n  Function.Injective.{u_1 + 1, u_2 + 1} f \u2192 \u2200 (x : X), Eq.{1} (Function.occCount.{u_1, u_2} f (f x)) 1",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.prod_occCount_pow",
+      "printed_type": "@Function.prod_occCount_pow.{u_1, u_2,\n    u_3} : \u2200 {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] {K : Type u_3} [inst_1 : CommMonoid.{u_3} K]\n  (f : X \u2192 S) {T : Finset.{u_2} S},\n  (\u2200 (x : X), Membership.mem.{u_2, u_2} T (f x)) \u2192\n    \u2200 (weight : S \u2192 K),\n      Eq.{u_3 + 1} (\u220f y \u2208 T, HPow.hPow.{u_3, 0, u_3} (weight y) (Function.occCount.{u_1, u_2} f y)) (\u220f x, weight (f x))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.sum_occCount_eq_card",
+      "printed_type": "@Function.sum_occCount_eq_card.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} [Finite.{u_1 + 1} X] (f : X \u2192 S) {T : Finset.{u_2} S},\n  (\u2200 (x : X), Membership.mem.{u_2, u_2} T (f x)) \u2192 Eq.{1} (\u2211 y \u2208 T, Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} X)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_castSucc",
+      "printed_type": "@Function.occCount_castSucc.{u_1} : \u2200 {S : Type u_1} [inst : DecidableEq.{u_1 + 1} S] {n : \u2115}\n  (w : Fin (HAdd.hAdd.{0, 0, 0} n 1) \u2192 S) (a : S),\n  Eq.{1}\n    (HAdd.hAdd.{0, 0, 0} (Function.occCount.{0, u_1} (Function.comp.{1, 1, u_1 + 1} w Fin.castSucc) a)\n      (ite.{1} (Eq.{u_1 + 1} (w (Fin.last n)) a) 1 0))\n    (Function.occCount.{0, u_1} w a)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.occCount_succ",
+      "printed_type": "@Function.occCount_succ.{u_1} : \u2200 {S : Type u_1} [inst : DecidableEq.{u_1 + 1} S] {n : \u2115}\n  (w : Fin (HAdd.hAdd.{0, 0, 0} n 1) \u2192 S) (a : S),\n  Eq.{1}\n    (HAdd.hAdd.{0, 0, 0} (Function.occCount.{0, u_1} (Function.comp.{1, 1, u_1 + 1} w Fin.succ) a)\n      (ite.{1} (Eq.{u_1 + 1} (w 0) a) 1 0))\n    (Function.occCount.{0, u_1} w a)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.exists_perm_of_occCount_eq",
+      "printed_type": "@Function.exists_perm_of_occCount_eq.{u_1,\n    u_2} : \u2200 {X : Type u_1} {S : Type u_2} [Finite.{u_1 + 1} X] {u v : X \u2192 S},\n  (\u2200 (a : S), Eq.{1} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_1, u_2} v a)) \u2192\n    \u2203 \u03c3, Eq.{max (u_1 + 1) (u_2 + 1)} (Function.comp.{u_1 + 1, u_1 + 1, u_2 + 1} v \u21d1\u03c3) u",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.sum_occCount_nsmul",
+      "printed_type": "@Function.sum_occCount_nsmul.{u_1, u_2,\n    u_3} : \u2200 {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] {K : Type u_3} [inst_1 : AddCommMonoid.{u_3} K]\n  (f : X \u2192 S) {T : Finset.{u_2} S},\n  (\u2200 (x : X), Membership.mem.{u_2, u_2} T (f x)) \u2192\n    \u2200 (weight : S \u2192 K),\n      Eq.{u_3 + 1} (\u2211 y \u2208 T, HSMul.hSMul.{0, u_3, u_3} (Function.occCount.{u_1, u_2} f y) (weight y))\n        (\u2211 x, weight (f x))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.mulVec_occCount",
+      "printed_type": "@Function.mulVec_occCount.{u_1, u_2, u_3, u_4,\n    u_5} : \u2200 {X : Type u_1} {S : Type u_2} {C : Type u_3} {I : Type u_4} [inst : Fintype.{u_1} X]\n  [inst_1 : Fintype.{u_3} C] {K : Type u_5} [inst_2 : Semiring.{u_5} K] (obs : X \u2192 S) (columns : C \u2192 S),\n  Function.Injective.{u_3 + 1, u_2 + 1} columns \u2192\n    (\u2200 (x : X), \u2203 c, Eq.{u_2 + 1} (columns c) (obs x)) \u2192\n      \u2200 (weight : I \u2192 S \u2192 K),\n        Eq.{max (u_4 + 1) (u_5 + 1)}\n          (Matrix.mulVec.{u_5, u_4, u_3} (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)) fun c =>\n            \u2191(Function.occCount.{u_1, u_2} obs (columns c)))\n          fun i => \u2211 x, weight i (obs x)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Function.eq_occCount",
+      "printed_type": "@Function.eq_occCount.{u_1, u_2, u_3, u_4,\n    u_5} : \u2200 {X : Type u_1} {S : Type u_2} {C : Type u_3} {I : Type u_4} [inst : Fintype.{u_1} X]\n  [inst_1 : Fintype.{u_3} C] [inst_2 : Fintype.{u_4} I] [inst_3 : DecidableEq.{u_3 + 1} C] {K : Type u_5}\n  [inst_4 : Semiring.{u_5} K] (obs : X \u2192 S) (columns : C \u2192 S),\n  Function.Injective.{u_3 + 1, u_2 + 1} columns \u2192\n    (\u2200 (x : X), \u2203 c, Eq.{u_2 + 1} (columns c) (obs x)) \u2192\n      \u2200 (weight : I \u2192 S \u2192 K) (A : Matrix.{u_3, u_4, u_5} C I K),\n        Eq.{max (u_3 + 1) (u_5 + 1)}\n            (HMul.hMul.{max (max u_3 u_4) u_5, max (max u_3 u_4) u_5, max u_3 u_5} A\n              (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)))\n            1 \u2192\n          \u2200 (proposed : C \u2192 K),\n            (Eq.{max (u_4 + 1) (u_5 + 1)}\n                (Matrix.mulVec.{u_5, u_4, u_3} (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)) proposed)\n                fun i => \u2211 x, weight i (obs x)) \u2192\n              Eq.{max (u_3 + 1) (u_5 + 1)} proposed fun c => \u2191(Function.occCount.{u_1, u_2} obs (columns c))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SignType.lagrangeCoeff",
+      "printed_type": "SignType.lagrangeCoeff : SignType \u2192 Fin 3 \u2192 \u211a",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SignType.lagrangeCoeff_zero",
+      "printed_type": "SignType.lagrangeCoeff_zero : \u2200 (e : Fin 3),\n  Eq.{1} (SignType.lagrangeCoeff 0 e) (ite.{1} (Eq.{1} e 0) 1 (ite.{1} (Eq.{1} e 2) (-1) 0))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SignType.lagrangeCoeff_neg_one",
+      "printed_type": "SignType.lagrangeCoeff_neg_one : \u2200 (e : Fin 3),\n  Eq.{1} ((-1).lagrangeCoeff e) (ite.{1} (Eq.{1} e 1) (-1 / 2) (ite.{1} (Eq.{1} e 2) (1 / 2) 0))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SignType.lagrangeCoeff_one",
+      "printed_type": "SignType.lagrangeCoeff_one : \u2200 (e : Fin 3),\n  Eq.{1} (SignType.lagrangeCoeff 1 e) (ite.{1} (Eq.{1} e 1) (1 / 2) (ite.{1} (Eq.{1} e 2) (1 / 2) 0))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SignType.sum_lagrangeCoeff_mul_pow",
+      "printed_type": "SignType.sum_lagrangeCoeff_mul_pow : \u2200 (s t : SignType),\n  Eq.{1} (\u2211 e, HMul.hMul.{0, 0, 0} (s.lagrangeCoeff e) (HPow.hPow.{0, 0, 0} \u2191t \u2191e)) (ite.{1} (Eq.{1} s t) 1 0)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullMatrix",
+      "printed_type": "TauCeti.SignDetermination.fullMatrix.{u_1} : (J : Type u_1) \u2192\n  [Fintype.{u_1} J] \u2192 Matrix.{u_1, u_1, 0} (J \u2192 Fin 3) (J \u2192 SignType) \u211a",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullMatrix_def",
+      "printed_type": "TauCeti.SignDetermination.fullMatrix_def.{u_1} : \u2200 (J : Type u_1) [inst : Fintype.{u_1} J],\n  Eq.{u_1 + 1} (TauCeti.SignDetermination.fullMatrix.{u_1} J)\n    (Matrix.of.{0, u_1, u_1} fun e \u03c3 => \u220f j, HPow.hPow.{0, 0, 0} \u2191(\u03c3 j) \u2191(e j))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullInverse",
+      "printed_type": "TauCeti.SignDetermination.fullInverse.{u_1} : (J : Type u_1) \u2192\n  [Fintype.{u_1} J] \u2192 Matrix.{u_1, u_1, 0} (J \u2192 SignType) (J \u2192 Fin 3) \u211a",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullMatrix_apply",
+      "printed_type": "TauCeti.SignDetermination.fullMatrix_apply.{u_1} : \u2200 (J : Type u_1) [inst : Fintype.{u_1} J] (e : J \u2192 Fin 3)\n  (\u03c3 : J \u2192 SignType), Eq.{1} (TauCeti.SignDetermination.fullMatrix.{u_1} J e \u03c3) (\u220f j, HPow.hPow.{0, 0, 0} \u2191(\u03c3 j) \u2191(e j))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullInverse_apply",
+      "printed_type": "TauCeti.SignDetermination.fullInverse_apply.{u_1} : \u2200 (J : Type u_1) [inst : Fintype.{u_1} J] (\u03c3 : J \u2192 SignType)\n  (e : J \u2192 Fin 3), Eq.{1} (TauCeti.SignDetermination.fullInverse.{u_1} J \u03c3 e) (\u220f j, (\u03c3 j).lagrangeCoeff (e j))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullInverse_mul_fullMatrix",
+      "printed_type": "TauCeti.SignDetermination.fullInverse_mul_fullMatrix.{u_1} : \u2200 (J : Type u_1) [inst : Fintype.{u_1} J]\n  [inst_1 : DecidableEq.{u_1 + 1} J],\n  Eq.{u_1 + 1}\n    (HMul.hMul.{u_1, u_1, u_1} (TauCeti.SignDetermination.fullInverse.{u_1} J)\n      (TauCeti.SignDetermination.fullMatrix.{u_1} J))\n    1",
+      "printed_axiom_list": "propext,\n Classical.choice.{u},\n Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullMatrix_mul_fullInverse",
+      "printed_type": "TauCeti.SignDetermination.fullMatrix_mul_fullInverse.{u_1} : \u2200 (J : Type u_1) [inst : Fintype.{u_1} J]\n  [inst_1 : DecidableEq.{u_1 + 1} J],\n  Eq.{u_1 + 1}\n    (HMul.hMul.{u_1, u_1, u_1} (TauCeti.SignDetermination.fullMatrix.{u_1} J)\n      (TauCeti.SignDetermination.fullInverse.{u_1} J))\n    1",
+      "printed_axiom_list": "propext,\n Classical.choice.{u},\n Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullMatrix_mulVec_occCount",
+      "printed_type": "@TauCeti.SignDetermination.fullMatrix_mulVec_occCount.{u_1,\n    u_2} : \u2200 {X : Type u_1} [inst : Fintype.{u_1} X] (J : Type u_2) [inst_1 : Fintype.{u_2} J]\n  [inst_2 : DecidableEq.{u_2 + 1} J] (obs : X \u2192 J \u2192 SignType),\n  Eq.{u_2 + 1}\n    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullMatrix.{u_2} J) fun \u03c3 =>\n      \u2191(Function.occCount.{u_1, u_2} obs \u03c3))\n    fun e => \u2211 x, \u220f j, HPow.hPow.{0, 0, 0} \u2191(obs x j) \u2191(e j)",
+      "printed_axiom_list": "propext,\n Classical.choice.{u},\n Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "TauCeti.SignDetermination.fullInverse_mulVec",
+      "printed_type": "@TauCeti.SignDetermination.fullInverse_mulVec.{u_1,\n    u_2} : \u2200 {X : Type u_1} [inst : Fintype.{u_1} X] (J : Type u_2) [inst_1 : Fintype.{u_2} J]\n  [inst_2 : DecidableEq.{u_2 + 1} J] (obs : X \u2192 J \u2192 SignType),\n  Eq.{u_2 + 1}\n    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>\n      \u2211 x, \u220f j, HPow.hPow.{0, 0, 0} \u2191(obs x j) \u2191(e j))\n    fun \u03c3 => \u2191(Function.occCount.{u_1, u_2} obs \u03c3)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount",
+      "printed_type": "@Finset.signCount.{u_1,\n    u_2} : {R : Type u_1} \u2192\n  [inst : Semiring.{u_1} R] \u2192\n    [LinearOrder.{u_1} R] \u2192 {J : Type u_2} \u2192 Finset.{u_1} R \u2192 (J \u2192 Polynomial.{u_1} R) \u2192 (J \u2192 SignType) \u2192 \u2115",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount_eq_occCount",
+      "printed_type": "@Finset.signCount_eq_occCount.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n  Eq.{1} (Finset.signCount.{u_1, u_2} Z Q \u03c3)\n    (Function.occCount.{u_1, u_2} (fun x j => SignType.sign.{u_1} (Polynomial.eval.{u_1} (\u2191x) (Q j))) \u03c3)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount_eq_card_filter",
+      "printed_type": "@Finset.signCount_eq_card_filter.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n  Eq.{1} (Finset.signCount.{u_1, u_2} Z Q \u03c3)\n    (Finset.card.{u_1} ({x \u2208 Z | \u2200 (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (\u03c3 j)}))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount_empty",
+      "printed_type": "@Finset.signCount_empty.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2}\n  (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n  Eq.{1} (Finset.signCount.{u_1, u_2} EmptyCollection.emptyCollection.{u_1} Q \u03c3) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.sum_signCount",
+      "printed_type": "@Finset.sum_signCount.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2}\n  [inst_2 : Fintype.{u_2} J] [inst_3 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R) (Q : J \u2192 Polynomial.{u_1} R),\n  Eq.{1} (\u2211 \u03c3, Finset.signCount.{u_1, u_2} Z Q \u03c3) (Finset.card.{u_1} Z)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount_pos",
+      "printed_type": "@Finset.signCount_pos.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n  LT.lt.{0} 0 (Finset.signCount.{u_1, u_2} Z Q \u03c3) \u2194\n    \u2203 x, Membership.mem.{u_1, u_1} Z x \u2227 \u2200 (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (\u03c3 j)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum",
+      "printed_type": "@Finset.signSum.{u_1} : {R : Type u_1} \u2192\n  [inst : Semiring.{u_1} R] \u2192 [LinearOrder.{u_1} R] \u2192 Finset.{u_1} R \u2192 Polynomial.{u_1} R \u2192 \u2124",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_eq_sum_subtype",
+      "printed_type": "@Finset.signSum_eq_sum_subtype.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),\n  Eq.{1} (Finset.signSum.{u_1} Z p) (\u2211 x, \u2191(SignType.sign.{u_1} (Polynomial.eval.{u_1} (\u2191x) p)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_eq_sum",
+      "printed_type": "@Finset.signSum_eq_sum.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),\n  Eq.{1} (Finset.signSum.{u_1} Z p) (\u2211 x \u2208 Z, \u2191(SignType.sign.{u_1} (Polynomial.eval.{u_1} x p)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_empty",
+      "printed_type": "@Finset.signSum_empty.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  (p : Polynomial.{u_1} R), Eq.{1} (Finset.signSum.{u_1} EmptyCollection.emptyCollection.{u_1} p) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_zero",
+      "printed_type": "@Finset.signSum_zero.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  (Z : Finset.{u_1} R), Eq.{1} (Finset.signSum.{u_1} Z 0) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_one",
+      "printed_type": "@Finset.signSum_one.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  [ZeroLEOneClass.{u_1} R] [NeZero.{u_1} 1] (Z : Finset.{u_1} R),\n  Eq.{1} (Finset.signSum.{u_1} Z 1) \u2191(Finset.card.{u_1} Z)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_eq_card_sub_card",
+      "printed_type": "@Finset.signSum_eq_card_sub_card.{u_1} : \u2200 {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),\n  Eq.{1} (Finset.signSum.{u_1} Z p)\n    (HSub.hSub.{0, 0, 0} \u2191(Finset.card.{u_1} ({x \u2208 Z | LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x p)}))\n      \u2191(Finset.card.{u_1} ({x \u2208 Z | LT.lt.{u_1} (Polynomial.eval.{u_1} x p) 0})))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery",
+      "printed_type": "@Polynomial.tarskiQuery.{u_1} : {R : Type u_1} \u2192\n  [inst : CommRing.{u_1} R] \u2192 [IsDomain.{u_1} R] \u2192 [LinearOrder.{u_1} R] \u2192 Polynomial.{u_1} R \u2192 Polynomial.{u_1} R \u2192 \u2124",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_eq_signSum",
+      "printed_type": "@Polynomial.tarskiQuery_eq_signSum.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),\n  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)\n    (Finset.signSum.{u_1} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) q)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_eq_sum",
+      "printed_type": "@Polynomial.tarskiQuery_eq_sum.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),\n  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)\n    (\u2211 x \u2208 Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p), \u2191(SignType.sign.{u_1} (Polynomial.eval.{u_1} x q)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_eq_card_sub_card",
+      "printed_type": "@Polynomial.tarskiQuery_eq_card_sub_card.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),\n  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)\n    (HSub.hSub.{0, 0, 0}\n      \u2191(Finset.card.{u_1}\n          ({x \u2208 Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p) | LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x q)}))\n      \u2191(Finset.card.{u_1}\n          ({x \u2208 Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p) | LT.lt.{u_1} (Polynomial.eval.{u_1} x q) 0})))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_zero_left",
+      "printed_type": "@Polynomial.tarskiQuery_zero_left.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] (q : Polynomial.{u_1} R), Eq.{1} (Polynomial.tarskiQuery.{u_1} 0 q) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_zero_right",
+      "printed_type": "@Polynomial.tarskiQuery_zero_right.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] (p : Polynomial.{u_1} R), Eq.{1} (Polynomial.tarskiQuery.{u_1} p 0) 0",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_one_right",
+      "printed_type": "@Polynomial.tarskiQuery_one_right.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] [ZeroLEOneClass.{u_1} R] (p : Polynomial.{u_1} R),\n  Eq.{1} (Polynomial.tarskiQuery.{u_1} p 1) \u2191(Finset.card.{u_1} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.signCount_roots_eq_natCard",
+      "printed_type": "@Polynomial.signCount_roots_eq_natCard.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R] [inst_2 : LinearOrder.{u_1} R]\n  {J : Type u_2} {p : Polynomial.{u_1} R},\n  Ne.{u_1 + 1} p 0 \u2192\n    \u2200 (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n      Eq.{1} (Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q \u03c3)\n        (Nat.card.{u_1}\n          (Subtype.{u_1 + 1} fun x =>\n            Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 \u2227\n              \u2200 (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (\u03c3 j)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_eq_sub",
+      "printed_type": "@Polynomial.tarskiQuery_eq_sub.{u_1} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]\n  [inst_2 : LinearOrder.{u_1} R] {p : Polynomial.{u_1} R},\n  Ne.{u_1 + 1} p 0 \u2192\n    \u2200 (q : Polynomial.{u_1} R),\n      Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)\n        (HSub.hSub.{0, 0, 0}\n          \u2191(Nat.card.{u_1}\n              (Subtype.{u_1 + 1} fun x =>\n                Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 \u2227 LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x q)))\n          \u2191(Nat.card.{u_1}\n              (Subtype.{u_1 + 1} fun x =>\n                Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 \u2227 LT.lt.{u_1} (Polynomial.eval.{u_1} x q) 0)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.signCount_roots_pos",
+      "printed_type": "@Polynomial.signCount_roots_pos.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R] [inst_2 : LinearOrder.{u_1} R]\n  {J : Type u_2} {p : Polynomial.{u_1} R},\n  Ne.{u_1 + 1} p 0 \u2192\n    \u2200 (Q : J \u2192 Polynomial.{u_1} R) (\u03c3 : J \u2192 SignType),\n      LT.lt.{0} 0 (Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q \u03c3) \u2194\n        \u2203 x,\n          Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 \u2227\n            \u2200 (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (\u03c3 j)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_prod_pow",
+      "printed_type": "@Finset.signSum_prod_pow.{u_1, u_2,\n    u_3} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} [inst_4 : Fintype.{u_3} J] (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (e : J \u2192 \u2115),\n  Eq.{u_2 + 1} (\u2191(Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j))))\n    (\u2211 x, \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(SignType.sign.{u_1} (Polynomial.eval.{u_1} (\u2191x) (Q j)))) (e j))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.mulVec_signCount",
+      "printed_type": "@Finset.mulVec_signCount.{u_1, u_2, u_3, u_4,\n    u_5} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_4 : Fintype.{u_3} J]\n  [inst_5 : Fintype.{u_4} C] (Z : Finset.{u_1} R) (Q : J \u2192 Polynomial.{u_1} R) (columns : C \u2192 J \u2192 SignType)\n  (rows : I \u2192 J \u2192 \u2115),\n  Function.Injective.{u_4 + 1, u_3 + 1} columns \u2192\n    (\u2200 (x : R),\n        Membership.mem.{u_1, u_1} Z x \u2192\n          \u2203 c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) \u2192\n      Eq.{max (u_2 + 1) (u_5 + 1)}\n        (Matrix.mulVec.{u_2, u_5, u_4}\n          (Matrix.of.{u_2, u_5, u_4} fun i c => \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(columns c j)) (rows i j)) fun c =>\n          \u2191(Finset.signCount.{u_1, u_3} Z Q (columns c)))\n        fun i => \u2191(Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.eq_signCount",
+      "printed_type": "@Finset.eq_signCount.{u_1, u_2, u_3, u_4,\n    u_5} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_4 : Fintype.{u_3} J]\n  [inst_5 : Fintype.{u_4} C] [inst_6 : DecidableEq.{u_4 + 1} C] [inst_7 : Fintype.{u_5} I] (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (columns : C \u2192 J \u2192 SignType) (rows : I \u2192 J \u2192 \u2115),\n  Function.Injective.{u_4 + 1, u_3 + 1} columns \u2192\n    (\u2200 (x : R),\n        Membership.mem.{u_1, u_1} Z x \u2192\n          \u2203 c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) \u2192\n      \u2200 (A : Matrix.{u_4, u_5, u_2} C I K),\n        Eq.{max (u_2 + 1) (u_4 + 1)}\n            (HMul.hMul.{max (max u_2 u_4) u_5, max (max u_2 u_4) u_5, max u_2 u_4} A\n              (Matrix.of.{u_2, u_5, u_4} fun i c => \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(columns c j)) (rows i j)))\n            1 \u2192\n          \u2200 (proposed : C \u2192 K),\n            (Eq.{max (u_2 + 1) (u_5 + 1)}\n                (Matrix.mulVec.{u_2, u_5, u_4}\n                  (Matrix.of.{u_2, u_5, u_4} fun i c => \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(columns c j)) (rows i j))\n                  proposed)\n                fun i => \u2191(Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))) \u2192\n              Eq.{max (u_2 + 1) (u_4 + 1)} proposed fun c => \u2191(Finset.signCount.{u_1, u_3} Z Q (columns c))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signCount_solution_pos_iff",
+      "printed_type": "@Finset.signCount_solution_pos_iff.{u_1, u_2, u_3, u_4,\n    u_5} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {K : Type u_2} [inst_3 : CommRing.{u_2} K] [inst_4 : PartialOrder.{u_2} K] [IsOrderedRing.{u_2} K]\n  [Nontrivial.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_7 : Fintype.{u_3} J]\n  [inst_8 : Fintype.{u_4} C] [inst_9 : DecidableEq.{u_4 + 1} C] [inst_10 : Fintype.{u_5} I] (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (columns : C \u2192 J \u2192 SignType) (rows : I \u2192 J \u2192 \u2115),\n  Function.Injective.{u_4 + 1, u_3 + 1} columns \u2192\n    (\u2200 (x : R),\n        Membership.mem.{u_1, u_1} Z x \u2192\n          \u2203 c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) \u2192\n      \u2200 (A : Matrix.{u_4, u_5, u_2} C I K),\n        Eq.{max (u_2 + 1) (u_4 + 1)}\n            (HMul.hMul.{max (max u_2 u_4) u_5, max (max u_2 u_4) u_5, max u_2 u_4} A\n              (Matrix.of.{u_2, u_5, u_4} fun i c => \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(columns c j)) (rows i j)))\n            1 \u2192\n          \u2200 (proposed : C \u2192 K),\n            (Eq.{max (u_2 + 1) (u_5 + 1)}\n                (Matrix.mulVec.{u_2, u_5, u_4}\n                  (Matrix.of.{u_2, u_5, u_4} fun i c => \u220f j, HPow.hPow.{u_2, 0, u_2} (\u2191(columns c j)) (rows i j))\n                  proposed)\n                fun i => \u2191(Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))) \u2192\n              \u2200 (c : C),\n                LT.lt.{u_2} 0 (proposed c) \u2194\n                  \u2203 x,\n                    Membership.mem.{u_1, u_1} Z x \u2227\n                      \u2200 (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (columns c j)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.fullInverse_mulVec_signSum",
+      "printed_type": "@Finset.fullInverse_mulVec_signSum.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R),\n  Eq.{u_2 + 1}\n    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>\n      \u2191(Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) \u2191(e j))))\n    fun \u03c3 => \u2191(Finset.signCount.{u_1, u_2} Z Q \u03c3)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Finset.signSum_eq_sum_signCount",
+      "printed_type": "@Finset.signSum_eq_sum_signCount.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]\n  {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R)\n  (Q : J \u2192 Polynomial.{u_1} R) (e : J \u2192 \u2115),\n  Eq.{1} (Finset.signSum.{u_1} Z (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j)))\n    (\u2211 \u03c3, HMul.hMul.{0, 0, 0} (\u220f j, HPow.hPow.{0, 0, 0} (\u2191(\u03c3 j)) (e j)) \u2191(Finset.signCount.{u_1, u_2} Z Q \u03c3))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.tarskiQuery_eq_sum_signCount",
+      "printed_type": "@Polynomial.tarskiQuery_eq_sum_signCount.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  [inst_2 : IsStrictOrderedRing.{u_1} R] {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J]\n  (p : Polynomial.{u_1} R) (Q : J \u2192 Polynomial.{u_1} R) (e : J \u2192 \u2115),\n  Eq.{1} (Polynomial.tarskiQuery.{u_1} p (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j)))\n    (\u2211 \u03c3,\n      HMul.hMul.{0, 0, 0} (\u220f j, HPow.hPow.{0, 0, 0} (\u2191(\u03c3 j)) (e j))\n        \u2191(Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q \u03c3))",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "Polynomial.fullInverse_mulVec_tarskiQuery",
+      "printed_type": "@Polynomial.fullInverse_mulVec_tarskiQuery.{u_1,\n    u_2} : \u2200 {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R]\n  [inst_2 : IsStrictOrderedRing.{u_1} R] {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J]\n  (p : Polynomial.{u_1} R) (Q : J \u2192 Polynomial.{u_1} R),\n  Eq.{u_2 + 1}\n    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>\n      \u2191(Polynomial.tarskiQuery.{u_1} p (\u220f j, HPow.hPow.{u_1, 0, u_1} (Q j) \u2191(e j))))\n    fun \u03c3 => \u2191(Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q \u03c3)",
+      "printed_axiom_list": "propext, Classical.choice.{u}, Quot.sound.{u}",
+      "normalized_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "updated_utc": "2026-10-13T13:55:03.598161+00:00",
+  "replay_receipt": "hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/summary.json",
+  "replay_receipt_sha256": "68a6da2910f19d80b876667faaf9f70ff682bd78c72e5085825be7d2fa5a01da",
+  "replay_batch_scope": "12 jobs in source receipt; this audit accepts only the seven named BKR modules listed here."
+}

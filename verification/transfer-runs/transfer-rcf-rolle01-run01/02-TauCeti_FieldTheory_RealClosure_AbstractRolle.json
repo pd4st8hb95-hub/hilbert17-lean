@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+    "bytes": 7338,
+    "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+  },
+  "start_utc": "2026-10-13T13:51:48.930708+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:51:48.930695+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343716,
+    "used_percent": 18.25102179903254
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/02-TauCeti_FieldTheory_RealClosure_AbstractRolle.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/02-TauCeti_FieldTheory_RealClosure_AbstractRolle.stderr.log",
+  "pid": 8,
+  "exit_code": 0,
+  "seconds": 3.504,
+  "end_utc": "2026-10-13T13:51:52.436134+00:00",
+  "peak_physical_used_percent": 21.91013811971734,
+  "memory_after": {
+    "utc": "2026-10-13T13:51:52.436278+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312056,
+    "used_percent": 18.561216039805192
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.olean",
+      "bytes": 481760,
+      "sha256": "0ac925a777159b7f7167acb2e7d568a677aa9d61ca5d6b4c76bf0afa185d216d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.ilean",
+      "bytes": 22023,
+      "sha256": "8fa3f12e2a2a46dc992ab91139b55ac23702bb67221ad3d4efca2b0546b3a673"
+    }
+  ]
+}

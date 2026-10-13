@@ -1,0 +1,40 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Eval.Sign:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+TauCeti.Algebra.Polynomial.Eval.Sign:deps"
+  ],
+  "start_utc": "2026-10-13T14:29:41.574106+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:29:41.574094+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8254848,
+    "used_percent": 19.121721160655536
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/063-TauCeti_Algebra_Polynomial_Eval_Sign_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/063-TauCeti_Algebra_Polynomial_Eval_Sign_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 861,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:29:42.580712+00:00",
+  "seconds": 1.006,
+  "peak_physical_used_percent": 20.16427165882788,
+  "memory_after": {
+    "utc": "2026-10-13T14:29:42.580875+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8258984,
+    "used_percent": 19.08119799641562
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

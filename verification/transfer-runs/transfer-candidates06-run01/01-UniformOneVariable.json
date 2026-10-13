@@ -1,0 +1,55 @@
+{
+  "label": "UniformOneVariable",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean",
+    "bytes": 5427,
+    "sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a"
+  },
+  "start_utc": "2026-10-13T14:13:40.173709+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:13:40.173699+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8318948,
+    "used_percent": 18.493690496299028
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates06-run01/01-UniformOneVariable.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates06-run01/01-UniformOneVariable.stderr.log",
+  "pid": 7,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T14:13:43.177375+00:00",
+  "peak_physical_used_percent": 22.065450788849624,
+  "memory_after": {
+    "utc": "2026-10-13T14:13:43.177546+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307236,
+    "used_percent": 18.608440810510313
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean",
+      "bytes": 218352,
+      "sha256": "5665f4b77b246038796c9b078c88ae9eeb217f24026df93fca186c3929afd4d1"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.ilean",
+      "bytes": 18718,
+      "sha256": "fd2b5d231a4abe17e193873ea5fd630021a5748ea18524b38a7412d178ef4acd"
+    }
+  ]
+}

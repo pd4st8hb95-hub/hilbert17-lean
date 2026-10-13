@@ -1,0 +1,167 @@
+{
+  "schema": "hilbert17-named-axiom-sources-v1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "scope": "27 public declarations in eight quadratic and real-closed characterization/Rolle modules; their transitive axiom dependencies. Private helpers are covered through public consumers, not separately named. This manifest does not attest compilation or independent kernel replay.",
+  "expected_allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "entries": [
+    {
+      "audit_module": "QuadraticDiscriminantAxioms",
+      "import_module": "TauCeti.Compat.QuadraticDiscriminant",
+      "declarations": [
+        "TauCeti.Compat.not_irreducible_monic_quadratic_of_forall_isSquare"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean",
+        "bytes": 1300,
+        "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticDiscriminantAxioms.lean",
+        "bytes": 453,
+        "sha256": "bf0f9ea8d86e4f1247c700139f160dccc4d851846869ec89e546f18706b9184e"
+      }
+    },
+    {
+      "audit_module": "QuadraticExtensionAxioms",
+      "import_module": "TauCeti.Compat.QuadraticExtension",
+      "declarations": [
+        "TauCeti.Compat.finrank_ne_two_of_forall_isSquare"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+        "bytes": 1918,
+        "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/QuadraticExtensionAxioms.lean",
+        "bytes": 416,
+        "sha256": "f31428afa3e9dbf3cd413ce43aab3fcdfbdbeaff795b598050b90f812d39cc31"
+      }
+    },
+    {
+      "audit_module": "RealClosureFiniteExtensionAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "declarations": [
+        "TauCeti.RealClosure.finrank_eq_one_of_odd",
+        "TauCeti.RealClosure.finrank_ne_two_of_forall_isSquare"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+        "bytes": 2005,
+        "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean",
+        "bytes": 546,
+        "sha256": "2ad27d3350fd3a1a99ac4a92fbc179ed19b1d2fbbf164635ab86c241f5d798b8"
+      }
+    },
+    {
+      "audit_module": "RealClosureComplexificationAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "declarations": [
+        "QuadraticAlgebra.isSquare"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+        "bytes": 1492,
+        "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureComplexificationAxioms.lean",
+        "bytes": 385,
+        "sha256": "468451ae8076424ebf4d21294a3b7d4a37dca43dbd5709e38fd5198ba7040df8"
+      }
+    },
+    {
+      "audit_module": "RealClosureGaloisAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "declarations": [
+        "TauCeti.RealClosure.isPGroup_two_algEquiv",
+        "TauCeti.RealClosure.finrank_eq_one_of_isPGroup",
+        "TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+        "bytes": 5096,
+        "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureGaloisAxioms.lean",
+        "bytes": 677,
+        "sha256": "47a512ef655d2736cdb96bde69781342e4fff02836ebf35261eeae1af559fab8"
+      }
+    },
+    {
+      "audit_module": "RealClosureAlgebraicClosedAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "declarations": [
+        "TauCeti.RealClosure.finrank_eq_one_of_forall_isSquare",
+        "TauCeti.RealClosure.isAlgClosed_of_forall_isSquare",
+        "TauCeti.RealClosure.isAlgClosed_quadraticAlgebra",
+        "Polynomial.natDegree_le_two_of_irreducible"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+        "bytes": 4664,
+        "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAlgebraicClosedAxioms.lean",
+        "bytes": 792,
+        "sha256": "5f3ec5659ff051c28f85a90e12618f12e4d528c5bf1d84b85e16f1b1d0eea309"
+      }
+    },
+    {
+      "audit_module": "RealClosureIVTAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "declarations": [
+        "Polynomial.eval_mul_pos_of_no_roots",
+        "Polynomial.exists_root_Icc_of_mul_nonpos",
+        "Polynomial.exists_root_Icc",
+        "Polynomial.exists_root_Ioo",
+        "Polynomial.exists_root_Ioo_of_mul_neg",
+        "Polynomial.intermediate_value_Icc",
+        "Polynomial.intermediate_value_Icc'"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+        "bytes": 5281,
+        "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean",
+        "bytes": 928,
+        "sha256": "a90324852408a1c0b01810b4241e6b98531c74d4c78babc889ed45d0af9d744a"
+      }
+    },
+    {
+      "audit_module": "RealClosureAbstractRolleAxioms",
+      "import_module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "declarations": [
+        "Polynomial.exists_derivative_root_of_isRoot",
+        "TauCeti.RealClosure.polynomialRolle_of_isRealClosed",
+        "Polynomial.exists_derivative_root",
+        "Polynomial.exists_eval_sub_eq_derivative_eval_mul",
+        "Polynomial.monotoneOn_of_derivative_nonneg",
+        "Polynomial.antitoneOn_of_derivative_nonpos",
+        "Polynomial.strictMonoOn_of_derivative_pos",
+        "Polynomial.strictAntiOn_of_derivative_neg"
+      ],
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+        "bytes": 7338,
+        "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+      },
+      "diagnostic": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean",
+        "bytes": 1184,
+        "sha256": "119783113394977565f12b00fcda620554429767d5aa79a0e98a3ed5de4af89a"
+      }
+    }
+  ]
+}

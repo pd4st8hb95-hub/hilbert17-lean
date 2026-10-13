@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.Algebra.Order.Ring.Ordering.Extension:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.Algebra.Order.Ring.Ordering.Extension:olean"
+  ],
+  "start_utc": "2026-10-13T14:28:38.102229+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:28:38.102220+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8278184,
+    "used_percent": 18.893082727216793
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/040-TauCeti_Algebra_Order_Ring_Ordering_Extension_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/040-TauCeti_Algebra_Order_Ring_Ordering_Extension_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 544,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:28:40.610332+00:00",
+  "seconds": 2.508,
+  "peak_physical_used_percent": 21.820509032080317,
+  "memory_after": {
+    "utc": "2026-10-13T14:28:40.610567+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8263900,
+    "used_percent": 19.033032649364504
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

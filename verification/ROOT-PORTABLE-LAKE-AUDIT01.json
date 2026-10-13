@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "scope": "306 bounded offline Lake commands, including97 local modules,55 official supplements,14 acceptance axiom records; existing copied official dependency cache",
+  "records": [
+    {
+      "theorem": "Hilbert17Acceptance.real_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_finite_rational_squares",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_negativePointTransfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "FinalTargetContract:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "label": "BoundaryAcceptance:olean"
+    }
+  ],
+  "summary_sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+}

@@ -1,0 +1,55 @@
+{
+  "label": "MonicQueryProjection",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean",
+    "bytes": 7327,
+    "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+  },
+  "start_utc": "2026-10-13T14:02:55.964002+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:02:55.963992+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8365288,
+    "used_percent": 18.039666455951437
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/01-MonicQueryProjection.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/01-MonicQueryProjection.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.504,
+  "end_utc": "2026-10-13T14:02:59.468752+00:00",
+  "peak_physical_used_percent": 21.639095369346695,
+  "memory_after": {
+    "utc": "2026-10-13T14:02:59.468970+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8366220,
+    "used_percent": 18.030535027259077
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean",
+      "bytes": 251904,
+      "sha256": "115faef2355e825347e7582798e3f943f6af802d27ed950c5d859877e8a70dce"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.ilean",
+      "bytes": 29314,
+      "sha256": "4c66829b4a029f8910e0703fb003929a2a7fccb203ecdca0f961359d9043dbeb"
+    }
+  ]
+}

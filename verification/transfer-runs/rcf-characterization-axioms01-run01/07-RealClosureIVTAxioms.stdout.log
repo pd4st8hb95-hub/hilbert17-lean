@@ -1,0 +1,35 @@
+Polynomial.eval_mul_pos_of_no_roots.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LE.le.{u_1} a b)
+  (hroot : ∀ (x : R), Membership.mem.{u_1, u_1} (Set.Icc.{u_1} a b) x → Ne.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0) :
+  LT.lt.{u_1} 0 (HMul.hMul.{u_1, u_1, u_1} (Polynomial.eval.{u_1} a p) (Polynomial.eval.{u_1} b p))
+'Polynomial.eval_mul_pos_of_no_roots' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_root_Icc_of_mul_nonpos.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LE.le.{u_1} a b)
+  (h : LE.le.{u_1} (HMul.hMul.{u_1, u_1, u_1} (Polynomial.eval.{u_1} a p) (Polynomial.eval.{u_1} b p)) 0) :
+  ∃ c, Membership.mem.{u_1, u_1} (Set.Icc.{u_1} a b) c ∧ Eq.{u_1 + 1} (Polynomial.eval.{u_1} c p) 0
+'Polynomial.exists_root_Icc_of_mul_nonpos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_root_Icc.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LE.le.{u_1} a b)
+  (ha : LE.le.{u_1} (Polynomial.eval.{u_1} a p) 0) (hb : LE.le.{u_1} 0 (Polynomial.eval.{u_1} b p)) :
+  ∃ c, Membership.mem.{u_1, u_1} (Set.Icc.{u_1} a b) c ∧ Eq.{u_1 + 1} (Polynomial.eval.{u_1} c p) 0
+'Polynomial.exists_root_Icc' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_root_Ioo.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LT.lt.{u_1} a b)
+  (ha : LT.lt.{u_1} (Polynomial.eval.{u_1} a p) 0) (hb : LT.lt.{u_1} 0 (Polynomial.eval.{u_1} b p)) :
+  ∃ c, Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) c ∧ Eq.{u_1 + 1} (Polynomial.eval.{u_1} c p) 0
+'Polynomial.exists_root_Ioo' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_root_Ioo_of_mul_neg.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LT.lt.{u_1} a b)
+  (h : LT.lt.{u_1} (HMul.hMul.{u_1, u_1, u_1} (Polynomial.eval.{u_1} a p) (Polynomial.eval.{u_1} b p)) 0) :
+  ∃ c, Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) c ∧ Eq.{u_1 + 1} (Polynomial.eval.{u_1} c p) 0
+'Polynomial.exists_root_Ioo_of_mul_neg' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.intermediate_value_Icc.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LE.le.{u_1} a b) :
+  Set.Icc.{u_1} (Polynomial.eval.{u_1} a p) (Polynomial.eval.{u_1} b p) ⊆
+    Set.image.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.intermediate_value_Icc' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.intermediate_value_Icc'.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LE.le.{u_1} a b) :
+  Set.Icc.{u_1} (Polynomial.eval.{u_1} b p) (Polynomial.eval.{u_1} a p) ⊆
+    Set.image.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.intermediate_value_Icc'' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

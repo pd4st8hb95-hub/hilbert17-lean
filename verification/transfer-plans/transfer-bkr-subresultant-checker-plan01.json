@@ -1,0 +1,273 @@
+{
+  "schema": "hilbert17-local-checker-plan-v1",
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "status": "PREPARED_NOT_EXECUTED",
+  "scope": "Replay only these 12 selected current compiled local modules with the same Lean kernel and trusted imports. No full-transitive official Mathlib replay; exact theorem-type and axiom checks are separate.",
+  "modules": [
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+        "bytes": 8130,
+        "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+          "bytes": 149904,
+          "sha256": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+          "bytes": 15215,
+          "sha256": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+        "bytes": 2653,
+        "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+          "bytes": 69296,
+          "sha256": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+          "bytes": 4214,
+          "sha256": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+        "bytes": 2704,
+        "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+          "bytes": 232432,
+          "sha256": "285be1e6ac67b0528d0afb41f37878a2005a0d92fad38c121ae8d1d559d8ac99"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+          "bytes": 3688,
+          "sha256": "2873bbd173b04b923064fe24d730b2606ee2efbb284c8a69360f84a806f13cbd"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+        "bytes": 4778,
+        "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.olean",
+          "bytes": 146320,
+          "sha256": "9ea2280ad9ea57698c460faa181143ce9064d003867029520a889c9d284f7a39"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.ilean",
+          "bytes": 11523,
+          "sha256": "aac776c6da3629f7396fbb811345a6e1cd466fcb88d890d372cb9c43c60a3b89"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+        "bytes": 7875,
+        "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.olean",
+          "bytes": 208512,
+          "sha256": "803b0a63d22a0154e439b2f5b4d76ab7c719f518fcc8fe7d024030fd9c266ced"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.ilean",
+          "bytes": 18843,
+          "sha256": "16e64393075e02e836d3803e1d7921580de95678cc0e03682ddf8e5935ffca28"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+        "bytes": 7415,
+        "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean",
+          "bytes": 217208,
+          "sha256": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.ilean",
+          "bytes": 15442,
+          "sha256": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+        "bytes": 2538,
+        "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.olean",
+          "bytes": 44512,
+          "sha256": "98ceaee8803eec98cc686a88fdf196b22494a3c373c6eede2d8068de97195c4f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.ilean",
+          "bytes": 4132,
+          "sha256": "40f2fcd9e7cd7615d0c707bbec6587a700983736a0c291aa7cf93923fe7d3f70"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+        "bytes": 13500,
+        "sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.olean",
+          "bytes": 519728,
+          "sha256": "f6a609c063365c51e1c3684de7bbda04270be9dd7ecd73d81870e63e6e25e7f4"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.ilean",
+          "bytes": 24017,
+          "sha256": "f08b15b9d77721b73def83811dd1c5945058d42c25bcd712c50256a6dcea1f19"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+        "bytes": 16341,
+        "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.olean",
+          "bytes": 615632,
+          "sha256": "7904fa692bb770d538d3cc5f655567cc2918936adbb8e81b617e971d164ac32c"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.ilean",
+          "bytes": 31730,
+          "sha256": "e9ef4922db3fddaf21ece48983f0941318439cd173d89e26a2fe62d0567cb6ca"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+        "bytes": 10866,
+        "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean",
+          "bytes": 1047176,
+          "sha256": "b53ee2a68d4f9e80adbc826785c532bca0063ace8a1b247c8d9bedf1db83cbb0"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.ilean",
+          "bytes": 25311,
+          "sha256": "f121ee30627c44476bd93bafdf7de4acdeda753d47f9b4a860971b62c32d7b61"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+        "bytes": 10692,
+        "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.olean",
+          "bytes": 805696,
+          "sha256": "1ecf2ab646e084550ca9e814eee7da20367355b06bec54e33dfaf3dbce193b98"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.ilean",
+          "bytes": 17714,
+          "sha256": "4652da976fcd9c622d9886afb9a5832a85b570242adf7ad9c8ec6ea389095cbe"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+        "bytes": 12959,
+        "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.olean",
+          "bytes": 842456,
+          "sha256": "f2ecc6257319b0ea658ce7c7627e8baff9663c6db475fb7f0ec265a6d97681ea"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.ilean",
+          "bytes": 38366,
+          "sha256": "4a08cd064e5ca1f2259019344a18c3380818389ff807cde5b741ec88088e2902"
+        }
+      ],
+      "compile_receipt": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json"
+    }
+  ]
+}

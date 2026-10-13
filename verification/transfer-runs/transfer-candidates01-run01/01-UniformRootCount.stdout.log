@@ -1,0 +1,29 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean:119:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∃ x, eval x ?m.171 = 0
+in the target expression
+  (∃ x, eval x (map f p) = 0) ↔ ∃ y, eval y (map g p) = 0
+
+case neg
+A : Type u_1
+inst✝⁸ : CommRing A
+K : Type u_2
+inst✝⁷ : Field K
+inst✝⁶ : LinearOrder K
+inst✝⁵ : IsStrictOrderedRing K
+inst✝⁴ : IsRealClosed K
+L : Type u_3
+inst✝³ : Field L
+inst✝² : LinearOrder L
+inst✝¹ : IsStrictOrderedRing L
+inst✝ : IsRealClosed L
+p : A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ a ∈ rootCountProjection p, sign (f a) = sign (g a)
+hcoeff : ∀ i ≤ p.natDegree, sign (f (p.coeff i)) = sign (g (p.coeff i))
+hz : map f p = 0 ↔ map g p = 0
+hf : ¬map f p = 0
+hg : map g p ≠ 0
+hcard : (map f p).roots.toFinset.card = (map g p).roots.toFinset.card
+exists_iff : ∀ {F : Type u_4} [inst : Field F] (q : F[X]), q ≠ 0 → ((∃ x, eval x q = 0) ↔ 0 < q.roots.toFinset.card)
+⊢ (∃ x, eval x (map f p) = 0) ↔ ∃ y, eval y (map g p) = 0

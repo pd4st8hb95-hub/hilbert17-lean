@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Algebra.Polynomial.SpecificDegree",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/SpecificDegree.lean",
+    "bytes": 2621,
+    "sha256": "215b4f3ec51a8a4570482bd50301c83e7b4dc0b061eb937b761e84848c9b02bb"
+  },
+  "start_utc": "2026-10-13T13:50:19.724576+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:50:19.724560+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328868,
+    "used_percent": 18.396497607212968
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/SpecificDegree.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/02-Mathlib_Algebra_Polynomial_SpecificDegree.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/02-Mathlib_Algebra_Polynomial_SpecificDegree.stderr.log",
+  "pid": 8,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:50:21.226902+00:00",
+  "peak_physical_used_percent": 20.573108843886665,
+  "memory_after": {
+    "utc": "2026-10-13T13:50:21.227052+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8304400,
+    "used_percent": 18.636227003398226
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.olean",
+      "bytes": 18136,
+      "sha256": "0fa2c18dbba5e7ce55b93b60a8976594a953941446ed0c00fcf05d6f38338044"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.olean.private",
+      "bytes": 107632,
+      "sha256": "6c6d8dece05d7cb0bc18c18bb9d931f657a48d4446408e7230518d1086d2a822"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.olean.server",
+      "bytes": 1976,
+      "sha256": "c41406376115d1aebde400b6b13b8cf7a2f26c0ad31dc407ba23542a5d3dfe65"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.ilean",
+      "bytes": 10306,
+      "sha256": "3c81575100d7a65b0d1ef02edeb5299708aadebdb29174c2e75c0d48e6ee6d49"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/SpecificDegree.ir",
+      "bytes": 1648,
+      "sha256": "8705b6025e2f4e17e165a41443077d583857ea5d7f566f2e4d88a687d67578eb"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "UniformOneVariable",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean",
+        "bytes": 4871,
+        "sha256": "0c845f02261dca53a50de717e65433117f01bd70cdd60e36a33fffc85065147b"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean"
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean",
+        "bytes": 4489,
+        "sha256": "862c2754a32fbd3acde7bc85a4fd814524067aa17247c4ef6cff4ab3e14b9ad8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean"
+    },
+    {
+      "module": "RealClosureTransfer",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/RealClosureTransfer.lean",
+        "bytes": 1982,
+        "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.olean"
+    }
+  ],
+  "requires_before_launch": [
+    "TauCeti.FieldTheory.RealClosure.IVT",
+    "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+    "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+    "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine"
+  ],
+  "scope": "Downstream phase only. Parent must establish listed prerequisite modules PASS before launch. No unconditional theorem claim before compilation, exact-type and axiom audits.",
+  "skipped_matching_pass_receipts": [
+    "CoefficientSignPattern",
+    "LocalizationSignDescent",
+    "DegreeNormalization",
+    "FinSuccEvaluation",
+    "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+    "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+    "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+    "TauCeti.FieldTheory.RealClosure.OddExtension",
+    "TauCeti.FieldTheory.RealClosure.Basic",
+    "ClearDenominators",
+    "FractionSemireal",
+    "CoefficientOrder",
+    "RealInstance",
+    "TargetSpec",
+    "ConditionalArtin"
+  ]
+}

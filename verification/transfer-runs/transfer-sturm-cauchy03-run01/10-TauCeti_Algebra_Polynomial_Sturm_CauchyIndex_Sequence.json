@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+    "bytes": 9185,
+    "sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc"
+  },
+  "start_utc": "2026-10-13T13:55:04.636561+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:55:04.636545+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8334272,
+    "used_percent": 18.343550997069713
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/10-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Sequence.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/10-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Sequence.stderr.log",
+  "pid": 35,
+  "exit_code": 0,
+  "seconds": 8.509,
+  "end_utc": "2026-10-13T13:55:13.146457+00:00",
+  "peak_physical_used_percent": 22.224447382003717,
+  "memory_after": {
+    "utc": "2026-10-13T13:55:13.146690+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8287404,
+    "used_percent": 18.80274820732027
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.olean",
+      "bytes": 532592,
+      "sha256": "5eb91e5e46ff086a6dd32f294e25f6095d831c6cef9bbb5fa43d83cd808bf8f5"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.ilean",
+      "bytes": 28519,
+      "sha256": "a2065cc5f8d5306a1e093fd560353a5ee0a591a32898ee8983c2e92b07b0ccb1"
+    }
+  ]
+}

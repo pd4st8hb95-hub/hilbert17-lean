@@ -1,0 +1,44 @@
+{
+  "label": "UniformOneVariable",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean",
+    "bytes": 4870,
+    "sha256": "6ae8cc9e9e34b6efd816d042be8265d6bca9466c56b8ea8b12c6a944d6d4e77d"
+  },
+  "start_utc": "2026-10-13T14:08:41.380472+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:08:41.380463+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8333380,
+    "used_percent": 18.352290518951243
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates04-run01/01-UniformOneVariable.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates04-run01/01-UniformOneVariable.stderr.log",
+  "pid": 7,
+  "exit_code": 1,
+  "seconds": 15.514,
+  "end_utc": "2026-10-13T14:08:56.895377+00:00",
+  "peak_physical_used_percent": 22.57967171534084,
+  "memory_after": {
+    "utc": "2026-10-13T14:08:56.895624+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314216,
+    "used_percent": 18.540053072020324
+  },
+  "outputs": []
+}

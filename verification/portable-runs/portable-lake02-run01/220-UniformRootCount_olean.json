@@ -1,0 +1,39 @@
+{
+  "label": "UniformRootCount:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+UniformRootCount:olean"
+  ],
+  "start_utc": "2026-10-13T14:37:31.741750+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:37:31.741737+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8281360,
+    "used_percent": 18.861965326436817
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/220-UniformRootCount_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/220-UniformRootCount_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2978,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:37:35.749066+00:00",
+  "seconds": 4.007,
+  "peak_physical_used_percent": 24.20306729784565,
+  "memory_after": {
+    "utc": "2026-10-13T14:37:35.749233+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8247832,
+    "used_percent": 19.19046161527527
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

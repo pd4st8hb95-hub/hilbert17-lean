@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+    "bytes": 12061,
+    "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+  },
+  "start_utc": "2026-10-13T13:54:57.623997+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:57.623984+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8338988,
+    "used_percent": 18.29734518407275
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/08-TauCeti_Algebra_Polynomial_Sturm_Infinity.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/08-TauCeti_Algebra_Polynomial_Sturm_Infinity.stderr.log",
+  "pid": 29,
+  "exit_code": 0,
+  "seconds": 4.004,
+  "end_utc": "2026-10-13T13:55:01.628804+00:00",
+  "peak_physical_used_percent": 21.988205956434854,
+  "memory_after": {
+    "utc": "2026-10-13T13:55:01.628958+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8335840,
+    "used_percent": 18.32818825008514
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.olean",
+      "bytes": 315544,
+      "sha256": "0c76281fa3f848f5013a81d6ca04f538ab16f2fafc76003d022366f2f6619805"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.ilean",
+      "bytes": 29174,
+      "sha256": "ae4066feca3ed406c39653c94581dbc3bc61cfb53aa16e3ee40338ce70448d0c"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Inverse",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Inverse.lean",
+    "bytes": 13191,
+    "sha256": "6e7b5c27c38ade2b222af3d6d5f81c33d0a97a7d94555c8b1e6978c6e8911200"
+  },
+  "start_utc": "2026-10-13T13:24:44.902134+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:44.902119+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8337892,
+    "used_percent": 18.308083430689518
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Inverse.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/12-Mathlib_RingTheory_PowerSeries_Inverse.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/12-Mathlib_RingTheory_PowerSeries_Inverse.stderr.log",
+  "pid": 45,
+  "exit_code": 0,
+  "seconds": 5.007,
+  "end_utc": "2026-10-13T13:24:49.912170+00:00",
+  "peak_physical_used_percent": 20.522435293246232,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:49.912326+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352444,
+    "used_percent": 18.165507732909237
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.olean",
+      "bytes": 158120,
+      "sha256": "0f13448ca983a355867f90eee4a5ca3c71fb68cfd4a8193f14699ed60aa1c009"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.olean.private",
+      "bytes": 325216,
+      "sha256": "22106c5aa863f953bb58bbed47136eb3d27e5b3a05bb9a45b761fc9477b2f622"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.olean.server",
+      "bytes": 14104,
+      "sha256": "72621c8509aa000e0bd16b0c44c730af83c9336c92a2c5e96e7da6e2b1e09ff0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.ilean",
+      "bytes": 43717,
+      "sha256": "4ade6a254871b1d0b6de91573add0e3b266d9f154e5b2f751e174ef6a806e4e5"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.ir",
+      "bytes": 2912,
+      "sha256": "d6436262c2488c874527ff88db13b00f880e93ecbece19e2c1e765aa2e4eacf2"
+    }
+  ]
+}

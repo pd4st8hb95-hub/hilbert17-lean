@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Data.Nat.Factorial.DoubleFactorial",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Factorial/DoubleFactorial.lean",
+    "bytes": 2932,
+    "sha256": "cb2d2378fc50ab17003d9297bbc1a06d103a7e0ecdc7624cdf73b3bbe57e5120"
+  },
+  "start_utc": "2026-10-13T13:24:52.925619+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:52.925604+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349824,
+    "used_percent": 18.19117762901866
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Factorial/DoubleFactorial.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/15-Mathlib_Data_Nat_Factorial_DoubleFactorial.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/15-Mathlib_Data_Nat_Factorial_DoubleFactorial.stderr.log",
+  "pid": 55,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:24:54.428584+00:00",
+  "peak_physical_used_percent": 19.930381674124,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:54.428740+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8331088,
+    "used_percent": 18.37474677921185
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.olean",
+      "bytes": 126024,
+      "sha256": "f5d17557ef953d14e16b950c211582cc671bf4a685db3b327a2528bd352dec45"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.olean.private",
+      "bytes": 291656,
+      "sha256": "14317cf7655f9cb1f5cce0a6d96050ff9366aae3b25c43fb220b76d30ab44dbc"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.olean.server",
+      "bytes": 4232,
+      "sha256": "39eae7a6fe83bf4216d6156d2a05a73dfeddedc1c4c2dcb87a534286aa174534"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.ilean",
+      "bytes": 7778,
+      "sha256": "0e127343943140c87113c04b1be8d796196fa44fec9ea331fdd0db4feff06c99"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.ir",
+      "bytes": 81064,
+      "sha256": "10f3b34faee20c666499329e9fe42b5a7308a5927226bf5e29c4696ca5760059"
+    }
+  ]
+}

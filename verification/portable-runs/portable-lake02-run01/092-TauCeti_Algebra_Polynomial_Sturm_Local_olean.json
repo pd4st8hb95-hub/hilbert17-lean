@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.Local:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.Algebra.Polynomial.Sturm.Local:olean"
+  ],
+  "start_utc": "2026-10-13T14:30:46.129577+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:30:46.129564+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8251540,
+    "used_percent": 19.15413185391125
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/092-TauCeti_Algebra_Polynomial_Sturm_Local_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/092-TauCeti_Algebra_Polynomial_Sturm_Local_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 1246,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:30:50.139769+00:00",
+  "seconds": 4.01,
+  "peak_physical_used_percent": 24.511889864780393,
+  "memory_after": {
+    "utc": "2026-10-13T14:30:50.139924+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8238148,
+    "used_percent": 19.285342254177433
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

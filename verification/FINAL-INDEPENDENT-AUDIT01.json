@@ -1,0 +1,1637 @@
+{
+  "status": "PASS_FULL_THEOREM_CONTRACT_AXIOMS_LOCAL_REPLAY_AND_PORTABLE_LAKE",
+  "pending": [
+    "Additional fresh transitive imported-environment same-kernel replay (separate strengthening checkpoint)"
+  ],
+  "scope": "Independent inspection of actual compiler receipts and exact compiled contracts. No external independent kernel or full transitive Mathlib replay claim.",
+  "axiom_record_count": 17,
+  "unique_declaration_count": 14,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "root_receipt": {
+    "path": "hilbert17-20261013/verification/ROOT-FINAL-AXIOM-AUDIT01.json",
+    "sha256": "69ec0992aa9c8a8c2b807268c171e07ac8a0b17c22b8a55020aaa12bfa0c9e89"
+  },
+  "diagnostics": [
+    {
+      "module": "FinalHilbert17Axioms",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/FinalHilbert17Axioms.lean",
+        "bytes": 874,
+        "sha256": "5d6382c8058cc83f3dcd5e840f15f50638524ba4495f25e5200f1621305587e7"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.olean",
+          "bytes": 1408,
+          "sha256": "0f2bb901b5aebf60f68109259e02e0ed004b54b4d235c3ce7bf0fe1a5a31bbc4"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalHilbert17Axioms.ilean",
+          "bytes": 1779,
+          "sha256": "522eed05ad773d192e28e1050ccde99535ad92c02053a076a1ef3c961089d2c6"
+        }
+      ],
+      "status": "PASS_CURRENT_HASHES_MATCH"
+    },
+    {
+      "module": "FinalTargetContract",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/FinalTargetContract.lean",
+        "bytes": 3370,
+        "sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalTargetContract.olean",
+          "bytes": 40664,
+          "sha256": "4951bb24c003aa385cd4f02dffe0360c9eff38542c5468ad48de07d2ce465ed3"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinalTargetContract.ilean",
+          "bytes": 7672,
+          "sha256": "5a5883767fc04f4df05051e6f373e9410cf148f2abaffd9b333f7ebbebebf8d9"
+        }
+      ],
+      "status": "PASS_CURRENT_HASHES_MATCH"
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/BoundaryAcceptance.lean",
+        "bytes": 4314,
+        "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+      },
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean",
+          "bytes": 62464,
+          "sha256": "9109765af72b144e999ca97f51c965eb55249822cedbd2b011688bf9e9cba888"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.ilean",
+          "bytes": 11007,
+          "sha256": "f7062a03be0d556c9842d7cd0894d538364a2d22fa671b5e5fc401807d707b97"
+        }
+      ],
+      "status": "PASS_CURRENT_HASHES_MATCH"
+    }
+  ],
+  "records": [
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/01-FinalHilbert17Axioms.stdout.log",
+      "log_sha256": "06c44bd5efe476146f0bddcd4a784b242f2e78348b236e870491180ac54a855d"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_finite_rational_squares",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_negativePointTransfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/02-FinalTargetContract.stdout.log",
+      "log_sha256": "35054d441fd105dbb68e06508dabbbbf3b680738c909a22ec47deb1d0e8c6ac4"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+      "log_sha256": "0bcf56aa04e9f6813b62c1e52556efdc3e68f9dd85d7eaa9e222d4b2bda0ed82"
+    }
+  ],
+  "target_source": {
+    "path": "hilbert17-target-20261013/TargetSpec.lean",
+    "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488",
+    "matches_published_baseline": true
+  },
+  "current_new_source_compile_matches": [
+    {
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "source_sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be",
+      "receipt": "hilbert17-20261013/verification/transfer-quadratic01-run01/summary.json",
+      "receipt_sha256": "43d44ddbe64067ebee33de21d913651dfd0e852b1c9244df0f4f7258c48d1743",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.olean",
+          "bytes": 71664,
+          "sha256": "a82246a8a77db90b73b2d7dbde37171a3a12399c958ecef62b87d3240408b067"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.ilean",
+          "bytes": 2862,
+          "sha256": "e940e2c528310aa1439767edc4bb1fabd6a40f8bc6ed87f70a2480bd51003e59"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "source_sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957",
+      "receipt": "hilbert17-20261013/verification/transfer-quadratic01-run01/summary.json",
+      "receipt_sha256": "43d44ddbe64067ebee33de21d913651dfd0e852b1c9244df0f4f7258c48d1743",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.olean",
+          "bytes": 86928,
+          "sha256": "f4cc39a08c4e881c0d3f0bbdaba316b2236b8cc3998e0c73e9baf3f598da3d2e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.ilean",
+          "bytes": 5050,
+          "sha256": "f7d59dc5c1bbc5d3667934297e4c58b54e5b8cc9b88da14c20f09ff17ba3cd10"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "source_sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f",
+      "receipt": "hilbert17-20261013/verification/transfer-quadratic01-run01/summary.json",
+      "receipt_sha256": "43d44ddbe64067ebee33de21d913651dfd0e852b1c9244df0f4f7258c48d1743",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.olean",
+          "bytes": 46760,
+          "sha256": "cbdc566cc41f8db71d1de2b0cf928e79ba314483426830b0bf7d19c137468709"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.ilean",
+          "bytes": 4049,
+          "sha256": "744f87c94f9f94d6da7f628e88e646781e66db71987f375ffbe5ac49fa73c097"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "source_sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.olean",
+          "bytes": 175240,
+          "sha256": "9596cc74ae94d8887831434aba6815152c506709814de5e8690c3bd5a997255f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.ilean",
+          "bytes": 18272,
+          "sha256": "10843e2d74858b08d141a2970c370c5a261714472dc05b68f3a3f855c5c9871b"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "source_sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean",
+          "bytes": 25416,
+          "sha256": "db2eb624bd9fe12957bd23d10014fd3defa4712247d55c7faa9e1d3a925c72cf"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.ilean",
+          "bytes": 1355,
+          "sha256": "8996877e6a50eea59d0cbf0a3e63d4e588eae75602a8f0819a76fb4a14709fe0"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "source_sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.olean",
+          "bytes": 479904,
+          "sha256": "f8823d5472ea8a7bd62300bd1cf996a97e6986f0c16d255395cfb0bf253ed33f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.ilean",
+          "bytes": 6534,
+          "sha256": "8e0a5c11705091dbb608aa817208a2bb297dc46376cd531d7f655d457b39cf20"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "source_sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean",
+          "bytes": 13488,
+          "sha256": "c13195ee3bec1f62e94e402bacceae946a4f872ff7968b38084262fbb7af216d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.ilean",
+          "bytes": 1645,
+          "sha256": "76e99c3e95ad8ef3b1526798b8d9c47f895386b88dbb3d744bdab54ce02248ea"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "source_sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean",
+          "bytes": 50848,
+          "sha256": "cf02b3c013d47edd54f07430933a8bd6c08ac3f4ef0bde78135f21519a00003e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.ilean",
+          "bytes": 3187,
+          "sha256": "009abdfb1b073e61d7791fb4b9657ef54a0b5dbb6a61b0165810718c415375cb"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "source_sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt01-run01/summary.json",
+      "receipt_sha256": "25183b5d43f0850e8df2c52acf9f23e5bdbc05f91a6658280259780509201922",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean",
+          "bytes": 23816,
+          "sha256": "fed8f9ea792066ec822778d2e01e12dc244d15fc02bc11a7279811a538afe28f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.ilean",
+          "bytes": 2008,
+          "sha256": "93a2a59ddb1b07982aba5c587d562dc157c9a39fb4003ed5c396ba3ab714c953"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "source_sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt02-run01/summary.json",
+      "receipt_sha256": "281e3fa5f655e19f5437b0a017880163147a264295c504663da21c9766eb6a2a",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.olean",
+          "bytes": 160224,
+          "sha256": "a00082bef4e564954f1578718dc8d721378b28ca1c12b8bcf63412c0ae0221a3"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.ilean",
+          "bytes": 12216,
+          "sha256": "5b3ded9dee677283c464c23235c709c3ab15949d825cfaa9a53c53cc78808b2d"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "source_sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt03-run01/summary.json",
+      "receipt_sha256": "9f006dcf667bdcdbc6db4789ce5f6a647351232ba3daca66507ef452ccd7b01b",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.olean",
+          "bytes": 416552,
+          "sha256": "6464071ec32f8e1e3ed1dfc3b5535f8a0a47caba1f06eb63b7ff1db0ed59b9e1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.ilean",
+          "bytes": 22230,
+          "sha256": "7534f2c6613774ffccb7845559829946ce9fa019bb50e447591df8bd0d994563"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "source_sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt04-run01/summary.json",
+      "receipt_sha256": "6304fd5323eff56caa79c197f9c98d90bdaff295fd5719fb4d2d708334c3d838",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean",
+          "bytes": 1985848,
+          "sha256": "b7863108d7fd8e8c7734303b173fb5e15d4f0584fa5ea5728d3b36034949e91c"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.ilean",
+          "bytes": 26925,
+          "sha256": "75f14571f4fbc41eb971e9faa33ece3f65cd18fa277bf889ec1c8fcf03c54d8f"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "source_sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt04-run01/summary.json",
+      "receipt_sha256": "6304fd5323eff56caa79c197f9c98d90bdaff295fd5719fb4d2d708334c3d838",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.olean",
+          "bytes": 857528,
+          "sha256": "a7c87058f39ea3b1cc18165ec0d27a4908c90a4ba11fa6be85373b15a5cd0da5"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.ilean",
+          "bytes": 34639,
+          "sha256": "01407874c7f4e93d9c5f12ec43f204bc0f059c1dd14e72cad545719af23fc351"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "source_sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt04-run01/summary.json",
+      "receipt_sha256": "6304fd5323eff56caa79c197f9c98d90bdaff295fd5719fb4d2d708334c3d838",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.olean",
+          "bytes": 183264,
+          "sha256": "a9b6c25b6e86d19e577eb75cf6e24974dc47264e527c892bb5cd9ce7469f64d8"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.ilean",
+          "bytes": 14404,
+          "sha256": "10b01f8d815564c2e14f659ab8fa9c88d76003e79f3944bc6392a87bdb313568"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "source_sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-ivt04-run01/summary.json",
+      "receipt_sha256": "6304fd5323eff56caa79c197f9c98d90bdaff295fd5719fb4d2d708334c3d838",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.olean",
+          "bytes": 201168,
+          "sha256": "727cf30bb7e9a3a47dfeaf1008238065192288a15566430b2567c89f140ddb3d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.ilean",
+          "bytes": 11310,
+          "sha256": "47b21fb0e58521e298ff893353c4e3407e2da01d690aca3746e7a1f8d3a243a0"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+      "source_sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.olean",
+          "bytes": 24896,
+          "sha256": "caf8798a61171c990bf5a4a27a5f67ead429298cb3c92a664a4afba384d97931"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Sign.ilean",
+          "bytes": 1985,
+          "sha256": "87fd157de721b49f3f77006d9c7b4004f0a10f59bf47dee8367cf717b43462dc"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Rolle",
+      "source_sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-rolle01-run01/summary.json",
+      "receipt_sha256": "a3dd6d1de9168dd79401775be72b7622f725b5c48b7d37f3720b17b1cb6482d3",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.olean",
+          "bytes": 218072,
+          "sha256": "647b1b77952c88d1dbe24ded7c9c751c22a489d94cf037800b65422cfad72665"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.ilean",
+          "bytes": 13357,
+          "sha256": "9fdc2e3efd4659c9d9f47cfe1ec04d1254a559b9de1296a5dccc8ab5d186dee7"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Thom",
+      "source_sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/summary.json",
+      "receipt_sha256": "4704e0ea10fb6463b85e3994b7c34857549f910bbe9ff663bc489bd8857706fa",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.olean",
+          "bytes": 546848,
+          "sha256": "90f60625d209ba08331b44273ed07fcbfc565ff6276b0d0ef4ce0ec277cf65b1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.ilean",
+          "bytes": 54165,
+          "sha256": "c02459d5273223a2a90095e956b671655b7a8eec67768d76cb1200c3fea08284"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "source_sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/summary.json",
+      "receipt_sha256": "4704e0ea10fb6463b85e3994b7c34857549f910bbe9ff663bc489bd8857706fa",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.olean",
+          "bytes": 465184,
+          "sha256": "e771eaf07e1b882276006bbc882bd82c02302936c9e83c61d0bd5eeb93796921"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.ilean",
+          "bytes": 32429,
+          "sha256": "d27b8e4d70c7aedbcd8b0e611ec9f49c3508792da45867cc0537b2dae4a101a9"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Finset.Jumps",
+      "source_sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Finset/Jumps.olean",
+          "bytes": 236976,
+          "sha256": "f061bbd0d2bf514799a9a104705476717f6b7a813d53d0ef307c1f561f5c473e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Finset/Jumps.ilean",
+          "bytes": 8041,
+          "sha256": "f512931b7fa4a42ed167e358f948ad6bc313b9f4ff7de0498628399faa5216e4"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "source_sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/summary.json",
+      "receipt_sha256": "4704e0ea10fb6463b85e3994b7c34857549f910bbe9ff663bc489bd8857706fa",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+          "bytes": 296808,
+          "sha256": "0079cf290cc2ab5f3957007d6582545173dc798f848481b46a6e5d13bf2f3e43"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+          "bytes": 15493,
+          "sha256": "1b9a6f047aaebee9c0eeb5237cf2d9def742e39161e26403a3470194ae7f1485"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr01-run01/summary.json",
+      "receipt_sha256": "f3ae2c175165a64e1ad2a73d5087ea3cd854f48e8361006a7f58bafc7770d3c6",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+          "bytes": 149904,
+          "sha256": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+          "bytes": 15215,
+          "sha256": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.olean",
+          "bytes": 208512,
+          "sha256": "803b0a63d22a0154e439b2f5b4d76ab7c719f518fcc8fe7d024030fd9c266ced"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.ilean",
+          "bytes": 18843,
+          "sha256": "16e64393075e02e836d3803e1d7921580de95678cc0e03682ddf8e5935ffca28"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "source_sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.olean",
+          "bytes": 698160,
+          "sha256": "bfb06664e5b528b52726cc5537ea32a16ce0ef5ed7b3c07c71918deb0656c50e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.ilean",
+          "bytes": 43752,
+          "sha256": "b67f771fec4390e995cb8067dc9909fa3d8a660e6f1e9d6caed29d4ca16234df"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+      "source_sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.olean",
+          "bytes": 50328,
+          "sha256": "122dbf85655e2b6fbe6c7d86e6463383e01eee494cacc99a501880ce3193d034"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.ilean",
+          "bytes": 1904,
+          "sha256": "899d90462cfdcc41243c13a68d4fc8b602be153158b1c20e6c8a1a00ddceeb83"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "source_sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc",
+      "receipt": "hilbert17-20261013/verification/transfer-compat02-run01/summary.json",
+      "receipt_sha256": "3ee8c70089a1b1b5a28205179c740111da84039bf9a1da0b60836d5c779e38f0",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/ListSignVariations.olean",
+          "bytes": 288624,
+          "sha256": "25f0aee99543491abc43fac429dfdde8a3c6e7c49b6402a26477f9b6dc588bc8"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/ListSignVariations.ilean",
+          "bytes": 14737,
+          "sha256": "e15ad0e0424c807827a77ae905b89fbf77c8b41cf2a52c2f2b5c5525daf390e1"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.SignVariations",
+      "source_sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/SignVariations.olean",
+          "bytes": 138016,
+          "sha256": "166e1f3d73e0f02928004860643e70121e0ce7720548c1f64bfba3e71fcf09b5"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/SignVariations.ilean",
+          "bytes": 4569,
+          "sha256": "1630b911d635c24d21a9353c32501960fa510c903cb2c21b9dfb95e02c98c5d8"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+      "source_sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Signs.olean",
+          "bytes": 382536,
+          "sha256": "9a844dfd9c379600f14d5b7441dada8b7d95fbc332940dc7163c86cc8fa6cbbc"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Signs.ilean",
+          "bytes": 32390,
+          "sha256": "980054ef33eac7d4526072615bc830487d4d981e51b88c42f6f46d9132cdb3c9"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+      "source_sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Local.olean",
+          "bytes": 270144,
+          "sha256": "aab2387ae49259a413c8477fbce6770ff995a272970fd98ae34ba8ccc153ae9a"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Local.ilean",
+          "bytes": 14887,
+          "sha256": "06e4c63e0e9ddd9da8813c62e5bac3c1f0d5c9366e68944897f8df99b375f3f8"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "source_sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-entry01-run01/summary.json",
+      "receipt_sha256": "8b886fcac56b9a5347f90acce8dd529fe9514e1f4a9c0b58716bed3b6fdc4ff6",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+          "bytes": 94288,
+          "sha256": "95ddc0251628a8fdfc2b81d4bc3959d3c2ed984c117114c39eb435865162a849"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+          "bytes": 2848,
+          "sha256": "1e4391f18bcb71d6b75cbb6ecbd9d1d33ae68bd9dcf8a0d99b9abea635f98217"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-entry01-run01/summary.json",
+      "receipt_sha256": "8b886fcac56b9a5347f90acce8dd529fe9514e1f4a9c0b58716bed3b6fdc4ff6",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+          "bytes": 239648,
+          "sha256": "1991283315074425162e695fdcae1483cc9819d14bbaa24b807adfb9fa5ff34d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+          "bytes": 7360,
+          "sha256": "271def0cff9436f8a44b2dc5fada47d1aa14fe67fff0c61e79a38181497d985b"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+      "source_sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.olean",
+          "bytes": 163040,
+          "sha256": "94d532bbd90e2d20f87786657423d33de0e088403c68d5378b60438a214e4431"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sequence.ilean",
+          "bytes": 7569,
+          "sha256": "61a8a55a9696ed7e7c0048aeb64f34014d489c8ce93b7c4b13bf44e800be8b4a"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+      "source_sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.olean",
+          "bytes": 645856,
+          "sha256": "25a982564c26fe2150ea4236a7488f6eeff9e3e4f0ce758ea69a5a0b7b17861a"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.ilean",
+          "bytes": 30333,
+          "sha256": "81ad823f9fa1d393efe80e4188baf7eadfda27a951564e5e49dbf4457663a837"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+      "source_sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sum.olean",
+          "bytes": 319288,
+          "sha256": "020eb3818355a3275cf73674e346b4afbdb45e81999bfb9028f14a700c81d449"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Sum.ilean",
+          "bytes": 27689,
+          "sha256": "a95e535f7d05cf6bf21067c4f034ca843659dabab8b3fa5b373c3a72977aec0f"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+      "source_sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.olean",
+          "bytes": 1075840,
+          "sha256": "8b3d01abc1e1d270588a9204f3d98bb45e8cf962fa0e3474ba28b9dd9f32a07a"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.ilean",
+          "bytes": 46118,
+          "sha256": "21e8bb6c450603c760c69d24ec39a3e77a4586c612d374004d72a54653d9e5c3"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+      "source_sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.olean",
+          "bytes": 513800,
+          "sha256": "03b3b26bb1e52287c79f162b4dce1dd2b63e82b19769a09a2875746d23b04575"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/OneSided.ilean",
+          "bytes": 38784,
+          "sha256": "1d6430353ee45bb451c522ba8e416d9086d582b85e85eddddea49557969ba97a"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+      "source_sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb",
+      "receipt": "hilbert17-20261013/verification/transfer-infinity01-run01/summary.json",
+      "receipt_sha256": "ee691f9cbdd0fd0db63feac68296429e381c517639f59800196a2582f7ea0240",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.olean",
+          "bytes": 302136,
+          "sha256": "9cc60da7d4d8e6c3df84d333e87c4fe4041ab9cc8d998cf5f877afa5cb9ecd2b"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.ilean",
+          "bytes": 15602,
+          "sha256": "6e746dd996860f96b54ac996ad761c0ce33932f62e54161d06604ba5e6a45140"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+      "source_sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.olean",
+          "bytes": 315544,
+          "sha256": "0c76281fa3f848f5013a81d6ca04f538ab16f2fafc76003d022366f2f6619805"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.ilean",
+          "bytes": 29174,
+          "sha256": "ae4066feca3ed406c39653c94581dbc3bc61cfb53aa16e3ee40338ce70448d0c"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+      "source_sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.olean",
+          "bytes": 197496,
+          "sha256": "72f150abac6fbd04f219ce16acfc9df6ecb91f418a626dec09a6e2dc9067118e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Variation.ilean",
+          "bytes": 19002,
+          "sha256": "c77244d84aad7df553ab1e6058049d6507f6a2374912a2df9c3a89b91e84d417"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.SignType.Parity",
+      "source_sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Parity.olean",
+          "bytes": 151464,
+          "sha256": "ac7d5f25ea4ff9ec9e99a74b98d34995466b08068e18ceb34aa65515610aa830"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Parity.ilean",
+          "bytes": 2786,
+          "sha256": "8992f7e46deed4c52d1a16ac71ccb6aeda23a5abc13577fdb0b47941f48d4f26"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "source_sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.olean",
+          "bytes": 532592,
+          "sha256": "5eb91e5e46ff086a6dd32f294e25f6095d831c6cef9bbb5fa43d83cd808bf8f5"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.ilean",
+          "bytes": 28519,
+          "sha256": "a2065cc5f8d5306a1e093fd560353a5ee0a591a32898ee8983c2e92b07b0ccb1"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.PermanencesMinusVariations",
+      "source_sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/PermanencesMinusVariations.olean",
+          "bytes": 422576,
+          "sha256": "7ae4e570222df6785d79da44ec67148495b9ecb646b7cbfb7bae1bc4e96dc7ca"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/PermanencesMinusVariations.ilean",
+          "bytes": 31485,
+          "sha256": "7ea44b85ab7c5faa279ce42f44ecae5fe3e890ec3fe417fd97d8408579266bdc"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "source_sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant01-run01/summary.json",
+      "receipt_sha256": "420dc2183bb24fcefe0d0884ce8f3a719cbf3f4512cc5320b541eb9542f1009c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.olean",
+          "bytes": 63576,
+          "sha256": "e731214b6f87964653aaa8fd51a7c9bf29f5c4f2dae711c743c8b5bee868dd43"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.ilean",
+          "bytes": 1779,
+          "sha256": "97883789614574ab5853efe6ae26df2c15a7056231095bf8a0ee5640bdddeed8"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "source_sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant01-run01/summary.json",
+      "receipt_sha256": "420dc2183bb24fcefe0d0884ce8f3a719cbf3f4512cc5320b541eb9542f1009c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.olean",
+          "bytes": 401416,
+          "sha256": "2c9abeefd820cb5c25d6b5a7ed8fa09be5591717e37ee37bb86bebdf47467e71"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.ilean",
+          "bytes": 34450,
+          "sha256": "52d48f41e510c6ff0647d627c67ee0630003cbd275a68e5a0d63eebc7d67254f"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.olean",
+          "bytes": 519728,
+          "sha256": "f6a609c063365c51e1c3684de7bbda04270be9dd7ecd73d81870e63e6e25e7f4"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.ilean",
+          "bytes": 24017,
+          "sha256": "f08b15b9d77721b73def83811dd1c5945058d42c25bcd712c50256a6dcea1f19"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "source_sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.olean",
+          "bytes": 615632,
+          "sha256": "7904fa692bb770d538d3cc5f655567cc2918936adbb8e81b617e971d164ac32c"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.ilean",
+          "bytes": 31730,
+          "sha256": "e9ef4922db3fddaf21ece48983f0941318439cd173d89e26a2fe62d0567cb6ca"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "source_sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d",
+      "receipt": "hilbert17-20261013/verification/transfer-reductum01-run01/summary.json",
+      "receipt_sha256": "783708f15bb1961314d15bf8c6188a4ecc21374df66c278dc30e751b8adbbe7c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Reductum.olean",
+          "bytes": 459488,
+          "sha256": "9185fde9660489579b85942555668c537db1221c4c507cb0b87fb059e49ddb11"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Reductum.ilean",
+          "bytes": 28067,
+          "sha256": "6789c8ebd2cb79fd269699638bdcef4bf9f5dbbc72ae87e0532567cf70c95bca"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "source_sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.olean",
+          "bytes": 114824,
+          "sha256": "40fb3a7aac30b2ccb6068bd6405aebbdf42569c9deb361b2bb47673666f0a347"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.ilean",
+          "bytes": 6602,
+          "sha256": "427752df273c02f4d02fc6038d4f4bf6ada9b0a62155ed319aa101695db2a99b"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "source_sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.olean",
+          "bytes": 691888,
+          "sha256": "723abaaac211da0f5be6caf0abf03945541c9243170fc288b779ff4f2d2cbeb5"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.ilean",
+          "bytes": 73781,
+          "sha256": "640988fbe61916e20c1235d017373388e0673db2a1bc1a94593547e4e53a423e"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean",
+          "bytes": 1047176,
+          "sha256": "b53ee2a68d4f9e80adbc826785c532bca0063ace8a1b247c8d9bedf1db83cbb0"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.ilean",
+          "bytes": 25311,
+          "sha256": "f121ee30627c44476bd93bafdf7de4acdeda753d47f9b4a860971b62c32d7b61"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "source_sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.olean",
+          "bytes": 337288,
+          "sha256": "26ead438b4eb39f0fdc68fa2f9fc5a28cd55d6bc1a3cc9afa64c881f4a290506"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.ilean",
+          "bytes": 11605,
+          "sha256": "6d76bdbd1937ced1b7484923fcb9647ba3609ad39c55a50baaba5c85c77dc7b4"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.olean",
+          "bytes": 805696,
+          "sha256": "1ecf2ab646e084550ca9e814eee7da20367355b06bec54e33dfaf3dbce193b98"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.ilean",
+          "bytes": 17714,
+          "sha256": "4652da976fcd9c622d9886afb9a5832a85b570242adf7ad9c8ec6ea389095cbe"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "source_sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/OfFn.olean",
+          "bytes": 69344,
+          "sha256": "5edd774c94bf912ad441a5198015523df20b1e336496e3b262723ff1b969f0e7"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/OfFn.ilean",
+          "bytes": 3779,
+          "sha256": "1e22ee39a403ae7dd057db9c9259e306b115d4253f2cb99126c62a501dd0344a"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86",
+      "receipt": "hilbert17-20261013/verification/transfer-subresultant02-run01/summary.json",
+      "receipt_sha256": "f17fe9beac96f4d71065f9a93c0bde9f7ad7c357517e56a7305b5ebd6c85fd65",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.olean",
+          "bytes": 842456,
+          "sha256": "f2ecc6257319b0ea658ce7c7627e8baff9663c6db475fb7f0ec265a6d97681ea"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.ilean",
+          "bytes": 38366,
+          "sha256": "4a08cd064e5ca1f2259019344a18c3380818389ff807cde5b741ec88088e2902"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.Range",
+      "source_sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-independent01-run01/summary.json",
+      "receipt_sha256": "49e36a29538fad04c839fd49a69c893e11fa45a60f8999a0b952d1eeb9fafe4c",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/Range.olean",
+          "bytes": 107144,
+          "sha256": "224825f39d5a7e36ca95e1dd0b320ffb12c505b631afdc2a2f0bfff4fbf7c9ef"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/List/Range.ilean",
+          "bytes": 2826,
+          "sha256": "57707b05da7ca14dc1b5fe5a16681fb52076db2df2ff8d4efdd8dd7ea848578e"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "source_sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c",
+      "receipt": "hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/summary.json",
+      "receipt_sha256": "1ea09ee2726539c5428bf0739ac4d95887a1ae4fca985eb73814ce766e881601",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.olean",
+          "bytes": 997032,
+          "sha256": "136512bc98c0b8a4f21fd648b4129e271f9d1ee17ce5b3fc53e13549aeb8a286"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.ilean",
+          "bytes": 45994,
+          "sha256": "277661bea9d3cca1727579bc75e288383968b39e96c0ccad94a94f8766fead54"
+        }
+      ]
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "source_sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366",
+      "receipt": "hilbert17-20261013/verification/transfer-helpers02-run01/summary.json",
+      "receipt_sha256": "239ecde19b6a136a5951d3612554f03339188bd68dbc2fbf784b60676b5c4d48",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+          "bytes": 118632,
+          "sha256": "483976048811ffeef2a84fbbed3e45701774ac8946178cf60841e45b04ee0ed7"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+          "bytes": 11106,
+          "sha256": "f36d3b90b22be0e157123d4f5388d37ed07dab3d4f9f09edf280567594ab6c60"
+        }
+      ]
+    },
+    {
+      "module": "UniformRootCount",
+      "source_sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates02-run01/summary.json",
+      "receipt_sha256": "8f81e8165154679c911e1c823ba7b3541c9fbf21a8755fd1be037e1ee8d77621",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean",
+          "bytes": 196056,
+          "sha256": "054b95ebfb301eed32c52b11b376e37d4a00978ee32c69f48f8ff9cca3200ccd"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.ilean",
+          "bytes": 18770,
+          "sha256": "e088380c11c5239d6933d44962cc67b7fcbe7633c47eaa4c0424862b63ae20f1"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr01-run01/summary.json",
+      "receipt_sha256": "f3ae2c175165a64e1ad2a73d5087ea3cd854f48e8361006a7f58bafc7770d3c6",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+          "bytes": 69296,
+          "sha256": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+          "bytes": 4214,
+          "sha256": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+          "bytes": 232432,
+          "sha256": "285be1e6ac67b0528d0afb41f37878a2005a0d92fad38c121ae8d1d559d8ac99"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+          "bytes": 3688,
+          "sha256": "2873bbd173b04b923064fe24d730b2606ee2efbb284c8a69360f84a806f13cbd"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.olean",
+          "bytes": 146320,
+          "sha256": "9ea2280ad9ea57698c460faa181143ce9064d003867029520a889c9d284f7a39"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.ilean",
+          "bytes": 11523,
+          "sha256": "aac776c6da3629f7396fbb811345a6e1cd466fcb88d890d372cb9c43c60a3b89"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.olean",
+          "bytes": 217208,
+          "sha256": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.ilean",
+          "bytes": 15442,
+          "sha256": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr04-run01/summary.json",
+      "receipt_sha256": "38eb8fe29c1e0588a928424e37f1e2f071877146f79af2590016d785c43d5b84",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.olean",
+          "bytes": 44512,
+          "sha256": "98ceaee8803eec98cc686a88fdf196b22494a3c373c6eede2d8068de97195c4f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.ilean",
+          "bytes": 4132,
+          "sha256": "40f2fcd9e7cd7615d0c707bbec6587a700983736a0c291aa7cf93923fe7d3f70"
+        }
+      ]
+    },
+    {
+      "module": "MonicQueryProjection",
+      "source_sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates03-run01/summary.json",
+      "receipt_sha256": "7f73bc0bb67ef6481954e9b749026347216595b1b5b09604fb377e5c9999361e",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean",
+          "bytes": 251904,
+          "sha256": "115faef2355e825347e7582798e3f943f6af802d27ed950c5d859877e8a70dce"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.ilean",
+          "bytes": 29314,
+          "sha256": "4c66829b4a029f8910e0703fb003929a2a7fccb203ecdca0f961359d9043dbeb"
+        }
+      ]
+    },
+    {
+      "module": "DegreeNormalization",
+      "source_sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14",
+      "receipt": "hilbert17-20261013/verification/transfer-bkr02-run01/summary.json",
+      "receipt_sha256": "6fc6fb877c44069bc306faa983ce0249b690cac0bdc82650c2f903ce5be0c7f4",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+          "bytes": 149256,
+          "sha256": "1e923a11979e6799509152c92e3992e6ec07e766e9b32e8cae65bfcc7fe689dd"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+          "bytes": 10881,
+          "sha256": "8f6aea1ed7487314660058863bfc43297b59e12a2eef9f12581a71264659e221"
+        }
+      ]
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "source_sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates03-run01/summary.json",
+      "receipt_sha256": "7f73bc0bb67ef6481954e9b749026347216595b1b5b09604fb377e5c9999361e",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean",
+          "bytes": 189712,
+          "sha256": "054ecd398811e785119fc1e656dafadb0f953ecc638a440035fdfcbf749c4ea0"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.ilean",
+          "bytes": 16691,
+          "sha256": "99680c11b4872a273b2438781ee11d76fe391de35b96a3bd6efa3e33e4703b92"
+        }
+      ]
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "source_sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates03-run01/summary.json",
+      "receipt_sha256": "7f73bc0bb67ef6481954e9b749026347216595b1b5b09604fb377e5c9999361e",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+          "bytes": 126752,
+          "sha256": "9a610df550846934ed0e15fc1f0334f7447863d762310e64f7e0d94ff069e230"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+          "bytes": 12090,
+          "sha256": "73c24cfbafb573e161addfe1eb69848a26f7b36b2052f46d0dd5eca3f247c377"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "source_sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477",
+      "receipt": "hilbert17-20261013/verification/transfer-rcf-rolle01-run01/summary.json",
+      "receipt_sha256": "a3dd6d1de9168dd79401775be72b7622f725b5c48b7d37f3720b17b1cb6482d3",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.olean",
+          "bytes": 481760,
+          "sha256": "0ac925a777159b7f7167acb2e7d568a677aa9d61ca5d6b4c76bf0afa185d216d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.ilean",
+          "bytes": 22023,
+          "sha256": "8fa3f12e2a2a46dc992ab91139b55ac23702bb67221ad3d4efca2b0546b3a673"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "source_sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873",
+      "receipt": "hilbert17-20261013/verification/transfer-sampling01-run01/summary.json",
+      "receipt_sha256": "2cad59ae3fed52929d10356ecec361c77065a2115f2ffaef84c54a1a12a3b6d7",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.olean",
+          "bytes": 342648,
+          "sha256": "1be0f2befdaa60c83b16b86b087500fc7be95525487d23476330fd23bd33ada9"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sampling.ilean",
+          "bytes": 11769,
+          "sha256": "e2b9534398340ab15fb329c7bedc583f6923b216347b10f9aaa7047b285aa265"
+        }
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "source_sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4",
+      "receipt": "hilbert17-20261013/verification/transfer-sampling01-run01/summary.json",
+      "receipt_sha256": "2cad59ae3fed52929d10356ecec361c77065a2115f2ffaef84c54a1a12a3b6d7",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.olean",
+          "bytes": 149280,
+          "sha256": "5d703b49d25b5ba9a75244500f81618faba05b7b7f1880c674e2cd59415756db"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.ilean",
+          "bytes": 11462,
+          "sha256": "fa877a484696b491d9deed6c4014f163594dceb652ba73bfe62ab420bee7d07d"
+        }
+      ]
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "source_sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9",
+      "receipt": "hilbert17-20261013/verification/transfer-wholeline01-run01/summary.json",
+      "receipt_sha256": "92127940d5eabf52f11d140af83ee2a071858705b93c0b45e5b96b001e78b3f7",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.olean",
+          "bytes": 273328,
+          "sha256": "1ef45cc3428ab7c6f655225540927859801f8e6d8752ce68417f6eda7f81c169"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.ilean",
+          "bytes": 18111,
+          "sha256": "390fb81f4dad84c7754c0c298245f6253971d24dc3ac86926e34b18022a96f18"
+        }
+      ]
+    },
+    {
+      "module": "UniformOneVariable",
+      "source_sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates06-run01/summary.json",
+      "receipt_sha256": "ca212e5af23679a8a00830d9e8aba3ac34e436eadf7c30f15e8ac13215017935",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean",
+          "bytes": 218352,
+          "sha256": "5665f4b77b246038796c9b078c88ae9eeb217f24026df93fca186c3929afd4d1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.ilean",
+          "bytes": 18718,
+          "sha256": "fd2b5d231a4abe17e193873ea5fd630021a5748ea18524b38a7412d178ef4acd"
+        }
+      ]
+    },
+    {
+      "module": "FinSuccEvaluation",
+      "source_sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f",
+      "receipt": "hilbert17-20261013/verification/transfer-helpers01-run01/summary.json",
+      "receipt_sha256": "5d2c7724b5307447d8cdc2f50521efd19d6f7db08c41c84d28d70467352e7a6f",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.olean",
+          "bytes": 63584,
+          "sha256": "4f7c26f52b835e1cce7a555e8ed1d00b43de5900d24bed64dda35f21d5e6ed73"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.ilean",
+          "bytes": 4912,
+          "sha256": "00a1a1aafbf91b5f2679c4ee08783190a249ce1dbfd7a0e79dc7ce4c2066e7d1"
+        }
+      ]
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "source_sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates07-run01/summary.json",
+      "receipt_sha256": "4cb9d75e80262b0d978771ac7fcbfacf96c612bd4cdc23339d9ca96aa0691139",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean",
+          "bytes": 186384,
+          "sha256": "f4a25541cc2ea37d76d9cf20d879db507c95baa53f1975d782a3fa40675af04e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.ilean",
+          "bytes": 13585,
+          "sha256": "6109ff111267b457cb023589e8b6d0c362acc09843c63e9ecfe065b622262262"
+        }
+      ]
+    },
+    {
+      "module": "RealClosureTransfer",
+      "source_sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae",
+      "receipt": "hilbert17-20261013/verification/transfer-candidates07-run01/summary.json",
+      "receipt_sha256": "4cb9d75e80262b0d978771ac7fcbfacf96c612bd4cdc23339d9ca96aa0691139",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.olean",
+          "bytes": 88336,
+          "sha256": "e58c30692dee2363c6262881047b92a31a032e4104a717b86962bfeaa5eaa0c6"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.ilean",
+          "bytes": 5308,
+          "sha256": "6385eade9a0ca8e746789e2067239375234fe37ace0dcf14ed9304238299e05c"
+        }
+      ]
+    }
+  ],
+  "theorem_strength": {
+    "unrestricted_n_including_zero": "PASS",
+    "arbitrary_real_coefficients": "PASS",
+    "weak_nonnegativity_all_real_points": "PASS",
+    "zero_polynomial_allowed": "PASS",
+    "same_fraction_field_no_extra_variable": "PASS",
+    "explicit_finite_rational_squares": "PASS",
+    "nonzero_polynomial_denominator": "PASS",
+    "no_residual_transfer_or_real_closure_premise": "PASS",
+    "closed_real_negative_point_transfer": "PASS",
+    "unchanged_target_specification": "PASS",
+    "recursive_standard_axioms_only": "PASS",
+    "boundary_and_equivalence_contracts": "PASS"
+  },
+  "selected_replay": {
+    "path": "hilbert17-transfer-checks/FINAL-REPLAY-INDEPENDENT-AUDIT01.json",
+    "sha256": "e3356205cfc2f8f01c07085374ceb8f28c66eb818bf0a9e9d28bcecc282c3b20",
+    "module_count": 97
+  },
+  "portable_lake": {
+    "path": "hilbert17-transfer-checks/PORTABLE-LAKE-INDEPENDENT-AUDIT01.json",
+    "sha256": "ebfcfdb4688650b3e8565ee72441cae2ccff0047e3c1d27c9634f74fc9919af8",
+    "commands": 306,
+    "acceptance_records": 14
+  }
+}

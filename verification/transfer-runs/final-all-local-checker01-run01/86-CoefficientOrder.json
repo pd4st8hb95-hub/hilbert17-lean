@@ -1,0 +1,46 @@
+{
+  "module": "CoefficientOrder",
+  "start_utc": "2026-10-13T14:21:47.102859+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:47.102852+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314396,
+    "used_percent": 18.538289491371582
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "CoefficientOrder"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientOrder.lean",
+    "bytes": 1362,
+    "sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.olean",
+      "bytes": 64408,
+      "sha256": "326b34fc02af662c9ed8537001cc82995a55569806f5769e4538628ab68c5710"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.ilean",
+      "bytes": 3793,
+      "sha256": "b5035ac77310edcfeb6d23812972a790e5e6b84d4b795e86f0a116bc490af0e9"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/86-CoefficientOrder.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/86-CoefficientOrder.stderr.log",
+  "pid": 600,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:21:49.106074+00:00",
+  "peak_physical_used_percent": 19.85121649833616,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:49.106164+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8302524,
+    "used_percent": 18.654607432826193
+  }
+}

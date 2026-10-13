@@ -1,0 +1,46 @@
+{
+  "module": "UniformRootCount",
+  "start_utc": "2026-10-13T14:20:50.923034+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:50.923022+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312408,
+    "used_percent": 18.55776725986988
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "UniformRootCount"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean",
+    "bytes": 5704,
+    "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean",
+      "bytes": 196056,
+      "sha256": "054b95ebfb301eed32c52b11b376e37d4a00978ee32c69f48f8ff9cca3200ccd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.ilean",
+      "bytes": 18770,
+      "sha256": "e088380c11c5239d6933d44962cc67b7fcbe7633c47eaa4c0424862b63ae20f1"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/61-UniformRootCount.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/61-UniformRootCount.stderr.log",
+  "pid": 425,
+  "exit_code": 0,
+  "seconds": 2.504,
+  "end_utc": "2026-10-13T14:20:53.427550+00:00",
+  "peak_physical_used_percent": 20.67504380538378,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:53.427639+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8313340,
+    "used_percent": 18.54863583117752
+  }
+}

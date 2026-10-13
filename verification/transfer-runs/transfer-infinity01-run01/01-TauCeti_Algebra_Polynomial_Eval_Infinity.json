@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+    "bytes": 5569,
+    "sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb"
+  },
+  "start_utc": "2026-10-13T13:19:56.684738+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:19:56.684728+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8361852,
+    "used_percent": 18.07333125100181
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Infinity.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-infinity01-run01/01-TauCeti_Algebra_Polynomial_Eval_Infinity.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-infinity01-run01/01-TauCeti_Algebra_Polynomial_Eval_Infinity.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:19:59.688673+00:00",
+  "peak_physical_used_percent": 20.19617287322951,
+  "memory_after": {
+    "utc": "2026-10-13T13:19:59.688814+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8365712,
+    "used_percent": 18.03551224375663
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.olean",
+      "bytes": 302136,
+      "sha256": "9cc60da7d4d8e6c3df84d333e87c4fe4041ab9cc8d998cf5f877afa5cb9ecd2b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/Infinity.ilean",
+      "bytes": 15602,
+      "sha256": "6e746dd996860f96b54ac996ad761c0ce33932f62e54161d06604ba5e6a45140"
+    }
+  ]
+}

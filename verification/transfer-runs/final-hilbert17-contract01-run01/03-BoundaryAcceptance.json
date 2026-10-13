@@ -1,0 +1,55 @@
+{
+  "label": "BoundaryAcceptance",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/BoundaryAcceptance.lean",
+    "bytes": 4314,
+    "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+  },
+  "start_utc": "2026-10-13T14:15:30.969226+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:15:30.969214+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8285512,
+    "used_percent": 18.821285399472572
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-checks/BoundaryAcceptance.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-hilbert17-contract01-run01/03-BoundaryAcceptance.stderr.log",
+  "pid": 12,
+  "exit_code": 0,
+  "seconds": 2.502,
+  "end_utc": "2026-10-13T14:15:33.472837+00:00",
+  "peak_physical_used_percent": 21.95822508540629,
+  "memory_after": {
+    "utc": "2026-10-13T14:15:33.472998+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8293828,
+    "used_percent": 18.739807973500827
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.olean",
+      "bytes": 62464,
+      "sha256": "9109765af72b144e999ca97f51c965eb55249822cedbd2b011688bf9e9cba888"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BoundaryAcceptance.ilean",
+      "bytes": 11007,
+      "sha256": "f7062a03be0d556c9842d7cd0894d538364a2d22fa671b5e5fc401807d707b97"
+    }
+  ]
+}

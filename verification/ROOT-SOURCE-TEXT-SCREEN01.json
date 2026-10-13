@@ -1,0 +1,513 @@
+{
+  "scope": "Text-only keyword screen including comments; not a substitute for recursive axiom inspection",
+  "files": [
+    {
+      "path": "hilbert17-algebra/OrderingSeparation.lean",
+      "sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+    },
+    {
+      "path": "hilbert17-target-20261013/BKRExports.lean",
+      "sha256": "5251966f1f7af1b6c6cbb2d27f722beb0ee2168458c41eb9854f0290edc84801"
+    },
+    {
+      "path": "hilbert17-target-20261013/CertificateNonnegative.lean",
+      "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+    },
+    {
+      "path": "hilbert17-target-20261013/ClearDenominators.lean",
+      "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+    },
+    {
+      "path": "hilbert17-target-20261013/ConditionalArtin.lean",
+      "sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b"
+    },
+    {
+      "path": "hilbert17-target-20261013/FractionSemireal.lean",
+      "sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+    },
+    {
+      "path": "hilbert17-target-20261013/TargetSanity.lean",
+      "sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+    },
+    {
+      "path": "hilbert17-target-20261013/TargetSpec.lean",
+      "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+    },
+    {
+      "path": "hilbert17-transfer/CoefficientOrder.lean",
+      "sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+    },
+    {
+      "path": "hilbert17-transfer/CoefficientSignPattern.lean",
+      "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+    },
+    {
+      "path": "hilbert17-transfer/DegreeNormalization.lean",
+      "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+    },
+    {
+      "path": "hilbert17-transfer/FinSuccEvaluation.lean",
+      "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+    },
+    {
+      "path": "hilbert17-transfer/FiniteVariableTransfer.lean",
+      "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+    },
+    {
+      "path": "hilbert17-transfer/GeneralPatternProjection.lean",
+      "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+    },
+    {
+      "path": "hilbert17-transfer/GeneralQueryProjection.lean",
+      "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+    },
+    {
+      "path": "hilbert17-transfer/LocalizationSignDescent.lean",
+      "sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+    },
+    {
+      "path": "hilbert17-transfer/MonicQueryProjection.lean",
+      "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+    },
+    {
+      "path": "hilbert17-transfer/RealClosureTransfer.lean",
+      "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+    },
+    {
+      "path": "hilbert17-transfer/RealInstance.lean",
+      "sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+    },
+    {
+      "path": "hilbert17-transfer/TarskiQueryMap.lean",
+      "sha256": "1974ab1268aae8847a022cc58f51fa565df1d161304c033dfb6b0ae23d2ed716"
+    },
+    {
+      "path": "hilbert17-transfer/UniformOneVariable.lean",
+      "sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a"
+    },
+    {
+      "path": "hilbert17-transfer/UniformRootCount.lean",
+      "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+    },
+    {
+      "path": "hilbert17-transfer/WholeLineAlternatives.lean",
+      "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+      "sha256": "aa26ce58d015e28ce4c20bd4303b2d08c973090b219b9f5e743a5609a86ea6c6"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Algebra/Polynomial/OddDegreeFactor.lean",
+      "sha256": "27e1cf862cdd689aa4c98e6c062276b2924e490127f2283e29138259ebdf306c"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "sha256": "2fd646a0f591441d3a7d9a76b79febf9e854482432fe62eaeac759ecad1f7a2e"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "sha256": "e4f166d4a11835d04c8a8d7e5b72845818457db14173fa3c3856edaf3986919a"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "sha256": "868b9c1497cbb2dcbf83aa3a4ebf627ca42517738b0166bd2836cebef8f2a7ed"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/IsRealClosed/Real.lean",
+      "sha256": "1854d990172fdd1df4bdeb00beeb43cbeb8353712d9307116dbe55e7719c079b"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/RealClosure/Basic.lean",
+      "sha256": "b55b46d4952de6c2f7840f0ce25107a344e3dd46b8893e4615844b87d810ec8d"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+      "sha256": "f3f03065e583cf0da3e65038080b8cfa80c700aaf2d326c94e718364fc8298c2"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+      "sha256": "ccf16da706185cc6a287d6fffe98053a283eb0c7e8aee14edd36889a857f362d"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+      "sha256": "7eedee101dee79d42e805533759914add57b14ad208d6c20e12f404b7daab862"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/FieldTheory/RealClosure/PolynomialCone.lean",
+      "sha256": "5646cb8eab33556e7818d06b2f14b6eca1148d002b8dcc36f7c67431aec748a5"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/Projection/Delineability.lean",
+      "sha256": "93e96646e5f2bef2143731254abd9ba10b89689b1439cf604879295732dba355"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/Semialgebraic/RootCount.lean",
+      "sha256": "d66312c57a3e78d74d6e6b96bdab5a3b6bf8e5d85070d8c3752bbf67e59567c9"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/Semialgebraic/SharedRoots.lean",
+      "sha256": "edc2b3897907976873896d9960477891edcb34912a029224b3576a5ca7da0ce6"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "sha256": "95d6a8eb06871b2e81c25d8bbb2a5dc225b095c2c8071179d1f75a8513ddfccd"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "sha256": "73ca6850943d6e9c6052960220dd02ebdb7f8a43012675327a8916fe63d14c27"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/Geometry/RealAlgebraic/Stack/RootCount.lean",
+      "sha256": "17da863363b99554c02b3a170e7d16e5e51da02801defa9731441ac3d637ccb6"
+    },
+    {
+      "path": "hilbert17-transfer/sources/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "sha256": "85aa8a38d83f97ea1cd0d351ef544c676731b98741e90ba167fa082a829e769e"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+      "sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/Algebra/Polynomial/OddDegreeFactor.lean",
+      "sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/Basic.lean",
+      "sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+      "sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+      "sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+      "sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2"
+    },
+    {
+      "path": "hilbert17-realclosure/TauCeti/FieldTheory/RealClosure/PolynomialCone.lean",
+      "sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean",
+      "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+      "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/OfFn.lean",
+      "sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean",
+      "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+      "sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean",
+      "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean",
+      "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+      "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean",
+      "sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean",
+      "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+      "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+      "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/Finset/Jumps.lean",
+      "sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+      "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/List/Range.lean",
+      "sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/List/SignVariations.lean",
+      "sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+      "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/Nat/Choose/Basic.lean",
+      "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+      "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Data/SignType/Parity.lean",
+      "sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean",
+      "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+      "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+      "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Reductum.lean",
+      "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+      "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+    },
+    {
+      "path": "hilbert17-transfer-checks/BoundaryAcceptance.lean",
+      "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+    },
+    {
+      "path": "hilbert17-transfer-checks/FinalTargetContract.lean",
+      "sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+    }
+  ],
+  "keyword_lines": [
+    {
+      "path": "hilbert17-target-20261013/BKRExports.lean",
+      "line": 3,
+      "text": "/- Signature and axiom-audit harness for the seven compiled BKR foundation modules."
+    },
+    {
+      "path": "hilbert17-target-20261013/BKRExports.lean",
+      "line": 4,
+      "text": "This file changes no theorem and adds no axiom. Run only through the root\u2019s serialized audit."
+    },
+    {
+      "path": "hilbert17-target-20261013/CertificateNonnegative.lean",
+      "line": 11,
+      "text": "Source-only draft. The root coordinator owns compilation and axiom checks."
+    },
+    {
+      "path": "hilbert17-transfer/CoefficientOrder.lean",
+      "line": 7,
+      "text": "Not yet elaborated or kernel-checked. No transfer axiom is introduced here."
+    },
+    {
+      "path": "hilbert17-transfer/GeneralQueryProjection.lean",
+      "line": 13,
+      "text": "Archimedean hypothesis, or transfer axiom is used."
+    },
+    {
+      "path": "hilbert17-transfer/RealClosureTransfer.lean",
+      "line": 10,
+      "text": "that input as an axiom or add it as a hypothesis to the final target. The full"
+    },
+    {
+      "path": "hilbert17-transfer/RealClosureTransfer.lean",
+      "line": 37,
+      "text": "closure are source drafts until the complete compiler/axiom audit is recorded. -/"
+    },
+    {
+      "path": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "line": 20,
+      "text": "instance compatibility condition; no new field or square-root axiom is added."
+    },
+    {
+      "path": "hilbert17-transfer-checks/BoundaryAcceptance.lean",
+      "line": 8,
+      "text": "Source-only acceptance module; the root owns compilation and axiom auditing."
+    },
+    {
+      "path": "hilbert17-transfer-checks/FinalTargetContract.lean",
+      "line": 11,
+      "text": "compilation, selected replay, and the complete recursive axiom audit."
+    }
+  ]
+}

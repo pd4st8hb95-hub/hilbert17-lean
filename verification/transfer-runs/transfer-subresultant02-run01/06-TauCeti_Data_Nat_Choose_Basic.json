@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Data.Nat.Choose.Basic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Nat/Choose/Basic.lean",
+    "bytes": 6656,
+    "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+  },
+  "start_utc": "2026-10-13T13:40:06.581173+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:40:06.581155+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8340164,
+    "used_percent": 18.285823123834323
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Nat/Choose/Basic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/06-TauCeti_Data_Nat_Choose_Basic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/06-TauCeti_Data_Nat_Choose_Basic.stderr.log",
+  "pid": 20,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:40:08.584845+00:00",
+  "peak_physical_used_percent": 20.376528387573888,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:08.584999+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8353104,
+    "used_percent": 18.15904127053053
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.olean",
+      "bytes": 337288,
+      "sha256": "26ead438b4eb39f0fdc68fa2f9fc5a28cd55d6bc1a3cc9afa64c881f4a290506"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.ilean",
+      "bytes": 11605,
+      "sha256": "6d76bdbd1937ced1b7484923fcb9647ba3609ad39c55a50baaba5c85c77dc7b4"
+    }
+  ]
+}

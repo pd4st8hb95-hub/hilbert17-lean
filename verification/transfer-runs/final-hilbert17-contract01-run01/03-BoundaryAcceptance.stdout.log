@@ -1,0 +1,21 @@
+Hilbert17Acceptance.candidate_zero_rational : ∀ (n : ℕ),
+  IsSumSq ((algebraMap (MvPolynomial (Fin n) ℝ) (FractionRing (MvPolynomial (Fin n) ℝ))) 0)
+Hilbert17Acceptance.candidate_zero_explicit : ∀ (n : ℕ), ∃ m q p, q ≠ 0 ∧ q ^ 2 * 0 = ∑ i, p i ^ 2
+Hilbert17Acceptance.candidate_fin0_rational : ∀ (f : MvPolynomial (Fin 0) ℝ),
+  0 ≤ MvPolynomial.coeff 0 f → IsSumSq ((algebraMap (MvPolynomial (Fin 0) ℝ) (FractionRing (MvPolynomial (Fin 0) ℝ))) f)
+Hilbert17Acceptance.candidate_fin0_explicit : ∀ (f : MvPolynomial (Fin 0) ℝ),
+  0 ≤ MvPolynomial.coeff 0 f → ∃ m q p, q ≠ 0 ∧ q ^ 2 * f = ∑ i, p i ^ 2
+@Hilbert17Acceptance.nonnegative_iff_rationalSOS : ∀ {n : ℕ} (f : MvPolynomial (Fin n) ℝ),
+  (∀ (x : Fin n → ℝ), 0 ≤ (MvPolynomial.eval x) f) ↔
+    IsSumSq ((algebraMap (MvPolynomial (Fin n) ℝ) (FractionRing (MvPolynomial (Fin n) ℝ))) f)
+@Hilbert17Acceptance.nonnegative_iff_clearedSOS : ∀ {n : ℕ} (f : MvPolynomial (Fin n) ℝ),
+  (∀ (x : Fin n → ℝ), 0 ≤ (MvPolynomial.eval x) f) ↔ ∃ q, q ≠ 0 ∧ IsSumSq (q ^ 2 * f)
+@Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS : ∀ {n : ℕ} (f : MvPolynomial (Fin n) ℝ),
+  (∀ (x : Fin n → ℝ), 0 ≤ (MvPolynomial.eval x) f) ↔ ∃ m q p, q ≠ 0 ∧ q ^ 2 * f = ∑ i, p i ^ 2
+'Hilbert17Acceptance.candidate_zero_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.candidate_zero_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.candidate_fin0_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.candidate_fin0_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.nonnegative_iff_rationalSOS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.nonnegative_iff_clearedSOS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,40 @@
+{
+  "label": "Mathlib.Analysis.Polynomial.Order:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+Mathlib.Analysis.Polynomial.Order:deps"
+  ],
+  "start_utc": "2026-10-13T14:40:03.575825+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:40:03.575812+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8280000,
+    "used_percent": 18.87529015800507
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/279-Mathlib_Analysis_Polynomial_Order_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/279-Mathlib_Analysis_Polynomial_Order_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 3774,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:40:04.577889+00:00",
+  "seconds": 1.002,
+  "peak_physical_used_percent": 19.9922637595542,
+  "memory_after": {
+    "utc": "2026-10-13T14:40:04.578044+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8255648,
+    "used_percent": 19.113883024438916
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

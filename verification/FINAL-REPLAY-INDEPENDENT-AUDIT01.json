@@ -1,0 +1,986 @@
+{
+  "status": "PASS_ALL_97_SELECTED_LOCAL_REPLAYS",
+  "scope": "Exactly 90 final proof-closure modules, two additional sanity/necessity modules, two exact acceptance modules, and three import entry modules. Same pinned Lean kernel; imported official dependencies are not fresh-replayed. No external independent checker claim.",
+  "plan": {
+    "path": "hilbert17-20261013/final-all-local-checker-plan01.json",
+    "sha256": "74416436156dae8d7dfc36dffecc926f7c0a263860d9c5dd235cf2af418a76ac"
+  },
+  "summary": {
+    "path": "hilbert17-20261013/verification/final-all-local-checker01-run01/summary.json",
+    "sha256": "2aa36ecc2517d0b8726cff58b39d0b5ccacb1d98f12a421b5ac52a25af8dfcd0"
+  },
+  "matches_all_97_delivery_Lake_roots": true,
+  "all_source_and_artifact_pins_match": true,
+  "records": [
+    {
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "source_sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be",
+      "artifact_sha256": {
+        "QuadraticDiscriminant.olean": "a82246a8a77db90b73b2d7dbde37171a3a12399c958ecef62b87d3240408b067",
+        "QuadraticDiscriminant.ilean": "e940e2c528310aa1439767edc4bb1fabd6a40f8bc6ed87f70a2480bd51003e59"
+      },
+      "stdout_sha256": "3e4a1361f00d18406f7d7c831f456b470195a552f590990ab59c10dbd6e54748",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "source_sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957",
+      "artifact_sha256": {
+        "QuadraticExtension.olean": "f4cc39a08c4e881c0d3f0bbdaba316b2236b8cc3998e0c73e9baf3f598da3d2e",
+        "QuadraticExtension.ilean": "f7d59dc5c1bbc5d3667934297e4c58b54e5b8cc9b88da14c20f09ff17ba3cd10"
+      },
+      "stdout_sha256": "f7de846257462564cc468eac27b7b45962781ed59a08a585dbf58d9aa88f324f",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "source_sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f",
+      "artifact_sha256": {
+        "FiniteExtension.olean": "cbdc566cc41f8db71d1de2b0cf928e79ba314483426830b0bf7d19c137468709",
+        "FiniteExtension.ilean": "744f87c94f9f94d6da7f628e88e646781e66db71987f375ffbe5ac49fa73c097"
+      },
+      "stdout_sha256": "cb0d1f58ad29737399340bbc3b8e63b8855f20c4f40c62e184bbfaf407304d04",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "source_sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8",
+      "artifact_sha256": {
+        "Galois.olean": "9596cc74ae94d8887831434aba6815152c506709814de5e8690c3bd5a997255f",
+        "Galois.ilean": "10843e2d74858b08d141a2970c370c5a261714472dc05b68f3a3f855c5c9871b"
+      },
+      "stdout_sha256": "6c9f1b0f76cba955adff65aaf889bee6e1f22c1313ed199324c4d2e30e6c4484",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "source_sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375",
+      "artifact_sha256": {
+        "Square.olean": "db2eb624bd9fe12957bd23d10014fd3defa4712247d55c7faa9e1d3a925c72cf",
+        "Square.ilean": "8996877e6a50eea59d0cbf0a3e63d4e588eae75602a8f0819a76fb4a14709fe0"
+      },
+      "stdout_sha256": "7778339c3637497ca650803b9f762803886c5d31c83cda1fe46ecbd3eeffe873",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "source_sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14",
+      "artifact_sha256": {
+        "Square.olean": "f8823d5472ea8a7bd62300bd1cf996a97e6986f0c16d255395cfb0bf253ed33f",
+        "Square.ilean": "8e0a5c11705091dbb608aa817208a2bb297dc46376cd531d7f655d457b39cf20"
+      },
+      "stdout_sha256": "9d583bbad5374394e7c717142d389283399f511aa94794a7790bbb6c08146eb5",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "source_sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224",
+      "artifact_sha256": {
+        "Semireal.olean": "c13195ee3bec1f62e94e402bacceae946a4f872ff7968b38084262fbb7af216d",
+        "Semireal.ilean": "76e99c3e95ad8ef3b1526798b8d9c47f895386b88dbb3d744bdab54ce02248ea"
+      },
+      "stdout_sha256": "87e5e46eead059ad41ba3f8fad97c3d8ac62618301b11cdfb49a82d0c9fa2b89",
+      "status": "PASS"
+    },
+    {
+      "module": "OrderingSeparation",
+      "source_sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2",
+      "artifact_sha256": {
+        "OrderingSeparation.olean": "038859d694c8d94a656943a1e5edc36394b825219abad9a432e0d3afa31485d4",
+        "OrderingSeparation.ilean": "077959e2542b0a560af017aca64e0baf2f778dc407374a6444d786f47a114182"
+      },
+      "stdout_sha256": "246a4d4a3f0d786fe234a324c7abf0d903cdff4cad03568e55f678eb1e595a24",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "source_sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021",
+      "artifact_sha256": {
+        "Extension.olean": "95e49e26e70aa1c6f95db3d4fa44f82ddae95ca9b50089f46594dae0c1d0fe0d",
+        "Extension.ilean": "b2dd8e31314f0f9b949bc10c4822955a24f754c32bd1ab41d0001f5e914292f5"
+      },
+      "stdout_sha256": "8c73d51246d65682590326dc9e6ec99f528dc9d2f156ed1444137ba2a5754073",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "source_sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35",
+      "artifact_sha256": {
+        "Semireal.olean": "cf02b3c013d47edd54f07430933a8bd6c08ac3f4ef0bde78135f21519a00003e",
+        "Semireal.ilean": "009abdfb1b073e61d7791fb4b9657ef54a0b5dbb6a61b0165810718c415375cb"
+      },
+      "stdout_sha256": "976d5bb34d83615f865a7e768fdb6e62f2ec11426c6218b4349569a635e2fb56",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+      "source_sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34",
+      "artifact_sha256": {
+        "OrderExtension.olean": "0111f2307472459b24a6553513152b0a29f6494b9da66ee886954872d7367207",
+        "OrderExtension.ilean": "28355c749e655619ffa6ff8b55e60448c8a2a16d924094beb8b1dd523ae20145"
+      },
+      "stdout_sha256": "a590121bfbd1c745bed0e1ee4be2106bf44365f304753c85538183de7c7a89e0",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "source_sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee",
+      "artifact_sha256": {
+        "Complexification.olean": "fed8f9ea792066ec822778d2e01e12dc244d15fc02bc11a7279811a538afe28f",
+        "Complexification.ilean": "93a2a59ddb1b07982aba5c587d562dc157c9a39fb4003ed5c396ba3ab714c953"
+      },
+      "stdout_sha256": "b9f56f13cb18461fdb06d50dcf62c86e98c105a09c72673f9dfa9277a8a81ec0",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "source_sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94",
+      "artifact_sha256": {
+        "AlgebraicClosed.olean": "a00082bef4e564954f1578718dc8d721378b28ca1c12b8bcf63412c0ae0221a3",
+        "AlgebraicClosed.ilean": "5b3ded9dee677283c464c23235c709c3ab15949d825cfaa9a53c53cc78808b2d"
+      },
+      "stdout_sha256": "9e88f913ddf9341482e3db203e1615edc52e8102628311807ebab18c8f9b2cd1",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "source_sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f",
+      "artifact_sha256": {
+        "LinearFactor.olean": "6464071ec32f8e1e3ed1dfc3b5535f8a0a47caba1f06eb63b7ff1db0ed59b9e1",
+        "LinearFactor.ilean": "7534f2c6613774ffccb7845559829946ce9fa019bb50e447591df8bd0d994563"
+      },
+      "stdout_sha256": "11766c4c8c3e364885969127f868cfa9358c10ffbfdeae677c9bb3dbd2078a45",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "source_sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403",
+      "artifact_sha256": {
+        "QuadraticDiscriminant.olean": "b7863108d7fd8e8c7734303b173fb5e15d4f0584fa5ea5728d3b36034949e91c",
+        "QuadraticDiscriminant.ilean": "75f14571f4fbc41eb971e9faa33ece3f65cd18fa277bf889ec1c8fcf03c54d8f"
+      },
+      "stdout_sha256": "3e133a77a2dff6a67a3ddca3fa8a45c91c30997037337fd1c0444e211947ed3d",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "source_sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9",
+      "artifact_sha256": {
+        "QuadraticDiscriminant.olean": "a7c87058f39ea3b1cc18165ec0d27a4908c90a4ba11fa6be85373b15a5cd0da5",
+        "QuadraticDiscriminant.ilean": "01407874c7f4e93d9c5f12ec43f204bc0f059c1dd14e72cad545719af23fc351"
+      },
+      "stdout_sha256": "0e427d9b3947895d9942ce1a33237e3478fd450898526724edaaded5dfdbaf08",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "source_sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2",
+      "artifact_sha256": {
+        "Quadratic.olean": "a9b6c25b6e86d19e577eb75cf6e24974dc47264e527c892bb5cd9ce7469f64d8",
+        "Quadratic.ilean": "10b01f8d815564c2e14f659ab8fa9c88d76003e79f3944bc6392a87bdb313568"
+      },
+      "stdout_sha256": "e7329d2cc585ec3ed35b9f0a106058e86236941547966c06b027103042d5e92e",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "source_sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63",
+      "artifact_sha256": {
+        "IVT.olean": "727cf30bb7e9a3a47dfeaf1008238065192288a15566430b2567c89f140ddb3d",
+        "IVT.ilean": "47b21fb0e58521e298ff893353c4e3407e2da01d690aca3746e7a1f8d3a243a0"
+      },
+      "stdout_sha256": "c0af29b503d239d98f91d711ccd1735dbaabf01bf23f3927eb03e7be34dfec1f",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+      "source_sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703",
+      "artifact_sha256": {
+        "Sign.olean": "caf8798a61171c990bf5a4a27a5f67ead429298cb3c92a664a4afba384d97931",
+        "Sign.ilean": "87fd157de721b49f3f77006d9c7b4004f0a10f59bf47dee8367cf717b43462dc"
+      },
+      "stdout_sha256": "ac5878da9c8b6feaaa1bab8b8b2856a34994fd807099c1f0d96a4a4fffb0f814",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Rolle",
+      "source_sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb",
+      "artifact_sha256": {
+        "Rolle.olean": "647b1b77952c88d1dbe24ded7c9c751c22a489d94cf037800b65422cfad72665",
+        "Rolle.ilean": "9fdc2e3efd4659c9d9f47cfe1ec04d1254a559b9de1296a5dccc8ab5d186dee7"
+      },
+      "stdout_sha256": "4fdbb88fc3523ddcc8093fbd9802e3496bb2de69cd2eebb1c028f7458c1fa1ec",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Thom",
+      "source_sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e",
+      "artifact_sha256": {
+        "Thom.olean": "90f60625d209ba08331b44273ed07fcbfc565ff6276b0d0ef4ce0ec277cf65b1",
+        "Thom.ilean": "c02459d5273223a2a90095e956b671655b7a8eec67768d76cb1200c3fea08284"
+      },
+      "stdout_sha256": "ff05d9d6619329034e1fe9e5e2296519c9c055e35c8900b0271104fc02b9d76f",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "source_sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109",
+      "artifact_sha256": {
+        "OneSided.olean": "e771eaf07e1b882276006bbc882bd82c02302936c9e83c61d0bd5eeb93796921",
+        "OneSided.ilean": "d27b8e4d70c7aedbcd8b0e611ec9f49c3508792da45867cc0537b2dae4a101a9"
+      },
+      "stdout_sha256": "13c47401ced93235e59504d8bb02a47e4feddb531d217124a285cffa194c4a95",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.Finset.Jumps",
+      "source_sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608",
+      "artifact_sha256": {
+        "Jumps.olean": "f061bbd0d2bf514799a9a104705476717f6b7a813d53d0ef307c1f561f5c473e",
+        "Jumps.ilean": "f512931b7fa4a42ed167e358f948ad6bc313b9f4ff7de0498628399faa5216e4"
+      },
+      "stdout_sha256": "51b9cd4c24b50b573a408a6ef331a09fbd53aca1a6a2d3d9e4da8822c2298129",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "source_sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6",
+      "artifact_sha256": {
+        "Sign.olean": "0079cf290cc2ab5f3957007d6582545173dc798f848481b46a6e5d13bf2f3e43",
+        "Sign.ilean": "1b9a6f047aaebee9c0eeb5237cf2d9def742e39161e26403a3470194ae7f1485"
+      },
+      "stdout_sha256": "03488beeed7e3a1ed4ec5694917049345c6b27bad6f8c9ce76a55ce7bd3e7b07",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "source_sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731",
+      "artifact_sha256": {
+        "Fiber.olean": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e",
+        "Fiber.ilean": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+      },
+      "stdout_sha256": "f446679ba4a4cf297b6913a9c52f629447fd30c23776fd20c551027d387d6b8d",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "source_sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc",
+      "artifact_sha256": {
+        "Defs.olean": "803b0a63d22a0154e439b2f5b4d76ab7c719f518fcc8fe7d024030fd9c266ced",
+        "Defs.ilean": "16e64393075e02e836d3803e1d7921580de95678cc0e03682ddf8e5935ffca28"
+      },
+      "stdout_sha256": "5710d5c54da535d31cc068ad2fec5e5b7fb1b8cb79315f1d7bcebc53fda203f0",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "source_sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b",
+      "artifact_sha256": {
+        "Basic.olean": "bfb06664e5b528b52726cc5537ea32a16ce0ef5ed7b3c07c71918deb0656c50e",
+        "Basic.ilean": "b67f771fec4390e995cb8067dc9909fa3d8a660e6f1e9d6caed29d4ca16234df"
+      },
+      "stdout_sha256": "988ed42329d1751b4f09fbdcf99d72d9fef066c97516795c6dd77133c51b3b70",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+      "source_sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83",
+      "artifact_sha256": {
+        "Filter.olean": "122dbf85655e2b6fbe6c7d86e6463383e01eee494cacc99a501880ce3193d034",
+        "Filter.ilean": "899d90462cfdcc41243c13a68d4fc8b602be153158b1c20e6c8a1a00ddceeb83"
+      },
+      "stdout_sha256": "da23d4a0c8c86914f57f3fe370c89617d7fffa57dae64e6d96e829ebf599faf8",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "source_sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc",
+      "artifact_sha256": {
+        "ListSignVariations.olean": "25f0aee99543491abc43fac429dfdde8a3c6e7c49b6402a26477f9b6dc588bc8",
+        "ListSignVariations.ilean": "e15ad0e0424c807827a77ae905b89fbf77c8b41cf2a52c2f2b5c5525daf390e1"
+      },
+      "stdout_sha256": "fb1fe39239018e4dcbf668833c9d7d146b11c46abec3a10e4193e97d030f5954",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.List.SignVariations",
+      "source_sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66",
+      "artifact_sha256": {
+        "SignVariations.olean": "166e1f3d73e0f02928004860643e70121e0ce7720548c1f64bfba3e71fcf09b5",
+        "SignVariations.ilean": "1630b911d635c24d21a9353c32501960fa510c903cb2c21b9dfb95e02c98c5d8"
+      },
+      "stdout_sha256": "aaea499a2901151f88bae711e9832d9e9454dc16fa113ccfe0e4b7159bce78b2",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+      "source_sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c",
+      "artifact_sha256": {
+        "Signs.olean": "9a844dfd9c379600f14d5b7441dada8b7d95fbc332940dc7163c86cc8fa6cbbc",
+        "Signs.ilean": "980054ef33eac7d4526072615bc830487d4d981e51b88c42f6f46d9132cdb3c9"
+      },
+      "stdout_sha256": "e704c63a61afeef9f3ea26c42ff5bc08061044092bff24759213ea4a30f3b46b",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+      "source_sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e",
+      "artifact_sha256": {
+        "Local.olean": "aab2387ae49259a413c8477fbce6770ff995a272970fd98ae34ba8ccc153ae9a",
+        "Local.ilean": "06e4c63e0e9ddd9da8813c62e5bac3c1f0d5c9366e68944897f8df99b375f3f8"
+      },
+      "stdout_sha256": "cbe3cd3f2d29b3270081d236c1eb66cb3055eb8612808f124b56a7b4ea037956",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "source_sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469",
+      "artifact_sha256": {
+        "FieldDivisionExtra.olean": "95ddc0251628a8fdfc2b81d4bc3959d3c2ed984c117114c39eb435865162a849",
+        "FieldDivisionExtra.ilean": "1e4391f18bcb71d6b75cbb6ecbd9d1d33ae68bd9dcf8a0d99b9abea635f98217"
+      },
+      "stdout_sha256": "4e85950db10afc61d36c47c58bf0642384cd59e92c370fd81c39009ae93cd4b4",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "source_sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012",
+      "artifact_sha256": {
+        "SturmSequence.olean": "1991283315074425162e695fdcae1483cc9819d14bbaa24b807adfb9fa5ff34d",
+        "SturmSequence.ilean": "271def0cff9436f8a44b2dc5fada47d1aa14fe67fff0c61e79a38181497d985b"
+      },
+      "stdout_sha256": "c8973d76089e3cfc7d67e9e3c7573fed16d94fb18c309479bb0090247f2563b4",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+      "source_sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b",
+      "artifact_sha256": {
+        "Sequence.olean": "94d532bbd90e2d20f87786657423d33de0e088403c68d5378b60438a214e4431",
+        "Sequence.ilean": "61a8a55a9696ed7e7c0048aeb64f34014d489c8ce93b7c4b13bf44e800be8b4a"
+      },
+      "stdout_sha256": "f6c95b3438b3d4ff22e6a2670c7a15af8a020cfca110aa88821918adfa5887ba",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+      "source_sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3",
+      "artifact_sha256": {
+        "SignedRemainders.olean": "25a982564c26fe2150ea4236a7488f6eeff9e3e4f0ce758ea69a5a0b7b17861a",
+        "SignedRemainders.ilean": "81ad823f9fa1d393efe80e4188baf7eadfda27a951564e5e49dbf4457663a837"
+      },
+      "stdout_sha256": "b9b96f22a28d76f93178046028fd38d00496a16caa00bb9ccbb04eb2d617a56e",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+      "source_sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104",
+      "artifact_sha256": {
+        "Sum.olean": "020eb3818355a3275cf73674e346b4afbdb45e81999bfb9028f14a700c81d449",
+        "Sum.ilean": "a95e535f7d05cf6bf21067c4f034ca843659dabab8b3fa5b373c3a72977aec0f"
+      },
+      "stdout_sha256": "c02bd858054b94ec4fbea97a7a0053befc5b6eb7a7b3c7aacb181bc81a20f74e",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+      "source_sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996",
+      "artifact_sha256": {
+        "Tarski.olean": "8b3d01abc1e1d270588a9204f3d98bb45e8cf962fa0e3474ba28b9dd9f32a07a",
+        "Tarski.ilean": "21e8bb6c450603c760c69d24ec39a3e77a4586c612d374004d72a54653d9e5c3"
+      },
+      "stdout_sha256": "3c17dbba4f4cc9e31e21419becd78a299bb94bc6aae745fc9a8eb3559c1f15a5",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+      "source_sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20",
+      "artifact_sha256": {
+        "OneSided.olean": "03b3b26bb1e52287c79f162b4dce1dd2b63e82b19769a09a2875746d23b04575",
+        "OneSided.ilean": "1d6430353ee45bb451c522ba8e416d9086d582b85e85eddddea49557969ba97a"
+      },
+      "stdout_sha256": "0d9603cccf47eac40d3c75b642940d1a58451d13393ff068068c999c9f46ff0a",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+      "source_sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb",
+      "artifact_sha256": {
+        "Infinity.olean": "9cc60da7d4d8e6c3df84d333e87c4fe4041ab9cc8d998cf5f877afa5cb9ecd2b",
+        "Infinity.ilean": "6e746dd996860f96b54ac996ad761c0ce33932f62e54161d06604ba5e6a45140"
+      },
+      "stdout_sha256": "0fecc385be971106ae35b3663bacd593f2c959f490747088c6e11758236877c8",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+      "source_sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1",
+      "artifact_sha256": {
+        "Infinity.olean": "0c76281fa3f848f5013a81d6ca04f538ab16f2fafc76003d022366f2f6619805",
+        "Infinity.ilean": "ae4066feca3ed406c39653c94581dbc3bc61cfb53aa16e3ee40338ce70448d0c"
+      },
+      "stdout_sha256": "7527c8a0d57cb29d019d576957979fcbac21c897148b607af9423c957eac2ad7",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+      "source_sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454",
+      "artifact_sha256": {
+        "Variation.olean": "72f150abac6fbd04f219ce16acfc9df6ecb91f418a626dec09a6e2dc9067118e",
+        "Variation.ilean": "c77244d84aad7df553ab1e6058049d6507f6a2374912a2df9c3a89b91e84d417"
+      },
+      "stdout_sha256": "0fc2a12d5af91b0c18e495ea5be444babba3b5b9c854420a79ae0770649dac30",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Parity",
+      "source_sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c",
+      "artifact_sha256": {
+        "Parity.olean": "ac7d5f25ea4ff9ec9e99a74b98d34995466b08068e18ceb34aa65515610aa830",
+        "Parity.ilean": "8992f7e46deed4c52d1a16ac71ccb6aeda23a5abc13577fdb0b47941f48d4f26"
+      },
+      "stdout_sha256": "f7ca1bfb60c9ef959500a26e94ef953d3e594ca7c902838b87dfc7b062046ae3",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "source_sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc",
+      "artifact_sha256": {
+        "Sequence.olean": "5eb91e5e46ff086a6dd32f294e25f6095d831c6cef9bbb5fa43d83cd808bf8f5",
+        "Sequence.ilean": "a2065cc5f8d5306a1e093fd560353a5ee0a591a32898ee8983c2e92b07b0ccb1"
+      },
+      "stdout_sha256": "23ca0499bd83a55251464e6f7ea321a705f6ee3cd51ddfd9b2d6d09ce251b189",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.List.PermanencesMinusVariations",
+      "source_sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c",
+      "artifact_sha256": {
+        "PermanencesMinusVariations.olean": "7ae4e570222df6785d79da44ec67148495b9ecb646b7cbfb7bae1bc4e96dc7ca",
+        "PermanencesMinusVariations.ilean": "7ea44b85ab7c5faa279ce42f44ecae5fe3e890ec3fe417fd97d8408579266bdc"
+      },
+      "stdout_sha256": "458f8666df7c676ec2d6726be81e0d9b1418876113efcde145235c1af30d879f",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "source_sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821",
+      "artifact_sha256": {
+        "Basic.olean": "e731214b6f87964653aaa8fd51a7c9bf29f5c4f2dae711c743c8b5bee868dd43",
+        "Basic.ilean": "97883789614574ab5853efe6ae26df2c15a7056231095bf8a0ee5640bdddeed8"
+      },
+      "stdout_sha256": "151a98e5343d0e4797973cfde8f9d52a5c50b1a9369c446c0451c835bd3cc401",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "source_sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4",
+      "artifact_sha256": {
+        "Inversion.olean": "2c9abeefd820cb5c25d6b5a7ed8fa09be5591717e37ee37bb86bebdf47467e71",
+        "Inversion.ilean": "52d48f41e510c6ff0647d627c67ee0630003cbd275a68e5a0d63eebc7d67254f"
+      },
+      "stdout_sha256": "99c2259fc4c176dcf35a6a8c5e62b7c230419ed1c61627f66ddc772323eee72c",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "source_sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2",
+      "artifact_sha256": {
+        "Basic.olean": "f6a609c063365c51e1c3684de7bbda04270be9dd7ecd73d81870e63e6e25e7f4",
+        "Basic.ilean": "f08b15b9d77721b73def83811dd1c5945058d42c25bcd712c50256a6dcea1f19"
+      },
+      "stdout_sha256": "5b3523151c5e0cffbffa063e26a97ff4e49ecc7b42a079df2cd76ce32628eb67",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "source_sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b",
+      "artifact_sha256": {
+        "Polynomial.olean": "7904fa692bb770d538d3cc5f655567cc2918936adbb8e81b617e971d164ac32c",
+        "Polynomial.ilean": "e9ef4922db3fddaf21ece48983f0941318439cd173d89e26a2fe62d0567cb6ca"
+      },
+      "stdout_sha256": "3442394148f7a0c2995cf9ec337ab7e73e2d24fb6673f363c0944b32d8fdaf04",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "source_sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d",
+      "artifact_sha256": {
+        "Reductum.olean": "9185fde9660489579b85942555668c537db1221c4c507cb0b87fb059e49ddb11",
+        "Reductum.ilean": "6789c8ebd2cb79fd269699638bdcef4bf9f5dbbc72ae87e0532567cf70c95bca"
+      },
+      "stdout_sha256": "5284d2003cf96213fa54c2b03790d445ffdedff0bdcb854aada28b2200ec62c3",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "source_sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e",
+      "artifact_sha256": {
+        "Congruence.olean": "40fb3a7aac30b2ccb6068bd6405aebbdf42569c9deb361b2bb47673666f0a347",
+        "Congruence.ilean": "427752df273c02f4d02fc6038d4f4bf6ada9b0a62155ed319aa101695db2a99b"
+      },
+      "stdout_sha256": "1b52e8c97a46e5ac3cfbe9067f28b56669c1931715d3f0924d0e3ed30586ca10",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "source_sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36",
+      "artifact_sha256": {
+        "CornerMinor.olean": "723abaaac211da0f5be6caf0abf03945541c9243170fc288b779ff4f2d2cbeb5",
+        "CornerMinor.ilean": "640988fbe61916e20c1235d017373388e0673db2a1bc1a94593547e4e53a423e"
+      },
+      "stdout_sha256": "394b64e08dbec9b91bcfe1c2af9781cbcb1dbaada2f528067f10f562ba124660",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "source_sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0",
+      "artifact_sha256": {
+        "Basic.olean": "b53ee2a68d4f9e80adbc826785c532bca0063ace8a1b247c8d9bedf1db83cbb0",
+        "Basic.ilean": "f121ee30627c44476bd93bafdf7de4acdeda753d47f9b4a860971b62c32d7b61"
+      },
+      "stdout_sha256": "19e6d3f9227d40bb200dfb70f904ae5dd83eb36c21e27bff44b0325c82a6e4e3",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "source_sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7",
+      "artifact_sha256": {
+        "Basic.olean": "26ead438b4eb39f0fdc68fa2f9fc5a28cd55d6bc1a3cc9afa64c881f4a290506",
+        "Basic.ilean": "6d76bdbd1937ced1b7484923fcb9647ba3609ad39c55a50baaba5c85c77dc7b4"
+      },
+      "stdout_sha256": "be8168c0c6b988aead370e5f022df40e32139bc6495eb276ef517ce4a25e1319",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "source_sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5",
+      "artifact_sha256": {
+        "Signed.olean": "1ecf2ab646e084550ca9e814eee7da20367355b06bec54e33dfaf3dbce193b98",
+        "Signed.ilean": "4652da976fcd9c622d9886afb9a5832a85b570242adf7ad9c8ec6ea389095cbe"
+      },
+      "stdout_sha256": "26c75b1839da547f3b382e2ddda10b9df74f527b14f52e12ed6adbe480816b13",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "source_sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5",
+      "artifact_sha256": {
+        "OfFn.olean": "5edd774c94bf912ad441a5198015523df20b1e336496e3b262723ff1b969f0e7",
+        "OfFn.ilean": "1e22ee39a403ae7dd057db9c9259e306b115d4253f2cb99126c62a501dd0344a"
+      },
+      "stdout_sha256": "721a89126277ea73c5b05400810bfda83cb008b2b7424eca280c92ddb2496d76",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "source_sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86",
+      "artifact_sha256": {
+        "Euclidean.olean": "f2ecc6257319b0ea658ce7c7627e8baff9663c6db475fb7f0ec265a6d97681ea",
+        "Euclidean.ilean": "4a08cd064e5ca1f2259019344a18c3380818389ff807cde5b741ec88088e2902"
+      },
+      "stdout_sha256": "bedbc30c2f54d313b933ba0f5b3b1d032333361f501701ecff879e617a9dda6a",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.List.Range",
+      "source_sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650",
+      "artifact_sha256": {
+        "Range.olean": "224825f39d5a7e36ca95e1dd0b320ffb12c505b631afdc2a2f0bfff4fbf7c9ef",
+        "Range.ilean": "57707b05da7ca14dc1b5fe5a16681fb52076db2df2ff8d4efdd8dd7ea848578e"
+      },
+      "stdout_sha256": "cf03eff3b2a9722be7fb69719ec7e443a6949e8614c38ccb5032cd8242e2ef07",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "source_sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c",
+      "artifact_sha256": {
+        "CauchyIndex.olean": "136512bc98c0b8a4f21fd648b4129e271f9d1ee17ce5b3fc53e13549aeb8a286",
+        "CauchyIndex.ilean": "277661bea9d3cca1727579bc75e288383968b39e96c0ccad94a94f8766fead54"
+      },
+      "stdout_sha256": "af34a8268cc7b24528f4d4774017930ce9979c6131527db1368abee160cbe732",
+      "status": "PASS"
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "source_sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366",
+      "artifact_sha256": {
+        "CoefficientSignPattern.olean": "483976048811ffeef2a84fbbed3e45701774ac8946178cf60841e45b04ee0ed7",
+        "CoefficientSignPattern.ilean": "f36d3b90b22be0e157123d4f5388d37ed07dab3d4f9f09edf280567594ab6c60"
+      },
+      "stdout_sha256": "9364ba262fa772419d6680b624432c57469cb861ae2181e9a1f168e677e79d11",
+      "status": "PASS"
+    },
+    {
+      "module": "UniformRootCount",
+      "source_sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7",
+      "artifact_sha256": {
+        "UniformRootCount.olean": "054b95ebfb301eed32c52b11b376e37d4a00978ee32c69f48f8ff9cca3200ccd",
+        "UniformRootCount.ilean": "e088380c11c5239d6933d44962cc67b7fcbe7633c47eaa4c0424862b63ae20f1"
+      },
+      "stdout_sha256": "94e2f55953acca4ab21dfff6eea57e790bf5a5fa5abbcd2d1b47086e6631228e",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "source_sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c",
+      "artifact_sha256": {
+        "OccCount.olean": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc",
+        "OccCount.ilean": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+      },
+      "stdout_sha256": "f3dc8989c02e7fec6148135caf12b95355c00346729250c60bbcc41ed604d1ca",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "source_sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "artifact_sha256": {
+        "Lagrange.olean": "285be1e6ac67b0528d0afb41f37878a2005a0d92fad38c121ae8d1d559d8ac99",
+        "Lagrange.ilean": "2873bbd173b04b923064fe24d730b2606ee2efbb284c8a69360f84a806f13cbd"
+      },
+      "stdout_sha256": "1335cbf64aca2908d1659e2109e5e9353faed76a51a8f56bf9643faffcc3d085",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "source_sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "artifact_sha256": {
+        "Moments.olean": "9ea2280ad9ea57698c460faa181143ce9064d003867029520a889c9d284f7a39",
+        "Moments.ilean": "aac776c6da3629f7396fbb811345a6e1cd466fcb88d890d372cb9c43c60a3b89"
+      },
+      "stdout_sha256": "22250f1bcf0f85178b6a67ea3f1e300148d394998e171dea1bc4605cfa772439",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "source_sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4",
+      "artifact_sha256": {
+        "Polynomial.olean": "a4d1fa76bee6ee8c783fa0fe092a21521fb57188c7a448ef54d9133b5b6b86a9",
+        "Polynomial.ilean": "072541f2e1c963d70910cfd61eaee88c612b55de7df28a322ebd40607b66b384"
+      },
+      "stdout_sha256": "38e1e1a3b60d499fb43ae64df516b0fd220c2d8afab701c2b16750961f19c6e4",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "source_sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "artifact_sha256": {
+        "Roots.olean": "98ceaee8803eec98cc686a88fdf196b22494a3c373c6eede2d8068de97195c4f",
+        "Roots.ilean": "40f2fcd9e7cd7615d0c707bbec6587a700983736a0c291aa7cf93923fe7d3f70"
+      },
+      "stdout_sha256": "62b14071f34c7c71d806b9984345ce4334cd1c5b595bd41f60988ce9f7aa5017",
+      "status": "PASS"
+    },
+    {
+      "module": "MonicQueryProjection",
+      "source_sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c",
+      "artifact_sha256": {
+        "MonicQueryProjection.olean": "115faef2355e825347e7582798e3f943f6af802d27ed950c5d859877e8a70dce",
+        "MonicQueryProjection.ilean": "4c66829b4a029f8910e0703fb003929a2a7fccb203ecdca0f961359d9043dbeb"
+      },
+      "stdout_sha256": "379bff39c71561f8fe2a622c0801620f196231b3264790a8b0f0d8a8bb28d766",
+      "status": "PASS"
+    },
+    {
+      "module": "LocalizationSignDescent",
+      "source_sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7",
+      "artifact_sha256": {
+        "LocalizationSignDescent.olean": "cbdaf20603e8614652ece595ad9f3e1f4ceddabc0dcc178f8603c276d250bd33",
+        "LocalizationSignDescent.ilean": "c8d383c5eb3c8c09723df4757dd2f3a96fcbf3aadc3b3900b11aa80eb4fe799f"
+      },
+      "stdout_sha256": "f19b9555c13810205bcffcc6d173cb99a9f57c47a9c4dbfd41882a73eec8695a",
+      "status": "PASS"
+    },
+    {
+      "module": "DegreeNormalization",
+      "source_sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14",
+      "artifact_sha256": {
+        "DegreeNormalization.olean": "1e923a11979e6799509152c92e3992e6ec07e766e9b32e8cae65bfcc7fe689dd",
+        "DegreeNormalization.ilean": "8f6aea1ed7487314660058863bfc43297b59e12a2eef9f12581a71264659e221"
+      },
+      "stdout_sha256": "e6f3a6dee5073d587a6ef167f8c0365fa0608a74f5fe46abca8e4e695e00530c",
+      "status": "PASS"
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "source_sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f",
+      "artifact_sha256": {
+        "GeneralQueryProjection.olean": "054ecd398811e785119fc1e656dafadb0f953ecc638a440035fdfcbf749c4ea0",
+        "GeneralQueryProjection.ilean": "99680c11b4872a273b2438781ee11d76fe391de35b96a3bd6efa3e33e4703b92"
+      },
+      "stdout_sha256": "2766498503a03d4f087272f43f1ac456312f482fad256a3ed2056fe412a34627",
+      "status": "PASS"
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "source_sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6",
+      "artifact_sha256": {
+        "GeneralPatternProjection.olean": "9a610df550846934ed0e15fc1f0334f7447863d762310e64f7e0d94ff069e230",
+        "GeneralPatternProjection.ilean": "73c24cfbafb573e161addfe1eb69848a26f7b36b2052f46d0dd5eca3f247c377"
+      },
+      "stdout_sha256": "10b0dadcb89eabeec93caeda2dd004cc31a83ff29cd78219e46c7847c2b625b3",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "source_sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477",
+      "artifact_sha256": {
+        "AbstractRolle.olean": "0ac925a777159b7f7167acb2e7d568a677aa9d61ca5d6b4c76bf0afa185d216d",
+        "AbstractRolle.ilean": "8fa3f12e2a2a46dc992ab91139b55ac23702bb67221ad3d4efca2b0546b3a673"
+      },
+      "stdout_sha256": "a4980e2aea781a838d948a6dee55e2fd8f1b40931c8a59ccd821327b12c131f5",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "source_sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873",
+      "artifact_sha256": {
+        "Sampling.olean": "1be0f2befdaa60c83b16b86b087500fc7be95525487d23476330fd23bd33ada9",
+        "Sampling.ilean": "e2b9534398340ab15fb329c7bedc583f6923b216347b10f9aaa7047b285aa265"
+      },
+      "stdout_sha256": "4351ba0344cc1fe93737df0a5b58976f1cefc2d459d6649cd5af4d872c874209",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "source_sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4",
+      "artifact_sha256": {
+        "WholeLine.olean": "5d703b49d25b5ba9a75244500f81618faba05b7b7f1880c674e2cd59415756db",
+        "WholeLine.ilean": "fa877a484696b491d9deed6c4014f163594dceb652ba73bfe62ab420bee7d07d"
+      },
+      "stdout_sha256": "2dfb7dcf776414926ea5f3868c70d8c2a7b884ea608d6b86c73b76dcf1e7099e",
+      "status": "PASS"
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "source_sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9",
+      "artifact_sha256": {
+        "WholeLineAlternatives.olean": "1ef45cc3428ab7c6f655225540927859801f8e6d8752ce68417f6eda7f81c169",
+        "WholeLineAlternatives.ilean": "390fb81f4dad84c7754c0c298245f6253971d24dc3ac86926e34b18022a96f18"
+      },
+      "stdout_sha256": "27636b96993a88d5d6e9f7a99e6d0815d4d6ff94b4beda11315805fc9f512340",
+      "status": "PASS"
+    },
+    {
+      "module": "UniformOneVariable",
+      "source_sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a",
+      "artifact_sha256": {
+        "UniformOneVariable.olean": "5665f4b77b246038796c9b078c88ae9eeb217f24026df93fca186c3929afd4d1",
+        "UniformOneVariable.ilean": "fd2b5d231a4abe17e193873ea5fd630021a5748ea18524b38a7412d178ef4acd"
+      },
+      "stdout_sha256": "fddc5853be6f145405883b8d2d217256352d55e74307ed724e952c1cb5957fb7",
+      "status": "PASS"
+    },
+    {
+      "module": "FinSuccEvaluation",
+      "source_sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f",
+      "artifact_sha256": {
+        "FinSuccEvaluation.olean": "4f7c26f52b835e1cce7a555e8ed1d00b43de5900d24bed64dda35f21d5e6ed73",
+        "FinSuccEvaluation.ilean": "00a1a1aafbf91b5f2679c4ee08783190a249ce1dbfd7a0e79dc7ce4c2066e7d1"
+      },
+      "stdout_sha256": "9d933fff502e09ed24632fb2efd0a9d3a6b3ad3df26d55d094d0b8b5cf87a144",
+      "status": "PASS"
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "source_sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741",
+      "artifact_sha256": {
+        "FiniteVariableTransfer.olean": "f4a25541cc2ea37d76d9cf20d879db507c95baa53f1975d782a3fa40675af04e",
+        "FiniteVariableTransfer.ilean": "6109ff111267b457cb023589e8b6d0c362acc09843c63e9ecfe065b622262262"
+      },
+      "stdout_sha256": "cbce7f154109c3f40af22beacf8e00ca3ef7f4503e45f036cee050ed74d13a58",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+      "source_sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2",
+      "artifact_sha256": {
+        "OrderedIntermediateField.olean": "db4ac28856657a777f5d8a814ce8b61b3ea5d3a08271921ae178ef99d93a8228",
+        "OrderedIntermediateField.ilean": "e3dd446ef6348f5e0d90d2608ad58d74438f072710b31446e5f6977a90e84348"
+      },
+      "stdout_sha256": "cf92e5a6d6509324b5d6baca138d1736c14645f1ed6e14ed0ad414131028b2be",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+      "source_sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d",
+      "artifact_sha256": {
+        "PolynomialCone.olean": "cd961115b391f69ebf5b4cc6e86ed0c719cd84b39474a59883f8f3293a2a642a",
+        "PolynomialCone.ilean": "6d3d8c8152ef2568833865a07de9577a6b7705efeb97ecce762bf074bfae7884"
+      },
+      "stdout_sha256": "4a405ae4f9ed11f4f65d9072e07655499bcb0d9f46f6a51501aa0c4ab147e4db",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+      "source_sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134",
+      "artifact_sha256": {
+        "OddDegreeFactor.olean": "c768e4cc5d04ca37ada294bb82eaa32eb9d16f9c9af9995880d70fece2a39ab0",
+        "OddDegreeFactor.ilean": "fd8a259df5ecd5c64db9b0ea8b775f22985845a47dca7212eff9204ed60a32be"
+      },
+      "stdout_sha256": "b732f6f7793c6a9aec177f2fcfdae4f649680f60ccf0f95e83a212dd143e17ec",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+      "source_sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287",
+      "artifact_sha256": {
+        "OddExtension.olean": "71741f0fd63862af71ee783915f333c5fa444aa5bc31e446e31cb1f893ac28ff",
+        "OddExtension.ilean": "bd187bc983eccb359bd2c395551945d781cc90e59213e7e2033ef80c25059bd6"
+      },
+      "stdout_sha256": "ec6e8c722a838c9475267f951219756493ac87205e70f42de44c560c067b67ee",
+      "status": "PASS"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Basic",
+      "source_sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8",
+      "artifact_sha256": {
+        "Basic.olean": "b4d2ae77d94e980e232d3c53aa4d373effd4ea16c3beb9467a470f2f84bfb6ba",
+        "Basic.ilean": "d3a22521ba050c2eb2f87c0b8973c1b51f3de9297954a467c58ddad2b354269b"
+      },
+      "stdout_sha256": "f4501a9de27c3bd595621c1646ba7455c178f2fb9e9561e5e0828b3a0bbf365f",
+      "status": "PASS"
+    },
+    {
+      "module": "ClearDenominators",
+      "source_sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c",
+      "artifact_sha256": {
+        "ClearDenominators.olean": "a48abe7858a030047106a40f98c41d42dace1ee557c3b690068712c85555168b",
+        "ClearDenominators.ilean": "f37a45e81017121081e043bd5810dfdc221ac2a3d29fa6058dc824f7b91a8ad0"
+      },
+      "stdout_sha256": "234d1efd06b6b30be0e6fd67e2c44e98c5fb601c60faf10941736f1d825e4c55",
+      "status": "PASS"
+    },
+    {
+      "module": "FractionSemireal",
+      "source_sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521",
+      "artifact_sha256": {
+        "FractionSemireal.olean": "08bf924c57af72b9e497a3c3b302b617ee41aa6e2b697c875165d922c99e6e09",
+        "FractionSemireal.ilean": "df2b087fa4e646d6f92754e723ab8f8a0bda938644af9c71409fafad6b8bb400"
+      },
+      "stdout_sha256": "b9bf8dd216820815a8cde90a32358646cb89af0ac372e5afc8f48174de49ab74",
+      "status": "PASS"
+    },
+    {
+      "module": "CoefficientOrder",
+      "source_sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952",
+      "artifact_sha256": {
+        "CoefficientOrder.olean": "326b34fc02af662c9ed8537001cc82995a55569806f5769e4538628ab68c5710",
+        "CoefficientOrder.ilean": "b5035ac77310edcfeb6d23812972a790e5e6b84d4b795e86f0a116bc490af0e9"
+      },
+      "stdout_sha256": "3cd4adf22e51c813b0cf649f88dc7bc638a3c086156bbe28b1bfa8d323f742f8",
+      "status": "PASS"
+    },
+    {
+      "module": "RealInstance",
+      "source_sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84",
+      "artifact_sha256": {
+        "RealInstance.olean": "51304cde661786853a4b38f40b921215663faf8e3de1f2b224a7b1dae127d773",
+        "RealInstance.ilean": "d604e6757bb55dd5e1a359b8aedbb5e8103851f407d4f08709c6d7ed481d2cfa"
+      },
+      "stdout_sha256": "8da337b5726733029c9928464fc002b1e1ba20ff9e37cad19fe1d1e259667492",
+      "status": "PASS"
+    },
+    {
+      "module": "TargetSpec",
+      "source_sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488",
+      "artifact_sha256": {
+        "TargetSpec.olean": "3f435fb3b831d0f6ca3e02d096a390fcbd5e45c928ec9343cd8929714c3c4579",
+        "TargetSpec.ilean": "701f8f27f7b0a1e8f789f17eaa57871bd30d10a3dbb445defe14c38c00d94334"
+      },
+      "stdout_sha256": "726e9fe77e63e4357c0ca43144b54627ff39beab62b3f9a51903deb47edd9d71",
+      "status": "PASS"
+    },
+    {
+      "module": "ConditionalArtin",
+      "source_sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b",
+      "artifact_sha256": {
+        "ConditionalArtin.olean": "8a1cae3705355c32696e191293f9980025ce1b2138959b67613e8c13071ba68b",
+        "ConditionalArtin.ilean": "4c148242d230bf393f031e5fb69a625316747a4aba5b91a21d17b82eb5cd6519"
+      },
+      "stdout_sha256": "6b052ca7d30f2bd205b4a6c2e700f202a1777317c51056afadfb2345258eaf33",
+      "status": "PASS"
+    },
+    {
+      "module": "RealClosureTransfer",
+      "source_sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae",
+      "artifact_sha256": {
+        "RealClosureTransfer.olean": "e58c30692dee2363c6262881047b92a31a032e4104a717b86962bfeaa5eaa0c6",
+        "RealClosureTransfer.ilean": "6385eade9a0ca8e746789e2067239375234fe37ace0dcf14ed9304238299e05c"
+      },
+      "stdout_sha256": "a4026425a3026f029db6b94ed3f99f84c1471696acda2e9b06d8fdf36b2dfa9d",
+      "status": "PASS"
+    },
+    {
+      "module": "TargetSanity",
+      "source_sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17",
+      "artifact_sha256": {
+        "TargetSanity.olean": "3db04163ec9b8a601bf13b10bf36a103b1b4c6e145788738df06152d4b070930",
+        "TargetSanity.ilean": "c1bbc0f7f29cf499dd7b94a2e7bb90960992cc7e9cce1c1620a87b21af4a4d6c"
+      },
+      "stdout_sha256": "7e951dbe9cd21cd833359e58381dde7f22be272ff00afb9d70a41af6a199bfb8",
+      "status": "PASS"
+    },
+    {
+      "module": "CertificateNonnegative",
+      "source_sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb",
+      "artifact_sha256": {
+        "CertificateNonnegative.olean": "0c7a3dcd36931cb7ba8c3ebb36f6aa19ed4ad53379e857ad9d1367d0cb02e0f1",
+        "CertificateNonnegative.ilean": "5b4f4c693ab97bd374a21d18e9038f3765731734180c41cd0ffe77374609991f"
+      },
+      "stdout_sha256": "b4411a48d415fa48ed8a501b725d522ddb46655d59edc9d3cc87084884c61445",
+      "status": "PASS"
+    },
+    {
+      "module": "FinalTargetContract",
+      "source_sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140",
+      "artifact_sha256": {
+        "FinalTargetContract.olean": "4951bb24c003aa385cd4f02dffe0360c9eff38542c5468ad48de07d2ce465ed3",
+        "FinalTargetContract.ilean": "5a5883767fc04f4df05051e6f373e9410cf148f2abaffd9b333f7ebbebebf8d9"
+      },
+      "stdout_sha256": "ca2c9fb3058dc74ffa55d529fb2c1305fa783222fc98695228f4f0cccd1cd08b",
+      "status": "PASS"
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "source_sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56",
+      "artifact_sha256": {
+        "BoundaryAcceptance.olean": "9109765af72b144e999ca97f51c965eb55249822cedbd2b011688bf9e9cba888",
+        "BoundaryAcceptance.ilean": "f7062a03be0d556c9842d7cd0894d538364a2d22fa671b5e5fc401807d707b97"
+      },
+      "stdout_sha256": "d8242197b6d4a03b2202c6df2b389dd47c78a21fd0af1f0ca61da42c78c06190",
+      "status": "PASS"
+    },
+    {
+      "module": "Hilbert17",
+      "source_sha256": "e9106e6e8c285b757837dee59235076db13ff35959bb74afee7d63205bcca497",
+      "artifact_sha256": {
+        "Hilbert17.olean": "c26ffce7e6492a29fb17d6dd8b2c06d3db73e11d7192ddcf17d127615fe8119c",
+        "Hilbert17.ilean": "0214c81218b16b59d723fbef115a21a7cbd200ad2fce2a2872df2dcb99602954"
+      },
+      "stdout_sha256": "984f46b76ddcd2e890987a85feb423dde2c7b03a7d449d7fb4ead8091f38da99",
+      "status": "PASS"
+    },
+    {
+      "module": "Hilbert17RealClosure",
+      "source_sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f",
+      "artifact_sha256": {
+        "Hilbert17RealClosure.olean": "dc64b88a7d8b70ede4763364f05f2e3f47fee38095a8d893d757e5547573724c",
+        "Hilbert17RealClosure.ilean": "5ea3121bc24c86fb4271e2ed78cf40d8ed4aacc2ff18f9e3a3981f9ed8c12830"
+      },
+      "stdout_sha256": "e0857de34d5226485c05b424618bd3a9e7a11764e5e5cb3570a7cc13a65babec",
+      "status": "PASS"
+    },
+    {
+      "module": "Hilbert17Full",
+      "source_sha256": "59369a56860fda3bb3fe5738b9bd10724864d21a1e58fcd167537fe7adec9181",
+      "artifact_sha256": {
+        "Hilbert17Full.olean": "2356f15d1a572b6d3f044aba8dacf0cb1fb464e494a41b61ea032883044a9f47",
+        "Hilbert17Full.ilean": "7683e2087044172fb917cba834a28d5faa8503e6e0dea2f966f4f78efae68784"
+      },
+      "stdout_sha256": "b2ea5d0c365e132282edc3d27d8bad24b52d6c0133c98a9f4ce4c2d9fe3e5341",
+      "status": "PASS"
+    }
+  ]
+}

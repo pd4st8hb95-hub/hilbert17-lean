@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+  "start_utc": "2026-10-13T14:20:45.907752+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:45.907738+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8309432,
+    "used_percent": 18.5869251265957
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+    "bytes": 13239,
+    "sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.olean",
+      "bytes": 997032,
+      "sha256": "136512bc98c0b8a4f21fd648b4129e271f9d1ee17ce5b3fc53e13549aeb8a286"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.ilean",
+      "bytes": 45994,
+      "sha256": "277661bea9d3cca1727579bc75e288383968b39e96c0ccad94a94f8766fead54"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/59-TauCeti.RingTheory.Polynomial.Subresultant.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/59-TauCeti.RingTheory.Polynomial.Subresultant.stderr.log",
+  "pid": 411,
+  "exit_code": 0,
+  "seconds": 3.004,
+  "end_utc": "2026-10-13T14:20:48.912244+00:00",
+  "peak_physical_used_percent": 20.807155591314874,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:48.912335+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8294132,
+    "used_percent": 18.736829481738514
+  }
+}

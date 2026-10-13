@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+  "start_utc": "2026-10-13T13:53:51.405935+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:53:51.405929+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8341868,
+    "used_percent": 18.269127893692925
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+    "bytes": 4778,
+    "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.olean",
+      "bytes": 146320,
+      "sha256": "9ea2280ad9ea57698c460faa181143ce9064d003867029520a889c9d284f7a39"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.ilean",
+      "bytes": 11523,
+      "sha256": "aac776c6da3629f7396fbb811345a6e1cd466fcb88d890d372cb9c43c60a3b89"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/04-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/04-TauCeti.Geometry.RealAlgebraic.SignDetermination.stderr.log",
+  "pid": 26,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T13:53:53.409166+00:00",
+  "peak_physical_used_percent": 19.70103780842576,
+  "memory_after": {
+    "utc": "2026-10-13T13:53:53.409251+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8331120,
+    "used_percent": 18.374433253763186
+  }
+}

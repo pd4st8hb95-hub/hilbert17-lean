@@ -1,0 +1,199 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:30:33.464291+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-sturm-entry-compile-plan01.json",
+  "plan_sha256": "b1032e0a908a6a0f25b86f440a821905950dd8feae6246e3c20362c999583862",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "First five ready transfer backports plus only missing pinned official prerequisites. No full transfer result claimed.",
+  "jobs": [
+    {
+      "label": "TauCeti.Compat.FieldDivisionExtra",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+        "bytes": 1281,
+        "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+      },
+      "start_utc": "2026-10-13T13:30:33.464590+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:30:33.464579+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8351788,
+        "used_percent": 18.171935004606866
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/01-TauCeti_Compat_FieldDivisionExtra.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/01-TauCeti_Compat_FieldDivisionExtra.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:30:35.467563+00:00",
+      "peak_physical_used_percent": 20.333065922252743,
+      "memory_after": {
+        "utc": "2026-10-13T13:30:35.467710+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339360,
+        "used_percent": 18.293700450732022
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.olean",
+          "bytes": 94288,
+          "sha256": "95ddc0251628a8fdfc2b81d4bc3959d3c2ed984c117114c39eb435865162a849"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/FieldDivisionExtra.ilean",
+          "bytes": 2848,
+          "sha256": "1e4391f18bcb71d6b75cbb6ecbd9d1d33ae68bd9dcf8a0d99b9abea635f98217"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Compat.SturmSequence",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+        "bytes": 5878,
+        "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+      },
+      "start_utc": "2026-10-13T13:30:35.468802+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:30:35.468764+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339360,
+        "used_percent": 18.293700450732022
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/02-TauCeti_Compat_SturmSequence.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/02-TauCeti_Compat_SturmSequence.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:30:37.471565+00:00",
+      "peak_physical_used_percent": 20.52302315346248,
+      "memory_after": {
+        "utc": "2026-10-13T13:30:37.471715+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8341764,
+        "used_percent": 18.270146851401087
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+          "bytes": 239648,
+          "sha256": "1991283315074425162e695fdcae1483cc9819d14bbaa24b807adfb9fa5ff34d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+          "bytes": 7360,
+          "sha256": "271def0cff9436f8a44b2dc5fada47d1aa14fe67fff0c61e79a38181497d985b"
+        }
+      ]
+    },
+    {
+      "label": "Hilbert17RealClosure",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-realclosure-delta-20261013/Hilbert17RealClosure.lean",
+        "bytes": 238,
+        "sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+      },
+      "start_utc": "2026-10-13T13:30:37.472936+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:30:37.472925+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8341764,
+        "used_percent": 18.270146851401087
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-realclosure-delta-20261013",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-realclosure-delta-20261013/Hilbert17RealClosure.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/03-Hilbert17RealClosure.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/03-Hilbert17RealClosure.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:30:38.975584+00:00",
+      "peak_physical_used_percent": 20.11316701069553,
+      "memory_after": {
+        "utc": "2026-10-13T13:30:38.975759+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8263228,
+        "used_percent": 19.039616683786463
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.olean",
+          "bytes": 2424,
+          "sha256": "dc64b88a7d8b70ede4763364f05f2e3f47fee38095a8d893d757e5547573724c"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17RealClosure.ilean",
+          "bytes": 182,
+          "sha256": "5ea3121bc24c86fb4271e2ed78cf40d8ed4aacc2ff18f9e3a3981f9ed8c12830"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:30:38.976897+00:00"
+}

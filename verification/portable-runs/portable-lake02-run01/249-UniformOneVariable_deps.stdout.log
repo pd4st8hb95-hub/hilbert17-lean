@@ -1,0 +1,63 @@
+⚠ [2048/2256] Replayed OrderingSeparation
+warning: OrderingSeparation.lean:48:12: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵hq0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OrderingSeparation.lean:130:15: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OrderingSeparation.lean:168:0: Definition `Hilbert17.RingPreordering.toLinearOrder` of class type must be marked with `@[reducible]` or `@[implicit_reducible]`
+⚠ [3106/3122] Replayed CoefficientSignPattern
+warning: CoefficientSignPattern.lean:64:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.leadingCoeff_sign_eq_of_coeff_sign_agree`:
+  [IsStrictOrderedRing K]
+  [IsStrictOrderedRing L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsStrictOrderedRing K] [IsStrictOrderedRing L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3113/3122] Replayed MonicQueryProjection
+warning: MonicQueryProjection.lean:49:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.monicQueryRemainder_map`:
+  [LinearOrder K]
+  [IsStrictOrderedRing K]
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder K] [IsStrictOrderedRing K] [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3116/3122] Replayed GeneralQueryProjection
+warning: GeneralQueryProjection.lean:48:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.tarskiQuery_C_mul_left`:
+  [IsStrictOrderedRing K]
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsStrictOrderedRing K] [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3121/3122] Replayed WholeLineAlternatives
+warning: WholeLineAlternatives.lean:22:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.root_lt_rootBound`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: WholeLineAlternatives.lean:30:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.neg_rootBound_lt_root`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: WholeLineAlternatives.lean:76:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.exists_all_leading_signs`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: WholeLineAlternatives.lean:82:0: automatically included section variable(s) unused in theorem `Hilbert17Transfer.exists_all_parity_leading_signs`:
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+All targets up-to-date (3122 jobs).

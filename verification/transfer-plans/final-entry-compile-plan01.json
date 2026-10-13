@@ -1,0 +1,41 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "PREPARED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "Hilbert17Full",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-final-delta-20261013/Hilbert17Full.lean",
+        "bytes": 222,
+        "sha256": "59369a56860fda3bb3fe5738b9bd10724864d21a1e58fcd167537fe7adec9181"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-final-delta-20261013",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/Hilbert17Full.olean"
+    }
+  ],
+  "requires_before_launch": [
+    "RealClosureTransfer compiled successfully with current source and complete local dependency closure"
+  ],
+  "scope": "Exact final target definitions and three proof dependency axiom lists. Allowed standard axioms: propext, Classical.choice, Quot.sound. This diagnostic is separate from selected-module Lean kernel replay."
+}

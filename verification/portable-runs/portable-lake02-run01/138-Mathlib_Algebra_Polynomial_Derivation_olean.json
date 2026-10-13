@@ -1,0 +1,39 @@
+{
+  "label": "Mathlib.Algebra.Polynomial.Derivation:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+Mathlib.Algebra.Polynomial.Derivation:olean"
+  ],
+  "start_utc": "2026-10-13T14:33:38.864025+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:33:38.864013+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8270856,
+    "used_percent": 18.96488005496101
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/138-Mathlib_Algebra_Polynomial_Derivation_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/138-Mathlib_Algebra_Polynomial_Derivation_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 1865,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:33:42.371634+00:00",
+  "seconds": 3.507,
+  "peak_physical_used_percent": 22.497802382558266,
+  "memory_after": {
+    "utc": "2026-10-13T14:33:42.371786+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8244636,
+    "used_percent": 19.22177496946066
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

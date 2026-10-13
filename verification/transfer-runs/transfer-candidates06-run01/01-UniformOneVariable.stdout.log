@@ -1,0 +1,6 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean:27:8: warning: automatically included section variable(s) unused in theorem `_private.UniformOneVariable.0.Hilbert17Transfer.map_subsetProduct_eq_sampleProduct`:
+  [DecidableEq J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

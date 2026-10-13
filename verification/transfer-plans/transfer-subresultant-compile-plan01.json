@@ -1,0 +1,181 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+        "bytes": 1454,
+        "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.olean"
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean",
+        "bytes": 10143,
+        "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.olean"
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.OfFn",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean",
+        "bytes": 3995,
+        "sha256": "4b471e49fdbaaa34df30df264e6debaf5139932103208f0bfac75cb41dcfaaff"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.DegreeLT",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+        "bytes": 8337,
+        "sha256": "63727fdce87ccc401a0cd6beb3e95689c75b434e77d20953d6903fbc5156aa76"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean",
+        "bytes": 52031,
+        "sha256": "ec4914f081126c7954f14ae263f072a176b874ded07cb2aa5093946fac0bb119"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+        "bytes": 13430,
+        "sha256": "7401af8c71689e8ef4f72d0eb0c3f13acd7383127b9d67bfcd79850351e30b9f"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+        "bytes": 16271,
+        "sha256": "723874f2f35c2b0244cd79f630307201b6129d3b47900eced4c528554bb04740"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.olean"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+        "bytes": 4022,
+        "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.olean"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+        "bytes": 21159,
+        "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+        "bytes": 10866,
+        "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean"
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Nat/Choose/Basic.lean",
+        "bytes": 6656,
+        "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Nat/Choose/Basic.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+        "bytes": 10692,
+        "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.olean"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/OfFn.lean",
+        "bytes": 2217,
+        "sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/OfFn.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+        "bytes": 12959,
+        "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.olean"
+    }
+  ],
+  "scope": "Algebraic signed-subresultant foundation only; excludes the Cauchy-index/real-closed-field branch."
+}

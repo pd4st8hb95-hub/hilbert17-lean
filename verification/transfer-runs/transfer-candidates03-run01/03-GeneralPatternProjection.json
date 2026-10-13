@@ -1,0 +1,55 @@
+{
+  "label": "GeneralPatternProjection",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean",
+    "bytes": 3245,
+    "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+  },
+  "start_utc": "2026-10-13T14:03:02.477481+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:03:02.477466+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316152,
+    "used_percent": 18.521084782376107
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/03-GeneralPatternProjection.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/03-GeneralPatternProjection.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 3.004,
+  "end_utc": "2026-10-13T14:03:05.482529+00:00",
+  "peak_physical_used_percent": 21.68835805546814,
+  "memory_after": {
+    "utc": "2026-10-13T14:03:05.482781+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352264,
+    "used_percent": 18.167271313557976
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+      "bytes": 126752,
+      "sha256": "9a610df550846934ed0e15fc1f0334f7447863d762310e64f7e0d94ff069e230"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+      "bytes": 12090,
+      "sha256": "73c24cfbafb573e161addfe1eb69848a26f7b36b2052f46d0dd5eca3f247c377"
+    }
+  ]
+}

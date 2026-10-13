@@ -1,0 +1,55 @@
+{
+  "label": "UniformRootCount",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean",
+    "bytes": 5704,
+    "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+  },
+  "start_utc": "2026-10-13T13:59:52.979726+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:59:52.979717+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8350476,
+    "used_percent": 18.18478954800212
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates02-run01/01-UniformRootCount.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates02-run01/01-UniformRootCount.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:59:55.983281+00:00",
+  "peak_physical_used_percent": 21.657083891963833,
+  "memory_after": {
+    "utc": "2026-10-13T13:59:55.983427+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8326992,
+    "used_percent": 18.414878036640935
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean",
+      "bytes": 196056,
+      "sha256": "054b95ebfb301eed32c52b11b376e37d4a00978ee32c69f48f8ff9cca3200ccd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.ilean",
+      "bytes": 18770,
+      "sha256": "e088380c11c5239d6933d44962cc67b7fcbe7633c47eaa4c0424862b63ae20f1"
+    }
+  ]
+}

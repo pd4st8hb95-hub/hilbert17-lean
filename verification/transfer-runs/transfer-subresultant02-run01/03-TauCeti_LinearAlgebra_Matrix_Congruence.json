@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.LinearAlgebra.Matrix.Congruence",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+    "bytes": 4022,
+    "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+  },
+  "start_utc": "2026-10-13T13:39:55.056035+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:39:55.056022+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8331344,
+    "used_percent": 18.372238575622536
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/Congruence.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/03-TauCeti_LinearAlgebra_Matrix_Congruence.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/03-TauCeti_LinearAlgebra_Matrix_Congruence.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T13:39:57.559997+00:00",
+  "peak_physical_used_percent": 20.594820481206696,
+  "memory_after": {
+    "utc": "2026-10-13T13:39:57.560152+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8335352,
+    "used_percent": 18.33296951317728
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.olean",
+      "bytes": 114824,
+      "sha256": "40fb3a7aac30b2ccb6068bd6405aebbdf42569c9deb361b2bb47673666f0a347"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/Congruence.ilean",
+      "bytes": 6602,
+      "sha256": "427752df273c02f4d02fc6038d4f4bf6ada9b0a62155ed319aa101695db2a99b"
+    }
+  ]
+}

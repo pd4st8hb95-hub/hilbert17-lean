@@ -1,0 +1,44 @@
+{
+  "label": "FiniteVariableTransfer",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean",
+    "bytes": 4497,
+    "sha256": "8ac7b5db330a33776811d00c3ba13fb883b03232d881b73914f5877ae8281ff9"
+  },
+  "start_utc": "2026-10-13T14:13:43.178547+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:13:43.178534+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307236,
+    "used_percent": 18.608440810510313
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates06-run01/02-FiniteVariableTransfer.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates06-run01/02-FiniteVariableTransfer.stderr.log",
+  "pid": 10,
+  "exit_code": 1,
+  "seconds": 3.006,
+  "end_utc": "2026-10-13T14:13:46.185089+00:00",
+  "peak_physical_used_percent": 22.213356419257202,
+  "memory_after": {
+    "utc": "2026-10-13T14:13:46.185231+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8311800,
+    "used_percent": 18.56372424339451
+  },
+  "outputs": []
+}

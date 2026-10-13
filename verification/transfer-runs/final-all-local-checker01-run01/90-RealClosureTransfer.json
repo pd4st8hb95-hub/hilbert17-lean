@@ -1,0 +1,46 @@
+{
+  "module": "RealClosureTransfer",
+  "start_utc": "2026-10-13T14:21:55.129119+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:55.129111+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310644,
+    "used_percent": 18.57505035022752
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "RealClosureTransfer"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/RealClosureTransfer.lean",
+    "bytes": 1982,
+    "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.olean",
+      "bytes": 88336,
+      "sha256": "e58c30692dee2363c6262881047b92a31a032e4104a717b86962bfeaa5eaa0c6"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.ilean",
+      "bytes": 5308,
+      "sha256": "6385eade9a0ca8e746789e2067239375234fe37ace0dcf14ed9304238299e05c"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/90-RealClosureTransfer.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/90-RealClosureTransfer.stderr.log",
+  "pid": 628,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:21:57.632146+00:00",
+  "peak_physical_used_percent": 20.668577343005072,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:57.632466+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8313836,
+    "used_percent": 18.543776186723218
+  }
+}

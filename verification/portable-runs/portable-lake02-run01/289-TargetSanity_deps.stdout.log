@@ -1,0 +1,5 @@
+⚠ [1320/1341] Replayed ClearDenominators
+warning: ClearDenominators.lean:47:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+All targets up-to-date (1649 jobs).

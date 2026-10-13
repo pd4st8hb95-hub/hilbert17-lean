@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+    "bytes": 10692,
+    "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+  },
+  "start_utc": "2026-10-13T13:40:08.586380+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:40:08.586367+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352864,
+    "used_percent": 18.161392711395514
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/07-TauCeti_RingTheory_Polynomial_Subresultant_Signed.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/07-TauCeti_RingTheory_Polynomial_Subresultant_Signed.stderr.log",
+  "pid": 23,
+  "exit_code": 0,
+  "seconds": 4.505,
+  "end_utc": "2026-10-13T13:40:13.092768+00:00",
+  "peak_physical_used_percent": 21.087094626291382,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:13.092940+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8350204,
+    "used_percent": 18.187454514315768
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.olean",
+      "bytes": 805696,
+      "sha256": "1ecf2ab646e084550ca9e814eee7da20367355b06bec54e33dfaf3dbce193b98"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Signed.ilean",
+      "bytes": 17714,
+      "sha256": "4652da976fcd9c622d9886afb9a5832a85b570242adf7ad9c8ec6ea389095cbe"
+    }
+  ]
+}

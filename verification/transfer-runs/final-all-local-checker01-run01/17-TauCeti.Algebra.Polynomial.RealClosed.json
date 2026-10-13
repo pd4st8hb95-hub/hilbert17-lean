@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+  "start_utc": "2026-10-13T14:19:11.642809+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:19:11.642802+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8298608,
+    "used_percent": 18.692975109606536
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.Polynomial.RealClosed.Quadratic"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+    "bytes": 5545,
+    "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.olean",
+      "bytes": 183264,
+      "sha256": "a9b6c25b6e86d19e577eb75cf6e24974dc47264e527c892bb5cd9ce7469f64d8"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.ilean",
+      "bytes": 14404,
+      "sha256": "10b01f8d815564c2e14f659ab8fa9c88d76003e79f3944bc6392a87bdb313568"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/17-TauCeti.Algebra.Polynomial.RealClosed.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/17-TauCeti.Algebra.Polynomial.RealClosed.stderr.log",
+  "pid": 117,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:19:14.145869+00:00",
+  "peak_physical_used_percent": 20.768356817042616,
+  "memory_after": {
+    "utc": "2026-10-13T14:19:14.145962+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8299320,
+    "used_percent": 18.685999168373748
+  }
+}

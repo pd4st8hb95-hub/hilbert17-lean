@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+  "start_utc": "2026-10-13T13:54:04.455757+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:04.455750+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8322996,
+    "used_percent": 18.45402952704294
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+    "bytes": 10866,
+    "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean",
+      "bytes": 1047176,
+      "sha256": "b53ee2a68d4f9e80adbc826785c532bca0063ace8a1b247c8d9bedf1db83cbb0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.ilean",
+      "bytes": 25311,
+      "sha256": "f121ee30627c44476bd93bafdf7de4acdeda753d47f9b4a860971b62c32d7b61"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/10-TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/10-TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.stderr.log",
+  "pid": 68,
+  "exit_code": 0,
+  "seconds": 2.504,
+  "end_utc": "2026-10-13T13:54:06.959886+00:00",
+  "peak_physical_used_percent": 20.219138612344203,
+  "memory_after": {
+    "utc": "2026-10-13T13:54:06.959973+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8338408,
+    "used_percent": 18.303027832829798
+  }
+}

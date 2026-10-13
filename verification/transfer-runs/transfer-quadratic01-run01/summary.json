@@ -1,0 +1,199 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:29:27.432450+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-quadratic-compile-plan01.json",
+  "plan_sha256": "48253032fbdd5f5a73741e4d8dc229eec8051fe99032443e8cc66e05703003cb",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Three isolated transfer helpers followed by three quadratic compatibility files. No repeated compat3 or already compiled official dependencies.",
+  "jobs": [
+    {
+      "label": "TauCeti.Compat.QuadraticDiscriminant",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean",
+        "bytes": 1300,
+        "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+      },
+      "start_utc": "2026-10-13T13:29:27.433089+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:29:27.433075+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8368612,
+        "used_percent": 18.00709899997139
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/01-TauCeti_Compat_QuadraticDiscriminant.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/01-TauCeti_Compat_QuadraticDiscriminant.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.506,
+      "end_utc": "2026-10-13T13:29:28.940252+00:00",
+      "peak_physical_used_percent": 19.763742898158704,
+      "memory_after": {
+        "utc": "2026-10-13T13:29:28.940399+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8365228,
+        "used_percent": 18.040254316167683
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.olean",
+          "bytes": 71664,
+          "sha256": "a82246a8a77db90b73b2d7dbde37171a3a12399c958ecef62b87d3240408b067"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticDiscriminant.ilean",
+          "bytes": 2862,
+          "sha256": "e940e2c528310aa1439767edc4bb1fabd6a40f8bc6ed87f70a2480bd51003e59"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Compat.QuadraticExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+        "bytes": 1918,
+        "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+      },
+      "start_utc": "2026-10-13T13:29:28.941184+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:29:28.941173+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8365228,
+        "used_percent": 18.040254316167683
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/02-TauCeti_Compat_QuadraticExtension.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/02-TauCeti_Compat_QuadraticExtension.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:29:30.944116+00:00",
+      "peak_physical_used_percent": 19.914039160112353,
+      "memory_after": {
+        "utc": "2026-10-13T13:29:30.944255+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349900,
+        "used_percent": 18.190433006078084
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.olean",
+          "bytes": 86928,
+          "sha256": "f4cc39a08c4e881c0d3f0bbdaba316b2236b8cc3998e0c73e9baf3f598da3d2e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/QuadraticExtension.ilean",
+          "bytes": 5050,
+          "sha256": "f7d59dc5c1bbc5d3667934297e4c58b54e5b8cc9b88da14c20f09ff17ba3cd10"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+        "bytes": 2005,
+        "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+      },
+      "start_utc": "2026-10-13T13:29:30.945263+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:29:30.945251+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349900,
+        "used_percent": 18.190433006078084
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/03-TauCeti_FieldTheory_RealClosure_FiniteExtension.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-quadratic01-run01/03-TauCeti_FieldTheory_RealClosure_FiniteExtension.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:29:32.948020+00:00",
+      "peak_physical_used_percent": 20.247708618853775,
+      "memory_after": {
+        "utc": "2026-10-13T13:29:32.948167+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8351380,
+        "used_percent": 18.17593245407734
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.olean",
+          "bytes": 46760,
+          "sha256": "cbdc566cc41f8db71d1de2b0cf928e79ba314483426830b0bf7d19c137468709"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/FiniteExtension.ilean",
+          "bytes": 4049,
+          "sha256": "744f87c94f9f94d6da7f628e88e646781e66db71987f375ffbe5ac49fa73c097"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:29:32.948929+00:00"
+}

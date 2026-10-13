@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.Polynomial.DegreeLT",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+    "bytes": 8337,
+    "sha256": "63727fdce87ccc401a0cd6beb3e95689c75b434e77d20953d6903fbc5156aa76"
+  },
+  "start_utc": "2026-10-13T13:34:09.495549+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:34:09.495536+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349444,
+    "used_percent": 18.194900743721554
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/04-Mathlib_RingTheory_Polynomial_DegreeLT.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/04-Mathlib_RingTheory_Polynomial_DegreeLT.stderr.log",
+  "pid": 14,
+  "exit_code": 0,
+  "seconds": 4.004,
+  "end_utc": "2026-10-13T13:34:13.500454+00:00",
+  "peak_physical_used_percent": 20.8087232185582,
+  "memory_after": {
+    "utc": "2026-10-13T13:34:13.500657+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8327080,
+    "used_percent": 18.414015841657108
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean",
+      "bytes": 166344,
+      "sha256": "aa3065d06f2379243e0f3c8ef6ee529cf63fe6562fbd88e7e635a44a0fa363b2"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean.private",
+      "bytes": 345712,
+      "sha256": "52e576d962429d6f802364a71b1b62ea8e3c82257c7c5d5d00b516eb14be5c9e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean.server",
+      "bytes": 9664,
+      "sha256": "1d4c3e0c2525c4db8ec0aee8dba655a0acdc1154695e2a5b2e21fcddefba89fe"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ilean",
+      "bytes": 33366,
+      "sha256": "befedbe0e478b9d5266dfb45c47afd846dd476772f4a4991cbc7d47470e8ab01"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ir",
+      "bytes": 21264,
+      "sha256": "98fd9c85ff760b65968d4986e75b13bae9c86cf33435d4e4caac230743be8b9d"
+    }
+  ]
+}

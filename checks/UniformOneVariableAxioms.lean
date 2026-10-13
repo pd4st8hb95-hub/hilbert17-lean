@@ -1,0 +1,24 @@
+import UniformOneVariable
+
+/- Named types and axiom dependencies for public declarations in this module.
+   Source compilation and selected same-kernel replay are separate checks. -/
+
+set_option pp.universes true
+
+#check Hilbert17Transfer.subsetProduct
+#print axioms Hilbert17Transfer.subsetProduct
+
+#check Hilbert17Transfer.wholeLineProjection
+#print axioms Hilbert17Transfer.wholeLineProjection
+
+#check Hilbert17Transfer.coeff_mem_wholeLineProjection
+#print axioms Hilbert17Transfer.coeff_mem_wholeLineProjection
+
+#check Hilbert17Transfer.patternProjection_subset_wholeLineProjection
+#print axioms Hilbert17Transfer.patternProjection_subset_wholeLineProjection
+
+#check Hilbert17Transfer.derivativePatternProjection_subset_wholeLineProjection
+#print axioms Hilbert17Transfer.derivativePatternProjection_subset_wholeLineProjection
+
+#check Hilbert17Transfer.exists_signs_map_iff_of_wholeLineProjection_sign_agree
+#print axioms Hilbert17Transfer.exists_signs_map_iff_of_wholeLineProjection_sign_agree

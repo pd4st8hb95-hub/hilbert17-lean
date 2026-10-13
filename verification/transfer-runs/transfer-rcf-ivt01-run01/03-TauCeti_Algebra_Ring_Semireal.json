@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Ring.Semireal",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean",
+    "bytes": 1052,
+    "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+  },
+  "start_utc": "2026-10-13T13:38:17.524415+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:38:17.524403+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8330464,
+    "used_percent": 18.380860525460815
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/03-TauCeti_Algebra_Ring_Semireal.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/03-TauCeti_Algebra_Ring_Semireal.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:38:19.027417+00:00",
+  "peak_physical_used_percent": 20.079384643601905,
+  "memory_after": {
+    "utc": "2026-10-13T13:38:19.027604+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8332784,
+    "used_percent": 18.35812993043262
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean",
+      "bytes": 13488,
+      "sha256": "c13195ee3bec1f62e94e402bacceae946a4f872ff7968b38084262fbb7af216d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.ilean",
+      "bytes": 1645,
+      "sha256": "76e99c3e95ad8ef3b1526798b8d9c47f895386b88dbb3d744bdab54ce02248ea"
+    }
+  ]
+}

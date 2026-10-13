@@ -1,0 +1,144 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:51:46.925181+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-rcf-rolle-compile-plan01.json",
+  "plan_sha256": "f90399249e56871c8fa9b6e058ea06ab048c3c68cc08d006f79c67f773e9e62a",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Generic real-closed-field characterization and polynomial order properties, with no concrete-real/complex or square-root chain. Ordinary source compilation only.",
+  "jobs": [
+    {
+      "label": "TauCeti.Algebra.Polynomial.Rolle",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean",
+        "bytes": 5222,
+        "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+      },
+      "start_utc": "2026-10-13T13:51:46.925583+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:51:46.925572+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344132,
+        "used_percent": 18.2469459681999
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/01-TauCeti_Algebra_Polynomial_Rolle.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/01-TauCeti_Algebra_Polynomial_Rolle.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:51:48.928972+00:00",
+      "peak_physical_used_percent": 20.387501778277155,
+      "memory_after": {
+        "utc": "2026-10-13T13:51:48.929166+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8343716,
+        "used_percent": 18.25102179903254
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.olean",
+          "bytes": 218072,
+          "sha256": "647b1b77952c88d1dbe24ded7c9c751c22a489d94cf037800b65422cfad72665"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Rolle.ilean",
+          "bytes": 13357,
+          "sha256": "9fdc2e3efd4659c9d9f47cfe1ec04d1254a559b9de1296a5dccc8ab5d186dee7"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+        "bytes": 7338,
+        "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+      },
+      "start_utc": "2026-10-13T13:51:48.930708+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:51:48.930695+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8343716,
+        "used_percent": 18.25102179903254
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/02-TauCeti_FieldTheory_RealClosure_AbstractRolle.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-rolle01-run01/02-TauCeti_FieldTheory_RealClosure_AbstractRolle.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 3.504,
+      "end_utc": "2026-10-13T13:51:52.436134+00:00",
+      "peak_physical_used_percent": 21.91013811971734,
+      "memory_after": {
+        "utc": "2026-10-13T13:51:52.436278+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8312056,
+        "used_percent": 18.561216039805192
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.olean",
+          "bytes": 481760,
+          "sha256": "0ac925a777159b7f7167acb2e7d568a677aa9d61ca5d6b4c76bf0afa185d216d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AbstractRolle.ilean",
+          "bytes": 22023,
+          "sha256": "8fa3f12e2a2a46dc992ab91139b55ac23702bb67221ad3d4efca2b0546b3a673"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:51:52.437648+00:00"
+}

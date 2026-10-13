@@ -1,0 +1,13 @@
+⚠ [2301/2425] Replayed OrderingSeparation
+warning: OrderingSeparation.lean:48:12: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵hq0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OrderingSeparation.lean:130:15: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OrderingSeparation.lean:168:0: Definition `Hilbert17.RingPreordering.toLinearOrder` of class type must be marked with `@[reducible]` or `@[implicit_reducible]`
+All targets up-to-date (3048 jobs).

@@ -1,0 +1,55 @@
+{
+  "label": "RealClosureFiniteExtensionAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean",
+    "bytes": 546,
+    "sha256": "2ad27d3350fd3a1a99ac4a92fbc179ed19b1d2fbbf164635ab86c241f5d798b8"
+  },
+  "start_utc": "2026-10-13T14:00:57.517362+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:00:57.517329+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8341488,
+    "used_percent": 18.27285100839582
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureFiniteExtensionAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/03-RealClosureFiniteExtensionAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/03-RealClosureFiniteExtensionAxioms.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T14:00:59.019610+00:00",
+  "peak_physical_used_percent": 20.237950139264086,
+  "memory_after": {
+    "utc": "2026-10-13T14:00:59.019757+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312476,
+    "used_percent": 18.557101018291466
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.olean",
+      "bytes": 1632,
+      "sha256": "01843edfdf0e209060421b5c5d7b55927eabee80c93979acd641b5bc74995c79"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureFiniteExtensionAxioms.ilean",
+      "bytes": 689,
+      "sha256": "a447c116992d3daf663e82c584a0af2acad045fe490584ee7f184f61359890d9"
+    }
+  ]
+}

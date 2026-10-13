@@ -1,0 +1,55 @@
+{
+  "label": "WholeLineAlternatives",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean",
+    "bytes": 5507,
+    "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+  },
+  "start_utc": "2026-10-13T13:58:48.617693+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:58:48.617682+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8360140,
+    "used_percent": 18.090104862505374
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-wholeline01-run01/01-WholeLineAlternatives.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-wholeline01-run01/01-WholeLineAlternatives.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 4.004,
+  "end_utc": "2026-10-13T13:58:52.622012+00:00",
+  "peak_physical_used_percent": 21.94791793628144,
+  "memory_after": {
+    "utc": "2026-10-13T13:58:52.622150+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8347552,
+    "used_percent": 18.213437935873856
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.olean",
+      "bytes": 273328,
+      "sha256": "1ef45cc3428ab7c6f655225540927859801f8e6d8752ce68417f6eda7f81c169"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.ilean",
+      "bytes": 18111,
+      "sha256": "390fb81f4dad84c7754c0c298245f6253971d24dc3ac86926e34b18022a96f18"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.RingTheory.Polynomial.Subresultant.Euclidean:olean"
+  ],
+  "start_utc": "2026-10-13T14:37:09.002837+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:37:09.002825+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8263568,
+    "used_percent": 19.0362854758944
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/212-TauCeti_RingTheory_Polynomial_Subresultant_Euclidean_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/212-TauCeti_RingTheory_Polynomial_Subresultant_Euclidean_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2872,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:37:15.014388+00:00",
+  "seconds": 6.011,
+  "peak_physical_used_percent": 23.520404824059316,
+  "memory_after": {
+    "utc": "2026-10-13T14:37:15.014742+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8252408,
+    "used_percent": 19.145627476116218
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

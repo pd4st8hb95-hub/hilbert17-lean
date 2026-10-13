@@ -1,0 +1,44 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+    "bytes": 17635,
+    "sha256": "a10b96b02e2df1d5c1e82b35c2f4d548140702e3e3d6720cbb5cdc772ed13aef"
+  },
+  "start_utc": "2026-10-13T13:52:43.295709+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:52:43.295695+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344932,
+    "used_percent": 18.23910783198328
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/04-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Basic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/04-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Basic.stderr.log",
+  "pid": 14,
+  "exit_code": 1,
+  "seconds": 5.505,
+  "end_utc": "2026-10-13T13:52:48.801312+00:00",
+  "peak_physical_used_percent": 21.814081760382688,
+  "memory_after": {
+    "utc": "2026-10-13T13:52:48.801467+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344976,
+    "used_percent": 18.238676734491367
+  },
+  "outputs": []
+}

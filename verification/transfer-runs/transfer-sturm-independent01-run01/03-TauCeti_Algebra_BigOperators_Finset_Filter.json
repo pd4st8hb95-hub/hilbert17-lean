@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.BigOperators.Finset.Filter",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+    "bytes": 1820,
+    "sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83"
+  },
+  "start_utc": "2026-10-13T13:49:40.129884+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:49:40.129867+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8290956,
+    "used_percent": 18.767946882518487
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/BigOperators/Finset/Filter.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/03-TauCeti_Algebra_BigOperators_Finset_Filter.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-independent01-run01/03-TauCeti_Algebra_BigOperators_Finset_Filter.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 1.001,
+  "end_utc": "2026-10-13T13:49:41.133473+00:00",
+  "peak_physical_used_percent": 19.54701843176922,
+  "memory_after": {
+    "utc": "2026-10-13T13:49:41.133658+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328256,
+    "used_percent": 18.40249378141868
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.olean",
+      "bytes": 50328,
+      "sha256": "122dbf85655e2b6fbe6c7d86e6463383e01eee494cacc99a501880ce3193d034"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/BigOperators/Finset/Filter.ilean",
+      "bytes": 1904,
+      "sha256": "899d90462cfdcc41243c13a68d4fc8b602be153158b1c20e6c8a1a00ddceeb83"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Order",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Order.lean",
+    "bytes": 18033,
+    "sha256": "613f031de3c0f6f42a91bdb884a4a8b9e362d4fc0423b29da7e09f352aec42b0"
+  },
+  "start_utc": "2026-10-13T13:24:38.888873+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:38.888858+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8336588,
+    "used_percent": 18.320859592722606
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Order.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/10-Mathlib_RingTheory_PowerSeries_Order.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/10-Mathlib_RingTheory_PowerSeries_Order.stderr.log",
+  "pid": 38,
+  "exit_code": 0,
+  "seconds": 4.004,
+  "end_utc": "2026-10-13T13:24:42.893448+00:00",
+  "peak_physical_used_percent": 20.468430534713733,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:42.893708+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8354920,
+    "used_percent": 18.141248701318805
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.olean",
+      "bytes": 126632,
+      "sha256": "7b0ac1818a24a2354318168faf00c8a9ab34838b830bb48745489070aefe9d27"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.olean.private",
+      "bytes": 507056,
+      "sha256": "8ef10bfff7b8eb74f752fe62a065d424abed4c4fad6df5a142aa17c1105ca12d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.olean.server",
+      "bytes": 19616,
+      "sha256": "c2f865f9417bc224045cf6a168f7206175785c03634d999ab75f53b7d8af6f79"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.ilean",
+      "bytes": 52662,
+      "sha256": "8b5787bf34cb017b0774fa2b181a6f0228cd7828831969c7449d828875d05eef"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.ir",
+      "bytes": 2088,
+      "sha256": "06279e3f85157dfa457e34e880cf7518a0e7f499d4a5a14164573bb965f465d8"
+    }
+  ]
+}

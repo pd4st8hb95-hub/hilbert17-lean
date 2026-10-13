@@ -1,0 +1,44 @@
+{
+  "label": "TauCeti.Compat.SturmSequence",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+    "bytes": 5878,
+    "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+  },
+  "start_utc": "2026-10-13T13:27:19.987853+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:27:19.987841+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8331304,
+    "used_percent": 18.372630482433365
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-compat02-run01/03-TauCeti_Compat_SturmSequence.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-compat02-run01/03-TauCeti_Compat_SturmSequence.stderr.log",
+  "pid": 11,
+  "exit_code": 1,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:27:21.990681+00:00",
+  "peak_physical_used_percent": 20.655801180971984,
+  "memory_after": {
+    "utc": "2026-10-13T13:27:21.990893+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8320316,
+    "used_percent": 18.48028728336861
+  },
+  "outputs": []
+}

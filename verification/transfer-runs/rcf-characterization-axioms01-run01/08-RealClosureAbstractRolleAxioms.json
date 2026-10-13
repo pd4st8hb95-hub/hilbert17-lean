@@ -1,0 +1,55 @@
+{
+  "label": "RealClosureAbstractRolleAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean",
+    "bytes": 1184,
+    "sha256": "119783113394977565f12b00fcda620554429767d5aa79a0e98a3ed5de4af89a"
+  },
+  "start_utc": "2026-10-13T14:01:05.536569+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:01:05.536533+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307520,
+    "used_percent": 18.605658272153413
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureAbstractRolleAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/08-RealClosureAbstractRolleAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/08-RealClosureAbstractRolleAxioms.stderr.log",
+  "pid": 26,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:01:07.539233+00:00",
+  "peak_physical_used_percent": 22.223937903149636,
+  "memory_after": {
+    "utc": "2026-10-13T14:01:07.539384+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8294392,
+    "used_percent": 18.734282087468113
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.olean",
+      "bytes": 1632,
+      "sha256": "dda10081c2400f21dc821e85d0a9d9787e873a19d7d1e332f6b58d0e8e2106a7"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureAbstractRolleAxioms.ilean",
+      "bytes": 1805,
+      "sha256": "abd9d8ca97c6afc8adfcf30485fc599c865a60e75103fc4287a1aaeface179f3"
+    }
+  ]
+}

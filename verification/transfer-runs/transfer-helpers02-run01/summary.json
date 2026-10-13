@@ -1,0 +1,133 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:31:21.993572+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-helpers-compile-plan02.json",
+  "plan_sha256": "e52bbeafd96088e435a4f5751830e05c1f38be6ba11323be14984a0cb83a5966",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Fixed compatibility sources then isolated transfer helpers. All required official supplements and Reductum already passed. No unconditional transfer claim.",
+  "jobs": [
+    {
+      "label": "CoefficientSignPattern",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean",
+        "bytes": 3329,
+        "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+      },
+      "start_utc": "2026-10-13T13:31:21.993857+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:31:21.993847+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348992,
+        "used_percent": 18.199329290683945
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/01-CoefficientSignPattern.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/01-CoefficientSignPattern.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:31:23.996595+00:00",
+      "peak_physical_used_percent": 20.391460037066548,
+      "memory_after": {
+        "utc": "2026-10-13T13:31:23.996727+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8324488,
+        "used_percent": 18.43941140299895
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+          "bytes": 118632,
+          "sha256": "483976048811ffeef2a84fbbed3e45701774ac8946178cf60841e45b04ee0ed7"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+          "bytes": 11106,
+          "sha256": "f36d3b90b22be0e157123d4f5388d37ed07dab3d4f9f09edf280567594ab6c60"
+        }
+      ]
+    },
+    {
+      "label": "DegreeNormalization",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean",
+        "bytes": 2756,
+        "sha256": "c3cdf21954adec27880c0a9fc8b4cef7d460ba1f99ff11b7ef15d0d1d4d52f82"
+      },
+      "start_utc": "2026-10-13T13:31:23.997542+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:31:23.997530+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8324256,
+        "used_percent": 18.44168446250177
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/02-DegreeNormalization.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/02-DegreeNormalization.stderr.log",
+      "pid": 8,
+      "exit_code": 1,
+      "seconds": 2.503,
+      "end_utc": "2026-10-13T13:31:26.501262+00:00",
+      "peak_physical_used_percent": 20.880324592897004,
+      "memory_after": {
+        "utc": "2026-10-13T13:31:26.501425+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317068,
+        "used_percent": 18.51211011640808
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:31:26.502371+00:00"
+}

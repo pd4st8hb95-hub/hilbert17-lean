@@ -1,0 +1,40 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "BKRExports",
+      "kind": "project",
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/BKRExports.lean",
+        "bytes": 6031,
+        "sha256": "5251966f1f7af1b6c6cbb2d27f722beb0ee2168458c41eb9854f0290edc84801"
+      },
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BKRExports.olean"
+    }
+  ],
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "scope": "Retry combined import smoke at root-approved 4096 MiB cap; compile two additional official modules; compile eight pinned local source drafts. Stops on first failure, no automatic retries. No unconditional Hilbert17 theorem acceptance implied.",
+  "prerequisite_evidence": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/runtime-compile02-run02/summary.json",
+  "require_prerequisite12_pass": true,
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  }
+}

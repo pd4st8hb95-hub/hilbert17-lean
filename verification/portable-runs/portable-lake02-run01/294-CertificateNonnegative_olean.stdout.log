@@ -1,0 +1,6 @@
+⚠ [1320/1526] Replayed ClearDenominators
+warning: ClearDenominators.lean:47:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [1667/1667] Built CertificateNonnegative (1.5s)
+Build completed successfully (1667 jobs).

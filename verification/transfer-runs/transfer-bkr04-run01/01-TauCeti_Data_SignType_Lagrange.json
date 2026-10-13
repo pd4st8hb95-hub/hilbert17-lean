@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Data.SignType.Lagrange",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+    "bytes": 2704,
+    "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+  },
+  "start_utc": "2026-10-13T13:44:32.574891+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:44:32.574883+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343076,
+    "used_percent": 18.257292308005834
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/01-TauCeti_Data_SignType_Lagrange.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr04-run01/01-TauCeti_Data_SignType_Lagrange.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:44:34.577896+00:00",
+  "peak_physical_used_percent": 20.246846423869947,
+  "memory_after": {
+    "utc": "2026-10-13T13:44:34.578043+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343080,
+    "used_percent": 18.25725311732475
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.olean",
+      "bytes": 232432,
+      "sha256": "285be1e6ac67b0528d0afb41f37878a2005a0d92fad38c121ae8d1d559d8ac99"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/SignType/Lagrange.ilean",
+      "bytes": 3688,
+      "sha256": "2873bbd173b04b923064fe24d730b2606ee2efbb284c8a69360f84a806f13cbd"
+    }
+  ]
+}

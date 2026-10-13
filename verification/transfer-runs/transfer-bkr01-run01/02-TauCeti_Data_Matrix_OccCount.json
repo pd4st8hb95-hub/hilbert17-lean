@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Data.Matrix.OccCount",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+    "bytes": 2653,
+    "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+  },
+  "start_utc": "2026-10-13T13:32:50.695656+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:32:50.695644+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8332888,
+    "used_percent": 18.357110972724463
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/02-TauCeti_Data_Matrix_OccCount.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/02-TauCeti_Data_Matrix_OccCount.stderr.log",
+  "pid": 9,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:32:52.198061+00:00",
+  "peak_physical_used_percent": 20.253900746464904,
+  "memory_after": {
+    "utc": "2026-10-13T13:32:52.198201+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317780,
+    "used_percent": 18.50513417517529
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.olean",
+      "bytes": 69296,
+      "sha256": "943be4e53248274a38bf73118ed2798ccff4500e7e3dd4d026eb9943787a94bc"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Matrix/OccCount.ilean",
+      "bytes": 4214,
+      "sha256": "728fc82ce15898fb99e221fb3c265795a0b2d2e228592411fe259b360d40a91f"
+    }
+  ]
+}

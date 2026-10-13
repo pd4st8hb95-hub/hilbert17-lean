@@ -1,0 +1,398 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:34:02.980166+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-subresultant-compile-plan01.json",
+  "plan_sha256": "664343af93664f6f41c47e4bb2700f2265b386ee25f0a944dcd241ca69ba5d9c",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Algebraic signed-subresultant foundation only; excludes the Cauchy-index/real-closed-field branch.",
+  "jobs": [
+    {
+      "label": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+        "bytes": 1454,
+        "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+      },
+      "start_utc": "2026-10-13T13:34:02.980473+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:02.980462+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8343708,
+        "used_percent": 18.251100180394705
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Coeff/Basic.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/01-TauCeti_Algebra_Polynomial_Coeff_Basic.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/01-TauCeti_Algebra_Polynomial_Coeff_Basic.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:34:04.483927+00:00",
+      "peak_physical_used_percent": 20.151691450200207,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:04.484070+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349180,
+        "used_percent": 18.197487328673038
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.olean",
+          "bytes": 63576,
+          "sha256": "e731214b6f87964653aaa8fd51a7c9bf29f5c4f2dae711c743c8b5bee868dd43"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Coeff/Basic.ilean",
+          "bytes": 1779,
+          "sha256": "97883789614574ab5853efe6ae26df2c15a7056231095bf8a0ee5640bdddeed8"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.GroupTheory.Perm.Inversion",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean",
+        "bytes": 10143,
+        "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+      },
+      "start_utc": "2026-10-13T13:34:04.484979+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:04.484968+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349180,
+        "used_percent": 18.197487328673038
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/02-TauCeti_GroupTheory_Perm_Inversion.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/02-TauCeti_GroupTheory_Perm_Inversion.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 3.003,
+      "end_utc": "2026-10-13T13:34:07.488831+00:00",
+      "peak_physical_used_percent": 20.41140809373784,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:07.488974+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349812,
+        "used_percent": 18.191295201061912
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.olean",
+          "bytes": 401416,
+          "sha256": "2c9abeefd820cb5c25d6b5a7ed8fa09be5591717e37ee37bb86bebdf47467e71"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.ilean",
+          "bytes": 34450,
+          "sha256": "52d48f41e510c6ff0647d627c67ee0630003cbd275a68e5a0d63eebc7d67254f"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Polynomial.OfFn",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean",
+        "bytes": 3995,
+        "sha256": "4b471e49fdbaaa34df30df264e6debaf5139932103208f0bfac75cb41dcfaaff"
+      },
+      "start_utc": "2026-10-13T13:34:07.490622+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:07.490609+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349128,
+        "used_percent": 18.19799680752712
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ilean",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/03-Mathlib_Algebra_Polynomial_OfFn.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/03-Mathlib_Algebra_Polynomial_OfFn.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:34:09.493585+00:00",
+      "peak_physical_used_percent": 20.23599060520993,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:09.493802+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349676,
+        "used_percent": 18.192627684218735
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean",
+          "bytes": 87144,
+          "sha256": "9b21b33c8a6fed9c82a6465870dd1c82b27d360256f769b7fbefbca8d5dad1ca"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean.private",
+          "bytes": 154520,
+          "sha256": "cd051c100ece9b5887c2fa7dad04b595940f480b9d4f95fcd412de4158953eaa"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean.server",
+          "bytes": 5808,
+          "sha256": "f5ef49cea92a720fcd068203246370332163d3915838386f6fbacb27a839d7da"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ilean",
+          "bytes": 11079,
+          "sha256": "219fd0ce900bdea251d76133ea648dced7a61d94bbb6e55cef7e155ef2dfae09"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ir",
+          "bytes": 6168,
+          "sha256": "2cf5e5b4a4c90c19f43bfed33d7ea3c3bdc5ea6ae2bf67b427879a524a02ae71"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.RingTheory.Polynomial.DegreeLT",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+        "bytes": 8337,
+        "sha256": "63727fdce87ccc401a0cd6beb3e95689c75b434e77d20953d6903fbc5156aa76"
+      },
+      "start_utc": "2026-10-13T13:34:09.495549+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:09.495536+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349444,
+        "used_percent": 18.194900743721554
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ilean",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/04-Mathlib_RingTheory_Polynomial_DegreeLT.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/04-Mathlib_RingTheory_Polynomial_DegreeLT.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 4.004,
+      "end_utc": "2026-10-13T13:34:13.500454+00:00",
+      "peak_physical_used_percent": 20.8087232185582,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:13.500657+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8327080,
+        "used_percent": 18.414015841657108
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean",
+          "bytes": 166344,
+          "sha256": "aa3065d06f2379243e0f3c8ef6ee529cf63fe6562fbd88e7e635a44a0fa363b2"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean.private",
+          "bytes": 345712,
+          "sha256": "52e576d962429d6f802364a71b1b62ea8e3c82257c7c5d5d00b516eb14be5c9e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.olean.server",
+          "bytes": 9664,
+          "sha256": "1d4c3e0c2525c4db8ec0aee8dba655a0acdc1154695e2a5b2e21fcddefba89fe"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ilean",
+          "bytes": 33366,
+          "sha256": "befedbe0e478b9d5266dfb45c47afd846dd476772f4a4991cbc7d47470e8ab01"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/DegreeLT.ir",
+          "bytes": 21264,
+          "sha256": "98fd9c85ff760b65968d4986e75b13bae9c86cf33435d4e4caac230743be8b9d"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean",
+        "bytes": 52031,
+        "sha256": "ec4914f081126c7954f14ae263f072a176b874ded07cb2aa5093946fac0bb119"
+      },
+      "start_utc": "2026-10-13T13:34:13.502096+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:13.502084+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8326620,
+        "used_percent": 18.418522769981664
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ilean",
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/05-Mathlib_RingTheory_Polynomial_Resultant_Basic.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/05-Mathlib_RingTheory_Polynomial_Resultant_Basic.stderr.log",
+      "pid": 18,
+      "exit_code": 0,
+      "seconds": 34.033,
+      "end_utc": "2026-10-13T13:34:47.536026+00:00",
+      "peak_physical_used_percent": 22.34781964605328,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:47.536176+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8343396,
+        "used_percent": 18.254157053519187
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean",
+          "bytes": 296184,
+          "sha256": "b2605f8e549a680a564e5282ae03089651762ae18af737ca9c293383e167a2c1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean.private",
+          "bytes": 6634480,
+          "sha256": "5dee6c920f78207398b739d3ec6217d73e2f2c36487235f153f12869090f1966"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean.server",
+          "bytes": 24032,
+          "sha256": "24b102f2080c4e995088f582d24cd8ed6c2359c5995b950379ef89caacb5949d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ilean",
+          "bytes": 162320,
+          "sha256": "33f7812bfcea9814affaeff11a975a8c06cc4cab0cea99bce1107800ec7288d9"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ir",
+          "bytes": 10560,
+          "sha256": "7266ea74b8e9b224758e2709288b0c80cffbd8856bb640bc1aa38966501c26ef"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+        "bytes": 13430,
+        "sha256": "7401af8c71689e8ef4f72d0eb0c3f13acd7383127b9d67bfcd79850351e30b9f"
+      },
+      "start_utc": "2026-10-13T13:34:47.546649+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:34:47.546568+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8327432,
+        "used_percent": 18.410567061721796
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/06-TauCeti_RingTheory_Polynomial_Subresultant_Basic.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/06-TauCeti_RingTheory_Polynomial_Subresultant_Basic.stderr.log",
+      "pid": 21,
+      "exit_code": 1,
+      "seconds": 7.007,
+      "end_utc": "2026-10-13T13:34:54.555229+00:00",
+      "peak_physical_used_percent": 20.848227425089952,
+      "memory_after": {
+        "utc": "2026-10-13T13:34:54.555388+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8357392,
+        "used_percent": 18.117028860409455
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:34:54.556553+00:00"
+}

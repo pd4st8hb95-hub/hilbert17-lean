@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.PiTopology",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/PiTopology.lean",
+    "bytes": 12630,
+    "sha256": "f05e6c99776d5f9779b5d155acc8c97f94f615cb07635231cc9db961dd17b1d2"
+  },
+  "start_utc": "2026-10-13T13:25:45.046346+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:45.046331+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8337192,
+    "used_percent": 18.31494179987906
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/PiTopology.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/29-Mathlib_RingTheory_PowerSeries_PiTopology.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/29-Mathlib_RingTheory_PowerSeries_PiTopology.stderr.log",
+  "pid": 105,
+  "exit_code": 0,
+  "seconds": 2.506,
+  "end_utc": "2026-10-13T13:25:47.554021+00:00",
+  "peak_physical_used_percent": 20.65979863044246,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:47.554189+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8325824,
+    "used_percent": 18.426321715517197
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.olean",
+      "bytes": 99992,
+      "sha256": "d9a9ea13d779a987d9263ff74239a247e9367254c94fabf1f1adc657a6fec5fd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.olean.private",
+      "bytes": 267280,
+      "sha256": "560f7fc6eff16dc03c268d59abaf59b78dad2d80de393a6d61ddc812b69a16b0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.olean.server",
+      "bytes": 13024,
+      "sha256": "2fe860c3a309d3f2146a67d5d5c5134b5dcf039bb2820e791d215c3b065e6c7f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.ilean",
+      "bytes": 39165,
+      "sha256": "d8d1c77820caf136663a3456508a63a4664359becbd6644c89f8e4f4556d2849"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.ir",
+      "bytes": 4200,
+      "sha256": "f2e78d520652bbbc614859acab44b0e113aed45213f2e11bbd2a292c31eff95d"
+    }
+  ]
+}

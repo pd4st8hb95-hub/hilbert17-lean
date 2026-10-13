@@ -1,0 +1,46 @@
+{
+  "module": "DegreeNormalization",
+  "start_utc": "2026-10-13T14:21:07.977855+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:07.977848+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8318156,
+    "used_percent": 18.50145025115348
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "DegreeNormalization"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean",
+    "bytes": 2861,
+    "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+      "bytes": 149256,
+      "sha256": "1e923a11979e6799509152c92e3992e6ec07e766e9b32e8cae65bfcc7fe689dd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+      "bytes": 10881,
+      "sha256": "8f6aea1ed7487314660058863bfc43297b59e12a2eef9f12581a71264659e221"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/69-DegreeNormalization.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/69-DegreeNormalization.stderr.log",
+  "pid": 481,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:21:09.980691+00:00",
+  "peak_physical_used_percent": 19.985640534451157,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:09.980783+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8298988,
+    "used_percent": 18.689251994903643
+  }
+}

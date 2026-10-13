@@ -1,0 +1,408 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:38:13.003167+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-rcf-ivt-compile-plan01.json",
+  "plan_sha256": "f8bb6ae1cbe60a86adcba7a148f7a16e0cd44728ae2432ff6243a86f0ce5ccfa",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Generic real-closed-field characterization and polynomial order properties, with no concrete-real/complex or square-root chain. Ordinary source compilation only.",
+  "jobs": [
+    {
+      "label": "TauCeti.Algebra.Order.Ring.Square",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean",
+        "bytes": 1030,
+        "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+      },
+      "start_utc": "2026-10-13T13:38:13.003659+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:13.003646+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345084,
+        "used_percent": 18.237618586102123
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/01-TauCeti_Algebra_Order_Ring_Square.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/01-TauCeti_Algebra_Order_Ring_Square.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:38:14.506179+00:00",
+      "peak_physical_used_percent": 20.04505360697312,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:14.506323+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317120,
+        "used_percent": 18.511600637554
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.olean",
+          "bytes": 25416,
+          "sha256": "db2eb624bd9fe12957bd23d10014fd3defa4712247d55c7faa9e1d3a925c72cf"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Square.ilean",
+          "bytes": 1355,
+          "sha256": "8996877e6a50eea59d0cbf0a3e63d4e588eae75602a8f0819a76fb4a14709fe0"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+        "bytes": 2934,
+        "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+      },
+      "start_utc": "2026-10-13T13:38:14.510452+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:14.507469+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8317120,
+        "used_percent": 18.511600637554
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/02-TauCeti_Algebra_QuadraticAlgebra_Square.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/02-TauCeti_Algebra_QuadraticAlgebra_Square.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 3.003,
+      "end_utc": "2026-10-13T13:38:17.522457+00:00",
+      "peak_physical_used_percent": 20.828083415013243,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:17.522685+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330464,
+        "used_percent": 18.380860525460815
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.olean",
+          "bytes": 479904,
+          "sha256": "f8823d5472ea8a7bd62300bd1cf996a97e6986f0c16d255395cfb0bf253ed33f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticAlgebra/Square.ilean",
+          "bytes": 6534,
+          "sha256": "8e0a5c11705091dbb608aa817208a2bb297dc46376cd531d7f655d457b39cf20"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Ring.Semireal",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean",
+        "bytes": 1052,
+        "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+      },
+      "start_utc": "2026-10-13T13:38:17.524415+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:17.524403+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330464,
+        "used_percent": 18.380860525460815
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/03-TauCeti_Algebra_Ring_Semireal.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/03-TauCeti_Algebra_Ring_Semireal.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:38:19.027417+00:00",
+      "peak_physical_used_percent": 20.079384643601905,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:19.027604+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332784,
+        "used_percent": 18.35812993043262
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.olean",
+          "bytes": 13488,
+          "sha256": "c13195ee3bec1f62e94e402bacceae946a4f872ff7968b38084262fbb7af216d"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Ring/Semireal.ilean",
+          "bytes": 1645,
+          "sha256": "76e99c3e95ad8ef3b1526798b8d9c47f895386b88dbb3d744bdab54ce02248ea"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+        "bytes": 1712,
+        "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+      },
+      "start_utc": "2026-10-13T13:38:19.028697+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:19.028684+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332552,
+        "used_percent": 18.36040298993544
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/04-TauCeti_Algebra_Order_Ring_Ordering_Semireal.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/04-TauCeti_Algebra_Order_Ring_Ordering_Semireal.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:38:20.531336+00:00",
+      "peak_physical_used_percent": 19.897735836781788,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:20.531597+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8333596,
+        "used_percent": 18.350174222172754
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.olean",
+          "bytes": 50848,
+          "sha256": "cf02b3c013d47edd54f07430933a8bd6c08ac3f4ef0bde78135f21519a00003e"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Semireal.ilean",
+          "bytes": 3187,
+          "sha256": "009abdfb1b073e61d7791fb4b9657ef54a0b5dbb6a61b0165810718c415375cb"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+        "bytes": 1492,
+        "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+      },
+      "start_utc": "2026-10-13T13:38:20.533176+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:20.533163+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8333596,
+        "used_percent": 18.350174222172754
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/05-TauCeti_FieldTheory_RealClosure_Complexification.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/05-TauCeti_FieldTheory_RealClosure_Complexification.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 1.503,
+      "end_utc": "2026-10-13T13:38:22.036998+00:00",
+      "peak_physical_used_percent": 20.11422515908477,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:22.037149+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8328076,
+        "used_percent": 18.40425736206742
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean",
+          "bytes": 23816,
+          "sha256": "fed8f9ea792066ec822778d2e01e12dc244d15fc02bc11a7279811a538afe28f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.ilean",
+          "bytes": 2008,
+          "sha256": "93a2a59ddb1b07982aba5c587d562dc157c9a39fb4003ed5c396ba3ab714c953"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.FieldTheory.RealClosure.Galois",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+        "bytes": 5096,
+        "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+      },
+      "start_utc": "2026-10-13T13:38:22.038425+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:22.038407+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8328076,
+        "used_percent": 18.40425736206742
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/06-TauCeti_FieldTheory_RealClosure_Galois.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/06-TauCeti_FieldTheory_RealClosure_Galois.stderr.log",
+      "pid": 20,
+      "exit_code": 0,
+      "seconds": 2.503,
+      "end_utc": "2026-10-13T13:38:24.542409+00:00",
+      "peak_physical_used_percent": 20.76804329159395,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:24.542652+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344928,
+        "used_percent": 18.239147022664362
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.olean",
+          "bytes": 175240,
+          "sha256": "9596cc74ae94d8887831434aba6815152c506709814de5e8690c3bd5a997255f"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Galois.ilean",
+          "bytes": 18272,
+          "sha256": "10843e2d74858b08d141a2970c370c5a261714472dc05b68f3a3f855c5c9871b"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+        "bytes": 4590,
+        "sha256": "65057165b6fdd5f890b1d268d066a1934af0635158b9ae05aa1a4081da879ef4"
+      },
+      "start_utc": "2026-10-13T13:38:24.545579+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:38:24.545563+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344688,
+        "used_percent": 18.241498463529346
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/07-TauCeti_FieldTheory_RealClosure_AlgebraicClosed.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/07-TauCeti_FieldTheory_RealClosure_AlgebraicClosed.stderr.log",
+      "pid": 23,
+      "exit_code": 1,
+      "seconds": 3.004,
+      "end_utc": "2026-10-13T13:38:27.550790+00:00",
+      "peak_physical_used_percent": 20.78399389879477,
+      "memory_after": {
+        "utc": "2026-10-13T13:38:27.550954+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344888,
+        "used_percent": 18.239538929475195
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:38:27.552245+00:00"
+}

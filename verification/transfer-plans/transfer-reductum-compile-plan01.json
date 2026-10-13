@@ -1,0 +1,390 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "Mathlib.Algebra.Polynomial.Derivation",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/Derivation.lean",
+        "bytes": 5327,
+        "sha256": "92db59c0cca19f9c28529fd17474c1f344e67bd83f08b4344e7abe51502b9b08"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.olean"
+    },
+    {
+      "module": "Mathlib.Order.GameAdd",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Order/GameAdd.lean",
+        "bytes": 10179,
+        "sha256": "4703c19c868c07c989b66fe6f90055df30d2b6ba73265d08d8f20dc88d06b1e8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.olean"
+    },
+    {
+      "module": "Mathlib.Data.DFinsupp.WellFounded",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/DFinsupp/WellFounded.lean",
+        "bytes": 12658,
+        "sha256": "c78cafb79ebf43a96a64703ae454cdb16aa93bbca7dba1093c95935488b426cc"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/DFinsupp/WellFounded.olean"
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.WellFounded",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Finsupp/WellFounded.lean",
+        "bytes": 3897,
+        "sha256": "f126bde8897caf687895f1258db9d5c6b8f56a9b50e4ba69f8ea3f6c9bd962aa"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Finsupp/WellFounded.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.LexOrder",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/LexOrder.lean",
+        "bytes": 6352,
+        "sha256": "5c4202e2ecec831644916255b0f9f4ab29ae29bf0e3cd7ba53ef937e80e0a980"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LexOrder.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Order",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/Order.lean",
+        "bytes": 30029,
+        "sha256": "c836e42a2985173386aa17cc3be8a07596fce9b536ae56a9afdf4def811b3991"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/Order.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/NoZeroDivisors.lean",
+        "bytes": 7040,
+        "sha256": "2bd7d849b7d8e6828ddfd951f70ac83e7a1d4a62a866a7a38eaf60e57b1f9231"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/NoZeroDivisors.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Inverse",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/Inverse.lean",
+        "bytes": 10596,
+        "sha256": "88aa16350e36e9b306e70cfdbe146a758266dd7a6e3b84ae73e8da168faeed0d"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/Inverse.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Basic",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Basic.lean",
+        "bytes": 31318,
+        "sha256": "2a1789832908109b3b461bbbd869188751484fd65bc97527e085f664511ac9cc"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Basic.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Order",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Order.lean",
+        "bytes": 18033,
+        "sha256": "613f031de3c0f6f42a91bdb884a4a8b9e362d4fc0423b29da7e09f352aec42b0"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Order.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.NoZeroDivisors",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.lean",
+        "bytes": 2138,
+        "sha256": "41cd6461630267b7ab62deed3d5ddeebbd510bc719a372908bde8984eda679f2"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Inverse",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Inverse.lean",
+        "bytes": 13191,
+        "sha256": "6e7b5c27c38ade2b222af3d6d5f81c33d0a97a7d94555c8b1e6978c6e8911200"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Inverse.olean"
+    },
+    {
+      "module": "Mathlib.Data.List.GetD",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/List/GetD.lean",
+        "bytes": 4257,
+        "sha256": "a3c1ef02429c3696d65dc0a2c266287f4e670f1d511962ead1f6f798d587fff9"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/GetD.olean"
+    },
+    {
+      "module": "Mathlib.Data.List.ToFinsupp",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/List/ToFinsupp.lean",
+        "bytes": 5202,
+        "sha256": "4db308932c91ebc9ece68ac8ad4364d4963debc92bed3cb2cc3d7e058acd7932"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.olean"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Factorial.DoubleFactorial",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Factorial/DoubleFactorial.lean",
+        "bytes": 2932,
+        "sha256": "cb2d2378fc50ab17003d9297bbc1a06d103a7e0ecdc7624cdf73b3bbe57e5120"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Factorial/DoubleFactorial.olean"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Choose.Multinomial",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Nat/Choose/Multinomial.lean",
+        "bytes": 20518,
+        "sha256": "70a3aa4611a7792089021764848f4aaefcb92392387c33505d8beeea15d8fc12"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Nat/Choose/Multinomial.olean"
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Coeff",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Coeff.lean",
+        "bytes": 4740,
+        "sha256": "95ccb03aba37ba4c0bbb12dee38bb2450c829862e49cf64d5a888d7fa6218e0d"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Coeff.olean"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Finsupp",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Finset/Finsupp.lean",
+        "bytes": 3422,
+        "sha256": "e0daced7e7b6f389dcc65f4b975c0619b9075d1b3be9227e35165f526306fc42"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Finset/Finsupp.olean"
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.Interval",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/Finsupp/Interval.lean",
+        "bytes": 4325,
+        "sha256": "8499eee9cee87d32020ae19fbbbfa68a521bd2fbe13f5f92f4870aaf02e277ee"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/Finsupp/Interval.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Trunc",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/Trunc.lean",
+        "bytes": 16639,
+        "sha256": "38e1f35bd05f03026efbd52e3ad4d74d91ba2230562fea2cbae05c05c57ff9e2"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/Trunc.olean"
+    },
+    {
+      "module": "Mathlib.Topology.Instances.ENat",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Instances/ENat.lean",
+        "bytes": 5717,
+        "sha256": "6be36f25c41d9fa9de9861c05d5b06a2743a1a456f31c43bd632568d09d43863"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.olean"
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.LinearTopology",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/LinearTopology.lean",
+        "bytes": 18947,
+        "sha256": "2408db49e6e95fdfbb5a980592451adc981baf46e9e6bbff4983c9fcba24d524"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.olean"
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.TopologicallyNilpotent",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/TopologicallyNilpotent.lean",
+        "bytes": 5676,
+        "sha256": "3dae93da7dae4d79c7ce6c10b5369b16f0a2961c57f17c0234656f4c8f35807f"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.PiTopology",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/PiTopology.lean",
+        "bytes": 16967,
+        "sha256": "ab0aa63f03d67485c1475347094429ae8bc569185e4720ac2634e42ba5567911"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/PiTopology.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Evaluation",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/Evaluation.lean",
+        "bytes": 15294,
+        "sha256": "533efe3b9d0308a5842f4927c514df7e5df45fcba0b366c28084f74741ccf43c"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/Evaluation.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.LinearTopology",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/LinearTopology.lean",
+        "bytes": 7748,
+        "sha256": "9605f729f7f41fae9245d82a9e5c6c217db3db48da19cd2ec5b13ee177990e29"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/LinearTopology.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Substitution",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/MvPowerSeries/Substitution.lean",
+        "bytes": 33282,
+        "sha256": "556183c508cf310c7596e160dbeab1424f0893086852a87015f500331b40901a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/MvPowerSeries/Substitution.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Trunc",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Trunc.lean",
+        "bytes": 8423,
+        "sha256": "6e918ead79bef7a8180f74c3a68924573ea142d28643541504d5d7a5c607106a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Trunc.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.PiTopology",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/PiTopology.lean",
+        "bytes": 12630,
+        "sha256": "f05e6c99776d5f9779b5d155acc8c97f94f615cb07635231cc9db961dd17b1d2"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/PiTopology.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Evaluation",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Evaluation.lean",
+        "bytes": 9558,
+        "sha256": "153b4c4204923f5cc6de9f9ad3e27e22454a7a5b3e92c8047edb9ce8475c86d2"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Evaluation.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Substitution",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Substitution.lean",
+        "bytes": 26835,
+        "sha256": "0fb4bd321f9575c56e2f55bdebda83112ebaa865d01fe64be16546d25921831b"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.olean"
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Derivative",
+      "kind": "official",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Derivative.lean",
+        "bytes": 8445,
+        "sha256": "444d92996281fecaa4562e6f441c57c4e71a303d2fbae4c413cf01a5f53d5f3a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Derivative.olean"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Reductum.lean",
+        "bytes": 14817,
+        "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Reductum.olean"
+    }
+  ],
+  "scope": "First five ready transfer backports plus only missing pinned official prerequisites. No full transfer result claimed."
+}

@@ -1,0 +1,243 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:52:33.279298+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-sturm-cauchy-compile-plan02.json",
+  "plan_sha256": "62456e5e1b4a21d302a78e66addbf3964352ed75ed4388a26d859026424f26ae",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Serial direct compiler only; reuse existing unchanged guard. Skip source-matching successful receipts. Prerequisites listed here are informational and must be enforced by root.",
+  "jobs": [
+    {
+      "label": "TauCeti.Algebra.Polynomial.Thom",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean",
+        "bytes": 20332,
+        "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+      },
+      "start_utc": "2026-10-13T13:52:33.279626+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:52:33.279616+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342504,
+        "used_percent": 18.262896575400713
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/01-TauCeti_Algebra_Polynomial_Thom.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/01-TauCeti_Algebra_Polynomial_Thom.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 3.503,
+      "end_utc": "2026-10-13T13:52:36.783530+00:00",
+      "peak_physical_used_percent": 20.633462492754624,
+      "memory_after": {
+        "utc": "2026-10-13T13:52:36.783682+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339964,
+        "used_percent": 18.287782657888478
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.olean",
+          "bytes": 546848,
+          "sha256": "90f60625d209ba08331b44273ed07fcbfc565ff6276b0d0ef4ce0ec277cf65b1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.ilean",
+          "bytes": 54165,
+          "sha256": "c02459d5273223a2a90095e956b671655b7a8eec67768d76cb1200c3fea08284"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+        "bytes": 13072,
+        "sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109"
+      },
+      "start_utc": "2026-10-13T13:52:36.785079+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:52:36.785041+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339736,
+        "used_percent": 18.29001652671021
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/OneSided.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/02-TauCeti_Algebra_Polynomial_Eval_OneSided.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/02-TauCeti_Algebra_Polynomial_Eval_OneSided.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 4.004,
+      "end_utc": "2026-10-13T13:52:40.789447+00:00",
+      "peak_physical_used_percent": 20.984219088448274,
+      "memory_after": {
+        "utc": "2026-10-13T13:52:40.789647+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8347236,
+        "used_percent": 18.21653399967942
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.olean",
+          "bytes": 465184,
+          "sha256": "e771eaf07e1b882276006bbc882bd82c02302936c9e83c61d0bd5eeb93796921"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Eval/OneSided.ilean",
+          "bytes": 32429,
+          "sha256": "d27b8e4d70c7aedbcd8b0e611ec9f49c3508792da45867cc0537b2dae4a101a9"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+        "bytes": 5738,
+        "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+      },
+      "start_utc": "2026-10-13T13:52:40.791064+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:52:40.791052+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8347236,
+        "used_percent": 18.21653399967942
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/03-TauCeti_Algebra_Polynomial_RealClosed_Sign.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/03-TauCeti_Algebra_Polynomial_RealClosed_Sign.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 2.502,
+      "end_utc": "2026-10-13T13:52:43.294378+00:00",
+      "peak_physical_used_percent": 21.84872632246014,
+      "memory_after": {
+        "utc": "2026-10-13T13:52:43.294556+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345164,
+        "used_percent": 18.23683477248046
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+          "bytes": 296808,
+          "sha256": "0079cf290cc2ab5f3957007d6582545173dc798f848481b46a6e5d13bf2f3e43"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+          "bytes": 15493,
+          "sha256": "1b9a6f047aaebee9c0eeb5237cf2d9def742e39161e26403a3470194ae7f1485"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+        "bytes": 17635,
+        "sha256": "a10b96b02e2df1d5c1e82b35c2f4d548140702e3e3d6720cbb5cdc772ed13aef"
+      },
+      "start_utc": "2026-10-13T13:52:43.295709+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:52:43.295695+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344932,
+        "used_percent": 18.23910783198328
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/04-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Basic.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/04-TauCeti_Algebra_Polynomial_Sturm_CauchyIndex_Basic.stderr.log",
+      "pid": 14,
+      "exit_code": 1,
+      "seconds": 5.505,
+      "end_utc": "2026-10-13T13:52:48.801312+00:00",
+      "peak_physical_used_percent": 21.814081760382688,
+      "memory_after": {
+        "utc": "2026-10-13T13:52:48.801467+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8344976,
+        "used_percent": 18.238676734491367
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:52:48.802383+00:00"
+}

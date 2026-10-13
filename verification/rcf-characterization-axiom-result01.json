@@ -1,0 +1,510 @@
+{
+  "schema": "hilbert17-named-axiom-result-v1",
+  "status": "ALL_27_PLANNED_TYPES_AND_AXIOM_RECORDS_MATCH",
+  "timestamp_utc": "2026-10-13T14:03:27.753182+00:00",
+  "scope": "Exact planned public declarations only; each #check output is present and each #print axioms list contains only standard Lean axioms. This is not external independent verification, a full transitive replay, or final Hilbert17 candidate verification.",
+  "parser_note": "Lean quotes declaration names without escaping terminal primes; use a declaration capture greedy within one line, or match the exact planned name, rather than [^']+.",
+  "source_manifest": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/rcf-characterization-axiom-sources01.json",
+    "bytes": 7423,
+    "sha256": "d925150be34efa573034ee6d3a8f9a49abdfa9789a7be4c090bbb3976cbc5c2c"
+  },
+  "compile_summary": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/summary.json",
+    "bytes": 22452,
+    "sha256": "5ba64d3c28f5c4be088794af6659799561a8e071bd0b2344dcf4b81983ee2b37"
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declaration_count": 27,
+  "entries": [
+    {
+      "audit_module": "QuadraticDiscriminantAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/01-QuadraticDiscriminantAxioms.stdout.log",
+        "bytes": 429,
+        "sha256": "a46e765b6e7a59fff6ac4ee87c8d2266cf4d1cc91f3feb2b1f5cbb0d654f0a2f"
+      },
+      "records": [
+        {
+          "declaration": "TauCeti.Compat.not_irreducible_monic_quadratic_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "QuadraticExtensionAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/02-QuadraticExtensionAxioms.stdout.log",
+        "bytes": 367,
+        "sha256": "e7478e2b84ae54eb99137ed6cb83678fc7fc976b8ef4037ae272311c167f7ca6"
+      },
+      "records": [
+        {
+          "declaration": "TauCeti.Compat.finrank_ne_two_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureFiniteExtensionAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/03-RealClosureFiniteExtensionAxioms.stdout.log",
+        "bytes": 781,
+        "sha256": "d6ca9fab942aeb3d4e7027952bfbc12ae28a04407ad05d474c8ce604b0f684c3"
+      },
+      "records": [
+        {
+          "declaration": "TauCeti.RealClosure.finrank_eq_one_of_odd",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.finrank_ne_two_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureComplexificationAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/04-RealClosureComplexificationAxioms.stdout.log",
+        "bytes": 240,
+        "sha256": "820e2b59f9deaebbe45876c4c318916c121c7585b91325a8878c878a18d442d0"
+      },
+      "records": [
+        {
+          "declaration": "QuadraticAlgebra.isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureGaloisAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/05-RealClosureGaloisAxioms.stdout.log",
+        "bytes": 1420,
+        "sha256": "2ad04d32c94a9449ede485dbe5dc43b591f54a7b97210536b082c73f3640f0ff"
+      },
+      "records": [
+        {
+          "declaration": "TauCeti.RealClosure.isPGroup_two_algEquiv",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.finrank_eq_one_of_isPGroup",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureAlgebraicClosedAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/06-RealClosureAlgebraicClosedAxioms.stdout.log",
+        "bytes": 1569,
+        "sha256": "48d65a10280f735bfae97385479bfaea29017d5851e5b9699c90c9fa5ea6fe51"
+      },
+      "records": [
+        {
+          "declaration": "TauCeti.RealClosure.finrank_eq_one_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.isAlgClosed_of_forall_isSquare",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.isAlgClosed_quadraticAlgebra",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.natDegree_le_two_of_irreducible",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureIVTAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/07-RealClosureIVTAxioms.stdout.log",
+        "bytes": 3548,
+        "sha256": "7001bc44c1bec07d5a02e4be11a76da1f7939998c07003b548f00803a7d99045"
+      },
+      "records": [
+        {
+          "declaration": "Polynomial.eval_mul_pos_of_no_roots",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_root_Icc_of_mul_nonpos",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_root_Icc",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_root_Ioo",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_root_Ioo_of_mul_neg",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.intermediate_value_Icc",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.intermediate_value_Icc'",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    },
+    {
+      "audit_module": "RealClosureAbstractRolleAxioms",
+      "stdout": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/08-RealClosureAbstractRolleAxioms.stdout.log",
+        "bytes": 4284,
+        "sha256": "ab3bd6aba2f5c2934923302b093cc35c759424ab16271c33728e2b3c0a25c417"
+      },
+      "records": [
+        {
+          "declaration": "Polynomial.exists_derivative_root_of_isRoot",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "TauCeti.RealClosure.polynomialRolle_of_isRealClosed",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_derivative_root",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.exists_eval_sub_eq_derivative_eval_mul",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.monotoneOn_of_derivative_nonneg",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.antitoneOn_of_derivative_nonpos",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.strictMonoOn_of_derivative_pos",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        },
+        {
+          "declaration": "Polynomial.strictAntiOn_of_derivative_neg",
+          "type_printed": true,
+          "axioms_rendered": [
+            "propext",
+            "Classical.choice.{u}",
+            "Quot.sound.{u}"
+          ],
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "standard_axioms_only": true
+        }
+      ]
+    }
+  ]
+}

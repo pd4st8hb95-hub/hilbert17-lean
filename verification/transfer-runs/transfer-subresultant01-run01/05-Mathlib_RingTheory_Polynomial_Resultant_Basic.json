@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean",
+    "bytes": 52031,
+    "sha256": "ec4914f081126c7954f14ae263f072a176b874ded07cb2aa5093946fac0bb119"
+  },
+  "start_utc": "2026-10-13T13:34:13.502096+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:34:13.502084+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8326620,
+    "used_percent": 18.418522769981664
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/05-Mathlib_RingTheory_Polynomial_Resultant_Basic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/05-Mathlib_RingTheory_Polynomial_Resultant_Basic.stderr.log",
+  "pid": 18,
+  "exit_code": 0,
+  "seconds": 34.033,
+  "end_utc": "2026-10-13T13:34:47.536026+00:00",
+  "peak_physical_used_percent": 22.34781964605328,
+  "memory_after": {
+    "utc": "2026-10-13T13:34:47.536176+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8343396,
+    "used_percent": 18.254157053519187
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean",
+      "bytes": 296184,
+      "sha256": "b2605f8e549a680a564e5282ae03089651762ae18af737ca9c293383e167a2c1"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean.private",
+      "bytes": 6634480,
+      "sha256": "5dee6c920f78207398b739d3ec6217d73e2f2c36487235f153f12869090f1966"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.olean.server",
+      "bytes": 24032,
+      "sha256": "24b102f2080c4e995088f582d24cd8ed6c2359c5995b950379ef89caacb5949d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ilean",
+      "bytes": 162320,
+      "sha256": "33f7812bfcea9814affaeff11a975a8c06cc4cab0cea99bce1107800ec7288d9"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/Resultant/Basic.ir",
+      "bytes": 10560,
+      "sha256": "7266ea74b8e9b224758e2709288b0c80cffbd8856bb640bc1aa38966501c26ef"
+    }
+  ]
+}

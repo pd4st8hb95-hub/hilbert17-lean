@@ -1,0 +1,55 @@
+{
+  "label": "GeneralQueryProjection",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean",
+    "bytes": 4539,
+    "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+  },
+  "start_utc": "2026-10-13T14:02:59.470352+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:02:59.470338+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8366220,
+    "used_percent": 18.030535027259077
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/02-GeneralQueryProjection.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/02-GeneralQueryProjection.stderr.log",
+  "pid": 8,
+  "exit_code": 0,
+  "seconds": 3.004,
+  "end_utc": "2026-10-13T14:03:02.474837+00:00",
+  "peak_physical_used_percent": 21.7776736176565,
+  "memory_after": {
+    "utc": "2026-10-13T14:03:02.474989+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316152,
+    "used_percent": 18.521084782376107
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean",
+      "bytes": 189712,
+      "sha256": "054ecd398811e785119fc1e656dafadb0f953ecc638a440035fdfcbf749c4ea0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.ilean",
+      "bytes": 16691,
+      "sha256": "99680c11b4872a273b2438781ee11d76fe391de35b96a3bd6efa3e33e4703b92"
+    }
+  ]
+}

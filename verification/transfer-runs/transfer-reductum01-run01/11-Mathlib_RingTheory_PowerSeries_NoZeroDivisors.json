@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.NoZeroDivisors",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.lean",
+    "bytes": 2138,
+    "sha256": "41cd6461630267b7ab62deed3d5ddeebbd510bc719a372908bde8984eda679f2"
+  },
+  "start_utc": "2026-10-13T13:24:42.895896+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:42.895883+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8354920,
+    "used_percent": 18.141248701318805
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/11-Mathlib_RingTheory_PowerSeries_NoZeroDivisors.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/11-Mathlib_RingTheory_PowerSeries_NoZeroDivisors.stderr.log",
+  "pid": 42,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:24:44.900646+00:00",
+  "peak_physical_used_percent": 20.280863935050068,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:44.900805+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8337892,
+    "used_percent": 18.308083430689518
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.olean",
+      "bytes": 19472,
+      "sha256": "ff984ab80c6c2903e9fe9f4df28bafabb7ca5881ac24600d477e02feb200a32c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.olean.private",
+      "bytes": 61696,
+      "sha256": "e4725eb88395a880893e5d2c655d2aecf77239fc4849e2aea976e469afb36704"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.olean.server",
+      "bytes": 3136,
+      "sha256": "beae6849f3199ca4dfa6e4342a4b459eb1b97ef0318703c2ac406ec728376d63"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.ilean",
+      "bytes": 7182,
+      "sha256": "37c60cc4d3e2a8a8c2c17dcc5f40a508cb5cac071b238c64da98a8fe6b38b6c2"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.ir",
+      "bytes": 1720,
+      "sha256": "2775be306c20f933ddbf4c69e9a36acc353fc9a6b7236c094a451d0e3f190d8b"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Compat.SturmSequence",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+    "bytes": 5878,
+    "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+  },
+  "start_utc": "2026-10-13T13:30:35.468802+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:30:35.468764+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339360,
+    "used_percent": 18.293700450732022
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/02-TauCeti_Compat_SturmSequence.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-entry01-run01/02-TauCeti_Compat_SturmSequence.stderr.log",
+  "pid": 8,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:30:37.471565+00:00",
+  "peak_physical_used_percent": 20.52302315346248,
+  "memory_after": {
+    "utc": "2026-10-13T13:30:37.471715+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8341764,
+    "used_percent": 18.270146851401087
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.olean",
+      "bytes": 239648,
+      "sha256": "1991283315074425162e695fdcae1483cc9819d14bbaa24b807adfb9fa5ff34d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Compat/SturmSequence.ilean",
+      "bytes": 7360,
+      "sha256": "271def0cff9436f8a44b2dc5fada47d1aa14fe67fff0c61e79a38181497d985b"
+    }
+  ]
+}

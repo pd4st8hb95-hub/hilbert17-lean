@@ -1,0 +1,55 @@
+{
+  "label": "CoefficientSignPattern",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean",
+    "bytes": 3329,
+    "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+  },
+  "start_utc": "2026-10-13T13:31:21.993857+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:31:21.993847+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8348992,
+    "used_percent": 18.199329290683945
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/01-CoefficientSignPattern.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/01-CoefficientSignPattern.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:31:23.996595+00:00",
+  "peak_physical_used_percent": 20.391460037066548,
+  "memory_after": {
+    "utc": "2026-10-13T13:31:23.996727+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8324488,
+    "used_percent": 18.43941140299895
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+      "bytes": 118632,
+      "sha256": "483976048811ffeef2a84fbbed3e45701774ac8946178cf60841e45b04ee0ed7"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+      "bytes": 11106,
+      "sha256": "f36d3b90b22be0e157123d4f5388d37ed07dab3d4f9f09edf280567594ab6c60"
+    }
+  ]
+}

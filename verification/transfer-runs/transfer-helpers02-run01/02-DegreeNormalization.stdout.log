@@ -1,0 +1,37 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean:65:6: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a =>
+    C ((Localization.awayLift f (p.coeff _a) ⋯) (IsLocalization.Away.invSelf (p.coeff _a))) *
+        map f (p.reductum (_a + 1)) =
+      C (f (p.coeff _a))⁻¹ * map f p
+Error: Application type mismatch: The argument
+  hc
+has type
+  f (p.coeff d) ≠ 0
+but is expected to have type
+  f (p.coeff _a) ≠ 0
+in the application
+  isUnit_iff_ne_zero.mpr hc
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+A : Type u_1
+inst✝¹ : CommRing A
+K : Type u_2
+inst✝ : Field K
+p : A[X]
+d : ℕ
+f : A →+* K
+hd : (map f p).natDegree = d
+hc : f (p.coeff d) ≠ 0
+⊢ C ((Localization.awayLift f (p.coeff d) ⋯) (IsLocalization.Away.invSelf (p.coeff d))) * map f (p.reductum (d + 1)) =
+    C (f (p.coeff d))⁻¹ * map f p
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean:64:35: warning: This simp argument is unused:
+  awayLift_invSelf
+
+Hint: Omit it from the simp argument list.
+  simp only [Polynomial.map_mul, Polynomial.map_C, Polynomial.map_map,
+      IsLocalization.Away.lift_comp,̵ ̵a̵w̵a̵y̵L̵i̵f̵t̵_̵i̵n̵v̵S̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

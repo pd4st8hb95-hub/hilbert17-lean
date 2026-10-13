@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+    "bytes": 21159,
+    "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+  },
+  "start_utc": "2026-10-13T13:39:57.561332+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:39:57.561319+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8335120,
+    "used_percent": 18.335242572680098
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/04-TauCeti_LinearAlgebra_Matrix_CornerMinor.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/04-TauCeti_LinearAlgebra_Matrix_CornerMinor.stderr.log",
+  "pid": 14,
+  "exit_code": 0,
+  "seconds": 4.506,
+  "end_utc": "2026-10-13T13:40:02.068090+00:00",
+  "peak_physical_used_percent": 20.862179307555532,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:02.068248+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8347076,
+    "used_percent": 18.218101626922742
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.olean",
+      "bytes": 691888,
+      "sha256": "723abaaac211da0f5be6caf0abf03945541c9243170fc288b779ff4f2d2cbeb5"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.ilean",
+      "bytes": 73781,
+      "sha256": "640988fbe61916e20c1235d017373388e0673db2a1bc1a94593547e4e53a423e"
+    }
+  ]
+}

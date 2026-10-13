@@ -1,0 +1,45 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:26:2: error: unsolved goals
+case pos
+A : Type u_1
+inst✝⁴ : CommRing A
+K : Type u_2
+L : Type u_3
+inst✝³ : CommRing K
+inst✝² : LinearOrder K
+inst✝¹ : CommRing L
+inst✝ : LinearOrder L
+p : A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ i ≤ p.natDegree, sign (f (p.coeff i)) = sign (g (p.coeff i))
+i : ℕ
+hi : i ≤ p.natDegree
+⊢ sign (sign (g (p.coeff i))) = 0 ↔ g (p.coeff i) = 0
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:27:2: error: unsolved goals
+case neg
+A : Type u_1
+inst✝⁴ : CommRing A
+K : Type u_2
+L : Type u_3
+inst✝³ : CommRing K
+inst✝² : LinearOrder K
+inst✝¹ : CommRing L
+inst✝ : LinearOrder L
+p : A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ i ≤ p.natDegree, sign (f (p.coeff i)) = sign (g (p.coeff i))
+i : ℕ
+hi : ¬i ≤ p.natDegree
+⊢ 0 = 0 ↔ 0 = 0
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:43:10: error(lean.unknownIdentifier): Unknown identifier `natDegree_le_iff_coeff_eq_zero.mpr`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:44:10: error: No goals to be solved
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:46:10: error(lean.unknownIdentifier): Unknown identifier `natDegree_le_iff_coeff_eq_zero.mpr`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:47:10: error: No goals to be solved
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean:55:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.leadingCoeff_sign_eq_of_coeff_sign_agree`:
+  [IsStrictOrderedRing K]
+  [IsStrictOrderedRing L]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsStrictOrderedRing K] [IsStrictOrderedRing L] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

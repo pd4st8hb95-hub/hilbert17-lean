@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Data.Fintype.Fiber",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+    "bytes": 8130,
+    "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+  },
+  "start_utc": "2026-10-13T13:32:49.191734+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:32:49.191723+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349400,
+    "used_percent": 18.19533184121347
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/01-TauCeti_Data_Fintype_Fiber.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr01-run01/01-TauCeti_Data_Fintype_Fiber.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:32:50.694525+00:00",
+  "peak_physical_used_percent": 20.05685000197913,
+  "memory_after": {
+    "utc": "2026-10-13T13:32:50.694671+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8332888,
+    "used_percent": 18.357110972724463
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.olean",
+      "bytes": 149904,
+      "sha256": "d52ec75d88129e3a49b56393b1fe4e9f33370872d0b57673964463863695495e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Data/Fintype/Fiber.ilean",
+      "bytes": 15215,
+      "sha256": "3293ad2dbc908d3fa4fa97e7e76f62dfac32b0a962116c3abc078f9f4d3049ef"
+    }
+  ]
+}

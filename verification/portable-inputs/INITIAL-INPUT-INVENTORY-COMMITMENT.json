@@ -1,0 +1,14 @@
+{
+  "scope": "Metadata commitment to copied initial official source/cache inputs. The full 12.3-MB cache inventory is retained in the original execution workspace, not bundled in this source checkpoint. No compiled cache is shipped.",
+  "original_file": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/initial-input-pins01.json",
+    "bytes": 12313935,
+    "sha256": "4aec67fe36c6bf540df032a303c9a972d726cebd7debaa5e148cac7779f473cc"
+  },
+  "pin_count": 42162,
+  "inventory_sha256_rechecked": true,
+  "fresh_transitive_replay": "Pending separate checkpoint; the current formal proof and recursive-axiom audit do not assume unproved external mathematical claims.",
+  "pinned_toolchain": "leanprover/lean4:v4.32.1",
+  "mathlib_git_revision": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "dependency_revision_source": "lake-manifest.json in the delivered repository and verification/portable-inputs/isolated-lake-manifest.json"
+}

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+    "bytes": 5545,
+    "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+  },
+  "start_utc": "2026-10-13T13:50:28.741461+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:50:28.741447+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317320,
+    "used_percent": 18.509641103499845
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/05-TauCeti_Algebra_Polynomial_RealClosed_Quadratic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/05-TauCeti_Algebra_Polynomial_RealClosed_Quadratic.stderr.log",
+  "pid": 17,
+  "exit_code": 0,
+  "seconds": 3.503,
+  "end_utc": "2026-10-13T13:50:32.245397+00:00",
+  "peak_physical_used_percent": 22.044444583789087,
+  "memory_after": {
+    "utc": "2026-10-13T13:50:32.245583+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8323276,
+    "used_percent": 18.451286179367127
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.olean",
+      "bytes": 183264,
+      "sha256": "a9b6c25b6e86d19e577eb75cf6e24974dc47264e527c892bb5cd9ce7469f64d8"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.ilean",
+      "bytes": 14404,
+      "sha256": "10b01f8d815564c2e14f659ab8fa9c88d76003e79f3944bc6392a87bdb313568"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+    "bytes": 15764,
+    "sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996"
+  },
+  "start_utc": "2026-10-13T13:54:47.106431+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:47.106416+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8315016,
+    "used_percent": 18.532214935803704
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/06-TauCeti_Algebra_Polynomial_Sturm_Tarski.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy03-run01/06-TauCeti_Algebra_Polynomial_Sturm_Tarski.stderr.log",
+  "pid": 23,
+  "exit_code": 0,
+  "seconds": 5.506,
+  "end_utc": "2026-10-13T13:54:52.613285+00:00",
+  "peak_physical_used_percent": 22.142342905134644,
+  "memory_after": {
+    "utc": "2026-10-13T13:54:52.613543+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8333888,
+    "used_percent": 18.34731330245369
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.olean",
+      "bytes": 1075840,
+      "sha256": "8b3d01abc1e1d270588a9204f3d98bb45e8cf962fa0e3474ba28b9dd9f32a07a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Tarski.ilean",
+      "bytes": 46118,
+      "sha256": "21e8bb6c450603c760c69d24ec39a3e77a4586c612d374004d72a54653d9e5c3"
+    }
+  ]
+}

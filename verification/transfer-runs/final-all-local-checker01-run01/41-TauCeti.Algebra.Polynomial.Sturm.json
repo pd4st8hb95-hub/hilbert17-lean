@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+  "start_utc": "2026-10-13T14:20:06.286921+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:06.286913+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8303772,
+    "used_percent": 18.64237994032827
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.Polynomial.Sturm.Infinity"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+    "bytes": 12061,
+    "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.olean",
+      "bytes": 315544,
+      "sha256": "0c76281fa3f848f5013a81d6ca04f538ab16f2fafc76003d022366f2f6619805"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Sturm/Infinity.ilean",
+      "bytes": 29174,
+      "sha256": "ae4066feca3ed406c39653c94581dbc3bc61cfb53aa16e3ee40338ce70448d0c"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/41-TauCeti.Algebra.Polynomial.Sturm.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/41-TauCeti.Algebra.Polynomial.Sturm.stderr.log",
+  "pid": 285,
+  "exit_code": 0,
+  "seconds": 2.504,
+  "end_utc": "2026-10-13T14:20:08.790727+00:00",
+  "peak_physical_used_percent": 20.847482802149372,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:08.790821+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8304456,
+    "used_percent": 18.635678333863062
+  }
+}

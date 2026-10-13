@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+  "start_utc": "2026-10-13T14:20:30.360677+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:30.360668+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8298028,
+    "used_percent": 18.698657758363584
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.LinearAlgebra.Matrix.CornerMinor"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+    "bytes": 21159,
+    "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.olean",
+      "bytes": 691888,
+      "sha256": "723abaaac211da0f5be6caf0abf03945541c9243170fc288b779ff4f2d2cbeb5"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/LinearAlgebra/Matrix/CornerMinor.ilean",
+      "bytes": 73781,
+      "sha256": "640988fbe61916e20c1235d017373388e0673db2a1bc1a94593547e4e53a423e"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/52-TauCeti.LinearAlgebra.Matrix.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/52-TauCeti.LinearAlgebra.Matrix.stderr.log",
+  "pid": 362,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:20:32.363722+00:00",
+  "peak_physical_used_percent": 20.120221333290484,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:32.363815+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307384,
+    "used_percent": 18.60699075531024
+  }
+}

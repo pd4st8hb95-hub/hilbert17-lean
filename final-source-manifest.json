@@ -1,0 +1,608 @@
+{
+  "status": "VERIFIED_COMPILE_CONTRACT_AXIOMS_AND_ALL_SELECTED_LOCAL_REPLAY",
+  "base_commit": "4f9248cfc823d91b3f723d1c59833d8590c7fdf3",
+  "scope": "New proof sources only. No previously published Lean source is replaced. Source hashes will be refreshed to the final compiler/replay plan before release.",
+  "new_source_count": 75,
+  "sources": [
+    {
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "path": "TauCeti/Compat/QuadraticDiscriminant.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticDiscriminant.lean",
+      "bytes": 1300,
+      "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "path": "TauCeti/Compat/QuadraticExtension.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Compat/QuadraticExtension.lean",
+      "bytes": 1918,
+      "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "path": "TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "bytes": 2005,
+      "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "path": "TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "bytes": 5096,
+      "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "path": "TauCeti/Algebra/Order/Ring/Square.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Square.lean",
+      "bytes": 1030,
+      "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "path": "TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+      "bytes": 2934,
+      "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "path": "TauCeti/Algebra/Ring/Semireal.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Ring/Semireal.lean",
+      "bytes": 1052,
+      "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "path": "TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "bytes": 1712,
+      "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "path": "TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "bytes": 1492,
+      "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "path": "TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "bytes": 4664,
+      "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "path": "TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "bytes": 7980,
+      "sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "path": "TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "bytes": 18891,
+      "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "path": "TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "bytes": 16032,
+      "sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "bytes": 5545,
+      "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "path": "TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "bytes": 5281,
+      "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+      "path": "TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "bytes": 1223,
+      "sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Rolle",
+      "path": "TauCeti/Algebra/Polynomial/Rolle.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Rolle.lean",
+      "bytes": 5222,
+      "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Thom",
+      "path": "TauCeti/Algebra/Polynomial/Thom.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean",
+      "bytes": 20332,
+      "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "path": "TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "bytes": 13072,
+      "sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.Finset.Jumps",
+      "path": "TauCeti/Data/Finset/Jumps.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/Finset/Jumps.lean",
+      "bytes": 5809,
+      "sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "bytes": 5738,
+      "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "path": "TauCeti/Data/Fintype/Fiber.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/Fintype/Fiber.lean",
+      "bytes": 8130,
+      "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "bytes": 7875,
+      "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+      "bytes": 17633,
+      "sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+      "path": "TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "bytes": 1820,
+      "sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "path": "TauCeti/Compat/ListSignVariations.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Compat/ListSignVariations.lean",
+      "bytes": 6741,
+      "sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.List.SignVariations",
+      "path": "TauCeti/Data/List/SignVariations.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/List/SignVariations.lean",
+      "bytes": 2351,
+      "sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "bytes": 10430,
+      "sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "bytes": 6361,
+      "sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "path": "TauCeti/Compat/FieldDivisionExtra.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Compat/FieldDivisionExtra.lean",
+      "bytes": 1281,
+      "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "path": "TauCeti/Compat/SturmSequence.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Compat/SturmSequence.lean",
+      "bytes": 5878,
+      "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "bytes": 4086,
+      "sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "bytes": 12193,
+      "sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "bytes": 7933,
+      "sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "bytes": 15764,
+      "sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "bytes": 18473,
+      "sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+      "path": "TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "bytes": 5569,
+      "sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "bytes": 12061,
+      "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+      "bytes": 6251,
+      "sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Parity",
+      "path": "TauCeti/Data/SignType/Parity.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/SignType/Parity.lean",
+      "bytes": 1756,
+      "sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "path": "TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+      "bytes": 9185,
+      "sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.List.PermanencesMinusVariations",
+      "path": "TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/List/PermanencesMinusVariations.lean",
+      "bytes": 10639,
+      "sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "path": "TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+      "bytes": 1454,
+      "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "path": "TauCeti/GroupTheory/Perm/Inversion.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean",
+      "bytes": 10143,
+      "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+      "bytes": 13500,
+      "sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+      "bytes": 16341,
+      "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "path": "TauCeti/RingTheory/Polynomial/Reductum.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Reductum.lean",
+      "bytes": 14817,
+      "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "path": "TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+      "bytes": 4022,
+      "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "path": "TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+      "bytes": 21159,
+      "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+      "bytes": 10866,
+      "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "path": "TauCeti/Data/Nat/Choose/Basic.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/Nat/Choose/Basic.lean",
+      "bytes": 6656,
+      "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+      "bytes": 10692,
+      "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "path": "TauCeti/Algebra/Polynomial/OfFn.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/OfFn.lean",
+      "bytes": 2217,
+      "sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+      "bytes": 12959,
+      "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.List.Range",
+      "path": "TauCeti/Data/List/Range.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/List/Range.lean",
+      "bytes": 2035,
+      "sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "path": "TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+      "bytes": 13239,
+      "sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "path": "CoefficientSignPattern.lean",
+      "source_workspace": "hilbert17-transfer/CoefficientSignPattern.lean",
+      "bytes": 3329,
+      "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "UniformRootCount",
+      "path": "UniformRootCount.lean",
+      "source_workspace": "hilbert17-transfer/UniformRootCount.lean",
+      "bytes": 5704,
+      "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "path": "TauCeti/Data/Matrix/OccCount.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/Matrix/OccCount.lean",
+      "bytes": 2653,
+      "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "path": "TauCeti/Data/SignType/Lagrange.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean",
+      "bytes": 2704,
+      "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "bytes": 4778,
+      "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "bytes": 7415,
+      "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "bytes": 2538,
+      "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "MonicQueryProjection",
+      "path": "MonicQueryProjection.lean",
+      "source_workspace": "hilbert17-transfer/MonicQueryProjection.lean",
+      "bytes": 7327,
+      "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "DegreeNormalization",
+      "path": "DegreeNormalization.lean",
+      "source_workspace": "hilbert17-transfer/DegreeNormalization.lean",
+      "bytes": 2861,
+      "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "path": "GeneralQueryProjection.lean",
+      "source_workspace": "hilbert17-transfer/GeneralQueryProjection.lean",
+      "bytes": 4539,
+      "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "path": "GeneralPatternProjection.lean",
+      "source_workspace": "hilbert17-transfer/GeneralPatternProjection.lean",
+      "bytes": 3245,
+      "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "path": "TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "bytes": 7338,
+      "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "path": "TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "bytes": 5807,
+      "sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "path": "TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "source_workspace": "hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "bytes": 5243,
+      "sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "path": "WholeLineAlternatives.lean",
+      "source_workspace": "hilbert17-transfer/WholeLineAlternatives.lean",
+      "bytes": 5507,
+      "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "UniformOneVariable",
+      "path": "UniformOneVariable.lean",
+      "source_workspace": "hilbert17-transfer/UniformOneVariable.lean",
+      "bytes": 5427,
+      "sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "FinSuccEvaluation",
+      "path": "FinSuccEvaluation.lean",
+      "source_workspace": "hilbert17-transfer/FinSuccEvaluation.lean",
+      "bytes": 1431,
+      "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "path": "FiniteVariableTransfer.lean",
+      "source_workspace": "hilbert17-transfer/FiniteVariableTransfer.lean",
+      "bytes": 4584,
+      "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    },
+    {
+      "module": "RealClosureTransfer",
+      "path": "RealClosureTransfer.lean",
+      "source_workspace": "hilbert17-transfer/RealClosureTransfer.lean",
+      "bytes": 1982,
+      "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae",
+      "verification": "Matching successful compiler source/output hashes and final selected same-kernel replay"
+    }
+  ]
+}

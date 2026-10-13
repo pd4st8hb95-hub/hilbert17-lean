@@ -1,0 +1,6 @@
+⚠ [1320/1341] Replayed ClearDenominators
+warning: ClearDenominators.lean:47:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [1649/1649] Built TargetSanity (1.7s)
+Build completed successfully (1649 jobs).

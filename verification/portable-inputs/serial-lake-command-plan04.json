@@ -1,0 +1,4426 @@
+{
+  "schema": "hilbert17-portable-lake-command-plan-v1",
+  "status": "READY_FOR_ROOT_REVIEW",
+  "lake": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "bytes": 13840,
+    "sha256": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3"
+  },
+  "lean": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "bytes": 9024,
+    "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "workspace": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+  "allowlist": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/source-allowlist02.json",
+    "bytes": 202317,
+    "sha256": "8757e6529556e189adde4dff5fdc7b46449e314fd428a02c0be32eb344b4bddc"
+  },
+  "manifest": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/lake-manifest.json",
+    "bytes": 3562,
+    "sha256": "640f59ca3c454c877f6961402b027007158774719f9d8358f533b550385bb9c2"
+  },
+  "overrides": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "bytes": 2251,
+    "sha256": "b77d24f125e367e725832e2c4c8ec550cea650dd526e8590caee2d39d85abbd7"
+  },
+  "root_config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/lakefile.toml",
+    "bytes": 4316,
+    "sha256": "ab18496692959a35b9b8126ec052866e65099fc1aaf34f3eccee43371cb99c59"
+  },
+  "private_package_configs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/plausible/lakefile.toml",
+      "bytes": 208,
+      "sha256": "7080bff2550b8440c05c8b339c45aa71182ae456ed1ff071613fc24d2333ed0b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/LeanSearchClient/lakefile.toml",
+      "bytes": 225,
+      "sha256": "24ea32e2c4e647d3fd517cd1e8f4bf117614f8aafdb3f90c5e869ae8005f9b86"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/importGraph/lakefile.toml",
+      "bytes": 989,
+      "sha256": "764919d6175073c67946d229ec3c6997471f428ba9b1b6a931601cb2b15cd88c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean",
+      "bytes": 3531,
+      "sha256": "207aca03191a0041fc849481fab56d4e1cd002a65b35e6cdacb10b763e2cb530"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/aesop/lakefile.toml",
+      "bytes": 439,
+      "sha256": "6ad0f69117a1d648019ae58125182f2e0e8d829a2b148c950c9c19cca52008f7"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Qq/lakefile.toml",
+      "bytes": 176,
+      "sha256": "9257b778ec0c0009e4c0f9c4a932336132a4c006ce5365052360f7d4e0111be6"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/batteries/lakefile.toml",
+      "bytes": 465,
+      "sha256": "79cad712993d3d4dc272be0223461c1de53c26ba5aae6cdccbf46ffea9b3ee6b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/Cli/lakefile.toml",
+      "bytes": 223,
+      "sha256": "e62f8c383c780d86aafd1e57654d109cdbd35cbc8a2b89baf89a9c355a91fcde"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+      "bytes": 6860,
+      "sha256": "fc08a7a39fe858bc2cfd1fbf2a0726656f12627b6059821ac8d03d391283a415"
+    }
+  ],
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/verification/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/verification/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "",
+    "LEAN_SRC_PATH": "",
+    "LAKE_NO_CACHE": "1",
+    "LAKE_ARTIFACT_CACHE": "false",
+    "LAKE_CACHE_DIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/cache",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "GIT_TERMINAL_PROMPT": "0"
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "shared_lock": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/runtime-compile.lock",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "serial_strategy": "One guarded Lake process at a time. Before each single-module build, --no-build +Module:deps must prove its prerequisite facets current under identical frozen inputs/options. The following +Module:olean should therefore compile only that module. Any failed dependency check stops before the build. A 0.5-second process scan kills multiple or unexpected compiler processes as a backstop; it does not claim to prevent every sub-0.5-second process. All existing physical-memory limits and first-failure stop rules apply.",
+  "jobs": [
+    {
+      "module": "Mathlib.Algebra.Group.Subgroup.Even",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Group/Subgroup/Even.lean",
+        "bytes": 2452,
+        "sha256": "338916da2da0d20d1d0e14d649d90ccdbc80c00c7f577f090fe7a50f2691a98e"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Group.Subgroup.Even:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Group.Subgroup.Even:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Ring.SumsOfSquares",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Ring/SumsOfSquares.lean",
+        "bytes": 8442,
+        "sha256": "cb099100afa03eff63cd1a5d6ff1186460f4472dcbda217e388560a2fbd61b46"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Ring.SumsOfSquares:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Ring.SumsOfSquares:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Ring.Semireal.Defs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Ring/Semireal/Defs.lean",
+        "bytes": 2321,
+        "sha256": "74fdf068ed266129272dfd325c034be17df3079b5817587c2deabd6fac2ad19f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Ring.Semireal.Defs:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Ring.Semireal.Defs:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.FieldTheory.IsRealClosed.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/FieldTheory/IsRealClosed/Basic.lean",
+        "bytes": 4642,
+        "sha256": "e2806df73ecfc81f91bdaba3be881cdfeef7117f485c371a23cf9b886b2f1661"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.FieldTheory.IsRealClosed.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.FieldTheory.IsRealClosed.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticDiscriminant",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Compat/QuadraticDiscriminant.lean",
+        "bytes": 1300,
+        "sha256": "0559690ed12fb361e985fba29dc1710d75a671fed3501d031f73b06cfd1130be"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Compat.QuadraticDiscriminant:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Compat.QuadraticDiscriminant:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.QuadraticExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Compat/QuadraticExtension.lean",
+        "bytes": 1918,
+        "sha256": "3a2aa7b57abe1b9c0624630d010d7b20a0e2847354d4aea9868dba477c4ed957"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Compat.QuadraticExtension:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Compat.QuadraticExtension:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.FiniteExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+        "bytes": 2005,
+        "sha256": "13fa1089066c7f7df11d9b8d9dbbf020cf22a17a4410c1aed6141850e77a028f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.FiniteExtension:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.FiniteExtension:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Galois",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/Galois.lean",
+        "bytes": 5096,
+        "sha256": "72110e9361a36751b4704dc5287b3cc3a0b219e70f48a75137607fe4844a54d8"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Galois:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Galois:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.QuadraticAlgebra.Defs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/QuadraticAlgebra/Defs.lean",
+        "bytes": 16478,
+        "sha256": "2e2dc4acdaadbbdbad1cb003d9f4dc183ab9be9a237391f61176bc0b511b24cd"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.QuadraticAlgebra.Defs:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.QuadraticAlgebra.Defs:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.QuadraticAlgebra.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/QuadraticAlgebra/Basic.lean",
+        "bytes": 11792,
+        "sha256": "10872cf90c344810f46d51a5b54431efd3d8bea09de14ca50554e1af32210be6"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.QuadraticAlgebra.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.QuadraticAlgebra.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Square",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Order/Ring/Square.lean",
+        "bytes": 1030,
+        "sha256": "8f8ac0a25195fa6d62272f681eac40c55baa8426e9d253ed3129401aa0cf3375"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Square:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Square:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticAlgebra.Square",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/QuadraticAlgebra/Square.lean",
+        "bytes": 2934,
+        "sha256": "23701941a1f470b0ecff854ea0b22f291d087660f48724f37e4e93ba0be3db14"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.QuadraticAlgebra.Square:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.QuadraticAlgebra.Square:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Semireal",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Ring/Semireal.lean",
+        "bytes": 1052,
+        "sha256": "1f0dbf1501673c756c90b37486fa0ef70e9e563f0100d6f05f5bd7f3d2b61224"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Ring.Semireal:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Ring.Semireal:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Ring.Ordering.Defs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Defs.lean",
+        "bytes": 6248,
+        "sha256": "a6babe6aa0c319cf4772c307b4a24b6f0df51e51f65f0404fd6f2c1fbb0efbec"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Ordering.Defs:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Ordering.Defs:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Ring.Ordering.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Basic.lean",
+        "bytes": 5868,
+        "sha256": "c5994c7a4a735b1c59fbcb52610621f6af2e8176fffb3ccc5ef11a00aa4ba279"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Ordering.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Ordering.Basic:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Group.Cone",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Order/Group/Cone.lean",
+        "bytes": 5428,
+        "sha256": "db0fd6438af3f5947dbc2252b2aa95d62e1a60eea0aff09c15df50e3a1893eff"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Order.Group.Cone:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Order.Group.Cone:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Ring.Subsemiring.Order",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Ring/Subsemiring/Order.lean",
+        "bytes": 2246,
+        "sha256": "60ac7c0f3abbbc264761633836139e6bbcdb03af557c5c9b2b446ec36f3c0b06"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Ring.Subsemiring.Order:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Ring.Subsemiring.Order:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Ring.Cone",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Order/Ring/Cone.lean",
+        "bytes": 3566,
+        "sha256": "340f917e254a96c1de3bb44a3fb2fa8abc7729aeb2806492ffb846b897032f6c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Cone:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Order.Ring.Cone:olean"
+      ]
+    },
+    {
+      "module": "OrderingSeparation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/OrderingSeparation.lean",
+        "bytes": 8196,
+        "sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+OrderingSeparation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+OrderingSeparation:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+        "bytes": 1522,
+        "sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Ordering.Extension:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Ordering.Extension:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Order.Ring.Ordering.Semireal",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+        "bytes": 1712,
+        "sha256": "490ef79dfa3d323a6ec0dc1c50f50d41ddd81efb204cc4aa9626b0c9a4071d35"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Ordering.Semireal:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Order.Ring.Ordering.Semireal:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/OrderExtension.lean",
+        "bytes": 7894,
+        "sha256": "55ae64bfbdd59268cee9e268de7fc03a98a8d9ffd6ee2961ba96abdd9a40bb34"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OrderExtension:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OrderExtension:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Complexification",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+        "bytes": 1492,
+        "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Complexification:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Complexification:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AlgebraicClosed",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+        "bytes": 4664,
+        "sha256": "a26720e19ba124a7155ba219a3089188df7bcc9f9f7f151adef03c5225bc9d94"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.AlgebraicClosed:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.AlgebraicClosed:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+        "bytes": 7980,
+        "sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.LinearFactor:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.LinearFactor:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.QuadraticDiscriminant",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/QuadraticDiscriminant.lean",
+        "bytes": 18891,
+        "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.QuadraticDiscriminant:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.QuadraticDiscriminant:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.SpecificDegree",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Polynomial/SpecificDegree.lean",
+        "bytes": 2621,
+        "sha256": "215b4f3ec51a8a4570482bd50301c83e7b4dc0b061eb937b761e84848c9b02bb"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Polynomial.SpecificDegree:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Polynomial.SpecificDegree:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.QuadraticDiscriminant",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+        "bytes": 16032,
+        "sha256": "9451732224ae9689a443ff25350855c5d677ac95bf1a05a09bcb0bdad6c17ce9"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.QuadraticDiscriminant:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.QuadraticDiscriminant:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.SmallDegreeVieta",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.lean",
+        "bytes": 5720,
+        "sha256": "8ed73f783c15e981fa7ce698aa000b4d53f72452c11191db1a3effa1c3ab0c31"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.SmallDegreeVieta:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.SmallDegreeVieta:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Quadratic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+        "bytes": 5545,
+        "sha256": "a84a9bf0b411b6532754edc6c1446fa900cd8f24891a53148056372aa3883cb2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Quadratic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Quadratic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.IVT",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/IVT.lean",
+        "bytes": 5281,
+        "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.IVT:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.IVT:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Sign",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+        "bytes": 1223,
+        "sha256": "a345f4ffc8164b2533302225d2ae812d6545ab8f1a6fb82f0c21328830d83703"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.Sign:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.Sign:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Rolle",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Rolle.lean",
+        "bytes": 5222,
+        "sha256": "77c91cca76c790016db894ee0d74a5cad1beea25c550789d6226e6a95b227ebb"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Rolle:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Rolle:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Thom",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Thom.lean",
+        "bytes": 20332,
+        "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Thom:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Thom:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.OneSided",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+        "bytes": 13072,
+        "sha256": "038a685fd8a0843ba9e5a7216af40e843ae6825c3d8f94be5cbb7345c1603109"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.OneSided:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.OneSided:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Finset.Jumps",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/Finset/Jumps.lean",
+        "bytes": 5809,
+        "sha256": "32b1951b1a3f5dd09b26112e69ea2e02a3761607dcbaf72f6908e2f972746608"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.Finset.Jumps:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.Finset.Jumps:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+        "bytes": 5738,
+        "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Sign:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Sign:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Fintype.Fiber",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/Fintype/Fiber.lean",
+        "bytes": 8130,
+        "sha256": "cf441dcb01d9c8e6f910bfb4539c5a9c0cfa7adb3c8a8dff6f38076908c11731"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.Fintype.Fiber:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.Fintype.Fiber:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+        "bytes": 7875,
+        "sha256": "befaeeea25ebaa1882026c5692be21b8f47f9ab10f2d501a789f1ae048b266dc"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Basic.lean",
+        "bytes": 17633,
+        "sha256": "ab2376fbc03f1b7514bb57e3b252a074b6ea75ba0c42476ea2795d020f00e63b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.BigOperators.Finset.Filter",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+        "bytes": 1820,
+        "sha256": "7ebdd0c1f002b1cb5a346189805ffc8010cf5e4e98a68c5a341a86b7dfbbfa83"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.BigOperators.Finset.Filter:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.BigOperators.Finset.Filter:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.List.Destutter",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/List/Destutter.lean",
+        "bytes": 11623,
+        "sha256": "82d092d64661eb6389365120f300b647ddaad1e756d037e456c0a9159fb0ec4b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.List.Destutter:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.List.Destutter:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.ListSignVariations",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Compat/ListSignVariations.lean",
+        "bytes": 6741,
+        "sha256": "8005a463340b5e5dab3dbb98b641a1452a4511c909c799251c4bf11868ab8bbc"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Compat.ListSignVariations:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Compat.ListSignVariations:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.SignVariations",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/List/SignVariations.lean",
+        "bytes": 2351,
+        "sha256": "d6a92ccd1c55692cbcabb6503c7104f1eb354798457e40510676b2c270f72d66"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.List.SignVariations:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.List.SignVariations:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Signs",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+        "bytes": 10430,
+        "sha256": "2977039a01f57900f99616494da352d949f8dd34d6604da1584f654b12f1377c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Signs:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Signs:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Local",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+        "bytes": 6361,
+        "sha256": "a45fc54f69cb09574a94cce3349b240f647c137ca7d7681f80bf2c62e013481e"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Local:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Local:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.FieldDivisionExtra",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Compat/FieldDivisionExtra.lean",
+        "bytes": 1281,
+        "sha256": "dd90be80f018a16fdd95134f286296587697b52b28dd5e41717e040402fbf469"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Compat.FieldDivisionExtra:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Compat.FieldDivisionExtra:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Compat.SturmSequence",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Compat/SturmSequence.lean",
+        "bytes": 5878,
+        "sha256": "8c40d172603f72c42c8abc49927c00f4bbbe1ecca1c113a0bd880f0dc8fd1012"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Compat.SturmSequence:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Compat.SturmSequence:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sequence",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+        "bytes": 4086,
+        "sha256": "af4fb4d391690a855bcf0312fbf5daed562706dee423e9cb9a4b9102d020923b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Sequence:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Sequence:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+        "bytes": 12193,
+        "sha256": "08e32a9a3ae925ce435b01c14c5aeebeb59dc1880481eba01bb50ba43ea1edd3"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.SignedRemainders:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.SignedRemainders:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Sum",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+        "bytes": 7933,
+        "sha256": "44a337b2b3807f2fa35086ceb7ebdb9066adbbf67c99792857ae780581dcb104"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Sum:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Sum:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Tarski",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+        "bytes": 15764,
+        "sha256": "14254111ab2a5720716979712f48279e16456c6d74a6ae0cfc34ac71e475c996"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Tarski:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Tarski:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.OneSided",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+        "bytes": 18473,
+        "sha256": "00c9f3758e574121b8b5da19ac01d544dd71c4361c91ee54b5e2e1b8896c0f20"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.OneSided:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.OneSided:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Eval.Infinity",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+        "bytes": 5569,
+        "sha256": "1939169672bab3b8ed6f7ff66490bf7b1a3689ec2a22d34fbe9dcf71357202cb"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.Infinity:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Eval.Infinity:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Infinity",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+        "bytes": 12061,
+        "sha256": "7c51fc58db14e97ce21b29643d647f5c44751cf21d602c8620b81b99b8195fb1"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Infinity:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Infinity:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.Variation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/Variation.lean",
+        "bytes": 6251,
+        "sha256": "c1fdbf741ad24bc4dea949b245cf27b2c1beb8bc785764fd8f381b9a41cc3454"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Variation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.Variation:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.SignType.Parity",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/SignType/Parity.lean",
+        "bytes": 1756,
+        "sha256": "edcc4e0024b1d46d54f8ac4b50e4930ca30900983f6a941a26f8a253fe35802c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.SignType.Parity:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.SignType.Parity:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Sturm/CauchyIndex/Sequence.lean",
+        "bytes": 9185,
+        "sha256": "6370956312eb32d4ce9e9792fd12e18a4f27a588f002ce96389fbb0582cb05bc"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.PermanencesMinusVariations",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/List/PermanencesMinusVariations.lean",
+        "bytes": 10639,
+        "sha256": "d010a58aec354b3c5ad49f683f7edeb5360213990fac5231784af3d0eba5032c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.List.PermanencesMinusVariations:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.List.PermanencesMinusVariations:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.Coeff.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/Coeff/Basic.lean",
+        "bytes": 1454,
+        "sha256": "cda21a92815d0fdb901252f62352220242c04e05debc151d53b39a5e5929c821"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Coeff.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.Coeff.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.GroupTheory.Perm.Inversion",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/GroupTheory/Perm/Inversion.lean",
+        "bytes": 10143,
+        "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.GroupTheory.Perm.Inversion:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.GroupTheory.Perm.Inversion:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.List.GetD",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/List/GetD.lean",
+        "bytes": 4257,
+        "sha256": "a3c1ef02429c3696d65dc0a2c266287f4e670f1d511962ead1f6f798d587fff9"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.List.GetD:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.List.GetD:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.List.ToFinsupp",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/List/ToFinsupp.lean",
+        "bytes": 5202,
+        "sha256": "4db308932c91ebc9ece68ac8ad4364d4963debc92bed3cb2cc3d7e058acd7932"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.List.ToFinsupp:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.List.ToFinsupp:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.OfFn",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean",
+        "bytes": 3995,
+        "sha256": "4b471e49fdbaaa34df30df264e6debaf5139932103208f0bfac75cb41dcfaaff"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Polynomial.OfFn:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Polynomial.OfFn:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.DegreeLT",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/Polynomial/DegreeLT.lean",
+        "bytes": 8337,
+        "sha256": "63727fdce87ccc401a0cd6beb3e95689c75b434e77d20953d6903fbc5156aa76"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.DegreeLT:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.DegreeLT:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/Polynomial/Resultant/Basic.lean",
+        "bytes": 52031,
+        "sha256": "ec4914f081126c7954f14ae263f072a176b874ded07cb2aa5093946fac0bb119"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.Resultant.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.Polynomial.Resultant.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+        "bytes": 13500,
+        "sha256": "8b1877d6cfa754f93f8bceeefe73dc630317b399d38513024ae5927c9d0e3df2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+        "bytes": 16341,
+        "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Polynomial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Polynomial:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.Polynomial.Derivation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Derivation.lean",
+        "bytes": 5327,
+        "sha256": "92db59c0cca19f9c28529fd17474c1f344e67bd83f08b4344e7abe51502b9b08"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.Polynomial.Derivation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.Polynomial.Derivation:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Order.GameAdd",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Order/GameAdd.lean",
+        "bytes": 10179,
+        "sha256": "4703c19c868c07c989b66fe6f90055df30d2b6ba73265d08d8f20dc88d06b1e8"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Order.GameAdd:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Order.GameAdd:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.DFinsupp.WellFounded",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/DFinsupp/WellFounded.lean",
+        "bytes": 12658,
+        "sha256": "c78cafb79ebf43a96a64703ae454cdb16aa93bbca7dba1093c95935488b426cc"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.DFinsupp.WellFounded:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.DFinsupp.WellFounded:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.WellFounded",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/Finsupp/WellFounded.lean",
+        "bytes": 3897,
+        "sha256": "f126bde8897caf687895f1258db9d5c6b8f56a9b50e4ba69f8ea3f6c9bd962aa"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.Finsupp.WellFounded:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.Finsupp.WellFounded:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.LexOrder",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/LexOrder.lean",
+        "bytes": 6352,
+        "sha256": "5c4202e2ecec831644916255b0f9f4ab29ae29bf0e3cd7ba53ef937e80e0a980"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.LexOrder:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.LexOrder:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Order",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Order.lean",
+        "bytes": 30029,
+        "sha256": "c836e42a2985173386aa17cc3be8a07596fce9b536ae56a9afdf4def811b3991"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Order:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Order:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/NoZeroDivisors.lean",
+        "bytes": 7040,
+        "sha256": "2bd7d849b7d8e6828ddfd951f70ac83e7a1d4a62a866a7a38eaf60e57b1f9231"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Inverse",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Inverse.lean",
+        "bytes": 10596,
+        "sha256": "88aa16350e36e9b306e70cfdbe146a758266dd7a6e3b84ae73e8da168faeed0d"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Inverse:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Inverse:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Basic.lean",
+        "bytes": 31318,
+        "sha256": "2a1789832908109b3b461bbbd869188751484fd65bc97527e085f664511ac9cc"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Basic:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Order",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Order.lean",
+        "bytes": 18033,
+        "sha256": "613f031de3c0f6f42a91bdb884a4a8b9e362d4fc0423b29da7e09f352aec42b0"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Order:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Order:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.NoZeroDivisors",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/NoZeroDivisors.lean",
+        "bytes": 2138,
+        "sha256": "41cd6461630267b7ab62deed3d5ddeebbd510bc719a372908bde8984eda679f2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.NoZeroDivisors:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.NoZeroDivisors:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Inverse",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Inverse.lean",
+        "bytes": 13191,
+        "sha256": "6e7b5c27c38ade2b222af3d6d5f81c33d0a97a7d94555c8b1e6978c6e8911200"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Inverse:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Inverse:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.Nat.Factorial.DoubleFactorial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/Nat/Factorial/DoubleFactorial.lean",
+        "bytes": 2932,
+        "sha256": "cb2d2378fc50ab17003d9297bbc1a06d103a7e0ecdc7624cdf73b3bbe57e5120"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.Nat.Factorial.DoubleFactorial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.Nat.Factorial.DoubleFactorial:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.Nat.Choose.Multinomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/Nat/Choose/Multinomial.lean",
+        "bytes": 20518,
+        "sha256": "70a3aa4611a7792089021764848f4aaefcb92392387c33505d8beeea15d8fc12"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.Nat.Choose.Multinomial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.Nat.Choose.Multinomial:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Coeff",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/Coeff.lean",
+        "bytes": 4740,
+        "sha256": "95ccb03aba37ba4c0bbb12dee38bb2450c829862e49cf64d5a888d7fa6218e0d"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Coeff:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Coeff:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.Finset.Finsupp",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/Finset/Finsupp.lean",
+        "bytes": 3422,
+        "sha256": "e0daced7e7b6f389dcc65f4b975c0619b9075d1b3be9227e35165f526306fc42"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.Finset.Finsupp:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.Finset.Finsupp:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Data.Finsupp.Interval",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Data/Finsupp/Interval.lean",
+        "bytes": 4325,
+        "sha256": "8499eee9cee87d32020ae19fbbbfa68a521bd2fbe13f5f92f4870aaf02e277ee"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Data.Finsupp.Interval:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Data.Finsupp.Interval:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Trunc",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Trunc.lean",
+        "bytes": 16639,
+        "sha256": "38e1f35bd05f03026efbd52e3ad4d74d91ba2230562fea2cbae05c05c57ff9e2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Trunc:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Trunc:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Topology.Instances.ENat",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Topology/Instances/ENat.lean",
+        "bytes": 5717,
+        "sha256": "6be36f25c41d9fa9de9861c05d5b06a2743a1a456f31c43bd632568d09d43863"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Topology.Instances.ENat:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Topology.Instances.ENat:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.LinearTopology",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Topology/Algebra/LinearTopology.lean",
+        "bytes": 18947,
+        "sha256": "2408db49e6e95fdfbb5a980592451adc981baf46e9e6bbff4983c9fcba24d524"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Topology.Algebra.LinearTopology:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Topology.Algebra.LinearTopology:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.TopologicallyNilpotent",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Topology/Algebra/TopologicallyNilpotent.lean",
+        "bytes": 5676,
+        "sha256": "3dae93da7dae4d79c7ce6c10b5369b16f0a2961c57f17c0234656f4c8f35807f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Topology.Algebra.TopologicallyNilpotent:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Topology.Algebra.TopologicallyNilpotent:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.PiTopology",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/PiTopology.lean",
+        "bytes": 16967,
+        "sha256": "ab0aa63f03d67485c1475347094429ae8bc569185e4720ac2634e42ba5567911"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.PiTopology:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.PiTopology:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Evaluation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Evaluation.lean",
+        "bytes": 15294,
+        "sha256": "533efe3b9d0308a5842f4927c514df7e5df45fcba0b366c28084f74741ccf43c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Evaluation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Evaluation:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.LinearTopology",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/LinearTopology.lean",
+        "bytes": 7748,
+        "sha256": "9605f729f7f41fae9245d82a9e5c6c217db3db48da19cd2ec5b13ee177990e29"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.LinearTopology:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.LinearTopology:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.MvPowerSeries.Substitution",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/MvPowerSeries/Substitution.lean",
+        "bytes": 33282,
+        "sha256": "556183c508cf310c7596e160dbeab1424f0893086852a87015f500331b40901a"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Substitution:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.MvPowerSeries.Substitution:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Trunc",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Trunc.lean",
+        "bytes": 8423,
+        "sha256": "6e918ead79bef7a8180f74c3a68924573ea142d28643541504d5d7a5c607106a"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Trunc:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Trunc:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.PiTopology",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/PiTopology.lean",
+        "bytes": 12630,
+        "sha256": "f05e6c99776d5f9779b5d155acc8c97f94f615cb07635231cc9db961dd17b1d2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.PiTopology:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.PiTopology:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Evaluation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Evaluation.lean",
+        "bytes": 9558,
+        "sha256": "153b4c4204923f5cc6de9f9ad3e27e22454a7a5b3e92c8047edb9ce8475c86d2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Evaluation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Evaluation:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Substitution",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Substitution.lean",
+        "bytes": 26835,
+        "sha256": "0fb4bd321f9575c56e2f55bdebda83112ebaa865d01fe64be16546d25921831b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Substitution:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Substitution:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.RingTheory.PowerSeries.Derivative",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/RingTheory/PowerSeries/Derivative.lean",
+        "bytes": 8445,
+        "sha256": "444d92996281fecaa4562e6f441c57c4e71a303d2fbae4c413cf01a5f53d5f3a"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Derivative:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.RingTheory.PowerSeries.Derivative:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Reductum",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Reductum.lean",
+        "bytes": 14817,
+        "sha256": "6ae540b212455915399fc04008137bea68784821b30a55688c9919a4e0e2322d"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Reductum:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Reductum:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.Congruence",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/LinearAlgebra/Matrix/Congruence.lean",
+        "bytes": 4022,
+        "sha256": "f7cb54ccdb40277472b77530c8932422f9b4eeced4f062c281056a274befb70e"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.LinearAlgebra.Matrix.Congruence:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.LinearAlgebra.Matrix.Congruence:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Matrix.CornerMinor",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/LinearAlgebra/Matrix/CornerMinor.lean",
+        "bytes": 21159,
+        "sha256": "17429cf51d9e9a99fffc60b1dd1e3f828e2428723f03a2042515b086d6351e36"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.LinearAlgebra.Matrix.CornerMinor:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.LinearAlgebra.Matrix.CornerMinor:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+        "bytes": 10866,
+        "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Nat.Choose.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/Nat/Choose/Basic.lean",
+        "bytes": 6656,
+        "sha256": "45af5b419d39dd43bc39db2fb5201389c8338240084c315fb41d7db6a87018d7"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.Nat.Choose.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.Nat.Choose.Basic:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Signed",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/Signed.lean",
+        "bytes": 10692,
+        "sha256": "8eaa45e94e3c1da0e4326d7e0e29438c8ad1e3ec217459e88d01b58a7e51e6b5"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Signed:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Signed:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OfFn",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/OfFn.lean",
+        "bytes": 2217,
+        "sha256": "3c24298a9902af449f9ebb149e3d13e6b3c8e21a59d76db5456fcbbbddbeead5"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.OfFn:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.OfFn:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/Euclidean.lean",
+        "bytes": 12959,
+        "sha256": "9fc2b4c3be1810d679c5dc5a48f9e81480ae166b2d3e686b88e2c770f2e62f86"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Euclidean:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.Euclidean:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.List.Range",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/List/Range.lean",
+        "bytes": 2035,
+        "sha256": "9a6cd57def4a8d2365243dbec545b681bfdadaf9e08014a3d12a53edeeb03650"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.List.Range:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.List.Range:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/RingTheory/Polynomial/Subresultant/CauchyIndex.lean",
+        "bytes": 13239,
+        "sha256": "aa36e887ca2aa7faa3366ce0f6d0c0d66aabd49eb6989ef769b2f3d3136de72c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex:olean"
+      ]
+    },
+    {
+      "module": "CoefficientSignPattern",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/CoefficientSignPattern.lean",
+        "bytes": 3329,
+        "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+CoefficientSignPattern:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+CoefficientSignPattern:olean"
+      ]
+    },
+    {
+      "module": "UniformRootCount",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/UniformRootCount.lean",
+        "bytes": 5704,
+        "sha256": "04607262189384b4f1fb86381bc307b1ec4a9039ba9984bade622102df881fa7"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+UniformRootCount:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+UniformRootCount:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.Matrix.OccCount",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/Matrix/OccCount.lean",
+        "bytes": 2653,
+        "sha256": "7855ad0f15ab20217ba6e6f98c18b5934aed95aafde177f64a7624a632f7139c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.Matrix.OccCount:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.Matrix.OccCount:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Data.SignType.Lagrange",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Data/SignType/Lagrange.lean",
+        "bytes": 2704,
+        "sha256": "90faa1bf3e12ef3c53a2a2f43514a9902286a55840833ce9299ee3573d86a95b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Data.SignType.Lagrange:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Data.SignType.Lagrange:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+        "bytes": 4778,
+        "sha256": "9cc52dde40831fc3cb4ad5d1fc6465486700ec287e4683b54f6966fe4a0396d9"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+        "bytes": 7415,
+        "sha256": "343d01c2fafdd2c971750270ee833b422715b10b54015da627e3bd8376beeed4"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+        "bytes": 2538,
+        "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots:olean"
+      ]
+    },
+    {
+      "module": "MonicQueryProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/MonicQueryProjection.lean",
+        "bytes": 7327,
+        "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+MonicQueryProjection:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+MonicQueryProjection:olean"
+      ]
+    },
+    {
+      "module": "LocalizationSignDescent",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/LocalizationSignDescent.lean",
+        "bytes": 2439,
+        "sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+LocalizationSignDescent:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+LocalizationSignDescent:olean"
+      ]
+    },
+    {
+      "module": "DegreeNormalization",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/DegreeNormalization.lean",
+        "bytes": 2861,
+        "sha256": "f286e44abe9d44cb1a3677ad1c8dc042c95d16aac9bc0df7f0cf914dafb78b14"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+DegreeNormalization:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+DegreeNormalization:olean"
+      ]
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/GeneralQueryProjection.lean",
+        "bytes": 4539,
+        "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+GeneralQueryProjection:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+GeneralQueryProjection:olean"
+      ]
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/GeneralPatternProjection.lean",
+        "bytes": 3245,
+        "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+GeneralPatternProjection:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+GeneralPatternProjection:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+        "bytes": 7338,
+        "sha256": "2a77560276415dcec4244af2f8e3106847e09c1823655bf7c5f58cf4b7a83477"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.AbstractRolle:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.AbstractRolle:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.RealClosed.Sampling",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+        "bytes": 5807,
+        "sha256": "935e5a8151247f368d54389e1e14c9c036f5103464683852ba4898804f8ec873"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Sampling:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.RealClosed.Sampling:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+        "bytes": 5243,
+        "sha256": "370a47fd58039ab7a16702623eecca516304ac6799d5d056c275a17db65698f4"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine:olean"
+      ]
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/WholeLineAlternatives.lean",
+        "bytes": 5507,
+        "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+WholeLineAlternatives:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+WholeLineAlternatives:olean"
+      ]
+    },
+    {
+      "module": "UniformOneVariable",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/UniformOneVariable.lean",
+        "bytes": 5427,
+        "sha256": "f58acd18b11289c98355018a37f3616c09abca2566c1f73ec941c0b16c608a9a"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+UniformOneVariable:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+UniformOneVariable:olean"
+      ]
+    },
+    {
+      "module": "FinSuccEvaluation",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/FinSuccEvaluation.lean",
+        "bytes": 1431,
+        "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+FinSuccEvaluation:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+FinSuccEvaluation:olean"
+      ]
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/FiniteVariableTransfer.lean",
+        "bytes": 4584,
+        "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+FiniteVariableTransfer:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+FiniteVariableTransfer:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/OrderedIntermediateField.lean",
+        "bytes": 12320,
+        "sha256": "85daa56b7b78f6dd64a17f14c09d314a976c1dd993aaf86671bffe7b8fe254f2"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OrderedIntermediateField:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OrderedIntermediateField:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/PolynomialCone.lean",
+        "bytes": 4878,
+        "sha256": "dbc0ff691a9b89a11df2f79a17148bc9c95ff68ab5cbcee6e15b63880fb0d63d"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.PolynomialCone:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.PolynomialCone:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/Algebra/Polynomial/OddDegreeFactor.lean",
+        "bytes": 1282,
+        "sha256": "3927566ea57f877b492d97a325a045cb3ca76a65297c856bac9f6e85cd10d134"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.Algebra.Polynomial.OddDegreeFactor:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.Algebra.Polynomial.OddDegreeFactor:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.OddExtension",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/OddExtension.lean",
+        "bytes": 4808,
+        "sha256": "14b327f02e06b81eace16f3d9af56699d7358c638a6ca29236d6876e1ed22287"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OddExtension:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.OddExtension:olean"
+      ]
+    },
+    {
+      "module": "TauCeti.FieldTheory.RealClosure.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TauCeti/FieldTheory/RealClosure/Basic.lean",
+        "bytes": 5781,
+        "sha256": "56abce575c25bb0531016abc234f7b582fbbe94004c0c8c6ec63c80e95f68be8"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TauCeti.FieldTheory.RealClosure.Basic:olean"
+      ]
+    },
+    {
+      "module": "ClearDenominators",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/ClearDenominators.lean",
+        "bytes": 6382,
+        "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+ClearDenominators:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+ClearDenominators:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.CharZero.Infinite",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/CharZero/Infinite.lean",
+        "bytes": 538,
+        "sha256": "89a8c7ad24a68692fe6df9e4eb3e4757a0496c789c1f9ddd7963c787486de0fa"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.CharZero.Infinite:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.CharZero.Infinite:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Polynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/Polynomial.lean",
+        "bytes": 1286,
+        "sha256": "43330a5e928a56af89b209101f98be347937384d2d435f875e2eaff698ccd650"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Polynomial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Polynomial:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Algebra.MvPolynomial.Funext",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Algebra/MvPolynomial/Funext.lean",
+        "bytes": 3356,
+        "sha256": "cb1821884a139917b692103a0b267115179cd4e7084da5487857ec49abb0cc7e"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Funext:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Algebra.MvPolynomial.Funext:olean"
+      ]
+    },
+    {
+      "module": "FractionSemireal",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/FractionSemireal.lean",
+        "bytes": 2425,
+        "sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+FractionSemireal:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+FractionSemireal:olean"
+      ]
+    },
+    {
+      "module": "CoefficientOrder",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/CoefficientOrder.lean",
+        "bytes": 1362,
+        "sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+CoefficientOrder:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+CoefficientOrder:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Analysis.Polynomial.Basic",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Analysis/Polynomial/Basic.lean",
+        "bytes": 17912,
+        "sha256": "274b08b1577fb044ee4dd5aaadd50a0a5f8c39f2d7bbbc8cfa220799a2219d4d"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Analysis.Polynomial.Basic:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Analysis.Polynomial.Basic:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Analysis.Polynomial.Order",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Analysis/Polynomial/Order.lean",
+        "bytes": 6292,
+        "sha256": "bf05560594215319b7288b07403bd818d378f6f8e2ea59da58d31cde31ae6d27"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Analysis.Polynomial.Order:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Analysis.Polynomial.Order:olean"
+      ]
+    },
+    {
+      "module": "RealInstance",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/RealInstance.lean",
+        "bytes": 2171,
+        "sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+RealInstance:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+RealInstance:olean"
+      ]
+    },
+    {
+      "module": "TargetSpec",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TargetSpec.lean",
+        "bytes": 2016,
+        "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TargetSpec:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TargetSpec:olean"
+      ]
+    },
+    {
+      "module": "ConditionalArtin",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/ConditionalArtin.lean",
+        "bytes": 4012,
+        "sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+ConditionalArtin:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+ConditionalArtin:olean"
+      ]
+    },
+    {
+      "module": "RealClosureTransfer",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/RealClosureTransfer.lean",
+        "bytes": 1982,
+        "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+RealClosureTransfer:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+RealClosureTransfer:olean"
+      ]
+    },
+    {
+      "module": "TargetSanity",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/TargetSanity.lean",
+        "bytes": 2847,
+        "sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+TargetSanity:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+TargetSanity:olean"
+      ]
+    },
+    {
+      "module": "Mathlib.Topology.Algebra.MvPolynomial",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/Mathlib/Topology/Algebra/MvPolynomial.lean",
+        "bytes": 697,
+        "sha256": "85ac5d20944ed63164f486576a0a346cf471412a5b77e56fbfbe209b591cb093"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Mathlib.Topology.Algebra.MvPolynomial:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Mathlib.Topology.Algebra.MvPolynomial:olean"
+      ]
+    },
+    {
+      "module": "CertificateNonnegative",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/CertificateNonnegative.lean",
+        "bytes": 2304,
+        "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+CertificateNonnegative:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+CertificateNonnegative:olean"
+      ]
+    },
+    {
+      "module": "FinalTargetContract",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/checks/FinalTargetContract.lean",
+        "bytes": 3370,
+        "sha256": "def53d25cc169ff2e08cf4979c86f05da5555d83d47fb021ea1f2044de69d140"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+FinalTargetContract:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+FinalTargetContract:olean"
+      ]
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/checks/BoundaryAcceptance.lean",
+        "bytes": 4314,
+        "sha256": "c72944208329a54ed9c7961c349a787ebb5c3dd28fa7df8d84f27343e5aa1a56"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+BoundaryAcceptance:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+BoundaryAcceptance:olean"
+      ]
+    },
+    {
+      "module": "Hilbert17",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/Hilbert17.lean",
+        "bytes": 466,
+        "sha256": "e9106e6e8c285b757837dee59235076db13ff35959bb74afee7d63205bcca497"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Hilbert17:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Hilbert17:olean"
+      ]
+    },
+    {
+      "module": "Hilbert17RealClosure",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/Hilbert17RealClosure.lean",
+        "bytes": 238,
+        "sha256": "b890ef32af7aa011a9e4f747d7dc934ba57c55de81a08da5f26fc1da8d02261f"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Hilbert17RealClosure:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Hilbert17RealClosure:olean"
+      ]
+    },
+    {
+      "module": "Hilbert17Full",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/Hilbert17Full.lean",
+        "bytes": 222,
+        "sha256": "59369a56860fda3bb3fe5738b9bd10724864d21a1e58fcd167537fe7adec9181"
+      },
+      "status": "READY_SOURCE_PIN",
+      "prerequisite_check": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "--no-build",
+        "build",
+        "+Hilbert17Full:deps"
+      ],
+      "build": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+        "--dir",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+        "--no-cache",
+        "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+        "build",
+        "+Hilbert17Full:olean"
+      ]
+    }
+  ],
+  "aggregate_build": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "Hilbert17",
+    "Hilbert17RealClosure",
+    "Hilbert17Full",
+    "Hilbert17Acceptance"
+  ],
+  "final_up_to_date_check": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "Hilbert17",
+    "Hilbert17RealClosure",
+    "Hilbert17Full",
+    "Hilbert17Acceptance"
+  ],
+  "scope_notes": [
+    "No build, config evaluation, dependency execution, cache retrieval or Lean process was launched during staging.",
+    "--offline is not used: the installed CLI applies it only to init/new. Local path overrides prevent Git materialization, and --no-cache disables Lake downloads.",
+    "The Git-only delivery manifest remains byte-for-byte unchanged. Package weakLeanArgs are private-copy modifications only and do not affect Lean module trace hashes.",
+    "Only genuine copied Lake trace/hash files are present. Direct supplemental output files lack traces and are expected to rebuild. No --old or synthesized traces.",
+    "Unexpected stale cached dependencies are blockers for root review, not permission to rebuild all of Mathlib.",
+    "Initial copied Mathlib tree is 3,319,063,684 bytes including eight dependencies; project artifacts are tens of MB. Reflink fallback copy fits current 17 GiB free space.",
+    "Root config is an exact copy of the reviewed four-library delivery config, plus private package-level weakLeanArgs. All 97 selected source/entry/acceptance modules match successful compilation receipts. No local proof output artifacts were seeded; Lake must build them genuinely.",
+    "Narrow runtime configuration allowance: only the pinned copied mathlib/lakefile.lean and proofwidgets/lakefile.lean may elaborate during configuration loading; one compiler maximum. Their inputs and observed compiler processes are recorded. SIGTERM/SIGINT trigger active process-group cleanup.",
+    "Corrected --packages schema to the exact partial manifest emitted by Lake.Manifest.saveEntries: an object with schemaVersion1.2.0 and packages array. Prior array-only file and failed run are preserved."
+  ],
+  "initial_inputs": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/initial-input-pins01.json",
+    "bytes": 12313935,
+    "sha256": "4aec67fe36c6bf540df032a303c9a972d726cebd7debaa5e148cac7779f473cc"
+  },
+  "delivery_config_source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-final-delta-20261013/lakefile.toml",
+    "bytes": 4275,
+    "sha256": "fd8b10b28a08149754578ab2caab766ede5f45b9caffc65162a0def94a1326c4"
+  },
+  "runner": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/run_bounded_lake01.py",
+    "bytes": 14010,
+    "sha256": "9bec2d0e62d74d8ab230a1c3f9897b401284816c0ccc22a8f23a957e39281f85"
+  },
+  "aggregate_targets": [
+    "Hilbert17",
+    "Hilbert17RealClosure",
+    "Hilbert17Full",
+    "Hilbert17Acceptance"
+  ]
+}

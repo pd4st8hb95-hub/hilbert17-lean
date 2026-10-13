@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial",
+  "start_utc": "2026-10-13T13:54:01.950758+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:54:01.950752+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8347088,
+    "used_percent": 18.217984054879494
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.lean",
+    "bytes": 16341,
+    "sha256": "3f6880dc57fa2390a2cb21216e15b59a8823da515bbde2316c6a6b5b3c92f05b"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.olean",
+      "bytes": 615632,
+      "sha256": "7904fa692bb770d538d3cc5f655567cc2918936adbb8e81b617e971d164ac32c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Polynomial.ilean",
+      "bytes": 31730,
+      "sha256": "e9ef4922db3fddaf21ece48983f0941318439cd173d89e26a2fe62d0567cb6ca"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/09-TauCeti.RingTheory.Polynomial.Subresultant.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-bkr-subresultant-checker01-run01/09-TauCeti.RingTheory.Polynomial.Subresultant.stderr.log",
+  "pid": 61,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T13:54:04.453829+00:00",
+  "peak_physical_used_percent": 20.041526445675643,
+  "memory_after": {
+    "utc": "2026-10-13T13:54:04.453917+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8322996,
+    "used_percent": 18.45402952704294
+  }
+}

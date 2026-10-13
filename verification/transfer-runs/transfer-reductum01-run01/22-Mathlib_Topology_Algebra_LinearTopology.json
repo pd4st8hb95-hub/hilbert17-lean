@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Topology.Algebra.LinearTopology",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/LinearTopology.lean",
+    "bytes": 18947,
+    "sha256": "2408db49e6e95fdfbb5a980592451adc981baf46e9e6bbff4983c9fcba24d524"
+  },
+  "start_utc": "2026-10-13T13:25:16.480345+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:16.480333+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8357664,
+    "used_percent": 18.114363894095806
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/LinearTopology.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/22-Mathlib_Topology_Algebra_LinearTopology.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/22-Mathlib_Topology_Algebra_LinearTopology.stderr.log",
+  "pid": 78,
+  "exit_code": 0,
+  "seconds": 3.503,
+  "end_utc": "2026-10-13T13:25:19.984427+00:00",
+  "peak_physical_used_percent": 20.42994528589014,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:19.984609+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344636,
+    "used_percent": 18.242007942383427
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.olean",
+      "bytes": 100584,
+      "sha256": "7121ef4aa49c7a74521de555e56cbefb78d363b2461565e5e8ae9f44f19d5f62"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.olean.private",
+      "bytes": 271288,
+      "sha256": "14f2381caef3ff12691a857a96cb9e9c2c535b45cef132072e108f53a8845911"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.olean.server",
+      "bytes": 14560,
+      "sha256": "6e5800d23f4003fd4a8915e39ed1216ea202ff7f748eccc8752a93889c18f450"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.ilean",
+      "bytes": 32341,
+      "sha256": "0c6014e51724251e4a9721a1f87ccf7f44c8a953d178f307ee52d1de0418fb70"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/LinearTopology.ir",
+      "bytes": 1992,
+      "sha256": "ee6380f226e1269a0055fb5fc714957d013f39c3f24d09f346986c930d3914b3"
+    }
+  ]
+}

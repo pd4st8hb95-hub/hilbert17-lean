@@ -1,0 +1,57 @@
+Polynomial.exists_derivative_root_of_isRoot.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LT.lt.{u_1} a b)
+  (ha : Eq.{u_1 + 1} (Polynomial.eval.{u_1} a p) 0) (hb : Eq.{u_1 + 1} (Polynomial.eval.{u_1} b p) 0) :
+  ∃ c,
+    Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) c ∧
+      Eq.{u_1 + 1} (Polynomial.eval.{u_1} c (Polynomial.derivative.{u_1} p)) 0
+'Polynomial.exists_derivative_root_of_isRoot' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.RealClosure.polynomialRolle_of_isRealClosed.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] : TauCeti.PolynomialRolle.{u_1} R
+'TauCeti.RealClosure.polynomialRolle_of_isRealClosed' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_derivative_root.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LT.lt.{u_1} a b)
+  (h : Eq.{u_1 + 1} (Polynomial.eval.{u_1} a p) (Polynomial.eval.{u_1} b p)) :
+  ∃ c,
+    Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) c ∧
+      Eq.{u_1 + 1} (Polynomial.eval.{u_1} c (Polynomial.derivative.{u_1} p)) 0
+'Polynomial.exists_derivative_root' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.exists_eval_sub_eq_derivative_eval_mul.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R} (hab : LT.lt.{u_1} a b) :
+  ∃ c,
+    Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) c ∧
+      Eq.{u_1 + 1} (HSub.hSub.{u_1, u_1, u_1} (Polynomial.eval.{u_1} b p) (Polynomial.eval.{u_1} a p))
+        (HMul.hMul.{u_1, u_1, u_1} (Polynomial.eval.{u_1} c (Polynomial.derivative.{u_1} p))
+          (HSub.hSub.{u_1, u_1, u_1} b a))
+'Polynomial.exists_eval_sub_eq_derivative_eval_mul' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.monotoneOn_of_derivative_nonneg.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R}
+  (hd :
+    ∀ (x : R),
+      Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) x →
+        LE.le.{u_1} 0 (Polynomial.eval.{u_1} x (Polynomial.derivative.{u_1} p))) :
+  MonotoneOn.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.monotoneOn_of_derivative_nonneg' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.antitoneOn_of_derivative_nonpos.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R}
+  (hd :
+    ∀ (x : R),
+      Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) x →
+        LE.le.{u_1} (Polynomial.eval.{u_1} x (Polynomial.derivative.{u_1} p)) 0) :
+  AntitoneOn.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.antitoneOn_of_derivative_nonpos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.strictMonoOn_of_derivative_pos.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R}
+  (hd :
+    ∀ (x : R),
+      Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) x →
+        LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x (Polynomial.derivative.{u_1} p))) :
+  StrictMonoOn.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.strictMonoOn_of_derivative_pos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Polynomial.strictAntiOn_of_derivative_neg.{u_1} {R : Type u_1} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [IsStrictOrderedRing.{u_1} R] [IsRealClosed.{u_1} R] (p : Polynomial.{u_1} R) {a b : R}
+  (hd :
+    ∀ (x : R),
+      Membership.mem.{u_1, u_1} (Set.Ioo.{u_1} a b) x →
+        LT.lt.{u_1} (Polynomial.eval.{u_1} x (Polynomial.derivative.{u_1} p)) 0) :
+  StrictAntiOn.{u_1, u_1} (fun x => Polynomial.eval.{u_1} x p) (Set.Icc.{u_1} a b)
+'Polynomial.strictAntiOn_of_derivative_neg' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

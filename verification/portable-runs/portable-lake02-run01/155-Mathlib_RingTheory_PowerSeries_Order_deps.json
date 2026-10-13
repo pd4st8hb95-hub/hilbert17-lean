@@ -1,0 +1,40 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Order:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+Mathlib.RingTheory.PowerSeries.Order:deps"
+  ],
+  "start_utc": "2026-10-13T14:34:23.300451+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:34:23.300437+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8283476,
+    "used_percent": 18.841233456143865
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/155-Mathlib_RingTheory_PowerSeries_Order_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/155-Mathlib_RingTheory_PowerSeries_Order_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2101,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:34:24.302906+00:00",
+  "seconds": 1.002,
+  "peak_physical_used_percent": 20.182181800082848,
+  "memory_after": {
+    "utc": "2026-10-13T14:34:24.303610+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8268880,
+    "used_percent": 18.984240251416058
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

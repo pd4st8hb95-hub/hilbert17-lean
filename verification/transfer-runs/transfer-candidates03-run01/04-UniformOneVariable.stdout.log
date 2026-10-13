@@ -1,0 +1,90 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean:70:65: error: unsolved goals
+A : Type u_1
+inst✝¹⁰ : CommRing A
+K : Type u_2
+inst✝⁹ : Field K
+inst✝⁸ : LinearOrder K
+inst✝⁷ : IsStrictOrderedRing K
+inst✝⁶ : IsRealClosed K
+L : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : LinearOrder L
+inst✝³ : IsStrictOrderedRing L
+inst✝² : IsRealClosed L
+J : Type u_4
+inst✝¹ : Fintype J
+inst✝ : DecidableEq J
+Q : J → A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ a ∈ wholeLineProjection Q, sign (f a) = sign (g a)
+σ : J → SignType
+hc : ∀ (j : J), ∀ i ≤ (Q j).natDegree, sign (f ((Q j).coeff i)) = sign (g ((Q j).coeff i))
+hz : ∀ (j : J), Polynomial.map f (Q j) = 0 ↔ Polynomial.map g (Q j) = 0
+S : Finset J := {j | Polynomial.map f (Q j) ≠ 0}
+j : J
+⊢ Polynomial.map f (Q j) ≠ 0 ↔ Polynomial.map g (Q j) ≠ 0
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean:74:63: error: unsolved goals
+A : Type u_1
+inst✝¹⁰ : CommRing A
+K : Type u_2
+inst✝⁹ : Field K
+inst✝⁸ : LinearOrder K
+inst✝⁷ : IsStrictOrderedRing K
+inst✝⁶ : IsRealClosed K
+L : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : LinearOrder L
+inst✝³ : IsStrictOrderedRing L
+inst✝² : IsRealClosed L
+J : Type u_4
+inst✝¹ : Fintype J
+inst✝ : DecidableEq J
+Q : J → A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ a ∈ wholeLineProjection Q, sign (f a) = sign (g a)
+σ : J → SignType
+hc : ∀ (j : J), ∀ i ≤ (Q j).natDegree, sign (f ((Q j).coeff i)) = sign (g ((Q j).coeff i))
+hz : ∀ (j : J), Polynomial.map f (Q j) = 0 ↔ Polynomial.map g (Q j) = 0
+S : Finset J := {j | Polynomial.map f (Q j) ≠ 0}
+hS : S = {j | Polynomial.map g (Q j) ≠ 0}
+P : A[X] := subsetProduct Q S
+⊢ ∏ i with Polynomial.map f (Q i) ≠ 0, Polynomial.map f (Q i) =
+    ∏ i with Polynomial.map f (Q i) ≠ 0, Polynomial.map f (Q i)
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean:76:63: error: unsolved goals
+A : Type u_1
+inst✝¹⁰ : CommRing A
+K : Type u_2
+inst✝⁹ : Field K
+inst✝⁸ : LinearOrder K
+inst✝⁷ : IsStrictOrderedRing K
+inst✝⁶ : IsRealClosed K
+L : Type u_3
+inst✝⁵ : Field L
+inst✝⁴ : LinearOrder L
+inst✝³ : IsStrictOrderedRing L
+inst✝² : IsRealClosed L
+J : Type u_4
+inst✝¹ : Fintype J
+inst✝ : DecidableEq J
+Q : J → A[X]
+f : A →+* K
+g : A →+* L
+h : ∀ a ∈ wholeLineProjection Q, sign (f a) = sign (g a)
+σ : J → SignType
+hc : ∀ (j : J), ∀ i ≤ (Q j).natDegree, sign (f ((Q j).coeff i)) = sign (g ((Q j).coeff i))
+hz : ∀ (j : J), Polynomial.map f (Q j) = 0 ↔ Polynomial.map g (Q j) = 0
+S : Finset J := {j | Polynomial.map f (Q j) ≠ 0}
+hS : S = {j | Polynomial.map g (Q j) ≠ 0}
+P : A[X] := subsetProduct Q S
+hPf : Polynomial.map f P = sampleProduct fun j => Polynomial.map f (Q j)
+⊢ ∏ i with Polynomial.map g (Q i) ≠ 0, Polynomial.map g (Q i) =
+    ∏ i with Polynomial.map g (Q i) ≠ 0, Polynomial.map g (Q i)
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean:72:64: warning: This simp argument is unused:
+  hz j
+
+Hint: Omit it from the simp argument list.
+  simp only [S, Finset.mem_filter, Finset.mem_univ, true_and,̵ ̵h̵z̵ ̵j̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

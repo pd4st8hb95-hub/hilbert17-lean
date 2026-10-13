@@ -1,0 +1,3 @@
+QuadraticAlgebra.isSquare.{u_1} {R : Type u_1} [Field.{u_1} R] [IsRealClosed.{u_1} R]
+  (z : QuadraticAlgebra.{u_1} R (-1) 0) : IsSquare.{u_1} z
+'QuadraticAlgebra.isSquare' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

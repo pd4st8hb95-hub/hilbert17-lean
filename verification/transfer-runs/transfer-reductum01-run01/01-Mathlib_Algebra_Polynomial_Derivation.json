@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Algebra.Polynomial.Derivation",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/Derivation.lean",
+    "bytes": 5327,
+    "sha256": "92db59c0cca19f9c28529fd17474c1f344e67bd83f08b4344e7abe51502b9b08"
+  },
+  "start_utc": "2026-10-13T13:24:11.330164+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:11.330155+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344188,
+    "used_percent": 18.246397298664736
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/Derivation.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/01-Mathlib_Algebra_Polynomial_Derivation.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/01-Mathlib_Algebra_Polynomial_Derivation.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:24:14.334434+00:00",
+  "peak_physical_used_percent": 20.446013465134207,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:14.334625+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328816,
+    "used_percent": 18.397007086067045
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.olean",
+      "bytes": 224912,
+      "sha256": "0a7678efa73f8d6cc2ed03b40253338ac4e062a54ad616ee5290c396738ef371"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.olean.private",
+      "bytes": 148120,
+      "sha256": "7f513506d8ad382deab6649089b1d5fa3e70f2ba55cbe3fc2fde75bbded7a5fd"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.olean.server",
+      "bytes": 6760,
+      "sha256": "6b9f1b266d39402b30fa635642cd599a310d14800bc70a91fc9c13137c973efb"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.ilean",
+      "bytes": 13232,
+      "sha256": "484b1f39da1749c648e7d733d8c7390d6c19e934bcafff814c83ec0310500a57"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/Derivation.ir",
+      "bytes": 2264,
+      "sha256": "45428db830653820b481cd1996a38efa1c5973f87418b37fa7c4ff313f68007a"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+    "bytes": 5738,
+    "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+  },
+  "start_utc": "2026-10-13T13:52:40.791064+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:52:40.791052+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8347236,
+    "used_percent": 18.21653399967942
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/03-TauCeti_Algebra_Polynomial_RealClosed_Sign.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/03-TauCeti_Algebra_Polynomial_RealClosed_Sign.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 2.502,
+  "end_utc": "2026-10-13T13:52:43.294378+00:00",
+  "peak_physical_used_percent": 21.84872632246014,
+  "memory_after": {
+    "utc": "2026-10-13T13:52:43.294556+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8345164,
+    "used_percent": 18.23683477248046
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+      "bytes": 296808,
+      "sha256": "0079cf290cc2ab5f3957007d6582545173dc798f848481b46a6e5d13bf2f3e43"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+      "bytes": 15493,
+      "sha256": "1b9a6f047aaebee9c0eeb5237cf2d9def742e39161e26403a3470194ae7f1485"
+    }
+  ]
+}

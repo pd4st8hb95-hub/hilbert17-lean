@@ -1,0 +1,40 @@
+{
+  "label": "Mathlib.Algebra.Order.Ring.Ordering.Basic:deps",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "--no-build",
+    "build",
+    "+Mathlib.Algebra.Order.Ring.Ordering.Basic:deps"
+  ],
+  "start_utc": "2026-10-13T14:28:17.918176+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:28:17.918165+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8274456,
+    "used_percent": 18.929608441986232
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/029-Mathlib_Algebra_Order_Ring_Ordering_Basic_deps.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/029-Mathlib_Algebra_Order_Ring_Ordering_Basic_deps.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 393,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:28:18.920866+00:00",
+  "seconds": 1.002,
+  "peak_physical_used_percent": 20.40509839408346,
+  "memory_after": {
+    "utc": "2026-10-13T14:28:18.921022+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8256416,
+    "used_percent": 19.106358413670964
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

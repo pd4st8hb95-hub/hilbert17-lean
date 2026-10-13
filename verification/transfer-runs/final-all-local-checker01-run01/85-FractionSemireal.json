@@ -1,0 +1,46 @@
+{
+  "module": "FractionSemireal",
+  "start_utc": "2026-10-13T14:21:45.097119+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:45.097111+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316536,
+    "used_percent": 18.51732247699213
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "FractionSemireal"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/FractionSemireal.lean",
+    "bytes": 2425,
+    "sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.olean",
+      "bytes": 110872,
+      "sha256": "08bf924c57af72b9e497a3c3b302b617ee41aa6e2b697c875165d922c99e6e09"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.ilean",
+      "bytes": 7221,
+      "sha256": "df2b087fa4e646d6f92754e723ab8f8a0bda938644af9c71409fafad6b8bb400"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/85-FractionSemireal.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/85-FractionSemireal.stderr.log",
+  "pid": 593,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:21:47.099639+00:00",
+  "peak_physical_used_percent": 19.861993935634008,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:47.099730+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314396,
+    "used_percent": 18.538289491371582
+  }
+}

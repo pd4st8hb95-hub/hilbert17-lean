@@ -1,0 +1,46 @@
+{
+  "module": "LocalizationSignDescent",
+  "start_utc": "2026-10-13T14:21:05.972297+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:05.972290+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312348,
+    "used_percent": 18.558355120086127
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "LocalizationSignDescent"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/LocalizationSignDescent.lean",
+    "bytes": 2439,
+    "sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescent.olean",
+      "bytes": 121160,
+      "sha256": "cbdaf20603e8614652ece595ad9f3e1f4ceddabc0dcc178f8603c276d250bd33"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescent.ilean",
+      "bytes": 7744,
+      "sha256": "c8d383c5eb3c8c09723df4757dd2f3a96fcbf3aadc3b3900b11aa80eb4fe799f"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/68-LocalizationSignDescent.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/68-LocalizationSignDescent.stderr.log",
+  "pid": 474,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:21:07.974928+00:00",
+  "peak_physical_used_percent": 19.93700489922704,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:07.975037+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8318156,
+    "used_percent": 18.50145025115348
+  }
+}

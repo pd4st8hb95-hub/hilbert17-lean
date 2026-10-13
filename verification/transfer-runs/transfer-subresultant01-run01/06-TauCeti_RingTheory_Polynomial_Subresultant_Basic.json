@@ -1,0 +1,44 @@
+{
+  "label": "TauCeti.RingTheory.Polynomial.Subresultant.Basic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean",
+    "bytes": 13430,
+    "sha256": "7401af8c71689e8ef4f72d0eb0c3f13acd7383127b9d67bfcd79850351e30b9f"
+  },
+  "start_utc": "2026-10-13T13:34:47.546649+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:34:47.546568+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8327432,
+    "used_percent": 18.410567061721796
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/Basic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/06-TauCeti_RingTheory_Polynomial_Subresultant_Basic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/06-TauCeti_RingTheory_Polynomial_Subresultant_Basic.stderr.log",
+  "pid": 21,
+  "exit_code": 1,
+  "seconds": 7.007,
+  "end_utc": "2026-10-13T13:34:54.555229+00:00",
+  "peak_physical_used_percent": 20.848227425089952,
+  "memory_after": {
+    "utc": "2026-10-13T13:34:54.555388+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8357392,
+    "used_percent": 18.117028860409455
+  },
+  "outputs": []
+}

@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Data.List.ToFinsupp",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/List/ToFinsupp.lean",
+    "bytes": 5202,
+    "sha256": "4db308932c91ebc9ece68ac8ad4364d4963debc92bed3cb2cc3d7e058acd7932"
+  },
+  "start_utc": "2026-10-13T13:24:51.421069+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:51.421055+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8338208,
+    "used_percent": 18.304987366883953
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Data/List/ToFinsupp.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/14-Mathlib_Data_List_ToFinsupp.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/14-Mathlib_Data_List_ToFinsupp.stderr.log",
+  "pid": 52,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:24:52.923568+00:00",
+  "peak_physical_used_percent": 19.86987126253171,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:52.923722+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349824,
+    "used_percent": 18.19117762901866
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.olean",
+      "bytes": 63584,
+      "sha256": "95de899b85a26913f169b8f248882ac99cf2e24cb0d676e3b4eb5e9793c4269b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.olean.private",
+      "bytes": 160216,
+      "sha256": "4002d95a6ad73597bc02a842dfabd98526e8cc0fd66fbb2be78491e86595577d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.olean.server",
+      "bytes": 5680,
+      "sha256": "c5dad7b5797f715d9eed6ee07126509e76ee2db01e76ae74654727b8dad6cb98"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.ilean",
+      "bytes": 13196,
+      "sha256": "86f9767cced6e2b03f2d9baae3c1acc1c85359c6f1d6f33ed3a4a8e4b6884250"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Data/List/ToFinsupp.ir",
+      "bytes": 4952,
+      "sha256": "bf880d6fb2699d635bcee9ff64d349a5ef931e39a29158873664faf2f0d5b06e"
+    }
+  ]
+}

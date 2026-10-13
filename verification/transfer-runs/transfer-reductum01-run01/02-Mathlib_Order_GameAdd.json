@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Order.GameAdd",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Order/GameAdd.lean",
+    "bytes": 10179,
+    "sha256": "4703c19c868c07c989b66fe6f90055df30d2b6ba73265d08d8f20dc88d06b1e8"
+  },
+  "start_utc": "2026-10-13T13:24:14.337703+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:24:14.337687+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328816,
+    "used_percent": 18.397007086067045
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Order/GameAdd.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/02-Mathlib_Order_GameAdd.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/02-Mathlib_Order_GameAdd.stderr.log",
+  "pid": 9,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:24:15.840353+00:00",
+  "peak_physical_used_percent": 20.041016966821562,
+  "memory_after": {
+    "utc": "2026-10-13T13:24:15.840620+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8324080,
+    "used_percent": 18.443408852469425
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.olean",
+      "bytes": 97336,
+      "sha256": "6b9c03861d749acdf80c4a8388194541e0a5dc77165bee193c69b29342d8a794"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.olean.private",
+      "bytes": 195184,
+      "sha256": "f2f5949d63aadf97b93776f28b72768bc2ffebed8cac2bb90903993e986ba369"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.olean.server",
+      "bytes": 12624,
+      "sha256": "f14886fe6ed1844e494dd4e1b90aaa76a6b0d508173e284b81fe11d5bc8a5f05"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.ilean",
+      "bytes": 13515,
+      "sha256": "14170c3971083ff987006e4b50249f48bdc81d9fe49fe34c663a88fc8556915d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Order/GameAdd.ir",
+      "bytes": 7416,
+      "sha256": "8630e55549aa717b816e5d790b037997fc4cae6fcbac65e3d8726db5dd42861b"
+    }
+  ]
+}

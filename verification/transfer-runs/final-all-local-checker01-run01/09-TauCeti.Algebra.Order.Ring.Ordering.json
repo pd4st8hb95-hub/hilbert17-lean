@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+  "start_utc": "2026-10-13T14:18:53.097700+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:18:53.097684+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314668,
+    "used_percent": 18.535624525057933
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.Order.Ring.Ordering.Extension"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+    "bytes": 1522,
+    "sha256": "e30b9d40d6de41698f014ad70429f7164ef824ee4f9f3687f2495ce2c7963021"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.olean",
+      "bytes": 32000,
+      "sha256": "95e49e26e70aa1c6f95db3d4fa44f82ddae95ca9b50089f46594dae0c1d0fe0d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.ilean",
+      "bytes": 3242,
+      "sha256": "b2dd8e31314f0f9b949bc10c4822955a24f754c32bd1ab41d0001f5e914292f5"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/09-TauCeti.Algebra.Order.Ring.Ordering.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/09-TauCeti.Algebra.Order.Ring.Ordering.stderr.log",
+  "pid": 61,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:18:55.100339+00:00",
+  "peak_physical_used_percent": 19.77040531394283,
+  "memory_after": {
+    "utc": "2026-10-13T14:18:55.100426+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307688,
+    "used_percent": 18.604012263547926
+  }
+}

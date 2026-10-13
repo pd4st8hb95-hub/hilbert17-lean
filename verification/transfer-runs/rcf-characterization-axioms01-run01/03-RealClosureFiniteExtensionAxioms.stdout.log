@@ -1,0 +1,10 @@
+TauCeti.RealClosure.finrank_eq_one_of_odd.{u_1, u_2} {R : Type u_1} {E : Type u_2} [Field.{u_1} R]
+  [IsRealClosed.{u_1} R] [Field.{u_2} E] [Algebra.{u_1, u_2} R E] [FiniteDimensional.{u_1, u_2} R E]
+  (h : Odd.{0} (Module.finrank.{u_1, u_2} R E)) : Eq.{1} (Module.finrank.{u_1, u_2} R E) 1
+'TauCeti.RealClosure.finrank_eq_one_of_odd' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.RealClosure.finrank_ne_two_of_forall_isSquare.{u_3, u_4} {K : Type u_3} {L : Type u_4} [Field.{u_3} K]
+  [NeZero.{u_3} 2] [Field.{u_4} L] [Algebra.{u_3, u_4} K L] (hsq : ∀ (x : K), IsSquare.{u_3} x) :
+  Ne.{1} (Module.finrank.{u_3, u_4} K L) 2
+'TauCeti.RealClosure.finrank_ne_two_of_forall_isSquare' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

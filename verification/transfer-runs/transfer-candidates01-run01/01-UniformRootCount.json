@@ -1,0 +1,44 @@
+{
+  "label": "UniformRootCount",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean",
+    "bytes": 5508,
+    "sha256": "5232326f12598723455a57d02dba246a4ef537f9fac181d4d9970727e360f2e4"
+  },
+  "start_utc": "2026-10-13T13:56:58.857028+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:56:58.857019+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8342116,
+    "used_percent": 18.266698071465775
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates01-run01/01-UniformRootCount.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates01-run01/01-UniformRootCount.stderr.log",
+  "pid": 5,
+  "exit_code": 1,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:57:01.860653+00:00",
+  "peak_physical_used_percent": 21.81259251450153,
+  "memory_after": {
+    "utc": "2026-10-13T13:57:01.860826+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8347640,
+    "used_percent": 18.212575740890028
+  },
+  "outputs": []
+}

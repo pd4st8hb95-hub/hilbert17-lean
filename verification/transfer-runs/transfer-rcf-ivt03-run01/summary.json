@@ -1,0 +1,133 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:46:57.783677+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-rcf-ivt-compile-plan03.json",
+  "plan_sha256": "0470bf82909793f7e8f2e94762d4b6dbd11321d77961ac1e67469d57c699bde0",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Generic real-closed-field characterization and polynomial order properties, with no concrete-real/complex or square-root chain. Ordinary source compilation only.",
+  "jobs": [
+    {
+      "label": "TauCeti.Algebra.Polynomial.LinearFactor",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+        "bytes": 7980,
+        "sha256": "3e14804b3d4fb4c7d1d6eeb0590165467532dccfe59ac897b2190c877039a71f"
+      },
+      "start_utc": "2026-10-13T13:46:57.783950+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:46:57.783941+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8346432,
+        "used_percent": 18.224411326577123
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/01-TauCeti_Algebra_Polynomial_LinearFactor.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/01-TauCeti_Algebra_Polynomial_LinearFactor.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 3.004,
+      "end_utc": "2026-10-13T13:47:00.788628+00:00",
+      "peak_physical_used_percent": 20.613044147910333,
+      "memory_after": {
+        "utc": "2026-10-13T13:47:00.789155+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348824,
+        "used_percent": 18.200975299289432
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.olean",
+          "bytes": 416552,
+          "sha256": "6464071ec32f8e1e3ed1dfc3b5535f8a0a47caba1f06eb63b7ff1db0ed59b9e1"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.ilean",
+          "bytes": 22230,
+          "sha256": "7534f2c6613774ffccb7845559829946ce9fa019bb50e447591df8bd0d994563"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.QuadraticDiscriminant",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+        "bytes": 18372,
+        "sha256": "998ab5c992bb74865afb2eef8da1aa8d68e5e3e7536ba469fa2828464e4a09d1"
+      },
+      "start_utc": "2026-10-13T13:47:00.790807+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:47:00.790790+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348824,
+        "used_percent": 18.200975299289432
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/02-TauCeti_Algebra_QuadraticDiscriminant.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt03-run01/02-TauCeti_Algebra_QuadraticDiscriminant.stderr.log",
+      "pid": 8,
+      "exit_code": 1,
+      "seconds": 9.019,
+      "end_utc": "2026-10-13T13:47:09.810243+00:00",
+      "peak_physical_used_percent": 20.602384282655734,
+      "memory_after": {
+        "utc": "2026-10-13T13:47:09.810392+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8343848,
+        "used_percent": 18.249728506556796
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:47:09.811434+00:00"
+}

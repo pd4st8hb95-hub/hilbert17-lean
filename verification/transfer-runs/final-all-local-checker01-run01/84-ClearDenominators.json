@@ -1,0 +1,46 @@
+{
+  "module": "ClearDenominators",
+  "start_utc": "2026-10-13T14:21:43.089624+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:43.089618+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8304748,
+    "used_percent": 18.632817414143997
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "ClearDenominators"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/ClearDenominators.lean",
+    "bytes": 6382,
+    "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.olean",
+      "bytes": 349840,
+      "sha256": "a48abe7858a030047106a40f98c41d42dace1ee557c3b690068712c85555168b"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.ilean",
+      "bytes": 14016,
+      "sha256": "f37a45e81017121081e043bd5810dfdc221ac2a3d29fa6058dc824f7b91a8ad0"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/84-ClearDenominators.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/84-ClearDenominators.stderr.log",
+  "pid": 586,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:21:45.092245+00:00",
+  "peak_physical_used_percent": 19.984464814018665,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:45.092335+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316536,
+    "used_percent": 18.51732247699213
+  }
+}

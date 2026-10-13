@@ -1,0 +1,90 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:59:75: error: Tactic `decide` failed for proposition
+  ((1 + if 1 = 2 then 1 else 0) + if 2 = 0 then 1 else -1) = if 0 = -1 then 1 else 0
+because its `Decidable` instance
+  instDecidableEqRat ((1 + if 1 = 2 then 1 else 0) + if 2 = 0 then 1 else -1) (if 0 = -1 then 1 else 0)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqNat`, `instDecidableEqRat`, `instDecidableEqSignType`, `Int.decEq`, `Int.instDecidableEq`, `Nat.decEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match ((1 + if 1 = 2 then 1 else 0).add (if 2 = 0 then 1 else -1)).num, ↑0 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:59:75: error: Tactic `decide` failed for proposition
+  ((1 + if 1 = 2 then -1 else 0) + if 2 = 0 then 1 else -1) = 0
+because its `Decidable` instance
+  instDecidableEqRat ((1 + if 1 = 2 then -1 else 0) + if 2 = 0 then 1 else -1) 0
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match ((1 + if 1 = 2 then -1 else 0).add (if 2 = 0 then 1 else -1)).num, ↑0 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:59:75: error: Tactic `decide` failed for proposition
+  ((if 0 = 2 then 1 / 2 else 0) + 1 / 2 + if 2 = 1 then -(1 / 2) else 1 / 2) = 1
+because its `Decidable` instance
+  instDecidableEqRat ((if 0 = 2 then 1 / 2 else 0) + 1 / 2 + if 2 = 1 then -(1 / 2) else 1 / 2) 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match (((if 0 = 2 then 1 / 2 else 0) + 1 / 2).add (if 2 = 1 then -(1 / 2) else 1 / 2)).num, ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:59:75: error: Tactic `decide` failed for proposition
+  ((if 0 = 2 then 1 / 2 else 0) + -(1 / 2) + if 2 = 1 then -(1 / 2) else 1 / 2) = 0
+because its `Decidable` instance
+  instDecidableEqRat ((if 0 = 2 then 1 / 2 else 0) + -(1 / 2) + if 2 = 1 then -(1 / 2) else 1 / 2) 0
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match (((if 0 = 2 then 1 / 2 else 0) + -(1 / 2)).add (if 2 = 1 then -(1 / 2) else 1 / 2)).num, ↑0 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:59:75: error: Tactic `decide` failed for proposition
+  (if 0 = 2 then 1 / 2 else 0) + 1 / 2 + 1 / 2 = 1
+because its `Decidable` instance
+  instDecidableEqRat ((if 0 = 2 then 1 / 2 else 0) + 1 / 2 + 1 / 2) 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match (((if 0 = 2 then 1 / 2 else 0) + 1 / 2).add (1 / 2)).num, ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯

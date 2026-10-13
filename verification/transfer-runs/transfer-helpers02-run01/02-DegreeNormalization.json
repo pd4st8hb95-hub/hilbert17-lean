@@ -1,0 +1,44 @@
+{
+  "label": "DegreeNormalization",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean",
+    "bytes": 2756,
+    "sha256": "c3cdf21954adec27880c0a9fc8b4cef7d460ba1f99ff11b7ef15d0d1d4d52f82"
+  },
+  "start_utc": "2026-10-13T13:31:23.997542+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:31:23.997530+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8324256,
+    "used_percent": 18.44168446250177
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/DegreeNormalization.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/DegreeNormalization.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/02-DegreeNormalization.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers02-run01/02-DegreeNormalization.stderr.log",
+  "pid": 8,
+  "exit_code": 1,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T13:31:26.501262+00:00",
+  "peak_physical_used_percent": 20.880324592897004,
+  "memory_after": {
+    "utc": "2026-10-13T13:31:26.501425+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317068,
+    "used_percent": 18.51211011640808
+  },
+  "outputs": []
+}

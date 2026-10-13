@@ -1,0 +1,416 @@
+@Function.occCount.{u_1, u_2} : {X : Type u_1} → {S : Type u_2} → (X → S) → S → ℕ
+'Function.occCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_def.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S) (y : S),
+  Eq.{1} (Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} (Subtype.{u_1 + 1} fun x => Eq.{u_2 + 1} (f x) y))
+'Function.occCount_def' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_eq_card_filter.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] [inst_1 : DecidableEq.{u_2 + 1} S] (f : X → S)
+  (y : S), Eq.{1} (Function.occCount.{u_1, u_2} f y) (Finset.card.{u_1} {x | Eq.{u_2 + 1} (f x) y})
+'Function.occCount_eq_card_filter' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_eq_sum.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] [inst_1 : DecidableEq.{u_2 + 1} S] (w : X → S)
+  (a : S), Eq.{1} (Function.occCount.{u_1, u_2} w a) (∑ i, ite.{1} (Eq.{u_2 + 1} (w i) a) 1 0)
+'Function.occCount_eq_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_le_of_comp.{u_1, u_2,
+    u_3} : ∀ {X : Type u_1} {S : Type u_2} {Y : Type u_3} {u : X → S} {v : Y → S}
+  (e : Function.Embedding.{u_1 + 1, u_3 + 1} X Y),
+  (∀ (i : X), Eq.{u_2 + 1} (v (e i)) (u i)) →
+    ∀ (a : S) [Finite.{u_3 + 1} (Subtype.{u_3 + 1} fun y => Eq.{u_2 + 1} (v y) a)],
+      LE.le.{0} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_3, u_2} v a)
+'Function.occCount_le_of_comp' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_lt_of_comp.{u_1, u_2,
+    u_3} : ∀ {X : Type u_1} {S : Type u_2} {Y : Type u_3} {u : X → S} {v : Y → S} {a : S}
+  [Finite.{u_3 + 1} (Subtype.{u_3 + 1} fun y => Eq.{u_2 + 1} (v y) a)] {j : Y}
+  (e : Function.Embedding.{u_1 + 1, u_3 + 1} X Y),
+  (∀ (i : X), Eq.{u_2 + 1} (v (e i)) (u i)) →
+    Eq.{u_2 + 1} (v j) a →
+      (∀ (i : X), Ne.{u_3 + 1} (e i) j) →
+        LT.lt.{0} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_3, u_2} v a)
+'Function.occCount_lt_of_comp' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_pos.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S) (y : S)
+  [Finite.{u_1 + 1} (Subtype.{u_1 + 1} fun x => Eq.{u_2 + 1} (f x) y)],
+  LT.lt.{0} 0 (Function.occCount.{u_1, u_2} f y) ↔ ∃ x, Eq.{u_2 + 1} (f x) y
+'Function.occCount_pos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_eq_card_preimage.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S) (y : S),
+  Eq.{1} (Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} ↑(Set.preimage.{u_1, u_2} f (singleton.{u_2, u_2} y)))
+'Function.occCount_eq_card_preimage' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_of_notMem_range.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S),
+  ∀ y ∉ Set.range.{u_2, u_1 + 1} f, Eq.{1} (Function.occCount.{u_1, u_2} f y) 0
+'Function.occCount_of_notMem_range' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_of_injective.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S),
+  Function.Injective.{u_1 + 1, u_2 + 1} f →
+    ∀ (y : S) [inst : Decidable (∃ x, Eq.{u_2 + 1} (f x) y)],
+      Eq.{1} (Function.occCount.{u_1, u_2} f y) (ite.{1} (∃ x, Eq.{u_2 + 1} (f x) y) 1 0)
+'Function.occCount_of_injective' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_apply_of_injective.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} (f : X → S),
+  Function.Injective.{u_1 + 1, u_2 + 1} f → ∀ (x : X), Eq.{1} (Function.occCount.{u_1, u_2} f (f x)) 1
+'Function.occCount_apply_of_injective' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.prod_occCount_pow.{u_1, u_2,
+    u_3} : ∀ {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] {K : Type u_3} [inst_1 : CommMonoid.{u_3} K]
+  (f : X → S) {T : Finset.{u_2} S},
+  (∀ (x : X), Membership.mem.{u_2, u_2} T (f x)) →
+    ∀ (weight : S → K),
+      Eq.{u_3 + 1} (∏ y ∈ T, HPow.hPow.{u_3, 0, u_3} (weight y) (Function.occCount.{u_1, u_2} f y)) (∏ x, weight (f x))
+'Function.prod_occCount_pow' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.sum_occCount_eq_card.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} [Finite.{u_1 + 1} X] (f : X → S) {T : Finset.{u_2} S},
+  (∀ (x : X), Membership.mem.{u_2, u_2} T (f x)) → Eq.{1} (∑ y ∈ T, Function.occCount.{u_1, u_2} f y) (Nat.card.{u_1} X)
+'Function.sum_occCount_eq_card' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_castSucc.{u_1} : ∀ {S : Type u_1} [inst : DecidableEq.{u_1 + 1} S] {n : ℕ}
+  (w : Fin (HAdd.hAdd.{0, 0, 0} n 1) → S) (a : S),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0} (Function.occCount.{0, u_1} (Function.comp.{1, 1, u_1 + 1} w Fin.castSucc) a)
+      (ite.{1} (Eq.{u_1 + 1} (w (Fin.last n)) a) 1 0))
+    (Function.occCount.{0, u_1} w a)
+'Function.occCount_castSucc' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.occCount_succ.{u_1} : ∀ {S : Type u_1} [inst : DecidableEq.{u_1 + 1} S] {n : ℕ}
+  (w : Fin (HAdd.hAdd.{0, 0, 0} n 1) → S) (a : S),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0} (Function.occCount.{0, u_1} (Function.comp.{1, 1, u_1 + 1} w Fin.succ) a)
+      (ite.{1} (Eq.{u_1 + 1} (w 0) a) 1 0))
+    (Function.occCount.{0, u_1} w a)
+'Function.occCount_succ' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.exists_perm_of_occCount_eq.{u_1,
+    u_2} : ∀ {X : Type u_1} {S : Type u_2} [Finite.{u_1 + 1} X] {u v : X → S},
+  (∀ (a : S), Eq.{1} (Function.occCount.{u_1, u_2} u a) (Function.occCount.{u_1, u_2} v a)) →
+    ∃ σ, Eq.{max (u_1 + 1) (u_2 + 1)} (Function.comp.{u_1 + 1, u_1 + 1, u_2 + 1} v ⇑σ) u
+'Function.exists_perm_of_occCount_eq' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.sum_occCount_nsmul.{u_1, u_2,
+    u_3} : ∀ {X : Type u_1} {S : Type u_2} [inst : Fintype.{u_1} X] {K : Type u_3} [inst_1 : AddCommMonoid.{u_3} K]
+  (f : X → S) {T : Finset.{u_2} S},
+  (∀ (x : X), Membership.mem.{u_2, u_2} T (f x)) →
+    ∀ (weight : S → K),
+      Eq.{u_3 + 1} (∑ y ∈ T, HSMul.hSMul.{0, u_3, u_3} (Function.occCount.{u_1, u_2} f y) (weight y))
+        (∑ x, weight (f x))
+'Function.sum_occCount_nsmul' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.mulVec_occCount.{u_1, u_2, u_3, u_4,
+    u_5} : ∀ {X : Type u_1} {S : Type u_2} {C : Type u_3} {I : Type u_4} [inst : Fintype.{u_1} X]
+  [inst_1 : Fintype.{u_3} C] {K : Type u_5} [inst_2 : Semiring.{u_5} K] (obs : X → S) (columns : C → S),
+  Function.Injective.{u_3 + 1, u_2 + 1} columns →
+    (∀ (x : X), ∃ c, Eq.{u_2 + 1} (columns c) (obs x)) →
+      ∀ (weight : I → S → K),
+        Eq.{max (u_4 + 1) (u_5 + 1)}
+          (Matrix.mulVec.{u_5, u_4, u_3} (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)) fun c =>
+            ↑(Function.occCount.{u_1, u_2} obs (columns c)))
+          fun i => ∑ x, weight i (obs x)
+'Function.mulVec_occCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Function.eq_occCount.{u_1, u_2, u_3, u_4,
+    u_5} : ∀ {X : Type u_1} {S : Type u_2} {C : Type u_3} {I : Type u_4} [inst : Fintype.{u_1} X]
+  [inst_1 : Fintype.{u_3} C] [inst_2 : Fintype.{u_4} I] [inst_3 : DecidableEq.{u_3 + 1} C] {K : Type u_5}
+  [inst_4 : Semiring.{u_5} K] (obs : X → S) (columns : C → S),
+  Function.Injective.{u_3 + 1, u_2 + 1} columns →
+    (∀ (x : X), ∃ c, Eq.{u_2 + 1} (columns c) (obs x)) →
+      ∀ (weight : I → S → K) (A : Matrix.{u_3, u_4, u_5} C I K),
+        Eq.{max (u_3 + 1) (u_5 + 1)}
+            (HMul.hMul.{max (max u_3 u_4) u_5, max (max u_3 u_4) u_5, max u_3 u_5} A
+              (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)))
+            1 →
+          ∀ (proposed : C → K),
+            (Eq.{max (u_4 + 1) (u_5 + 1)}
+                (Matrix.mulVec.{u_5, u_4, u_3} (Matrix.of.{u_5, u_4, u_3} fun i c => weight i (columns c)) proposed)
+                fun i => ∑ x, weight i (obs x)) →
+              Eq.{max (u_3 + 1) (u_5 + 1)} proposed fun c => ↑(Function.occCount.{u_1, u_2} obs (columns c))
+'Function.eq_occCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+SignType.lagrangeCoeff : SignType → Fin 3 → ℚ
+'SignType.lagrangeCoeff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+SignType.lagrangeCoeff_zero : ∀ (e : Fin 3),
+  Eq.{1} (SignType.lagrangeCoeff 0 e) (ite.{1} (Eq.{1} e 0) 1 (ite.{1} (Eq.{1} e 2) (-1) 0))
+'SignType.lagrangeCoeff_zero' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+SignType.lagrangeCoeff_neg_one : ∀ (e : Fin 3),
+  Eq.{1} ((-1).lagrangeCoeff e) (ite.{1} (Eq.{1} e 1) (-1 / 2) (ite.{1} (Eq.{1} e 2) (1 / 2) 0))
+'SignType.lagrangeCoeff_neg_one' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+SignType.lagrangeCoeff_one : ∀ (e : Fin 3),
+  Eq.{1} (SignType.lagrangeCoeff 1 e) (ite.{1} (Eq.{1} e 1) (1 / 2) (ite.{1} (Eq.{1} e 2) (1 / 2) 0))
+'SignType.lagrangeCoeff_one' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+SignType.sum_lagrangeCoeff_mul_pow : ∀ (s t : SignType),
+  Eq.{1} (∑ e, HMul.hMul.{0, 0, 0} (s.lagrangeCoeff e) (HPow.hPow.{0, 0, 0} ↑t ↑e)) (ite.{1} (Eq.{1} s t) 1 0)
+'SignType.sum_lagrangeCoeff_mul_pow' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullMatrix.{u_1} : (J : Type u_1) →
+  [Fintype.{u_1} J] → Matrix.{u_1, u_1, 0} (J → Fin 3) (J → SignType) ℚ
+'TauCeti.SignDetermination.fullMatrix' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullMatrix_def.{u_1} : ∀ (J : Type u_1) [inst : Fintype.{u_1} J],
+  Eq.{u_1 + 1} (TauCeti.SignDetermination.fullMatrix.{u_1} J)
+    (Matrix.of.{0, u_1, u_1} fun e σ => ∏ j, HPow.hPow.{0, 0, 0} ↑(σ j) ↑(e j))
+'TauCeti.SignDetermination.fullMatrix_def' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullInverse.{u_1} : (J : Type u_1) →
+  [Fintype.{u_1} J] → Matrix.{u_1, u_1, 0} (J → SignType) (J → Fin 3) ℚ
+'TauCeti.SignDetermination.fullInverse' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullMatrix_apply.{u_1} : ∀ (J : Type u_1) [inst : Fintype.{u_1} J] (e : J → Fin 3)
+  (σ : J → SignType), Eq.{1} (TauCeti.SignDetermination.fullMatrix.{u_1} J e σ) (∏ j, HPow.hPow.{0, 0, 0} ↑(σ j) ↑(e j))
+'TauCeti.SignDetermination.fullMatrix_apply' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullInverse_apply.{u_1} : ∀ (J : Type u_1) [inst : Fintype.{u_1} J] (σ : J → SignType)
+  (e : J → Fin 3), Eq.{1} (TauCeti.SignDetermination.fullInverse.{u_1} J σ e) (∏ j, (σ j).lagrangeCoeff (e j))
+'TauCeti.SignDetermination.fullInverse_apply' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+TauCeti.SignDetermination.fullInverse_mul_fullMatrix.{u_1} : ∀ (J : Type u_1) [inst : Fintype.{u_1} J]
+  [inst_1 : DecidableEq.{u_1 + 1} J],
+  Eq.{u_1 + 1}
+    (HMul.hMul.{u_1, u_1, u_1} (TauCeti.SignDetermination.fullInverse.{u_1} J)
+      (TauCeti.SignDetermination.fullMatrix.{u_1} J))
+    1
+'TauCeti.SignDetermination.fullInverse_mul_fullMatrix' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+TauCeti.SignDetermination.fullMatrix_mul_fullInverse.{u_1} : ∀ (J : Type u_1) [inst : Fintype.{u_1} J]
+  [inst_1 : DecidableEq.{u_1 + 1} J],
+  Eq.{u_1 + 1}
+    (HMul.hMul.{u_1, u_1, u_1} (TauCeti.SignDetermination.fullMatrix.{u_1} J)
+      (TauCeti.SignDetermination.fullInverse.{u_1} J))
+    1
+'TauCeti.SignDetermination.fullMatrix_mul_fullInverse' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+@TauCeti.SignDetermination.fullMatrix_mulVec_occCount.{u_1,
+    u_2} : ∀ {X : Type u_1} [inst : Fintype.{u_1} X] (J : Type u_2) [inst_1 : Fintype.{u_2} J]
+  [inst_2 : DecidableEq.{u_2 + 1} J] (obs : X → J → SignType),
+  Eq.{u_2 + 1}
+    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullMatrix.{u_2} J) fun σ =>
+      ↑(Function.occCount.{u_1, u_2} obs σ))
+    fun e => ∑ x, ∏ j, HPow.hPow.{0, 0, 0} ↑(obs x j) ↑(e j)
+'TauCeti.SignDetermination.fullMatrix_mulVec_occCount' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+@TauCeti.SignDetermination.fullInverse_mulVec.{u_1,
+    u_2} : ∀ {X : Type u_1} [inst : Fintype.{u_1} X] (J : Type u_2) [inst_1 : Fintype.{u_2} J]
+  [inst_2 : DecidableEq.{u_2 + 1} J] (obs : X → J → SignType),
+  Eq.{u_2 + 1}
+    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>
+      ∑ x, ∏ j, HPow.hPow.{0, 0, 0} ↑(obs x j) ↑(e j))
+    fun σ => ↑(Function.occCount.{u_1, u_2} obs σ)
+'TauCeti.SignDetermination.fullInverse_mulVec' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount.{u_1,
+    u_2} : {R : Type u_1} →
+  [inst : Semiring.{u_1} R] →
+    [LinearOrder.{u_1} R] → {J : Type u_2} → Finset.{u_1} R → (J → Polynomial.{u_1} R) → (J → SignType) → ℕ
+'Finset.signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount_eq_occCount.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+  Eq.{1} (Finset.signCount.{u_1, u_2} Z Q σ)
+    (Function.occCount.{u_1, u_2} (fun x j => SignType.sign.{u_1} (Polynomial.eval.{u_1} (↑x) (Q j))) σ)
+'Finset.signCount_eq_occCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount_eq_card_filter.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+  Eq.{1} (Finset.signCount.{u_1, u_2} Z Q σ)
+    (Finset.card.{u_1} ({x ∈ Z | ∀ (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (σ j)}))
+'Finset.signCount_eq_card_filter' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount_empty.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2}
+  (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+  Eq.{1} (Finset.signCount.{u_1, u_2} EmptyCollection.emptyCollection.{u_1} Q σ) 0
+'Finset.signCount_empty' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.sum_signCount.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2}
+  [inst_2 : Fintype.{u_2} J] [inst_3 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R) (Q : J → Polynomial.{u_1} R),
+  Eq.{1} (∑ σ, Finset.signCount.{u_1, u_2} Z Q σ) (Finset.card.{u_1} Z)
+'Finset.sum_signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount_pos.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R] {J : Type u_2} (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+  LT.lt.{0} 0 (Finset.signCount.{u_1, u_2} Z Q σ) ↔
+    ∃ x, Membership.mem.{u_1, u_1} Z x ∧ ∀ (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (σ j)
+'Finset.signCount_pos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum.{u_1} : {R : Type u_1} →
+  [inst : Semiring.{u_1} R] → [LinearOrder.{u_1} R] → Finset.{u_1} R → Polynomial.{u_1} R → ℤ
+'Finset.signSum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_eq_sum_subtype.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),
+  Eq.{1} (Finset.signSum.{u_1} Z p) (∑ x, ↑(SignType.sign.{u_1} (Polynomial.eval.{u_1} (↑x) p)))
+'Finset.signSum_eq_sum_subtype' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_eq_sum.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),
+  Eq.{1} (Finset.signSum.{u_1} Z p) (∑ x ∈ Z, ↑(SignType.sign.{u_1} (Polynomial.eval.{u_1} x p)))
+'Finset.signSum_eq_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_empty.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  (p : Polynomial.{u_1} R), Eq.{1} (Finset.signSum.{u_1} EmptyCollection.emptyCollection.{u_1} p) 0
+'Finset.signSum_empty' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_zero.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  (Z : Finset.{u_1} R), Eq.{1} (Finset.signSum.{u_1} Z 0) 0
+'Finset.signSum_zero' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_one.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  [ZeroLEOneClass.{u_1} R] [NeZero.{u_1} 1] (Z : Finset.{u_1} R),
+  Eq.{1} (Finset.signSum.{u_1} Z 1) ↑(Finset.card.{u_1} Z)
+'Finset.signSum_one' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_eq_card_sub_card.{u_1} : ∀ {R : Type u_1} [inst : Semiring.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  (Z : Finset.{u_1} R) (p : Polynomial.{u_1} R),
+  Eq.{1} (Finset.signSum.{u_1} Z p)
+    (HSub.hSub.{0, 0, 0} ↑(Finset.card.{u_1} ({x ∈ Z | LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x p)}))
+      ↑(Finset.card.{u_1} ({x ∈ Z | LT.lt.{u_1} (Polynomial.eval.{u_1} x p) 0})))
+'Finset.signSum_eq_card_sub_card' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery.{u_1} : {R : Type u_1} →
+  [inst : CommRing.{u_1} R] → [IsDomain.{u_1} R] → [LinearOrder.{u_1} R] → Polynomial.{u_1} R → Polynomial.{u_1} R → ℤ
+'Polynomial.tarskiQuery' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_eq_signSum.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),
+  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)
+    (Finset.signSum.{u_1} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) q)
+'Polynomial.tarskiQuery_eq_signSum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_eq_sum.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),
+  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)
+    (∑ x ∈ Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p), ↑(SignType.sign.{u_1} (Polynomial.eval.{u_1} x q)))
+'Polynomial.tarskiQuery_eq_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_eq_card_sub_card.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] (p q : Polynomial.{u_1} R),
+  Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)
+    (HSub.hSub.{0, 0, 0}
+      ↑(Finset.card.{u_1}
+          ({x ∈ Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p) | LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x q)}))
+      ↑(Finset.card.{u_1}
+          ({x ∈ Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p) | LT.lt.{u_1} (Polynomial.eval.{u_1} x q) 0})))
+'Polynomial.tarskiQuery_eq_card_sub_card' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_zero_left.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] (q : Polynomial.{u_1} R), Eq.{1} (Polynomial.tarskiQuery.{u_1} 0 q) 0
+'Polynomial.tarskiQuery_zero_left' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_zero_right.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] (p : Polynomial.{u_1} R), Eq.{1} (Polynomial.tarskiQuery.{u_1} p 0) 0
+'Polynomial.tarskiQuery_zero_right' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_one_right.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] [ZeroLEOneClass.{u_1} R] (p : Polynomial.{u_1} R),
+  Eq.{1} (Polynomial.tarskiQuery.{u_1} p 1) ↑(Finset.card.{u_1} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)))
+'Polynomial.tarskiQuery_one_right' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.signCount_roots_eq_natCard.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R] [inst_2 : LinearOrder.{u_1} R]
+  {J : Type u_2} {p : Polynomial.{u_1} R},
+  Ne.{u_1 + 1} p 0 →
+    ∀ (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+      Eq.{1} (Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q σ)
+        (Nat.card.{u_1}
+          (Subtype.{u_1 + 1} fun x =>
+            Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 ∧
+              ∀ (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (σ j)))
+'Polynomial.signCount_roots_eq_natCard' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_eq_sub.{u_1} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R]
+  [inst_2 : LinearOrder.{u_1} R] {p : Polynomial.{u_1} R},
+  Ne.{u_1 + 1} p 0 →
+    ∀ (q : Polynomial.{u_1} R),
+      Eq.{1} (Polynomial.tarskiQuery.{u_1} p q)
+        (HSub.hSub.{0, 0, 0}
+          ↑(Nat.card.{u_1}
+              (Subtype.{u_1 + 1} fun x =>
+                Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 ∧ LT.lt.{u_1} 0 (Polynomial.eval.{u_1} x q)))
+          ↑(Nat.card.{u_1}
+              (Subtype.{u_1 + 1} fun x =>
+                Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 ∧ LT.lt.{u_1} (Polynomial.eval.{u_1} x q) 0)))
+'Polynomial.tarskiQuery_eq_sub' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.signCount_roots_pos.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : IsDomain.{u_1} R] [inst_2 : LinearOrder.{u_1} R]
+  {J : Type u_2} {p : Polynomial.{u_1} R},
+  Ne.{u_1 + 1} p 0 →
+    ∀ (Q : J → Polynomial.{u_1} R) (σ : J → SignType),
+      LT.lt.{0} 0 (Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q σ) ↔
+        ∃ x,
+          Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 ∧
+            ∀ (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (σ j)
+'Polynomial.signCount_roots_pos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_prod_pow.{u_1, u_2,
+    u_3} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} [inst_4 : Fintype.{u_3} J] (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (e : J → ℕ),
+  Eq.{u_2 + 1} (↑(Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j))))
+    (∑ x, ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(SignType.sign.{u_1} (Polynomial.eval.{u_1} (↑x) (Q j)))) (e j))
+'Finset.signSum_prod_pow' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.mulVec_signCount.{u_1, u_2, u_3, u_4,
+    u_5} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_4 : Fintype.{u_3} J]
+  [inst_5 : Fintype.{u_4} C] (Z : Finset.{u_1} R) (Q : J → Polynomial.{u_1} R) (columns : C → J → SignType)
+  (rows : I → J → ℕ),
+  Function.Injective.{u_4 + 1, u_3 + 1} columns →
+    (∀ (x : R),
+        Membership.mem.{u_1, u_1} Z x →
+          ∃ c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) →
+      Eq.{max (u_2 + 1) (u_5 + 1)}
+        (Matrix.mulVec.{u_2, u_5, u_4}
+          (Matrix.of.{u_2, u_5, u_4} fun i c => ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(columns c j)) (rows i j)) fun c =>
+          ↑(Finset.signCount.{u_1, u_3} Z Q (columns c)))
+        fun i => ↑(Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))
+'Finset.mulVec_signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.eq_signCount.{u_1, u_2, u_3, u_4,
+    u_5} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {K : Type u_2} [inst_3 : CommRing.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_4 : Fintype.{u_3} J]
+  [inst_5 : Fintype.{u_4} C] [inst_6 : DecidableEq.{u_4 + 1} C] [inst_7 : Fintype.{u_5} I] (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (columns : C → J → SignType) (rows : I → J → ℕ),
+  Function.Injective.{u_4 + 1, u_3 + 1} columns →
+    (∀ (x : R),
+        Membership.mem.{u_1, u_1} Z x →
+          ∃ c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) →
+      ∀ (A : Matrix.{u_4, u_5, u_2} C I K),
+        Eq.{max (u_2 + 1) (u_4 + 1)}
+            (HMul.hMul.{max (max u_2 u_4) u_5, max (max u_2 u_4) u_5, max u_2 u_4} A
+              (Matrix.of.{u_2, u_5, u_4} fun i c => ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(columns c j)) (rows i j)))
+            1 →
+          ∀ (proposed : C → K),
+            (Eq.{max (u_2 + 1) (u_5 + 1)}
+                (Matrix.mulVec.{u_2, u_5, u_4}
+                  (Matrix.of.{u_2, u_5, u_4} fun i c => ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(columns c j)) (rows i j))
+                  proposed)
+                fun i => ↑(Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))) →
+              Eq.{max (u_2 + 1) (u_4 + 1)} proposed fun c => ↑(Finset.signCount.{u_1, u_3} Z Q (columns c))
+'Finset.eq_signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signCount_solution_pos_iff.{u_1, u_2, u_3, u_4,
+    u_5} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {K : Type u_2} [inst_3 : CommRing.{u_2} K] [inst_4 : PartialOrder.{u_2} K] [IsOrderedRing.{u_2} K]
+  [Nontrivial.{u_2} K] {J : Type u_3} {C : Type u_4} {I : Type u_5} [inst_7 : Fintype.{u_3} J]
+  [inst_8 : Fintype.{u_4} C] [inst_9 : DecidableEq.{u_4 + 1} C] [inst_10 : Fintype.{u_5} I] (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (columns : C → J → SignType) (rows : I → J → ℕ),
+  Function.Injective.{u_4 + 1, u_3 + 1} columns →
+    (∀ (x : R),
+        Membership.mem.{u_1, u_1} Z x →
+          ∃ c, Eq.{u_3 + 1} (columns c) fun j => SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) →
+      ∀ (A : Matrix.{u_4, u_5, u_2} C I K),
+        Eq.{max (u_2 + 1) (u_4 + 1)}
+            (HMul.hMul.{max (max u_2 u_4) u_5, max (max u_2 u_4) u_5, max u_2 u_4} A
+              (Matrix.of.{u_2, u_5, u_4} fun i c => ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(columns c j)) (rows i j)))
+            1 →
+          ∀ (proposed : C → K),
+            (Eq.{max (u_2 + 1) (u_5 + 1)}
+                (Matrix.mulVec.{u_2, u_5, u_4}
+                  (Matrix.of.{u_2, u_5, u_4} fun i c => ∏ j, HPow.hPow.{u_2, 0, u_2} (↑(columns c j)) (rows i j))
+                  proposed)
+                fun i => ↑(Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (rows i j)))) →
+              ∀ (c : C),
+                LT.lt.{u_2} 0 (proposed c) ↔
+                  ∃ x,
+                    Membership.mem.{u_1, u_1} Z x ∧
+                      ∀ (j : J), Eq.{1} (SignType.sign.{u_1} (Polynomial.eval.{u_1} x (Q j))) (columns c j)
+'Finset.signCount_solution_pos_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.fullInverse_mulVec_signSum.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R),
+  Eq.{u_2 + 1}
+    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>
+      ↑(Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) ↑(e j))))
+    fun σ => ↑(Finset.signCount.{u_1, u_2} Z Q σ)
+'Finset.fullInverse_mulVec_signSum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Finset.signSum_eq_sum_signCount.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R] [IsStrictOrderedRing.{u_1} R]
+  {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J] (Z : Finset.{u_1} R)
+  (Q : J → Polynomial.{u_1} R) (e : J → ℕ),
+  Eq.{1} (Finset.signSum.{u_1} Z (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j)))
+    (∑ σ, HMul.hMul.{0, 0, 0} (∏ j, HPow.hPow.{0, 0, 0} (↑(σ j)) (e j)) ↑(Finset.signCount.{u_1, u_2} Z Q σ))
+'Finset.signSum_eq_sum_signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.tarskiQuery_eq_sum_signCount.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  [inst_2 : IsStrictOrderedRing.{u_1} R] {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J]
+  (p : Polynomial.{u_1} R) (Q : J → Polynomial.{u_1} R) (e : J → ℕ),
+  Eq.{1} (Polynomial.tarskiQuery.{u_1} p (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) (e j)))
+    (∑ σ,
+      HMul.hMul.{0, 0, 0} (∏ j, HPow.hPow.{0, 0, 0} (↑(σ j)) (e j))
+        ↑(Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q σ))
+'Polynomial.tarskiQuery_eq_sum_signCount' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Polynomial.fullInverse_mulVec_tarskiQuery.{u_1,
+    u_2} : ∀ {R : Type u_1} [inst : CommRing.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+  [inst_2 : IsStrictOrderedRing.{u_1} R] {J : Type u_2} [inst_3 : Fintype.{u_2} J] [inst_4 : DecidableEq.{u_2 + 1} J]
+  (p : Polynomial.{u_1} R) (Q : J → Polynomial.{u_1} R),
+  Eq.{u_2 + 1}
+    (Matrix.mulVec.{0, u_2, u_2} (TauCeti.SignDetermination.fullInverse.{u_2} J) fun e =>
+      ↑(Polynomial.tarskiQuery.{u_1} p (∏ j, HPow.hPow.{u_1, 0, u_1} (Q j) ↑(e j))))
+    fun σ => ↑(Finset.signCount.{u_1, u_2} (Multiset.toFinset.{u_1} (Polynomial.roots.{u_1} p)) Q σ)
+'Polynomial.fullInverse_mulVec_tarskiQuery' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

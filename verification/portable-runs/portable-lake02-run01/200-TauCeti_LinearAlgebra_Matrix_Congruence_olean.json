@@ -1,0 +1,39 @@
+{
+  "label": "TauCeti.LinearAlgebra.Matrix.Congruence:olean",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lake",
+    "--dir",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check",
+    "--no-cache",
+    "--packages=/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/offline-package-overrides02.json",
+    "build",
+    "+TauCeti.LinearAlgebra.Matrix.Congruence:olean"
+  ],
+  "start_utc": "2026-10-13T14:36:39.660388+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:36:39.660377+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8272988,
+    "used_percent": 18.943991421943725
+  },
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/200-TauCeti_LinearAlgebra_Matrix_Congruence_olean.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/portable-lake02-run01/200-TauCeti_LinearAlgebra_Matrix_Congruence_olean.stderr.log",
+  "allowed_configuration_sources": [
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/mathlib/lakefile.lean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-portable-check/.lake/packages/proofwidgets/lakefile.lean"
+  ],
+  "pid": 2724,
+  "status": "PASS",
+  "exit_code": 0,
+  "end_utc": "2026-10-13T14:36:42.666716+00:00",
+  "seconds": 3.006,
+  "peak_physical_used_percent": 22.754227008884918,
+  "memory_after": {
+    "utc": "2026-10-13T14:36:42.666892+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8263752,
+    "used_percent": 19.034482704564578
+  },
+  "observed_configuration_compiles": [],
+  "configuration_observation_scope": "0.5-second process samples; configuration input pins are also recorded. Short-lived or in-process elaboration is not exhaustively observed."
+}

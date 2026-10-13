@@ -1,0 +1,24 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Data/SignType/Lagrange.lean:56:81: error: unsolved goals
+case zero.neg
+⊢ ((1 + if 1 = 2 then 1 else 0) + if 2 = 0 then 1 else -1) = if 0 = -1 then 1 else 0
+
+case zero.pos
+⊢ ((1 + if 1 = 2 then -1 else 0) + if 2 = 0 then 1 else -1) = 0
+
+case neg.zero
+⊢ ¬0 = 2
+
+case neg.neg
+⊢ ((if 0 = 2 then 1 / 2 else 0) + 1 / 2 + if 2 = 1 then -(1 / 2) else 1 / 2) = 1
+
+case neg.pos
+⊢ ((if 0 = 2 then 1 / 2 else 0) + -(1 / 2) + if 2 = 1 then -(1 / 2) else 1 / 2) = 0
+
+case pos.zero
+⊢ ¬0 = 2
+
+case pos.neg
+⊢ ¬0 = 2
+
+case pos.pos
+⊢ (if 0 = 2 then 1 / 2 else 0) + 1 / 2 + 1 / 2 = 1

@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.Thom",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean",
+    "bytes": 20332,
+    "sha256": "15f3f16403913f8368d092b4685de7622a9f7887daa3abc05285a34a1ca3818e"
+  },
+  "start_utc": "2026-10-13T13:52:33.279626+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:52:33.279616+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8342504,
+    "used_percent": 18.262896575400713
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/Thom.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/01-TauCeti_Algebra_Polynomial_Thom.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-sturm-cauchy02-run01/01-TauCeti_Algebra_Polynomial_Thom.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.503,
+  "end_utc": "2026-10-13T13:52:36.783530+00:00",
+  "peak_physical_used_percent": 20.633462492754624,
+  "memory_after": {
+    "utc": "2026-10-13T13:52:36.783682+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339964,
+    "used_percent": 18.287782657888478
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.olean",
+      "bytes": 546848,
+      "sha256": "90f60625d209ba08331b44273ed07fcbfc565ff6276b0d0ef4ce0ec277cf65b1"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/Thom.ilean",
+      "bytes": 54165,
+      "sha256": "c02459d5273223a2a90095e956b671655b7a8eec67768d76cb1200c3fea08284"
+    }
+  ]
+}

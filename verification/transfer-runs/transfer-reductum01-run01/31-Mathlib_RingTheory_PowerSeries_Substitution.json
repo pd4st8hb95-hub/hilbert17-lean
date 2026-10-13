@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.PowerSeries.Substitution",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Substitution.lean",
+    "bytes": 26835,
+    "sha256": "0fb4bd321f9575c56e2f55bdebda83112ebaa865d01fe64be16546d25921831b"
+  },
+  "start_utc": "2026-10-13T13:25:50.065250+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:50.065208+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328300,
+    "used_percent": 18.402062683926765
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/PowerSeries/Substitution.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/31-Mathlib_RingTheory_PowerSeries_Substitution.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/31-Mathlib_RingTheory_PowerSeries_Substitution.stderr.log",
+  "pid": 114,
+  "exit_code": 0,
+  "seconds": 11.01,
+  "end_utc": "2026-10-13T13:26:01.076148+00:00",
+  "peak_physical_used_percent": 21.31036393642174,
+  "memory_after": {
+    "utc": "2026-10-13T13:26:01.076302+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8342908,
+    "used_percent": 18.258938316611324
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.olean",
+      "bytes": 416064,
+      "sha256": "f66066d1963be4a692b7e55a7a07e77dfaea294cf709c8360e3958f21b397e09"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.olean.private",
+      "bytes": 1611992,
+      "sha256": "f26a898d9d2c576a343e17b4c009bf3a2c896048f04a700813e8447178b55333"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.olean.server",
+      "bytes": 25888,
+      "sha256": "31629b68259b034c54031adf017b326be3fcf2e39c92655d08d5a9ddd95ae6ce"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.ilean",
+      "bytes": 97298,
+      "sha256": "8822c4465769e3df7171a24d516b524ff316d9877ca7771fd95dad7f169493e0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/PowerSeries/Substitution.ir",
+      "bytes": 86888,
+      "sha256": "96c2512682522fe69bd022bdbafbd89ffa1eeb0a6afc0d3f51cc3a3253712c57"
+    }
+  ]
+}

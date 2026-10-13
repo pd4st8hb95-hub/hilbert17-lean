@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.Complexification",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+    "bytes": 1492,
+    "sha256": "169c8e969b58c49efeee4490a00034a11c7ee915f0a0a15ed34eab493ca6bbee"
+  },
+  "start_utc": "2026-10-13T13:38:20.533176+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:38:20.533163+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8333596,
+    "used_percent": 18.350174222172754
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/Complexification.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/05-TauCeti_FieldTheory_RealClosure_Complexification.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt01-run01/05-TauCeti_FieldTheory_RealClosure_Complexification.stderr.log",
+  "pid": 17,
+  "exit_code": 0,
+  "seconds": 1.503,
+  "end_utc": "2026-10-13T13:38:22.036998+00:00",
+  "peak_physical_used_percent": 20.11422515908477,
+  "memory_after": {
+    "utc": "2026-10-13T13:38:22.037149+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8328076,
+    "used_percent": 18.40425736206742
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.olean",
+      "bytes": 23816,
+      "sha256": "fed8f9ea792066ec822778d2e01e12dc244d15fc02bc11a7279811a538afe28f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/Complexification.ilean",
+      "bytes": 2008,
+      "sha256": "93a2a59ddb1b07982aba5c587d562dc157c9a39fb4003ed5c396ba3ab714c953"
+    }
+  ]
+}

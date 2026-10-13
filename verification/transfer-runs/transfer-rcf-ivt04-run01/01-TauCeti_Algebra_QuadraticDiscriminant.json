@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.Algebra.QuadraticDiscriminant",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean",
+    "bytes": 18891,
+    "sha256": "a71d3e42124c58291e2c96e92b88587e1cfa71e9a55b2ba248f8115d2b6d8403"
+  },
+  "start_utc": "2026-10-13T13:50:11.210219+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:50:11.210209+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8324860,
+    "used_percent": 18.43576666965822
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/QuadraticDiscriminant.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/01-TauCeti_Algebra_QuadraticDiscriminant.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/01-TauCeti_Algebra_QuadraticDiscriminant.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 8.509,
+  "end_utc": "2026-10-13T13:50:19.720366+00:00",
+  "peak_physical_used_percent": 20.685390145189718,
+  "memory_after": {
+    "utc": "2026-10-13T13:50:19.720555+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8329096,
+    "used_percent": 18.39426373839123
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.olean",
+      "bytes": 1985848,
+      "sha256": "b7863108d7fd8e8c7734303b173fb5e15d4f0584fa5ea5728d3b36034949e91c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/QuadraticDiscriminant.ilean",
+      "bytes": 26925,
+      "sha256": "75f14571f4fbc41eb971e9faa33ece3f65cd18fa277bf889ec1c8fcf03c54d8f"
+    }
+  ]
+}

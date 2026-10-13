@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+  "start_utc": "2026-10-13T14:21:01.457958+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:01.457952+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8305500,
+    "used_percent": 18.625449566100375
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+    "bytes": 2538,
+    "sha256": "45510e882a0c65c4940ba11831572cf193b34d88ab190c542b2e6491ea7187d6"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.olean",
+      "bytes": 44512,
+      "sha256": "98ceaee8803eec98cc686a88fdf196b22494a3c373c6eede2d8068de97195c4f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.ilean",
+      "bytes": 4132,
+      "sha256": "40f2fcd9e7cd7615d0c707bbec6587a700983736a0c291aa7cf93923fe7d3f70"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/66-TauCeti.Geometry.RealAlgebraic.SignDetermination.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/66-TauCeti.Geometry.RealAlgebraic.SignDetermination.stderr.log",
+  "pid": 460,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:21:03.460583+00:00",
+  "peak_physical_used_percent": 19.96122474013639,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:03.460671+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314508,
+    "used_percent": 18.53719215230126
+  }
+}

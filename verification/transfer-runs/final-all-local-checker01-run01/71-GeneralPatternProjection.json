@@ -1,0 +1,46 @@
+{
+  "module": "GeneralPatternProjection",
+  "start_utc": "2026-10-13T14:21:12.490899+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:12.490887+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317516,
+    "used_percent": 18.507720760126773
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "GeneralPatternProjection"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean",
+    "bytes": 3245,
+    "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+      "bytes": 126752,
+      "sha256": "9a610df550846934ed0e15fc1f0334f7447863d762310e64f7e0d94ff069e230"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+      "bytes": 12090,
+      "sha256": "73c24cfbafb573e161addfe1eb69848a26f7b36b2052f46d0dd5eca3f247c377"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/71-GeneralPatternProjection.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/71-GeneralPatternProjection.stderr.log",
+  "pid": 495,
+  "exit_code": 0,
+  "seconds": 2.503,
+  "end_utc": "2026-10-13T14:21:14.994234+00:00",
+  "peak_physical_used_percent": 20.635147692041194,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:14.994369+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8309528,
+    "used_percent": 18.585984550249705
+  }
+}

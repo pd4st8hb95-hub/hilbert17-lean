@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Topology.Instances.ENat",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Instances/ENat.lean",
+    "bytes": 5717,
+    "sha256": "6be36f25c41d9fa9de9861c05d5b06a2743a1a456f31c43bd632568d09d43863"
+  },
+  "start_utc": "2026-10-13T13:25:14.474363+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:14.474349+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8348488,
+    "used_percent": 18.204267316500413
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Instances/ENat.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/21-Mathlib_Topology_Instances_ENat.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/21-Mathlib_Topology_Instances_ENat.stderr.log",
+  "pid": 75,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T13:25:16.478215+00:00",
+  "peak_physical_used_percent": 20.100390848662443,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:16.478371+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8357664,
+    "used_percent": 18.114363894095806
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.olean",
+      "bytes": 41384,
+      "sha256": "561fbceca399c65b3203d92b21f66f7a51b698762dbffc5b8a05e446406d8934"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.olean.private",
+      "bytes": 153552,
+      "sha256": "5c66cec4609cf4c6ad275faf2060f731d11e87f986309f9683245177a90fa69f"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.olean.server",
+      "bytes": 6168,
+      "sha256": "e434304d6557ded730481e27b8f9593b0f4780ec6e015165c62eb4180e80414a"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.ilean",
+      "bytes": 19412,
+      "sha256": "8452a69da64f436a40465fe75ab94e2422e95bf3684d5e429340d02b11b36944"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Instances/ENat.ir",
+      "bytes": 3240,
+      "sha256": "9186ca1d84dce098ee37530ddd8edc95742208c960f59e0eb4c1382e8cd87824"
+    }
+  ]
+}

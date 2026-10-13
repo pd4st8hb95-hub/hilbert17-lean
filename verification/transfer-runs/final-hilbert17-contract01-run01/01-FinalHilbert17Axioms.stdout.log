@@ -1,0 +1,370 @@
+@[reducible] def Hilbert17Target.Poly.{u_1} : (R : Type u_1) → [CommSemiring.{u_1} R] → Nat → Type (max u_1 0) :=
+fun R [inst : CommSemiring.{u_1} R] n => @MvPolynomial.{0, u_1} (Fin n) R inst
+@[reducible] def Hilbert17Target.RatFun.{u_1} : (R : Type u_1) → [CommRing.{u_1} R] → Nat → Type u_1 :=
+fun R [inst : CommRing.{u_1} R] n =>
+  @FractionRing.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+    (@AddMonoidAlgebra.commRing.{u_1, 0} R
+      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+def Hilbert17Target.NonnegativeEverywhere.{u_1} : {R : Type u_1} →
+  [inst : CommSemiring.{u_1} R] → [Preorder.{u_1} R] → {n : Nat} → @Hilbert17Target.Poly.{u_1} R inst n → Prop :=
+fun {R} [inst : CommSemiring.{u_1} R] [inst_1 : Preorder.{u_1} R] {n} f =>
+  ∀ (x : Fin n → R),
+    @LE.le.{u_1} R (@Preorder.toLE.{u_1} R inst_1)
+      (@OfNat.ofNat.{u_1} R (nat_lit 0)
+        (@Zero.toOfNat0.{u_1} R
+          (@MulZeroClass.toZero.{u_1} R (@instMulZeroClassOfSemiring.{u_1} R (@CommSemiring.toSemiring.{u_1} R inst)))))
+      (@DFunLike.coe.{u_1 + 1, u_1 + 1, u_1 + 1}
+        (@RingHom.{u_1, u_1} (@MvPolynomial.{0, u_1} (Fin n) R inst) R
+          (@AddMonoidAlgebra.nonAssocSemiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R inst)
+            (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+          (@Semiring.toNonAssocSemiring.{u_1} R (@CommSemiring.toSemiring.{u_1} R inst)))
+        (@MvPolynomial.{0, u_1} (Fin n) R inst) (fun x => R)
+        (@RingHom.instFunLike.{u_1, u_1} (@MvPolynomial.{0, u_1} (Fin n) R inst) R
+          (@AddMonoidAlgebra.nonAssocSemiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R inst)
+            (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+          (@Semiring.toNonAssocSemiring.{u_1} R (@CommSemiring.toSemiring.{u_1} R inst)))
+        (@MvPolynomial.eval.{u_1, 0} R (Fin n) inst x) f)
+def Hilbert17Target.RationalSOS.{u_1} : {R : Type u_1} →
+  [inst : CommRing.{u_1} R] →
+    {n : Nat} → @Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n → Prop :=
+fun {R} [inst : CommRing.{u_1} R] {n} f =>
+  @IsSumSq.{u_1} (@Hilbert17Target.RatFun.{u_1} R inst n)
+    (@OreLocalization.instMul.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (@CommMonoid.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+    (@OreLocalization.instAdd.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (@CommMonoid.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+      (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (@AddCommMonoid.toAddMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@AddMonoidAlgebra.instAddCommMonoid.{u_1, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))))
+      (@Module.toDistribMulAction.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@AddMonoidAlgebra.semiring.{u_1, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+          (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+        (@AddMonoidAlgebra.instAddCommMonoid.{u_1, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst)))
+        (@Semiring.toModule.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.semiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))
+    (@OreLocalization.instZero.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (@CommMonoid.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commRing.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommRing.toCommSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+      (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (@MulZeroClass.toZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@instMulZeroClassOfSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.semiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))
+      (@Monoid.toMulAction.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@CommMonoid.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.commRing.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+    (@DFunLike.coe.{u_1 + 1, u_1 + 1, u_1 + 1}
+      (@RingHom.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Hilbert17Target.RatFun.{u_1} R inst n)
+        (@Semiring.toNonAssocSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.commSemiring.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommRing.toCommSemiring.{u_1} R inst)
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@Semiring.toNonAssocSemiring.{u_1} (@Hilbert17Target.RatFun.{u_1} R inst n)
+          (@OreLocalization.instSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.semiring.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@Semiring.toMonoidWithZero.{u_1}
+                (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommSemiring.toSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommRing.toCommSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@Semiring.toMonoidWithZero.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommSemiring.toSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@CommRing.toCommSemiring.{u_1}
+                      (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                      (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+      (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+      (fun x => @Hilbert17Target.RatFun.{u_1} R inst n)
+      (@RingHom.instFunLike.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Hilbert17Target.RatFun.{u_1} R inst n)
+        (@Semiring.toNonAssocSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.commSemiring.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommRing.toCommSemiring.{u_1} R inst)
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@Semiring.toNonAssocSemiring.{u_1} (@Hilbert17Target.RatFun.{u_1} R inst n)
+          (@OreLocalization.instSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.semiring.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@Semiring.toMonoidWithZero.{u_1}
+                (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommSemiring.toSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommRing.toCommSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@Semiring.toMonoidWithZero.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommSemiring.toSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@CommRing.toCommSemiring.{u_1}
+                      (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                      (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+      (@algebraMap.{u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@Hilbert17Target.RatFun.{u_1} R inst n)
+        (@AddMonoidAlgebra.commSemiring.{u_1, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommRing.toCommSemiring.{u_1} R inst) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+        (@OreLocalization.instSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.semiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+          (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommRing.toCommSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+          (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@Semiring.toMonoidWithZero.{u_1}
+                (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommSemiring.toSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommRing.toCommSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+        (@OreLocalization.instAlgebra.{u_1, u_1}
+          (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.semiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+          (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@Semiring.toMonoidWithZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@CommSemiring.toSemiring.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommRing.toCommSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+          (@OreLocalization.oreSetComm.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@CommRing.toCommMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@nonZeroDivisors.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@Semiring.toMonoidWithZero.{u_1}
+                (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@CommSemiring.toSemiring.{u_1}
+                  (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@CommRing.toCommSemiring.{u_1}
+                    (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.commRing.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) inst
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+          (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@AddMonoidAlgebra.commSemiring.{u_1, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommRing.toCommSemiring.{u_1} R inst)
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+          (@Algebra.id.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.commSemiring.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommRing.toCommSemiring.{u_1} R inst)
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))
+      f)
+def Hilbert17Target.ExplicitClearedSOS.{u_1} : {R : Type u_1} →
+  [inst : CommRing.{u_1} R] →
+    {n : Nat} → @Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n → Prop :=
+fun {R} [inst : CommRing.{u_1} R] {n} f =>
+  ∃ m q p,
+    And
+      (@Ne.{u_1 + 1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) q
+        (@OfNat.ofNat.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) (nat_lit 0)
+          (@Zero.toOfNat0.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@MulZeroClass.toZero.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+              (@instMulZeroClassOfSemiring.{u_1}
+                (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@AddMonoidAlgebra.semiring.{u_1, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+                  (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))))
+      (@Eq.{u_1 + 1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+        (@HMul.hMul.{u_1, u_1, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+          (@instHMul.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@AddMonoidAlgebra.instMul.{u_1, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+              (@Finsupp.instAdd.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid))))
+          (@HPow.hPow.{u_1, 0, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) Nat
+            (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@instHPow.{u_1, 0} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) Nat
+              (@NPow.toPow.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@Monoid.toNPow.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@Semiring.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.semiring.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+                      (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+            q (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+          f)
+        (∑ i,
+          @HPow.hPow.{u_1, 0, u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) Nat
+            (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+            (@instHPow.{u_1, 0} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n) Nat
+              (@NPow.toPow.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                (@Monoid.toNPow.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                  (@Semiring.toMonoid.{u_1} (@Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst) n)
+                    (@AddMonoidAlgebra.semiring.{u_1, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@CommSemiring.toSemiring.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst))
+                      (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+            (p i) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+def Hilbert17Target.Hilbert17Real : Prop :=
+∀ (n : Nat) (f : @Hilbert17Target.Poly.{0} Real Real.instCommSemiring n),
+  @Hilbert17Target.NonnegativeEverywhere.{0} Real Real.instCommSemiring Real.instPreorder n f →
+    @Hilbert17Target.RationalSOS.{0} Real Real.commRing n f
+def Hilbert17Target.Hilbert17RealCleared : Prop :=
+∀ (n : Nat) (f : @Hilbert17Target.Poly.{0} Real Real.instCommSemiring n),
+  @Hilbert17Target.NonnegativeEverywhere.{0} Real Real.instCommSemiring Real.instPreorder n f →
+    @Hilbert17Target.ExplicitClearedSOS.{0} Real Real.commRing n f
+Hilbert17Transfer.negativePointTransfer_of_isRealClosed.{u_1} : ∀ (R : Type u_1) [inst : Field.{u_1} R]
+  [inst_1 : LinearOrder.{u_1} R]
+  [inst_2 :
+    @IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst_1))))]
+  [@IsRealClosed.{u_1} R inst], @Hilbert17.NegativePointTransfer.{u_1} R inst inst_1 inst_2
+'Hilbert17Transfer.negativePointTransfer_of_isRealClosed' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Hilbert17Transfer.hilbert17Real_candidate : Hilbert17Target.Hilbert17Real
+'Hilbert17Transfer.hilbert17Real_candidate' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.hilbert17RealCleared_candidate : Hilbert17Target.Hilbert17RealCleared
+'Hilbert17Transfer.hilbert17RealCleared_candidate' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

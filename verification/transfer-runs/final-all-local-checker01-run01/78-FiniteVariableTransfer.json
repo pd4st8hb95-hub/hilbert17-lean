@@ -1,0 +1,46 @@
+{
+  "module": "FiniteVariableTransfer",
+  "start_utc": "2026-10-13T14:21:29.545127+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:21:29.545092+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8308188,
+    "used_percent": 18.59911342841254
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "FiniteVariableTransfer"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean",
+    "bytes": 4584,
+    "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean",
+      "bytes": 186384,
+      "sha256": "f4a25541cc2ea37d76d9cf20d879db507c95baa53f1975d782a3fa40675af04e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.ilean",
+      "bytes": 13585,
+      "sha256": "6109ff111267b457cb023589e8b6d0c362acc09843c63e9ecfe065b622262262"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/78-FiniteVariableTransfer.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/78-FiniteVariableTransfer.stderr.log",
+  "pid": 544,
+  "exit_code": 0,
+  "seconds": 2.505,
+  "end_utc": "2026-10-13T14:21:32.049774+00:00",
+  "peak_physical_used_percent": 20.569895208037853,
+  "memory_after": {
+    "utc": "2026-10-13T14:21:32.049868+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310452,
+    "used_percent": 18.57693150291951
+  }
+}

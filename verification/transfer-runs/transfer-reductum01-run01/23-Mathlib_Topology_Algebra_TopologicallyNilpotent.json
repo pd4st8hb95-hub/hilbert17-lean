@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Topology.Algebra.TopologicallyNilpotent",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/TopologicallyNilpotent.lean",
+    "bytes": 5676,
+    "sha256": "3dae93da7dae4d79c7ce6c10b5369b16f0a2961c57f17c0234656f4c8f35807f"
+  },
+  "start_utc": "2026-10-13T13:25:19.988145+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:25:19.988130+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344636,
+    "used_percent": 18.242007942383427
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/TopologicallyNilpotent.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/23-Mathlib_Topology_Algebra_TopologicallyNilpotent.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-reductum01-run01/23-Mathlib_Topology_Algebra_TopologicallyNilpotent.stderr.log",
+  "pid": 82,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:25:21.991974+00:00",
+  "peak_physical_used_percent": 20.37045383200601,
+  "memory_after": {
+    "utc": "2026-10-13T13:25:21.992129+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8329004,
+    "used_percent": 18.395165124056142
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.olean",
+      "bytes": 54432,
+      "sha256": "024c28c9f073cb30b3d46dad07e834dc2b7fa5fbb831fac12bd4789bf9724a25"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.olean.private",
+      "bytes": 85240,
+      "sha256": "ce1e81ac8616c343bb8c23baf2b570d6dbb6b1f18b61ef58bdd39a9f7539102c"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.olean.server",
+      "bytes": 6696,
+      "sha256": "c7b41281fb4541898f87c054aa42f2818aa90ca69c5cff0421751a0d262708d8"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.ilean",
+      "bytes": 12495,
+      "sha256": "1dff72be9d9e1ccbd3b8d6d8769df699fcec64326dced712fa51cc104da5d807"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/TopologicallyNilpotent.ir",
+      "bytes": 2992,
+      "sha256": "c993a2461cc668a4e019fb3e62d847cf1e3345d01b7517283ed60f9a857ef2dc"
+    }
+  ]
+}

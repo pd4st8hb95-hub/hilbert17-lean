@@ -1,0 +1,27 @@
+weakLeanArgs = ["-j", "1", "-M", "4096"]
+name = "hilbert17"
+version = "0.1.0"
+defaultTargets = ["Hilbert17", "Hilbert17RealClosure", "Hilbert17Full", "Hilbert17Acceptance"]
+
+[[lean_lib]]
+name = "Hilbert17"
+roots = ["Hilbert17", "TargetSpec", "ClearDenominators", "FractionSemireal", "OrderingSeparation", "RealInstance", "CoefficientOrder", "LocalizationSignDescent", "TargetSanity", "CertificateNonnegative", "ConditionalArtin"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "520045ab14e26149ee970e2e617ca04b09bde5d6"
+
+[[lean_lib]]
+name = "Hilbert17RealClosure"
+roots = ["Hilbert17RealClosure", "TauCeti.Algebra.Order.Ring.Ordering.Extension", "TauCeti.Algebra.Polynomial.OddDegreeFactor", "TauCeti.FieldTheory.RealClosure.Basic", "TauCeti.FieldTheory.RealClosure.OddExtension", "TauCeti.FieldTheory.RealClosure.OrderExtension", "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField", "TauCeti.FieldTheory.RealClosure.PolynomialCone"]
+
+[[lean_lib]]
+name = "Hilbert17Full"
+roots = ["Hilbert17Full", "TauCeti.Compat.QuadraticDiscriminant", "TauCeti.Compat.QuadraticExtension", "TauCeti.FieldTheory.RealClosure.FiniteExtension", "TauCeti.FieldTheory.RealClosure.Galois", "TauCeti.Algebra.Order.Ring.Square", "TauCeti.Algebra.QuadraticAlgebra.Square", "TauCeti.Algebra.Ring.Semireal", "TauCeti.Algebra.Order.Ring.Ordering.Semireal", "TauCeti.FieldTheory.RealClosure.Complexification", "TauCeti.FieldTheory.RealClosure.AlgebraicClosed", "TauCeti.Algebra.Polynomial.LinearFactor", "TauCeti.Algebra.QuadraticDiscriminant", "TauCeti.Algebra.Polynomial.QuadraticDiscriminant", "TauCeti.Algebra.Polynomial.RealClosed.Quadratic", "TauCeti.FieldTheory.RealClosure.IVT", "TauCeti.Algebra.Polynomial.Eval.Sign", "TauCeti.Algebra.Polynomial.Rolle", "TauCeti.Algebra.Polynomial.Thom", "TauCeti.Algebra.Polynomial.Eval.OneSided", "TauCeti.Data.Finset.Jumps", "TauCeti.Algebra.Polynomial.RealClosed.Sign", "TauCeti.Data.Fintype.Fiber", "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs", "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Basic", "TauCeti.Algebra.BigOperators.Finset.Filter", "TauCeti.Compat.ListSignVariations", "TauCeti.Data.List.SignVariations", "TauCeti.Algebra.Polynomial.Sturm.Signs", "TauCeti.Algebra.Polynomial.Sturm.Local", "TauCeti.Compat.FieldDivisionExtra", "TauCeti.Compat.SturmSequence", "TauCeti.Algebra.Polynomial.Sturm.Sequence", "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders", "TauCeti.Algebra.Polynomial.Sturm.Sum", "TauCeti.Algebra.Polynomial.Sturm.Tarski", "TauCeti.Algebra.Polynomial.Sturm.OneSided", "TauCeti.Algebra.Polynomial.Eval.Infinity", "TauCeti.Algebra.Polynomial.Sturm.Infinity", "TauCeti.Algebra.Polynomial.Sturm.Variation", "TauCeti.Data.SignType.Parity", "TauCeti.Algebra.Polynomial.Sturm.CauchyIndex.Sequence", "TauCeti.Data.List.PermanencesMinusVariations", "TauCeti.Algebra.Polynomial.Coeff.Basic", "TauCeti.GroupTheory.Perm.Inversion", "TauCeti.RingTheory.Polynomial.Subresultant.Basic", "TauCeti.RingTheory.Polynomial.Subresultant.Polynomial", "TauCeti.RingTheory.Polynomial.Reductum", "TauCeti.LinearAlgebra.Matrix.Congruence", "TauCeti.LinearAlgebra.Matrix.CornerMinor", "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic", "TauCeti.Data.Nat.Choose.Basic", "TauCeti.RingTheory.Polynomial.Subresultant.Signed", "TauCeti.Algebra.Polynomial.OfFn", "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean", "TauCeti.Data.List.Range", "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex", "CoefficientSignPattern", "UniformRootCount", "TauCeti.Data.Matrix.OccCount", "TauCeti.Data.SignType.Lagrange", "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments", "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial", "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots", "MonicQueryProjection", "DegreeNormalization", "GeneralQueryProjection", "GeneralPatternProjection", "TauCeti.FieldTheory.RealClosure.AbstractRolle", "TauCeti.Algebra.Polynomial.RealClosed.Sampling", "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine", "WholeLineAlternatives", "UniformOneVariable", "FinSuccEvaluation", "FiniteVariableTransfer", "RealClosureTransfer"]
+
+[[lean_lib]]
+name = "Hilbert17Acceptance"
+srcDir = "checks"
+roots = ["FinalTargetContract", "BoundaryAcceptance"]

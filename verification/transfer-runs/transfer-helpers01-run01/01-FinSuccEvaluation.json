@@ -1,0 +1,55 @@
+{
+  "label": "FinSuccEvaluation",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FinSuccEvaluation.lean",
+    "bytes": 1431,
+    "sha256": "e044563c83d7aee875131b91f148fb91546f8ebad4d065d1959381478329ce8f"
+  },
+  "start_utc": "2026-10-13T13:28:21.911304+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:28:21.911292+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8352904,
+    "used_percent": 18.16100080458468
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FinSuccEvaluation.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers01-run01/01-FinSuccEvaluation.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-helpers01-run01/01-FinSuccEvaluation.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 3.005,
+  "end_utc": "2026-10-13T13:28:24.917115+00:00",
+  "peak_physical_used_percent": 20.32315067993872,
+  "memory_after": {
+    "utc": "2026-10-13T13:28:24.917271+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8354100,
+    "used_percent": 18.149282790940838
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.olean",
+      "bytes": 63584,
+      "sha256": "4f7c26f52b835e1cce7a555e8ed1d00b43de5900d24bed64dda35f21d5e6ed73"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FinSuccEvaluation.ilean",
+      "bytes": 4912,
+      "sha256": "00a1a1aafbf91b5f2679c4ee08783190a249ce1dbfd7a0e79dc7ce4c2066e7d1"
+    }
+  ]
+}

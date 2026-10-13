@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.RingTheory.Polynomial.Subresultant.DegreeDrop.Basic",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean",
+    "bytes": 10866,
+    "sha256": "a722088f81971af1088181bc41998d83c3011762e220483ba4a77e2a88eb7da0"
+  },
+  "start_utc": "2026-10-13T13:40:02.070617+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:40:02.070430+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8346848,
+    "used_percent": 18.22033549574448
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/05-TauCeti_RingTheory_Polynomial_Subresultant_DegreeDrop_Basic.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant02-run01/05-TauCeti_RingTheory_Polynomial_Subresultant_DegreeDrop_Basic.stderr.log",
+  "pid": 17,
+  "exit_code": 0,
+  "seconds": 4.505,
+  "end_utc": "2026-10-13T13:40:06.576465+00:00",
+  "peak_physical_used_percent": 21.188480918253333,
+  "memory_after": {
+    "utc": "2026-10-13T13:40:06.576661+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8339708,
+    "used_percent": 18.290290861477793
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.olean",
+      "bytes": 1047176,
+      "sha256": "b53ee2a68d4f9e80adbc826785c532bca0063ace8a1b247c8d9bedf1db83cbb0"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/RingTheory/Polynomial/Subresultant/DegreeDrop/Basic.ilean",
+      "bytes": 25311,
+      "sha256": "f121ee30627c44476bd93bafdf7de4acdeda753d47f9b4a860971b62c32d7b61"
+    }
+  ]
+}

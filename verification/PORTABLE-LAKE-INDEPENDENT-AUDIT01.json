@@ -1,0 +1,193 @@
+{
+  "status": "PASS_BOUNDED_OFFLINE_LAKE_AND_EXACT_ACCEPTANCE_LOGS",
+  "scope": "Offline integration of the exact four-library delivery configuration and source snapshots in an isolated package tree, using copied pinned official source/cache dependencies and command-local path overrides; weakLeanArgs adds -j 1 -M 4096 only. Not a fresh online checkout, full dependency rebuild, external independent verifier, or fresh transitive imported-environment replay.",
+  "command_count": 306,
+  "module_jobs": 152,
+  "official_supplement_modules": 55,
+  "delivery_local_modules": 97,
+  "aggregate_targets": [
+    "Hilbert17",
+    "Hilbert17RealClosure",
+    "Hilbert17Full",
+    "Hilbert17Acceptance"
+  ],
+  "all_commands_exit0_and_PASS": true,
+  "all_recorded_output_hashes_match": true,
+  "all_source_pins_match": true,
+  "exact_delivery_config_except_private_weakLeanArgs": true,
+  "summary": {
+    "path": "hilbert17-20261013/verification/portable-lake02-run01/summary.json",
+    "sha256": "6b8c32a971ca10061fafd40bf30dbb363ad95a36c79766ecedb95c13a1216213"
+  },
+  "plan": {
+    "path": "hilbert17-portable-check/serial-lake-command-plan04.json",
+    "sha256": "bcccd4eff71e4b27acf0481662a4ad7a3129a2b99dc4a7533605349db5aff4c6"
+  },
+  "acceptance_axiom_records": 14,
+  "distinct_acceptance_declarations": 14,
+  "acceptance_output_checks": [
+    {
+      "module": "FinalTargetContract",
+      "status": "PASS",
+      "fresh_Built_marker_present": true,
+      "entire_prior_audited_type_definition_and_axiom_output_contained_after_removing_Lake_info_prefixes": true,
+      "stdout": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "stdout_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f",
+      "artifact_hashes_match": true
+    },
+    {
+      "module": "BoundaryAcceptance",
+      "status": "PASS",
+      "fresh_Built_marker_present": true,
+      "entire_prior_audited_type_definition_and_axiom_output_contained_after_removing_Lake_info_prefixes": true,
+      "stdout": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "stdout_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e",
+      "artifact_hashes_match": true
+    }
+  ],
+  "records": [
+    {
+      "theorem": "Hilbert17Acceptance.real_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_finite_rational_squares",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.real_negativePointTransfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Transfer.negativePointTransfer_of_isRealClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17Real_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Transfer.hilbert17RealCleared_candidate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/296-FinalTargetContract_olean.stdout.log",
+      "log_sha256": "7e1d1216f71ac0166554e8738d46039184885c71589e7278bbd518abb0ab949f"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_zero_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.candidate_fin0_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_rationalSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_clearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    },
+    {
+      "theorem": "Hilbert17Acceptance.nonnegative_iff_explicitClearedSOS",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "log": "hilbert17-20261013/verification/portable-lake02-run01/298-BoundaryAcceptance_olean.stdout.log",
+      "log_sha256": "7d6b6a670cf40e04491eae20106b5e5fffc4c174c4a7acc99c74eef8cc992e0e"
+    }
+  ],
+  "maximum_sampled_physical_memory_percent": 25.00608435323815,
+  "failure_preserved": "portable-lake01-run01 stopped before a Lean proof build because the package override JSON shape was wrong; run02 used the official partial-manifest object schema.",
+  "additional_fresh_transitive_replay": "PENDING_SEPARATE_CHECKPOINT"
+}

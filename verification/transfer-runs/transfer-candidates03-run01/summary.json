@@ -1,0 +1,243 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T14:02:55.963580+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/transfer-candidates-compile-plan03.json",
+  "plan_sha256": "989efecb62ad4ace07dd0fb583abfb26e60ff560316c3b3c0586ee18e4b9490f",
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/home",
+    "TMPDIR": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Downstream phase only. Parent must establish listed prerequisite modules PASS before launch. No unconditional theorem claim before compilation, exact-type and axiom audits.",
+  "jobs": [
+    {
+      "label": "MonicQueryProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean",
+        "bytes": 7327,
+        "sha256": "8bbd4adbb2f16813f7760ece36a39aceb07b5591a4e555a62d78eaab6c52f39c"
+      },
+      "start_utc": "2026-10-13T14:02:55.964002+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:02:55.963992+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8365288,
+        "used_percent": 18.039666455951437
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/01-MonicQueryProjection.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/01-MonicQueryProjection.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 3.504,
+      "end_utc": "2026-10-13T14:02:59.468752+00:00",
+      "peak_physical_used_percent": 21.639095369346695,
+      "memory_after": {
+        "utc": "2026-10-13T14:02:59.468970+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366220,
+        "used_percent": 18.030535027259077
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean",
+          "bytes": 251904,
+          "sha256": "115faef2355e825347e7582798e3f943f6af802d27ed950c5d859877e8a70dce"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.ilean",
+          "bytes": 29314,
+          "sha256": "4c66829b4a029f8910e0703fb003929a2a7fccb203ecdca0f961359d9043dbeb"
+        }
+      ]
+    },
+    {
+      "label": "GeneralQueryProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean",
+        "bytes": 4539,
+        "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+      },
+      "start_utc": "2026-10-13T14:02:59.470352+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:02:59.470338+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366220,
+        "used_percent": 18.030535027259077
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/02-GeneralQueryProjection.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/02-GeneralQueryProjection.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 3.004,
+      "end_utc": "2026-10-13T14:03:02.474837+00:00",
+      "peak_physical_used_percent": 21.7776736176565,
+      "memory_after": {
+        "utc": "2026-10-13T14:03:02.474989+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8316152,
+        "used_percent": 18.521084782376107
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean",
+          "bytes": 189712,
+          "sha256": "054ecd398811e785119fc1e656dafadb0f953ecc638a440035fdfcbf749c4ea0"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.ilean",
+          "bytes": 16691,
+          "sha256": "99680c11b4872a273b2438781ee11d76fe391de35b96a3bd6efa3e33e4703b92"
+        }
+      ]
+    },
+    {
+      "label": "GeneralPatternProjection",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean",
+        "bytes": 3245,
+        "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+      },
+      "start_utc": "2026-10-13T14:03:02.477481+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:03:02.477466+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8316152,
+        "used_percent": 18.521084782376107
+      },
+      "status": "PASS",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/03-GeneralPatternProjection.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/03-GeneralPatternProjection.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 3.004,
+      "end_utc": "2026-10-13T14:03:05.482529+00:00",
+      "peak_physical_used_percent": 21.68835805546814,
+      "memory_after": {
+        "utc": "2026-10-13T14:03:05.482781+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8352264,
+        "used_percent": 18.167271313557976
+      },
+      "outputs": [
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean",
+          "bytes": 126752,
+          "sha256": "9a610df550846934ed0e15fc1f0334f7447863d762310e64f7e0d94ff069e230"
+        },
+        {
+          "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.ilean",
+          "bytes": 12090,
+          "sha256": "73c24cfbafb573e161addfe1eb69848a26f7b36b2052f46d0dd5eca3f247c377"
+        }
+      ]
+    },
+    {
+      "label": "UniformOneVariable",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean",
+        "bytes": 4833,
+        "sha256": "80f47347b9682328262c5e5001f569a6772ce039422e14e39c8d50aa4d17f8b3"
+      },
+      "start_utc": "2026-10-13T14:03:05.484626+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T14:03:05.484613+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8352032,
+        "used_percent": 18.169544373060795
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+        "-o",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean",
+        "-i",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.ilean",
+        "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean"
+      ],
+      "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/04-UniformOneVariable.stdout.log",
+      "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates03-run01/04-UniformOneVariable.stderr.log",
+      "pid": 14,
+      "exit_code": 1,
+      "seconds": 3.003,
+      "end_utc": "2026-10-13T14:03:08.488727+00:00",
+      "peak_physical_used_percent": 21.851822386265706,
+      "memory_after": {
+        "utc": "2026-10-13T14:03:08.488880+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8348312,
+        "used_percent": 18.20599170646807
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T14:03:08.489660+00:00"
+}

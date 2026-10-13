@@ -1,0 +1,55 @@
+{
+  "label": "BKRExports",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/BKRExports.lean",
+    "bytes": 6031,
+    "sha256": "5251966f1f7af1b6c6cbb2d27f722beb0ee2168458c41eb9854f0290edc84801"
+  },
+  "start_utc": "2026-10-13T13:48:31.222994+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:48:31.222985+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8344020,
+    "used_percent": 18.248043307270223
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BKRExports.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BKRExports.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-target-20261013/BKRExports.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/bkr-axioms01-run01/01-BKRExports.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/bkr-axioms01-run01/01-BKRExports.stderr.log",
+  "pid": 5,
+  "exit_code": 0,
+  "seconds": 1.502,
+  "end_utc": "2026-10-13T13:48:32.725454+00:00",
+  "peak_physical_used_percent": 20.37919335388754,
+  "memory_after": {
+    "utc": "2026-10-13T13:48:32.725621+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8314892,
+    "used_percent": 18.53342984691728
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BKRExports.olean",
+      "bytes": 1712,
+      "sha256": "e7d4fa066b240a5cc7476a69eee446cc9223cc308d7417e1e7c6eae268c38d12"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/BKRExports.ilean",
+      "bytes": 13020,
+      "sha256": "a90c1165cc10b8028ad60f01cf05d1887bd2405ae76ffb7def9c83e45929d5da"
+    }
+  ]
+}

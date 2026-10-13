@@ -1,0 +1,22 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean:233:16: error(lean.invalidField): Invalid field `IsUpperTriangular`: The environment does not contain `Function.IsUpperTriangular`, so it is not possible to project the field `IsUpperTriangular` from an expression
+  M
+of type
+  Fin (m - m + (n - m)) → Fin (m - m + (n - m)) → R
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean:234:10: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+R : Type u_1
+inst✝ : CommRing R
+p q : R[X]
+m n : ℕ
+M : Matrix (Fin (m - m + (n - m))) (Fin (m - m + (n - m))) R := p.subresultantMatrix q m n m
+⊢ sorry
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean:248:15: error(lean.unknownIdentifier): Unknown constant `Matrix.det_of_isUpperTriangular`
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/RingTheory/Polynomial/Subresultant/Basic.lean:231:43: error: unsolved goals
+R : Type u_1
+inst✝ : CommRing R
+p q : R[X]
+m n : ℕ
+M : Matrix (Fin (m - m + (n - m))) (Fin (m - m + (n - m))) R := p.subresultantMatrix q m n m
+htri : sorry
+hdiag : ∀ (i : Fin (m - m + (n - m))), M i i = p.coeff m
+⊢ (p.subresultantMatrix q m n m).det = p.coeff m ^ (n - m)

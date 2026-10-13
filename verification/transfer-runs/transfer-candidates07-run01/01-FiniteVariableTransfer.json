@@ -1,0 +1,55 @@
+{
+  "label": "FiniteVariableTransfer",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean",
+    "bytes": 4584,
+    "sha256": "3e228607f151ecf2dbd7d08ad9fae040b460ad24aa655ba84f141ca3085cd741"
+  },
+  "start_utc": "2026-10-13T14:15:07.209009+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:15:07.209000+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316864,
+    "used_percent": 18.51410884114332
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates07-run01/01-FiniteVariableTransfer.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-candidates07-run01/01-FiniteVariableTransfer.stderr.log",
+  "pid": 7,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T14:15:10.212219+00:00",
+  "peak_physical_used_percent": 22.09598032941335,
+  "memory_after": {
+    "utc": "2026-10-13T14:15:10.212388+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8282400,
+    "used_percent": 18.851775749355216
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean",
+      "bytes": 186384,
+      "sha256": "f4a25541cc2ea37d76d9cf20d879db507c95baa53f1975d782a3fa40675af04e"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.ilean",
+      "bytes": 13585,
+      "sha256": "6109ff111267b457cb023589e8b6d0c362acc09843c63e9ecfe065b622262262"
+    }
+  ]
+}

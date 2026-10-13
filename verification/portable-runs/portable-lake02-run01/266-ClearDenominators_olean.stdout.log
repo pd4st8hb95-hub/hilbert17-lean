@@ -1,0 +1,5 @@
+⚠ [1321/1321] Built ClearDenominators (2.2s)
+warning: ClearDenominators.lean:47:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (1321 jobs).

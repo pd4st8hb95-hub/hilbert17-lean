@@ -1,0 +1,55 @@
+{
+  "label": "TauCeti.FieldTheory.RealClosure.IVT",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean",
+    "bytes": 5281,
+    "sha256": "86303752f0382bf646f53eed8c04db7680e450f05a2cc4261213f73449117f63"
+  },
+  "start_utc": "2026-10-13T13:50:32.246745+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:50:32.246733+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8323040,
+    "used_percent": 18.45359842955103
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/FieldTheory/RealClosure/IVT.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/06-TauCeti_FieldTheory_RealClosure_IVT.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/06-TauCeti_FieldTheory_RealClosure_IVT.stderr.log",
+  "pid": 20,
+  "exit_code": 0,
+  "seconds": 3.003,
+  "end_utc": "2026-10-13T13:50:35.250356+00:00",
+  "peak_physical_used_percent": 22.02559386618812,
+  "memory_after": {
+    "utc": "2026-10-13T13:50:35.250532+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8320532,
+    "used_percent": 18.478170986590126
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.olean",
+      "bytes": 201168,
+      "sha256": "727cf30bb7e9a3a47dfeaf1008238065192288a15566430b2567c89f140ddb3d"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/FieldTheory/RealClosure/IVT.ilean",
+      "bytes": 11310,
+      "sha256": "47b21fb0e58521e298ff893353c4e3407e2da01d690aca3746e7a1f8d3a243a0"
+    }
+  ]
+}

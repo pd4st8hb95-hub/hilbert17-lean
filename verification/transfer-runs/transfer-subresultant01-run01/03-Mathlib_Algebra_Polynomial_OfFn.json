@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.Algebra.Polynomial.OfFn",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean",
+    "bytes": 3995,
+    "sha256": "4b471e49fdbaaa34df30df264e6debaf5139932103208f0bfac75cb41dcfaaff"
+  },
+  "start_utc": "2026-10-13T13:34:07.490622+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:34:07.490609+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349128,
+    "used_percent": 18.19799680752712
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Polynomial/OfFn.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/03-Mathlib_Algebra_Polynomial_OfFn.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-subresultant01-run01/03-Mathlib_Algebra_Polynomial_OfFn.stderr.log",
+  "pid": 11,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T13:34:09.493585+00:00",
+  "peak_physical_used_percent": 20.23599060520993,
+  "memory_after": {
+    "utc": "2026-10-13T13:34:09.493802+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349676,
+    "used_percent": 18.192627684218735
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean",
+      "bytes": 87144,
+      "sha256": "9b21b33c8a6fed9c82a6465870dd1c82b27d360256f769b7fbefbca8d5dad1ca"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean.private",
+      "bytes": 154520,
+      "sha256": "cd051c100ece9b5887c2fa7dad04b595940f480b9d4f95fcd412de4158953eaa"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.olean.server",
+      "bytes": 5808,
+      "sha256": "f5ef49cea92a720fcd068203246370332163d3915838386f6fbacb27a839d7da"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ilean",
+      "bytes": 11079,
+      "sha256": "219fd0ce900bdea251d76133ea648dced7a61d94bbb6e55cef7e155ef2dfae09"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Polynomial/OfFn.ir",
+      "bytes": 6168,
+      "sha256": "2cf5e5b4a4c90c19f43bfed33d7ea3c3bdc5ea6ae2bf67b427879a524a02ae71"
+    }
+  ]
+}

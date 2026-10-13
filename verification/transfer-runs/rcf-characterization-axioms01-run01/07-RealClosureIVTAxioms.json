@@ -1,0 +1,55 @@
+{
+  "label": "RealClosureIVTAxioms",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean",
+    "bytes": 928,
+    "sha256": "a90324852408a1c0b01810b4241e6b98531c74d4c78babc889ed45d0af9d744a"
+  },
+  "start_utc": "2026-10-13T14:01:03.532791+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:01:03.532779+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8310192,
+    "used_percent": 18.57947889718991
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/checks/axioms/RealClosureIVTAxioms.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/07-RealClosureIVTAxioms.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/rcf-characterization-axioms01-run01/07-RealClosureIVTAxioms.stderr.log",
+  "pid": 23,
+  "exit_code": 0,
+  "seconds": 2.002,
+  "end_utc": "2026-10-13T14:01:05.535266+00:00",
+  "peak_physical_used_percent": 21.885996660170157,
+  "memory_after": {
+    "utc": "2026-10-13T14:01:05.535416+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8307760,
+    "used_percent": 18.603306831288428
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.olean",
+      "bytes": 1624,
+      "sha256": "920588038006dd899828d6747a63dfb20ea6b26176321104044186e8f2a9a847"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureIVTAxioms.ilean",
+      "bytes": 1458,
+      "sha256": "e82c949b9283dbaefa04eac9a9defe960db892082e659a3323629d933a85087e"
+    }
+  ]
+}

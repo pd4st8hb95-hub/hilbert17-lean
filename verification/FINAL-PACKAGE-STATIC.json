@@ -1,0 +1,8 @@
+{
+  "scope": "Static checks of combined published baseline, published real-closure delta, and prospective final delta; not Lake compilation",
+  "lakefile_sha256": "fd8b10b28a08149754578ab2caab766ede5f45b9caffc65162a0def94a1326c4",
+  "lake_root_count": 97,
+  "missing_local_imports": [],
+  "prior_Lean_sources_replaced": [],
+  "new_proof_sources_including_entry": 76
+}

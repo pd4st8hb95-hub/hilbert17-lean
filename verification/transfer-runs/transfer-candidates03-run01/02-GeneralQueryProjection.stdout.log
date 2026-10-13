@@ -1,0 +1,7 @@
+/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean:48:0: warning: automatically included section variable(s) unused in theorem `Hilbert17Transfer.tarskiQuery_C_mul_left`:
+  [IsStrictOrderedRing K]
+  [IsRealClosed K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsStrictOrderedRing K] [IsRealClosed K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,44 @@
+{
+  "label": "TauCeti.Algebra.Polynomial.LinearFactor",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+    "bytes": 6905,
+    "sha256": "4ecddaafa596151455a78fd95c6937825f3a71c5364c0094954f67cb253719ec"
+  },
+  "start_utc": "2026-10-13T13:42:45.352044+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:42:45.352029+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8297564,
+    "used_percent": 18.703203877369223
+  },
+  "status": "COMPILE_FAILED",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/LinearFactor.ilean",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/LinearFactor.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt02-run01/02-TauCeti_Algebra_Polynomial_LinearFactor.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt02-run01/02-TauCeti_Algebra_Polynomial_LinearFactor.stderr.log",
+  "pid": 8,
+  "exit_code": 1,
+  "seconds": 13.512,
+  "end_utc": "2026-10-13T13:42:58.864516+00:00",
+  "peak_physical_used_percent": 20.276474578768763,
+  "memory_after": {
+    "utc": "2026-10-13T13:42:58.864665+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8349348,
+    "used_percent": 18.195841320067547
+  },
+  "outputs": []
+}

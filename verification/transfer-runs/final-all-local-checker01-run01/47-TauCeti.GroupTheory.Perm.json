@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.GroupTheory.Perm.Inversion",
+  "start_utc": "2026-10-13T14:20:19.829428+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:19.829421+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8299788,
+    "used_percent": 18.681413858687026
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.GroupTheory.Perm.Inversion"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/GroupTheory/Perm/Inversion.lean",
+    "bytes": 10143,
+    "sha256": "a33bea19a0140e3b63388913bc70d209418c588016fabfaca68fb373272575c4"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.olean",
+      "bytes": 401416,
+      "sha256": "2c9abeefd820cb5c25d6b5a7ed8fa09be5591717e37ee37bb86bebdf47467e71"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/GroupTheory/Perm/Inversion.ilean",
+      "bytes": 34450,
+      "sha256": "52d48f41e510c6ff0647d627c67ee0630003cbd275a68e5a0d63eebc7d67254f"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/47-TauCeti.GroupTheory.Perm.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/47-TauCeti.GroupTheory.Perm.stderr.log",
+  "pid": 327,
+  "exit_code": 0,
+  "seconds": 2.003,
+  "end_utc": "2026-10-13T14:20:21.832253+00:00",
+  "peak_physical_used_percent": 19.95526775661176,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:21.832340+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8316360,
+    "used_percent": 18.519046866959787
+  }
+}

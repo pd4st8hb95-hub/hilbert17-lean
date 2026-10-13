@@ -1,0 +1,70 @@
+{
+  "label": "Mathlib.RingTheory.Polynomial.SmallDegreeVieta",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.lean",
+    "bytes": 5720,
+    "sha256": "8ed73f783c15e981fa7ce698aa000b4d53f72452c11191db1a3effa1c3ab0c31"
+  },
+  "start_utc": "2026-10-13T13:50:26.236571+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T13:50:26.236540+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8322912,
+    "used_percent": 18.454852531345686
+  },
+  "status": "PASS",
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+    "-j",
+    "1",
+    "-M",
+    "4096",
+    "-R",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib",
+    "-o",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.olean",
+    "-i",
+    "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.ilean",
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/mathlib/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.lean"
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/04-Mathlib_RingTheory_Polynomial_SmallDegreeVieta.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/transfer-rcf-ivt04-run01/04-Mathlib_RingTheory_Polynomial_SmallDegreeVieta.stderr.log",
+  "pid": 14,
+  "exit_code": 0,
+  "seconds": 2.502,
+  "end_utc": "2026-10-13T13:50:28.739730+00:00",
+  "peak_physical_used_percent": 20.688878115806112,
+  "memory_after": {
+    "utc": "2026-10-13T13:50:28.739876+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8317320,
+    "used_percent": 18.509641103499845
+  },
+  "outputs": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.olean",
+      "bytes": 63008,
+      "sha256": "56502eac67e82d8c50445ef39f6fe57854177c973c2dbbbcff3e29118a4df376"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.olean.private",
+      "bytes": 294152,
+      "sha256": "0f081f0413a7c148af5f2b01239ad97b52e1a20dba5cbb898bf8650cd6b91207"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.olean.server",
+      "bytes": 3968,
+      "sha256": "d0257ae77065474a2d705569e2b8b2aed0f9c2a6fed86f5e015ad7a0c62aed93"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.ilean",
+      "bytes": 22303,
+      "sha256": "497270680289bee6290646a7d8ede8448b1528b7dd863d593afb412b87c1bc68"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/RingTheory/Polynomial/SmallDegreeVieta.ir",
+      "bytes": 1848,
+      "sha256": "3cf7aa0dbcea7e04db5901802b476e9fc0222a490a922b39cf20eb057c0515c2"
+    }
+  ]
+}

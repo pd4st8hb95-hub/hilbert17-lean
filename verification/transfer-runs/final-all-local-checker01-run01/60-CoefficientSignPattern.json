@@ -1,0 +1,46 @@
+{
+  "module": "CoefficientSignPattern",
+  "start_utc": "2026-10-13T14:20:48.915260+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:20:48.915250+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8294132,
+    "used_percent": 18.736829481738514
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "CoefficientSignPattern"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/CoefficientSignPattern.lean",
+    "bytes": 3329,
+    "sha256": "24193ce4e4128c1ef29de34effdca5e56fd6094e653f87ba612da35528154366"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.olean",
+      "bytes": 118632,
+      "sha256": "483976048811ffeef2a84fbbed3e45701774ac8946178cf60841e45b04ee0ed7"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/CoefficientSignPattern.ilean",
+      "bytes": 11106,
+      "sha256": "f36d3b90b22be0e157123d4f5388d37ed07dab3d4f9f09edf280567594ab6c60"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/60-CoefficientSignPattern.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/60-CoefficientSignPattern.stderr.log",
+  "pid": 418,
+  "exit_code": 0,
+  "seconds": 2.004,
+  "end_utc": "2026-10-13T14:20:50.919600+00:00",
+  "peak_physical_used_percent": 19.845847375027777,
+  "memory_after": {
+    "utc": "2026-10-13T14:20:50.919693+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8312408,
+    "used_percent": 18.55776725986988
+  }
+}

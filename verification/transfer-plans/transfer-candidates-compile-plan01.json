@@ -1,0 +1,140 @@
+{
+  "schema": "hilbert17-frozen-compile-plan-v1",
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "guard_core": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "config": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/local-runtime.json",
+    "bytes": 4437,
+    "sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b"
+  },
+  "status": "STAGED_NOT_EXECUTED",
+  "jobs": [
+    {
+      "module": "UniformRootCount",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformRootCount.lean",
+        "bytes": 5508,
+        "sha256": "5232326f12598723455a57d02dba246a4ef537f9fac181d4d9970727e360f2e4"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformRootCount.olean"
+    },
+    {
+      "module": "MonicQueryProjection",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/MonicQueryProjection.lean",
+        "bytes": 7312,
+        "sha256": "9abb6f0977b026861b562a913b41f92c0fb150e8e4f727de4140fa9630a24d8a"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/MonicQueryProjection.olean"
+    },
+    {
+      "module": "GeneralQueryProjection",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralQueryProjection.lean",
+        "bytes": 4539,
+        "sha256": "aa5a95c636956618a1da23814d68864cc90a570d17281af0e0cf5c4d13474d1f"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralQueryProjection.olean"
+    },
+    {
+      "module": "GeneralPatternProjection",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/GeneralPatternProjection.lean",
+        "bytes": 3245,
+        "sha256": "fbb78ca30bea076c657cd779ab2aaabd3b89fd587cfa27fe1e80f35c0ce5b8c6"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/GeneralPatternProjection.olean"
+    },
+    {
+      "module": "WholeLineAlternatives",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/WholeLineAlternatives.lean",
+        "bytes": 5507,
+        "sha256": "6b81b99d9f897af8ce86e563dd5c4433f2f63a0931e6f6b8330cd6283ffd30f9"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/WholeLineAlternatives.olean"
+    },
+    {
+      "module": "UniformOneVariable",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/UniformOneVariable.lean",
+        "bytes": 4833,
+        "sha256": "80f47347b9682328262c5e5001f569a6772ce039422e14e39c8d50aa4d17f8b3"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/UniformOneVariable.olean"
+    },
+    {
+      "module": "FiniteVariableTransfer",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/FiniteVariableTransfer.lean",
+        "bytes": 4489,
+        "sha256": "862c2754a32fbd3acde7bc85a4fd814524067aa17247c4ef6cff4ab3e14b9ad8"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/FiniteVariableTransfer.olean"
+    },
+    {
+      "module": "RealClosureTransfer",
+      "kind": "project",
+      "source": {
+        "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer/RealClosureTransfer.lean",
+        "bytes": 1982,
+        "sha256": "42c37a5466806bcbcd1c680e92da52ade06550638ede7a848673b04bc85251ae"
+      },
+      "source_root": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer",
+      "olean_output": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/RealClosureTransfer.olean"
+    }
+  ],
+  "requires_before_launch": [
+    "TauCeti.FieldTheory.RealClosure.IVT",
+    "TauCeti.FieldTheory.RealClosure.AbstractRolle",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots",
+    "TauCeti.RingTheory.Polynomial.Subresultant.Euclidean",
+    "TauCeti.RingTheory.Polynomial.Subresultant.CauchyIndex",
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine"
+  ],
+  "scope": "Downstream phase only. Parent must establish listed prerequisite modules PASS before launch. No unconditional theorem claim before compilation, exact-type and axiom audits.",
+  "skipped_matching_pass_receipts": [
+    "CoefficientSignPattern",
+    "LocalizationSignDescent",
+    "DegreeNormalization",
+    "FinSuccEvaluation",
+    "TauCeti.FieldTheory.RealClosure.OrderedIntermediateField",
+    "TauCeti.FieldTheory.RealClosure.PolynomialCone",
+    "TauCeti.Algebra.Polynomial.OddDegreeFactor",
+    "TauCeti.FieldTheory.RealClosure.OddExtension",
+    "TauCeti.FieldTheory.RealClosure.Basic",
+    "ClearDenominators",
+    "FractionSemireal",
+    "CoefficientOrder",
+    "RealInstance",
+    "TargetSpec",
+    "ConditionalArtin"
+  ]
+}

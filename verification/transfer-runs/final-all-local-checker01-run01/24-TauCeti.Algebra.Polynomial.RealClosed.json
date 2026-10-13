@@ -1,0 +1,46 @@
+{
+  "module": "TauCeti.Algebra.Polynomial.RealClosed.Sign",
+  "start_utc": "2026-10-13T14:19:27.682206+00:00",
+  "memory_before": {
+    "utc": "2026-10-13T14:19:27.682199+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8321640,
+    "used_percent": 18.46731516793011
+  },
+  "command": [
+    "/workspace/scratch/dc8f157c1f8f/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+    "-v",
+    "TauCeti.Algebra.Polynomial.RealClosed.Sign"
+  ],
+  "status": "PASS",
+  "source": {
+    "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-transfer-backport/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+    "bytes": 5738,
+    "sha256": "3bc8ebc118aeb2b138bcc7be9321f16a567cd0cb86574eb2bf974e48845383b6"
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.olean",
+      "bytes": 296808,
+      "sha256": "0079cf290cc2ab5f3957007d6582545173dc798f848481b46a6e5d13bf2f3e43"
+    },
+    {
+      "path": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Polynomial/RealClosed/Sign.ilean",
+      "bytes": 15493,
+      "sha256": "1b9a6f047aaebee9c0eeb5237cf2d9def742e39161e26403a3470194ae7f1485"
+    }
+  ],
+  "stdout": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/24-TauCeti.Algebra.Polynomial.RealClosed.stdout.log",
+  "stderr": "/workspace/scratch/dc8f157c1f8f/hilbert17-20261013/verification/final-all-local-checker01-run01/24-TauCeti.Algebra.Polynomial.RealClosed.stderr.log",
+  "pid": 166,
+  "exit_code": 0,
+  "seconds": 2.506,
+  "end_utc": "2026-10-13T14:19:30.188767+00:00",
+  "peak_physical_used_percent": 20.614729347196906,
+  "memory_after": {
+    "utc": "2026-10-13T14:19:30.188931+00:00",
+    "total_kib": 10206508,
+    "available_kib": 8268308,
+    "used_percent": 18.98984451881094
+  }
+}

@@ -1,0 +1,303 @@
+Hilbert17Transfer.awaySignProjection.{u_1, u_2} {A : Type u_1} {B : Type u_2} [CommRing.{u_1} A] [CommRing.{u_2} B]
+  [@Algebra.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))]
+  (c : A)
+  [@IsLocalization.Away.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) c B
+      (@CommRing.toCommSemiring.{u_2} B inst✝¹) inst✝²]
+  (T : Finset.{u_2} B) : Finset.{u_1} A
+'Hilbert17Transfer.awaySignProjection' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.self_mem_awaySignProjection.{u_1, u_2} {A : Type u_1} {B : Type u_2} [CommRing.{u_1} A]
+  [CommRing.{u_2} B]
+  [@Algebra.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))]
+  (c : A)
+  [@IsLocalization.Away.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) c B
+      (@CommRing.toCommSemiring.{u_2} B inst✝¹) inst✝²]
+  (T : Finset.{u_2} B) :
+  @Membership.mem.{u_1, u_1} A (Finset.{u_1} A)
+    (@SetLike.instMembership.{u_1, u_1} (Finset.{u_1} A) A (@Finset.instSetLike.{u_1} A))
+    (@Hilbert17Transfer.awaySignProjection.{u_1, u_2} A B inst✝ inst✝¹ inst✝² c inst✝³ T) c
+'Hilbert17Transfer.self_mem_awaySignProjection' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.numerator_mem_awaySignProjection.{u_1, u_2} {A : Type u_1} {B : Type u_2} [CommRing.{u_1} A]
+  [CommRing.{u_2} B]
+  [@Algebra.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))]
+  (c : A)
+  [@IsLocalization.Away.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) c B
+      (@CommRing.toCommSemiring.{u_2} B inst✝¹) inst✝²]
+  (T : Finset.{u_2} B) {b : B}
+  (hb :
+    @Membership.mem.{u_2, u_2} B (Finset.{u_2} B)
+      (@SetLike.instMembership.{u_2, u_2} (Finset.{u_2} B) B (@Finset.instSetLike.{u_2} B)) T b) :
+  @Membership.mem.{u_1, u_1} A (Finset.{u_1} A)
+    (@SetLike.instMembership.{u_1, u_1} (Finset.{u_1} A) A (@Finset.instSetLike.{u_1} A))
+    (@Hilbert17Transfer.awaySignProjection.{u_1, u_2} A B inst✝ inst✝¹ inst✝² c inst✝³ T)
+    (@Prod.fst.{u_1, 0} A Nat
+      (@IsLocalization.Away.sec.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) B
+        (@CommRing.toCommSemiring.{u_2} B inst✝¹) inst✝² c inst✝³ b))
+'Hilbert17Transfer.numerator_mem_awaySignProjection' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.sign_eq_on_localization_of_sign_eq_on_projection.{u_1, u_2, u_3, u_4} {A : Type u_1} {B : Type u_2}
+  [CommRing.{u_1} A] [CommRing.{u_2} B]
+  [@Algebra.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))]
+  (c : A)
+  [@IsLocalization.Away.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) c B
+      (@CommRing.toCommSemiring.{u_2} B inst✝¹) inst✝²]
+  {K : Type u_3} {L : Type u_4} [Field.{u_3} K] [LinearOrder.{u_3} K]
+  [@IsStrictOrderedRing.{u_3} K
+      (@DivisionSemiring.toSemiring.{u_3} K (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))
+      (@SemilatticeInf.toPartialOrder.{u_3} K
+        (@Lattice.toSemilatticeInf.{u_3} K
+          (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴))))]
+  [Field.{u_4} L] [LinearOrder.{u_4} L]
+  [@IsStrictOrderedRing.{u_4} L
+      (@DivisionSemiring.toSemiring.{u_4} L (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))
+      (@SemilatticeInf.toPartialOrder.{u_4} L
+        (@Lattice.toSemilatticeInf.{u_4} L
+          (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶))))]
+  (T : Finset.{u_2} B)
+  (F :
+    @RingHom.{u_2, u_3} B K
+      (@Semiring.toNonAssocSemiring.{u_2} B
+        (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+      (@Semiring.toNonAssocSemiring.{u_3} K
+        (@DivisionSemiring.toSemiring.{u_3} K
+          (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+  (G :
+    @RingHom.{u_2, u_4} B L
+      (@Semiring.toNonAssocSemiring.{u_2} B
+        (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+      (@Semiring.toNonAssocSemiring.{u_4} L
+        (@DivisionSemiring.toSemiring.{u_4} L
+          (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+  (h :
+    ∀ (a : A),
+      @Membership.mem.{u_1, u_1} A (Finset.{u_1} A)
+          (@SetLike.instMembership.{u_1, u_1} (Finset.{u_1} A) A (@Finset.instSetLike.{u_1} A))
+          (@Hilbert17Transfer.awaySignProjection.{u_1, u_2} A B inst✝ inst✝¹ inst✝² c inst✝⁷ T) a →
+        @Eq.{1} SignType
+          (@DFunLike.coe.{u_3 + 1, u_3 + 1, 1}
+            (@OrderHom.{u_3, 0} K SignType
+              (@PartialOrder.toPreorder.{u_3} K
+                (@SemilatticeInf.toPartialOrder.{u_3} K
+                  (@Lattice.toSemilatticeInf.{u_3} K
+                    (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+              (@PartialOrder.toPreorder.{0} SignType
+                (@SemilatticeInf.toPartialOrder.{0} SignType
+                  (@Lattice.toSemilatticeInf.{0} SignType
+                    (@DistribLattice.toLattice.{0} SignType
+                      (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+            K (fun x => SignType)
+            (@OrderHom.instFunLike.{u_3, 0} K SignType
+              (@PartialOrder.toPreorder.{u_3} K
+                (@SemilatticeInf.toPartialOrder.{u_3} K
+                  (@Lattice.toSemilatticeInf.{u_3} K
+                    (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+              (@PartialOrder.toPreorder.{0} SignType
+                (@SemilatticeInf.toPartialOrder.{0} SignType
+                  (@Lattice.toSemilatticeInf.{0} SignType
+                    (@DistribLattice.toLattice.{0} SignType
+                      (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+            (@SignType.sign.{u_3} K
+              (@MulZeroClass.toZero.{u_3} K
+                (@instMulZeroClassOfSemiring.{u_3} K
+                  (@DivisionSemiring.toSemiring.{u_3} K
+                    (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+              (@PartialOrder.toPreorder.{u_3} K
+                (@SemilatticeInf.toPartialOrder.{u_3} K
+                  (@Lattice.toSemilatticeInf.{u_3} K
+                    (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+              (@LinearOrder.toDecidableLT.{u_3} K inst✝⁴))
+            (@DFunLike.coe.{max (u_2 + 1) (u_3 + 1), u_2 + 1, u_3 + 1}
+              (@RingHom.{u_2, u_3} B K
+                (@Semiring.toNonAssocSemiring.{u_2} B
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+                (@Semiring.toNonAssocSemiring.{u_3} K
+                  (@DivisionSemiring.toSemiring.{u_3} K
+                    (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+              B (fun x => K)
+              (@RingHom.instFunLike.{u_2, u_3} B K
+                (@Semiring.toNonAssocSemiring.{u_2} B
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+                (@Semiring.toNonAssocSemiring.{u_3} K
+                  (@DivisionSemiring.toSemiring.{u_3} K
+                    (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+              F
+              (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+                (@RingHom.{u_1, u_2} A B
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} B
+                    (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))))
+                A (fun x => B)
+                (@RingHom.instFunLike.{u_1, u_2} A B
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} B
+                    (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))))
+                (@Algebra.algebraMap.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)) inst✝²)
+                a)))
+          (@DFunLike.coe.{u_4 + 1, u_4 + 1, 1}
+            (@OrderHom.{u_4, 0} L SignType
+              (@PartialOrder.toPreorder.{u_4} L
+                (@SemilatticeInf.toPartialOrder.{u_4} L
+                  (@Lattice.toSemilatticeInf.{u_4} L
+                    (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+              (@PartialOrder.toPreorder.{0} SignType
+                (@SemilatticeInf.toPartialOrder.{0} SignType
+                  (@Lattice.toSemilatticeInf.{0} SignType
+                    (@DistribLattice.toLattice.{0} SignType
+                      (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+            L (fun x => SignType)
+            (@OrderHom.instFunLike.{u_4, 0} L SignType
+              (@PartialOrder.toPreorder.{u_4} L
+                (@SemilatticeInf.toPartialOrder.{u_4} L
+                  (@Lattice.toSemilatticeInf.{u_4} L
+                    (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+              (@PartialOrder.toPreorder.{0} SignType
+                (@SemilatticeInf.toPartialOrder.{0} SignType
+                  (@Lattice.toSemilatticeInf.{0} SignType
+                    (@DistribLattice.toLattice.{0} SignType
+                      (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+            (@SignType.sign.{u_4} L
+              (@MulZeroClass.toZero.{u_4} L
+                (@instMulZeroClassOfSemiring.{u_4} L
+                  (@DivisionSemiring.toSemiring.{u_4} L
+                    (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+              (@PartialOrder.toPreorder.{u_4} L
+                (@SemilatticeInf.toPartialOrder.{u_4} L
+                  (@Lattice.toSemilatticeInf.{u_4} L
+                    (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+              (@LinearOrder.toDecidableLT.{u_4} L inst✝⁶))
+            (@DFunLike.coe.{max (u_2 + 1) (u_4 + 1), u_2 + 1, u_4 + 1}
+              (@RingHom.{u_2, u_4} B L
+                (@Semiring.toNonAssocSemiring.{u_2} B
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+                (@Semiring.toNonAssocSemiring.{u_4} L
+                  (@DivisionSemiring.toSemiring.{u_4} L
+                    (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+              B (fun x => L)
+              (@RingHom.instFunLike.{u_2, u_4} B L
+                (@Semiring.toNonAssocSemiring.{u_2} B
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+                (@Semiring.toNonAssocSemiring.{u_4} L
+                  (@DivisionSemiring.toSemiring.{u_4} L
+                    (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+              G
+              (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+                (@RingHom.{u_1, u_2} A B
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} B
+                    (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))))
+                A (fun x => B)
+                (@RingHom.instFunLike.{u_1, u_2} A B
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} B
+                    (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹))))
+                (@Algebra.algebraMap.{u_1, u_2} A B (@CommRing.toCommSemiring.{u_1} A inst✝)
+                  (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)) inst✝²)
+                a))))
+  (b : B) :
+  @Membership.mem.{u_2, u_2} B (Finset.{u_2} B)
+      (@SetLike.instMembership.{u_2, u_2} (Finset.{u_2} B) B (@Finset.instSetLike.{u_2} B)) T b →
+    @Eq.{1} SignType
+      (@DFunLike.coe.{u_3 + 1, u_3 + 1, 1}
+        (@OrderHom.{u_3, 0} K SignType
+          (@PartialOrder.toPreorder.{u_3} K
+            (@SemilatticeInf.toPartialOrder.{u_3} K
+              (@Lattice.toSemilatticeInf.{u_3} K
+                (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+          (@PartialOrder.toPreorder.{0} SignType
+            (@SemilatticeInf.toPartialOrder.{0} SignType
+              (@Lattice.toSemilatticeInf.{0} SignType
+                (@DistribLattice.toLattice.{0} SignType
+                  (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+        K (fun x => SignType)
+        (@OrderHom.instFunLike.{u_3, 0} K SignType
+          (@PartialOrder.toPreorder.{u_3} K
+            (@SemilatticeInf.toPartialOrder.{u_3} K
+              (@Lattice.toSemilatticeInf.{u_3} K
+                (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+          (@PartialOrder.toPreorder.{0} SignType
+            (@SemilatticeInf.toPartialOrder.{0} SignType
+              (@Lattice.toSemilatticeInf.{0} SignType
+                (@DistribLattice.toLattice.{0} SignType
+                  (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+        (@SignType.sign.{u_3} K
+          (@MulZeroClass.toZero.{u_3} K
+            (@instMulZeroClassOfSemiring.{u_3} K
+              (@DivisionSemiring.toSemiring.{u_3} K
+                (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+          (@PartialOrder.toPreorder.{u_3} K
+            (@SemilatticeInf.toPartialOrder.{u_3} K
+              (@Lattice.toSemilatticeInf.{u_3} K
+                (@DistribLattice.toLattice.{u_3} K (@instDistribLatticeOfLinearOrder.{u_3} K inst✝⁴)))))
+          (@LinearOrder.toDecidableLT.{u_3} K inst✝⁴))
+        (@DFunLike.coe.{max (u_2 + 1) (u_3 + 1), u_2 + 1, u_3 + 1}
+          (@RingHom.{u_2, u_3} B K
+            (@Semiring.toNonAssocSemiring.{u_2} B
+              (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+            (@Semiring.toNonAssocSemiring.{u_3} K
+              (@DivisionSemiring.toSemiring.{u_3} K
+                (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+          B (fun x => K)
+          (@RingHom.instFunLike.{u_2, u_3} B K
+            (@Semiring.toNonAssocSemiring.{u_2} B
+              (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+            (@Semiring.toNonAssocSemiring.{u_3} K
+              (@DivisionSemiring.toSemiring.{u_3} K
+                (@Semifield.toDivisionSemiring.{u_3} K (@Field.toSemifield.{u_3} K inst✝³)))))
+          F b))
+      (@DFunLike.coe.{u_4 + 1, u_4 + 1, 1}
+        (@OrderHom.{u_4, 0} L SignType
+          (@PartialOrder.toPreorder.{u_4} L
+            (@SemilatticeInf.toPartialOrder.{u_4} L
+              (@Lattice.toSemilatticeInf.{u_4} L
+                (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+          (@PartialOrder.toPreorder.{0} SignType
+            (@SemilatticeInf.toPartialOrder.{0} SignType
+              (@Lattice.toSemilatticeInf.{0} SignType
+                (@DistribLattice.toLattice.{0} SignType
+                  (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+        L (fun x => SignType)
+        (@OrderHom.instFunLike.{u_4, 0} L SignType
+          (@PartialOrder.toPreorder.{u_4} L
+            (@SemilatticeInf.toPartialOrder.{u_4} L
+              (@Lattice.toSemilatticeInf.{u_4} L
+                (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+          (@PartialOrder.toPreorder.{0} SignType
+            (@SemilatticeInf.toPartialOrder.{0} SignType
+              (@Lattice.toSemilatticeInf.{0} SignType
+                (@DistribLattice.toLattice.{0} SignType
+                  (@instDistribLatticeOfLinearOrder.{0} SignType SignType.instLinearOrder))))))
+        (@SignType.sign.{u_4} L
+          (@MulZeroClass.toZero.{u_4} L
+            (@instMulZeroClassOfSemiring.{u_4} L
+              (@DivisionSemiring.toSemiring.{u_4} L
+                (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+          (@PartialOrder.toPreorder.{u_4} L
+            (@SemilatticeInf.toPartialOrder.{u_4} L
+              (@Lattice.toSemilatticeInf.{u_4} L
+                (@DistribLattice.toLattice.{u_4} L (@instDistribLatticeOfLinearOrder.{u_4} L inst✝⁶)))))
+          (@LinearOrder.toDecidableLT.{u_4} L inst✝⁶))
+        (@DFunLike.coe.{max (u_2 + 1) (u_4 + 1), u_2 + 1, u_4 + 1}
+          (@RingHom.{u_2, u_4} B L
+            (@Semiring.toNonAssocSemiring.{u_2} B
+              (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+            (@Semiring.toNonAssocSemiring.{u_4} L
+              (@DivisionSemiring.toSemiring.{u_4} L
+                (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+          B (fun x => L)
+          (@RingHom.instFunLike.{u_2, u_4} B L
+            (@Semiring.toNonAssocSemiring.{u_2} B
+              (@CommSemiring.toSemiring.{u_2} B (@CommRing.toCommSemiring.{u_2} B inst✝¹)))
+            (@Semiring.toNonAssocSemiring.{u_4} L
+              (@DivisionSemiring.toSemiring.{u_4} L
+                (@Semifield.toDivisionSemiring.{u_4} L (@Field.toSemifield.{u_4} L inst✝⁵)))))
+          G b))
+'Hilbert17Transfer.sign_eq_on_localization_of_sign_eq_on_projection' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

@@ -1,0 +1,3 @@
+<build-workspace>/hilbert17-transfer/CoefficientOrder.lean:28:49: error(lean.invalidField): Invalid field `injective`: The environment does not contain `RingHom.injective`, so it is not possible to project the field `injective` from an expression
+  f
+of type `R →+* K`

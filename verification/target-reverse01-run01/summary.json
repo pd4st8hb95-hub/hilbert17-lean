@@ -1,0 +1,214 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:02:12.854011+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/target-reverse-compile-plan01.json",
+  "plan_sha256": "8e1b04207e6fd0cd308d322d5c77b0fb8343e3743010439f413ba34f1d998127",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Additional official prerequisite modules, then zero-variable/polynomial-SOS sanity cases and certificate-to-pointwise-nonnegative direction. No unconditional positivity-to-SOS claim.",
+  "jobs": [
+    {
+      "label": "Mathlib.Topology.Algebra.MvPolynomial",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/MvPolynomial.lean",
+        "bytes": 697,
+        "sha256": "85ac5d20944ed63164f486576a0a346cf471412a5b77e56fbfbe209b591cb093"
+      },
+      "start_utc": "2026-10-13T13:02:12.854270+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:02:12.854260+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359640,
+        "used_percent": 18.09500369764076
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Topology/Algebra/MvPolynomial.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:02:14.357015+00:00",
+      "peak_physical_used_percent": 20.35928448789733,
+      "memory_after": {
+        "utc": "2026-10-13T13:02:14.357160+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8350612,
+        "used_percent": 18.183457064845292
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.olean",
+          "bytes": 11680,
+          "sha256": "31cb424a4574ef485337de2fec9e9a7f7c93b4c631407de62bc0ef92bdd21d3d"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.olean.private",
+          "bytes": 21784,
+          "sha256": "51fba299eeb5d0525c03bb8e58c5dfb343403512d0ca0a127b993a4aef3ed8e6"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.olean.server",
+          "bytes": 1312,
+          "sha256": "ebaeaabfe39e8ff8df7aa1ba7808198c83ef2bb8e9b4c2a6713dd651bfef556a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.ilean",
+          "bytes": 1217,
+          "sha256": "5c566fbd81a2324a2d460b9ba2bf2aa2a3939786ef27d9afff9a5558d8dda7f2"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Topology/Algebra/MvPolynomial.ir",
+          "bytes": 1824,
+          "sha256": "428c964efe80bfb958391a8de8de1d3a409d0cef23e1ba7d4fc5d074996109d1"
+        }
+      ]
+    },
+    {
+      "label": "TargetSanity",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/TargetSanity.lean",
+        "bytes": 2847,
+        "sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+      },
+      "start_utc": "2026-10-13T13:02:14.358136+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:02:14.358124+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8350612,
+        "used_percent": 18.183457064845292
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-target-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.ilean",
+        "<build-workspace>/hilbert17-target-20261013/TargetSanity.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/02-TargetSanity.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/02-TargetSanity.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:02:16.360791+00:00",
+      "peak_physical_used_percent": 20.536073650263145,
+      "memory_after": {
+        "utc": "2026-10-13T13:02:16.360959+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8290716,
+        "used_percent": 18.77029832338347
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.olean",
+          "bytes": 76544,
+          "sha256": "3db04163ec9b8a601bf13b10bf36a103b1b4c6e145788738df06152d4b070930"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.ilean",
+          "bytes": 9281,
+          "sha256": "c1bbc0f7f29cf499dd7b94a2e7bb90960992cc7e9cce1c1620a87b21af4a4d6c"
+        }
+      ]
+    },
+    {
+      "label": "CertificateNonnegative",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/CertificateNonnegative.lean",
+        "bytes": 2304,
+        "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+      },
+      "start_utc": "2026-10-13T13:02:16.362050+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:02:16.362038+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8290484,
+        "used_percent": 18.77257138288629
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-target-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.ilean",
+        "<build-workspace>/hilbert17-target-20261013/CertificateNonnegative.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/03-CertificateNonnegative.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/target-reverse01-run01/03-CertificateNonnegative.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:02:18.364810+00:00",
+      "peak_physical_used_percent": 20.5354857900469,
+      "memory_after": {
+        "utc": "2026-10-13T13:02:18.364962+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8341908,
+        "used_percent": 18.268735986882096
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.olean",
+          "bytes": 91792,
+          "sha256": "0c7a3dcd36931cb7ba8c3ebb36f6aa19ed4ad53379e857ad9d1367d0cb02e0f1"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.ilean",
+          "bytes": 7811,
+          "sha256": "5b4f4c693ab97bd374a21d18e9038f3765731734180c41cd0ffe77374609991f"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:02:18.365777+00:00"
+}

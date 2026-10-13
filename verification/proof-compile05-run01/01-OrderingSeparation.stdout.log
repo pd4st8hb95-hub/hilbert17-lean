@@ -1,0 +1,11 @@
+<build-workspace>/hilbert17-algebra/OrderingSeparation.lean:48:12: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵hq0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<build-workspace>/hilbert17-algebra/OrderingSeparation.lean:130:15: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<build-workspace>/hilbert17-algebra/OrderingSeparation.lean:168:0: warning: Definition `Hilbert17.RingPreordering.toLinearOrder` of class type must be marked with `@[reducible]` or `@[implicit_reducible]`

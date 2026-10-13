@@ -1,0 +1,3 @@
+<build-workspace>/hilbert17-target-20261013/ClearDenominators.lean:47:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

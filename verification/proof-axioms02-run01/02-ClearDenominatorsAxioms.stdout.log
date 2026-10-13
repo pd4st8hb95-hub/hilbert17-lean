@@ -1,0 +1,932 @@
+Hilbert17.map_isSumSq.{u_1, u_2} {A : Type u_1} {B : Type u_2} [Semiring.{u_1} A] [Semiring.{u_2} B]
+  (g :
+    @RingHom.{u_1, u_2} A B (@Semiring.toNonAssocSemiring.{u_1} A inst✝) (@Semiring.toNonAssocSemiring.{u_2} B inst✝¹))
+  {s : A}
+  (hs :
+    @IsSumSq.{u_1} A (@Distrib.toMul.{u_1} A (@instDistribOfSemiring.{u_1} A inst✝))
+      (@Distrib.toAdd.{u_1} A (@instDistribOfSemiring.{u_1} A inst✝))
+      (@MulZeroClass.toZero.{u_1} A (@instMulZeroClassOfSemiring.{u_1} A inst✝)) s) :
+  @IsSumSq.{u_2} B (@Distrib.toMul.{u_2} B (@instDistribOfSemiring.{u_2} B inst✝¹))
+    (@Distrib.toAdd.{u_2} B (@instDistribOfSemiring.{u_2} B inst✝¹))
+    (@MulZeroClass.toZero.{u_2} B (@instMulZeroClassOfSemiring.{u_2} B inst✝¹))
+    (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+      (@RingHom.{u_1, u_2} A B (@Semiring.toNonAssocSemiring.{u_1} A inst✝)
+        (@Semiring.toNonAssocSemiring.{u_2} B inst✝¹))
+      A (fun x => B)
+      (@RingHom.instFunLike.{u_1, u_2} A B (@Semiring.toNonAssocSemiring.{u_1} A inst✝)
+        (@Semiring.toNonAssocSemiring.{u_2} B inst✝¹))
+      g s)
+'Hilbert17.map_isSumSq' does not depend on any axioms
+Hilbert17.isSumSq_iff_exists_fin_sum.{u_1} {A : Type u_1} [CommSemiring.{u_1} A] (s : A) :
+  Iff
+    (@IsSumSq.{u_1} A (@Distrib.toMul.{u_1} A (@instDistribOfSemiring.{u_1} A (@CommSemiring.toSemiring.{u_1} A inst✝)))
+      (@Distrib.toAdd.{u_1} A (@instDistribOfSemiring.{u_1} A (@CommSemiring.toSemiring.{u_1} A inst✝)))
+      (@MulZeroClass.toZero.{u_1} A (@instMulZeroClassOfSemiring.{u_1} A (@CommSemiring.toSemiring.{u_1} A inst✝))) s)
+    (∃ m p,
+      @Eq.{u_1 + 1} A s
+        (∑ i,
+          @HPow.hPow.{u_1, 0, u_1} A Nat A
+            (@instHPow.{u_1, 0} A Nat
+              (@NPow.toPow.{u_1} A
+                (@Monoid.toNPow.{u_1} A (@Semiring.toMonoid.{u_1} A (@CommSemiring.toSemiring.{u_1} A inst✝)))))
+            (p i) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+'Hilbert17.isSumSq_iff_exists_fin_sum' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.exists_nonzero_clear_sumSq.{u_1, u_2} {A : Type u_1} {F : Type u_2} [CommRing.{u_1} A]
+  [@IsDomain.{u_1} A (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))] [Field.{u_2} F]
+  [@Algebra.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@DivisionSemiring.toSemiring.{u_2} F
+        (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))]
+  [@IsFractionRing.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) F
+      (@Semifield.toCommSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)) inst✝²]
+  {s : F}
+  (hs :
+    @IsSumSq.{u_2} F
+      (@Distrib.toMul.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@Distrib.toAdd.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@MulZeroClass.toZero.{u_2} F
+        (@instMulZeroClassOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      s) :
+  ∃ d p,
+    And
+      (@Ne.{u_1 + 1} A d
+        (@OfNat.ofNat.{u_1} A (nat_lit 0)
+          (@Zero.toOfNat0.{u_1} A
+            (@MulZeroClass.toZero.{u_1} A
+              (@instMulZeroClassOfSemiring.{u_1} A
+                (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))))))
+      (And
+        (@IsSumSq.{u_1} A
+          (@Distrib.toMul.{u_1} A
+            (@instDistribOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          (@Distrib.toAdd.{u_1} A
+            (@instDistribOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          (@MulZeroClass.toZero.{u_1} A
+            (@instMulZeroClassOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          p)
+        (@Eq.{u_2 + 1} F
+          (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+            (@RingHom.{u_1, u_2} A F
+              (@Semiring.toNonAssocSemiring.{u_1} A
+                (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+              (@Semiring.toNonAssocSemiring.{u_2} F
+                (@DivisionSemiring.toSemiring.{u_2} F
+                  (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+            A (fun x => F)
+            (@RingHom.instFunLike.{u_1, u_2} A F
+              (@Semiring.toNonAssocSemiring.{u_1} A
+                (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+              (@Semiring.toNonAssocSemiring.{u_2} F
+                (@DivisionSemiring.toSemiring.{u_2} F
+                  (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+            (@Algebra.algebraMap.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+              (@DivisionSemiring.toSemiring.{u_2} F
+                (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))
+              inst✝²)
+            p)
+          (@HMul.hMul.{u_2, u_2, u_2} F F F
+            (@instHMul.{u_2} F
+              (@Distrib.toMul.{u_2} F
+                (@instDistribOfSemiring.{u_2} F
+                  (@DivisionSemiring.toSemiring.{u_2} F
+                    (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹))))))
+            (@HPow.hPow.{u_2, 0, u_2} F Nat F
+              (@instHPow.{u_2, 0} F Nat
+                (@NPow.toPow.{u_2} F
+                  (@Monoid.toNPow.{u_2} F
+                    (@Semiring.toMonoid.{u_2} F
+                      (@DivisionSemiring.toSemiring.{u_2} F
+                        (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))))
+              (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+                (@RingHom.{u_1, u_2} A F
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} F
+                    (@DivisionSemiring.toSemiring.{u_2} F
+                      (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+                A (fun x => F)
+                (@RingHom.instFunLike.{u_1, u_2} A F
+                  (@Semiring.toNonAssocSemiring.{u_1} A
+                    (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+                  (@Semiring.toNonAssocSemiring.{u_2} F
+                    (@DivisionSemiring.toSemiring.{u_2} F
+                      (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+                (@Algebra.algebraMap.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+                  (@DivisionSemiring.toSemiring.{u_2} F
+                    (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))
+                  inst✝²)
+                d)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            s)))
+'Hilbert17.exists_nonzero_clear_sumSq' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.isSumSq_fraction_iff.{u_1, u_2} {A : Type u_1} {F : Type u_2} [CommRing.{u_1} A]
+  [@IsDomain.{u_1} A (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))] [Field.{u_2} F]
+  [@Algebra.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@DivisionSemiring.toSemiring.{u_2} F
+        (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))]
+  [@IsFractionRing.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) F
+      (@Semifield.toCommSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)) inst✝²]
+  (f : A) :
+  Iff
+    (@IsSumSq.{u_2} F
+      (@Distrib.toMul.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@Distrib.toAdd.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@MulZeroClass.toZero.{u_2} F
+        (@instMulZeroClassOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+        (@RingHom.{u_1, u_2} A F
+          (@Semiring.toNonAssocSemiring.{u_1} A
+            (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+          (@Semiring.toNonAssocSemiring.{u_2} F
+            (@DivisionSemiring.toSemiring.{u_2} F
+              (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+        A (fun x => F)
+        (@RingHom.instFunLike.{u_1, u_2} A F
+          (@Semiring.toNonAssocSemiring.{u_1} A
+            (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+          (@Semiring.toNonAssocSemiring.{u_2} F
+            (@DivisionSemiring.toSemiring.{u_2} F
+              (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+        (@Algebra.algebraMap.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))
+          inst✝²)
+        f))
+    (∃ q,
+      And
+        (@Ne.{u_1 + 1} A q
+          (@OfNat.ofNat.{u_1} A (nat_lit 0)
+            (@Zero.toOfNat0.{u_1} A
+              (@MulZeroClass.toZero.{u_1} A
+                (@instMulZeroClassOfSemiring.{u_1} A
+                  (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))))))
+        (@IsSumSq.{u_1} A
+          (@Distrib.toMul.{u_1} A
+            (@instDistribOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          (@Distrib.toAdd.{u_1} A
+            (@instDistribOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          (@MulZeroClass.toZero.{u_1} A
+            (@instMulZeroClassOfSemiring.{u_1} A
+              (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))
+          (@HMul.hMul.{u_1, u_1, u_1} A A A
+            (@instHMul.{u_1} A
+              (@Distrib.toMul.{u_1} A
+                (@instDistribOfSemiring.{u_1} A
+                  (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))))
+            (@HPow.hPow.{u_1, 0, u_1} A Nat A
+              (@instHPow.{u_1, 0} A Nat
+                (@NPow.toPow.{u_1} A
+                  (@Monoid.toNPow.{u_1} A
+                    (@Semiring.toMonoid.{u_1} A
+                      (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))))
+              q (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            f)))
+'Hilbert17.isSumSq_fraction_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.isSumSq_fraction_iff_explicit.{u_1, u_2} {A : Type u_1} {F : Type u_2} [CommRing.{u_1} A]
+  [@IsDomain.{u_1} A (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))] [Field.{u_2} F]
+  [@Algebra.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+      (@DivisionSemiring.toSemiring.{u_2} F
+        (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))]
+  [@IsFractionRing.{u_1, u_2} A (@CommRing.toCommSemiring.{u_1} A inst✝) F
+      (@Semifield.toCommSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)) inst✝²]
+  (f : A) :
+  Iff
+    (@IsSumSq.{u_2} F
+      (@Distrib.toMul.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@Distrib.toAdd.{u_2} F
+        (@instDistribOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@MulZeroClass.toZero.{u_2} F
+        (@instMulZeroClassOfSemiring.{u_2} F
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+      (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+        (@RingHom.{u_1, u_2} A F
+          (@Semiring.toNonAssocSemiring.{u_1} A
+            (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+          (@Semiring.toNonAssocSemiring.{u_2} F
+            (@DivisionSemiring.toSemiring.{u_2} F
+              (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+        A (fun x => F)
+        (@RingHom.instFunLike.{u_1, u_2} A F
+          (@Semiring.toNonAssocSemiring.{u_1} A
+            (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))
+          (@Semiring.toNonAssocSemiring.{u_2} F
+            (@DivisionSemiring.toSemiring.{u_2} F
+              (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))))
+        (@Algebra.algebraMap.{u_1, u_2} A F (@CommRing.toCommSemiring.{u_1} A inst✝)
+          (@DivisionSemiring.toSemiring.{u_2} F
+            (@Semifield.toDivisionSemiring.{u_2} F (@Field.toSemifield.{u_2} F inst✝¹)))
+          inst✝²)
+        f))
+    (∃ m q p,
+      And
+        (@Ne.{u_1 + 1} A q
+          (@OfNat.ofNat.{u_1} A (nat_lit 0)
+            (@Zero.toOfNat0.{u_1} A
+              (@MulZeroClass.toZero.{u_1} A
+                (@instMulZeroClassOfSemiring.{u_1} A
+                  (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))))))
+        (@Eq.{u_1 + 1} A
+          (@HMul.hMul.{u_1, u_1, u_1} A A A
+            (@instHMul.{u_1} A
+              (@Distrib.toMul.{u_1} A
+                (@instDistribOfSemiring.{u_1} A
+                  (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝)))))
+            (@HPow.hPow.{u_1, 0, u_1} A Nat A
+              (@instHPow.{u_1, 0} A Nat
+                (@NPow.toPow.{u_1} A
+                  (@Monoid.toNPow.{u_1} A
+                    (@Semiring.toMonoid.{u_1} A
+                      (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))))
+              q (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            f)
+          (∑ i,
+            @HPow.hPow.{u_1, 0, u_1} A Nat A
+              (@instHPow.{u_1, 0} A Nat
+                (@NPow.toPow.{u_1} A
+                  (@Monoid.toNPow.{u_1} A
+                    (@Semiring.toMonoid.{u_1} A
+                      (@CommSemiring.toSemiring.{u_1} A (@CommRing.toCommSemiring.{u_1} A inst✝))))))
+              (p i) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+'Hilbert17.isSumSq_fraction_iff_explicit' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.real_mvPolynomial_fraction_iff {n : Nat} (f : @MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) :
+  Iff
+    (@IsSumSq.{0}
+      (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@AddMonoidAlgebra.commRing.{0, 0} Real
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+          (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+      (@OreLocalization.instMul.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+        (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+      (@OreLocalization.instAdd.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+        (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+        (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@AddCommMonoid.toAddMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@AddMonoidAlgebra.instAddCommMonoid.{0, 0} Real
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+        (@Module.toDistribMulAction.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@AddMonoidAlgebra.semiring.{0, 0} Real
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+          (@AddMonoidAlgebra.instAddCommMonoid.{0, 0} Real
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring))
+          (@Semiring.toModule.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.semiring.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))
+      (@OreLocalization.instZero.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+        (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+        (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (@MulZeroClass.toZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@instMulZeroClassOfSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.semiring.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))
+        (@Monoid.toMulAction.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commRing.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@DFunLike.coe.{1, 1, 1}
+        (@RingHom.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@Semiring.toNonAssocSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+          (@Semiring.toNonAssocSemiring.{0}
+            (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commRing.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.semiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+              (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@AddMonoidAlgebra.commRing.{0, 0} Real
+                          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                          Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+        (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+        (fun x =>
+          @FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@RingHom.instFunLike.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@Semiring.toNonAssocSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+          (@Semiring.toNonAssocSemiring.{0}
+            (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commRing.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.semiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+              (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@AddMonoidAlgebra.commRing.{0, 0} Real
+                          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                          Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+        (@Algebra.algebraMap.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+          (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.semiring.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+          (@OreLocalization.instAlgebra.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.semiring.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+            (@Algebra.id.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))
+        f))
+    (∃ m q p,
+      And
+        (@Ne.{1} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) q
+          (@OfNat.ofNat.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) (nat_lit 0)
+            (@Zero.toOfNat0.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@MulZeroClass.toZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@instMulZeroClassOfSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.semiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                    (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))))
+        (@Eq.{1} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+          (@HMul.hMul.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@instHMul.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.instMul.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                (@Finsupp.instAdd.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid))))
+            (@HPow.hPow.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+              (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@instHPow.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                (@NPow.toPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Monoid.toNPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.semiring.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                        (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                        (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+              q (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            f)
+          (∑ i,
+            @HPow.hPow.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+              (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@instHPow.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                (@NPow.toPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Monoid.toNPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.semiring.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                        (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                        (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+              (p i) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+'Hilbert17.real_mvPolynomial_fraction_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.hilbert17_real_target_iff :
+  Iff
+    (∀ (n : Nat) (f : @MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring),
+      (∀ (x : Fin n → Real),
+          @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+            (@DFunLike.coe.{1, 1, 1}
+              (@RingHom.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Real
+                (@AddMonoidAlgebra.nonAssocSemiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+                (@Semiring.toNonAssocSemiring.{0} Real (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+              (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) (fun x => Real)
+              (@RingHom.instFunLike.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Real
+                (@AddMonoidAlgebra.nonAssocSemiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+                (@Semiring.toNonAssocSemiring.{0} Real (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+              (@MvPolynomial.eval.{0, 0} Real (Fin n) Real.instCommSemiring x) f)) →
+        @IsSumSq.{0}
+          (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddMonoidAlgebra.commRing.{0, 0} Real
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@OreLocalization.instMul.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+            (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+          (@OreLocalization.instAdd.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+            (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@AddCommMonoid.toAddMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.instAddCommMonoid.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+            (@Module.toDistribMulAction.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@AddMonoidAlgebra.semiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+              (@AddMonoidAlgebra.instAddCommMonoid.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring))
+              (@Semiring.toModule.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.semiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))
+          (@OreLocalization.instZero.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+            (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (@MulZeroClass.toZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@instMulZeroClassOfSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.semiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))
+            (@Monoid.toMulAction.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@CommMonoid.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+          (@DFunLike.coe.{1, 1, 1}
+            (@RingHom.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@Semiring.toNonAssocSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Real.instCommSemiring (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+              (@Semiring.toNonAssocSemiring.{0}
+                (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.semiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                    (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+                  (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.commRing.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+                  (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                    (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                            (@AddMonoidAlgebra.commRing.{0, 0} Real
+                              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                              Real.commRing
+                              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+            (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+            (fun x =>
+              @FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@RingHom.instFunLike.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@Semiring.toNonAssocSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Real.instCommSemiring (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+              (@Semiring.toNonAssocSemiring.{0}
+                (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commRing.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.semiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                    (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+                  (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.commRing.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+                  (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.commRing.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                    (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                            (@AddMonoidAlgebra.commRing.{0, 0} Real
+                              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                              Real.commRing
+                              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+            (@Algebra.algebraMap.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@FractionRing.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commRing.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.instCommSemiring
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+              (@OreLocalization.instSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.semiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+                (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@AddMonoidAlgebra.commRing.{0, 0} Real
+                          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                          Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+                (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                  (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.commRing.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+              (@OreLocalization.instAlgebra.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.semiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+                (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@AddMonoidAlgebra.commRing.{0, 0} Real
+                          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                          Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+                (@OreLocalization.oreSetComm.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@CommRing.toCommMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@AddMonoidAlgebra.commRing.{0, 0} Real
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass)) Real.commRing
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+                  (@nonZeroDivisors.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@Semiring.toMonoidWithZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@CommSemiring.toSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@CommRing.toCommSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.commRing.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            Real.commRing (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+                (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  Real.instCommSemiring (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+                (@Algebra.id.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Real.instCommSemiring (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))
+            f))
+    (∀ (n : Nat) (f : @MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring),
+      (∀ (x : Fin n → Real),
+          @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+            (@DFunLike.coe.{1, 1, 1}
+              (@RingHom.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Real
+                (@AddMonoidAlgebra.nonAssocSemiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+                (@Semiring.toNonAssocSemiring.{0} Real (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+              (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) (fun x => Real)
+              (@RingHom.instFunLike.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Real
+                (@AddMonoidAlgebra.nonAssocSemiring.{0, 0} Real
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                  (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+                (@Semiring.toNonAssocSemiring.{0} Real (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)))
+              (@MvPolynomial.eval.{0, 0} Real (Fin n) Real.instCommSemiring x) f)) →
+        ∃ m q p,
+          And
+            (@Ne.{1} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) q
+              (@OfNat.ofNat.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) (nat_lit 0)
+                (@Zero.toOfNat0.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@MulZeroClass.toZero.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                    (@instMulZeroClassOfSemiring.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@AddMonoidAlgebra.semiring.{0, 0} Real
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                        (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                        (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))))
+            (@Eq.{1} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+              (@HMul.hMul.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                (@instHMul.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@AddMonoidAlgebra.instMul.{0, 0} Real
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                    (@Finsupp.instAdd.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid))))
+                (@HPow.hPow.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                  (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@instHPow.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                    (@NPow.toPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@Monoid.toNPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@Semiring.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.semiring.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+                  q (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                f)
+              (∑ i,
+                @HPow.hPow.{0, 0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                  (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                  (@instHPow.{0, 0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring) Nat
+                    (@NPow.toPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                      (@Monoid.toNPow.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                        (@Semiring.toMonoid.{0} (@MvPolynomial.{0, 0} (Fin n) Real Real.instCommSemiring)
+                          (@AddMonoidAlgebra.semiring.{0, 0} Real
+                            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                            (@CommSemiring.toSemiring.{0} Real Real.instCommSemiring)
+                            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))))
+                  (p i) (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+'Hilbert17.hilbert17_real_target_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

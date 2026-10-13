@@ -1,0 +1,554 @@
+Hilbert17.NegativePointTransfer.{u} (R : Type u) [Field.{u} R] [LinearOrder.{u} R]
+  [@IsStrictOrderedRing.{u} R
+      (@DivisionSemiring.toSemiring.{u} R (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u} R
+        (@Lattice.toSemilatticeInf.{u} R
+          (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst✝¹))))] :
+  Prop
+'Hilbert17.NegativePointTransfer' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.rationalSOS_of_negativePointTransfer.{u} {R : Type u} [Field.{u} R] [LinearOrder.{u} R]
+  [@IsStrictOrderedRing.{u} R
+      (@DivisionSemiring.toSemiring.{u} R (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u} R
+        (@Lattice.toSemilatticeInf.{u} R
+          (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst✝¹))))]
+  [@IsRealClosed.{u} R inst✝] (htransfer : @Hilbert17.NegativePointTransfer.{u} R inst✝ inst✝¹ inst✝²) {n : Nat}
+  (f : @MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+  (hf :
+    ∀ (x : Fin n → R),
+      @LE.le.{u} R
+        (@Preorder.toLE.{u} R
+          (@PartialOrder.toPreorder.{u} R
+            (@SemilatticeInf.toPartialOrder.{u} R
+              (@Lattice.toSemilatticeInf.{u} R
+                (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst✝¹))))))
+        (@OfNat.ofNat.{u} R (nat_lit 0)
+          (@Zero.toOfNat0.{u} R
+            (@MulZeroClass.toZero.{u} R
+              (@instMulZeroClassOfSemiring.{u} R
+                (@DivisionSemiring.toSemiring.{u} R
+                  (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))))))
+        (@DFunLike.coe.{u + 1, u + 1, u + 1}
+          (@RingHom.{u, u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))) R
+            (@AddMonoidAlgebra.nonAssocSemiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+            (@Semiring.toNonAssocSemiring.{u} R
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))))
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (fun x => R)
+          (@RingHom.instFunLike.{u, u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))) R
+            (@AddMonoidAlgebra.nonAssocSemiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+            (@Semiring.toNonAssocSemiring.{u} R
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))))
+          (@MvPolynomial.eval.{u, 0} R (Fin n) (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)) x)
+          f)) :
+  @IsSumSq.{u}
+    (@FractionRing.{u}
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@AddMonoidAlgebra.commRing.{u, 0} R
+        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+        (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+    (@OreLocalization.instMul.{u}
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@CommMonoid.toMonoid.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@Semiring.toMonoidWithZero.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommSemiring.toSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommRing.toCommSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@AddMonoidAlgebra.commRing.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@Field.toCommRing.{u} R inst✝)
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@Semiring.toMonoidWithZero.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommSemiring.toSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommRing.toCommSemiring.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@AddMonoidAlgebra.commRing.{u, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@Field.toCommRing.{u} R inst✝)
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+    (@OreLocalization.instAdd.{u, u}
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@CommMonoid.toMonoid.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@Semiring.toMonoidWithZero.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommSemiring.toSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommRing.toCommSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@AddMonoidAlgebra.commRing.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@Field.toCommRing.{u} R inst✝)
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@Semiring.toMonoidWithZero.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommSemiring.toSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommRing.toCommSemiring.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@AddMonoidAlgebra.commRing.{u, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@Field.toCommRing.{u} R inst✝)
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@AddCommMonoid.toAddMonoid.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@AddMonoidAlgebra.instAddCommMonoid.{u, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))))
+      (@Module.toDistribMulAction.{u, u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@AddMonoidAlgebra.semiring.{u, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+        (@AddMonoidAlgebra.instAddCommMonoid.{u, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))))
+        (@Semiring.toModule.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.semiring.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid)))))
+    (@OreLocalization.instZero.{u, u}
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@CommMonoid.toMonoid.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+      (@nonZeroDivisors.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@Semiring.toMonoidWithZero.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommSemiring.toSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommRing.toCommSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@AddMonoidAlgebra.commRing.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@Field.toCommRing.{u} R inst✝)
+                (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+      (@OreLocalization.oreSetComm.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommRing.toCommMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@nonZeroDivisors.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@Semiring.toMonoidWithZero.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommSemiring.toSemiring.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommRing.toCommSemiring.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@AddMonoidAlgebra.commRing.{u, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@Field.toCommRing.{u} R inst✝)
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (@MulZeroClass.toZero.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@instMulZeroClassOfSemiring.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.semiring.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))))
+      (@Monoid.toMulAction.{u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@CommMonoid.toMonoid.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommRing.toCommMonoid.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commRing.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+    (@DFunLike.coe.{u + 1, u + 1, u + 1}
+      (@RingHom.{u, u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@FractionRing.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@Semiring.toNonAssocSemiring.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommSemiring.toSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commSemiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@Semiring.toNonAssocSemiring.{u}
+          (@FractionRing.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commRing.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@OreLocalization.instSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.semiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Semiring.toMonoidWithZero.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommSemiring.toSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommRing.toCommSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@AddMonoidAlgebra.commRing.{u, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@Field.toCommRing.{u} R inst✝)
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommRing.toCommMonoid.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@AddMonoidAlgebra.commRing.{u, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@Field.toCommRing.{u} R inst✝)
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@Semiring.toMonoidWithZero.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommSemiring.toSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@CommRing.toCommSemiring.{u}
+                      (@MvPolynomial.{0, u} (Fin n) R
+                        (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                      (@AddMonoidAlgebra.commRing.{u, 0} R
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                        (@Field.toCommRing.{u} R inst✝)
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+      (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+      (fun x =>
+        @FractionRing.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+      (@RingHom.instFunLike.{u, u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@FractionRing.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@Semiring.toNonAssocSemiring.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@CommSemiring.toSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commSemiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))
+        (@Semiring.toNonAssocSemiring.{u}
+          (@FractionRing.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commRing.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+          (@OreLocalization.instSemiring.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.semiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+            (@nonZeroDivisors.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Semiring.toMonoidWithZero.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommSemiring.toSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommRing.toCommSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@AddMonoidAlgebra.commRing.{u, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@Field.toCommRing.{u} R inst✝)
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+            (@OreLocalization.oreSetComm.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommRing.toCommMonoid.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@AddMonoidAlgebra.commRing.{u, 0} R
+                  (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                  (@Field.toCommRing.{u} R inst✝)
+                  (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+              (@nonZeroDivisors.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@Semiring.toMonoidWithZero.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommSemiring.toSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@CommRing.toCommSemiring.{u}
+                      (@MvPolynomial.{0, u} (Fin n) R
+                        (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                      (@AddMonoidAlgebra.commRing.{u, 0} R
+                        (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                        (@Field.toCommRing.{u} R inst✝)
+                        (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))))
+      (@Algebra.algebraMap.{u, u}
+        (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+        (@FractionRing.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commRing.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+        (@AddMonoidAlgebra.commSemiring.{u, 0} R
+          (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+          (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))
+          (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+        (@OreLocalization.instSemiring.{u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.semiring.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+          (@nonZeroDivisors.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Semiring.toMonoidWithZero.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommSemiring.toSemiring.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommRing.toCommSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@AddMonoidAlgebra.commRing.{u, 0} R
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@Field.toCommRing.{u} R inst✝)
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+          (@OreLocalization.oreSetComm.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommRing.toCommMonoid.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@AddMonoidAlgebra.commRing.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@nonZeroDivisors.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Semiring.toMonoidWithZero.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommSemiring.toSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommRing.toCommSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@AddMonoidAlgebra.commRing.{u, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@Field.toCommRing.{u} R inst✝)
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))))
+        (@OreLocalization.instAlgebra.{u, u}
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.semiring.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Finsupp.instAddMonoid.{0, 0} (Fin n) Nat Nat.instAddMonoid))
+          (@nonZeroDivisors.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@Semiring.toMonoidWithZero.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@CommSemiring.toSemiring.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommRing.toCommSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@AddMonoidAlgebra.commRing.{u, 0} R
+                    (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    (@Field.toCommRing.{u} R inst✝)
+                    (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))))))
+          (@OreLocalization.oreSetComm.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@CommRing.toCommMonoid.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@AddMonoidAlgebra.commRing.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@Field.toCommRing.{u} R inst✝) (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))
+            (@nonZeroDivisors.{u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+              (@Semiring.toMonoidWithZero.{u}
+                (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                (@CommSemiring.toSemiring.{u}
+                  (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                  (@CommRing.toCommSemiring.{u}
+                    (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+                    (@AddMonoidAlgebra.commRing.{u, 0} R
+                      (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                      (@Field.toCommRing.{u} R inst✝)
+                      (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))))
+          (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+          (@AddMonoidAlgebra.commSemiring.{u, 0} R
+            (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+            (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))
+            (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid))
+          (@Algebra.id.{u}
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝)))
+            (@AddMonoidAlgebra.commSemiring.{u, 0} R
+              (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst✝))
+              (@Finsupp.instAddCommMonoid.{0, 0} (Fin n) Nat Nat.instAddCommMonoid)))))
+      f)
+'Hilbert17.rationalSOS_of_negativePointTransfer' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.hilbert17Real_of_negativePointTransfer
+  (htransfer : @Hilbert17.NegativePointTransfer.{0} Real Real.instField Real.linearOrder Real.instIsStrictOrderedRing) :
+  Hilbert17Target.Hilbert17Real
+'Hilbert17.hilbert17Real_of_negativePointTransfer' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.hilbert17RealCleared_of_negativePointTransfer
+  (htransfer : @Hilbert17.NegativePointTransfer.{0} Real Real.instField Real.linearOrder Real.instIsStrictOrderedRing) :
+  Hilbert17Target.Hilbert17RealCleared
+'Hilbert17.hilbert17RealCleared_of_negativePointTransfer' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+def Hilbert17.NegativePointTransfer.{u} : (R : Type u) →
+  [inst : Field.{u} R] →
+    [inst_1 : LinearOrder.{u} R] →
+      [@IsStrictOrderedRing.{u} R
+            (@DivisionSemiring.toSemiring.{u} R (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst)))
+            (@SemilatticeInf.toPartialOrder.{u} R
+              (@Lattice.toSemilatticeInf.{u} R
+                (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst_1))))] →
+        Prop :=
+fun R [inst : Field.{u} R] [inst_1 : LinearOrder.{u} R]
+    [@IsStrictOrderedRing.{u} R
+        (@DivisionSemiring.toSemiring.{u} R (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst)))
+        (@SemilatticeInf.toPartialOrder.{u} R
+          (@Lattice.toSemilatticeInf.{u} R
+            (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst_1))))] =>
+  ∀ (K : Type u) [inst_3 : Field.{u} K] [inst_4 : LinearOrder.{u} K]
+    [@IsStrictOrderedRing.{u} K
+        (@DivisionSemiring.toSemiring.{u} K (@Semifield.toDivisionSemiring.{u} K (@Field.toSemifield.{u} K inst_3)))
+        (@SemilatticeInf.toPartialOrder.{u} K
+          (@Lattice.toSemilatticeInf.{u} K
+            (@DistribLattice.toLattice.{u} K (@instDistribLatticeOfLinearOrder.{u} K inst_4))))]
+    (ι :
+      @OrderRingHom.{u, u} R K
+        (@Semiring.toNonAssocSemiring.{u} R
+          (@DivisionSemiring.toSemiring.{u} R (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst))))
+        (@PartialOrder.toPreorder.{u} R
+          (@SemilatticeInf.toPartialOrder.{u} R
+            (@Lattice.toSemilatticeInf.{u} R
+              (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst_1)))))
+        (@Semiring.toNonAssocSemiring.{u} K
+          (@DivisionSemiring.toSemiring.{u} K (@Semifield.toDivisionSemiring.{u} K (@Field.toSemifield.{u} K inst_3))))
+        (@PartialOrder.toPreorder.{u} K
+          (@SemilatticeInf.toPartialOrder.{u} K
+            (@Lattice.toSemilatticeInf.{u} K
+              (@DistribLattice.toLattice.{u} K (@instDistribLatticeOfLinearOrder.{u} K inst_4))))))
+    (n : Nat) (f : @MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst))),
+    (∃ y,
+        @LT.lt.{u} K
+          (@Preorder.toLT.{u} K
+            (@PartialOrder.toPreorder.{u} K
+              (@SemilatticeInf.toPartialOrder.{u} K
+                (@Lattice.toSemilatticeInf.{u} K
+                  (@DistribLattice.toLattice.{u} K (@instDistribLatticeOfLinearOrder.{u} K inst_4))))))
+          (@MvPolynomial.eval₂.{u, u, 0} R K (Fin n) (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst))
+            (@Semifield.toCommSemiring.{u} K (@Field.toSemifield.{u} K inst_3))
+            (@OrderRingHom.toRingHom.{u, u} R K
+              (@Semiring.toNonAssocSemiring.{u} R
+                (@DivisionSemiring.toSemiring.{u} R
+                  (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst))))
+              (@PartialOrder.toPreorder.{u} R
+                (@SemilatticeInf.toPartialOrder.{u} R
+                  (@Lattice.toSemilatticeInf.{u} R
+                    (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst_1)))))
+              (@Semiring.toNonAssocSemiring.{u} K
+                (@DivisionSemiring.toSemiring.{u} K
+                  (@Semifield.toDivisionSemiring.{u} K (@Field.toSemifield.{u} K inst_3))))
+              (@PartialOrder.toPreorder.{u} K
+                (@SemilatticeInf.toPartialOrder.{u} K
+                  (@Lattice.toSemilatticeInf.{u} K
+                    (@DistribLattice.toLattice.{u} K (@instDistribLatticeOfLinearOrder.{u} K inst_4)))))
+              ι)
+            y f)
+          (@OfNat.ofNat.{u} K (nat_lit 0)
+            (@Zero.toOfNat0.{u} K
+              (@MulZeroClass.toZero.{u} K
+                (@instMulZeroClassOfSemiring.{u} K
+                  (@DivisionSemiring.toSemiring.{u} K
+                    (@Semifield.toDivisionSemiring.{u} K (@Field.toSemifield.{u} K inst_3)))))))) →
+      ∃ x,
+        @LT.lt.{u} R
+          (@Preorder.toLT.{u} R
+            (@PartialOrder.toPreorder.{u} R
+              (@SemilatticeInf.toPartialOrder.{u} R
+                (@Lattice.toSemilatticeInf.{u} R
+                  (@DistribLattice.toLattice.{u} R (@instDistribLatticeOfLinearOrder.{u} R inst_1))))))
+          (@DFunLike.coe.{u + 1, u + 1, u + 1}
+            (@RingHom.{u, u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst))) R
+              (@AddMonoidAlgebra.nonAssocSemiring.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)))
+                (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+              (@Semiring.toNonAssocSemiring.{u} R
+                (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)))))
+            (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)))
+            (fun x => R)
+            (@RingHom.instFunLike.{u, u}
+              (@MvPolynomial.{0, u} (Fin n) R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst))) R
+              (@AddMonoidAlgebra.nonAssocSemiring.{u, 0} R
+                (@Finsupp.{0, 0} (Fin n) Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)))
+                (@Finsupp.instAddZeroClass.{0, 0} (Fin n) Nat (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)))
+              (@Semiring.toNonAssocSemiring.{u} R
+                (@CommSemiring.toSemiring.{u} R (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)))))
+            (@MvPolynomial.eval.{u, 0} R (Fin n) (@Semifield.toCommSemiring.{u} R (@Field.toSemifield.{u} R inst)) x) f)
+          (@OfNat.ofNat.{u} R (nat_lit 0)
+            (@Zero.toOfNat0.{u} R
+              (@MulZeroClass.toZero.{u} R
+                (@instMulZeroClassOfSemiring.{u} R
+                  (@DivisionSemiring.toSemiring.{u} R
+                    (@Semifield.toDivisionSemiring.{u} R (@Field.toSemifield.{u} R inst)))))))

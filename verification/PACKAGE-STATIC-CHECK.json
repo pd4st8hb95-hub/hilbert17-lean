@@ -1,0 +1,18 @@
+{
+  "scope": "Static package checks only; no Lean or Lake command run by packager",
+  "status": "PASS",
+  "module_source_hashes": 10,
+  "git_dependencies": 9,
+  "local_markdown_links": "all resolved",
+  "symlinks": 0,
+  "checks": [
+    "Compiled source snapshots unchanged",
+    "Each compile receipt source hash matches included source",
+    "Pinned Git-only dependency manifest",
+    "All local imports resolve to packaged root modules",
+    "All local Markdown links resolve",
+    "No cache or compiled artifact copied"
+  ],
+  "portable_entrypoint": "Root receipt confirmed successful compilation of current entry source",
+  "inventory": "../PACKAGE-MANIFEST.json"
+}

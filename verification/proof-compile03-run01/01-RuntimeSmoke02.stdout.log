@@ -1,0 +1,9 @@
+IsSumSq.{u_1} {R : Type u_1} [Mul R] [Add R] [Zero R] : R → Prop
+IsFormallyReal.{u_1} (R : Type u_1) [AddCommMonoid R] [Mul R] : Prop
+IsSemireal.{u_1} (R : Type u_1) [Add R] [Mul R] [One R] [Zero R] : Prop
+IsRealClosed.{u_1} (R : Type u_1) [Field R] : Prop
+RingCone.{u_1} (R : Type u_1) [Ring R] : Type u_1
+RingPreordering.{u_1} (R : Type u_1) [CommRing R] : Type u_1
+<build-workspace>/hilbert17-20261013/checks/RuntimeSmoke02.lean:26:7: error(lean.unknownIdentifier): Unknown identifier `RingOrdering`
+MvPolynomial.{u_1, u_2} (σ : Type u_1) (R : Type u_2) [CommSemiring R] : Type (max u_2 u_1)
+FractionRing.{u_1} (R : Type u_1) [CommRing R] : Type u_1

@@ -1,0 +1,62 @@
+Hilbert17Target.Poly.{u_1} (R : Type u_1) [CommSemiring.{u_1} R] (n : Nat) : Type u_1
+'Hilbert17Target.Poly' depends on axioms: [propext, Quot.sound.{u}]
+Hilbert17Target.RatFun.{u_1} (R : Type u_1) [CommRing.{u_1} R] (n : Nat) : Type u_1
+'Hilbert17Target.RatFun' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.NonnegativeEverywhere.{u_1} {R : Type u_1} [CommSemiring.{u_1} R] [Preorder.{u_1} R] {n : Nat}
+  (f : @Hilbert17Target.Poly.{u_1} R inst✝ n) : Prop
+'Hilbert17Target.NonnegativeEverywhere' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.RationalSOS.{u_1} {R : Type u_1} [CommRing.{u_1} R] {n : Nat}
+  (f : @Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst✝) n) : Prop
+'Hilbert17Target.RationalSOS' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.ClearedSOS.{u_1} {R : Type u_1} [CommRing.{u_1} R] {n : Nat}
+  (f : @Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst✝) n) : Prop
+'Hilbert17Target.ClearedSOS' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.ExplicitClearedSOS.{u_1} {R : Type u_1} [CommRing.{u_1} R] {n : Nat}
+  (f : @Hilbert17Target.Poly.{u_1} R (@CommRing.toCommSemiring.{u_1} R inst✝) n) : Prop
+'Hilbert17Target.ExplicitClearedSOS' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.Hilbert17Real : Prop
+'Hilbert17Target.Hilbert17Real' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.Hilbert17RealCleared : Prop
+'Hilbert17Target.Hilbert17RealCleared' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Target.Hilbert17RealClosed.{u_1} (R : Type u_1) [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [@IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))]
+  [@IsRealClosed.{u_1} R inst✝] : Prop
+'Hilbert17Target.Hilbert17RealClosed' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def Hilbert17Target.Hilbert17Real : Prop :=
+∀ (n : Nat) (f : @Hilbert17Target.Poly.{0} Real Real.instCommSemiring n),
+  @Hilbert17Target.NonnegativeEverywhere.{0} Real Real.instCommSemiring Real.instPreorder n f →
+    @Hilbert17Target.RationalSOS.{0} Real Real.commRing n f
+def Hilbert17Target.Hilbert17RealCleared : Prop :=
+∀ (n : Nat) (f : @Hilbert17Target.Poly.{0} Real Real.instCommSemiring n),
+  @Hilbert17Target.NonnegativeEverywhere.{0} Real Real.instCommSemiring Real.instPreorder n f →
+    @Hilbert17Target.ExplicitClearedSOS.{0} Real Real.commRing n f
+def Hilbert17Target.Hilbert17RealClosed.{u_1} : (R : Type u_1) →
+  [inst : Field.{u_1} R] →
+    [inst_1 : LinearOrder.{u_1} R] →
+      [@IsStrictOrderedRing.{u_1} R
+            (@DivisionSemiring.toSemiring.{u_1} R
+              (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst)))
+            (@SemilatticeInf.toPartialOrder.{u_1} R
+              (@Lattice.toSemilatticeInf.{u_1} R
+                (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst_1))))] →
+        [@IsRealClosed.{u_1} R inst] → Prop :=
+fun R [inst : Field.{u_1} R] [inst_1 : LinearOrder.{u_1} R]
+    [@IsStrictOrderedRing.{u_1} R
+        (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst)))
+        (@SemilatticeInf.toPartialOrder.{u_1} R
+          (@Lattice.toSemilatticeInf.{u_1} R
+            (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst_1))))]
+    [@IsRealClosed.{u_1} R inst] =>
+  ∀ (n : Nat)
+    (f : @Hilbert17Target.Poly.{u_1} R (@Semifield.toCommSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst)) n),
+    @Hilbert17Target.NonnegativeEverywhere.{u_1} R (@Semifield.toCommSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst))
+        (@PartialOrder.toPreorder.{u_1} R
+          (@SemilatticeInf.toPartialOrder.{u_1} R
+            (@Lattice.toSemilatticeInf.{u_1} R
+              (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst_1)))))
+        n f →
+      @Hilbert17Target.RationalSOS.{u_1} R (@Field.toCommRing.{u_1} R inst) n f

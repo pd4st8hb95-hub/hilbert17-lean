@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "scope": "Portable partial-proof baseline; source files are byte-identical to successful compiled snapshots. No full Hilbert17 proof.",
+  "upstream_adaptation": {
+    "file": "RealInstance.lean",
+    "repository": "https://github.com/TauCetiProject/TauCeti",
+    "commit": "6b896c7c411221eb78639e4be8ead6e479a62893",
+    "path": "TauCeti/FieldTheory/IsRealClosed/Real.lean",
+    "url": "https://github.com/TauCetiProject/TauCeti/blob/6b896c7c411221eb78639e4be8ead6e479a62893/TauCeti/FieldTheory/IsRealClosed/Real.lean",
+    "author": "Kim Morrison",
+    "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+    "license": "Apache-2.0",
+    "upstream_git_blob": "ab6a34e12ac6d384d8ab4026f82bfbd437a07fcf",
+    "archived_path": "upstream/TauCeti-Real.lean",
+    "archived_sha256": "2865f850d08c62dcefb33e7ece9994b8832b5173fbe252164ecfe2726976907b",
+    "changes": "Adapted imports to pinned Mathlib; local Hilbert17Transfer namespace; theorem provided for explicit local instance installation instead of a global instance. Existing original attribution is retained.",
+    "adapted_sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+  },
+  "license": {
+    "file": "LICENSE",
+    "upstream_git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "applies_to": "Attributed upstream material. This snapshot does not add a project-wide license grant for original contributions."
+  },
+  "mathlib": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "license_file": "licenses/mathlib-Apache-2.0.txt",
+    "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  }
+}

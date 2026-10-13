@@ -1,0 +1,89 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:12:40.510762+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/delivery-entry-compile-plan02.json",
+  "plan_sha256": "cc62c66c026af8b0cd8e3e346e54895d2f34aae81ddb4d951fd3407780227bb1",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/delivery-entry02-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/delivery-entry02-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Retry combined import smoke at root-approved 4096 MiB cap; compile two additional official modules; compile eight pinned local source drafts. Stops on first failure, no automatic retries. No unconditional Hilbert17 theorem acceptance implied.",
+  "jobs": [
+    {
+      "label": "Hilbert17",
+      "source": {
+        "path": "<build-workspace>/hilbert17-delivery-20261013/Hilbert17.lean",
+        "bytes": 466,
+        "sha256": "e9106e6e8c285b757837dee59235076db13ff35959bb74afee7d63205bcca497"
+      },
+      "start_utc": "2026-10-13T13:12:40.511016+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:12:40.511007+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366192,
+        "used_percent": 18.03080936202666
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-delivery-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17.ilean",
+        "<build-workspace>/hilbert17-delivery-20261013/Hilbert17.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/delivery-entry02-run01/01-Hilbert17.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/delivery-entry02-run01/01-Hilbert17.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:12:42.013474+00:00",
+      "peak_physical_used_percent": 19.96808310932593,
+      "memory_after": {
+        "utc": "2026-10-13T13:12:42.013652+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8361772,
+        "used_percent": 18.074115064623474
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17.olean",
+          "bytes": 2464,
+          "sha256": "c26ffce7e6492a29fb17d6dd8b2c06d3db73e11d7192ddcf17d127615fe8119c"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/Hilbert17.ilean",
+          "bytes": 471,
+          "sha256": "0214c81218b16b59d723fbef115a21a7cbd200ad2fce2a2872df2dcb99602954"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:12:42.014281+00:00"
+}

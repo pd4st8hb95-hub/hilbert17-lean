@@ -1,0 +1,11 @@
+<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean:43:20: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Infinite R
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean:43:9: error: Tactic `rcases` failed: `x✝ : ?m.79` is not an inductive datatype
+<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean:54:2: error: typeclass instance problem is stuck
+  IsFractionRing (MvPolynomial ?m.8 ?m.7) (FractionRing (MvPolynomial (Fin n) ℝ))
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, and fifth type arguments to `IsFractionRing` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.

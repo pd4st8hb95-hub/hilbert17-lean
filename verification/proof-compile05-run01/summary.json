@@ -1,0 +1,188 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T12:59:29.116131+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/proof-compile-plan05.json",
+  "plan_sha256": "2615cc32703769fd58055ae03dcba15aa542ef41c8caf44f544ae71fdd03284b",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Retry combined import smoke at root-approved 4096 MiB cap; compile two additional official modules; compile eight pinned local source drafts. Stops on first failure, no automatic retries. No unconditional Hilbert17 theorem acceptance implied.",
+  "jobs": [
+    {
+      "label": "OrderingSeparation",
+      "source": {
+        "path": "<build-workspace>/hilbert17-algebra/OrderingSeparation.lean",
+        "bytes": 8196,
+        "sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+      },
+      "start_utc": "2026-10-13T12:59:29.116583+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:59:29.116573+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8363228,
+        "used_percent": 18.05984965670923
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-algebra",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.ilean",
+        "<build-workspace>/hilbert17-algebra/OrderingSeparation.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/01-OrderingSeparation.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/01-OrderingSeparation.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T12:59:31.119403+00:00",
+      "peak_physical_used_percent": 19.910786333582454,
+      "memory_after": {
+        "utc": "2026-10-13T12:59:31.119568+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8372908,
+        "used_percent": 17.965008208488154
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.olean",
+          "bytes": 358248,
+          "sha256": "038859d694c8d94a656943a1e5edc36394b825219abad9a432e0d3afa31485d4"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.ilean",
+          "bytes": 21393,
+          "sha256": "077959e2542b0a560af017aca64e0baf2f778dc407374a6444d786f47a114182"
+        }
+      ]
+    },
+    {
+      "label": "RealInstance",
+      "source": {
+        "path": "<build-workspace>/hilbert17-transfer/RealInstance.lean",
+        "bytes": 2171,
+        "sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+      },
+      "start_utc": "2026-10-13T12:59:31.121220+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:59:31.121200+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8371996,
+        "used_percent": 17.973943683775097
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-transfer",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.ilean",
+        "<build-workspace>/hilbert17-transfer/RealInstance.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/02-RealInstance.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/02-RealInstance.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T12:59:33.124056+00:00",
+      "peak_physical_used_percent": 20.639968145814414,
+      "memory_after": {
+        "utc": "2026-10-13T12:59:33.124205+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359432,
+        "used_percent": 18.09704161305708
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.olean",
+          "bytes": 69064,
+          "sha256": "51304cde661786853a4b38f40b921215663faf8e3de1f2b224a7b1dae127d773"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.ilean",
+          "bytes": 4878,
+          "sha256": "d604e6757bb55dd5e1a359b8aedbb5e8103851f407d4f08709c6d7ed481d2cfa"
+        }
+      ]
+    },
+    {
+      "label": "CoefficientOrder",
+      "source": {
+        "path": "<build-workspace>/hilbert17-transfer/CoefficientOrder.lean",
+        "bytes": 1319,
+        "sha256": "6ce5b5fcad050555c10e24a0364943897064c84dd9613375a15923bbbc537fd3"
+      },
+      "start_utc": "2026-10-13T12:59:33.124996+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:59:33.124984+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359432,
+        "used_percent": 18.09704161305708
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-transfer",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.ilean",
+        "<build-workspace>/hilbert17-transfer/CoefficientOrder.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/03-CoefficientOrder.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile05-run01/03-CoefficientOrder.stderr.log",
+      "pid": 11,
+      "exit_code": 1,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T12:59:34.627339+00:00",
+      "peak_physical_used_percent": 20.19538905960785,
+      "memory_after": {
+        "utc": "2026-10-13T12:59:34.627485+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8336876,
+        "used_percent": 18.318037863684623
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T12:59:34.628218+00:00"
+}

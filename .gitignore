@@ -1,0 +1,7 @@
+.lake/
+*.olean
+*.ilean
+*.olean.private
+*.olean.server
+*.ir
+__pycache__/

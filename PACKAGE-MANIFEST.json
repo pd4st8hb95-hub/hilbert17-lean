@@ -1,0 +1,850 @@
+{
+  "scope": "Exact delivery file inventory; manifest excludes itself. No package publication performed by the packager.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 72,
+      "sha256": "0df0edc7921e1ecd7a5fc7148032ce468cbdc67e2120d848fb564a48536a7dc3"
+    },
+    {
+      "path": "CertificateNonnegative.lean",
+      "bytes": 2304,
+      "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+    },
+    {
+      "path": "ClearDenominators.lean",
+      "bytes": 6382,
+      "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+    },
+    {
+      "path": "CoefficientOrder.lean",
+      "bytes": 1362,
+      "sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+    },
+    {
+      "path": "ConditionalArtin.lean",
+      "bytes": 4012,
+      "sha256": "c0c0ac875a5ef979974a915aca5ff24520a4338f8cc1e98b6813a640a30d272b"
+    },
+    {
+      "path": "FractionSemireal.lean",
+      "bytes": 2425,
+      "sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+    },
+    {
+      "path": "Hilbert17.lean",
+      "bytes": 466,
+      "sha256": "e9106e6e8c285b757837dee59235076db13ff35959bb74afee7d63205bcca497"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "LocalizationSignDescent.lean",
+      "bytes": 2439,
+      "sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+    },
+    {
+      "path": "OrderingSeparation.lean",
+      "bytes": 8196,
+      "sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 1827,
+      "sha256": "7afd43f422f0ae82aa990671fd01932ecad481b239e9cffa758641d6b5fee63e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4902,
+      "sha256": "576bedffcbd726964e5c24e3abdbe3373f76434be76f1204cf313ff1fdac7400"
+    },
+    {
+      "path": "RealInstance.lean",
+      "bytes": 2171,
+      "sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1263,
+      "sha256": "b14b6d3417194f8886981e4f9d67effc02d0e98b9947a6c9d20ca6923bea4ee0"
+    },
+    {
+      "path": "TargetSanity.lean",
+      "bytes": 2847,
+      "sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+    },
+    {
+      "path": "TargetSpec.lean",
+      "bytes": 2016,
+      "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+    },
+    {
+      "path": "checks/CertificateNonnegativeAxioms.lean",
+      "bytes": 424,
+      "sha256": "b4c328a9ac1dac1e8273d6377e65c5374df582c9a367a8fefd0937adc376ee7d"
+    },
+    {
+      "path": "checks/ClearDenominatorsAxioms.lean",
+      "bytes": 847,
+      "sha256": "8f64f249f5883e22f85ecc4880eafd9f1800cfc4efac6697f4e055af26b59841"
+    },
+    {
+      "path": "checks/CoefficientOrderAxioms.lean",
+      "bytes": 576,
+      "sha256": "70649c6d814828735d01da1e11329d4f97d6f6f52bc248b1dcba25e57cf197f9"
+    },
+    {
+      "path": "checks/ConditionalArtinAxioms.lean",
+      "bytes": 699,
+      "sha256": "f8e04babdca7f921c0382e68e377e8ad71b0caedf42a74bcd39d368b5ef89afc"
+    },
+    {
+      "path": "checks/FractionSemirealAxioms.lean",
+      "bytes": 482,
+      "sha256": "09fe5d0bd29a34c5dda58c4b13eb14b31e0895574e80fcbbef1b78d9b71937ec"
+    },
+    {
+      "path": "checks/LocalizationSignDescentAxioms.lean",
+      "bytes": 701,
+      "sha256": "6b1f8420279e5d824f3d48bcdd69ea37e438562d0aa2903b00430d4db9a5112e"
+    },
+    {
+      "path": "checks/OrderingSeparationAxioms.lean",
+      "bytes": 1998,
+      "sha256": "7aa63d75c967336b092072e432026326461fbee2b8bf4cb56ef8f1cc8b1f4ffd"
+    },
+    {
+      "path": "checks/RealInstanceAxioms.lean",
+      "bytes": 424,
+      "sha256": "9cb16067ce8ed4d7d06419736e65510321208eba93d1c06e91a5dde3718b9e54"
+    },
+    {
+      "path": "checks/TargetSanityAxioms.lean",
+      "bytes": 806,
+      "sha256": "5265b5e8b97e848a40060376797d6c056993bee55a0e87ff06b204261d724f75"
+    },
+    {
+      "path": "checks/TargetSpecAxioms.lean",
+      "bytes": 1070,
+      "sha256": "c616834fabcd14d9a0486ada8350e4b5dbb3329ff8588dbdbfe0f185050cb529"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3562,
+      "sha256": "640f59ca3c454c877f6961402b027007158774719f9d8358f533b550385bb9c2"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 496,
+      "sha256": "0406e57187af2d4d6a093ef494693661564f9ec5bd016c70acf733c9df6f3396"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af"
+    },
+    {
+      "path": "licenses/TauCeti-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "licenses/mathlib-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 9145,
+      "sha256": "5061b33400ad2565d793c184979ff046e315dccb79546c07d430d4009fe72ce2"
+    },
+    {
+      "path": "upstream/TauCeti-Real.lean",
+      "bytes": 1843,
+      "sha256": "2865f850d08c62dcefb33e7ece9994b8832b5173fbe252164ecfe2726976907b"
+    },
+    {
+      "path": "verification/FAILED-ATTEMPTS.md",
+      "bytes": 2281,
+      "sha256": "deb4dec5473a7603d547098ae4bc52c26f841df5a4554e7efd967f86d8e50775"
+    },
+    {
+      "path": "verification/PACKAGE-STATIC-CHECK.json",
+      "bytes": 670,
+      "sha256": "38cd5ec808d9d35e3811b62742e16ab11a066fd122f76ac32f146a2e587cd3a0"
+    },
+    {
+      "path": "verification/ROOT-AXIOM-AUDIT01.json",
+      "bytes": 21086,
+      "sha256": "04daff555f02e9b7f6043b6572e1d79015b35993fd42ad25790c931994cd3494"
+    },
+    {
+      "path": "verification/STATUS.md",
+      "bytes": 2560,
+      "sha256": "d80249755d1ae612afd9878519076983986ec022d06c952468cb426179f6eebf"
+    },
+    {
+      "path": "verification/delivery-entry01-run01/01-Hilbert17.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/delivery-entry01-run01/01-Hilbert17.stdout.log",
+      "bytes": 144,
+      "sha256": "4e8e905619466a7f22ccdf6fc82647fee001b0c43c87a4c905ef595947ecea9a"
+    },
+    {
+      "path": "verification/delivery-entry01-run01/summary.json",
+      "bytes": 4243,
+      "sha256": "e532f9d9bafdb19aea2dfce0f0c4998ebf0546322f4f30766ce4c8d39aa1005c"
+    },
+    {
+      "path": "verification/delivery-entry02-run01/01-Hilbert17.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/delivery-entry02-run01/01-Hilbert17.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/delivery-entry02-run01/summary.json",
+      "bytes": 4677,
+      "sha256": "1b190a8f47de4a05af656b4b9365ae28543cfe2c53bddd3f9f1afc55ccb80f27"
+    },
+    {
+      "path": "verification/evidence-manifest.json",
+      "bytes": 52957,
+      "sha256": "e098aab78e65df647e4fb4a321900a19f91307d3b61105146af2501be28813a7"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/01-TargetSpecAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/01-TargetSpecAxioms.stdout.log",
+      "bytes": 4454,
+      "sha256": "23b95e21d84eef4be8d51ccd77c69679e5a63fb8502691d4b44a10c1daa5882e"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stdout.log",
+      "bytes": 73918,
+      "sha256": "a14813c35bd16a877f0dbec513fc9fa1498b6281809e56895aed1e411d886053"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/03-FractionSemirealAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/03-FractionSemirealAxioms.stdout.log",
+      "bytes": 18563,
+      "sha256": "6703869ceb6128aa3208e57b84653eac1b55a975b2320da45dec539a797ab935"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stdout.log",
+      "bytes": 17871,
+      "sha256": "af59959f4f888be5c2a3b207927a5be8668c96f962b4a20fdc497799baba1ab8"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/05-RealInstanceAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/05-RealInstanceAxioms.stdout.log",
+      "bytes": 546,
+      "sha256": "5bc8c626e051bfb65110c5c87498a56bcc7ebf3c631042f619b2eb0fc708f527"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stdout.log",
+      "bytes": 12645,
+      "sha256": "cd8b1334dbc3d775e54e0c038902ea049dae1bc450b0ca204b9cae76cae5ab9f"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stdout.log",
+      "bytes": 18728,
+      "sha256": "9060df5eddc974f1014cd5d65ea40b30937fd4c4b6531c15e65cdf5993f30cae"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stdout.log",
+      "bytes": 41235,
+      "sha256": "c3a0b8511cc9c1fbbe201a8c23784c8269d02ac6476592e9725a6a2067151b8e"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/09-TargetSanityAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/09-TargetSanityAxioms.stdout.log",
+      "bytes": 88630,
+      "sha256": "077daeeaeedd58efc66ccf348585f3e05172a73fda7be8add177922603ef882f"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stdout.log",
+      "bytes": 30114,
+      "sha256": "1085ab56546e7da0032689f7125ca48af38b6f3899ded2c279e2a3220bdb7a0e"
+    },
+    {
+      "path": "verification/proof-axioms02-run01/summary.json",
+      "bytes": 24872,
+      "sha256": "c9efda53d2b11eb851a276aa10b6d811ee1f48998c7a50e610976b92d0f04899"
+    },
+    {
+      "path": "verification/proof-checker01-run01/01-TargetSpec.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/01-TargetSpec.stdout.log",
+      "bytes": 21,
+      "sha256": "726e9fe77e63e4357c0ca43144b54627ff39beab62b3f9a51903deb47edd9d71"
+    },
+    {
+      "path": "verification/proof-checker01-run01/02-ClearDenominators.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/02-ClearDenominators.stdout.log",
+      "bytes": 28,
+      "sha256": "234d1efd06b6b30be0e6fd67e2c44e98c5fb601c60faf10941736f1d825e4c55"
+    },
+    {
+      "path": "verification/proof-checker01-run01/03-FractionSemireal.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/03-FractionSemireal.stdout.log",
+      "bytes": 27,
+      "sha256": "b9bf8dd216820815a8cde90a32358646cb89af0ac372e5afc8f48174de49ab74"
+    },
+    {
+      "path": "verification/proof-checker01-run01/04-OrderingSeparation.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/04-OrderingSeparation.stdout.log",
+      "bytes": 29,
+      "sha256": "246a4d4a3f0d786fe234a324c7abf0d903cdff4cad03568e55f678eb1e595a24"
+    },
+    {
+      "path": "verification/proof-checker01-run01/05-RealInstance.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/05-RealInstance.stdout.log",
+      "bytes": 23,
+      "sha256": "8da337b5726733029c9928464fc002b1e1ba20ff9e37cad19fe1d1e259667492"
+    },
+    {
+      "path": "verification/proof-checker01-run01/06-CoefficientOrder.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/06-CoefficientOrder.stdout.log",
+      "bytes": 27,
+      "sha256": "3cd4adf22e51c813b0cf649f88dc7bc638a3c086156bbe28b1bfa8d323f742f8"
+    },
+    {
+      "path": "verification/proof-checker01-run01/07-LocalizationSignDescent.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/07-LocalizationSignDescent.stdout.log",
+      "bytes": 34,
+      "sha256": "f19b9555c13810205bcffcc6d173cb99a9f57c47a9c4dbfd41882a73eec8695a"
+    },
+    {
+      "path": "verification/proof-checker01-run01/08-TargetSanity.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/08-TargetSanity.stdout.log",
+      "bytes": 23,
+      "sha256": "7e951dbe9cd21cd833359e58381dde7f22be272ff00afb9d70a41af6a199bfb8"
+    },
+    {
+      "path": "verification/proof-checker01-run01/09-CertificateNonnegative.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker01-run01/09-CertificateNonnegative.stdout.log",
+      "bytes": 33,
+      "sha256": "b4411a48d415fa48ed8a501b725d522ddb46655d59edc9d3cc87084884c61445"
+    },
+    {
+      "path": "verification/proof-checker01-run01/summary.json",
+      "bytes": 18491,
+      "sha256": "cb3ad2ca48dbbc5de8ed9b2c00271c8c7d414820b227942f1647be9a7ce56a1b"
+    },
+    {
+      "path": "verification/proof-checker02-conditional-run01/01-ConditionalArtin.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-checker02-conditional-run01/01-ConditionalArtin.stdout.log",
+      "bytes": 27,
+      "sha256": "6b052ca7d30f2bd205b4a6c2e700f202a1777317c51056afadfb2345258eaf33"
+    },
+    {
+      "path": "verification/proof-checker02-conditional-run01/summary.json",
+      "bytes": 4107,
+      "sha256": "d15a4971d9bd31a8db964845181d5cdfc2d0ffd013b86555bc59ebc115dd903e"
+    },
+    {
+      "path": "verification/proof-compile03-run01/01-RuntimeSmoke02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile03-run01/01-RuntimeSmoke02.stdout.log",
+      "bytes": 656,
+      "sha256": "c0fffa5e2729281c5f7e7199b002e071bd5f5f546b36162d48edeb7cbcc46411"
+    },
+    {
+      "path": "verification/proof-compile03-run01/summary.json",
+      "bytes": 4259,
+      "sha256": "4cff249e8863e80c4e644ff59a2d2891e6fbcdbef40bd7b719b323aa673c3ff1"
+    },
+    {
+      "path": "verification/proof-compile04-run01/01-RuntimeSmoke03.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/01-RuntimeSmoke03.stdout.log",
+      "bytes": 613,
+      "sha256": "d3ba8f12a2a9bde2e0e066011cf81169673ec8e3234384d6dfe0732098ff8fd2"
+    },
+    {
+      "path": "verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/04-TargetSpec.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/04-TargetSpec.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/05-ClearDenominators.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/05-ClearDenominators.stdout.log",
+      "bytes": 195,
+      "sha256": "9457b2acef731ed93ae00b6196f464ac383bed477aaf05e3ceddefd652753230"
+    },
+    {
+      "path": "verification/proof-compile04-run01/06-FractionSemireal.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile04-run01/06-FractionSemireal.stdout.log",
+      "bytes": 1220,
+      "sha256": "0de959d7499a8ae31a9712ee435d88aa0254ceeed378a8bb0415653485201217"
+    },
+    {
+      "path": "verification/proof-compile04-run01/summary.json",
+      "bytes": 17103,
+      "sha256": "225bc9a0f65c23b0f04cb821ea5266a55d00119bc38749f0337347a5bdc773d1"
+    },
+    {
+      "path": "verification/proof-compile05-run01/01-OrderingSeparation.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile05-run01/01-OrderingSeparation.stdout.log",
+      "bytes": 684,
+      "sha256": "2623f8343226d88a62cfe3529ab10f18ef9b14d15a302b33bc08a2ab72c5d322"
+    },
+    {
+      "path": "verification/proof-compile05-run01/02-RealInstance.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile05-run01/02-RealInstance.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile05-run01/03-CoefficientOrder.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile05-run01/03-CoefficientOrder.stdout.log",
+      "bytes": 271,
+      "sha256": "e8c1259462fc79acaf99160180b1cd5994596870c6fda50d9e8b77ae0d220d3d"
+    },
+    {
+      "path": "verification/proof-compile05-run01/summary.json",
+      "bytes": 8525,
+      "sha256": "3db17407fe5b9e4dcc8f4ae1882d1d04b999f531d3cdc61151090f935c4bfb7c"
+    },
+    {
+      "path": "verification/proof-compile06-run01/01-Mathlib_Algebra_CharZero_Infinite.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile06-run01/01-Mathlib_Algebra_CharZero_Infinite.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile06-run01/02-FractionSemireal.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile06-run01/02-FractionSemireal.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile06-run01/summary.json",
+      "bytes": 7865,
+      "sha256": "7fe4f5d749b43bbdf62afaa435dc9bfe89aaab9200ea76f8a64736bc39526d50"
+    },
+    {
+      "path": "verification/proof-compile07-run01/01-CoefficientOrder.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile07-run01/01-CoefficientOrder.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile07-run01/02-LocalizationSignDescent.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile07-run01/02-LocalizationSignDescent.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile07-run01/03-ConditionalArtin.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile07-run01/03-ConditionalArtin.stdout.log",
+      "bytes": 543,
+      "sha256": "9a8b4ce8e3054bce7703ed559fcce2d5992b437b89e2c8ff6cf4a84319a5b910"
+    },
+    {
+      "path": "verification/proof-compile07-run01/summary.json",
+      "bytes": 8629,
+      "sha256": "e5d354f00707c737825a4f843c06338cd86e70e5b59320b368fe1cd026b621eb"
+    },
+    {
+      "path": "verification/proof-compile08-run01/01-ConditionalArtin.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile08-run01/01-ConditionalArtin.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/proof-compile08-run01/summary.json",
+      "bytes": 4727,
+      "sha256": "ac118872b035d5c71554c94f6d182e8e660e220f8b81aeed4caeb68c5750f0c0"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stdout.log",
+      "bytes": 164,
+      "sha256": "1ad5e54272e5c16974bd842d18306a81b8fd926b0a1e4434c4457a3c4150077d"
+    },
+    {
+      "path": "verification/realclosure-compile01-run01/summary.json",
+      "bytes": 10878,
+      "sha256": "b463856b18ebc0858b863631dc2da7cab0a6ead49ca540791f6f99224460d2b7"
+    },
+    {
+      "path": "verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "bytes": 266,
+      "sha256": "5f3ecf4255a2b6ad8dece9bbdb796eb10bf01328706c8dabcaf327360fe7a5a0"
+    },
+    {
+      "path": "verification/runtime-compile02-run01/summary.json",
+      "bytes": 4072,
+      "sha256": "22f0db680e34093c5b89cb92cc55c4f903857b8cfe50c39d2919cbccc8c2bc84"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/13-RuntimeSmoke02.stderr.log",
+      "bytes": 196,
+      "sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/13-RuntimeSmoke02.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/runtime-compile02-run02/summary.json",
+      "bytes": 42009,
+      "sha256": "ce7d8af9947661d92528cbf4770cdd5747ccdabd28b43dd03ce9f8ce361334d2"
+    },
+    {
+      "path": "verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/02-TargetSanity.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/02-TargetSanity.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/03-CertificateNonnegative.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/03-CertificateNonnegative.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/target-reverse01-run01/summary.json",
+      "bytes": 10053,
+      "sha256": "afd2fd975b522fa18f239b6c6c5c894069456d0f8bb926352d2ce54b6bba1438"
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "scope": "Exported completed run summaries and stdout/stderr. Build-workspace path prefixes normalized where present. Root axiom-audit receipt copied byte-for-byte. Logs describe the original isolated build; fresh portable Lake build is not claimed.",
+  "files": [
+    {
+      "file": "verification/proof-checker01-run01/summary.json",
+      "original_sha256": "59bc8795ec95daf85cd7f1d96138be92120e7a2b2567eb222d61bf43e3b3f88e",
+      "export_sha256": "cb3ad2ca48dbbc5de8ed9b2c00271c8c7d414820b227942f1647be9a7ce56a1b",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/01-TargetSpec.stdout.log",
+      "original_sha256": "726e9fe77e63e4357c0ca43144b54627ff39beab62b3f9a51903deb47edd9d71",
+      "export_sha256": "726e9fe77e63e4357c0ca43144b54627ff39beab62b3f9a51903deb47edd9d71",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/02-ClearDenominators.stdout.log",
+      "original_sha256": "234d1efd06b6b30be0e6fd67e2c44e98c5fb601c60faf10941736f1d825e4c55",
+      "export_sha256": "234d1efd06b6b30be0e6fd67e2c44e98c5fb601c60faf10941736f1d825e4c55",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/03-FractionSemireal.stdout.log",
+      "original_sha256": "b9bf8dd216820815a8cde90a32358646cb89af0ac372e5afc8f48174de49ab74",
+      "export_sha256": "b9bf8dd216820815a8cde90a32358646cb89af0ac372e5afc8f48174de49ab74",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/04-OrderingSeparation.stdout.log",
+      "original_sha256": "246a4d4a3f0d786fe234a324c7abf0d903cdff4cad03568e55f678eb1e595a24",
+      "export_sha256": "246a4d4a3f0d786fe234a324c7abf0d903cdff4cad03568e55f678eb1e595a24",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/05-RealInstance.stdout.log",
+      "original_sha256": "8da337b5726733029c9928464fc002b1e1ba20ff9e37cad19fe1d1e259667492",
+      "export_sha256": "8da337b5726733029c9928464fc002b1e1ba20ff9e37cad19fe1d1e259667492",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/06-CoefficientOrder.stdout.log",
+      "original_sha256": "3cd4adf22e51c813b0cf649f88dc7bc638a3c086156bbe28b1bfa8d323f742f8",
+      "export_sha256": "3cd4adf22e51c813b0cf649f88dc7bc638a3c086156bbe28b1bfa8d323f742f8",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/07-LocalizationSignDescent.stdout.log",
+      "original_sha256": "f19b9555c13810205bcffcc6d173cb99a9f57c47a9c4dbfd41882a73eec8695a",
+      "export_sha256": "f19b9555c13810205bcffcc6d173cb99a9f57c47a9c4dbfd41882a73eec8695a",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/08-TargetSanity.stdout.log",
+      "original_sha256": "7e951dbe9cd21cd833359e58381dde7f22be272ff00afb9d70a41af6a199bfb8",
+      "export_sha256": "7e951dbe9cd21cd833359e58381dde7f22be272ff00afb9d70a41af6a199bfb8",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/09-CertificateNonnegative.stdout.log",
+      "original_sha256": "b4411a48d415fa48ed8a501b725d522ddb46655d59edc9d3cc87084884c61445",
+      "export_sha256": "b4411a48d415fa48ed8a501b725d522ddb46655d59edc9d3cc87084884c61445",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/01-TargetSpec.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/02-ClearDenominators.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/03-FractionSemireal.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/04-OrderingSeparation.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/05-RealInstance.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/06-CoefficientOrder.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/07-LocalizationSignDescent.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/08-TargetSanity.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker01-run01/09-CertificateNonnegative.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker02-conditional-run01/summary.json",
+      "original_sha256": "88e3e4d58c13a0e4c2c7271925c023b5d8067aa28173fe2ed0ba0608b3ce084f",
+      "export_sha256": "d15a4971d9bd31a8db964845181d5cdfc2d0ffd013b86555bc59ebc115dd903e",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker02-conditional-run01/01-ConditionalArtin.stdout.log",
+      "original_sha256": "6b052ca7d30f2bd205b4a6c2e700f202a1777317c51056afadfb2345258eaf33",
+      "export_sha256": "6b052ca7d30f2bd205b4a6c2e700f202a1777317c51056afadfb2345258eaf33",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-checker02-conditional-run01/01-ConditionalArtin.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile03-run01/summary.json",
+      "original_sha256": "1e81e2182f604ee8b8c074b5df07dd7de1c169001ae360b7a0bab6e6106704df",
+      "export_sha256": "4cff249e8863e80c4e644ff59a2d2891e6fbcdbef40bd7b719b323aa673c3ff1",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile03-run01/01-RuntimeSmoke02.stdout.log",
+      "original_sha256": "25d10dffda82316f0ded7477525ddc36ff0653094a4370b4390eb485adcf57f1",
+      "export_sha256": "c0fffa5e2729281c5f7e7199b002e071bd5f5f546b36162d48edeb7cbcc46411",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile03-run01/01-RuntimeSmoke02.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/summary.json",
+      "original_sha256": "6995d4d4d62e0f7fd9e9002ef81b5ff108f080e7eaa00a15b37998f7cd4dc67b",
+      "export_sha256": "225bc9a0f65c23b0f04cb821ea5266a55d00119bc38749f0337347a5bdc773d1",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/01-RuntimeSmoke03.stdout.log",
+      "original_sha256": "d3ba8f12a2a9bde2e0e066011cf81169673ec8e3234384d6dfe0732098ff8fd2",
+      "export_sha256": "d3ba8f12a2a9bde2e0e066011cf81169673ec8e3234384d6dfe0732098ff8fd2",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/04-TargetSpec.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/05-ClearDenominators.stdout.log",
+      "original_sha256": "bf5f79944f2b22a816ec8246b6b4fffea22870f4c2c0dfefdf3e1a72a2846bfe",
+      "export_sha256": "9457b2acef731ed93ae00b6196f464ac383bed477aaf05e3ceddefd652753230",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/06-FractionSemireal.stdout.log",
+      "original_sha256": "62152b7ddfc4572c05eb3472ad8f999acd025e37dd87a158852f22e382028280",
+      "export_sha256": "0de959d7499a8ae31a9712ee435d88aa0254ceeed378a8bb0415653485201217",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/01-RuntimeSmoke03.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/04-TargetSpec.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/05-ClearDenominators.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile04-run01/06-FractionSemireal.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/summary.json",
+      "original_sha256": "4849182511b35c011ec0705588c95393913ab776bb98068fcc136a07ebe80389",
+      "export_sha256": "3db17407fe5b9e4dcc8f4ae1882d1d04b999f531d3cdc61151090f935c4bfb7c",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/01-OrderingSeparation.stdout.log",
+      "original_sha256": "a853b4b619bc44debaa55d82ed9c8ff96ac76150d15f57fda4818486424a91c2",
+      "export_sha256": "2623f8343226d88a62cfe3529ab10f18ef9b14d15a302b33bc08a2ab72c5d322",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/02-RealInstance.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/03-CoefficientOrder.stdout.log",
+      "original_sha256": "b50d258aceb78c91131a03fbefa597a6c61f862370b905bd58a2040b4836a0fa",
+      "export_sha256": "e8c1259462fc79acaf99160180b1cd5994596870c6fda50d9e8b77ae0d220d3d",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/01-OrderingSeparation.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/02-RealInstance.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile05-run01/03-CoefficientOrder.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile06-run01/summary.json",
+      "original_sha256": "16758fbed353d4212d25bf7d91cb23f100c1adc4654ce774d498e3cb5cf48af7",
+      "export_sha256": "7fe4f5d749b43bbdf62afaa435dc9bfe89aaab9200ea76f8a64736bc39526d50",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile06-run01/01-Mathlib_Algebra_CharZero_Infinite.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile06-run01/02-FractionSemireal.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile06-run01/01-Mathlib_Algebra_CharZero_Infinite.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile06-run01/02-FractionSemireal.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/summary.json",
+      "original_sha256": "d6a4becebc9782c1b8298def28fc1d3d0066f5cc0bd0811ae67d991e369ba5ec",
+      "export_sha256": "e5d354f00707c737825a4f843c06338cd86e70e5b59320b368fe1cd026b621eb",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/01-CoefficientOrder.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/02-LocalizationSignDescent.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/03-ConditionalArtin.stdout.log",
+      "original_sha256": "a41097912a7c66106472f743f5479641bd4ade7f4a1dd2f41fca0d51c92966e3",
+      "export_sha256": "9a8b4ce8e3054bce7703ed559fcce2d5992b437b89e2c8ff6cf4a84319a5b910",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/01-CoefficientOrder.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/02-LocalizationSignDescent.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile07-run01/03-ConditionalArtin.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile08-run01/summary.json",
+      "original_sha256": "660cc26f1f8cb0e354cc5f92fe7f69bb1d728b20d1b77f7876889e1c94703521",
+      "export_sha256": "ac118872b035d5c71554c94f6d182e8e660e220f8b81aeed4caeb68c5750f0c0",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile08-run01/01-ConditionalArtin.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-compile08-run01/01-ConditionalArtin.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/summary.json",
+      "original_sha256": "c12c053faace2e2ce1a48de5a9736f88ac3c70b8b4747ad2fae00691c674f270",
+      "export_sha256": "b463856b18ebc0858b863631dc2da7cab0a6ead49ca540791f6f99224460d2b7",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stdout.log",
+      "original_sha256": "73be48586c594ac6b5aa7f690042bef4f612c6fb472e310395626a629499c44d",
+      "export_sha256": "1ad5e54272e5c16974bd842d18306a81b8fd926b0a1e4434c4457a3c4150077d",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run01/summary.json",
+      "original_sha256": "a93b14f2bc6b5b2c1f8fb62d266b1e96461dbdbf8090c709ee306262bcfe2795",
+      "export_sha256": "22f0db680e34093c5b89cb92cc55c4f903857b8cfe50c39d2919cbccc8c2bc84",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "original_sha256": "4bdbbc4475980b12a867599d5476ea370b40120793df7d9840c4c0a88916b766",
+      "export_sha256": "5f3ecf4255a2b6ad8dece9bbdb796eb10bf01328706c8dabcaf327360fe7a5a0",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/summary.json",
+      "original_sha256": "3e3e2fad9f8d6cca65841a74a16a77133d71166658d2b027f192425b85a997b8",
+      "export_sha256": "ce7d8af9947661d92528cbf4770cdd5747ccdabd28b43dd03ce9f8ce361334d2",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/13-RuntimeSmoke02.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/runtime-compile02-run02/13-RuntimeSmoke02.stderr.log",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "export_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/summary.json",
+      "original_sha256": "2ab2f473f2da02bef25a7b59678794e60ceed47e582a13ba539885db8b47e7bc",
+      "export_sha256": "afd2fd975b522fa18f239b6c6c5c894069456d0f8bb926352d2ce54b6bba1438",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/02-TargetSanity.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/03-CertificateNonnegative.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/01-Mathlib_Topology_Algebra_MvPolynomial.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/02-TargetSanity.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/target-reverse01-run01/03-CertificateNonnegative.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/ROOT-AXIOM-AUDIT01.json",
+      "original_sha256": "04daff555f02e9b7f6043b6572e1d79015b35993fd42ad25790c931994cd3494",
+      "export_sha256": "04daff555f02e9b7f6043b6572e1d79015b35993fd42ad25790c931994cd3494",
+      "normalization": "None; exact original root receipt."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/summary.json",
+      "original_sha256": "f3bde84274015e4c264989f5205ac5108e937baff6fbadeaf92b68b7d9b7d7a4",
+      "export_sha256": "c9efda53d2b11eb851a276aa10b6d811ee1f48998c7a50e610976b92d0f04899",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/01-TargetSpecAxioms.stdout.log",
+      "original_sha256": "23b95e21d84eef4be8d51ccd77c69679e5a63fb8502691d4b44a10c1daa5882e",
+      "export_sha256": "23b95e21d84eef4be8d51ccd77c69679e5a63fb8502691d4b44a10c1daa5882e",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stdout.log",
+      "original_sha256": "a14813c35bd16a877f0dbec513fc9fa1498b6281809e56895aed1e411d886053",
+      "export_sha256": "a14813c35bd16a877f0dbec513fc9fa1498b6281809e56895aed1e411d886053",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/03-FractionSemirealAxioms.stdout.log",
+      "original_sha256": "6703869ceb6128aa3208e57b84653eac1b55a975b2320da45dec539a797ab935",
+      "export_sha256": "6703869ceb6128aa3208e57b84653eac1b55a975b2320da45dec539a797ab935",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stdout.log",
+      "original_sha256": "af59959f4f888be5c2a3b207927a5be8668c96f962b4a20fdc497799baba1ab8",
+      "export_sha256": "af59959f4f888be5c2a3b207927a5be8668c96f962b4a20fdc497799baba1ab8",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/05-RealInstanceAxioms.stdout.log",
+      "original_sha256": "5bc8c626e051bfb65110c5c87498a56bcc7ebf3c631042f619b2eb0fc708f527",
+      "export_sha256": "5bc8c626e051bfb65110c5c87498a56bcc7ebf3c631042f619b2eb0fc708f527",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stdout.log",
+      "original_sha256": "cd8b1334dbc3d775e54e0c038902ea049dae1bc450b0ca204b9cae76cae5ab9f",
+      "export_sha256": "cd8b1334dbc3d775e54e0c038902ea049dae1bc450b0ca204b9cae76cae5ab9f",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stdout.log",
+      "original_sha256": "9060df5eddc974f1014cd5d65ea40b30937fd4c4b6531c15e65cdf5993f30cae",
+      "export_sha256": "9060df5eddc974f1014cd5d65ea40b30937fd4c4b6531c15e65cdf5993f30cae",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stdout.log",
+      "original_sha256": "c3a0b8511cc9c1fbbe201a8c23784c8269d02ac6476592e9725a6a2067151b8e",
+      "export_sha256": "c3a0b8511cc9c1fbbe201a8c23784c8269d02ac6476592e9725a6a2067151b8e",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/09-TargetSanityAxioms.stdout.log",
+      "original_sha256": "077daeeaeedd58efc66ccf348585f3e05172a73fda7be8add177922603ef882f",
+      "export_sha256": "077daeeaeedd58efc66ccf348585f3e05172a73fda7be8add177922603ef882f",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stdout.log",
+      "original_sha256": "1085ab56546e7da0032689f7125ca48af38b6f3899ded2c279e2a3220bdb7a0e",
+      "export_sha256": "1085ab56546e7da0032689f7125ca48af38b6f3899ded2c279e2a3220bdb7a0e",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/01-TargetSpecAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/03-FractionSemirealAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/05-RealInstanceAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/09-TargetSanityAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry01-run01/summary.json",
+      "original_sha256": "a5c2a746218daf3fd841c8ad802e9797a1bfcedc1b59b9ed08f11cc024397bf0",
+      "export_sha256": "e532f9d9bafdb19aea2dfce0f0c4998ebf0546322f4f30766ce4c8d39aa1005c",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry01-run01/01-Hilbert17.stdout.log",
+      "original_sha256": "146358040bfb3064f91093b5125bd8ea74dea0490e401351dbc48a61b7a5d3dc",
+      "export_sha256": "4e8e905619466a7f22ccdf6fc82647fee001b0c43c87a4c905ef595947ecea9a",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry01-run01/01-Hilbert17.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry02-run01/summary.json",
+      "original_sha256": "fba26c958e955ee44163761ecba19240a45f54e4e5aedf76627bf2c6cb27d63e",
+      "export_sha256": "1b190a8f47de4a05af656b4b9365ae28543cfe2c53bddd3f9f1afc55ccb80f27",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry02-run01/01-Hilbert17.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    },
+    {
+      "file": "verification/delivery-entry02-run01/01-Hilbert17.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "Build-workspace absolute prefix replaced by <build-workspace>; remaining text unchanged."
+    }
+  ]
+}

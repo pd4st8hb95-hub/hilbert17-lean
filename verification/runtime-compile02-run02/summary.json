@@ -1,0 +1,913 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T12:53:56.005451+00:00",
+  "driver_sha256": "9e57184bd28de12bbce0098af16ec6b77cfc1fef3829f788bbecccd008b0e871",
+  "plan_sha256": "e8dc68dd00bf2d3140539030c2cb70c8d33dcd19866e2c308ef3a398d0d72bd5",
+  "config_sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b",
+  "boot_id": "d8ca3fcf-4207-421e-aa5d-e9574840ee7c",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "jobs": [
+    {
+      "label": "Mathlib.Algebra.Group.Subgroup.Even",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Group/Subgroup/Even.lean",
+        "bytes": 2452,
+        "sha256": "338916da2da0d20d1d0e14d649d90ccdbc80c00c7f577f090fe7a50f2691a98e"
+      },
+      "start_utc": "2026-10-13T12:53:56.005908+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:53:56.005895+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8350488,
+        "used_percent": 18.184671975958867
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Group/Subgroup/Even.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.004,
+      "end_utc": "2026-10-13T12:53:58.010777+00:00",
+      "peak_physical_used_percent": 19.89362081526806,
+      "memory_after": {
+        "utc": "2026-10-13T12:53:58.010938+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8338356,
+        "used_percent": 18.30353731168388
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.olean",
+          "bytes": 73440,
+          "sha256": "bf87ebb6ea7cce15a31a4059f739b809aed456c78d4598f8fba14138b802dcc9"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.olean.private",
+          "bytes": 10240,
+          "sha256": "8e52665fbf24c1d58e75238d0dc03c1e901279bcd7d7f7a9be0fa3701fa30152"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.olean.server",
+          "bytes": 7104,
+          "sha256": "435f79c03c0573d644712525cd24897059c15af4baa55ced5dfb333a59e35090"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.ilean",
+          "bytes": 7336,
+          "sha256": "86b73f59c4cbfc66ea64cf211692bb045ab51255718f07eb69bc70921ac46c5b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.ir",
+          "bytes": 4712,
+          "sha256": "5f400f2c8221e3a2e58d51b70ebfc9ae0833cf6301723e5adc6b05e4cf2daa48"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Ring.SumsOfSquares",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/SumsOfSquares.lean",
+        "bytes": 8442,
+        "sha256": "cb099100afa03eff63cd1a5d6ff1186460f4472dcbda217e388560a2fbd61b46"
+      },
+      "start_utc": "2026-10-13T12:53:58.011879+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:53:58.011867+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8338116,
+        "used_percent": 18.305888752548864
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/SumsOfSquares.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/02-Mathlib_Algebra_Ring_SumsOfSquares.stderr.log",
+      "pid": 9,
+      "exit_code": 0,
+      "seconds": 2.504,
+      "end_utc": "2026-10-13T12:54:00.516637+00:00",
+      "peak_physical_used_percent": 20.44452421925305,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:00.516797+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8285224,
+        "used_percent": 18.824107128510555
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.olean",
+          "bytes": 136952,
+          "sha256": "93d94bdd2da9ef0313e1f40b67eb89cb1fc3769b370674158f774313bee1cd02"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.olean.private",
+          "bytes": 150512,
+          "sha256": "0927d7c8d58ae674ad346b210732735623e1f2d5c8da2a9ae30d4931df4c3619"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.olean.server",
+          "bytes": 12280,
+          "sha256": "1690c7a943f683cef2e957bdbf501928de1aff3eb4949308f29370769d7b1dd9"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.ilean",
+          "bytes": 17984,
+          "sha256": "e84a8c4604cf38038e63359d466c91f1a9a0dab888b6618d045fbf60c3a65d61"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/SumsOfSquares.ir",
+          "bytes": 4616,
+          "sha256": "10fd79881d7eacf969647e576fc7168fa419cfa5ae0b8aedc2386ed4a32536d4"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Ring.IsFormallyReal",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/IsFormallyReal.lean",
+        "bytes": 5449,
+        "sha256": "72b411c1082944ace2118b8714603a368d84839ae6de6aadd5f7075fc5a741e8"
+      },
+      "start_utc": "2026-10-13T12:54:00.518286+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:00.518268+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8284536,
+        "used_percent": 18.830847925656844
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/IsFormallyReal.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/03-Mathlib_Algebra_Ring_IsFormallyReal.stderr.log",
+      "pid": 13,
+      "exit_code": 0,
+      "seconds": 6.006,
+      "end_utc": "2026-10-13T12:54:06.524728+00:00",
+      "peak_physical_used_percent": 20.71145194810997,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:06.524861+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8329396,
+        "used_percent": 18.391324437309997
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.olean",
+          "bytes": 98912,
+          "sha256": "617594171305a266cb13a087f7f067189282a50ce8cb5fc72b3a6a8e13f3f2fa"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.olean.private",
+          "bytes": 146224,
+          "sha256": "e8a35baf23a074261d8bcd446db7d7951579df0330edddc7f8a9c95f7d6cc2a2"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.olean.server",
+          "bytes": 6952,
+          "sha256": "1ef64e8c497cfb663e3c5d77d61ccb1223f7788ad62b5258bb02f19db8022e00"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.ilean",
+          "bytes": 13198,
+          "sha256": "65d9fd8d1731133057c3463bbbaaabf0d03000138d4ff3633f4a647a33ca1531"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/IsFormallyReal.ir",
+          "bytes": 2952,
+          "sha256": "b18b5cd4c2f807cadaa71339f7df29270dd1124c93dc93d6bcf87e32487563ea"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Ring.Semireal.Defs",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/Semireal/Defs.lean",
+        "bytes": 2321,
+        "sha256": "74fdf068ed266129272dfd325c034be17df3079b5817587c2deabd6fac2ad19f"
+      },
+      "start_utc": "2026-10-13T12:54:06.525917+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:06.525905+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8329168,
+        "used_percent": 18.393558306131734
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/Semireal/Defs.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/04-Mathlib_Algebra_Ring_Semireal_Defs.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 1.001,
+      "end_utc": "2026-10-13T12:54:07.528153+00:00",
+      "peak_physical_used_percent": 19.540081681217515,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:07.528724+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332780,
+        "used_percent": 18.358169121113704
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.olean",
+          "bytes": 37680,
+          "sha256": "580764a73057ebef46e954cbb9ff8f2c6e2b3ec73f19171203bb7af0552d4ec2"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.olean.private",
+          "bytes": 47024,
+          "sha256": "5bca5822f8fd0e141b5de660f03f0846924100ca9832407b3542b7667b75ce9a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.olean.server",
+          "bytes": 4056,
+          "sha256": "3f76c5219932a04af8f61ba9ba934a4f57bd23d497970c1a2f7af1e6cf867b43"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.ilean",
+          "bytes": 5871,
+          "sha256": "57eadb58451cf8334b0a9d5c5b0c18b606e8c45eb481a0f10d1879a33eee7e95"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Semireal/Defs.ir",
+          "bytes": 1536,
+          "sha256": "cd6f3a7bfed8a894fcb13995d733d0684e39a6cc7f7dbca7c0f794a32bc0bb48"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.FieldTheory.IsRealClosed.Basic",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/IsRealClosed/Basic.lean",
+        "bytes": 4642,
+        "sha256": "e2806df73ecfc81f91bdaba3be881cdfeef7117f485c371a23cf9b886b2f1661"
+      },
+      "start_utc": "2026-10-13T12:54:07.529815+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:07.529803+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8332780,
+        "used_percent": 18.358169121113704
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/FieldTheory/IsRealClosed/Basic.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/05-Mathlib_FieldTheory_IsRealClosed_Basic.stderr.log",
+      "pid": 21,
+      "exit_code": 0,
+      "seconds": 3.006,
+      "end_utc": "2026-10-13T12:54:10.536857+00:00",
+      "peak_physical_used_percent": 20.404236199099632,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:10.537021+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8306812,
+        "used_percent": 18.612595022705122
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.olean",
+          "bytes": 62536,
+          "sha256": "a8de20dec210c493075ae74be335570bdf3a83e22906567fee2d7fb678fe061a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.olean.private",
+          "bytes": 153560,
+          "sha256": "7bb5bbb2eec162e534734d6392ec8b9884e862a59c08cc104c49c402be6e93c6"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.olean.server",
+          "bytes": 5624,
+          "sha256": "d6e436ae3fc821d3fd150cc37227e2a11c2549e959b9a76ca9d7112b14f32657"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.ilean",
+          "bytes": 8682,
+          "sha256": "a92f0fa68b9c6de75e1e3f826d4ae8f7fa3f6830b3a0527a5e3f564bcb1e0457"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/FieldTheory/IsRealClosed/Basic.ir",
+          "bytes": 2192,
+          "sha256": "ea5182bfe6a6ac21d95a636603302a9829ac5bb2c350448d88a4cd80b55a0a9c"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Order.Group.Cone",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Group/Cone.lean",
+        "bytes": 5428,
+        "sha256": "db0fd6438af3f5947dbc2252b2aa95d62e1a60eea0aff09c15df50e3a1893eff"
+      },
+      "start_utc": "2026-10-13T12:54:10.538217+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:10.538204+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8306572,
+        "used_percent": 18.614946463570107
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Group/Cone.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/06-Mathlib_Algebra_Order_Group_Cone.stderr.log",
+      "pid": 25,
+      "exit_code": 0,
+      "seconds": 1.503,
+      "end_utc": "2026-10-13T12:54:12.041762+00:00",
+      "peak_physical_used_percent": 20.266912052584487,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:12.041915+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8306744,
+        "used_percent": 18.613261264283533
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.olean",
+          "bytes": 308536,
+          "sha256": "0ae8985c32861e3e08c05a58f921c6faf75949ddcdaa9aa07a52969bb09d6369"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.olean.private",
+          "bytes": 132744,
+          "sha256": "4da5b9214b7b698d0267cff9e9782c08abde2cf33ae639ed882f9ff6d1b0c752"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.olean.server",
+          "bytes": 11184,
+          "sha256": "e387d5fd118e6c3a8dd81f5c8647226b5d6a78ce8e1b440628968a870348cb22"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.ilean",
+          "bytes": 13460,
+          "sha256": "f5e646e4b69e2e9ab58c126d8a799f47fcfbbc9eb4331caba84162b4d7aed055"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Group/Cone.ir",
+          "bytes": 17592,
+          "sha256": "6caf0afaeae68336af11b45ad3b042149a6fd5485d75603c5ecb88753d96a712"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Ring.Subsemiring.Order",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/Subsemiring/Order.lean",
+        "bytes": 2246,
+        "sha256": "60ac7c0f3abbbc264761633836139e6bbcdb03af557c5c9b2b446ec36f3c0b06"
+      },
+      "start_utc": "2026-10-13T12:54:12.043667+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:12.043654+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8306516,
+        "used_percent": 18.61549513310527
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Ring/Subsemiring/Order.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/07-Mathlib_Algebra_Ring_Subsemiring_Order.stderr.log",
+      "pid": 30,
+      "exit_code": 0,
+      "seconds": 1.001,
+      "end_utc": "2026-10-13T12:54:13.045844+00:00",
+      "peak_physical_used_percent": 19.816023266723544,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:13.046002+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330264,
+        "used_percent": 18.38282005951497
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.olean",
+          "bytes": 50128,
+          "sha256": "6a3fbc3ec3390fe1bd9e643b8f662110d44e7d194bf1b78aed72324f6d6b24bb"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.olean.private",
+          "bytes": 16480,
+          "sha256": "73d2968995c59388d2502fb6d1babfb759eb26e699cdbde940923c8666004d1b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.olean.server",
+          "bytes": 3408,
+          "sha256": "a31145a51bddabcea0424344dc39a992f58cdb69d6b6fe238f5b80272bca28b7"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.ilean",
+          "bytes": 6310,
+          "sha256": "1dbed9c498d60cdcf022430cc91303dce68f79a3bcda75f830084a8196554215"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Ring/Subsemiring/Order.ir",
+          "bytes": 3712,
+          "sha256": "dd2ccc0c48c2ad401e4a1d84961905a5af6ddc7a2dba611e49aeb14729d0b2db"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Order.Ring.Cone",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Cone.lean",
+        "bytes": 3566,
+        "sha256": "340f917e254a96c1de3bb44a3fb2fa8abc7729aeb2806492ffb846b897032f6c"
+      },
+      "start_utc": "2026-10-13T12:54:13.047621+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:13.047604+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330032,
+        "used_percent": 18.38509311901779
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Cone.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/08-Mathlib_Algebra_Order_Ring_Cone.stderr.log",
+      "pid": 33,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T12:54:14.550058+00:00",
+      "peak_physical_used_percent": 20.16595685811445,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:14.550222+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8326152,
+        "used_percent": 18.423108079668385
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.olean",
+          "bytes": 135600,
+          "sha256": "758612cf41138354690d58de7633dc0f8ed049c3c79598efbad5f8cfb2f9d2d4"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.olean.private",
+          "bytes": 58808,
+          "sha256": "dd77c4da58339e59db298d9b7a12952aaac6b541643cc4491fc33dee93d9b2c2"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.olean.server",
+          "bytes": 6696,
+          "sha256": "f7c8fd9ae551b44e1807bc6b8fcc68d7c0a56433f22366f02f359eafa884c94b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.ilean",
+          "bytes": 10377,
+          "sha256": "91c26fffe8d246266952fbe2bac5756fd3d968c69625f9f155479515d9debad1"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Cone.ir",
+          "bytes": 5496,
+          "sha256": "f55609452970d19d8b701cb4fc977637f13d5a2d57dea589ed29cf035a2a0867"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Order.Ring.Ordering.Defs",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Defs.lean",
+        "bytes": 6248,
+        "sha256": "a6babe6aa0c319cf4772c307b4a24b6f0df51e51f65f0404fd6f2c1fbb0efbec"
+      },
+      "start_utc": "2026-10-13T12:54:14.551755+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:14.551739+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8326152,
+        "used_percent": 18.423108079668385
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Defs.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/09-Mathlib_Algebra_Order_Ring_Ordering_Defs.stderr.log",
+      "pid": 38,
+      "exit_code": 0,
+      "seconds": 2.508,
+      "end_utc": "2026-10-13T12:54:17.060676+00:00",
+      "peak_physical_used_percent": 20.183043995066676,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:17.060834+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8335724,
+        "used_percent": 18.32932477983655
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.olean",
+          "bytes": 200992,
+          "sha256": "6b44239f46a01c9f7483178e32f7723f8f9dd9d5c58ee87d2ed5e970c8e959ae"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.olean.private",
+          "bytes": 203096,
+          "sha256": "516679040aca73da949aea50f53516faefed98714c4868d937974fa3dbdbc579"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.olean.server",
+          "bytes": 11192,
+          "sha256": "d6416701364047d3ceb1ddccc96bddaa6575f710305ab60d3eae5f086ccbdf77"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.ilean",
+          "bytes": 17682,
+          "sha256": "0d35c508c7c2e04ae0dae95ee646e82ee0013a518ded0ba4c38081a3028aa0d4"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Defs.ir",
+          "bytes": 15512,
+          "sha256": "9eccc6edf56c7d7b9123b2f2ed4ca259f69eebfd9451b11349c72293f70e9e68"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.Order.Ring.Ordering.Basic",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Basic.lean",
+        "bytes": 5868,
+        "sha256": "c5994c7a4a735b1c59fbcb52610621f6af2e8176fffb3ccc5ef11a00aa4ba279"
+      },
+      "start_utc": "2026-10-13T12:54:17.063823+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:17.063808+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8335496,
+        "used_percent": 18.331558648658287
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Order/Ring/Ordering/Basic.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/10-Mathlib_Algebra_Order_Ring_Ordering_Basic.stderr.log",
+      "pid": 42,
+      "exit_code": 0,
+      "seconds": 5.005,
+      "end_utc": "2026-10-13T12:54:22.070066+00:00",
+      "peak_physical_used_percent": 20.350113868523888,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:22.070218+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342908,
+        "used_percent": 18.258938316611324
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.olean",
+          "bytes": 103976,
+          "sha256": "b9de2cbd37e80e1a9fc0c04fd897703bac7efb3822c58f335ed649f72f99cd97"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.olean.private",
+          "bytes": 293720,
+          "sha256": "5ed0d369af9f098d29d560f14b713bf0559947cca410fba01af1a2da13edc80e"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.olean.server",
+          "bytes": 7640,
+          "sha256": "93ceac30f338000937fe69546b0a0690458417e23343c15dc908590ed774310b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.ilean",
+          "bytes": 15376,
+          "sha256": "0cc6f2c7e31ecb7ed747ea9333fc72804268bee891ce4ca4d6200e35e03004ae"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Order/Ring/Ordering/Basic.ir",
+          "bytes": 3968,
+          "sha256": "c57963077ea806dd4d31b0cd9db6e7580b6043fb77300dc9f32f2278258f7cdd"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Analysis.Polynomial.Basic",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Analysis/Polynomial/Basic.lean",
+        "bytes": 17912,
+        "sha256": "274b08b1577fb044ee4dd5aaadd50a0a5f8c39f2d7bbbc8cfa220799a2219d4d"
+      },
+      "start_utc": "2026-10-13T12:54:22.071861+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:22.071848+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342908,
+        "used_percent": 18.258938316611324
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Analysis/Polynomial/Basic.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/11-Mathlib_Analysis_Polynomial_Basic.stderr.log",
+      "pid": 46,
+      "exit_code": 0,
+      "seconds": 5.505,
+      "end_utc": "2026-10-13T12:54:27.577995+00:00",
+      "peak_physical_used_percent": 20.876170380702195,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:27.578151+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8347080,
+        "used_percent": 18.21806243624166
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.olean",
+          "bytes": 101872,
+          "sha256": "6400e5ae70687fe9d3768a2b724e97415679e289a6bcd885b71dc53b9dfbff12"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.olean.private",
+          "bytes": 481664,
+          "sha256": "c55e8680bc1bc993824ffbbb68d49f75c56c866f6d69cd013154161538e00980"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.olean.server",
+          "bytes": 13456,
+          "sha256": "4fecab551d39775f31d86b0c4a275c3c82e7171aaab1f001bafa10c3033612ca"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.ilean",
+          "bytes": 67276,
+          "sha256": "61b6c124386b3895f4f25ce5739b06ad0fae4e960314605aea7e6e4c104bb4a0"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Basic.ir",
+          "bytes": 1936,
+          "sha256": "b189ad5af7e9a4abfd189d9dd2298dbdf48bc92ac819e0555f6fa1575dfb98af"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Analysis.Polynomial.Order",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Analysis/Polynomial/Order.lean",
+        "bytes": 6292,
+        "sha256": "bf05560594215319b7288b07403bd818d378f6f8e2ea59da58d31cde31ae6d27"
+      },
+      "start_utc": "2026-10-13T12:54:27.580712+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:27.580697+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8347080,
+        "used_percent": 18.21806243624166
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Analysis/Polynomial/Order.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/12-Mathlib_Analysis_Polynomial_Order.stderr.log",
+      "pid": 50,
+      "exit_code": 0,
+      "seconds": 3.504,
+      "end_utc": "2026-10-13T12:54:31.085154+00:00",
+      "peak_physical_used_percent": 20.742059870035863,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:31.085311+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8351328,
+        "used_percent": 18.17644193293142
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.olean",
+          "bytes": 15200,
+          "sha256": "de547f8c9378c5e2310e4ca8b4b233057ea104b488e3de41396f346e6bc4edfe"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.olean.private",
+          "bytes": 185248,
+          "sha256": "398c7454d37cf35ec6245d72a3e9c71ff76c9840613c7eb00ed891ed4a5f0bdd"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.olean.server",
+          "bytes": 3776,
+          "sha256": "e9478f6a049e3b0758569dc83d0fbe9c1a760b7cf98f7e862428e2be91a65891"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.ilean",
+          "bytes": 21618,
+          "sha256": "dc1837a06232d58ae84c8c6d1d24f841830ea1795cc87b63f519211feda9f053"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Analysis/Polynomial/Order.ir",
+          "bytes": 1760,
+          "sha256": "f936aac315ba0e0ab04cabdfb32c7b7a3d0c8e0e592d061f81891daf6dd20551"
+        }
+      ]
+    },
+    {
+      "label": "RuntimeSmoke02",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/RuntimeSmoke02.lean",
+        "bytes": 936,
+        "sha256": "2ee6a7fa808faa4218d917f583fe4547730faea3fe48f31bf1bc7c0b9b13b56a"
+      },
+      "start_utc": "2026-10-13T12:54:31.087016+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:54:31.087003+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8351328,
+        "used_percent": 18.17644193293142
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke02.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke02.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/RuntimeSmoke02.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/13-RuntimeSmoke02.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run02/13-RuntimeSmoke02.stderr.log",
+      "pid": 53,
+      "exit_code": -6,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T12:54:32.590018+00:00",
+      "peak_physical_used_percent": 20.011271239879495,
+      "memory_after": {
+        "utc": "2026-10-13T12:54:32.590166+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8309296,
+        "used_percent": 18.58825760975252
+      },
+      "outputs": []
+    }
+  ],
+  "scope": "Official prerequisite compilation plus import smoke only; no Hilbert17 theorem acceptance.",
+  "ended_utc": "2026-10-13T12:54:32.594331+00:00"
+}

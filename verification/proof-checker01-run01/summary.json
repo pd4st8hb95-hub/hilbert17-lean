@@ -1,0 +1,441 @@
+{
+  "status": "ALL_SELECTED_LOCAL_REPLAYS_PASS",
+  "started_utc": "2026-10-13T13:06:04.668557+00:00",
+  "driver_sha256": "dde0695d6b1011ca540ac881535f86a55a20b00fcbf548a25330013da481da4b",
+  "plan_sha256": "f73c6319bb283f08fc608d23275b1fb3e59cc2133cff7c7bd703e7aeb68e59f7",
+  "guard_core_sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean"
+  },
+  "jobs": [
+    {
+      "module": "TargetSpec",
+      "start_utc": "2026-10-13T13:06:04.668950+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:04.668944+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8373956,
+        "used_percent": 17.954740250044384
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TargetSpec"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/TargetSpec.lean",
+        "bytes": 2016,
+        "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.olean",
+          "bytes": 43520,
+          "sha256": "3f435fb3b831d0f6ca3e02d096a390fcbd5e45c928ec9343cd8929714c3c4579"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.ilean",
+          "bytes": 5962,
+          "sha256": "701f8f27f7b0a1e8f789f17eaa57871bd30d10a3dbb445defe14c38c00d94334"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/01-TargetSpec.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/01-TargetSpec.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:06:06.672348+00:00",
+      "peak_physical_used_percent": 19.501126144220922,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:06.672444+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8363232,
+        "used_percent": 18.059810466028146
+      }
+    },
+    {
+      "module": "ClearDenominators",
+      "start_utc": "2026-10-13T13:06:06.673628+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:06.673622+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8363232,
+        "used_percent": 18.059810466028146
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "ClearDenominators"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/ClearDenominators.lean",
+        "bytes": 6382,
+        "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.olean",
+          "bytes": 349840,
+          "sha256": "a48abe7858a030047106a40f98c41d42dace1ee557c3b690068712c85555168b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.ilean",
+          "bytes": 14016,
+          "sha256": "f37a45e81017121081e043bd5810dfdc221ac2a3d29fa6058dc824f7b91a8ad0"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/02-ClearDenominators.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/02-ClearDenominators.stderr.log",
+      "pid": 12,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:06:08.676861+00:00",
+      "peak_physical_used_percent": 19.48689992698776,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:08.676946+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8357480,
+        "used_percent": 18.116166665425627
+      }
+    },
+    {
+      "module": "FractionSemireal",
+      "start_utc": "2026-10-13T13:06:08.677799+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:08.677793+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8357480,
+        "used_percent": 18.116166665425627
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "FractionSemireal"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean",
+        "bytes": 2425,
+        "sha256": "420ddf5a0e4738e0e387402ecf1f63bf9b3fe625f0a87fa05d25d3866ca20521"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.olean",
+          "bytes": 110872,
+          "sha256": "08bf924c57af72b9e497a3c3b302b617ee41aa6e2b697c875165d922c99e6e09"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.ilean",
+          "bytes": 7221,
+          "sha256": "df2b087fa4e646d6f92754e723ab8f8a0bda938644af9c71409fafad6b8bb400"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/03-FractionSemireal.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/03-FractionSemireal.stderr.log",
+      "pid": 19,
+      "exit_code": 0,
+      "seconds": 2.006,
+      "end_utc": "2026-10-13T13:06:10.684517+00:00",
+      "peak_physical_used_percent": 19.769935025769833,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:10.684605+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8346984,
+        "used_percent": 18.219003012587656
+      }
+    },
+    {
+      "module": "OrderingSeparation",
+      "start_utc": "2026-10-13T13:06:10.685822+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:10.685816+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8346516,
+        "used_percent": 18.223588322274377
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "OrderingSeparation"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-algebra/OrderingSeparation.lean",
+        "bytes": 8196,
+        "sha256": "83aadbfec91bf6fc007b52c98f3672701f6940f3cbac1a33ef8c86a4cedbf1c2"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.olean",
+          "bytes": 358248,
+          "sha256": "038859d694c8d94a656943a1e5edc36394b825219abad9a432e0d3afa31485d4"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparation.ilean",
+          "bytes": 21393,
+          "sha256": "077959e2542b0a560af017aca64e0baf2f778dc407374a6444d786f47a114182"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/04-OrderingSeparation.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/04-OrderingSeparation.stderr.log",
+      "pid": 26,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:06:12.688684+00:00",
+      "peak_physical_used_percent": 19.552426745758687,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:12.688770+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345304,
+        "used_percent": 18.23546309864255
+      }
+    },
+    {
+      "module": "RealInstance",
+      "start_utc": "2026-10-13T13:06:12.689966+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:12.689960+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345072,
+        "used_percent": 18.23773615814537
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "RealInstance"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-transfer/RealInstance.lean",
+        "bytes": 2171,
+        "sha256": "deff6cad914b5027d0e9cb442bb2c8c9c7d7394c04309fb16f06b04fae970f84"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.olean",
+          "bytes": 69064,
+          "sha256": "51304cde661786853a4b38f40b921215663faf8e3de1f2b224a7b1dae127d773"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstance.ilean",
+          "bytes": 4878,
+          "sha256": "d604e6757bb55dd5e1a359b8aedbb5e8103851f407d4f08709c6d7ed481d2cfa"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/05-RealInstance.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/05-RealInstance.stderr.log",
+      "pid": 33,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:06:14.692391+00:00",
+      "peak_physical_used_percent": 19.70483930449082,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:14.692483+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8303080,
+        "used_percent": 18.649159928155644
+      }
+    },
+    {
+      "module": "CoefficientOrder",
+      "start_utc": "2026-10-13T13:06:14.694221+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:14.694214+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8303080,
+        "used_percent": 18.649159928155644
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "CoefficientOrder"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-transfer/CoefficientOrder.lean",
+        "bytes": 1362,
+        "sha256": "85c8261163b9370edb974f37f49539474c4c276534b508794f8ef42621d93952"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.olean",
+          "bytes": 64408,
+          "sha256": "326b34fc02af662c9ed8537001cc82995a55569806f5769e4538628ab68c5710"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrder.ilean",
+          "bytes": 3793,
+          "sha256": "b5035ac77310edcfeb6d23812972a790e5e6b84d4b795e86f0a116bc490af0e9"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/06-CoefficientOrder.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/06-CoefficientOrder.stderr.log",
+      "pid": 40,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:06:16.697128+00:00",
+      "peak_physical_used_percent": 19.72984295902183,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:16.697219+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8354300,
+        "used_percent": 18.147323256886683
+      }
+    },
+    {
+      "module": "LocalizationSignDescent",
+      "start_utc": "2026-10-13T13:06:16.698538+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:16.698532+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8354300,
+        "used_percent": 18.147323256886683
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "LocalizationSignDescent"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-transfer/LocalizationSignDescent.lean",
+        "bytes": 2439,
+        "sha256": "fc51f8cb2b30e284e325385a0e8969cb329af85ea2e2c0d855b64e6d21a9f2b7"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescent.olean",
+          "bytes": 121160,
+          "sha256": "cbdaf20603e8614652ece595ad9f3e1f4ceddabc0dcc178f8603c276d250bd33"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescent.ilean",
+          "bytes": 7744,
+          "sha256": "c8d383c5eb3c8c09723df4757dd2f3a96fcbf3aadc3b3900b11aa80eb4fe799f"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/07-LocalizationSignDescent.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/07-LocalizationSignDescent.stderr.log",
+      "pid": 47,
+      "exit_code": 0,
+      "seconds": 2.006,
+      "end_utc": "2026-10-13T13:06:18.704359+00:00",
+      "peak_physical_used_percent": 19.61564131434571,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:18.704444+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364512,
+        "used_percent": 18.047269448081558
+      }
+    },
+    {
+      "module": "TargetSanity",
+      "start_utc": "2026-10-13T13:06:18.705368+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:18.705362+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364052,
+        "used_percent": 18.051776376406114
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "TargetSanity"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/TargetSanity.lean",
+        "bytes": 2847,
+        "sha256": "c4bed8a0d824a38d7882c41648ed6ae5db5b3800bbebcc8bdfa9c809de0e1a17"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.olean",
+          "bytes": 76544,
+          "sha256": "3db04163ec9b8a601bf13b10bf36a103b1b4c6e145788738df06152d4b070930"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanity.ilean",
+          "bytes": 9281,
+          "sha256": "c1bbc0f7f29cf499dd7b94a2e7bb90960992cc7e9cce1c1620a87b21af4a4d6c"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/08-TargetSanity.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/08-TargetSanity.stderr.log",
+      "pid": 54,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:06:20.707902+00:00",
+      "peak_physical_used_percent": 19.61121276738332,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:20.707992+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360744,
+        "used_percent": 18.084187069661827
+      }
+    },
+    {
+      "module": "CertificateNonnegative",
+      "start_utc": "2026-10-13T13:06:20.708980+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:06:20.708974+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360504,
+        "used_percent": 18.086538510526815
+      },
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/leanchecker",
+        "-v",
+        "CertificateNonnegative"
+      ],
+      "status": "PASS",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/CertificateNonnegative.lean",
+        "bytes": 2304,
+        "sha256": "880f041684cc3508adad3e153a1bcad4a5622e1125a2e51c89306c555ecc6aeb"
+      },
+      "artifacts": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.olean",
+          "bytes": 91792,
+          "sha256": "0c7a3dcd36931cb7ba8c3ebb36f6aa19ed4ad53379e857ad9d1367d0cb02e0f1"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegative.ilean",
+          "bytes": 7811,
+          "sha256": "5b4f4c693ab97bd374a21d18e9038f3765731734180c41cd0ffe77374609991f"
+        }
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/09-CertificateNonnegative.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-checker01-run01/09-CertificateNonnegative.stderr.log",
+      "pid": 61,
+      "exit_code": 0,
+      "seconds": 2.003,
+      "end_utc": "2026-10-13T13:06:22.711608+00:00",
+      "peak_physical_used_percent": 19.79858341364157,
+      "memory_after": {
+        "utc": "2026-10-13T13:06:22.711695+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360836,
+        "used_percent": 18.083285683996916
+      }
+    }
+  ],
+  "scope": "Same-kernel replay of selected local modules against imported dependencies; no full transitive replay, no independent external verifier, and no theorem-strength or axiom-list acceptance.",
+  "ended_utc": "2026-10-13T13:06:22.712413+00:00"
+}

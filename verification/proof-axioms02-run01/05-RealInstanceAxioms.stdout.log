@@ -1,0 +1,8 @@
+Hilbert17Transfer.real_exists_isRoot_of_odd_natDegree {p : @Polynomial.{0} Real Real.semiring}
+  (hp : @Odd.{0} Nat Nat.instSemiring (@Polynomial.natDegree.{0} Real Real.semiring p)) :
+  ∃ x, @Polynomial.IsRoot.{0} Real Real.semiring p x
+'Hilbert17Transfer.real_exists_isRoot_of_odd_natDegree' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Hilbert17Transfer.real_isRealClosed : @IsRealClosed.{0} Real Real.instField
+'Hilbert17Transfer.real_isRealClosed' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

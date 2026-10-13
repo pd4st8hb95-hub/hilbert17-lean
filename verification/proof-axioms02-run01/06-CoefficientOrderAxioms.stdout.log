@@ -1,0 +1,224 @@
+Hilbert17Transfer.ringHom_nonneg.{u_1, u_2} {R : Type u_1} {K : Type u_2} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [@IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))]
+  [@IsRealClosed.{u_1} R inst✝] [Field.{u_2} K] [LinearOrder.{u_2} K]
+  [@IsStrictOrderedRing.{u_2} K
+      (@DivisionSemiring.toSemiring.{u_2} K (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))]
+  (f :
+    @RingHom.{u_1, u_2} R K
+      (@Semiring.toNonAssocSemiring.{u_1} R
+        (@DivisionSemiring.toSemiring.{u_1} R
+          (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+      (@Semiring.toNonAssocSemiring.{u_2} K
+        (@DivisionSemiring.toSemiring.{u_2} K
+          (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+  {a : R}
+  (ha :
+    @LE.le.{u_1} R
+      (@Preorder.toLE.{u_1} R
+        (@PartialOrder.toPreorder.{u_1} R
+          (@SemilatticeInf.toPartialOrder.{u_1} R
+            (@Lattice.toSemilatticeInf.{u_1} R
+              (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))))
+      (@OfNat.ofNat.{u_1} R (nat_lit 0)
+        (@Zero.toOfNat0.{u_1} R
+          (@MulZeroClass.toZero.{u_1} R
+            (@instMulZeroClassOfSemiring.{u_1} R
+              (@DivisionSemiring.toSemiring.{u_1} R
+                (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))))))
+      a) :
+  @LE.le.{u_2} K
+    (@Preorder.toLE.{u_2} K
+      (@PartialOrder.toPreorder.{u_2} K
+        (@SemilatticeInf.toPartialOrder.{u_2} K
+          (@Lattice.toSemilatticeInf.{u_2} K
+            (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))))
+    (@OfNat.ofNat.{u_2} K (nat_lit 0)
+      (@Zero.toOfNat0.{u_2} K
+        (@MulZeroClass.toZero.{u_2} K
+          (@instMulZeroClassOfSemiring.{u_2} K
+            (@DivisionSemiring.toSemiring.{u_2} K
+              (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))))
+    (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+      (@RingHom.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      R (fun x => K)
+      (@RingHom.instFunLike.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      f a)
+'Hilbert17Transfer.ringHom_nonneg' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.ringHom_monotone.{u_1, u_2} {R : Type u_1} {K : Type u_2} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [@IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))]
+  [@IsRealClosed.{u_1} R inst✝] [Field.{u_2} K] [LinearOrder.{u_2} K]
+  [@IsStrictOrderedRing.{u_2} K
+      (@DivisionSemiring.toSemiring.{u_2} K (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))]
+  (f :
+    @RingHom.{u_1, u_2} R K
+      (@Semiring.toNonAssocSemiring.{u_1} R
+        (@DivisionSemiring.toSemiring.{u_1} R
+          (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+      (@Semiring.toNonAssocSemiring.{u_2} K
+        (@DivisionSemiring.toSemiring.{u_2} K
+          (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²))))) :
+  @Monotone.{u_1, u_2} R K
+    (@PartialOrder.toPreorder.{u_1} R
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹)))))
+    (@PartialOrder.toPreorder.{u_2} K
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³)))))
+    (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+      (@RingHom.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      R (fun x => K)
+      (@RingHom.instFunLike.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      f)
+'Hilbert17Transfer.ringHom_monotone' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.ringHom_strictMono.{u_1, u_2} {R : Type u_1} {K : Type u_2} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [@IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))]
+  [@IsRealClosed.{u_1} R inst✝] [Field.{u_2} K] [LinearOrder.{u_2} K]
+  [@IsStrictOrderedRing.{u_2} K
+      (@DivisionSemiring.toSemiring.{u_2} K (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))]
+  (f :
+    @RingHom.{u_1, u_2} R K
+      (@Semiring.toNonAssocSemiring.{u_1} R
+        (@DivisionSemiring.toSemiring.{u_1} R
+          (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+      (@Semiring.toNonAssocSemiring.{u_2} K
+        (@DivisionSemiring.toSemiring.{u_2} K
+          (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²))))) :
+  @StrictMono.{u_1, u_2} R K
+    (@PartialOrder.toPreorder.{u_1} R
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹)))))
+    (@PartialOrder.toPreorder.{u_2} K
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³)))))
+    (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+      (@RingHom.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      R (fun x => K)
+      (@RingHom.instFunLike.{u_1, u_2} R K
+        (@Semiring.toNonAssocSemiring.{u_1} R
+          (@DivisionSemiring.toSemiring.{u_1} R
+            (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+        (@Semiring.toNonAssocSemiring.{u_2} K
+          (@DivisionSemiring.toSemiring.{u_2} K
+            (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+      f)
+'Hilbert17Transfer.ringHom_strictMono' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17Transfer.ringHom_nonneg_iff.{u_1, u_2} {R : Type u_1} {K : Type u_2} [Field.{u_1} R] [LinearOrder.{u_1} R]
+  [@IsStrictOrderedRing.{u_1} R
+      (@DivisionSemiring.toSemiring.{u_1} R (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))
+      (@SemilatticeInf.toPartialOrder.{u_1} R
+        (@Lattice.toSemilatticeInf.{u_1} R
+          (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))]
+  [@IsRealClosed.{u_1} R inst✝] [Field.{u_2} K] [LinearOrder.{u_2} K]
+  [@IsStrictOrderedRing.{u_2} K
+      (@DivisionSemiring.toSemiring.{u_2} K (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))
+      (@SemilatticeInf.toPartialOrder.{u_2} K
+        (@Lattice.toSemilatticeInf.{u_2} K
+          (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))]
+  (f :
+    @RingHom.{u_1, u_2} R K
+      (@Semiring.toNonAssocSemiring.{u_1} R
+        (@DivisionSemiring.toSemiring.{u_1} R
+          (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+      (@Semiring.toNonAssocSemiring.{u_2} K
+        (@DivisionSemiring.toSemiring.{u_2} K
+          (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+  (a : R) :
+  Iff
+    (@LE.le.{u_2} K
+      (@Preorder.toLE.{u_2} K
+        (@PartialOrder.toPreorder.{u_2} K
+          (@SemilatticeInf.toPartialOrder.{u_2} K
+            (@Lattice.toSemilatticeInf.{u_2} K
+              (@DistribLattice.toLattice.{u_2} K (@instDistribLatticeOfLinearOrder.{u_2} K inst✝³))))))
+      (@OfNat.ofNat.{u_2} K (nat_lit 0)
+        (@Zero.toOfNat0.{u_2} K
+          (@MulZeroClass.toZero.{u_2} K
+            (@instMulZeroClassOfSemiring.{u_2} K
+              (@DivisionSemiring.toSemiring.{u_2} K
+                (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))))
+      (@DFunLike.coe.{max (u_1 + 1) (u_2 + 1), u_1 + 1, u_2 + 1}
+        (@RingHom.{u_1, u_2} R K
+          (@Semiring.toNonAssocSemiring.{u_1} R
+            (@DivisionSemiring.toSemiring.{u_1} R
+              (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+          (@Semiring.toNonAssocSemiring.{u_2} K
+            (@DivisionSemiring.toSemiring.{u_2} K
+              (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+        R (fun x => K)
+        (@RingHom.instFunLike.{u_1, u_2} R K
+          (@Semiring.toNonAssocSemiring.{u_1} R
+            (@DivisionSemiring.toSemiring.{u_1} R
+              (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝))))
+          (@Semiring.toNonAssocSemiring.{u_2} K
+            (@DivisionSemiring.toSemiring.{u_2} K
+              (@Semifield.toDivisionSemiring.{u_2} K (@Field.toSemifield.{u_2} K inst✝²)))))
+        f a))
+    (@LE.le.{u_1} R
+      (@Preorder.toLE.{u_1} R
+        (@PartialOrder.toPreorder.{u_1} R
+          (@SemilatticeInf.toPartialOrder.{u_1} R
+            (@Lattice.toSemilatticeInf.{u_1} R
+              (@DistribLattice.toLattice.{u_1} R (@instDistribLatticeOfLinearOrder.{u_1} R inst✝¹))))))
+      (@OfNat.ofNat.{u_1} R (nat_lit 0)
+        (@Zero.toOfNat0.{u_1} R
+          (@MulZeroClass.toZero.{u_1} R
+            (@instMulZeroClassOfSemiring.{u_1} R
+              (@DivisionSemiring.toSemiring.{u_1} R
+                (@Semifield.toDivisionSemiring.{u_1} R (@Field.toSemifield.{u_1} R inst✝)))))))
+      a)
+'Hilbert17Transfer.ringHom_nonneg_iff' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

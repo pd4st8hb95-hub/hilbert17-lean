@@ -1,0 +1,584 @@
+{
+  "status": "ALL_PLANNED_COMPILES_PASS",
+  "started_utc": "2026-10-13T13:07:54.146658+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/proof-axioms-compile-plan02.json",
+  "plan_sha256": "7fcd5806dd3cb93386e4f4f1eca1adff62610777f34b987efdd7838468dca2f8",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Diagnostic #check/#print axioms only. Requires the corresponding project proof modules to compile first. No unconditional Hilbert17 completion claim.",
+  "jobs": [
+    {
+      "label": "TargetSpecAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/TargetSpecAxioms.lean",
+        "bytes": 1070,
+        "sha256": "c616834fabcd14d9a0486ada8350e4b5dbb3329ff8588dbdbfe0f185050cb529"
+      },
+      "start_utc": "2026-10-13T13:07:54.146947+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:07:54.146936+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8366476,
+        "used_percent": 18.028026823669762
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpecAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpecAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/TargetSpecAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/01-TargetSpecAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/01-TargetSpecAxioms.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:07:55.650225+00:00",
+      "peak_physical_used_percent": 19.818531470312863,
+      "memory_after": {
+        "utc": "2026-10-13T13:07:55.650466+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8358280,
+        "used_percent": 18.10832852920901
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpecAxioms.olean",
+          "bytes": 1400,
+          "sha256": "16ac08f874d7e16e9f664842ed0096387570d7f52ea376160ac027ff50553c1e"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpecAxioms.ilean",
+          "bytes": 1813,
+          "sha256": "b6891703f522e3d76a877941826e5d95d671310b9a513e37bab8be0fb76af850"
+        }
+      ]
+    },
+    {
+      "label": "ClearDenominatorsAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/ClearDenominatorsAxioms.lean",
+        "bytes": 847,
+        "sha256": "8f64f249f5883e22f85ecc4880eafd9f1800cfc4efac6697f4e055af26b59841"
+      },
+      "start_utc": "2026-10-13T13:07:55.651270+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:07:55.651256+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8358280,
+        "used_percent": 18.10832852920901
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominatorsAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominatorsAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/ClearDenominatorsAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/02-ClearDenominatorsAxioms.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:07:57.154099+00:00",
+      "peak_physical_used_percent": 19.81849227963178,
+      "memory_after": {
+        "utc": "2026-10-13T13:07:57.154245+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359008,
+        "used_percent": 18.10119582525189
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominatorsAxioms.olean",
+          "bytes": 1408,
+          "sha256": "eeede418a602fb195d75971bfe49731890e1d5c785b01acc8643e7f3b9fd0c4b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominatorsAxioms.ilean",
+          "bytes": 1586,
+          "sha256": "bb82faceb311a3ff1d5e63e2833e8928fe0857a760affe6c6e9ce4540e9d76c8"
+        }
+      ]
+    },
+    {
+      "label": "FractionSemirealAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/FractionSemirealAxioms.lean",
+        "bytes": 482,
+        "sha256": "09fe5d0bd29a34c5dda58c4b13eb14b31e0895574e80fcbbef1b78d9b71937ec"
+      },
+      "start_utc": "2026-10-13T13:07:57.155152+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:07:57.155140+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8359008,
+        "used_percent": 18.10119582525189
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemirealAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemirealAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/FractionSemirealAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/03-FractionSemirealAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/03-FractionSemirealAxioms.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:07:58.661003+00:00",
+      "peak_physical_used_percent": 20.00143437892764,
+      "memory_after": {
+        "utc": "2026-10-13T13:07:58.661158+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364680,
+        "used_percent": 18.045623439476067
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemirealAxioms.olean",
+          "bytes": 1408,
+          "sha256": "695179e610db82afc6f87ed2bddd791a08bf003bbe93231ad8f097e2c7fa4a02"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemirealAxioms.ilean",
+          "bytes": 975,
+          "sha256": "3b8e525fcc8fb752090dea9a0a2308640be5f575110deb95a12712eac1852e6f"
+        }
+      ]
+    },
+    {
+      "label": "OrderingSeparationAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/OrderingSeparationAxioms.lean",
+        "bytes": 1998,
+        "sha256": "7aa63d75c967336b092072e432026326461fbee2b8bf4cb56ef8f1cc8b1f4ffd"
+      },
+      "start_utc": "2026-10-13T13:07:58.662158+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:07:58.662147+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364448,
+        "used_percent": 18.047896498978886
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparationAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparationAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/OrderingSeparationAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/04-OrderingSeparationAxioms.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 1.503,
+      "end_utc": "2026-10-13T13:08:00.169443+00:00",
+      "peak_physical_used_percent": 19.98520943695924,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:00.169696+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8338724,
+        "used_percent": 18.299931769024234
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparationAxioms.olean",
+          "bytes": 1408,
+          "sha256": "41bfa78c6e21f7796283ee1b4e9f80e4c552ea7bac1641833b5752fff34a1b46"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/OrderingSeparationAxioms.ilean",
+          "bytes": 3133,
+          "sha256": "c4c0598057c794821e94cb81b921f9972ad0b64b8a7fb856cd6bc7d60bf2c35e"
+        }
+      ]
+    },
+    {
+      "label": "RealInstanceAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/RealInstanceAxioms.lean",
+        "bytes": 424,
+        "sha256": "9cb16067ce8ed4d7d06419736e65510321208eba93d1c06e91a5dde3718b9e54"
+      },
+      "start_utc": "2026-10-13T13:08:00.170536+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:00.170523+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8338724,
+        "used_percent": 18.299931769024234
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstanceAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstanceAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/RealInstanceAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/05-RealInstanceAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/05-RealInstanceAxioms.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 2.004,
+      "end_utc": "2026-10-13T13:08:02.175131+00:00",
+      "peak_physical_used_percent": 20.135975987085885,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:02.175356+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345428,
+        "used_percent": 18.234248187528976
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstanceAxioms.olean",
+          "bytes": 1400,
+          "sha256": "6f2d669b29fa290b2c0f4d29d5cc51a2ac30d66cd4b88e569e54c233a7ec3585"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/RealInstanceAxioms.ilean",
+          "bytes": 827,
+          "sha256": "f2ba316099b08afc21da2bc74b1b6a295d8d068e66802fbde9ededa5f8039f07"
+        }
+      ]
+    },
+    {
+      "label": "CoefficientOrderAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/CoefficientOrderAxioms.lean",
+        "bytes": 576,
+        "sha256": "70649c6d814828735d01da1e11329d4f97d6f6f52bc248b1dcba25e57cf197f9"
+      },
+      "start_utc": "2026-10-13T13:08:02.176239+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:02.176227+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8345428,
+        "used_percent": 18.234248187528976
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrderAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrderAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/CoefficientOrderAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/06-CoefficientOrderAxioms.stderr.log",
+      "pid": 20,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:08:03.679336+00:00",
+      "peak_physical_used_percent": 20.208517937770687,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:03.679485+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339260,
+        "used_percent": 18.2946802177591
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrderAxioms.olean",
+          "bytes": 1408,
+          "sha256": "af93ea1c7955485d017fc8496a8dfdfcf6019a2c82e8ce3e2e7fe7e8dcfa355a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CoefficientOrderAxioms.ilean",
+          "bytes": 1127,
+          "sha256": "34410f3c49bc8479e72eda085f6828a2cf625f5c51eb5716ef1ca8674aa921e3"
+        }
+      ]
+    },
+    {
+      "label": "LocalizationSignDescentAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/LocalizationSignDescentAxioms.lean",
+        "bytes": 701,
+        "sha256": "6b1f8420279e5d824f3d48bcdd69ea37e438562d0aa2903b00430d4db9a5112e"
+      },
+      "start_utc": "2026-10-13T13:08:03.680433+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:03.680422+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339020,
+        "used_percent": 18.297031658624086
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescentAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescentAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/LocalizationSignDescentAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/07-LocalizationSignDescentAxioms.stderr.log",
+      "pid": 23,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:08:05.183035+00:00",
+      "peak_physical_used_percent": 20.41536635252723,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:05.183180+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342496,
+        "used_percent": 18.262974956762882
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescentAxioms.olean",
+          "bytes": 1408,
+          "sha256": "d173607754610b0cd39714cf63b27bc747bc05f3b6bb654ed10369e0fefb713a"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/LocalizationSignDescentAxioms.ilean",
+          "bytes": 1228,
+          "sha256": "6ff5fb56e676e7597347656da087185458664203f8c251743d7557b8b52ca961"
+        }
+      ]
+    },
+    {
+      "label": "ConditionalArtinAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/ConditionalArtinAxioms.lean",
+        "bytes": 699,
+        "sha256": "f8e04babdca7f921c0382e68e377e8ad71b0caedf42a74bcd39d368b5ef89afc"
+      },
+      "start_utc": "2026-10-13T13:08:05.184317+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:05.184306+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342496,
+        "used_percent": 18.262974956762882
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtinAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtinAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/ConditionalArtinAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/08-ConditionalArtinAxioms.stderr.log",
+      "pid": 26,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T13:08:07.187606+00:00",
+      "peak_physical_used_percent": 20.21811965463604,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:07.187751+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8337924,
+        "used_percent": 18.307769905240853
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtinAxioms.olean",
+          "bytes": 1408,
+          "sha256": "b9d4ef4792d134841bb0b00ff89be6fb60c3c954ee63242d72c2358f3e1ce55e"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ConditionalArtinAxioms.ilean",
+          "bytes": 1182,
+          "sha256": "7e2b967af22c676d43de30a019caafc1e3ff144f04488324a55e575cbad211e2"
+        }
+      ]
+    },
+    {
+      "label": "TargetSanityAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/TargetSanityAxioms.lean",
+        "bytes": 806,
+        "sha256": "5265b5e8b97e848a40060376797d6c056993bee55a0e87ff06b204261d724f75"
+      },
+      "start_utc": "2026-10-13T13:08:07.189922+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:07.189910+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8337924,
+        "used_percent": 18.307769905240853
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanityAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanityAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/TargetSanityAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/09-TargetSanityAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/09-TargetSanityAxioms.stderr.log",
+      "pid": 29,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:08:08.692409+00:00",
+      "peak_physical_used_percent": 20.404628105910465,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:08.692572+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8312548,
+        "used_percent": 18.55639558603197
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanityAxioms.olean",
+          "bytes": 1400,
+          "sha256": "c5b70d274d8ba671a56bb8d922475864575c31403a48542a1db85333e370dec8"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSanityAxioms.ilean",
+          "bytes": 1435,
+          "sha256": "8f24ec9a381eeaadf75df25cfb3e35ce621685ceb449cdbec789c503c22f23d6"
+        }
+      ]
+    },
+    {
+      "label": "CertificateNonnegativeAxioms",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/axioms/CertificateNonnegativeAxioms.lean",
+        "bytes": 424,
+        "sha256": "b4c328a9ac1dac1e8273d6377e65c5374df582c9a367a8fefd0937adc376ee7d"
+      },
+      "start_utc": "2026-10-13T13:08:08.693885+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:08:08.693873+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8312548,
+        "used_percent": 18.55639558603197
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks/axioms",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegativeAxioms.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegativeAxioms.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/axioms/CertificateNonnegativeAxioms.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-axioms02-run01/10-CertificateNonnegativeAxioms.stderr.log",
+      "pid": 32,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T13:08:10.196247+00:00",
+      "peak_physical_used_percent": 20.176420769963634,
+      "memory_after": {
+        "utc": "2026-10-13T13:08:10.196394+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8339652,
+        "used_percent": 18.290839531012956
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegativeAxioms.olean",
+          "bytes": 1408,
+          "sha256": "cfd6a27d74c7a73ab67c6b8ffc5430d4cb298fe1b1f59f862804109b2d2ace6c"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/CertificateNonnegativeAxioms.ilean",
+          "bytes": 870,
+          "sha256": "22011a2d0be7924be7dc7937fc746595127b54c460f2e372920975730bfdcc0a"
+        }
+      ]
+    }
+  ],
+  "ended_utc": "2026-10-13T13:08:10.197396+00:00"
+}

@@ -1,0 +1,218 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T13:09:30.816678+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/realclosure-compile-plan01.json",
+  "plan_sha256": "56c87dcb21b0a106e352cf47bb94e29225920d5590fed9e5742920252f7a2ceb",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Minimal missing official prerequisites and the seven root-reviewed local TauCeti real-closure source modules. Ordered source compilation only, no claim before root compiler and theorem/axiom audits.",
+  "jobs": [
+    {
+      "label": "Mathlib.Algebra.QuadraticAlgebra.Defs",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/QuadraticAlgebra/Defs.lean",
+        "bytes": 16478,
+        "sha256": "2e2dc4acdaadbbdbad1cb003d9f4dc183ab9be9a237391f61176bc0b511b24cd"
+      },
+      "start_utc": "2026-10-13T13:09:30.816947+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:09:30.816938+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8356272,
+        "used_percent": 18.128002251112722
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/QuadraticAlgebra/Defs.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/01-Mathlib_Algebra_QuadraticAlgebra_Defs.stderr.log",
+      "pid": 6,
+      "exit_code": 0,
+      "seconds": 4.505,
+      "end_utc": "2026-10-13T13:09:35.323380+00:00",
+      "peak_physical_used_percent": 20.69138631939543,
+      "memory_after": {
+        "utc": "2026-10-13T13:09:35.323580+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330556,
+        "used_percent": 18.379959139795904
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.olean",
+          "bytes": 510320,
+          "sha256": "8eaab426ee497fa405104504b7148feae8615a8067676e027dff737fb55df343"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.olean.private",
+          "bytes": 515248,
+          "sha256": "f2c65950175b6f5597d409c9701d4a11af26a0ff47fd2bdb52646f5ca9aa08d6"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.olean.server",
+          "bytes": 34672,
+          "sha256": "5f815b8b18590c54db0b10599ac2f5b106f540c6bd425991cd5f84c44d1e56b7"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.ilean",
+          "bytes": 62992,
+          "sha256": "8d23983feaa36181730b358b94def3733c76c05e55b7c4733b66ff63666d48e2"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Defs.ir",
+          "bytes": 58648,
+          "sha256": "3d0ce97cb8e8bd6473be5f06127d8f6112270e36fc2ae0b98b513ca58d399f52"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.QuadraticAlgebra.Basic",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/QuadraticAlgebra/Basic.lean",
+        "bytes": 11792,
+        "sha256": "10872cf90c344810f46d51a5b54431efd3d8bea09de14ca50554e1af32210be6"
+      },
+      "start_utc": "2026-10-13T13:09:35.325542+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:09:35.325529+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8330556,
+        "used_percent": 18.379959139795904
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/QuadraticAlgebra/Basic.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/02-Mathlib_Algebra_QuadraticAlgebra_Basic.stderr.log",
+      "pid": 10,
+      "exit_code": 0,
+      "seconds": 5.507,
+      "end_utc": "2026-10-13T13:09:40.833261+00:00",
+      "peak_physical_used_percent": 20.704515197558266,
+      "memory_after": {
+        "utc": "2026-10-13T13:09:40.833430+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8353316,
+        "used_percent": 18.156964164433123
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.olean",
+          "bytes": 322384,
+          "sha256": "c33110464c3afe49a8be7c8daeb180be55379303a0a6ee6b512c321961604fd8"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.olean.private",
+          "bytes": 917248,
+          "sha256": "ba55026244c7cb0fbea71444f65684ec4c31ff6883fe86500e46f57f67aa5123"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.olean.server",
+          "bytes": 16240,
+          "sha256": "ea063069a344dc0f9d3810d8ab6fa9772e73571ace6ae7644e7405b95ce637eb"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.ilean",
+          "bytes": 40406,
+          "sha256": "50eaac9976d77ae1feca5be94666cc3711b00c45160d7c8e46d7cecfd829070e"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/QuadraticAlgebra/Basic.ir",
+          "bytes": 47144,
+          "sha256": "2d96f53d91383b8a3c0cf4529c495df21bbd348741d396ee02eb47867cb2d8dc"
+        }
+      ]
+    },
+    {
+      "label": "TauCeti.Algebra.Order.Ring.Ordering.Extension",
+      "source": {
+        "path": "<build-workspace>/hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+        "bytes": 1558,
+        "sha256": "714deffe9a479b9aed885efb2ae74b894e79a6aeda15b99038e88f681724102b"
+      },
+      "start_utc": "2026-10-13T13:09:40.836069+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T13:09:40.836054+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8351260,
+        "used_percent": 18.177108174509833
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-realclosure",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TauCeti/Algebra/Order/Ring/Ordering/Extension.ilean",
+        "<build-workspace>/hilbert17-realclosure/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/realclosure-compile01-run01/03-TauCeti_Algebra_Order_Ring_Ordering_Extension.stderr.log",
+      "pid": 14,
+      "exit_code": 1,
+      "seconds": 0.501,
+      "end_utc": "2026-10-13T13:09:41.339407+00:00",
+      "peak_physical_used_percent": 18.17722574655308,
+      "memory_after": {
+        "utc": "2026-10-13T13:09:41.339590+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8342420,
+        "used_percent": 18.26371957970346
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T13:09:41.340638+00:00"
+}

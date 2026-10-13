@@ -1,0 +1,73 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T12:50:46.814518+00:00",
+  "driver_sha256": "9e57184bd28de12bbce0098af16ec6b77cfc1fef3829f788bbecccd008b0e871",
+  "plan_sha256": "e8dc68dd00bf2d3140539030c2cb70c8d33dcd19866e2c308ef3a398d0d72bd5",
+  "config_sha256": "3bde5c1383cb89247df7fdc91421add93df0869f37fa5886d539caf964905c3b",
+  "boot_id": "d8ca3fcf-4207-421e-aa5d-e9574840ee7c",
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "jobs": [
+    {
+      "label": "Mathlib.Algebra.Group.Subgroup.Even",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Group/Subgroup/Even.lean",
+        "bytes": 2452,
+        "sha256": "338916da2da0d20d1d0e14d649d90ccdbc80c00c7f577f090fe7a50f2691a98e"
+      },
+      "start_utc": "2026-10-13T12:50:46.814818+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:50:46.814809+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8385988,
+        "used_percent": 17.836854681346452
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/Group/Subgroup/Even.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/Group/Subgroup/Even.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/runtime-compile02-run01/01-Mathlib_Algebra_Group_Subgroup_Even.stderr.log",
+      "pid": 5,
+      "exit_code": 1,
+      "seconds": 0.501,
+      "end_utc": "2026-10-13T12:50:47.316721+00:00",
+      "peak_physical_used_percent": 17.836854681346452,
+      "memory_after": {
+        "utc": "2026-10-13T12:50:47.316881+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8389012,
+        "used_percent": 17.807226526447636
+      },
+      "outputs": []
+    }
+  ],
+  "scope": "Official prerequisite compilation plus import smoke only; no Hilbert17 theorem acceptance.",
+  "ended_utc": "2026-10-13T12:50:47.317599+00:00"
+}

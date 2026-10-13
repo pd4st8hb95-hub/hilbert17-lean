@@ -1,0 +1,289 @@
+Hilbert17.RingPreordering.adjoin.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) (a : F)
+  (ha :
+    @Neg.neg.{u_1} F
+        (@NegZeroClass.toNeg.{u_1} F
+          (@SubNegZeroMonoid.toNegZeroClass.{u_1} F
+            (@SubtractionMonoid.toSubNegZeroMonoid.{u_1} F
+              (@SubtractionCommMonoid.toSubtractionMonoid.{u_1} F
+                (@AddCommGroup.toDivisionAddCommMonoid.{u_1} F
+                  (@Ring.toAddCommGroup.{u_1} F
+                    (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝))))))))
+        a ∉
+      P) :
+  @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)
+'Hilbert17.RingPreordering.adjoin' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.le_adjoin.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) (a : F)
+  (ha :
+    @Neg.neg.{u_1} F
+        (@NegZeroClass.toNeg.{u_1} F
+          (@SubNegZeroMonoid.toNegZeroClass.{u_1} F
+            (@SubtractionMonoid.toSubNegZeroMonoid.{u_1} F
+              (@SubtractionCommMonoid.toSubtractionMonoid.{u_1} F
+                (@AddCommGroup.toDivisionAddCommMonoid.{u_1} F
+                  (@Ring.toAddCommGroup.{u_1} F
+                    (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝))))))))
+        a ∉
+      P) :
+  @LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+    (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+    P (@Hilbert17.RingPreordering.adjoin.{u_1} F inst✝ P a ha)
+'Hilbert17.RingPreordering.le_adjoin' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.self_mem_adjoin.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) (a : F)
+  (ha :
+    @Neg.neg.{u_1} F
+        (@NegZeroClass.toNeg.{u_1} F
+          (@SubNegZeroMonoid.toNegZeroClass.{u_1} F
+            (@SubtractionMonoid.toSubNegZeroMonoid.{u_1} F
+              (@SubtractionCommMonoid.toSubtractionMonoid.{u_1} F
+                (@AddCommGroup.toDivisionAddCommMonoid.{u_1} F
+                  (@Ring.toAddCommGroup.{u_1} F
+                    (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝))))))))
+        a ∉
+      P) :
+  @Membership.mem.{u_1, u_1} F (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+    (@SetLike.instMembership.{u_1, u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) F
+      (@RingPreordering.instSetLike.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+    (@Hilbert17.RingPreordering.adjoin.{u_1} F inst✝ P a ha) a
+'Hilbert17.RingPreordering.self_mem_adjoin' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.chainUnion.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (c : Set.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+  (hc :
+    @IsChain.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (fun x1 x2 =>
+        @LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+              (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+          x1 x2)
+      c)
+  (hne : @Set.Nonempty.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) c) :
+  @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)
+'Hilbert17.RingPreordering.chainUnion' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.le_chainUnion.{u_1} {F : Type u_1} [Field.{u_1} F]
+  {c : Set.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))}
+  {hc :
+    @IsChain.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (fun x1 x2 =>
+        @LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+              (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+          x1 x2)
+      c}
+  {hne : @Set.Nonempty.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) c}
+  {P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)}
+  (hP :
+    @Membership.mem.{u_1, u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (Set.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+      (@Set.instMembership.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))) c P) :
+  @LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+    (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+    P (@Hilbert17.RingPreordering.chainUnion.{u_1} F inst✝ c hc hne)
+'Hilbert17.RingPreordering.le_chainUnion' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.exists_maximal.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) :
+  ∃ Q,
+    And
+      (@LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+        P Q)
+      (@IsMax.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+        Q)
+'Hilbert17.RingPreordering.exists_maximal' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.isOrdering_of_isMax.{u_1} {F : Type u_1} [Field.{u_1} F]
+  {P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)}
+  (hP :
+    @IsMax.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+      P) :
+  @RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) P
+'Hilbert17.RingPreordering.isOrdering_of_isMax' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.exists_ordering_extension.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) :
+  ∃ Q,
+    And
+      (@LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+        P Q)
+      (@RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) Q)
+'Hilbert17.RingPreordering.exists_ordering_extension' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.exists_ordering_not_mem.{u_1} {F : Type u_1} [Field.{u_1} F]
+  {P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)} {a : F} (ha : a ∉ P) :
+  ∃ Q,
+    And
+      (@LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+        (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+        P Q)
+      (And (@RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) Q) (a ∉ Q))
+'Hilbert17.RingPreordering.exists_ordering_not_mem' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.mem_iff_mem_all_ordering_extensions.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) (a : F) :
+  Iff
+    (@Membership.mem.{u_1, u_1} F (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+      (@SetLike.instMembership.{u_1, u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) F
+        (@RingPreordering.instSetLike.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+      P a)
+    (∀ (Q : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)),
+      @LE.le.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@Preorder.toLE.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@PartialOrder.toPreorder.{u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+              (@RingPreordering.instPartialOrder.{u_1} F (@Field.toCommRing.{u_1} F inst✝))))
+          P Q →
+        @RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) Q →
+          @Membership.mem.{u_1, u_1} F (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+            (@SetLike.instMembership.{u_1, u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) F
+              (@RingPreordering.instSetLike.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+            Q a)
+'Hilbert17.RingPreordering.mem_iff_mem_all_ordering_extensions' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Hilbert17.RingPreordering.sumSq.{u_1} {F : Type u_1} [Field.{u_1} F]
+  [@IsSemireal.{u_1} F
+      (@Distrib.toAdd.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@Distrib.toMul.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@AddMonoidWithOne.toOne.{u_1} F
+        (@AddGroupWithOne.toAddMonoidWithOne.{u_1} F
+          (@Ring.toAddGroupWithOne.{u_1} F (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝)))))
+      (@MulZeroClass.toZero.{u_1} F
+        (@instMulZeroClassOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))] :
+  @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)
+'Hilbert17.RingPreordering.sumSq' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.isSumSq_iff_mem_all_orderings.{u_1} {F : Type u_1} [Field.{u_1} F]
+  [@IsSemireal.{u_1} F
+      (@Distrib.toAdd.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@Distrib.toMul.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@AddMonoidWithOne.toOne.{u_1} F
+        (@AddGroupWithOne.toAddMonoidWithOne.{u_1} F
+          (@Ring.toAddGroupWithOne.{u_1} F (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝)))))
+      (@MulZeroClass.toZero.{u_1} F
+        (@instMulZeroClassOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))]
+  (a : F) :
+  Iff
+    (@IsSumSq.{u_1} F
+      (@Distrib.toMul.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@Distrib.toAdd.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@MulZeroClass.toZero.{u_1} F
+        (@instMulZeroClassOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      a)
+    (∀ (Q : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)),
+      @RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) Q →
+        @Membership.mem.{u_1, u_1} F (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+          (@SetLike.instMembership.{u_1, u_1} (@RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) F
+            (@RingPreordering.instSetLike.{u_1} F (@Field.toCommRing.{u_1} F inst✝)))
+          Q a)
+'Hilbert17.RingPreordering.isSumSq_iff_mem_all_orderings' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Hilbert17.RingPreordering.toRingCone.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝)) :
+  @RingCone.{u_1} F (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝))
+'Hilbert17.RingPreordering.toRingCone' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.toLinearOrder.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+  [@RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) P] : LinearOrder.{u_1} F
+'Hilbert17.RingPreordering.toLinearOrder' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Hilbert17.RingPreordering.toLinearOrder_isStrictOrderedRing.{u_1} {F : Type u_1} [Field.{u_1} F]
+  (P : @RingPreordering.{u_1} F (@Field.toCommRing.{u_1} F inst✝))
+  [@RingPreordering.IsOrdering.{u_1} F (@Field.toCommRing.{u_1} F inst✝) P] :
+  @IsStrictOrderedRing.{u_1} F
+    (@DivisionSemiring.toSemiring.{u_1} F (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))
+    (@SemilatticeInf.toPartialOrder.{u_1} F
+      (@Lattice.toSemilatticeInf.{u_1} F
+        (@DistribLattice.toLattice.{u_1} F
+          (@instDistribLatticeOfLinearOrder.{u_1} F
+            (@Hilbert17.RingPreordering.toLinearOrder.{u_1} F inst✝ P inst✝¹)))))
+'Hilbert17.RingPreordering.toLinearOrder_isStrictOrderedRing' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Hilbert17.RingPreordering.isSumSq_iff_nonneg_all_orders.{u_1} {F : Type u_1} [Field.{u_1} F]
+  [@IsSemireal.{u_1} F
+      (@Distrib.toAdd.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@Distrib.toMul.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@AddMonoidWithOne.toOne.{u_1} F
+        (@AddGroupWithOne.toAddMonoidWithOne.{u_1} F
+          (@Ring.toAddGroupWithOne.{u_1} F (@DivisionRing.toRing.{u_1} F (@Field.toDivisionRing.{u_1} F inst✝)))))
+      (@MulZeroClass.toZero.{u_1} F
+        (@instMulZeroClassOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))]
+  (a : F) :
+  Iff
+    (@IsSumSq.{u_1} F
+      (@Distrib.toMul.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@Distrib.toAdd.{u_1} F
+        (@instDistribOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      (@MulZeroClass.toZero.{u_1} F
+        (@instMulZeroClassOfSemiring.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))
+      a)
+    (∀ (o : LinearOrder.{u_1} F),
+      @IsStrictOrderedRing.{u_1} F
+          (@DivisionSemiring.toSemiring.{u_1} F
+            (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))
+          (@LinearOrder.toPartialOrder.{u_1} F o) →
+        @LE.le.{u_1} F
+          (@Preorder.toLE.{u_1} F (@PartialOrder.toPreorder.{u_1} F (@LinearOrder.toPartialOrder.{u_1} F o)))
+          (@OfNat.ofNat.{u_1} F (nat_lit 0)
+            (@Zero.toOfNat0.{u_1} F
+              (@MulZeroClass.toZero.{u_1} F
+                (@instMulZeroClassOfSemiring.{u_1} F
+                  (@DivisionSemiring.toSemiring.{u_1} F
+                    (@Semifield.toDivisionSemiring.{u_1} F (@Field.toSemifield.{u_1} F inst✝)))))))
+          a)
+'Hilbert17.RingPreordering.isSumSq_iff_nonneg_all_orders' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

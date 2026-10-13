@@ -1,0 +1,7 @@
+<build-workspace>/hilbert17-target-20261013/ConditionalArtin.lean:62:4: error: Type mismatch: After simplification, term
+  Eq.symm (MvPolynomial.eval₂_comp_left (algebraMap A K) MvPolynomial.C MvPolynomial.X f)
+ has type
+  MvPolynomial.eval₂ ((algebraMap A K).comp MvPolynomial.C) (⇑(algebraMap A K) ∘ MvPolynomial.X) f =
+    (algebraMap A K) (MvPolynomial.eval₂ MvPolynomial.C MvPolynomial.X f)
+but is expected to have type
+  MvPolynomial.eval₂ coefficientMap (fun i => (algebraMap A K) (MvPolynomial.X i)) f = (algebraMap A K) f

@@ -1,0 +1,383 @@
+{
+  "status": "STOPPED_ON_FIRST_FAILURE_OR_MEMORY_LIMIT",
+  "started_utc": "2026-10-13T12:58:32.924785+00:00",
+  "driver_sha256": "11a7534e816f4a66b99bd6c25da19eac2a63275716b46b8ffffc49df148c92dc",
+  "plan": "<build-workspace>/hilbert17-20261013/proof-compile-plan04.json",
+  "plan_sha256": "af58fd8990bc104c6d29ce3f8113cdd1ad9822f0f045d30361ea360fc40cc15e",
+  "guard_core": {
+    "path": "<build-workspace>/hilbert17-20261013/guarded_compile03.py",
+    "bytes": 6238,
+    "sha256": "390d24bf21a2e13874c631965503c69d7d2bc62c0f2298c63fb776e93bd4a9ee"
+  },
+  "lean_memory_limit_mib": 4096,
+  "memory_policy": {
+    "metric": "100 * (MemTotal - MemAvailable) / MemTotal from /proc/meminfo",
+    "sample_seconds": 0.5,
+    "warn_percent": 60,
+    "refuse_new_job_at_percent": 60,
+    "term_active_group_at_percent": 70,
+    "kill_active_group_at_percent": 75,
+    "term_grace_seconds": 5
+  },
+  "environment": {
+    "PATH": "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin:/usr/bin:/bin",
+    "HOME": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/home",
+    "TMPDIR": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/tmp",
+    "LC_ALL": "C.UTF-8",
+    "LEAN_PATH": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean:<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/plausible/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/importGraph/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/proofwidgets/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/aesop/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Qq/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/batteries/.lake/build/lib/lean:<build-workspace>/recovery-20261013/runtime/mathlib/.lake/packages/Cli/.lake/build/lib/lean",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "scope": "Retry combined import smoke at root-approved 4096 MiB cap; compile two additional official modules; compile eight pinned local source drafts. Stops on first failure, no automatic retries. No unconditional Hilbert17 theorem acceptance implied.",
+  "jobs": [
+    {
+      "label": "RuntimeSmoke03",
+      "source": {
+        "path": "<build-workspace>/hilbert17-20261013/checks/RuntimeSmoke03.lean",
+        "bytes": 950,
+        "sha256": "8a00ac60663a4de68ac62256ae56945e32ca2a5f16e976cf4aa71766a2d10f31"
+      },
+      "start_utc": "2026-10-13T12:58:32.925055+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:32.925044+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8363088,
+        "used_percent": 18.061221330547138
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-20261013/checks",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke03.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke03.ilean",
+        "<build-workspace>/hilbert17-20261013/checks/RuntimeSmoke03.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/01-RuntimeSmoke03.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/01-RuntimeSmoke03.stderr.log",
+      "pid": 5,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T12:58:34.927986+00:00",
+      "peak_physical_used_percent": 20.68491985701672,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:34.928183+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360304,
+        "used_percent": 18.088498044580966
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke03.olean",
+          "bytes": 4288,
+          "sha256": "a44635e219fa353c2573c1dfb0d3b7e201dcf9d9bef5a811ba53f5fbacad4034"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/smoke/RuntimeSmoke03.ilean",
+          "bytes": 2239,
+          "sha256": "89ae5dda24baa36438cd11258a83d5e9c3e4417ea0147ff4de38b8e249ee41a7"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.MvPolynomial.Polynomial",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Polynomial.lean",
+        "bytes": 1286,
+        "sha256": "43330a5e928a56af89b209101f98be347937384d2d435f875e2eaff698ccd650"
+      },
+      "start_utc": "2026-10-13T12:58:34.928964+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:34.928952+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8360304,
+        "used_percent": 18.088498044580966
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Polynomial.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/02-Mathlib_Algebra_MvPolynomial_Polynomial.stderr.log",
+      "pid": 8,
+      "exit_code": 0,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T12:58:36.432239+00:00",
+      "peak_physical_used_percent": 20.17787082516371,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:36.432386+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364256,
+        "used_percent": 18.049777651670876
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.olean",
+          "bytes": 23272,
+          "sha256": "e231e59366fe8670fe3ea141b3c237b8018a0f9cf99c56ab04eca1732e932d68"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.olean.private",
+          "bytes": 60336,
+          "sha256": "dc6d1f7ed604a4921d133655bbc00f39cac49827f7ab737b86b3c124d0ddad34"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.olean.server",
+          "bytes": 1408,
+          "sha256": "5ea531689d1de98715e7f53a62759408afdec5c5f29cb5dfc876bdad67954778"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.ilean",
+          "bytes": 4730,
+          "sha256": "256072117337ef499c6e6e720341ee728a11c49ee6d06ccdd3937d689b58b827"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Polynomial.ir",
+          "bytes": 1536,
+          "sha256": "9fda4d933dc00d0f857c55025925cf778fbec4401e41b8fe3d1e56abbce14efb"
+        }
+      ]
+    },
+    {
+      "label": "Mathlib.Algebra.MvPolynomial.Funext",
+      "source": {
+        "path": "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Funext.lean",
+        "bytes": 3356,
+        "sha256": "cb1821884a139917b692103a0b267115179cd4e7084da5487857ec49abb0cc7e"
+      },
+      "start_utc": "2026-10-13T12:58:36.433548+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:36.433534+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8364256,
+        "used_percent": 18.049777651670876
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/recovery-20261013/runtime/mathlib",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.ilean",
+        "<build-workspace>/recovery-20261013/runtime/mathlib/Mathlib/Algebra/MvPolynomial/Funext.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/03-Mathlib_Algebra_MvPolynomial_Funext.stderr.log",
+      "pid": 11,
+      "exit_code": 0,
+      "seconds": 2.002,
+      "end_utc": "2026-10-13T12:58:38.436909+00:00",
+      "peak_physical_used_percent": 20.296775351569803,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:38.437075+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8362052,
+        "used_percent": 18.071371716947656
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.olean",
+          "bytes": 26312,
+          "sha256": "7181bb3bc89b4b877c674db445089d43533d366ef77e7427f1910451151af9fc"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.olean.private",
+          "bytes": 191072,
+          "sha256": "96eaa22c3bf6335a20ec2b61f80ebd05273eff3e14161bb7e86441eed43c9279"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.olean.server",
+          "bytes": 3304,
+          "sha256": "aa20f985d0296be93fcbe66829b2080fff43af065398b5c79aca11f4ea49a42e"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.ilean",
+          "bytes": 10197,
+          "sha256": "8bb11c2463be1bdc353ec96ee58008e75852371edc1a2fe3d215a488c3b4ab60"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/runtime-overlay/lib/lean/Mathlib/Algebra/MvPolynomial/Funext.ir",
+          "bytes": 2008,
+          "sha256": "f2ee8317040f668aac78a93a4c3bd8bea19ea00c662274536e3aa850582fe191"
+        }
+      ]
+    },
+    {
+      "label": "TargetSpec",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/TargetSpec.lean",
+        "bytes": 2016,
+        "sha256": "0f6a99bb646ab406ccb0ca8e612dc7d228d0dc05e7ec96510c7bbeb34ef3b488"
+      },
+      "start_utc": "2026-10-13T12:58:38.438353+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:38.438341+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8362052,
+        "used_percent": 18.071371716947656
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-target-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.ilean",
+        "<build-workspace>/hilbert17-target-20261013/TargetSpec.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/04-TargetSpec.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/04-TargetSpec.stderr.log",
+      "pid": 14,
+      "exit_code": 0,
+      "seconds": 1.504,
+      "end_utc": "2026-10-13T12:58:39.943037+00:00",
+      "peak_physical_used_percent": 20.293836050488572,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:39.943247+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8350956,
+        "used_percent": 18.180086666272146
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.olean",
+          "bytes": 43520,
+          "sha256": "3f435fb3b831d0f6ca3e02d096a390fcbd5e45c928ec9343cd8929714c3c4579"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/TargetSpec.ilean",
+          "bytes": 5962,
+          "sha256": "701f8f27f7b0a1e8f789f17eaa57871bd30d10a3dbb445defe14c38c00d94334"
+        }
+      ]
+    },
+    {
+      "label": "ClearDenominators",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/ClearDenominators.lean",
+        "bytes": 6382,
+        "sha256": "6bdf37904cbfe7e5e93df976bb15661808e8bd8ffc360bab08cf69bb045a646c"
+      },
+      "start_utc": "2026-10-13T12:58:39.944154+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:39.944143+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8350956,
+        "used_percent": 18.180086666272146
+      },
+      "status": "PASS",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-target-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.ilean",
+        "<build-workspace>/hilbert17-target-20261013/ClearDenominators.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/05-ClearDenominators.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/05-ClearDenominators.stderr.log",
+      "pid": 17,
+      "exit_code": 0,
+      "seconds": 2.502,
+      "end_utc": "2026-10-13T12:58:42.447158+00:00",
+      "peak_physical_used_percent": 20.346155609734495,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:42.447346+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349972,
+        "used_percent": 18.189727573818587
+      },
+      "outputs": [
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.olean",
+          "bytes": 349840,
+          "sha256": "a48abe7858a030047106a40f98c41d42dace1ee557c3b690068712c85555168b"
+        },
+        {
+          "path": "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/ClearDenominators.ilean",
+          "bytes": 14016,
+          "sha256": "f37a45e81017121081e043bd5810dfdc221ac2a3d29fa6058dc824f7b91a8ad0"
+        }
+      ]
+    },
+    {
+      "label": "FractionSemireal",
+      "source": {
+        "path": "<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean",
+        "bytes": 2308,
+        "sha256": "94d7c795480929056aae5a205d66a2a965431746f6313765484f02322e7c001b"
+      },
+      "start_utc": "2026-10-13T12:58:42.448703+00:00",
+      "memory_before": {
+        "utc": "2026-10-13T12:58:42.448690+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8349972,
+        "used_percent": 18.189727573818587
+      },
+      "status": "COMPILE_FAILED",
+      "command": [
+        "<build-workspace>/recovery-20261013/runtime/lean-4.32.1-linux/bin/lean",
+        "-j",
+        "1",
+        "-M",
+        "4096",
+        "-R",
+        "<build-workspace>/hilbert17-target-20261013",
+        "-o",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.olean",
+        "-i",
+        "<build-workspace>/hilbert17-20261013/.lake/build/lib/lean/FractionSemireal.ilean",
+        "<build-workspace>/hilbert17-target-20261013/FractionSemireal.lean"
+      ],
+      "stdout": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/06-FractionSemireal.stdout.log",
+      "stderr": "<build-workspace>/hilbert17-20261013/verification/proof-compile04-run01/06-FractionSemireal.stderr.log",
+      "pid": 20,
+      "exit_code": 1,
+      "seconds": 1.502,
+      "end_utc": "2026-10-13T12:58:43.951358+00:00",
+      "peak_physical_used_percent": 20.369278111573518,
+      "memory_after": {
+        "utc": "2026-10-13T12:58:43.951561+00:00",
+        "total_kib": 10206508,
+        "available_kib": 8333308,
+        "used_percent": 18.352995951210737
+      },
+      "outputs": []
+    }
+  ],
+  "ended_utc": "2026-10-13T12:58:43.952336+00:00"
+}
